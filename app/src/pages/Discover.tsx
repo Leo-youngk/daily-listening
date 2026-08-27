@@ -22,6 +22,15 @@ function useDailyQuote(manifest: { slug: string }[]) {
   }, [manifest])
 }
 
+function pickRandom<T>(arr: T[], count: number): T[] {
+  const pool = [...arr]
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[pool[i], pool[j]] = [pool[j], pool[i]]
+  }
+  return pool.slice(0, count)
+}
+
 export default function Discover() {
   const { manifest, manifestReady, manifestError, reloadManifest } = useCatalog()
   const { playTalk } = usePlayerActions()
@@ -44,6 +53,13 @@ export default function Discover() {
     const [slug, v] = entries[0]
     const meta = manifest.find(m => m.slug === slug)
     return meta ? { meta, pos: v.pos } : null
+  }, [manifest])
+
+  // 精选推荐：随机展示未听过的内容，全部听过则从全量里随机选
+  const recs = useMemo(() => {
+    const prog = loadProgress()
+    const unlistened = manifest.filter(m => !prog[m.slug])
+    return pickRandom(unlistened.length > 0 ? unlistened : manifest, 6)
   }, [manifest])
 
   // 加载每日一句（懒加载该篇字幕，随机挑一句有中文的）
@@ -89,8 +105,6 @@ export default function Discover() {
       </div>
     )
   }
-
-  const recs = manifest.slice(0, 6)
 
   return (
     <div className="px-3 pb-4">
