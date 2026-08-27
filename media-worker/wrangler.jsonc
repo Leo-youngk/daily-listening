@@ -1,0 +1,15 @@
+{
+  "$schema": "../app/node_modules/wrangler/config-schema.json",
+  "name": "daily-listening-media",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-27",
+  "observability": {
+    "enabled": true
+  },
+  "r2_buckets": [
+    {
+      "binding": "AUDIO",
+      "bucket_name": "daily-listening-audio"
+    }
+  ]
+}

@@ -2,7 +2,10 @@
 """把 json3 字幕转成逐句双语 JSON，缺中文的用机译补齐，最后生成 manifest
 用法: python vtt2json.py [--limit N] [--no-translate]
 """
-import argparse, hashlib, json, os, re, time
+import argparse, json, os, re, subprocess, tempfile
+
+import imageio_ffmpeg
+from offline_translate import OfflineTranslator, TranslationError
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -10,17 +13,12 @@ CORPUS = os.path.join(HERE, "corpus")
 SUBS_DIR = os.path.join(ROOT, "public", "subs")
 DATA_DIR = os.path.join(ROOT, "public", "data")
 CACHE_PATH = os.path.join(CORPUS, "trans_cache.json")
-
-translator = None
-
-
-def get_translator():
-    global translator
-    if translator is None:
-        from deep_translator import GoogleTranslator
-        translator = GoogleTranslator(source="en", target="zh-CN")
-    return translator
-
+FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
+MEDIA_BASE_URL = os.environ.get(
+    "MEDIA_BASE_URL",
+    "https://daily-listening-media.if5v.workers.dev",
+).rstrip("/")
+DURATION_RE = re.compile(r"Duration:\s*(\d+):(\d+):(\d+(?:\.\d+)?)")
 
 def load_cache():
     if os.path.exists(CACHE_PATH):
@@ -29,8 +27,16 @@ def load_cache():
 
 
 def save_cache(c):
-    with open(CACHE_PATH, "w", encoding="utf-8") as f:
-        json.dump(c, f, ensure_ascii=False)
+    handle, temp_path = tempfile.mkstemp(prefix=".dtl-cache-", suffix=".json", dir=CORPUS)
+    try:
+        with os.fdopen(handle, "w", encoding="utf-8", newline="\n") as f:
+            json.dump(c, f, ensure_ascii=False, separators=(",", ":"))
+            f.write("\n")
+        os.replace(temp_path, CACHE_PATH)
+    except Exception:
+        if os.path.exists(temp_path):
+            os.unlink(temp_path)
+        raise
 
 
 def parse_json3(path):
@@ -95,87 +101,65 @@ def align_zh(en_sents, zh_cues):
     out = []
     for s in en_sents:
         span = s["end"] - s["start"]
-        parts = [z["text"] for z in zh_cues
-                 if span > 0 and min(s["end"], z["end"]) - max(s["start"], z["start"]) > 0.2 * span]
+        parts = []
+        for z in zh_cues:
+            zh_span = max(0.01, z["end"] - z["start"])
+            overlap = min(s["end"], z["end"]) - max(s["start"], z["start"])
+            if span > 0 and overlap > 0.2 * min(span, zh_span):
+                if not parts or z["text"] != parts[-1]:
+                    parts.append(z["text"])
         out.append(" ".join(parts).strip())
     return out
 
 
 def translate_batch(texts, cache):
-    """批量机译，带缓存。逐条查缓存，未命中按批请求"""
-    result = [""] * len(texts)
-    todo = []
-    for i, t in enumerate(texts):
-        key = hashlib.md5(t.encode()).hexdigest()
-        if t in cache:
-            result[i] = cache[t]
-        else:
-            todo.append((i, t))
-    if todo:
-        tr = get_translator()
-        BATCH = 25
-        for b in range(0, len(todo), BATCH):
-            chunk = todo[b:b + BATCH]
-            joined = "\n".join(t for _, t in chunk)
-            # 接口限 5000 字符，超限逐条翻；单条超限按 400 词切块
-            pieces = [(i, t) for i, t in chunk] if len(joined) > 4800 else None
-            try:
-                if pieces:
-                    for i, t in pieces:
-                        result[i] = translate_long(tr, t)
-                        cache[t] = result[i]
-                        time.sleep(0.3)
-                else:
-                    out = tr.translate(joined)
-                    lines = out.split("\n")
-                    if len(lines) != len(chunk):  # 行数不一致则逐条重试
-                        for i, t in chunk:
-                            try:
-                                result[i] = tr.translate(t)
-                            except Exception:
-                                result[i] = ""
-                            cache[t] = result[i]
-                            time.sleep(0.25)
-                    else:
-                        for (i, t), line in zip(chunk, lines):
-                            result[i] = line.strip()
-                            cache[t] = line.strip()
-                time.sleep(0.5)
-            except Exception as e:
-                print(f"    translate error: {e}", flush=True)
-                time.sleep(2)
+    """只缓存有效翻译；任一空值都会阻断构建。"""
+    normalized_cache = {key: str(value).strip() for key, value in cache.items() if str(value).strip()}
+    cache.clear()
+    cache.update(normalized_cache)
+    missing = list(dict.fromkeys(text for text in texts if text not in cache))
+    if missing:
+        translated = OfflineTranslator().translate(missing)
+        if len(translated) != len(missing) or any(not value.strip() for value in translated):
+            raise TranslationError("翻译结果存在空值或数量错位")
+        cache.update(zip(missing, translated))
         save_cache(cache)
+    result = [cache.get(text, "").strip() for text in texts]
+    if any(not value for value in result):
+        raise TranslationError("翻译完成后仍存在空值")
     return result
 
 
-def translate_long(tr, text: str) -> str:
-    """超长句按约 300 词切块翻译后拼接"""
-    words = text.split()
-    if len(words) <= 300:
-        try:
-            return tr.translate(text) or ""
-        except Exception:
-            return ""
-    parts = []
-    for i in range(0, len(words), 300):
-        chunk = " ".join(words[i:i + 300])
-        try:
-            parts.append(tr.translate(chunk) or "")
-        except Exception:
-            parts.append("")
-        time.sleep(0.3)
-    return "".join(parts)
-
-
 def find_file(slug, want_lang):
-    for f in os.listdir(SUBS_DIR):
+    candidates = []
+    priorities = (
+        [".zh-Hans.", ".zh-CN.", ".zh.", ".zh-Hant.", ".zh-TW."]
+        if want_lang == "zh"
+        else [".en.", ".en-US.", ".en-GB.", ".en-orig."]
+    )
+    for f in sorted(os.listdir(SUBS_DIR)):
         if not (f.startswith(slug + ".") and f.endswith(".json3")):
             continue
-        if want_lang == "zh" and ("-Hans" in f or "zh-CN" in f or "zh-Hant" in f or ".zh." in f):
-            return os.path.join(SUBS_DIR, f)
-        if want_lang == "en" and (".en." in f or ".en-US." in f or ".en-GB." in f or ".en-orig." in f):
-            return os.path.join(SUBS_DIR, f)
-    return None
+        for rank, marker in enumerate(priorities):
+            if marker in f:
+                candidates.append((rank, f))
+                break
+    return os.path.join(SUBS_DIR, min(candidates)[1]) if candidates else None
+
+
+def probe_audio_duration(slug):
+    path = os.path.join(ROOT, "public", "audio", slug + ".m4a")
+    if not os.path.exists(path):
+        raise RuntimeError(f"缺少音频：{path}")
+    result = subprocess.run(
+        [FFMPEG, "-hide_banner", "-i", path], capture_output=True, text=True,
+        encoding="utf-8", errors="replace", timeout=30,
+    )
+    match = DURATION_RE.search(result.stderr)
+    if not match:
+        raise RuntimeError(f"无法读取音频时长：{path}")
+    hours, minutes, seconds = match.groups()
+    return round(int(hours) * 3600 + int(minutes) * 60 + float(seconds), 2)
 
 
 def yt_thumb(url):
@@ -186,7 +170,7 @@ def yt_thumb(url):
     return ""
 
 
-def build_entry(resolved_map, slug, cache, no_translate):
+def build_entry(resolved_map, slug, cache):
     en_path = find_file(slug, "en")
     if not en_path:
         return None
@@ -196,7 +180,7 @@ def build_entry(resolved_map, slug, cache, no_translate):
 
     # —— 音源/文字稿一致性校验：字幕覆盖率须 ≥ 85%（尾部掌声/问答无字幕属正常，
     #    更大缺口则判定为错配视频，拒绝入库）——
-    expect = (resolved_map.get(slug) or {}).get("duration") or meta.get("duration") or 0
+    expect = probe_audio_duration(slug)
     subs_end = en_sents[-1]["end"] if en_sents else 0
     if expect and subs_end and subs_end < expect * 0.85:
         print(f"    !! MISMATCH subs_end={subs_end:.0f}s expect={expect:.0f}s —— 跳过，需人工核对视频", flush=True)
@@ -211,13 +195,17 @@ def build_entry(resolved_map, slug, cache, no_translate):
             zh_list = []  # 中文字幕覆盖太少，弃用
     if not zh_list:
         zh_source = "mt"
-        if no_translate:
-            zh_list = [""] * len(en_sents)
-        else:
-            zh_list = translate_batch([s["text"] for s in en_sents], cache)
+        zh_list = translate_batch([s["text"] for s in en_sents], cache)
+    elif any(not value.strip() for value in zh_list):
+        missing_indexes = [index for index, value in enumerate(zh_list) if not value.strip()]
+        missing_values = translate_batch([en_sents[index]["text"] for index in missing_indexes], cache)
+        for index, value in zip(missing_indexes, missing_values):
+            zh_list[index] = value
+        zh_source = "mixed"
 
     r = resolved_map.get(slug, {})
-    cover = meta.get("thumbnail", "") or yt_thumb(r.get("url", ""))
+    local_cover = os.path.join(ROOT, "public", "covers", slug + ".jpg")
+    cover = f"/covers/{slug}.jpg" if os.path.exists(local_cover) else (meta.get("thumbnail", "") or yt_thumb(r.get("url", "")))
     sentences = [{"i": idx, "start": s["start"], "end": s["end"],
                   "en": s["text"], "zh": zh_list[idx] if idx < len(zh_list) else ""}
                  for idx, s in enumerate(en_sents)]
@@ -228,10 +216,14 @@ def build_entry(resolved_map, slug, cache, no_translate):
         "category": r.get("category", "ted"),
         "school": r.get("school"),
         "year": r.get("year"),
-        "duration": round(en_sents[-1]["end"]) if en_sents else 0,
+        "duration": expect,
         "cover": cover,
         "views": r.get("views"),
-        "audioUrl": f"audio/{slug}.m4a",
+        "sourceUrl": r.get("url"),
+        "audioUrls": {
+            "standard": f"{MEDIA_BASE_URL}/v1/standard/{slug}.m4a",
+            "high": f"{MEDIA_BASE_URL}/v1/high/{slug}.m4a",
+        },
         "zhSource": zh_source,
         "sentences": sentences,
     }
@@ -239,13 +231,12 @@ def build_entry(resolved_map, slug, cache, no_translate):
     with open(out, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
     return {k: data[k] for k in
-            ("slug", "title", "speaker", "category", "school", "year", "duration", "cover", "views", "audioUrl", "zhSource")}
+            ("slug", "title", "speaker", "category", "school", "year", "duration", "cover", "views", "audioUrls", "zhSource")}
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--no-translate", action="store_true")
     ap.add_argument("--force", action="store_true", help="忽略已有产物全量重生成")
     args = ap.parse_args()
 
@@ -256,31 +247,38 @@ def main():
     # 以抓取状态表中字幕成功的条目为准，且确实存在英文字幕文件
     slugs = sorted(s for s, v in state.items()
                    if v.get("subs") and find_file(s, "en"))
-    if not args.force:
-        before = len(slugs)
-        slugs = [s for s in slugs if not os.path.exists(os.path.join(DATA_DIR, s + ".json"))]
-        print(f"incremental: {before - len(slugs)} already built, {len(slugs)} to do", flush=True)
     if args.limit:
         slugs = slugs[:args.limit]
     cache = load_cache()
 
-    # 已有产物也纳入 manifest（增量模式）
     manifest = []
-    if not args.force:
-        for f in os.listdir(DATA_DIR):
-            if f.endswith(".json") and f != "manifest.json":
-                try:
-                    d = json.load(open(os.path.join(DATA_DIR, f), encoding="utf-8"))
-                    manifest.append({k: d.get(k) for k in
-                                     ("slug", "title", "speaker", "category", "school", "year",
-                                      "duration", "cover", "views", "audioUrl", "zhSource")})
-                except Exception:
-                    pass
+    failures = []
     for i, slug in enumerate(slugs, 1):
         print(f"[{i}/{len(slugs)}] {slug}", flush=True)
-        entry = build_entry(resolved_map, slug, cache, args.no_translate)
-        if entry:
+        try:
+            path = os.path.join(DATA_DIR, slug + ".json")
+            if os.path.exists(path) and not args.force:
+                d = json.load(open(path, encoding="utf-8"))
+                source_changed = d.get("sourceUrl") != (resolved_map.get(slug) or {}).get("url")
+                if source_changed or not d.get("sentences") or any(not str(s.get("zh", "")).strip() for s in d["sentences"]):
+                    entry = build_entry(resolved_map, slug, cache)
+                else:
+                    entry = {k: d.get(k) for k in
+                             ("slug", "title", "speaker", "category", "school", "year",
+                              "duration", "cover", "views", "audioUrls", "zhSource")}
+            else:
+                entry = build_entry(resolved_map, slug, cache)
+            if not entry:
+                raise RuntimeError("未生成数据")
             manifest.append(entry)
+        except Exception as error:
+            failures.append((slug, str(error)))
+            print(f"    FAILED: {error}", flush=True)
+    if failures:
+        print("\n构建失败，拒绝写入 manifest：")
+        for slug, error in failures:
+            print(f"  {slug}: {error}")
+        raise SystemExit(1)
     # 排序：TED 按播放量，毕业演讲在后
     manifest.sort(key=lambda e: (0 if e["category"] == "ted" else 1, -(e.get("views") or 0)))
     with open(os.path.join(DATA_DIR, "manifest.json"), "w", encoding="utf-8") as f:

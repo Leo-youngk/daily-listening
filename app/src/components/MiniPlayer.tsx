@@ -1,4 +1,4 @@
-import { usePlayer } from '../store/PlayerContext'
+import { usePlayer, usePlayerClock } from '../store/PlayerContext'
 import { navigate } from '../hooks/useHashRoute'
 import { fmtTime } from '../lib/format'
 import { PauseIcon, PlayIcon } from 'lucide-react'
@@ -7,7 +7,8 @@ import { Progress } from '@/components/ui/progress'
 import Cover from './Cover'
 
 export default function MiniPlayer() {
-  const { slug, talk, playing, toggle, time, duration } = usePlayer()
+  const { slug, talk, playing, toggle } = usePlayer()
+  const { time, duration } = usePlayerClock()
   if (!slug || !talk) return null
 
   const pct = duration ? (time / duration) * 100 : 0

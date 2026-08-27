@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { usePlayer } from '../store/PlayerContext'
+import { useCatalog } from '../store/PlayerContext'
 import { loadFavorites, loadProgress, loadStats, loadVocab, streakDays, saveSettings, loadSettings } from '../lib/storage'
 import { fmtDuration } from '../lib/format'
 import { Button } from '@/components/ui/button'
@@ -8,9 +8,10 @@ import TalkCard from '../components/TalkCard'
 import type { Settings } from '../lib/types'
 
 export default function Me() {
-  const { manifest } = usePlayer()
+  const { manifest } = useCatalog()
   const [, force] = useState(0)
   const [settings, setSettings] = useState<Settings>(loadSettings)
+  const [cacheStatus, setCacheStatus] = useState<'idle' | 'clearing' | 'done' | 'error'>('idle')
 
   useEffect(() => {
     const f = () => force(x => x + 1)
@@ -93,22 +94,31 @@ export default function Me() {
           </div>
           <Separator />
           <div className="flex items-center justify-between px-4 py-3">
-            <span className="text-sm">离线缓存</span>
+            <span className="text-sm">资源缓存</span>
             <Button
               variant="secondary"
               size="xs"
               className="rounded-full px-3 text-muted-foreground"
-              onClick={() => {
-                caches.keys().then(keys => keys.forEach(k => caches.delete(k)))
-                alert('已清除离线缓存')
+              disabled={cacheStatus === 'clearing'}
+              onClick={async () => {
+                setCacheStatus('clearing')
+                try {
+                  if ('caches' in window) {
+                    const keys = await caches.keys()
+                    await Promise.all(keys.map(key => caches.delete(key)))
+                  }
+                  setCacheStatus('done')
+                } catch {
+                  setCacheStatus('error')
+                }
               }}
             >
-              清除缓存
+              {cacheStatus === 'clearing' ? '清除中…' : cacheStatus === 'done' ? '已清除' : cacheStatus === 'error' ? '重试' : '清除缓存'}
             </Button>
           </div>
         </div>
         <p className="mt-3 text-center text-[11px] leading-relaxed text-muted-foreground">
-          每日听力 · TED 版<br />素材来自 TED 与公开毕业演讲，仅供个人学习
+          字幕、封面与词典会自动缓存；音频在线播放<br />素材来自 TED 与公开毕业演讲，仅供个人学习
         </p>
       </section>
     </div>

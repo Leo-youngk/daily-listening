@@ -5,6 +5,7 @@ import { navigate } from '../hooks/useHashRoute'
 import { HeartIcon } from 'lucide-react'
 import { Progress } from '@/components/ui/progress'
 import Cover from './Cover'
+import { usePlayerActions } from '../store/PlayerContext'
 
 interface Props {
   item: ManifestItem
@@ -12,6 +13,7 @@ interface Props {
 }
 
 export default function TalkCard({ item, showProgress = true }: Props) {
+  const { playTalk } = usePlayerActions()
   const progress = loadProgress()[item.slug]
   const fav = loadFavorites().includes(item.slug)
   const pct = progress && item.duration ? Math.min(100, (progress.pos / item.duration) * 100) : 0
@@ -21,7 +23,10 @@ export default function TalkCard({ item, showProgress = true }: Props) {
 
   return (
     <button
-      onClick={() => navigate(`/talk/${item.slug}`)}
+      onClick={() => {
+        playTalk(item.slug)
+        navigate(`/talk/${item.slug}`)
+      }}
       className="flex w-full items-center gap-3 rounded-xl bg-card p-3 text-left shadow-xs ring-1 ring-foreground/5 transition active:scale-[0.99]"
     >
       {item.cover ? (

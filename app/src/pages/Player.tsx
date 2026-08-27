@@ -1,5 +1,5 @@
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { usePlayer } from '../store/PlayerContext'
+import { usePlayer, usePlayerClock } from '../store/PlayerContext'
 import { loadSettings, saveSettings, toggleFavorite, isFavorite } from '../lib/storage'
 import type { Sentence, Settings } from '../lib/types'
 import { fmtTime } from '../lib/format'
@@ -13,6 +13,7 @@ import { Switch } from '@/components/ui/switch'
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
 import DictPanel from '../components/DictPanel'
+import { navigate } from '../hooks/useHashRoute'
 
 const WORD_RE = /([A-Za-z][A-Za-z'’-]*)/g
 
@@ -91,6 +92,7 @@ const RATES = [0.5, 0.6, 0.7, 0.8, 1, 1.2, 1.5, 2]
 
 export default function Player({ slug }: { slug: string }) {
   const p = usePlayer()
+  const clock = usePlayerClock()
   const [settings, setSettings] = useState(loadSettings)
   const [dict, setDict] = useState<{ word: string; source: string } | null>(null)
   const [showSettings, setShowSettings] = useState(false)
@@ -111,9 +113,9 @@ export default function Player({ slug }: { slug: string }) {
 
   // 自动滚动
   useEffect(() => {
-    if (!settings.autoScroll || p.currentIdx < 0) return
-    rowRefs.current[p.currentIdx]?.scrollIntoView({ block: 'center', behavior: 'smooth' })
-  }, [p.currentIdx, settings.autoScroll])
+    if (!settings.autoScroll || clock.currentIdx < 0) return
+    rowRefs.current[clock.currentIdx]?.scrollIntoView({ block: 'center', behavior: 'smooth' })
+  }, [clock.currentIdx, settings.autoScroll])
 
   const updateSettings = (patch: Partial<Settings>) => {
     setSettings(s => {
@@ -134,7 +136,10 @@ export default function Player({ slug }: { slug: string }) {
     <div className="mx-auto flex h-full max-w-lg flex-col">
       {/* 顶栏 */}
       <header className="glass safe-top z-10 flex items-center gap-1 border-b border-line px-2 py-2">
-        <Button variant="ghost" size="icon" onClick={() => history.back()} aria-label="返回">
+        <Button variant="ghost" size="icon" onClick={() => {
+          if (history.length > 1) history.back()
+          else navigate('/library')
+        }} aria-label="返回">
           <ChevronLeftIcon className="size-5" />
         </Button>
         <div className="min-w-0 flex-1">
@@ -154,20 +159,28 @@ export default function Player({ slug }: { slug: string }) {
       {/* 字幕流 */}
       <div ref={scrollBoxRef} className="min-h-0 flex-1 overflow-y-auto no-scrollbar px-3 py-3">
         {p.loading && <p className="py-10 text-center text-sm text-muted-foreground">正在加载音频与字幕…</p>}
+        {p.error && (
+          <div className="mb-3 rounded-xl bg-destructive/10 px-3 py-3 text-center text-sm text-destructive">
+            <p>{p.error}</p>
+            <Button variant="secondary" size="sm" className="mt-2 rounded-full" onClick={p.retry}>重新加载</Button>
+          </div>
+        )}
         {p.buffering && !p.loading && (
           <div className="mb-2 flex items-center justify-center gap-2 rounded-lg bg-primary/8 px-3 py-1.5 text-[11px] text-primary">
             <div className="size-3 animate-spin rounded-full border-2 border-primary/30 border-t-primary" />
             缓冲中…
           </div>
         )}
-        {!p.loading && talk && talk.zhSource === 'mt' && (
-          <p className="mb-2 rounded-lg bg-primary/8 px-3 py-1.5 text-[11px] text-muted-foreground">本篇中文为机器翻译，仅供参考</p>
+        {!p.loading && talk && talk.zhSource !== 'official' && (
+          <p className="mb-2 rounded-lg bg-primary/8 px-3 py-1.5 text-[11px] text-muted-foreground">
+            {talk.zhSource === 'mixed' ? '本篇包含官方中文与机器补译，仅供参考' : '本篇中文为机器翻译，仅供参考'}
+          </p>
         )}
         <div className="space-y-1 pb-6">
           {sentences.map((s, i) => {
-            const isActive = i === p.currentIdx
+            const isActive = i === clock.currentIdx
             const progress = isActive && s.end > s.start
-              ? Math.max(0, Math.min(1, (p.time - s.start) / (s.end - s.start)))
+              ? Math.max(0, Math.min(1, (clock.time - s.start) / (s.end - s.start)))
               : undefined
             return (
               <div key={s.i} ref={el => { rowRefs.current[i] = el }}>
@@ -189,17 +202,17 @@ export default function Player({ slug }: { slug: string }) {
       {/* 播放条 */}
       <div className="glass safe-bottom border-t border-line px-4 pt-3">
         <div className="flex items-center gap-2.5 text-[11px] text-muted-foreground tabular-nums">
-          <span className="w-8 text-right">{fmtTime(p.time)}</span>
+          <span className="w-8 text-right">{fmtTime(clock.time)}</span>
           <Slider
             className="flex-1"
             min={0}
-            max={p.duration || 100}
+            max={clock.duration || 100}
             step={0.5}
-            value={[p.time]}
+            value={[clock.time]}
             onValueChange={v => p.seek(v[0])}
             aria-label="播放进度"
           />
-          <span className="w-8">{fmtTime(p.duration)}</span>
+          <span className="w-8">{fmtTime(clock.duration)}</span>
         </div>
         <div className="flex items-center justify-between py-2">
           <Button
@@ -253,17 +266,48 @@ export default function Player({ slug }: { slug: string }) {
           <div className="space-y-4 px-1 pt-2">
             <div>
               <p className="mb-2 text-sm text-muted-foreground">播放速度</p>
-              <div className="flex gap-2">
+              <div className="grid grid-cols-4 gap-2">
                 {RATES.map(r => (
                   <Button
                     key={r}
                     variant={settings.rate === r ? 'default' : 'secondary'}
                     onClick={() => updateSettings({ rate: r })}
-                    className="h-9 flex-1 rounded-lg"
+                    className="h-9 rounded-lg"
                   >
                     {r}x
                   </Button>
                 ))}
+              </div>
+            </div>
+            <div>
+              <p className="mb-2 text-sm text-muted-foreground">音频质量</p>
+              <div className="grid grid-cols-2 gap-2">
+                <Button
+                  variant={p.quality === 'standard' ? 'default' : 'secondary'}
+                  onClick={() => {
+                    updateSettings({ audioQuality: 'standard' })
+                    p.setQuality('standard')
+                  }}
+                  className="h-auto rounded-xl py-2"
+                >
+                  <span className="flex flex-col">
+                    <span>标准音质</span>
+                    <span className="text-[10px] opacity-75">72 kbps · 起播更快</span>
+                  </span>
+                </Button>
+                <Button
+                  variant={p.quality === 'high' ? 'default' : 'secondary'}
+                  onClick={() => {
+                    updateSettings({ audioQuality: 'high' })
+                    p.setQuality('high')
+                  }}
+                  className="h-auto rounded-xl py-2"
+                >
+                  <span className="flex flex-col">
+                    <span>高音质</span>
+                    <span className="text-[10px] opacity-75">128 kbps · 更清晰</span>
+                  </span>
+                </Button>
               </div>
             </div>
             <div className="flex items-center justify-between">

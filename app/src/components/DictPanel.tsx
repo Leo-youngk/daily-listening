@@ -4,6 +4,7 @@ import { Volume2Icon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet'
+import { fetchJson } from '../lib/http'
 
 interface DictEntry {
   word: string
@@ -17,12 +18,17 @@ interface DictResult {
 }
 
 /** 查词：dictionaryapi.dev 英英释义 + MyMemory 中文简译，双通道提高可用性 */
-async function lookup(word: string): Promise<DictResult> {
+async function lookup(word: string, signal: AbortSignal): Promise<DictResult> {
   const [enRes, zhRes] = await Promise.allSettled([
-    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`)
-      .then(r => { if (!r.ok) throw new Error('nf'); return r.json() }),
-    fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|zh-CN`)
-      .then(r => r.json())
+    fetchJson<DictEntry[]>(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`, {
+      signal,
+      timeoutMs: 8_000,
+      retries: 1,
+    }),
+    fetchJson<{ responseData?: { translatedText?: string } }>(
+      `https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|zh-CN`,
+      { signal, timeoutMs: 8_000, retries: 1 },
+    )
       .then(d => (d?.responseData?.translatedText as string) || ''),
   ])
   const entry = enRes.status === 'fulfilled' ? (enRes.value as DictEntry[])[0] ?? null : null
@@ -41,14 +47,18 @@ export default function DictPanel({ word, source, onClose }: {
   const [added, setAdded] = useState(false)
 
   useEffect(() => {
+    const controller = new AbortController()
     setState('loading')
     setData(null)
-    lookup(word)
+    setAdded(false)
+    lookup(word, controller.signal)
       .then(r => { setData(r); setState('ok') })
-      .catch(() => setState('error'))
+      .catch(() => { if (!controller.signal.aborted) setState('error') })
+    return () => controller.abort()
   }, [word])
 
   const speak = () => {
+    speechSynthesis.cancel()
     const u = new SpeechSynthesisUtterance(word)
     u.lang = 'en-US'
     speechSynthesis.speak(u)

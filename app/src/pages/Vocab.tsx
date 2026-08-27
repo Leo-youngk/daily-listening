@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { loadVocab, removeVocab, updateVocab } from '../lib/storage'
 import type { VocabItem } from '../lib/types'
 import { BookOpenIcon } from 'lucide-react'
@@ -50,11 +50,9 @@ function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void 
 }
 
 export default function Vocab() {
-  const [items, setItems] = useState<VocabItem[]>([])
+  const [items, setItems] = useState<VocabItem[]>(loadVocab)
   const [review, setReview] = useState(false)
   const [, force] = useState(0)
-
-  useEffect(() => { setItems(loadVocab()) }, [])
 
   const refresh = () => { setItems(loadVocab()); force(x => x + 1) }
 

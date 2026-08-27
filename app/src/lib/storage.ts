@@ -1,5 +1,6 @@
 import type { ProgressMap, Settings, VocabItem } from './types'
 import { DEFAULT_SETTINGS } from './types'
+import { localDateKey } from './date'
 
 const K = {
   progress: 'dtl.progress',
@@ -76,7 +77,7 @@ export function loadStats(): Stats {
 export function recordListen(seconds: number) {
   const s = loadStats()
   s.seconds += seconds
-  const today = new Date().toISOString().slice(0, 10)
+  const today = localDateKey()
   if (!s.days.includes(today)) s.days.push(today)
   write(K.stats, s)
 }
@@ -87,8 +88,8 @@ export function streakDays(): number {
   let streak = 0
   const d = new Date()
   // 今天没打卡则从昨天算起
-  if (!set.has(d.toISOString().slice(0, 10))) d.setDate(d.getDate() - 1)
-  while (set.has(d.toISOString().slice(0, 10))) {
+  if (!set.has(localDateKey(d))) d.setDate(d.getDate() - 1)
+  while (set.has(localDateKey(d))) {
     streak++
     d.setDate(d.getDate() - 1)
   }

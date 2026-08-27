@@ -33,38 +33,41 @@ export default defineConfig({
         runtimeCaching: [
           {
             urlPattern: /\/data\/.*\.json$/,
-            handler: 'CacheFirst',
+            handler: 'NetworkFirst',
             options: {
-              cacheName: 'data-cache',
+              cacheName: 'data-cache-v3',
+              networkTimeoutSeconds: 5,
               cacheableResponse: { statuses: [200] },
-              expiration: { maxEntries: 300 },
+              expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 14 },
             },
           },
           {
             urlPattern: /\/covers\/.*\.(jpg|jpeg|webp)$/,
             handler: 'CacheFirst',
             options: {
-              cacheName: 'cover-cache',
+              cacheName: 'cover-cache-v2',
               cacheableResponse: { statuses: [200] },
               expiration: { maxEntries: 250, maxAgeSeconds: 60 * 60 * 24 * 180 },
             },
           },
           {
             urlPattern: /^https:\/\/api\.dictionaryapi\.dev\/.*/,
-            handler: 'CacheFirst',
+            handler: 'NetworkFirst',
             options: {
-              cacheName: 'dict-cache',
+              cacheName: 'dict-cache-v2',
+              networkTimeoutSeconds: 4,
               cacheableResponse: { statuses: [200] },
-              expiration: { maxEntries: 200 },
+              expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 30 },
             },
           },
           {
             urlPattern: /^https:\/\/api\.mymemory\.translated\.net\/.*/,
-            handler: 'CacheFirst',
+            handler: 'NetworkFirst',
             options: {
-              cacheName: 'gloss-cache',
+              cacheName: 'gloss-cache-v2',
+              networkTimeoutSeconds: 4,
               cacheableResponse: { statuses: [200] },
-              expiration: { maxEntries: 200 },
+              expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 30 },
             },
           },
         ],

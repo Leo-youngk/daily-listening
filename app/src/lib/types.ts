@@ -8,8 +8,8 @@ export interface ManifestItem {
   duration: number
   cover: string
   views?: number | null
-  audioUrl: string
-  zhSource: 'official' | 'mt'
+  audioUrls: Record<AudioQuality, string>
+  zhSource: 'official' | 'mt' | 'mixed'
 }
 
 export interface Sentence {
@@ -43,13 +43,17 @@ export interface Settings {
   fontScale: number
   hideZh: boolean
   autoScroll: boolean
+  audioQuality: AudioQuality
   theme: 'auto' | 'light' | 'dark'
 }
+
+export type AudioQuality = 'standard' | 'high'
 
 export const DEFAULT_SETTINGS: Settings = {
   rate: 1,
   fontScale: 1,
   hideZh: false,
   autoScroll: true,
+  audioQuality: 'standard',
   theme: 'auto',
 }

@@ -6,12 +6,17 @@ app/.npm-cache/
 .env*.local
 __pycache__/
 *.py[cod]
+.git-data/
+scripts/.vendor/
+scripts/.pip-cache/
+scripts/.models/
 
 # 大体积素材产物（可用管线脚本重新生成）
 public/audio/*.m4a
 public/audio/*.webm
 public/subs/
 media-build/
+scripts/corpus/pre_trim_backup/
 
 # 运行产物与缓存
 scripts/corpus/fetch_state.json
@@ -22,3 +27,4 @@ scripts/corpus/ted_main.csv
 *.log
 *.tgz
 .DS_Store
+.wrangler/

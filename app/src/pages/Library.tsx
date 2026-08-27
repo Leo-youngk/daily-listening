@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { usePlayer } from '../store/PlayerContext'
+import { useCatalog } from '../store/PlayerContext'
 import { loadProgress } from '../lib/storage'
 import { SearchIcon } from 'lucide-react'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
@@ -26,7 +26,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
 }
 
 export default function Library() {
-  const { manifest, manifestReady } = usePlayer()
+  const { manifest, manifestReady, manifestError, reloadManifest } = useCatalog()
   const [tab, setTab] = useState<Tab>('ted')
   const [sort, setSort] = useState<Sort>('hot')
   const [filter, setFilter] = useState<Filter>('all')
@@ -51,6 +51,14 @@ export default function Library() {
 
   if (!manifestReady) {
     return <div className="flex h-full items-center justify-center text-sm text-muted-foreground">加载语料中…</div>
+  }
+  if (manifestError) {
+    return (
+      <div className="flex h-full flex-col items-center justify-center gap-3 px-6 text-center">
+        <p className="text-sm text-destructive">{manifestError}</p>
+        <button className="text-sm font-semibold text-primary" onClick={reloadManifest}>重新加载</button>
+      </div>
+    )
   }
 
   return (
