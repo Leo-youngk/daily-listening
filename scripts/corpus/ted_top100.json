@@ -1,0 +1,902 @@
+[
+  {
+    "slug": "ken_robinson_says_schools_kill_creativity",
+    "title": "Do schools kill creativity?",
+    "speaker": "Ken Robinson",
+    "duration": 1164,
+    "views": 47227110,
+    "ted_url": "https://www.ted.com/talks/ken_robinson_says_schools_kill_creativity",
+    "category": "ted"
+  },
+  {
+    "slug": "amy_cuddy_your_body_language_shapes_who_you_are",
+    "title": "Your body language may shape who you are",
+    "speaker": "Amy Cuddy",
+    "duration": 1262,
+    "views": 43155405,
+    "ted_url": "https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are",
+    "category": "ted"
+  },
+  {
+    "slug": "simon_sinek_how_great_leaders_inspire_action",
+    "title": "How great leaders inspire action",
+    "speaker": "Simon Sinek",
+    "duration": 1084,
+    "views": 34309432,
+    "ted_url": "https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action",
+    "category": "ted"
+  },
+  {
+    "slug": "brene_brown_on_vulnerability",
+    "title": "The power of vulnerability",
+    "speaker": "Brené Brown",
+    "duration": 1219,
+    "views": 31168150,
+    "ted_url": "https://www.ted.com/talks/brene_brown_on_vulnerability",
+    "category": "ted"
+  },
+  {
+    "slug": "mary_roach_10_things_you_didn_t_know_about_orgasm",
+    "title": "10 things you didn't know about orgasm",
+    "speaker": "Mary Roach",
+    "duration": 1003,
+    "views": 22270883,
+    "ted_url": "https://www.ted.com/talks/mary_roach_10_things_you_didn_t_know_about_orgasm",
+    "category": "ted"
+  },
+  {
+    "slug": "julian_treasure_how_to_speak_so_that_people_want_to_listen",
+    "title": "How to speak so that people want to listen",
+    "speaker": "Julian Treasure",
+    "duration": 598,
+    "views": 21594632,
+    "ted_url": "https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen",
+    "category": "ted"
+  },
+  {
+    "slug": "jill_bolte_taylor_s_powerful_stroke_of_insight",
+    "title": "My stroke of insight",
+    "speaker": "Jill Bolte Taylor",
+    "duration": 1099,
+    "views": 21190883,
+    "ted_url": "https://www.ted.com/talks/jill_bolte_taylor_s_powerful_stroke_of_insight",
+    "category": "ted"
+  },
+  {
+    "slug": "tony_robbins_asks_why_we_do_what_we_do",
+    "title": "Why we do what we do",
+    "speaker": "Tony Robbins",
+    "duration": 1305,
+    "views": 20685401,
+    "ted_url": "https://www.ted.com/talks/tony_robbins_asks_why_we_do_what_we_do",
+    "category": "ted"
+  },
+  {
+    "slug": "james_veitch_this_is_what_happens_when_you_reply_to_spam_email",
+    "title": "This is what happens when you reply to spam email",
+    "speaker": "James Veitch",
+    "duration": 588,
+    "views": 20475972,
+    "ted_url": "https://www.ted.com/talks/james_veitch_this_is_what_happens_when_you_reply_to_spam_email",
+    "category": "ted"
+  },
+  {
+    "slug": "cameron_russell_looks_aren_t_everything_believe_me_i_m_a_model",
+    "title": "Looks aren't everything. Believe me, I'm a model.",
+    "speaker": "Cameron Russell",
+    "duration": 577,
+    "views": 19787465,
+    "ted_url": "https://www.ted.com/talks/cameron_russell_looks_aren_t_everything_believe_me_i_m_a_model",
+    "category": "ted"
+  },
+  {
+    "slug": "dan_pink_on_motivation",
+    "title": "The puzzle of motivation",
+    "speaker": "Dan Pink",
+    "duration": 1116,
+    "views": 18830983,
+    "ted_url": "https://www.ted.com/talks/dan_pink_on_motivation",
+    "category": "ted"
+  },
+  {
+    "slug": "susan_cain_the_power_of_introverts",
+    "title": "The power of introverts",
+    "speaker": "Susan Cain",
+    "duration": 1144,
+    "views": 17629275,
+    "ted_url": "https://www.ted.com/talks/susan_cain_the_power_of_introverts",
+    "category": "ted"
+  },
+  {
+    "slug": "pamela_meyer_how_to_spot_a_liar",
+    "title": "How to spot a liar",
+    "speaker": "Pamela Meyer",
+    "duration": 1130,
+    "views": 16861578,
+    "ted_url": "https://www.ted.com/talks/pamela_meyer_how_to_spot_a_liar",
+    "category": "ted"
+  },
+  {
+    "slug": "robert_waldinger_what_makes_a_good_life_lessons_from_the_longest_study_on_happiness",
+    "title": "What makes a good life? Lessons from the longest study on happiness",
+    "speaker": "Robert Waldinger",
+    "duration": 766,
+    "views": 16601927,
+    "ted_url": "https://www.ted.com/talks/robert_waldinger_what_makes_a_good_life_lessons_from_the_longest_study_on_happiness",
+    "category": "ted"
+  },
+  {
+    "slug": "shawn_achor_the_happy_secret_to_better_work",
+    "title": "The happy secret to better work",
+    "speaker": "Shawn Achor",
+    "duration": 740,
+    "views": 16209727,
+    "ted_url": "https://www.ted.com/talks/shawn_achor_the_happy_secret_to_better_work",
+    "category": "ted"
+  },
+  {
+    "slug": "pranav_mistry_the_thrilling_potential_of_sixthsense_technology",
+    "title": "The thrilling potential of SixthSense technology",
+    "speaker": "Pranav Mistry",
+    "duration": 830,
+    "views": 16097077,
+    "ted_url": "https://www.ted.com/talks/pranav_mistry_the_thrilling_potential_of_sixthsense_technology",
+    "category": "ted"
+  },
+  {
+    "slug": "david_blaine_how_i_held_my_breath_for_17_min",
+    "title": "How I held my breath for 17 minutes",
+    "speaker": "David Blaine",
+    "duration": 1219,
+    "views": 15601385,
+    "ted_url": "https://www.ted.com/talks/david_blaine_how_i_held_my_breath_for_17_min",
+    "category": "ted"
+  },
+  {
+    "slug": "apollo_robbins_the_art_of_misdirection",
+    "title": "The art of misdirection",
+    "speaker": "Apollo Robbins",
+    "duration": 527,
+    "views": 15283242,
+    "ted_url": "https://www.ted.com/talks/apollo_robbins_the_art_of_misdirection",
+    "category": "ted"
+  },
+  {
+    "slug": "tim_urban_inside_the_mind_of_a_master_procrastinator",
+    "title": "Inside the mind of a master procrastinator",
+    "speaker": "Tim Urban",
+    "duration": 843,
+    "views": 14745406,
+    "ted_url": "https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator",
+    "category": "ted"
+  },
+  {
+    "slug": "dan_gilbert_asks_why_are_we_happy",
+    "title": "The surprising science of happiness",
+    "speaker": "Dan Gilbert",
+    "duration": 1276,
+    "views": 14689301,
+    "ted_url": "https://www.ted.com/talks/dan_gilbert_asks_why_are_we_happy",
+    "category": "ted"
+  },
+  {
+    "slug": "kelly_mcgonigal_how_to_make_stress_your_friend",
+    "title": "How to make stress your friend",
+    "speaker": "Kelly McGonigal",
+    "duration": 868,
+    "views": 14566463,
+    "ted_url": "https://www.ted.com/talks/kelly_mcgonigal_how_to_make_stress_your_friend",
+    "category": "ted"
+  },
+  {
+    "slug": "david_gallo_shows_underwater_astonishments",
+    "title": "Underwater astonishments",
+    "speaker": "David Gallo",
+    "duration": 327,
+    "views": 13926113,
+    "ted_url": "https://www.ted.com/talks/david_gallo_shows_underwater_astonishments",
+    "category": "ted"
+  },
+  {
+    "slug": "keith_barry_does_brain_magic",
+    "title": "Brain magic",
+    "speaker": "Keith Barry",
+    "duration": 1189,
+    "views": 13327101,
+    "ted_url": "https://www.ted.com/talks/keith_barry_does_brain_magic",
+    "category": "ted"
+  },
+  {
+    "slug": "chimamanda_adichie_the_danger_of_a_single_story",
+    "title": "The danger of a single story",
+    "speaker": "Chimamanda Ngozi Adichie",
+    "duration": 1129,
+    "views": 13298341,
+    "ted_url": "https://www.ted.com/talks/chimamanda_adichie_the_danger_of_a_single_story",
+    "category": "ted"
+  },
+  {
+    "slug": "elizabeth_gilbert_on_genius",
+    "title": "Your elusive creative genius",
+    "speaker": "Elizabeth Gilbert",
+    "duration": 1149,
+    "views": 13155478,
+    "ted_url": "https://www.ted.com/talks/elizabeth_gilbert_on_genius",
+    "category": "ted"
+  },
+  {
+    "slug": "angela_lee_duckworth_grit_the_power_of_passion_and_perseverance",
+    "title": "Grit: The power of passion and perseverance",
+    "speaker": "Angela Lee Duckworth",
+    "duration": 372,
+    "views": 12039978,
+    "ted_url": "https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance",
+    "category": "ted"
+  },
+  {
+    "slug": "hans_rosling_shows_the_best_stats_you_ve_ever_seen",
+    "title": "The best stats you've ever seen",
+    "speaker": "Hans Rosling",
+    "duration": 1190,
+    "views": 12005869,
+    "ted_url": "https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen",
+    "category": "ted"
+  },
+  {
+    "slug": "monica_lewinsky_the_price_of_shame",
+    "title": "The price of shame",
+    "speaker": "Monica Lewinsky",
+    "duration": 1346,
+    "views": 11443190,
+    "ted_url": "https://www.ted.com/talks/monica_lewinsky_the_price_of_shame",
+    "category": "ted"
+  },
+  {
+    "slug": "richard_st_john_s_8_secrets_of_success",
+    "title": "8 secrets of success",
+    "speaker": "Richard St. John",
+    "duration": 210,
+    "views": 10841210,
+    "ted_url": "https://www.ted.com/talks/richard_st_john_s_8_secrets_of_success",
+    "category": "ted"
+  },
+  {
+    "slug": "sarah_kay_if_i_should_have_a_daughter",
+    "title": "If I should have a daughter ...",
+    "speaker": "Sarah Kay",
+    "duration": 1105,
+    "views": 10529854,
+    "ted_url": "https://www.ted.com/talks/sarah_kay_if_i_should_have_a_daughter",
+    "category": "ted"
+  },
+  {
+    "slug": "esther_perel_the_secret_to_desire_in_a_long_term_relationship",
+    "title": "The secret to desire in a long-term relationship",
+    "speaker": "Esther Perel",
+    "duration": 1150,
+    "views": 10524043,
+    "ted_url": "https://www.ted.com/talks/esther_perel_the_secret_to_desire_in_a_long_term_relationship",
+    "category": "ted"
+  },
+  {
+    "slug": "raffaello_d_andrea_the_astounding_athletic_power_of_quadcopters",
+    "title": "The astounding athletic power of quadcopters",
+    "speaker": "Raffaello D'Andrea",
+    "duration": 968,
+    "views": 10281817,
+    "ted_url": "https://www.ted.com/talks/raffaello_d_andrea_the_astounding_athletic_power_of_quadcopters",
+    "category": "ted"
+  },
+  {
+    "slug": "jon_ronson_strange_answers_to_the_psychopath_test",
+    "title": "Strange answers to the psychopath test",
+    "speaker": "Jon Ronson",
+    "duration": 1081,
+    "views": 10167161,
+    "ted_url": "https://www.ted.com/talks/jon_ronson_strange_answers_to_the_psychopath_test",
+    "category": "ted"
+  },
+  {
+    "slug": "barry_schwartz_on_the_paradox_of_choice",
+    "title": "The paradox of choice",
+    "speaker": "Barry Schwartz",
+    "duration": 1177,
+    "views": 10000702,
+    "ted_url": "https://www.ted.com/talks/barry_schwartz_on_the_paradox_of_choice",
+    "category": "ted"
+  },
+  {
+    "slug": "pattie_maes_demos_the_sixth_sense",
+    "title": "Meet the SixthSense interaction",
+    "speaker": "Pattie Maes + Pranav Mistry",
+    "duration": 522,
+    "views": 9753630,
+    "ted_url": "https://www.ted.com/talks/pattie_maes_demos_the_sixth_sense",
+    "category": "ted"
+  },
+  {
+    "slug": "hyeonseo_lee_my_escape_from_north_korea",
+    "title": "My escape from North Korea",
+    "speaker": "Hyeonseo Lee",
+    "duration": 735,
+    "views": 9551344,
+    "ted_url": "https://www.ted.com/talks/hyeonseo_lee_my_escape_from_north_korea",
+    "category": "ted"
+  },
+  {
+    "slug": "reggie_watts_disorients_you_in_the_most_entertaining_way",
+    "title": "Beats that defy boxes",
+    "speaker": "Reggie Watts",
+    "duration": 583,
+    "views": 9315931,
+    "ted_url": "https://www.ted.com/talks/reggie_watts_disorients_you_in_the_most_entertaining_way",
+    "category": "ted"
+  },
+  {
+    "slug": "benjamin_zander_on_music_and_passion",
+    "title": "The transformative power of classical music",
+    "speaker": "Benjamin Zander",
+    "duration": 1243,
+    "views": 9315483,
+    "ted_url": "https://www.ted.com/talks/benjamin_zander_on_music_and_passion",
+    "category": "ted"
+  },
+  {
+    "slug": "helen_fisher_tells_us_why_we_love_cheat",
+    "title": "Why we love, why we cheat",
+    "speaker": "Helen Fisher",
+    "duration": 1407,
+    "views": 9260764,
+    "ted_url": "https://www.ted.com/talks/helen_fisher_tells_us_why_we_love_cheat",
+    "category": "ted"
+  },
+  {
+    "slug": "daniel_levitin_how_to_stay_calm_when_you_know_you_ll_be_stressed",
+    "title": "How to stay calm when you know you'll be stressed",
+    "speaker": "Daniel Levitin",
+    "duration": 740,
+    "views": 9163813,
+    "ted_url": "https://www.ted.com/talks/daniel_levitin_how_to_stay_calm_when_you_know_you_ll_be_stressed",
+    "category": "ted"
+  },
+  {
+    "slug": "amanda_palmer_the_art_of_asking",
+    "title": "The art of asking",
+    "speaker": "Amanda Palmer",
+    "duration": 827,
+    "views": 9006600,
+    "ted_url": "https://www.ted.com/talks/amanda_palmer_the_art_of_asking",
+    "category": "ted"
+  },
+  {
+    "slug": "meg_jay_why_30_is_not_the_new_20",
+    "title": "Why 30 is not the new 20",
+    "speaker": "Meg Jay",
+    "duration": 889,
+    "views": 8958850,
+    "ted_url": "https://www.ted.com/talks/meg_jay_why_30_is_not_the_new_20",
+    "category": "ted"
+  },
+  {
+    "slug": "maysoon_zayid_i_got_99_problems_palsy_is_just_one",
+    "title": "I got 99 problems ... palsy is just one",
+    "speaker": "Maysoon Zayid",
+    "duration": 853,
+    "views": 8879917,
+    "ted_url": "https://www.ted.com/talks/maysoon_zayid_i_got_99_problems_palsy_is_just_one",
+    "category": "ted"
+  },
+  {
+    "slug": "matt_cutts_try_something_new_for_30_days",
+    "title": "Try something new for 30 days",
+    "speaker": "Matt Cutts",
+    "duration": 207,
+    "views": 8838874,
+    "ted_url": "https://www.ted.com/talks/matt_cutts_try_something_new_for_30_days",
+    "category": "ted"
+  },
+  {
+    "slug": "steve_jobs_how_to_live_before_you_die",
+    "title": "How to live before you die",
+    "speaker": "Steve Jobs",
+    "duration": 904,
+    "views": 8744428,
+    "ted_url": "https://www.ted.com/talks/steve_jobs_how_to_live_before_you_die",
+    "category": "ted"
+  },
+  {
+    "slug": "tom_thum_the_orchestra_in_my_mouth",
+    "title": "The orchestra in my mouth",
+    "speaker": "Tom Thum",
+    "duration": 701,
+    "views": 8688241,
+    "ted_url": "https://www.ted.com/talks/tom_thum_the_orchestra_in_my_mouth",
+    "category": "ted"
+  },
+  {
+    "slug": "stephen_hawking_asks_big_questions_about_the_universe",
+    "title": "Questioning the universe",
+    "speaker": "Stephen Hawking",
+    "duration": 612,
+    "views": 8655723,
+    "ted_url": "https://www.ted.com/talks/stephen_hawking_asks_big_questions_about_the_universe",
+    "category": "ted"
+  },
+  {
+    "slug": "celeste_headlee_10_ways_to_have_a_better_conversation",
+    "title": "10 ways to have a better conversation",
+    "speaker": "Celeste Headlee",
+    "duration": 704,
+    "views": 8444981,
+    "ted_url": "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation",
+    "category": "ted"
+  },
+  {
+    "slug": "arthur_benjamin_does_mathemagic",
+    "title": "A performance of \"Mathemagic\"",
+    "speaker": "Arthur Benjamin",
+    "duration": 914,
+    "views": 8360707,
+    "ted_url": "https://www.ted.com/talks/arthur_benjamin_does_mathemagic",
+    "category": "ted"
+  },
+  {
+    "slug": "esther_perel_rethinking_infidelity_a_talk_for_anyone_who_has_ever_loved",
+    "title": "Rethinking infidelity ... a talk for anyone who has ever loved",
+    "speaker": "Esther Perel",
+    "duration": 1291,
+    "views": 8218896,
+    "ted_url": "https://www.ted.com/talks/esther_perel_rethinking_infidelity_a_talk_for_anyone_who_has_ever_loved",
+    "category": "ted"
+  },
+  {
+    "slug": "judson_brewer_a_simple_way_to_break_a_bad_habit",
+    "title": "A simple way to break a bad habit",
+    "speaker": "Judson Brewer",
+    "duration": 564,
+    "views": 8107178,
+    "ted_url": "https://www.ted.com/talks/judson_brewer_a_simple_way_to_break_a_bad_habit",
+    "category": "ted"
+  },
+  {
+    "slug": "maz_jobrani_a_saudi_an_indian_and_an_iranian_walk_into_a_qatari_bar",
+    "title": "A Saudi, an Indian and an Iranian walk into a Qatari bar ...",
+    "speaker": "Maz Jobrani",
+    "duration": 431,
+    "views": 8105311,
+    "ted_url": "https://www.ted.com/talks/maz_jobrani_a_saudi_an_indian_and_an_iranian_walk_into_a_qatari_bar",
+    "category": "ted"
+  },
+  {
+    "slug": "andy_puddicombe_all_it_takes_is_10_mindful_minutes",
+    "title": "All it takes is 10 mindful minutes",
+    "speaker": "Andy Puddicombe",
+    "duration": 564,
+    "views": 8033595,
+    "ted_url": "https://www.ted.com/talks/andy_puddicombe_all_it_takes_is_10_mindful_minutes",
+    "category": "ted"
+  },
+  {
+    "slug": "brene_brown_listening_to_shame",
+    "title": "Listening to shame",
+    "speaker": "Brené Brown",
+    "duration": 1238,
+    "views": 7988894,
+    "ted_url": "https://www.ted.com/talks/brene_brown_listening_to_shame",
+    "category": "ted"
+  },
+  {
+    "slug": "yves_rossy_fly_with_the_jetman",
+    "title": "Fly with the Jetman",
+    "speaker": "Yves Rossy",
+    "duration": 888,
+    "views": 7900891,
+    "ted_url": "https://www.ted.com/talks/yves_rossy_fly_with_the_jetman",
+    "category": "ted"
+  },
+  {
+    "slug": "johann_hari_everything_you_think_you_know_about_addiction_is_wrong",
+    "title": "Everything you think you know about addiction is wrong",
+    "speaker": "Johann Hari",
+    "duration": 882,
+    "views": 7841509,
+    "ted_url": "https://www.ted.com/talks/johann_hari_everything_you_think_you_know_about_addiction_is_wrong",
+    "category": "ted"
+  },
+  {
+    "slug": "jamie_oliver",
+    "title": "Teach every child about food",
+    "speaker": "Jamie Oliver",
+    "duration": 1313,
+    "views": 7638978,
+    "ted_url": "https://www.ted.com/talks/jamie_oliver",
+    "category": "ted"
+  },
+  {
+    "slug": "hugh_herr_the_new_bionics_that_let_us_run_climb_and_dance",
+    "title": "The new bionics that let us run, climb and dance",
+    "speaker": "Hugh Herr",
+    "duration": 1140,
+    "views": 7520736,
+    "ted_url": "https://www.ted.com/talks/hugh_herr_the_new_bionics_that_let_us_run_climb_and_dance",
+    "category": "ted"
+  },
+  {
+    "slug": "david_christian_big_history",
+    "title": "The history of our world in 18 minutes",
+    "speaker": "David Christian",
+    "duration": 1060,
+    "views": 7481004,
+    "ted_url": "https://www.ted.com/talks/david_christian_big_history",
+    "category": "ted"
+  },
+  {
+    "slug": "rita_pierson_every_kid_needs_a_champion",
+    "title": "Every kid needs a champion",
+    "speaker": "Rita Pierson",
+    "duration": 468,
+    "views": 7469445,
+    "ted_url": "https://www.ted.com/talks/rita_pierson_every_kid_needs_a_champion",
+    "category": "ted"
+  },
+  {
+    "slug": "sheryl_sandberg_why_we_have_too_few_women_leaders",
+    "title": "Why we have too few women leaders",
+    "speaker": "Sheryl Sandberg",
+    "duration": 898,
+    "views": 7431179,
+    "ted_url": "https://www.ted.com/talks/sheryl_sandberg_why_we_have_too_few_women_leaders",
+    "category": "ted"
+  },
+  {
+    "slug": "black_my_journey_to_yo_yo_mastery",
+    "title": "My journey to yo-yo mastery",
+    "speaker": "BLACK",
+    "duration": 628,
+    "views": 7373875,
+    "ted_url": "https://www.ted.com/talks/black_my_journey_to_yo_yo_mastery",
+    "category": "ted"
+  },
+  {
+    "slug": "matthieu_ricard_on_the_habits_of_happiness",
+    "title": "The habits of happiness",
+    "speaker": "Matthieu Ricard",
+    "duration": 1254,
+    "views": 7271730,
+    "ted_url": "https://www.ted.com/talks/matthieu_ricard_on_the_habits_of_happiness",
+    "category": "ted"
+  },
+  {
+    "slug": "sir_ken_robinson_bring_on_the_revolution",
+    "title": "Bring on the learning revolution!",
+    "speaker": "Ken Robinson",
+    "duration": 1008,
+    "views": 7266316,
+    "ted_url": "https://www.ted.com/talks/sir_ken_robinson_bring_on_the_revolution",
+    "category": "ted"
+  },
+  {
+    "slug": "andrew_solomon_depression_the_secret_we_share",
+    "title": "Depression, the secret we share",
+    "speaker": "Andrew Solomon",
+    "duration": 1761,
+    "views": 7265611,
+    "ted_url": "https://www.ted.com/talks/andrew_solomon_depression_the_secret_we_share",
+    "category": "ted"
+  },
+  {
+    "slug": "malcolm_gladwell_on_spaghetti_sauce",
+    "title": "Choice, happiness and spaghetti sauce",
+    "speaker": "Malcolm Gladwell",
+    "duration": 1050,
+    "views": 7023562,
+    "ted_url": "https://www.ted.com/talks/malcolm_gladwell_on_spaghetti_sauce",
+    "category": "ted"
+  },
+  {
+    "slug": "louie_schwartzberg_hidden_miracles_of_the_natural_world",
+    "title": "Hidden miracles of the natural world",
+    "speaker": "Louie Schwartzberg",
+    "duration": 444,
+    "views": 7015800,
+    "ted_url": "https://www.ted.com/talks/louie_schwartzberg_hidden_miracles_of_the_natural_world",
+    "category": "ted"
+  },
+  {
+    "slug": "simon_sinek_why_good_leaders_make_you_feel_safe",
+    "title": "Why good leaders make you feel safe",
+    "speaker": "Simon Sinek",
+    "duration": 719,
+    "views": 6803938,
+    "ted_url": "https://www.ted.com/talks/simon_sinek_why_good_leaders_make_you_feel_safe",
+    "category": "ted"
+  },
+  {
+    "slug": "ken_robinson_how_to_escape_education_s_death_valley",
+    "title": "How to escape education's death valley",
+    "speaker": "Ken Robinson",
+    "duration": 1151,
+    "views": 6657858,
+    "ted_url": "https://www.ted.com/talks/ken_robinson_how_to_escape_education_s_death_valley",
+    "category": "ted"
+  },
+  {
+    "slug": "ric_elias",
+    "title": "3 things I learned while my plane crashed",
+    "speaker": "Ric Elias",
+    "duration": 302,
+    "views": 6636475,
+    "ted_url": "https://www.ted.com/talks/ric_elias",
+    "category": "ted"
+  },
+  {
+    "slug": "carol_dweck_the_power_of_believing_that_you_can_improve",
+    "title": "The power of believing that you can improve",
+    "speaker": "Carol Dweck",
+    "duration": 620,
+    "views": 6569493,
+    "ted_url": "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve",
+    "category": "ted"
+  },
+  {
+    "slug": "russell_foster_why_do_we_sleep",
+    "title": "Why do we sleep?",
+    "speaker": "Russell Foster",
+    "duration": 1306,
+    "views": 6504999,
+    "ted_url": "https://www.ted.com/talks/russell_foster_why_do_we_sleep",
+    "category": "ted"
+  },
+  {
+    "slug": "thomas_suarez_a_12_year_old_app_developer",
+    "title": "A 12-year-old app developer",
+    "speaker": "Thomas Suarez",
+    "duration": 280,
+    "views": 6503775,
+    "ted_url": "https://www.ted.com/talks/thomas_suarez_a_12_year_old_app_developer",
+    "category": "ted"
+  },
+  {
+    "slug": "adam_grant_the_surprising_habits_of_original_thinkers",
+    "title": "The surprising habits of original thinkers",
+    "speaker": "Adam Grant",
+    "duration": 925,
+    "views": 6484404,
+    "ted_url": "https://www.ted.com/talks/adam_grant_the_surprising_habits_of_original_thinkers",
+    "category": "ted"
+  },
+  {
+    "slug": "derek_sivers_how_to_start_a_movement",
+    "title": "How to start a movement",
+    "speaker": "Derek Sivers",
+    "duration": 189,
+    "views": 6475731,
+    "ted_url": "https://www.ted.com/talks/derek_sivers_how_to_start_a_movement",
+    "category": "ted"
+  },
+  {
+    "slug": "kang_lee_can_you_really_tell_if_a_kid_is_lying",
+    "title": "Can you really tell if a kid is lying?",
+    "speaker": "Kang Lee",
+    "duration": 816,
+    "views": 6406853,
+    "ted_url": "https://www.ted.com/talks/kang_lee_can_you_really_tell_if_a_kid_is_lying",
+    "category": "ted"
+  },
+  {
+    "slug": "amy_webb_how_i_hacked_online_dating",
+    "title": "How I hacked online dating",
+    "speaker": "Amy Webb",
+    "duration": 1047,
+    "views": 6298610,
+    "ted_url": "https://www.ted.com/talks/amy_webb_how_i_hacked_online_dating",
+    "category": "ted"
+  },
+  {
+    "slug": "a_robot_that_flies_like_a_bird",
+    "title": "A robot that flies like a bird",
+    "speaker": "Markus Fischer",
+    "duration": 379,
+    "views": 6264902,
+    "ted_url": "https://www.ted.com/talks/a_robot_that_flies_like_a_bird",
+    "category": "ted"
+  },
+  {
+    "slug": "terry_moore_how_to_tie_your_shoes",
+    "title": "How to tie your shoes",
+    "speaker": "Terry Moore",
+    "duration": 179,
+    "views": 6263759,
+    "ted_url": "https://www.ted.com/talks/terry_moore_how_to_tie_your_shoes",
+    "category": "ted"
+  },
+  {
+    "slug": "bj_miller_what_really_matters_at_the_end_of_life",
+    "title": "What really matters at the end of life",
+    "speaker": "BJ Miller",
+    "duration": 1147,
+    "views": 6214152,
+    "ted_url": "https://www.ted.com/talks/bj_miller_what_really_matters_at_the_end_of_life",
+    "category": "ted"
+  },
+  {
+    "slug": "ze_frank_s_nerdcore_comedy",
+    "title": "Nerdcore comedy",
+    "speaker": "Ze Frank",
+    "duration": 1136,
+    "views": 6141440,
+    "ted_url": "https://www.ted.com/talks/ze_frank_s_nerdcore_comedy",
+    "category": "ted"
+  },
+  {
+    "slug": "jane_mcgonigal_the_game_that_can_give_you_10_extra_years_of_life",
+    "title": "The game that can give you 10 extra years of life",
+    "speaker": "Jane McGonigal",
+    "duration": 1170,
+    "views": 6141140,
+    "ted_url": "https://www.ted.com/talks/jane_mcgonigal_the_game_that_can_give_you_10_extra_years_of_life",
+    "category": "ted"
+  },
+  {
+    "slug": "alexander_tsiaras_conception_to_birth_visualized",
+    "title": "Conception to birth -- visualized",
+    "speaker": "Alexander Tsiaras",
+    "duration": 577,
+    "views": 6064898,
+    "ted_url": "https://www.ted.com/talks/alexander_tsiaras_conception_to_birth_visualized",
+    "category": "ted"
+  },
+  {
+    "slug": "larry_smith_why_you_will_fail_to_have_a_great_career",
+    "title": "Why you will fail to have a great career",
+    "speaker": "Larry Smith",
+    "duration": 915,
+    "views": 5917201,
+    "ted_url": "https://www.ted.com/talks/larry_smith_why_you_will_fail_to_have_a_great_career",
+    "category": "ted"
+  },
+  {
+    "slug": "david_steindl_rast_want_to_be_happy_be_grateful",
+    "title": "Want to be happy? Be grateful",
+    "speaker": "David Steindl-Rast",
+    "duration": 870,
+    "views": 5893321,
+    "ted_url": "https://www.ted.com/talks/david_steindl_rast_want_to_be_happy_be_grateful",
+    "category": "ted"
+  },
+  {
+    "slug": "philip_zimbardo_on_the_psychology_of_evil",
+    "title": "The psychology of evil",
+    "speaker": "Philip Zimbardo",
+    "duration": 1396,
+    "views": 5842377,
+    "ted_url": "https://www.ted.com/talks/philip_zimbardo_on_the_psychology_of_evil",
+    "category": "ted"
+  },
+  {
+    "slug": "alain_de_botton_a_kinder_gentler_philosophy_of_success",
+    "title": "A kinder, gentler philosophy of success",
+    "speaker": "Alain de Botton",
+    "duration": 1011,
+    "views": 5790615,
+    "ted_url": "https://www.ted.com/talks/alain_de_botton_a_kinder_gentler_philosophy_of_success",
+    "category": "ted"
+  },
+  {
+    "slug": "james_veitch_the_agony_of_trying_to_unsubscribe",
+    "title": "The agony of trying to unsubscribe",
+    "speaker": "James Veitch",
+    "duration": 460,
+    "views": 5711833,
+    "ted_url": "https://www.ted.com/talks/james_veitch_the_agony_of_trying_to_unsubscribe",
+    "category": "ted"
+  },
+  {
+    "slug": "elon_musk_the_future_we_re_building_and_boring",
+    "title": "The future we're building -- and boring",
+    "speaker": "Elon Musk",
+    "duration": 2450,
+    "views": 5666038,
+    "ted_url": "https://www.ted.com/talks/elon_musk_the_future_we_re_building_and_boring",
+    "category": "ted"
+  },
+  {
+    "slug": "seth_godin_on_sliced_bread",
+    "title": "How to get your ideas to spread",
+    "speaker": "Seth Godin",
+    "duration": 1021,
+    "views": 5570544,
+    "ted_url": "https://www.ted.com/talks/seth_godin_on_sliced_bread",
+    "category": "ted"
+  },
+  {
+    "slug": "johnny_lee_demos_wii_remote_hacks",
+    "title": "Free or cheap Wii Remote hacks",
+    "speaker": "Johnny Lee",
+    "duration": 340,
+    "views": 5483940,
+    "ted_url": "https://www.ted.com/talks/johnny_lee_demos_wii_remote_hacks",
+    "category": "ted"
+  },
+  {
+    "slug": "marco_tempest_the_magic_of_truth_and_lies_on_ipods",
+    "title": "The magic of truth and lies (and iPods)",
+    "speaker": "Marco Tempest",
+    "duration": 307,
+    "views": 5447236,
+    "ted_url": "https://www.ted.com/talks/marco_tempest_the_magic_of_truth_and_lies_on_ipods",
+    "category": "ted"
+  },
+  {
+    "slug": "julian_treasure_5_ways_to_listen_better",
+    "title": "5 ways to listen better",
+    "speaker": "Julian Treasure",
+    "duration": 470,
+    "views": 5402228,
+    "ted_url": "https://www.ted.com/talks/julian_treasure_5_ways_to_listen_better",
+    "category": "ted"
+  },
+  {
+    "slug": "michael_shermer_on_believing_strange_things",
+    "title": "Why people believe weird things",
+    "speaker": "Michael Shermer",
+    "duration": 805,
+    "views": 5364639,
+    "ted_url": "https://www.ted.com/talks/michael_shermer_on_believing_strange_things",
+    "category": "ted"
+  },
+  {
+    "slug": "dan_ariely_what_makes_us_feel_good_about_our_work",
+    "title": "What makes us feel good about our work?",
+    "speaker": "Dan Ariely",
+    "duration": 1226,
+    "views": 5319077,
+    "ted_url": "https://www.ted.com/talks/dan_ariely_what_makes_us_feel_good_about_our_work",
+    "category": "ted"
+  },
+  {
+    "slug": "shane_koyczan_to_this_day_for_the_bullied_and_beautiful",
+    "title": "To This Day ... for the bullied and beautiful",
+    "speaker": "Shane Koyczan",
+    "duration": 723,
+    "views": 5316753,
+    "ted_url": "https://www.ted.com/talks/shane_koyczan_to_this_day_for_the_bullied_and_beautiful",
+    "category": "ted"
+  },
+  {
+    "slug": "sleepy_man_banjo_boys_bluegrass_virtuosity_from_new_jersey",
+    "title": "Bluegrass virtuosity from ... New Jersey?",
+    "speaker": "Sleepy Man Banjo Boys",
+    "duration": 527,
+    "views": 5199008,
+    "ted_url": "https://www.ted.com/talks/sleepy_man_banjo_boys_bluegrass_virtuosity_from_new_jersey",
+    "category": "ted"
+  },
+  {
+    "slug": "may_el_khalil_making_peace_is_a_marathon",
+    "title": "Making peace is a marathon",
+    "speaker": "May El-Khalil",
+    "duration": 616,
+    "views": 5182832,
+    "ted_url": "https://www.ted.com/talks/may_el_khalil_making_peace_is_a_marathon",
+    "category": "ted"
+  },
+  {
+    "slug": "beau_lotto_optical_illusions_show_how_we_see",
+    "title": "Optical illusions show how we see",
+    "speaker": "Beau Lotto",
+    "duration": 990,
+    "views": 5006241,
+    "ted_url": "https://www.ted.com/talks/beau_lotto_optical_illusions_show_how_we_see",
+    "category": "ted"
+  },
+  {
+    "slug": "guy_winch_the_case_for_emotional_hygiene",
+    "title": "Why we all need to practice emotional first aid",
+    "speaker": "Guy Winch",
+    "duration": 1044,
+    "views": 4984884,
+    "ted_url": "https://www.ted.com/talks/guy_winch_the_case_for_emotional_hygiene",
+    "category": "ted"
+  }
+]
