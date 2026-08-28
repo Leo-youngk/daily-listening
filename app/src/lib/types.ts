@@ -2,7 +2,7 @@ export interface ManifestItem {
   slug: string
   title: string
   speaker: string
-  category: 'ted' | 'commencement'
+  category: 'ted' | 'commencement' | 'voa' | 'bbc'
   school?: string | null
   year?: number | null
   duration: number

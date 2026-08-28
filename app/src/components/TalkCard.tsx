@@ -19,7 +19,9 @@ export default function TalkCard({ item, showProgress = true }: Props) {
   const pct = progress && item.duration ? Math.min(100, (progress.pos / item.duration) * 100) : 0
   const sub = item.category === 'commencement'
     ? `${item.speaker} · ${item.school || ''}${item.year ? ' ' + item.year : ''}`
-    : `${item.speaker} · ${fmtViews(item.views)}`
+    : item.category === 'voa' || item.category === 'bbc'
+      ? `${item.speaker}${item.year ? ' · ' + item.year : ''}`
+      : `${item.speaker} · ${fmtViews(item.views)}`
 
   return (
     <button
@@ -33,7 +35,7 @@ export default function TalkCard({ item, showProgress = true }: Props) {
         <Cover src={item.cover} className="h-14 w-14 shrink-0 rounded-lg object-cover" />
       ) : (
         <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-bold text-primary">
-          {item.category === 'ted' ? 'TED' : '🎓'}
+          {item.category === 'ted' ? 'TED' : item.category === 'bbc' ? 'BBC' : item.category === 'voa' ? 'VOA' : '🎓'}
         </div>
       )}
       <div className="min-w-0 flex-1">

@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 import TalkCard from '../components/TalkCard'
 
-type Tab = 'ted' | 'commencement'
+type Tab = 'ted' | 'commencement' | 'bbc' | 'voa'
 type Sort = 'hot' | 'duration'
 type Filter = 'all' | 'listened' | 'unlistened'
 
@@ -67,9 +67,11 @@ export default function Library() {
 
       {/* 分类 */}
       <Tabs value={tab} onValueChange={v => setTab(v as Tab)} className="gap-0">
-        <TabsList className="grid h-10 w-full grid-cols-2 rounded-xl">
+        <TabsList className="grid h-10 w-full grid-cols-4 rounded-xl">
           <TabsTrigger value="ted" className="rounded-lg">TED 演讲</TabsTrigger>
           <TabsTrigger value="commencement" className="rounded-lg">毕业演讲</TabsTrigger>
+          <TabsTrigger value="bbc" className="rounded-lg">BBC</TabsTrigger>
+          <TabsTrigger value="voa" className="rounded-lg">VOA</TabsTrigger>
         </TabsList>
       </Tabs>
 
@@ -88,7 +90,7 @@ export default function Library() {
 
       {/* 排序与筛选 */}
       <div className="mt-2.5 flex gap-2 overflow-x-auto no-scrollbar">
-        {([['hot', tab === 'ted' ? '最热' : '经典排序'], ['duration', '按时长']] as [Sort, string][]).map(([k, label]) => (
+        {([['hot', tab === 'ted' ? '最热' : tab === 'commencement' ? '经典排序' : '最新'], ['duration', '按时长']] as [Sort, string][]).map(([k, label]) => (
           <Chip key={k} active={sort === k} onClick={() => setSort(k)}>{label}</Chip>
         ))}
         <span className="w-1 shrink-0" />
