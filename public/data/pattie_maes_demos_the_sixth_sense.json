@@ -1,1 +1,383 @@
-{"slug":"pattie_maes_demos_the_sixth_sense","title":"Meet the SixthSense interaction","speaker":"Pattie Maes + Pranav Mistry","category":"ted","school":null,"year":null,"duration":522.22,"cover":"/covers/pattie_maes_demos_the_sixth_sense.jpg","views":9753630,"sourceUrl":"https://www.youtube.com/watch?v=nZ-VjUKAsao","audioUrls":{"standard":"https://daily-listening-media.if5v.workers.dev/v1/standard/pattie_maes_demos_the_sixth_sense.m4a","high":"https://daily-listening-media.if5v.workers.dev/v1/high/pattie_maes_demos_the_sixth_sense.m4a"},"zhSource":"mt","sentences":[{"i":0,"start":12.91,"end":29.14,"en":"I've been intrigued by this question of whether we could evolve or develop a sixth sense -- a sense that would give us seamless access and easy access to meta-information or information that may exist somewhere","zh":"我对这个关于我们能否进化或发展第六感的问题很感兴趣, 这种感官能让我们无缝地 获取和方便地获取 某些地方可能存在的元信息或信息。"},{"i":1,"start":29.16,"end":36.0,"en":"that may be relevant to help us make the right decision about whatever it is that we're coming across.","zh":"这也许能帮助我们做出正确的决定 不论我们遇到什么事情"},{"i":2,"start":36.02,"end":41.42,"en":"And some of you may argue, \"Well, don't today's cell phones do that already?\"","zh":"你们中有些人可能会争论, “今天的手机是不是已经这样了?”"},{"i":3,"start":41.45,"end":56.25,"en":"But I would say no. When you meet someone here at TED -- and this is the top networking place, of course, of the year -- you don't shake somebody's hand and then say, \"Can you hold on for a moment while I take out my phone and Google you?\"","zh":"但我会说不。当你在TED遇到一个人—— 当然,这是一年中最顶尖的网络场所—— 你不和别人握手,然后说,“我拿出手机和谷歌时你能不能等一下?”"},{"i":4,"start":56.27,"end":73.14,"en":"Or when you go to the supermarket and you're standing there in that huge aisle of different types of toilet papers, you don't take out your cell phone, and open a browser, and go to a website to try to decide which of these different toilet papers","zh":"或者当你去超市的时候,你站在 各种卫生纸的巨大过道里, 你不拿出你的手机, 打开一个浏览器, 并去一个网站 试图决定这些不同的卫生纸中的哪一个"},{"i":5,"start":73.16,"end":77.22,"en":"is the most ecologically responsible purchase to make.","zh":"这是最生态上负责的购买。"},{"i":6,"start":77.24,"end":88.31,"en":"So we don't really have easy access to all this relevant information that can just help us make optimal decisions about what to do next and what actions to take.","zh":"所以,我们并不容易获得所有这些相关信息, 这些信息可以帮助我们做出最佳决定, 来决定下一步要做什么和要做什么。"},{"i":7,"start":88.33,"end":100.62,"en":"And so my research group at the Media Lab has been developing a series of inventions to give us access to this information in a sort of easy way,","zh":"所以我在媒体实验室的研究小组 开发了一系列的发明 使我们能轻松地获取这些信息"},{"i":8,"start":100.64,"end":105.62,"en":"without requiring that the user changes any of their behavior.","zh":"并不要求用户改变他们的行为。"},{"i":9,"start":105.64,"end":114.97,"en":"And I'm here to unveil our latest effort, and most successful effort so far, which is still very much a work in process.","zh":"我在这里展示我们的最新努力, 以及迄今为止最成功的努力, 仍然非常是一个工作的过程。"},{"i":10,"start":114.99,"end":128.74,"en":"I'm actually wearing the device right now and we've sort of cobbled it together with components that are off the shelf -- and that, by the way, only cost 350 dollars at this point in time.","zh":"实际上,我正在穿戴这个装置, 我们把它和 架子外的部件放在一起, 顺便说一下,目前只花了350美元。"},{"i":11,"start":128.76,"end":138.49,"en":"I'm wearing a camera, just a simple web cam, a portable, battery-powered projection system with a little mirror.","zh":"我穿着一个相机, 只是一个简单的网络摄像头, 一个便携的,电池驱动的投影系统 与一个小镜子。"},{"i":12,"start":138.51,"end":146.89,"en":"These components communicate to my cell phone in my pocket which acts as the communication and computation device.","zh":"这些部件与我口袋里的手机通信 手机是通讯和计算装置"},{"i":13,"start":146.91,"end":155.53,"en":"And in the video here we see my student Pranav Mistry, who's really the genius who's been implementing and designing this whole system.","zh":"在这段视频里,我们看到了我的学生Pranav Mistry, 谁是真正的天才 谁一直在实施和设计 整个系统。"},{"i":14,"start":155.55,"end":167.85,"en":"And we see how this system lets him walk up to any surface and start using his hands to interact with the information that is projected in front of him.","zh":"我们看到这个系统如何让他走到任何表面 并开始使用他的双手 与他面前的信息互动。"},{"i":15,"start":167.88,"end":171.97,"en":"The system tracks the four significant fingers.","zh":"系统跟踪四个重要的手指。"},{"i":16,"start":172.0,"end":177.14,"en":"In this case, he's wearing simple marker caps that you may recognize.","zh":"在这种情况下,他穿着简单的标记帽 你可能会认出来。"},{"i":17,"start":177.16,"end":183.55,"en":"But if you want a more stylish version, you could also paint your nails in different colors.","zh":"但如果你想要更时髦的版本, 你也可以用不同的颜色来涂指甲。"},{"i":18,"start":183.57,"end":197.79,"en":"And the camera basically tracks these four fingers and recognizes any gestures that he's making so he can just go to, for example, a map of Long Beach, zoom in and out, etc.","zh":"摄像头基本上跟踪了这四个手指 并识别了他所做的任何手势 这样他就可以去,例如, 一张长滩地图, 放大,等等。"},{"i":19,"start":197.81,"end":207.35,"en":"The system also recognizes iconic gestures such as the \"take a picture\" gesture, and then takes a picture of whatever is in front of you.","zh":"系统也承认像“拍照”的标志性手势, 然后拍摄你面前的任何东西。"},{"i":20,"start":207.37,"end":222.98,"en":"And when he then walks back to the Media Lab, he can just go up to any wall and project all the pictures that he's taken, sort through them and organize them, and re-size them, etc., again using all natural gestures.","zh":"当他回到媒体实验室时, 他可以走到任何墙上, 放映他拍的所有照片, 整理和整理这些照片, 并用所有的自然手势来调整它们大小,等等。"},{"i":21,"start":223.01,"end":234.74,"en":"So, some of you most likely were here two years ago and saw the demo by Jeff Han, or some of you may think, \"Well, doesn't this look like the Microsoft Surface Table?\"","zh":"所以,你们中有些人 最有可能是两年前在这里 看到了杰夫汉的演示, 或者你们中有些人可能会想,\"嗯,这看起来像不 微软表面表?\""},{"i":22,"start":234.76,"end":241.14,"en":"And yes, you also interact using natural gestures, both hands, etc.","zh":"是的,你还用自然的手势, 双手,等等来互动。"},{"i":23,"start":241.16,"end":253.66,"en":"But the difference here is that you can use any surface, you can walk up to any surface, including your hand, if nothing else is available, and interact with this projected data.","zh":"但是这里的区别是 你可以使用任何表面, 你可以走到任何表面, 包括你的手, 如果没有其他可用的话, 并与这个预测的数据互动。"},{"i":24,"start":253.68,"end":269.14,"en":"The device is completely portable, and can be -- (Applause) (Applause ends) So, one important difference is that it's totally mobile.","zh":"设备是完全可移动的,并且可以 -- (掌声) (掌声) (掌声) (掌声结束) 所以,一个重要的区别是它完全移动。"},{"i":25,"start":269.16,"end":281.59,"en":"Another even more important difference is that in mass production, this would not cost more tomorrow than today's cell phones and would actually not sort of be a bigger packaging --","zh":"另一个更重要的区别是,在大规模生产中, 明天的成本不会超过今天的手机, 实际上也不会是一个更大的包装。"},{"i":26,"start":281.61,"end":286.75,"en":"could look a lot more stylish than this version that I'm wearing around my neck.","zh":"可能看起来比这个版本更时髦 我戴在我的脖子上。"},{"i":27,"start":288.29,"end":301.04,"en":"But other than letting some of you live out your fantasy of looking as cool as Tom Cruise in \"Minority Report,\" the reason why we're really excited about this device","zh":"但除了让你们中的一些人 过着像汤姆·克鲁斯那样酷的幻想之外 这也是为什么我们对于这个装置很兴奋的原因"},{"i":28,"start":301.06,"end":312.17,"en":"is that it really can act as one of these sixth-sense devices that gives you relevant information about whatever is in front of you.","zh":"它可以真正发挥一种第六感的装置 让你了解你眼前的一切"},{"i":29,"start":312.19,"end":319.5,"en":"So we see Pranav here going into the supermarket and he's shopping for some paper towels.","zh":"所以,我们看到Pranav在这里 进入超市 他购物 一些纸巾。"},{"i":30,"start":319.52,"end":331.76,"en":"And, as he picks up a product, the system can recognize the product that he's picking up, using either image recognition or marker technology, and give him the green light or an orange light.","zh":"当他采集产品时 系统可以识别他采集的产品 使用图像识别或标记技术 给他绿灯或橙色灯光"},{"i":31,"start":331.79,"end":342.14,"en":"He can ask for additional information. So this particular choice here is a particularly good choice, given his personal criteria.","zh":"他可以要求更多信息。因此,鉴于他的个人标准,这一特殊选择是一个特别好的选择。"},{"i":32,"start":342.16,"end":349.73,"en":"Some of you may want the toilet paper with the most bleach in it rather than the most ecologically responsible choice.","zh":"你们中有些人可能想要 最有漂白剂的卫生纸 而不是最对生态负责的选择"},{"i":33,"start":349.75,"end":360.28,"en":"(Laughter) If he picks up a book in the bookstore, he can get an Amazon rating -- it gets projected right on the cover of the book.","zh":"如果他在书店里捡到一本书, 他可以得到亚马逊的评分-- 书的封面就被预测了。"},{"i":34,"start":360.3,"end":366.87,"en":"This is Juan's book, our previous speaker, which gets a great rating, by the way, at Amazon.","zh":"这是胡安的书,我们的前一位演讲者, 顺便说一句,在亚马逊得到很高的评价。"},{"i":35,"start":366.89,"end":379.14,"en":"And so, Pranav turns the page of the book and can then see additional information about the book -- reader comments, maybe sort of information by his favorite critic, etc.","zh":"因此,Pranav翻过这本书的页面, 可以看到更多关于这本书的信息-- 读者的评论, 也许是他最喜欢的评论家提供的信息,等等。"},{"i":36,"start":379.16,"end":391.35,"en":"If he turns to a particular page, he finds an annotation by maybe an expert or a friend of ours that gives him a little bit of additional information about whatever is on that particular page.","zh":"如果他转向某一页,他就会发现我们的一个专家或朋友的注解,给他一些关于该页内容的补充信息。"},{"i":37,"start":391.37,"end":395.75,"en":"Reading the newspaper -- it never has to be outdated.","zh":"阅读报纸 -- -- 绝不能过时。"},{"i":38,"start":395.77,"end":401.95,"en":"(Laughter) You can get video annotations of the events that you're reading about.","zh":"(笑声) 你可以得到视频 描述你正在读到的事件。"},{"i":39,"start":401.97,"end":405.14,"en":"You can get the latest sports scores, etc.","zh":"你可以拿到最新的体育成绩,等等。"},{"i":40,"start":406.04,"end":418.89,"en":"This is a more controversial one. (Laughter) As you interact with someone at TED, maybe you can see a word cloud of the tags, the words that are associated with that person","zh":"这是一个更具争议性的一个。 (笑声) 当你在TED与某人互动时, 也许你可以看到一个字的云 标记, 和那个人有关的单词"},{"i":41,"start":418.91,"end":426.84,"en":"in their blog and personal web pages. In this case, the student is interested in cameras, etc.","zh":"学生对摄像头感兴趣。"},{"i":42,"start":426.86,"end":435.57,"en":"On your way to the airport, if you pick up your boarding pass, it can tell you that your flight is delayed, that the gate has changed, etc.","zh":"在去机场的路上,如果你拿起你的登机证, 它可以告诉你,你的航班推迟了, 门变了,等等。"},{"i":43,"start":435.59,"end":446.14,"en":"And, if you need to know what the current time is, it's as simple as drawing a watch -- (Laughter) (Applause) on your arm.","zh":"而且,如果你需要知道现在是什么时间, 它就像在你的手臂上画手表一样简单。"},{"i":44,"start":447.77,"end":461.73,"en":"So that's where we're at so far in developing this sixth sense that would give us seamless access to all this relevant information about the things that we may come across.","zh":"因此,这就是我们目前发展第六感, 使我们能够无缝地 获得关于我们可能遇到的事物的所有相关信息。"},{"i":45,"start":461.75,"end":466.15,"en":"My student Pranav, who's really, like I said, the genius behind this.","zh":"我的学生Pranav, 谁真的,就像我说的, 天才背后的这一点。"},{"i":46,"start":466.17,"end":488.14,"en":"(Applause and cheering) (Applause ends)","zh":"(掌声和欢呼声) (掌声结束)"},{"i":47,"start":488.16,"end":495.51,"en":"He does deserve a lot of applause, because I don't think he's slept much in the last three months, actually.","zh":"他确实应该得到很多的掌声, 因为我不认为他 睡了很多在过去三个月,其实。"},{"i":48,"start":495.53,"end":498.93,"en":"And his girlfriend is probably not very happy about him either.","zh":"他的女朋友可能也不太喜欢他"},{"i":49,"start":498.96,"end":503.81,"en":"But it's not perfect yet, it's very much a work in progress.","zh":"但它还不是完美的, 它是一个非常 工作正在进行。"},{"i":50,"start":503.84,"end":511.14,"en":"And who knows, maybe in another 10 years we'll be here with the ultimate sixth sense brain implant.","zh":"谁知道呢 也许再过10年 我们就会在这里 接受第六感大脑植入手术"},{"i":51,"start":511.16,"end":514.35,"en":"Thank you. (Applause)","zh":"谢谢。 （掌声）"}]}
+{
+  "slug": "pattie_maes_demos_the_sixth_sense",
+  "title": "Meet the SixthSense interaction",
+  "speaker": "Pattie Maes + Pranav Mistry",
+  "category": "ted",
+  "school": null,
+  "year": null,
+  "duration": 522.22,
+  "cover": "/covers/pattie_maes_demos_the_sixth_sense.jpg",
+  "views": 9753630,
+  "sourceUrl": "https://www.youtube.com/watch?v=nZ-VjUKAsao",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/pattie_maes_demos_the_sixth_sense.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/pattie_maes_demos_the_sixth_sense.m4a"
+  },
+  "zhSource": "official",
+  "sentences": [
+    {
+      "i": 0,
+      "start": 12.91,
+      "end": 29.14,
+      "en": "I've been intrigued by this question of whether we could evolve or develop a sixth sense -- a sense that would give us seamless access and easy access to meta-information or information that may exist somewhere",
+      "zh": "便捷的获得元信息，或者是其他的一些信息，在我们需要做出一些决定的时候，这些信息能帮助我们做出正确的选择。你们可能会说，当今的手机不正是如此吗？但是，我不认同。"
+    },
+    {
+      "i": 1,
+      "start": 29.16,
+      "end": 36.0,
+      "en": "that may be relevant to help us make the right decision about whatever it is that we're coming across.",
+      "zh": "但是，我不认同。假设，当你在TED遇到某人，TED，毫无疑问，是每年最佳的社交场所。"
+    },
+    {
+      "i": 2,
+      "start": 36.02,
+      "end": 41.42,
+      "en": "And some of you may argue, \"Well, don't today's cell phones do that already?\"",
+      "zh": "难道你会不跟人家握手，然后说：“你能等一会吗？我要用手机Google一下你。”"
+    },
+    {
+      "i": 3,
+      "start": 41.45,
+      "end": 56.25,
+      "en": "But I would say no. When you meet someone here at TED -- and this is the top networking place, of course, of the year -- you don't shake somebody's hand and then say, \"Can you hold on for a moment while I take out my phone and Google you?\"",
+      "zh": "我要用手机Google一下你。”或者，当你在超市里，站在一排巨大的货架前，面对着各种各样的厕纸，难道你会拿出手机，打开浏览器登录一个网站，尝试去决定"
+    },
+    {
+      "i": 4,
+      "start": 56.27,
+      "end": 73.14,
+      "en": "Or when you go to the supermarket and you're standing there in that huge aisle of different types of toilet papers, you don't take out your cell phone, and open a browser, and go to a website to try to decide which of these different toilet papers",
+      "zh": "登录一个网站，尝试去决定到底哪一种厕纸才是最环保的，最应该买的？所以说，我们并没有一个便捷的渠道去获取这些信息，这些能帮助我们做出应该要干什么的最佳决定的信息。"
+    },
+    {
+      "i": 5,
+      "start": 73.16,
+      "end": 77.22,
+      "en": "is the most ecologically responsible purchase to make.",
+      "zh": "最佳决定的信息。因此，我的实验室的研发团队"
+    },
+    {
+      "i": 6,
+      "start": 77.24,
+      "end": 88.31,
+      "en": "So we don't really have easy access to all this relevant information that can just help us make optimal decisions about what to do next and what actions to take.",
+      "zh": "因此，我的实验室的研发团队完成了一系列的发明，在不改变用户行为的条件下，帮助用户快速简单的获取这些信息。"
+    },
+    {
+      "i": 7,
+      "start": 88.33,
+      "end": 100.62,
+      "en": "And so my research group at the Media Lab has been developing a series of inventions to give us access to this information in a sort of easy way,",
+      "zh": "获取这些信息。现在，我将这个设备展示给大家。这是我们至今最成功的版本，仍然在不断改进。"
+    },
+    {
+      "i": 8,
+      "start": 100.64,
+      "end": 105.62,
+      "en": "without requiring that the user changes any of their behavior.",
+      "zh": "仍然在不断改进。我现在正佩戴着我们其实是把市面上常见的"
+    },
+    {
+      "i": 9,
+      "start": 105.64,
+      "end": 114.97,
+      "en": "And I'm here to unveil our latest effort, and most successful effort so far, which is still very much a work in process.",
+      "zh": "我们其实是把市面上常见的一些组件组装在了一起。顺便提一下，目前这个设备的成本是350美元。"
+    },
+    {
+      "i": 10,
+      "start": 114.99,
+      "end": 128.74,
+      "en": "I'm actually wearing the device right now and we've sort of cobbled it together with components that are off the shelf -- and that, by the way, only cost 350 dollars at this point in time.",
+      "zh": "的成本是350美元。我佩戴着一个相机，就是一个简单的网络摄像头，一个便携的用电池供电的投影仪和一个小镜子。这些组件跟我口袋中的手机进行通讯，"
+    },
+    {
+      "i": 11,
+      "start": 128.76,
+      "end": 138.49,
+      "en": "I'm wearing a camera, just a simple web cam, a portable, battery-powered projection system with a little mirror.",
+      "zh": "这些组件跟我口袋中的手机进行通讯，手机作为一个通讯和计算的设备。画面中，是我的天才学生Pranav Mistry，他设计并制造了"
+    },
+    {
+      "i": 12,
+      "start": 138.51,
+      "end": 146.89,
+      "en": "These components communicate to my cell phone in my pocket which acts as the communication and computation device.",
+      "zh": "他设计并制造了这整套系统。我们可以看到，当他靠近任何表面时，"
+    },
+    {
+      "i": 13,
+      "start": 146.91,
+      "end": 155.53,
+      "en": "And in the video here we see my student Pranav Mistry, who's really the genius who's been implementing and designing this whole system.",
+      "zh": "当他靠近任何表面时，信息就会被投影到表面上，他就用双手来进行操作。系统会跟踪四个主要的手指。"
+    },
+    {
+      "i": 14,
+      "start": 155.55,
+      "end": 167.85,
+      "en": "And we see how this system lets him walk up to any surface and start using his hands to interact with the information that is projected in front of him.",
+      "zh": "系统会跟踪四个主要的手指。在这里，你可以看到他戴着用于标示的指套。如果你想要更美观，可以把你的指甲染成不同的颜色。"
+    },
+    {
+      "i": 15,
+      "start": 167.88,
+      "end": 171.97,
+      "en": "The system tracks the four significant fingers.",
+      "zh": "可以把你的指甲染成不同的颜色。摄像头会跟踪这四个手指，"
+    },
+    {
+      "i": 16,
+      "start": 172.0,
+      "end": 177.14,
+      "en": "In this case, he's wearing simple marker caps that you may recognize.",
+      "zh": "摄像头会跟踪这四个手指，识别他的任何手势，"
+    },
+    {
+      "i": 17,
+      "start": 177.16,
+      "end": 183.55,
+      "en": "But if you want a more stylish version, you could also paint your nails in different colors.",
+      "zh": "识别他的任何手势，例如，他可以打开Long Beach的地图，进行放大或者缩小等等操作。"
+    },
+    {
+      "i": 18,
+      "start": 183.57,
+      "end": 197.79,
+      "en": "And the camera basically tracks these four fingers and recognizes any gestures that he's making so he can just go to, for example, a map of Long Beach, zoom in and out, etc.",
+      "zh": "进行放大或者缩小等等操作。这个系统也能识别“象征性手势”，比如，当你做出这个“拍照手势”，系统就会拍照，把你面前的东西拍下来。当他回到Media Lab实验室之后，"
+    },
+    {
+      "i": 19,
+      "start": 197.81,
+      "end": 207.35,
+      "en": "The system also recognizes iconic gestures such as the \"take a picture\" gesture, and then takes a picture of whatever is in front of you.",
+      "zh": "当他回到Media Lab实验室之后，他可以走近任何一面墙，投影出他拍的所有照片，用各种自然手势，进行整理，归类，改变大小等各种操作。所有操作都用手势来完成。"
+    },
+    {
+      "i": 20,
+      "start": 207.37,
+      "end": 222.98,
+      "en": "And when he then walks back to the Media Lab, he can just go up to any wall and project all the pictures that he's taken, sort through them and organize them, and re-size them, etc., again using all natural gestures.",
+      "zh": "所有操作都用手势来完成。你们当中有些人两年前在这里应该看过Jeff Han演示微软的Surface系统，你们可能觉得：这套系统跟Surface看起来很像。没错，这两套系统都是用自然手势，"
+    },
+    {
+      "i": 21,
+      "start": 223.01,
+      "end": 234.74,
+      "en": "So, some of you most likely were here two years ago and saw the demo by Jeff Han, or some of you may think, \"Well, doesn't this look like the Microsoft Surface Table?\"",
+      "zh": "没错，这两套系统都是用自然手势，用双手来操作。但区别是，我这套系统可以在任何表面上操作，你可以走近任何表面，"
+    },
+    {
+      "i": 22,
+      "start": 234.76,
+      "end": 241.14,
+      "en": "And yes, you also interact using natural gestures, both hands, etc.",
+      "zh": "你可以走近任何表面，如果没有可用的表面，你还可以用自己的手与投影的数据进行交互。这个设备的使用是完全没有限制的，"
+    },
+    {
+      "i": 23,
+      "start": 241.16,
+      "end": 253.66,
+      "en": "But the difference here is that you can use any surface, you can walk up to any surface, including your hand, if nothing else is available, and interact with this projected data.",
+      "zh": "这个设备的使用是完全没有限制的，而且可以用来……（掌声）所以，最重要的区别就是，我这套系统是完全便携移动的。"
+    },
+    {
+      "i": 24,
+      "start": 253.68,
+      "end": 269.14,
+      "en": "The device is completely portable, and can be -- (Applause) (Applause ends) So, one important difference is that it's totally mobile.",
+      "zh": "所以，最重要的区别就是，我这套系统是完全便携移动的。另一个更重要的区别是，这个设备将来量产，不会比今天的手机贵，也不会像我现在戴着的这么笨重，会变得更时尚更美观，"
+    },
+    {
+      "i": 25,
+      "start": 269.16,
+      "end": 281.59,
+      "en": "Another even more important difference is that in mass production, this would not cost more tomorrow than today's cell phones and would actually not sort of be a bigger packaging --",
+      "zh": "会变得更时尚更美观，比我现在戴着的这个要好看。这个设备除了让你们的幻想变为现实，让你们看起来跟《少数派报告》里的Tom Cruise一样酷之外，"
+    },
+    {
+      "i": 26,
+      "start": 281.61,
+      "end": 286.75,
+      "en": "could look a lot more stylish than this version that I'm wearing around my neck.",
+      "zh": "让你们看起来跟《少数派报告》里的Tom Cruise一样酷之外，真正值得振奋的是，"
+    },
+    {
+      "i": 27,
+      "start": 288.29,
+      "end": 301.04,
+      "en": "But other than letting some of you live out your fantasy of looking as cool as Tom Cruise in \"Minority Report,\" the reason why we're really excited about this device",
+      "zh": "它确实可以充当一种“第六感官”，为你提供在你面前的任何物体的相关信息。我们看到Pranav现在去了超市，"
+    },
+    {
+      "i": 28,
+      "start": 301.06,
+      "end": 312.17,
+      "en": "is that it really can act as one of these sixth-sense devices that gives you relevant information about whatever is in front of you.",
+      "zh": "我们看到Pranav现在去了超市，他打算买一些纸巾。当他拿起一种纸巾时，系统会通过图像识别或者是标识技术自动识别这种纸巾，"
+    },
+    {
+      "i": 29,
+      "start": 312.19,
+      "end": 319.5,
+      "en": "So we see Pranav here going into the supermarket and he's shopping for some paper towels.",
+      "zh": "自动识别这种纸巾，然后显示一个绿灯，或者是橙灯。他可以取得更多信息。"
+    },
+    {
+      "i": 30,
+      "start": 319.52,
+      "end": 331.76,
+      "en": "And, as he picks up a product, the system can recognize the product that he's picking up, using either image recognition or marker technology, and give him the green light or an orange light.",
+      "zh": "他可以取得更多信息。所以现在这个选择，根据他个人的标准，是一个最佳选择。你们有些人可能想要含有最多漂白剂的厕纸，"
+    },
+    {
+      "i": 31,
+      "start": 331.79,
+      "end": 342.14,
+      "en": "He can ask for additional information. So this particular choice here is a particularly good choice, given his personal criteria.",
+      "zh": "你们有些人可能想要含有最多漂白剂的厕纸，而不是最环保的厕纸。（笑声）当他在书店拿起一本书时，"
+    },
+    {
+      "i": 32,
+      "start": 342.16,
+      "end": 349.73,
+      "en": "Some of you may want the toilet paper with the most bleach in it rather than the most ecologically responsible choice.",
+      "zh": "当他在书店拿起一本书时，他会获得亚马逊网站对于这本书的评价。这些信息直接被投影到书的封面上。这本是之前的演讲者Juan的著作，"
+    },
+    {
+      "i": 33,
+      "start": 349.75,
+      "end": 360.28,
+      "en": "(Laughter) If he picks up a book in the bookstore, he can get an Amazon rating -- it gets projected right on the cover of the book.",
+      "zh": "这本是之前的演讲者Juan的著作，在亚马逊大受好评。然后，当Pranav翻开这本书，会看到这本书的更多相关信息--读者评论，他最喜欢的书评家对于此书的评论，等等。"
+    },
+    {
+      "i": 34,
+      "start": 360.3,
+      "end": 366.87,
+      "en": "This is Juan's book, our previous speaker, which gets a great rating, by the way, at Amazon.",
+      "zh": "读者评论，他最喜欢的书评家对于此书的评论，等等。"
+    },
+    {
+      "i": 35,
+      "start": 366.89,
+      "end": 379.14,
+      "en": "And so, Pranav turns the page of the book and can then see additional information about the book -- reader comments, maybe sort of information by his favorite critic, etc.",
+      "zh": "读者评论，他最喜欢的书评家对于此书的评论，等等。如果他翻到特定的某页，他会看到我们的朋友中的某个专家所作的一个注脚，给他提供一些关于这一页的附加信息。看报纸的时候，"
+    },
+    {
+      "i": 36,
+      "start": 379.16,
+      "end": 391.35,
+      "en": "If he turns to a particular page, he finds an annotation by maybe an expert or a friend of ours that gives him a little bit of additional information about whatever is on that particular page.",
+      "zh": "看报纸的时候，永远都有最及时的信息。（笑声）你可以看到事件的视频报道，可以看到体育比赛的最及时的比分，等等。"
+    },
+    {
+      "i": 37,
+      "start": 391.37,
+      "end": 395.75,
+      "en": "Reading the newspaper -- it never has to be outdated.",
+      "zh": "可以看到体育比赛的最及时的比分，等等。接下来是一个有争议的功能。"
+    },
+    {
+      "i": 38,
+      "start": 395.77,
+      "end": 401.95,
+      "en": "(Laughter) You can get video annotations of the events that you're reading about.",
+      "zh": "接下来是一个有争议的功能。（笑声）当你在这遇到某人，你会看到一个标签云，"
+    },
+    {
+      "i": 39,
+      "start": 401.97,
+      "end": 405.14,
+      "en": "You can get the latest sports scores, etc.",
+      "zh": "你会看到一个标签云，这些标签是跟这个人相关的，"
+    },
+    {
+      "i": 40,
+      "start": 406.04,
+      "end": 418.89,
+      "en": "This is a more controversial one. (Laughter) As you interact with someone at TED, maybe you can see a word cloud of the tags, the words that are associated with that person",
+      "zh": "是从这个人的博客和个人主页中提取的。在这个例子中，我们看到这位学生对相机感兴趣，等等。在你去机场的路上，当你拿出你的登机牌，它会告诉你航班延误了，"
+    },
+    {
+      "i": 41,
+      "start": 418.91,
+      "end": 426.84,
+      "en": "in their blog and personal web pages. In this case, the student is interested in cameras, etc.",
+      "zh": "当你拿出你的登机牌，它会告诉你航班延误了，登机口改换了，等等。还有，如果你想知道时间的话，非常简单，在你的手臂上"
+    },
+    {
+      "i": 42,
+      "start": 426.86,
+      "end": 435.57,
+      "en": "On your way to the airport, if you pick up your boarding pass, it can tell you that your flight is delayed, that the gate has changed, etc.",
+      "zh": "非常简单，在你的手臂上（笑声）（掌声）画一个表盘。这就是我们开发的第六感官目前的进展。"
+    },
+    {
+      "i": 43,
+      "start": 435.59,
+      "end": 446.14,
+      "en": "And, if you need to know what the current time is, it's as simple as drawing a watch -- (Laughter) (Applause) on your arm.",
+      "zh": "这就是我们开发的第六感官目前的进展。这种让我们可以随时随地获取相关信息，方便我们的生活，帮助我们更好的生活。"
+    },
+    {
+      "i": 44,
+      "start": 447.77,
+      "end": 461.73,
+      "en": "So that's where we're at so far in developing this sixth sense that would give us seamless access to all this relevant information about the things that we may come across.",
+      "zh": "帮助我们更好的生活。我的天才学生 Pranav，（掌声）"
+    },
+    {
+      "i": 45,
+      "start": 461.75,
+      "end": 466.15,
+      "en": "My student Pranav, who's really, like I said, the genius behind this.",
+      "zh": "（掌声）"
+    },
+    {
+      "i": 46,
+      "start": 466.17,
+      "end": 488.14,
+      "en": "(Applause and cheering) (Applause ends)",
+      "zh": "（掌声）应该得到这些掌声，他过去三个月废寝忘食的工作。他的女朋友肯定是一肚子牢骚。但是，这个设备目前还不完善。"
+    },
+    {
+      "i": 47,
+      "start": 488.16,
+      "end": 495.51,
+      "en": "He does deserve a lot of applause, because I don't think he's slept much in the last three months, actually.",
+      "zh": "但是，这个设备目前还不完善。或许在未来十年之内，我们的大脑中会植入超级的第六感官。"
+    },
+    {
+      "i": 48,
+      "start": 495.53,
+      "end": 498.93,
+      "en": "And his girlfriend is probably not very happy about him either.",
+      "zh": "我们的大脑中会植入超级的第六感官。"
+    },
+    {
+      "i": 49,
+      "start": 498.96,
+      "end": 503.81,
+      "en": "But it's not perfect yet, it's very much a work in progress.",
+      "zh": "我们的大脑中会植入超级的第六感官。谢谢。（掌声）"
+    },
+    {
+      "i": 50,
+      "start": 503.84,
+      "end": 511.14,
+      "en": "And who knows, maybe in another 10 years we'll be here with the ultimate sixth sense brain implant.",
+      "zh": "（掌声）"
+    },
+    {
+      "i": 51,
+      "start": 511.16,
+      "end": 514.35,
+      "en": "Thank you. (Applause)",
+      "zh": "谢谢。 （掌声）"
+    }
+  ]
+}

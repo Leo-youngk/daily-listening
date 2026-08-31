@@ -1,1 +1,845 @@
-{"slug":"pranav_mistry_the_thrilling_potential_of_sixthsense_technology","title":"The thrilling potential of SixthSense technology","speaker":"Pranav Mistry","category":"ted","school":null,"year":null,"duration":919.86,"cover":"/covers/pranav_mistry_the_thrilling_potential_of_sixthsense_technology.jpg","views":16097077,"sourceUrl":"https://www.youtube.com/watch?v=YrtANPtnhyg","audioUrls":{"standard":"https://daily-listening-media.if5v.workers.dev/v1/standard/pranav_mistry_the_thrilling_potential_of_sixthsense_technology.m4a","high":"https://daily-listening-media.if5v.workers.dev/v1/high/pranav_mistry_the_thrilling_potential_of_sixthsense_technology.m4a"},"zhSource":"mt","sentences":[{"i":0,"start":15.26,"end":20.24,"en":"We grew up interacting with the physical objects around us.","zh":"我们从小和周围的物理物体相互作用"},{"i":1,"start":20.26,"end":23.66,"en":"There are an enormous number of them that we use every day.","zh":"我们每天都在使用其中的很多。"},{"i":2,"start":24.55,"end":29.51,"en":"Unlike most of our computing devices, these objects are much more fun to use.","zh":"与大多数计算设备不同,这些物体更有趣。"},{"i":3,"start":31.18,"end":43.24,"en":"When you talk about objects, one other thing automatically comes attached to that thing, and that is gestures: how we manipulate these objects, how we use these objects in everyday life.","zh":"当你谈论物体时,另一个东西自动附着在物体上, 那就是手势: 我们如何操纵这些物体, 我们如何在日常生活中使用这些物体。"},{"i":4,"start":43.26,"end":48.55,"en":"We use gestures not only to interact with these objects, but we also use them to interact with each other.","zh":"我们不仅使用手势来与这些物体互动,而且还使用手势来相互互动。"},{"i":5,"start":48.57,"end":56.24,"en":"A gesture of \"Namaste!\", maybe, to respect someone, or maybe, in India I don't need to teach a kid that this means \"four runs\" in cricket.","zh":"一种\"Namaste\"的姿态,也许,为了尊重某人, 或者,在印度,我不需要教一个孩子 这在板球中意味着\"四跑\"。"},{"i":6,"start":56.26,"end":58.78,"en":"It comes as a part of our everyday learning.","zh":"这是我们日常学习的一部分。"},{"i":7,"start":59.72,"end":72.24,"en":"So, I am very interested, from the beginning, how our knowledge about everyday objects and gestures, and how we use these objects, can be leveraged to our interactions with the digital world.","zh":"因此,我从一开始就非常感兴趣, 如何利用我们对日常物品和手势的了解, 以及如何使用这些物品, 来与数字世界互动。"},{"i":8,"start":72.26,"end":81.24,"en":"Rather than using a keyboard and mouse, why can I not use my computer in the same way that I interact in the physical world?","zh":"与其使用键盘和鼠标,我为什么不能像在物理世界里那样使用计算机?"},{"i":9,"start":81.26,"end":87.24,"en":"So, I started this exploration around eight years back, and it literally started with a mouse on my desk.","zh":"我大约在八年前就开始了这个探索, 它实际上是从我桌上的老鼠开始的。"},{"i":10,"start":87.26,"end":93.24,"en":"Rather than using it for my computer, I actually opened it.","zh":"与其用它做电脑 不如用它来打开"},{"i":11,"start":93.26,"end":104.36,"en":"Most of you might be aware that, in those days, the mouse used to come with a ball inside, and there were two rollers that actually guide the computer where the ball is moving, and, accordingly, where the mouse is moving.","zh":"大部分人可能知道,在那些日子, 鼠标通常会带着一个球进来, 有两个滚动器实际上引导着 移动着球的计算机, 和相应的,鼠标移动着的计算机。"},{"i":12,"start":104.38,"end":114.24,"en":"So, I was interested in these two rollers, and I actually wanted more, so I borrowed another mouse from a friend -- never returned to him -- and I now had four rollers.","zh":"所以,我对这两个滚筒感兴趣, 实际上我还想要更多, 所以我从一个朋友那里借了一只老鼠-- 从未回到他身边-- 现在我有四个滚筒。"},{"i":13,"start":114.26,"end":122.24,"en":"Interestingly, what I did with these rollers is, basically, I took them off of these mouses and then put them in one line.","zh":"有趣的是,我对这些滚筒所做的是, 基本上,我从这些老鼠身上摘下来, 然后把它们放在一条线上。"},{"i":14,"start":122.26,"end":125.24,"en":"It had some strings and pulleys and some springs.","zh":"它有一些绳子和滑轮 还有一些泉水"},{"i":15,"start":125.26,"end":134.24,"en":"What I got is basically a gesture-interface device that actually acts as a motion-sensing device made for two dollars.","zh":"我得到的基本上是一个手势界面装置, 它实际上是一个运动感应装置 制造了两美元。"},{"i":16,"start":134.26,"end":145.24,"en":"So, here, whatever movement I do in my physical world is actually replicated inside the digital world just using this small device that I made, around eight years back, in 2000.","zh":"因此,在这里,无论我做什么运动 在我的实际世界 被实际上复制 在数字世界 仅使用这个小设备, 我做了大约八年前,2000年。"},{"i":17,"start":145.26,"end":149.24,"en":"Because I was interested in integrating these two worlds, I thought of sticky notes.","zh":"因为我对融合这两个世界很感兴趣, 我想到了粘粘的笔记。"},{"i":18,"start":149.26,"end":156.24,"en":"I thought, \"Why can I not connect the normal interface of a physical sticky note to the digital world?\"","zh":"我想,“为什么我不能连接正常的界面 一个物理粘贴的音符与数字世界?”"},{"i":19,"start":156.26,"end":168.24,"en":"A message written on a sticky note to my mom, on paper, can come to an SMS, or maybe a meeting reminder automatically syncs with my digital calendar -- a to-do list that automatically syncs with you.","zh":"写在给我妈的粘贴纸条上的信息, 也可以到短信上, 或者一个会议提醒 自动与我的数字日历同步-- 一个与你自动同步的待办事宜列表。"},{"i":20,"start":168.26,"end":175.24,"en":"But you can also search in the digital world, or maybe you can write a query, saying, \"What is Dr. Smith's address?\"","zh":"但你也可以在数字世界里搜索, 或者你可以写一个问题, 说,“史密斯博士的地址是什么?”"},{"i":21,"start":175.26,"end":182.76,"en":"and this small system actually prints it out -- so it actually acts like a paper input-output system, just made out of paper.","zh":"这个小系统实际上打印出来-- 所以它实际上就像一个纸质输入输出系统, 只是用纸做的。"},{"i":22,"start":185.26,"end":190.24,"en":"In another exploration, I thought of making a pen that can draw in three dimensions.","zh":"在另一个探索中,我想 做一支笔可以画出三个维。"},{"i":23,"start":190.26,"end":200.31,"en":"So, I implemented this pen that can help designers and architects not only think in three dimensions, but they can actually draw, so that it's more intuitive to use that way.","zh":"所以,我用这支笔来帮助设计师和建筑师 不仅思考三个维度, 而且他们实际上可以画画, 这样用这种方式更直观。"},{"i":24,"start":200.33,"end":204.24,"en":"Then I thought, \"Why not make a Google Map, but in the physical world?\"","zh":"然后我就想,“为什么不做谷歌地图, 而在现实世界?”"},{"i":25,"start":204.26,"end":209.24,"en":"Rather than typing a keyword to find something, I put my objects on top of it.","zh":"我没有输入关键字来查找某些内容，而是将对象放在其上面。"},{"i":26,"start":209.26,"end":212.45,"en":"If I put a boarding pass, it will show me where the flight gate is.","zh":"如果我放登机牌，它会告诉我登机口在哪里。"},{"i":27,"start":212.47,"end":217.24,"en":"A coffee cup will show where you can find more coffee, or where you can trash the cup.","zh":"咖啡杯会显示您可以在哪里找到更多咖啡，或者可以在哪里扔掉杯子。"},{"i":28,"start":217.26,"end":223.26,"en":"So, these were some of the earlier explorations I did because the goal was to connect these two worlds seamlessly.","zh":"所以，这些是我早期所做的一些探索，因为目标是将这两个世界无缝连接起来。"},{"i":29,"start":224.26,"end":233.29,"en":"Among all these experiments, there was one thing in common: I was trying to bring a part of the physical world to the digital world.","zh":"在所有这些实验中，有一个共同点：我试图将物理世界的一部分带入数字世界。"},{"i":30,"start":233.31,"end":244.5,"en":"I was taking some part of the objects, or any of the intuitiveness of real life, and bringing them to the digital world, because the goal was to make our computing interfaces more intuitive.","zh":"我将对象的某些部分或现实生活中的任何直观性带到数字世界，因为目标是使我们的计算界面更加直观。"},{"i":31,"start":244.52,"end":249.24,"en":"But then I realized that we humans are not actually interested in computing.","zh":"但后来我意识到我们人类实际上对计算并不感兴趣。"},{"i":32,"start":249.26,"end":252.24,"en":"What we are interested in is information.","zh":"我们感兴趣的是信息。"},{"i":33,"start":252.26,"end":256.64,"en":"We want to know about things. We want to know about dynamic things going around.","zh":"我们想了解一些事情。我们想了解周围动态的事物。"},{"i":34,"start":256.67,"end":264.74,"en":"So I thought, around last year -- in the beginning of the last year -- I started thinking, \"Why can I not take this approach in the reverse way?\"","zh":"所以我想，大约在去年，去年年初，我开始思考，“为什么我不能以相反的方式采取这种方法？”"},{"i":35,"start":265.38,"end":272.24,"en":"Maybe, \"How about I take my digital world and paint the physical world with that digital information?\"","zh":"也许，“我用我的数字世界并用这些数字信息来描绘物理世界怎么样？”"},{"i":36,"start":273.41,"end":278.81,"en":"Because pixels are actually, right now, confined in these rectangular devices that fit in our pockets.","zh":"因为现在像素实际上被限制在这些适合我们口袋的矩形设备中。"},{"i":37,"start":278.83,"end":288.22,"en":"Why can I not remove this confine and take that to my everyday objects, everyday life so that I don't need to learn the new language for interacting with those pixels?","zh":"为什么我不能消除这种限制并将其应用到我的日常物品、日常生活中，这样我就不需要学习与这些像素交互的新语言？"},{"i":38,"start":289.47,"end":295.24,"en":"So, in order to realize this dream, I actually thought of putting a big-size projector on my head.","zh":"所以，为了实现这个梦想，我其实就想到了在头上放一个大尺寸的投影仪。"},{"i":39,"start":295.26,"end":298.5,"en":"I think that's why this is called a head-mounted projector, isn't it?","zh":"我想这就是为什么它被称为头戴式投影仪，不是吗？"},{"i":40,"start":298.52,"end":305.64,"en":"I took it very literally, and took my bike helmet, put a little cut over there so that the projector actually fits nicely.","zh":"我从字面上理解了它，拿起我的自行车头盔，在那里做了一点切口，这样投影仪实际上就很合适。"},{"i":41,"start":305.67,"end":311.06,"en":"So now, what I can do -- I can augment the world around me with this digital information.","zh":"所以现在，我能做的——我可以用这些数字信息来增强我周围的世界。"},{"i":42,"start":311.92,"end":316.94,"en":"But later, I realized that I actually wanted to interact with those digital pixels, also.","zh":"但后来，我意识到我实际上也想与这些数字像素进行交互。"},{"i":43,"start":316.96,"end":320.24,"en":"So I put a small camera over there that acts as a digital eye.","zh":"所以我在那里放了一个小相机，充当数码眼。"},{"i":44,"start":320.26,"end":327.24,"en":"Later, we moved to a much better, consumer-oriented pendant version of that, that many of you now know as the SixthSense device.","zh":"后来，我们转向了更好的、面向消费者的吊坠版本，现在很多人都知道它是 SixthSense 设备。"},{"i":45,"start":327.26,"end":336.24,"en":"But the most interesting thing about this particular technology is that you can carry your digital world with you wherever you go.","zh":"但这项特殊技术最有趣的一点是，无论你走到哪里，你都可以随身携带你的数字世界。"},{"i":46,"start":336.26,"end":341.24,"en":"You can start using any surface, any wall around you, as an interface.","zh":"您可以开始使用任何表面、任何周围的墙壁作为界面。"},{"i":47,"start":341.26,"end":344.24,"en":"The camera is actually tracking all your gestures.","zh":"相机实际上正在跟踪您的所有手势。"},{"i":48,"start":344.26,"end":348.24,"en":"Whatever you're doing with your hands, it's understanding that gesture.","zh":"无论你用手做什么，都是在理解这个手势。"},{"i":49,"start":348.26,"end":353.34,"en":"And, actually, if you see, there are some color markers that in the beginning version we are using with it.","zh":"实际上，如果您看到的话，我们在初始版本中使用了一些颜色标记。"},{"i":50,"start":353.36,"end":358.24,"en":"You can start painting on any wall. You stop by a wall, and start painting on that wall.","zh":"你可以开始在任何墙上画画 你停下来在墙上画画"},{"i":51,"start":358.26,"end":360.4,"en":"But we are not only tracking one finger, here.","zh":"但是,我们不仅追踪一个手指,在这里。"},{"i":52,"start":360.43,"end":369.4,"en":"We are giving you the freedom of using all of both of your hands, so you can actually use both of your hands to zoom into or zoom out of a map just by pinching all present.","zh":"我们给了你们使用双手的自由, 这样你们就可以用双手放大或放大地图, 仅仅通过捏住所有在场的人。"},{"i":53,"start":369.43,"end":379.24,"en":"The camera is actually doing -- just, getting all the images -- is doing the edge recognition and also the color recognition and so many other small algorithms are going on inside.","zh":"摄像头实际上正在做--只是, 获取所有的图像-- 正在做边缘识别 以及颜色识别 和很多其他的小型算法正在内部进行。"},{"i":54,"start":379.26,"end":384.76,"en":"So, technically, it's a little bit complex, but it gives you an output which is more intuitive to use, in some sense.","zh":"所以,从技术上讲,这有点复杂, 但它给了你一个更直观的输出, 从某种意义上说。"},{"i":55,"start":384.78,"end":387.64,"en":"But I'm more excited that you can actually take it outside.","zh":"但我更兴奋的是 你能把它带到外面去"},{"i":56,"start":387.66,"end":395.24,"en":"Rather than getting your camera out of your pocket, you can just do the gesture of taking a photo, and it takes a photo for you.","zh":"与其把相机从口袋里拿出来 不如照张相 拍张相"},{"i":57,"start":395.26,"end":407.94,"en":"(Applause) Thank you. And later I can find a wall, anywhere, and start browsing those photos or maybe, \"OK, I want to modify this photo a little bit","zh":"(掌声) 谢谢。 稍后我可以找到一面墙, 任何地方, 开始浏览那些照片, 或者说, \"好吧,我想修改一下这张照片"},{"i":58,"start":407.96,"end":415.24,"en":"and send it as an email to a friend.\" So, we are looking for an era where computing will actually merge with the physical world.","zh":"并把它作为电子邮件发送给一个朋友。“所以,我们正在寻找一个时代, 计算机将实际上与物理世界融合在一起。"},{"i":59,"start":415.26,"end":421.24,"en":"And, of course, if you don't have any surface, you can start using your palm for simple operations.","zh":"当然,如果你没有表面, 你可以开始用手掌做简单的操作。"},{"i":60,"start":421.26,"end":423.74,"en":"Here, I'm dialing a phone number just using my hand.","zh":"在这里,我拨一个电话号码 只是用我的手。"},{"i":61,"start":427.14,"end":434.7,"en":"The camera is actually not only understanding your hand movements, but, interestingly, is also able to understand what objects you are holding in your hand.","zh":"摄影机实际上不仅了解你的手动,而且,有趣的是,还能够了解你手中握着的是什么物体。"},{"i":62,"start":435.27,"end":446.24,"en":"For example, in this case, the book cover is matched with so many thousands, or maybe millions of books online, and checking out which book it is.","zh":"例如,在这个例子中,这本书的封面 和成千上万的在线书籍相匹配, 或者说几百万的书, 并检查它是哪本书。"},{"i":63,"start":446.26,"end":456.24,"en":"Once it has that information, it finds out more reviews about that, or maybe New York Times has a sound overview on that, so you can actually hear, on a physical book, a review as sound.","zh":"一旦它掌握了这些信息, 它就会发现更多的评论 关于这一点, 或者也许纽约时报有一个声音概览"},{"i":64,"start":456.26,"end":462.24,"en":"(Video) Famous talk at Harvard University -- This was Obama's visit last week to MIT.","zh":"(Video)哈佛大学的著名演讲——这是奥巴马上周对麻省理工学院的访问。"},{"i":65,"start":462.26,"end":470.75,"en":"(Video) And particularly I want to thank two outstanding MIT -- Pranav Mistry: So, I was seeing the live [video] of his talk, outside, on just a newspaper.","zh":"特别是我要感谢两位杰出的麻省理工学院 -- -- Pranav Mistry:所以,我在报纸上看到了他演讲的现场[视频]。"},{"i":66,"start":471.26,"end":476.87,"en":"Your newspaper will show you live weather information rather than having it updated.","zh":"你的报纸会告诉你现场天气信息 而不是更新"},{"i":67,"start":476.89,"end":479.74,"en":"You have to check your computer in order to do that, right?","zh":"你必须检查你的电脑 这样做,对不对?"},{"i":68,"start":479.76,"end":493.24,"en":"(Applause) When I'm going back, I can just use my boarding pass to check how much my flight has been delayed, because at that particular time, I'm not feeling like opening my iPhone,","zh":"(掌声) 当我回去的时候, 我可以使用我的登机证 检查我的航班被拖延了多少时间, 因为在那特殊的时刻, 我并不想打开我的iPhone,"},{"i":69,"start":493.26,"end":500.44,"en":"and checking out a particular icon. And I think this technology will not only change the way -- (Laughter) Yes.","zh":"并检查一个特定的图标。我认为这个技术不仅会改变方式--(笑声)是的。"},{"i":70,"start":500.46,"end":504.48,"en":"It will change the way we interact with people, also, not only the physical world.","zh":"它将改变我们与人们互动的方式,不仅改变实际世界。"},{"i":71,"start":504.5,"end":512.24,"en":"The fun part is, I'm going to the Boston metro, and playing a pong game inside the train on the ground, right?","zh":"有趣的是 我要去波士顿地铁 在地铁里玩乒乓球 对吧?"},{"i":72,"start":512.26,"end":519.74,"en":"(Laughter) And I think the imagination is the only limit of what you can think of when this kind of technology merges with real life.","zh":"我认为想象力是 当这种技术与现实融合时 你能想到的唯一限制。"},{"i":73,"start":519.76,"end":524.34,"en":"But many of you argue, actually, that all of our work is not only about physical objects.","zh":"但你们许多人认为,事实上, 我们所有的工作不仅仅是关于物理物体。"},{"i":74,"start":524.36,"end":529.65,"en":"We actually do lots of accounting and paper editing and all those kinds of things; what about that?","zh":"我们实际上做了很多会计和纸面编辑 以及所有这些事情,那又怎么样?"},{"i":75,"start":529.67,"end":535.24,"en":"And many of you are excited about the next-generation tablet computers to come out in the market.","zh":"许多人对即将上市的下一代平板电脑感到兴奋。"},{"i":76,"start":535.26,"end":540.24,"en":"So, rather than waiting for that, I actually made my own, just using a piece of paper.","zh":"所以，我没有等待，而是用一张纸自己做了一个。"},{"i":77,"start":540.26,"end":546.24,"en":"So, what I did here is remove the camera -- All the webcam cameras have a microphone inside the camera.","zh":"所以，我在这里所做的就是移除摄像头——所有网络摄像头的摄像头内部都有一个麦克风。"},{"i":78,"start":546.26,"end":558.24,"en":"I removed the microphone from that, and then just pinched that -- like I just made a clip out of the microphone -- and clipped that to a piece of paper, any paper that you found around.","zh":"我从中取出麦克风，然后捏住它 - 就像我刚刚用麦克风做了一个夹子一样 - 然后将其夹在一张纸上，任何你在周围找到的纸。"},{"i":79,"start":558.26,"end":564.24,"en":"So now the sound of the touch is getting me when exactly I'm touching the paper.","zh":"现在，当我触摸纸张时，触摸的声音就会响起。"},{"i":80,"start":564.26,"end":568.24,"en":"But the camera is actually tracking where my fingers are moving.","zh":"但相机实际上正在跟踪我手指的移动位置。"},{"i":81,"start":568.26,"end":577.24,"en":"You can of course watch movies. (Video) Good afternoon. My name is Russell, and I am a Wilderness Explorer in Tribe 54.\"","zh":"你当然可以看电影。 （视频）下午好。我叫拉塞尔，是 54 部落的一名荒野探险家。”"},{"i":82,"start":577.26,"end":588.24,"en":"PM: And you can of course play games. (Car engine) Here, the camera is actually understanding how you're holding the paper and playing a car-racing game.","zh":"PM：当然你也可以玩游戏。 （汽车引擎）在这里，相机实际上是在理解你如何拿着纸并玩赛车游戏。"},{"i":83,"start":588.26,"end":595.43,"en":"(Applause) Many of you already must have thought, OK, you can browse.","zh":"（鼓掌）很多人肯定已经想了，好吧，你可以浏览了。"},{"i":84,"start":595.46,"end":601.64,"en":"Yeah. Of course you can browse to any websites or you can do all sorts of computing on a piece of paper wherever you need it.","zh":"是的。当然，您可以浏览任何网站，也可以在任何需要的地方在一张纸上进行各种计算。"},{"i":85,"start":601.66,"end":607.24,"en":"So, more interestingly, I'm interested in how we can take that in a more dynamic way.","zh":"因此，更有趣的是，我对如何以更动态的方式实现这一点感兴趣。"},{"i":86,"start":607.26,"end":615.24,"en":"When I come back to my desk, I can just pinch that information back to my desktop so I can use my full-size computer.","zh":"当我回到办公桌前时，我可以将这些信息捏回到桌面上，这样我就可以使用我的全尺寸计算机。"},{"i":87,"start":615.26,"end":620.24,"en":"(Applause) And why only computers? We can just play with papers.","zh":"（掌声）为什么只有电脑？我们可以玩纸。"},{"i":88,"start":620.26,"end":623.24,"en":"Paper world is interesting to play with.","zh":"纸世界玩起来很有趣。"},{"i":89,"start":623.26,"end":634.24,"en":"Here, I'm taking a part of a document, and putting over here a second part from a second place, and I'm actually modifying the information that I have over there.","zh":"在这里，我正在取出文档的一部分，并将第二部分的第二部分放在这里，实际上我正在修改那里的信息。"},{"i":90,"start":634.26,"end":639.24,"en":"Yeah. And I say, \"OK, this looks nice, let me print it out, that thing.\"","zh":"是的。我说，“好吧，这看起来不错，让我把它打印出来，那个东西。”"},{"i":91,"start":639.26,"end":641.64,"en":"So I now have a print-out of that thing.","zh":"所以我现在已经打印了那件事。"},{"i":92,"start":641.66,"end":650.24,"en":"So the workflow is more intuitive, the way we used to do it maybe 20 years back, rather than now switching between these two worlds.","zh":"因此，工作流程更加直观，就像我们 20 年前所做的那样，而不是现在在这两个世界之间切换。"},{"i":93,"start":650.26,"end":663.24,"en":"So, as a last thought, I think that integrating information to everyday objects will not only help us to get rid of the digital divide, the gap between these two worlds,","zh":"因此，最后一个想法是，我认为将信息集成到日常物品中不仅可以帮助我们消除数字鸿沟，消除这两个世界之间的鸿沟，"},{"i":94,"start":663.26,"end":670.26,"en":"but will also help us, in some way, to stay human, to be more connected to our physical world.","zh":"但也会以某种方式帮助我们保持人性，与我们的物质世界建立更紧密的联系。"},{"i":95,"start":673.67,"end":677.98,"en":"And it will actually help us not end up being machines sitting in front of other machines.","zh":"它实际上会帮助我们不再成为坐在其他机器前面的机器。"},{"i":96,"start":678.77,"end":695.24,"en":"That's all. Thank you. (Applause)","zh":"仅此而已。谢谢你。 （掌声）"},{"i":97,"start":695.26,"end":703.24,"en":"Thank you. (Applause) Chris Anderson: So, Pranav, first of all, you're a genius.","zh":"谢谢你。 （掌声） 克里斯·安德森：普拉纳夫，首先，你是个天才。"},{"i":98,"start":703.26,"end":709.36,"en":"This is incredible, really. What are you doing with this? Is there a company being planned?","zh":"这真是令人难以置信。你用这个做什么？有没有计划成立的公司？"},{"i":99,"start":709.38,"end":717.77,"en":"Or is this research forever, or what? Pranav Mistry: So, there are lots of companies, sponsor companies of Media Lab interested in taking this ahead in one or another way.","zh":"或者这项研究是永远的，还是什么？ Pranav Mistry：因此，有很多公司、媒体实验室的赞助公司有兴趣以某种方式推动这一进程。"},{"i":100,"start":717.79,"end":724.86,"en":"Companies like mobile-phone operators want to take this in a different way than the NGOs in India, thinking, \"Why can we only have 'Sixth Sense'?","zh":"移动电话运营商等公司希望以与印度非政府组织不同的方式来看待这一问题，他们思考：“为什么我们只能拥有‘第六感’？"},{"i":101,"start":724.88,"end":728.34,"en":"We should have a 'Fifth Sense' for missing-sense people who cannot speak.","zh":"我们应该为那些无法说话的失去理智的人提供“第五感”。"},{"i":102,"start":728.36,"end":732.95,"en":"This technology can be used for them to speak out in a different way maybe a speaker system.\"","zh":"这项技术可以让他们以不同的方式说话，也许是扬声器系统。”"},{"i":103,"start":732.98,"end":737.54,"en":"CA: What are your own plans? Are you staying at MIT, or are you going to do something with this?","zh":"CA：你自己的计划是什么？你会留在麻省理工学院，还是打算用这个做点什么？"},{"i":104,"start":737.56,"end":748.24,"en":"PM: I'm trying to make this more available to people so that anyone can develop their own SixthSense device, because the hardware is actually not that hard to manufacture or hard to make your own.","zh":"PM：我正在努力让人们更容易使用它，以便任何人都可以开发自己的 SixthSense 设备，因为硬件实际上并不难制造，也不难制造自己的硬件。"},{"i":105,"start":748.26,"end":752.24,"en":"We will provide all the open source software for them, maybe starting next month.","zh":"我们将为他们提供所有开源软件，也许从下个月开始。"},{"i":106,"start":752.26,"end":762.69,"en":"CA: Open source? Wow. (Applause) CA: Are you going to come back to India with some of this, at some point?","zh":"CA：开源？哇。 （掌声） CA：你会在某个时候带着这些东西回到印度吗？"},{"i":107,"start":762.71,"end":766.24,"en":"PM: Yeah. Yes, yes, of course. CA: What are your plans? MIT? India?","zh":"下午：是的。是的，是的，当然。 CA：你有什么计划？麻省理工学院？印度？"},{"i":108,"start":766.26,"end":768.74,"en":"How are you going to split your time going forward?","zh":"今后你打算如何分配时间？"},{"i":109,"start":768.76,"end":771.24,"en":"PM: There is a lot of energy here. Lots of learning.","zh":"PM：这里有很多能量。很多学习。"},{"i":110,"start":771.26,"end":775.24,"en":"All of this work that you have seen is all about my learning in India.","zh":"你所看到的所有这些作品都是关于我在印度学习的。"},{"i":111,"start":775.26,"end":783.24,"en":"And now, if you see, it's more about the cost-effectiveness: this system costs you $300 compared to the $20,000 surface tables, or anything like that.","zh":"现在，如果您看到了，更多的是成本效益：与 20,000 美元的台面或类似设备相比，该系统的成本为 300 美元。"},{"i":112,"start":783.26,"end":789.24,"en":"Or maybe even the $2 mouse gesture system at that time was costing around $5,000?","zh":"或者，当时 2 美元的鼠标手势系统可能要花费 5,000 美元左右？"},{"i":113,"start":789.26,"end":800.24,"en":"I showed that, at a conference, to President Abdul Kalam, at that time, and then he said, \"OK, we should use this in Bhabha Atomic Research Centre for some use of that.\"","zh":"我在一次会议上向当时的阿卜杜勒·卡拉姆总统展示了这一点，然后他说：“好吧，我们应该在巴巴原子研究中心使用这个。”"},{"i":114,"start":800.26,"end":806.38,"en":"So I'm excited about how I can bring the technology to the masses rather than just keeping that technology in the lab environment.","zh":"因此，我很高兴能够将这项技术带给大众，而不仅仅是将这项技术保留在实验室环境中。"},{"i":115,"start":806.4,"end":816.64,"en":"(Applause) CA: Based on the people we've seen at TED, I would say you're truly one of the two or three best inventors in the world right now.","zh":"（掌声） CA：根据我们在 TED 见过的人，我想说你确实是目前世界上两三个最好的发明家之一。"},{"i":116,"start":816.66,"end":820.24,"en":"It's an honor to have you at TED. Thank you so much.","zh":"很荣幸您能来到 TED。太感谢了。"},{"i":117,"start":820.26,"end":825.26,"en":"That's fantastic. (Applause)","zh":"太棒了。 （掌声）"}]}
+{
+  "slug": "pranav_mistry_the_thrilling_potential_of_sixthsense_technology",
+  "title": "The thrilling potential of SixthSense technology",
+  "speaker": "Pranav Mistry",
+  "category": "ted",
+  "school": null,
+  "year": null,
+  "duration": 919.86,
+  "cover": "/covers/pranav_mistry_the_thrilling_potential_of_sixthsense_technology.jpg",
+  "views": 16097077,
+  "sourceUrl": "https://www.youtube.com/watch?v=YrtANPtnhyg",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/pranav_mistry_the_thrilling_potential_of_sixthsense_technology.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/pranav_mistry_the_thrilling_potential_of_sixthsense_technology.m4a"
+  },
+  "zhSource": "official",
+  "sentences": [
+    {
+      "i": 0,
+      "start": 15.26,
+      "end": 20.24,
+      "en": "We grew up interacting with the physical objects around us.",
+      "zh": "当我们提到物品,会立即出现和这东西有关的另一件事 --"
+    },
+    {
+      "i": 1,
+      "start": 20.26,
+      "end": 23.66,
+      "en": "There are an enormous number of them that we use every day.",
+      "zh": "会立即出现和这东西有关的另一件事 --姿势:也就是：我们怎么使用这些物品,"
+    },
+    {
+      "i": 2,
+      "start": 24.55,
+      "end": 29.51,
+      "en": "Unlike most of our computing devices, these objects are much more fun to use.",
+      "zh": "也就是：我们怎么使用这些物品,我们在每日生活中如何使用这些物品我们不只运用不同姿势来使用物体"
+    },
+    {
+      "i": 3,
+      "start": 31.18,
+      "end": 43.24,
+      "en": "When you talk about objects, one other thing automatically comes attached to that thing, and that is gestures: how we manipulate these objects, how we use these objects in everyday life.",
+      "zh": "也用来和别人沟通。合十的姿势，可能是表示尊敬某人或者是 --在印度，不必教，小孩都知道这是 --板球的\"4\"的意思这是我们的生活常识"
+    },
+    {
+      "i": 4,
+      "start": 43.26,
+      "end": 48.55,
+      "en": "We use gestures not only to interact with these objects, but we also use them to interact with each other.",
+      "zh": "这是我们的生活常识所以，我一开始，就很有兴趣想了解， --我们对于"
+    },
+    {
+      "i": 5,
+      "start": 48.57,
+      "end": 56.24,
+      "en": "A gesture of \"Namaste!\", maybe, to respect someone, or maybe, in India I don't need to teach a kid that this means \"four runs\" in cricket.",
+      "zh": "我们对于日常用品和姿势的认知,以及，如何把这些物品运用在我们和数字世界的沟通上"
+    },
+    {
+      "i": 6,
+      "start": 56.26,
+      "end": 58.78,
+      "en": "It comes as a part of our everyday learning.",
+      "zh": "运用在我们和数字世界的沟通上为什么没有键盘和鼠标,"
+    },
+    {
+      "i": 7,
+      "start": 59.72,
+      "end": 72.24,
+      "en": "So, I am very interested, from the beginning, how our knowledge about everyday objects and gestures, and how we use these objects, can be leveraged to our interactions with the digital world.",
+      "zh": "为什么没有键盘和鼠标,我就没办法使用计算机?为什么和计算机沟通，不能和实体世界沟通一样?我的探索从八年前开始从我桌上的鼠标开始我不是在计算机屏幕上使用它"
+    },
+    {
+      "i": 8,
+      "start": 72.26,
+      "end": 81.24,
+      "en": "Rather than using a keyboard and mouse, why can I not use my computer in the same way that I interact in the physical world?",
+      "zh": "我不是在计算机屏幕上使用它而是拆开它，你们都知道，在那个年代，鼠标里面有个球，"
+    },
+    {
+      "i": 9,
+      "start": 81.26,
+      "end": 87.24,
+      "en": "So, I started this exploration around eight years back, and it literally started with a mouse on my desk.",
+      "zh": "鼠标里面有个球，还有两个滚轮，所以，当鼠标移动时，滚轮会告诉计算机，球滚动的方向。"
+    },
+    {
+      "i": 10,
+      "start": 87.26,
+      "end": 93.24,
+      "en": "Rather than using it for my computer, I actually opened it.",
+      "zh": "滚轮会告诉计算机，球滚动的方向。我对滚轮有兴趣，但还需要多几个，所以就跟朋友借他的鼠标"
+    },
+    {
+      "i": 11,
+      "start": 93.26,
+      "end": 104.36,
+      "en": "Most of you might be aware that, in those days, the mouse used to come with a ball inside, and there were two rollers that actually guide the computer where the ball is moving, and, accordingly, where the mouse is moving.",
+      "zh": "但还需要多几个，所以就跟朋友借他的鼠标一直没还他 --这样就有了四个滚轮。我怎么用这些滚轮呢--基本上，我把它们从鼠标里拿出来"
+    },
+    {
+      "i": 12,
+      "start": 104.38,
+      "end": 114.24,
+      "en": "So, I was interested in these two rollers, and I actually wanted more, so I borrowed another mouse from a friend -- never returned to him -- and I now had four rollers.",
+      "zh": "基本上，我把它们从鼠标里拿出来放在一条在线有线、滑带和弹簧我做出了一个侦测姿势的接口装置。像个动作侦测装置，"
+    },
+    {
+      "i": 13,
+      "start": 114.26,
+      "end": 122.24,
+      "en": "Interestingly, what I did with these rollers is, basically, I took them off of these mouses and then put them in one line.",
+      "zh": "像个动作侦测装置，成本只要两块美元。所以，现在，不论我在实体世界做什么，在数字的世界里就会反映出来"
+    },
+    {
+      "i": 14,
+      "start": 122.26,
+      "end": 125.24,
+      "en": "It had some strings and pulleys and some springs.",
+      "zh": "在数字的世界里就会反映出来只要用这个我8年前做的小东西就可以,"
+    },
+    {
+      "i": 15,
+      "start": 125.26,
+      "end": 134.24,
+      "en": "What I got is basically a gesture-interface device that actually acts as a motion-sensing device made for two dollars.",
+      "zh": "只要用这个我8年前做的小东西就可以,那是2000年。我对于整合实体和数字世界有兴趣,我想到便利贴。我想, \"何不把"
+    },
+    {
+      "i": 16,
+      "start": 134.26,
+      "end": 145.24,
+      "en": "So, here, whatever movement I do in my physical world is actually replicated inside the digital world just using this small device that I made, around eight years back, in 2000.",
+      "zh": "我想, \"何不把实体便利贴的接口，和数字便利贴整合在一起?\"在便利贴上写给我妈妈的留言纸条可以用简讯传递。"
+    },
+    {
+      "i": 17,
+      "start": 145.26,
+      "end": 149.24,
+      "en": "Because I was interested in integrating these two worlds, I thought of sticky notes.",
+      "zh": "可以用简讯传递。或是写在纸上的会议通知自动和我的数字行事历同步 --"
+    },
+    {
+      "i": 18,
+      "start": 149.26,
+      "end": 156.24,
+      "en": "I thought, \"Why can I not connect the normal interface of a physical sticky note to the digital world?\"",
+      "zh": "自动和我的数字行事历同步 --待办事项会自动在计算机上同步。但你也同时可以在数字环境里搜寻,或者是,你可以写下问题, 如,"
+    },
+    {
+      "i": 19,
+      "start": 156.26,
+      "end": 168.24,
+      "en": "A message written on a sticky note to my mom, on paper, can come to an SMS, or maybe a meeting reminder automatically syncs with my digital calendar -- a to-do list that automatically syncs with you.",
+      "zh": "或者是,你可以写下问题, 如,\"史教授的地址?\"然后这个小系统就把地址打印出来 --这就像是个纸做的输出入系统,用纸就可以做到."
+    },
+    {
+      "i": 20,
+      "start": 168.26,
+      "end": 175.24,
+      "en": "But you can also search in the digital world, or maybe you can write a query, saying, \"What is Dr. Smith's address?\"",
+      "zh": "用纸就可以做到.另一项探索是,我想到用一枝可以画3D效果的笔所以就设计出这支笔"
+    },
+    {
+      "i": 21,
+      "start": 175.26,
+      "end": 182.76,
+      "en": "and this small system actually prints it out -- so it actually acts like a paper input-output system, just made out of paper.",
+      "zh": "所以就设计出这支笔帮助设计师和建筑师不只以三度空间思考,也可以画3D图形"
+    },
+    {
+      "i": 22,
+      "start": 185.26,
+      "end": 190.24,
+      "en": "In another exploration, I thought of making a pen that can draw in three dimensions.",
+      "zh": "我又想, \"何不做一个实体世界的Google地图?\"不必输入关键词来找东西,"
+    },
+    {
+      "i": 23,
+      "start": 190.26,
+      "end": 200.31,
+      "en": "So, I implemented this pen that can help designers and architects not only think in three dimensions, but they can actually draw, so that it's more intuitive to use that way.",
+      "zh": "不必输入关键词来找东西,而是放这个东西在地图上。如果我把登机证放在地图上,它会显示登机口的位置放咖啡杯，它会显示咖啡厅的位置,或垃圾筒的位置."
+    },
+    {
+      "i": 24,
+      "start": 200.33,
+      "end": 204.24,
+      "en": "Then I thought, \"Why not make a Google Map, but in the physical world?\"",
+      "zh": "或垃圾筒的位置.这些是早期我做的实验，"
+    },
+    {
+      "i": 25,
+      "start": 204.26,
+      "end": 209.24,
+      "en": "Rather than typing a keyword to find something, I put my objects on top of it.",
+      "zh": "这些是早期我做的实验，我的目的是紧密衔接这两个世界.在这些实验之中,"
+    },
+    {
+      "i": 26,
+      "start": 209.26,
+      "end": 212.45,
+      "en": "If I put a boarding pass, it will show me where the flight gate is.",
+      "zh": "在这些实验之中,有一个共通点:"
+    },
+    {
+      "i": 27,
+      "start": 212.47,
+      "end": 217.24,
+      "en": "A coffee cup will show where you can find more coffee, or where you can trash the cup.",
+      "zh": "有一个共通点:我都会把实体的东西带进数字环境里.我把物品,"
+    },
+    {
+      "i": 28,
+      "start": 217.26,
+      "end": 223.26,
+      "en": "So, these were some of the earlier explorations I did because the goal was to connect these two worlds seamlessly.",
+      "zh": "我把物品,或生活中，直觉式的东西,带进数字世界里,"
+    },
+    {
+      "i": 29,
+      "start": 224.26,
+      "end": 233.29,
+      "en": "Among all these experiments, there was one thing in common: I was trying to bring a part of the physical world to the digital world.",
+      "zh": "带进数字世界里,目的是让计算机接口更人性化但是后来我了解到人们对计算机没有兴趣"
+    },
+    {
+      "i": 30,
+      "start": 233.31,
+      "end": 244.5,
+      "en": "I was taking some part of the objects, or any of the intuitiveness of real life, and bringing them to the digital world, because the goal was to make our computing interfaces more intuitive.",
+      "zh": "人们对计算机没有兴趣人们有兴趣的是信息。我们想知道更多事情.我们想知道周围的各种动态所以，大约在去年，去年年初的时候--"
+    },
+    {
+      "i": 31,
+      "start": 244.52,
+      "end": 249.24,
+      "en": "But then I realized that we humans are not actually interested in computing.",
+      "zh": "所以，大约在去年，去年年初的时候--我开始想, \"我何不颠倒我的研究方向呢?\"或许, \"把数字世界的数字信息，"
+    },
+    {
+      "i": 32,
+      "start": 249.26,
+      "end": 252.24,
+      "en": "What we are interested in is information.",
+      "zh": "或许, \"把数字世界的数字信息，描画在实体世界里??\""
+    },
+    {
+      "i": 33,
+      "start": 252.26,
+      "end": 256.64,
+      "en": "We want to know about things. We want to know about dynamic things going around.",
+      "zh": "描画在实体世界里??\""
+    },
+    {
+      "i": 34,
+      "start": 256.67,
+      "end": 264.74,
+      "en": "So I thought, around last year -- in the beginning of the last year -- I started thinking, \"Why can I not take this approach in the reverse way?\"",
+      "zh": "描画在实体世界里??\"因为这些影像，都被包在这些方方的装置里然后放进口袋里.我何不把这个形体打破"
+    },
+    {
+      "i": 35,
+      "start": 265.38,
+      "end": 272.24,
+      "en": "Maybe, \"How about I take my digital world and paint the physical world with that digital information?\"",
+      "zh": "我何不把这个形体打破把信息放进日常生活中?这样我也不必学新的、和这些象素沟通的语言?"
+    },
+    {
+      "i": 36,
+      "start": 273.41,
+      "end": 278.81,
+      "en": "Because pixels are actually, right now, confined in these rectangular devices that fit in our pockets.",
+      "zh": "和这些象素沟通的语言?为了实现这个梦想,我真的想过把一个投影机放在我的头上"
+    },
+    {
+      "i": 37,
+      "start": 278.83,
+      "end": 288.22,
+      "en": "Why can I not remove this confine and take that to my everyday objects, everyday life so that I don't need to learn the new language for interacting with those pixels?",
+      "zh": "我真的想过把一个投影机放在我的头上这就是所谓「投(头)影机」的意思，对吧?!我照着字面意思做了我把自行车的头盔割掉一点,让投影机可以放得进去."
+    },
+    {
+      "i": 38,
+      "start": 289.47,
+      "end": 295.24,
+      "en": "So, in order to realize this dream, I actually thought of putting a big-size projector on my head.",
+      "zh": "割掉一点,让投影机可以放得进去.这样，我可以 --在真实世界中用数字讯息环绕我"
+    },
+    {
+      "i": 39,
+      "start": 295.26,
+      "end": 298.5,
+      "en": "I think that's why this is called a head-mounted projector, isn't it?",
+      "zh": "在真实世界中用数字讯息环绕我但是,后来我想到 我也要和这些计算机像素沟通."
+    },
+    {
+      "i": 40,
+      "start": 298.52,
+      "end": 305.64,
+      "en": "I took it very literally, and took my bike helmet, put a little cut over there so that the projector actually fits nicely.",
+      "zh": "我想到 我也要和这些计算机像素沟通.所以我加了一个小摄影机,当作数位眼睛.之后, 我们进一步,做成--"
+    },
+    {
+      "i": 41,
+      "start": 305.67,
+      "end": 311.06,
+      "en": "So now, what I can do -- I can augment the world around me with this digital information.",
+      "zh": "之后, 我们进一步,做成--使用者导向的颈挂式,就是很多人知道的「第六感计算装置」."
+    },
+    {
+      "i": 42,
+      "start": 311.92,
+      "end": 316.94,
+      "en": "But later, I realized that I actually wanted to interact with those digital pixels, also.",
+      "zh": "就是很多人知道的「第六感计算装置」.这技术最有趣的地方是你可以把数字世界带着走"
+    },
+    {
+      "i": 43,
+      "start": 316.96,
+      "end": 320.24,
+      "en": "So I put a small camera over there that acts as a digital eye.",
+      "zh": "你可以把数字世界带着走到任何地方都可以."
+    },
+    {
+      "i": 44,
+      "start": 320.26,
+      "end": 327.24,
+      "en": "Later, we moved to a much better, consumer-oriented pendant version of that, that many of you now know as the SixthSense device.",
+      "zh": "到任何地方都可以.你可以用任何表面或墙壁，当成界面.这录像机随时都在侦测你的动作."
+    },
+    {
+      "i": 45,
+      "start": 327.26,
+      "end": 336.24,
+      "en": "But the most interesting thing about this particular technology is that you can carry your digital world with you wherever you go.",
+      "zh": "这录像机随时都在侦测你的动作.不论双手在做什么,它都知道.还有，你看那些色笔那是我们早期用的."
+    },
+    {
+      "i": 46,
+      "start": 336.26,
+      "end": 341.24,
+      "en": "You can start using any surface, any wall around you, as an interface.",
+      "zh": "那是我们早期用的.可以在任何墙壁上画画.可以停在墙壁前面，开始在墙上作画."
+    },
+    {
+      "i": 47,
+      "start": 341.26,
+      "end": 344.24,
+      "en": "The camera is actually tracking all your gestures.",
+      "zh": "可以停在墙壁前面，开始在墙上作画.而且我们不只侦测一根手指."
+    },
+    {
+      "i": 48,
+      "start": 344.26,
+      "end": 348.24,
+      "en": "Whatever you're doing with your hands, it's understanding that gesture.",
+      "zh": "而且我们不只侦测一根手指.我们让你可以用两只手全部,"
+    },
+    {
+      "i": 49,
+      "start": 348.26,
+      "end": 353.34,
+      "en": "And, actually, if you see, there are some color markers that in the beginning version we are using with it.",
+      "zh": "我们让你可以用两只手全部,所以可以用两只手去放大缩小--地图，用捏的."
+    },
+    {
+      "i": 50,
+      "start": 353.36,
+      "end": 358.24,
+      "en": "You can start painting on any wall. You stop by a wall, and start painting on that wall.",
+      "zh": "地图，用捏的.录像机 --收集所有影像 --执行动作辨识和颜色辨识"
+    },
+    {
+      "i": 51,
+      "start": 358.26,
+      "end": 360.4,
+      "en": "But we are not only tracking one finger, here.",
+      "zh": "执行动作辨识和颜色辨识"
+    },
+    {
+      "i": 52,
+      "start": 360.43,
+      "end": 369.4,
+      "en": "We are giving you the freedom of using all of both of your hands, so you can actually use both of your hands to zoom into or zoom out of a map just by pinching all present.",
+      "zh": "执行动作辨识和颜色辨识有很多小程序在里面跑技术上有点复杂,但是让人可以用的很自然我更兴奋的是，可以带到户外去用"
+    },
+    {
+      "i": 53,
+      "start": 369.43,
+      "end": 379.24,
+      "en": "The camera is actually doing -- just, getting all the images -- is doing the edge recognition and also the color recognition and so many other small algorithms are going on inside.",
+      "zh": "我更兴奋的是，可以带到户外去用不必掏出口袋里的照相机,只要一个照相的姿势它就替你照相了."
+    },
+    {
+      "i": 54,
+      "start": 379.26,
+      "end": 384.76,
+      "en": "So, technically, it's a little bit complex, but it gives you an output which is more intuitive to use, in some sense.",
+      "zh": "它就替你照相了.(掌声)谢谢."
+    },
+    {
+      "i": 55,
+      "start": 384.78,
+      "end": 387.64,
+      "en": "But I'm more excited that you can actually take it outside.",
+      "zh": "谢谢.拍完之后，我随便找一面墙,"
+    },
+    {
+      "i": 56,
+      "start": 387.66,
+      "end": 395.24,
+      "en": "Rather than getting your camera out of your pocket, you can just do the gesture of taking a photo, and it takes a photo for you.",
+      "zh": "拍完之后，我随便找一面墙,就开始浏览这些照片或, \"我想修改一下这些照片然后用电子邮件寄给朋友.\"我们面对的世代是 --"
+    },
+    {
+      "i": 57,
+      "start": 395.26,
+      "end": 407.94,
+      "en": "(Applause) Thank you. And later I can find a wall, anywhere, and start browsing those photos or maybe, \"OK, I want to modify this photo a little bit",
+      "zh": "我们面对的世代是 --与实体世界融合在一起的运算如果你没有平面可用，手掌也可以处理简单的功能.我在这里只用我的手，拨电话号码."
+    },
+    {
+      "i": 58,
+      "start": 407.96,
+      "end": 415.24,
+      "en": "and send it as an email to a friend.\" So, we are looking for an era where computing will actually merge with the physical world.",
+      "zh": "我在这里只用我的手，拨电话号码.摄影机不只了解你手部的动作,而且,"
+    },
+    {
+      "i": 59,
+      "start": 415.26,
+      "end": 421.24,
+      "en": "And, of course, if you don't have any surface, you can start using your palm for simple operations.",
+      "zh": "而且,它还知道在你手里拿着的是什么东西.我们现在正在做的是 --"
+    },
+    {
+      "i": 60,
+      "start": 421.26,
+      "end": 423.74,
+      "en": "Here, I'm dialing a phone number just using my hand.",
+      "zh": "我们现在正在做的是 --举个例, 在这里,"
+    },
+    {
+      "i": 61,
+      "start": 427.14,
+      "end": 434.7,
+      "en": "The camera is actually not only understanding your hand movements, but, interestingly, is also able to understand what objects you are holding in your hand.",
+      "zh": "正在和在线的数以百万计的书封面比对,找寻这是哪一本书.一旦找到数据,它会找到书评,或者，可能纽约时报有个有声的简介,"
+    },
+    {
+      "i": 62,
+      "start": 435.27,
+      "end": 446.24,
+      "en": "For example, in this case, the book cover is matched with so many thousands, or maybe millions of books online, and checking out which book it is.",
+      "zh": "或者，可能纽约时报有个有声的简介,你就可以, 在实体书上，听到有声的书评.(\"哈佛大学的著名演讲 ...\")这是欧巴玛总统上周来MIT的演讲."
+    },
+    {
+      "i": 63,
+      "start": 446.26,
+      "end": 456.24,
+      "en": "Once it has that information, it finds out more reviews about that, or maybe New York Times has a sound overview on that, so you can actually hear, on a physical book, a review as sound.",
+      "zh": "这是欧巴玛总统上周来MIT的演讲.(\"... 我特别要感谢2位MIT ...\")我从报纸上,看到他演讲的实况录像.你的报纸会给你看动态天气报导"
+    },
+    {
+      "i": 64,
+      "start": 456.26,
+      "end": 462.24,
+      "en": "(Video) Famous talk at Harvard University -- This was Obama's visit last week to MIT.",
+      "zh": "你的报纸会给你看动态天气报导不必去更新数据 – 这原本，要上计算机才找得到, 是吗?"
+    },
+    {
+      "i": 65,
+      "start": 462.26,
+      "end": 470.75,
+      "en": "(Video) And particularly I want to thank two outstanding MIT -- Pranav Mistry: So, I was seeing the live [video] of his talk, outside, on just a newspaper.",
+      "zh": "才找得到, 是吗?(掌声)我回印度时, 我只要拿出我的登机证"
+    },
+    {
+      "i": 66,
+      "start": 471.26,
+      "end": 476.87,
+      "en": "Your newspaper will show you live weather information rather than having it updated.",
+      "zh": "我回印度时, 我只要拿出我的登机证就可以知道我的班机延误多久,因为在这种时候,我不想打开iPhone,"
+    },
+    {
+      "i": 67,
+      "start": 476.89,
+      "end": 479.74,
+      "en": "You have to check your computer in order to do that, right?",
+      "zh": "我不想打开iPhone,点选某个功能图案."
+    },
+    {
+      "i": 68,
+      "start": 479.76,
+      "end": 493.24,
+      "en": "(Applause) When I'm going back, I can just use my boarding pass to check how much my flight has been delayed, because at that particular time, I'm not feeling like opening my iPhone,",
+      "zh": "点选某个功能图案.我相信这个技术不只改变--是的. (笑声)也会改变我们和别人的交流不只在实体世界里.好玩的是，我在波士顿的捷运上玩踢毽子游戏"
+    },
+    {
+      "i": 69,
+      "start": 493.26,
+      "end": 500.44,
+      "en": "and checking out a particular icon. And I think this technology will not only change the way -- (Laughter) Yes.",
+      "zh": "玩踢毽子游戏在地上玩, 不错吧?(笑声)我相信，当这种技术和实体生活混在一起时想象力是唯一能限制--"
+    },
+    {
+      "i": 70,
+      "start": 500.46,
+      "end": 504.48,
+      "en": "It will change the way we interact with people, also, not only the physical world.",
+      "zh": "想象力是唯一能限制--我们的东西。但很多人会说--"
+    },
+    {
+      "i": 71,
+      "start": 504.5,
+      "end": 512.24,
+      "en": "The fun part is, I'm going to the Boston metro, and playing a pong game inside the train on the ground, right?",
+      "zh": "但很多人会说--我的工作和实体物品没什么关系.我们做的大多是会计、编辑这类的事对于这些,你怎么处理?"
+    },
+    {
+      "i": 72,
+      "start": 512.26,
+      "end": 519.74,
+      "en": "(Laughter) And I think the imagination is the only limit of what you can think of when this kind of technology merges with real life.",
+      "zh": "对于这些,你怎么处理?很多人很期待新一代的平板计算机上市"
+    },
+    {
+      "i": 73,
+      "start": 519.76,
+      "end": 524.34,
+      "en": "But many of you argue, actually, that all of our work is not only about physical objects.",
+      "zh": "上市与其等待,我干脆自己做一个﹐只用了一张纸"
+    },
+    {
+      "i": 74,
+      "start": 524.36,
+      "end": 529.65,
+      "en": "We actually do lots of accounting and paper editing and all those kinds of things; what about that?",
+      "zh": ",我干脆自己做一个﹐只用了一张纸我把录像机上的--所有网络度影机上都有个麦克风 ."
+    },
+    {
+      "i": 75,
+      "start": 529.67,
+      "end": 535.24,
+      "en": "And many of you are excited about the next-generation tablet computers to come out in the market.",
+      "zh": "所有网络度影机上都有个麦克风 .我把麦克风拿下来夹在--"
+    },
+    {
+      "i": 76,
+      "start": 535.26,
+      "end": 540.24,
+      "en": "So, rather than waiting for that, I actually made my own, just using a piece of paper.",
+      "zh": "夹在--就像是做了个夹式麦克风 --夹在纸上, 随便的一张纸."
+    },
+    {
+      "i": 77,
+      "start": 540.26,
+      "end": 546.24,
+      "en": "So, what I did here is remove the camera -- All the webcam cameras have a microphone inside the camera.",
+      "zh": "夹在纸上, 随便的一张纸.每当我碰到纸的时候，这在纸上接触的声音就会通知计算机."
+    },
+    {
+      "i": 78,
+      "start": 546.26,
+      "end": 558.24,
+      "en": "I removed the microphone from that, and then just pinched that -- like I just made a clip out of the microphone -- and clipped that to a piece of paper, any paper that you found around.",
+      "zh": "这在纸上接触的声音就会通知计算机.录像机还在追踪我的手指的移动你当然也可以看电影(\"午安，我叫罗素 ...\")"
+    },
+    {
+      "i": 79,
+      "start": 558.26,
+      "end": 564.24,
+      "en": "So now the sound of the touch is getting me when exactly I'm touching the paper.",
+      "zh": "(\"午安，我叫罗素 ...\")(\"... 我是第54团的荒野探险者.\")也可以玩游戏."
+    },
+    {
+      "i": 80,
+      "start": 564.26,
+      "end": 568.24,
+      "en": "But the camera is actually tracking where my fingers are moving.",
+      "zh": "也可以玩游戏.(汽车引擎声)摄影机知道你拿纸的方向"
+    },
+    {
+      "i": 81,
+      "start": 568.26,
+      "end": 577.24,
+      "en": "You can of course watch movies. (Video) Good afternoon. My name is Russell, and I am a Wilderness Explorer in Tribe 54.\"",
+      "zh": "摄影机知道你拿纸的方向就可以玩赛车游戏(掌声)很多人早又想到了，可以浏览"
+    },
+    {
+      "i": 82,
+      "start": 577.26,
+      "end": 588.24,
+      "en": "PM: And you can of course play games. (Car engine) Here, the camera is actually understanding how you're holding the paper and playing a car-racing game.",
+      "zh": "很多人早又想到了，可以浏览对，当然可以浏览任何网站甚至在纸上做各种运算在任何你需要的地方更有趣的是"
+    },
+    {
+      "i": 83,
+      "start": 588.26,
+      "end": 595.43,
+      "en": "(Applause) Many of you already must have thought, OK, you can browse.",
+      "zh": "更有趣的是我想把这个功能变得更强大一点当我回到桌上，我可以捏住那个信息，--然后放到我的计算机屏幕上"
+    },
+    {
+      "i": 84,
+      "start": 595.46,
+      "end": 601.64,
+      "en": "Yeah. Of course you can browse to any websites or you can do all sorts of computing on a piece of paper wherever you need it.",
+      "zh": "然后放到我的计算机屏幕上这样我就可以用我的桌上计算机(掌声)"
+    },
+    {
+      "i": 85,
+      "start": 601.66,
+      "end": 607.24,
+      "en": "So, more interestingly, I'm interested in how we can take that in a more dynamic way.",
+      "zh": "(掌声)为什么要计算机? 用纸也很好玩.纸的世界很好玩."
+    },
+    {
+      "i": 86,
+      "start": 607.26,
+      "end": 615.24,
+      "en": "When I come back to my desk, I can just pinch that information back to my desktop so I can use my full-size computer.",
+      "zh": "纸的世界很好玩.我把文章的一部分放在这里, 当成第二部份 --然后调整--"
+    },
+    {
+      "i": 87,
+      "start": 615.26,
+      "end": 620.24,
+      "en": "(Applause) And why only computers? We can just play with papers.",
+      "zh": "然后调整--这里的信息.好，然后我说, \"OK, 这样很好,"
+    },
+    {
+      "i": 88,
+      "start": 620.26,
+      "end": 623.24,
+      "en": "Paper world is interesting to play with.",
+      "zh": "好，然后我说, \"OK, 这样很好,我要打印出来.\""
+    },
+    {
+      "i": 89,
+      "start": 623.26,
+      "end": 634.24,
+      "en": "Here, I'm taking a part of a document, and putting over here a second part from a second place, and I'm actually modifying the information that I have over there.",
+      "zh": "我要打印出来.\"就有了一份打印文件, 这样 --工作流程比我们以前用的方式更人性了像20年前的工作方式，而不是像现在，要在两个世界里切换"
+    },
+    {
+      "i": 90,
+      "start": 634.26,
+      "end": 639.24,
+      "en": "Yeah. And I say, \"OK, this looks nice, let me print it out, that thing.\"",
+      "zh": "而不是像现在，要在两个世界里切换最后，我相信把信息和所有对象整合，"
+    },
+    {
+      "i": 91,
+      "start": 639.26,
+      "end": 641.64,
+      "en": "So I now have a print-out of that thing.",
+      "zh": "我相信把信息和所有对象整合，不仅可以消灭数字落差、"
+    },
+    {
+      "i": 92,
+      "start": 641.66,
+      "end": 650.24,
+      "en": "So the workflow is more intuitive, the way we used to do it maybe 20 years back, rather than now switching between these two worlds.",
+      "zh": "不仅可以消灭数字落差、把两个世界间的鸿沟填满,还可以帮助我们,保有人性,"
+    },
+    {
+      "i": 93,
+      "start": 650.26,
+      "end": 663.24,
+      "en": "So, as a last thought, I think that integrating information to everyday objects will not only help us to get rid of the digital divide, the gap between these two worlds,",
+      "zh": "保有人性,让我们和实体世界更连结.最终会帮助我们，不要变成--坐在机器前面的另一部机器。就这样. 谢谢."
+    },
+    {
+      "i": 94,
+      "start": 663.26,
+      "end": 670.26,
+      "en": "but will also help us, in some way, to stay human, to be more connected to our physical world.",
+      "zh": "就这样. 谢谢.(掌声)"
+    },
+    {
+      "i": 95,
+      "start": 673.67,
+      "end": 677.98,
+      "en": "And it will actually help us not end up being machines sitting in front of other machines.",
+      "zh": "(掌声)"
+    },
+    {
+      "i": 96,
+      "start": 678.77,
+      "end": 695.24,
+      "en": "That's all. Thank you. (Applause)",
+      "zh": "(掌声)谢谢.(掌声)Chris Anderson: 嗯﹐Pranav,首先，你是个天才.这真的太棒了,真的你预备怎么做? 你想开个公司吗﹖还是一直继续研究下去?还是有其它的打算?"
+    },
+    {
+      "i": 97,
+      "start": 695.26,
+      "end": 703.24,
+      "en": "Thank you. (Applause) Chris Anderson: So, Pranav, first of all, you're a genius.",
+      "zh": "还是一直继续研究下去?还是有其它的打算?Pranav Mistry: 很多公司 --就是 Medi L b的赞助者 --有兴趣以其它方法继续研究像行动通讯公司"
+    },
+    {
+      "i": 98,
+      "start": 703.26,
+      "end": 709.36,
+      "en": "This is incredible, really. What are you doing with this? Is there a company being planned?",
+      "zh": "像行动通讯公司和印度非营利机构的应用方法便不同这些机构想 \"为什么只有'第六感'?"
+    },
+    {
+      "i": 99,
+      "start": 709.38,
+      "end": 717.77,
+      "en": "Or is this research forever, or what? Pranav Mistry: So, there are lots of companies, sponsor companies of Media Lab interested in taking this ahead in one or another way.",
+      "zh": "这些机构想 \"为什么只有'第六感'?我们应该为残障人士，设置第五感如，哑巴.这种技术可以让他们用另一种方式「说」出来配个喇叭就可以.\"C : 你自己的打算呢? 要留在MIT吗"
+    },
+    {
+      "i": 100,
+      "start": 717.79,
+      "end": 724.86,
+      "en": "Companies like mobile-phone operators want to take this in a different way than the NGOs in India, thinking, \"Why can we only have 'Sixth Sense'?",
+      "zh": "C : 你自己的打算呢? 要留在MIT吗还是你也要参与这些计划?PM: 我正试着让这技术更广泛的被人们使用让大家都能开发自己的\"第六感\"装置"
+    },
+    {
+      "i": 101,
+      "start": 724.88,
+      "end": 728.34,
+      "en": "We should have a 'Fifth Sense' for missing-sense people who cannot speak.",
+      "zh": "让大家都能开发自己的\"第六感\"装置因为硬件其实不难制造"
+    },
+    {
+      "i": 102,
+      "start": 728.36,
+      "end": 732.95,
+      "en": "This technology can be used for them to speak out in a different way maybe a speaker system.\"",
+      "zh": "因为硬件其实不难制造自己做也不难"
+    },
+    {
+      "i": 103,
+      "start": 732.98,
+      "end": 737.54,
+      "en": "CA: What are your own plans? Are you staying at MIT, or are you going to do something with this?",
+      "zh": "自己做也不难我们会提供开放式程序代码软件给大家可能下个月就可以C :开放程序代码﹖哇"
+    },
+    {
+      "i": 104,
+      "start": 737.56,
+      "end": 748.24,
+      "en": "PM: I'm trying to make this more available to people so that anyone can develop their own SixthSense device, because the hardware is actually not that hard to manufacture or hard to make your own.",
+      "zh": "C :开放程序代码﹖哇(掌声)C : 你会回到印度做这些计划吗?PM: 是，是，当然."
+    },
+    {
+      "i": 105,
+      "start": 748.26,
+      "end": 752.24,
+      "en": "We will provide all the open source software for them, maybe starting next month.",
+      "zh": "PM: 是，是，当然.C : 你的计划呢? MIT?印度? 未来怎样分配你的时间?"
+    },
+    {
+      "i": 106,
+      "start": 752.26,
+      "end": 762.69,
+      "en": "CA: Open source? Wow. (Applause) CA: Are you going to come back to India with some of this, at some point?",
+      "zh": "印度? 未来怎样分配你的时间?PM: 这里有很大的能量. 很多东西可以学你刚刚看到的，都是我在印度学的.往成本效益方面去考虑:"
+    },
+    {
+      "i": 107,
+      "start": 762.71,
+      "end": 766.24,
+      "en": "PM: Yeah. Yes, yes, of course. CA: What are your plans? MIT? India?",
+      "zh": "往成本效益方面去考虑:这个系统只要300美元和2万美元的桌面计算机相比"
+    },
+    {
+      "i": 108,
+      "start": 766.26,
+      "end": 768.74,
+      "en": "How are you going to split your time going forward?",
+      "zh": "和2万美元的桌面计算机相比或甚至2块美元的鼠标"
+    },
+    {
+      "i": 109,
+      "start": 768.76,
+      "end": 771.24,
+      "en": "PM: There is a lot of energy here. Lots of learning.",
+      "zh": "或甚至2块美元的鼠标当年可能要价 5,000 美元?"
+    },
+    {
+      "i": 110,
+      "start": 771.26,
+      "end": 775.24,
+      "en": "All of this work that you have seen is all about my learning in India.",
+      "zh": "当年可能要价 5,000 美元?不久前，我把这东西展示给"
+    },
+    {
+      "i": 111,
+      "start": 775.26,
+      "end": 783.24,
+      "en": "And now, if you see, it's more about the cost-effectiveness: this system costs you $300 compared to the $20,000 surface tables, or anything like that.",
+      "zh": "不久前，我把这东西展示给印度总统看他说: \"我们应该在原子研究所里用这个技术做些研究.\""
+    },
+    {
+      "i": 112,
+      "start": 783.26,
+      "end": 789.24,
+      "en": "Or maybe even the $2 mouse gesture system at that time was costing around $5,000?",
+      "zh": "用这个技术做些研究.\"我很期待可以把这些技术带给普罗大众而不是把这些技术留在实验室里"
+    },
+    {
+      "i": 113,
+      "start": 789.26,
+      "end": 800.24,
+      "en": "I showed that, at a conference, to President Abdul Kalam, at that time, and then he said, \"OK, we should use this in Bhabha Atomic Research Centre for some use of that.\"",
+      "zh": "而不是把这些技术留在实验室里(掌声)C : 我们在 TED,遇过的人之中我可以说你是少数2-3个世界上顶尖的发明家之一"
+    },
+    {
+      "i": 114,
+      "start": 800.26,
+      "end": 806.38,
+      "en": "So I'm excited about how I can bring the technology to the masses rather than just keeping that technology in the lab environment.",
+      "zh": "世界上顶尖的发明家之一TED很荣幸邀你来演讲.非常感谢.真是太棒了.(掌声)"
+    },
+    {
+      "i": 115,
+      "start": 806.4,
+      "end": 816.64,
+      "en": "(Applause) CA: Based on the people we've seen at TED, I would say you're truly one of the two or three best inventors in the world right now.",
+      "zh": "(掌声)"
+    },
+    {
+      "i": 116,
+      "start": 816.66,
+      "end": 820.24,
+      "en": "It's an honor to have you at TED. Thank you so much.",
+      "zh": "很荣幸您能来到 TED。太感谢了。"
+    },
+    {
+      "i": 117,
+      "start": 820.26,
+      "end": 825.26,
+      "en": "That's fantastic. (Applause)",
+      "zh": "太棒了。 （掌声）"
+    }
+  ]
+}

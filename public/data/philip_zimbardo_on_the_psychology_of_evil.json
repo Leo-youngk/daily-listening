@@ -1,1 +1,1741 @@
-{"slug":"philip_zimbardo_on_the_psychology_of_evil","title":"The psychology of evil","speaker":"Philip Zimbardo","category":"ted","school":null,"year":null,"duration":1390.67,"cover":"/covers/philip_zimbardo_on_the_psychology_of_evil.jpg","views":5842377,"sourceUrl":"https://www.youtube.com/watch?v=OsFEV35tWsg","audioUrls":{"standard":"https://daily-listening-media.if5v.workers.dev/v1/standard/philip_zimbardo_on_the_psychology_of_evil.m4a","high":"https://daily-listening-media.if5v.workers.dev/v1/high/philip_zimbardo_on_the_psychology_of_evil.m4a"},"zhSource":"mt","sentences":[{"i":0,"start":12.79,"end":20.14,"en":"Philosophers, dramatists, theologians have grappled with this question for centuries: what makes people go wrong?","zh":"哲学家、戏剧家、神学家 几个世纪以来一直在研究这个问题: 为什么人们会犯错?"},{"i":1,"start":20.16,"end":23.14,"en":"Interestingly, I asked this question when I was a little kid.","zh":"有意思的是,我小时候问过这个问题"},{"i":2,"start":23.16,"end":30.3,"en":"I grew up in the South Bronx, inner-city ghetto in New York, and I was surrounded by evil, as all kids are who grew up in an inner city.","zh":"我在纽约的南布朗克斯 市中心贫民窟长大 我被邪恶包围 所有的小孩都是在市中心长大的"},{"i":3,"start":30.33,"end":36.97,"en":"And I had friends who were really good kids, who lived out the Dr. Jekyll Mr. Hyde scenario -- Robert Louis Stevenson.","zh":"我有一些朋友,他们都是好孩子, 他们住在Jekyll医生 Hyde先生的假想中, Robert Louis Stevenson。"},{"i":4,"start":36.99,"end":40.14,"en":"That is, they took drugs, got in trouble, went to jail.","zh":"他们吸毒 惹上麻烦 坐牢"},{"i":5,"start":40.16,"end":44.02,"en":"Some got killed, and some did it without drug assistance.","zh":"有些人被杀了,有些人没有药物援助"},{"i":6,"start":44.45,"end":47.24,"en":"So when I read Robert Louis Stevenson, that wasn't fiction.","zh":"所以当我读罗伯特·路易斯·史蒂文森的时候,那不是虚构的。"},{"i":7,"start":47.27,"end":49.49,"en":"The only question is, what was in the juice?","zh":"唯一的问题是 果汁里装了什么?"},{"i":8,"start":49.51,"end":62.41,"en":"And more importantly, that line between good and evil -- which privileged people like to think is fixed and impermeable, with them on the good side, the others on the bad side -- I knew that line was movable, and it was permeable.","zh":"更重要的是,善与恶之间的界线 -- -- 享有特权的人喜欢认为是固定的和不可渗透的,他们站在好的一面,其他人则站在坏的一面 -- -- 我知道这条线是可移动的,是可渗透的。"},{"i":9,"start":62.44,"end":71.33,"en":"Good people could be seduced across that line, and under good and some rare circumstances, bad kids could recover with help, with reform, with rehabilitation.","zh":"好人可能会被诱惑过, 在良好和一些罕见的情况下,坏孩子可以恢复 帮助,改革,康复。"},{"i":10,"start":72.16,"end":76.94,"en":"So I want to begin with this wonderful illusion by [Dutch] artist M.C. Escher.","zh":"所以我想从[杜奇]艺术家艾舍尔的 奇妙幻觉开始"},{"i":11,"start":76.96,"end":80.82,"en":"If you look at it and focus on the white, what you see is a world full of angels.","zh":"如果你看着它,关注白色, 你看到的世界充满了天使。"},{"i":12,"start":80.84,"end":86.46,"en":"But let's look more deeply, and as we do, what appears is the demons, the devils in the world.","zh":"但让我们更深入地看, 和我们所做的一样, 出现的东西是魔鬼, 魔鬼在世界上。"},{"i":13,"start":86.99,"end":94.58,"en":"That tells us several things. One, the world is, was, will always be filled with good and evil, because good and evil is the yin and yang of the human condition.","zh":"这告诉我们几个问题:第一,世界永远充满善与恶,因为善与恶是人类状况的阴阳。"},{"i":14,"start":94.6,"end":98.94,"en":"It tells me something else. If you remember, God's favorite angel was Lucifer.","zh":"它告诉我别的东西 如果你记得 上帝最喜欢的天使是路西法"},{"i":15,"start":99.45,"end":104.64,"en":"Apparently, Lucifer means \"the light.\" It also means \"the morning star,\" in some scripture.","zh":"显然,路西法的意思是\"光\" 在某些经文中也的意思是\"晨星\""},{"i":16,"start":104.66,"end":110.38,"en":"And apparently, he disobeyed God, and that's the ultimate disobedience to authority.","zh":"显然,他违抗了上帝, 这是终极违抗权威。"},{"i":17,"start":110.41,"end":117.93,"en":"And when he did, Michael, the archangel, was sent to kick him out of heaven along with the other fallen angels.","zh":"当他这样做的时候,大天使迈克尔 被派去把他和其他堕落的天使一起赶出天堂"},{"i":18,"start":117.95,"end":124.16,"en":"And so Lucifer descends into hell, becomes Satan, becomes the devil, and the force of evil in the universe begins.","zh":"路西法下地狱 变成撒旦 变成魔鬼 邪恶的力量在宇宙中开始"},{"i":19,"start":124.18,"end":128.65,"en":"Paradoxically, it was God who created hell as a place to store evil.","zh":"矛盾的是,上帝创造了地狱, 将邪恶藏起来。"},{"i":20,"start":129.14,"end":131.52,"en":"He didn't do a good job of keeping it there though.","zh":"他没有做好一个好工作 保持它在那里虽然。"},{"i":21,"start":131.54,"end":144.14,"en":"So, this arc of the cosmic transformation of God's favorite angel into the Devil, for me, sets the context for understanding human beings who are transformed from good, ordinary people into perpetrators of evil.","zh":"因此,上帝最爱的天使变成魔鬼的宇宙弧形, 对我来说,为理解那些从善良的普通人 变成邪恶的罪犯的人提供了背景。"},{"i":22,"start":144.74,"end":156.81,"en":"So the Lucifer effect, although it focuses on the negatives -- the negatives that people can become, not the negatives that people are -- leads me to a psychological definition.","zh":"因此,路西法效应,尽管它侧重于消极因素 -- -- 人可以变成的消极因素,而不是人的消极因素 -- -- 却使我找到一个心理定义。"},{"i":23,"start":156.83,"end":161.07,"en":"Evil is the exercise of power. And that's the key: it's about power.","zh":"邪恶是权力的行使。这就是关键:它与权力有关。"},{"i":24,"start":161.09,"end":169.63,"en":"To intentionally harm people psychologically, to hurt people physically, to destroy people mortally, or ideas, and to commit crimes against humanity.","zh":"故意在心理上伤害人,伤害人的身体,毁灭人命或思想,犯下危害人类罪。"},{"i":25,"start":171.16,"end":178.14,"en":"If you Google \"evil,\" a word that should surely have withered by now, you come up with 136 million hits in a third of a second.","zh":"如果你用谷歌搜索“邪恶”这个词，这个词现在肯定已经消失了，你会在三分之一秒内得到 1.36 亿次点击。"},{"i":26,"start":178.16,"end":191.14,"en":"A few years ago -- I am sure all of you were shocked, as I was, with the revelation of American soldiers abusing prisoners in a strange place in a controversial war, Abu Ghraib in Iraq.","zh":"几年前，我相信你们所有人都像我一样，对美国士兵在一场有争议的战争中在一个陌生的地方虐待囚犯的消息感到震惊，那就是伊拉克的阿布格莱布监狱。"},{"i":27,"start":191.16,"end":197.48,"en":"And these were men and women who were putting prisoners through unbelievable humiliation.","zh":"这些男男女女让囚犯遭受难以置信的羞辱。"},{"i":28,"start":198.14,"end":205.56,"en":"I was shocked, but I wasn't surprised, because I had seen those same visual parallels when I was the prison superintendent of the Stanford Prison Study.","zh":"我很震惊，但并不感到惊讶，因为当我担任斯坦福监狱研究的监狱长时，我也看到了同样的视觉相似之处。"},{"i":29,"start":205.59,"end":208.3,"en":"Immediately the Bush administration military said what?","zh":"布什政府军方立即说什么？"},{"i":30,"start":208.68,"end":213.06,"en":"What all administrations say when there's a scandal: \"Don't blame us. It's not the system.","zh":"当出现丑闻时，所有政府都会说：“不要责怪我们。这不是系统的问题。"},{"i":31,"start":213.08,"end":215.48,"en":"It's the few bad apples, the few rogue soldiers.\"","zh":"这是少数坏苹果，少数流氓士兵。”"},{"i":32,"start":215.5,"end":218.53,"en":"My hypothesis is, American soldiers are good, usually.","zh":"我的假设是，美国士兵通常都很优秀。"},{"i":33,"start":218.56,"end":223.14,"en":"Maybe it was the barrel that was bad. But how am I going to deal with that hypothesis?","zh":"也许是桶坏了。但我该如何应对这个假设呢？"},{"i":34,"start":223.16,"end":230.78,"en":"I became an expert witness for one of the guards, Sergeant Chip Frederick, and in that position, I had access to the dozen investigative reports.","zh":"我成为其中一名警卫奇普·弗雷德里克中士的专家证人，在那个职位上，我可以获得十几份调查报告。"},{"i":35,"start":230.81,"end":239.36,"en":"I had access to him. I could study him, have him come to my home, get to know him, do psychological analysis to see, was he a good apple or bad apple.","zh":"我可以接触到他。我可以研究他，让他来我家，了解他，做心理分析，看看他是好人还是坏人。"},{"i":36,"start":239.39,"end":244.54,"en":"And thirdly, I had access to all of the 1,000 pictures that these soldiers took.","zh":"第三，我可以访问这些士兵拍摄的所有 1,000 张照片。"},{"i":37,"start":245.03,"end":247.53,"en":"These pictures are of a violent or sexual nature.","zh":"这些图片具有暴力或色情性质。"},{"i":38,"start":247.56,"end":250.52,"en":"All of them come from the cameras of American soldiers.","zh":"全部都来自美国大兵的相机。"},{"i":39,"start":250.97,"end":256.19,"en":"Because everybody has a digital camera or cell phone camera, they took pictures of everything, more than 1,000.","zh":"因为大家都有数码相机或者手机摄像头，什么都拍，一千多张。"},{"i":40,"start":256.21,"end":259.16,"en":"And what I've done is I organized them into various categories.","zh":"我所做的就是将它们分为不同的类别。"},{"i":41,"start":259.19,"end":264.13,"en":"But these are by United States military police, army reservists.","zh":"但这些都是由美国宪兵、陆军预备役人员执行的。"},{"i":42,"start":264.64,"end":268.12,"en":"They are not soldiers prepared for this mission at all.","zh":"他们根本不是为执行此任务而准备的士兵。"},{"i":43,"start":268.14,"end":271.82,"en":"And it all happened in a single place, Tier 1-A, on the night shift.","zh":"这一切都发生在一个地方，即 1-A 层的夜班。"},{"i":44,"start":271.84,"end":275.67,"en":"Why? Tier 1-A was the center for military intelligence.","zh":"为什么？ 1-A 层是军事情报中心。"},{"i":45,"start":275.69,"end":278.89,"en":"It was the interrogation hold. The CIA was there.","zh":"这是审讯拘留。中央情报局在那里。"},{"i":46,"start":278.92,"end":284.88,"en":"Interrogators from Titan Corporation, all there, and they're getting no information about the insurgency.","zh":"泰坦公司的审讯人员都在那里，但他们没有得到任何有关叛乱的信息。"},{"i":47,"start":284.91,"end":295.89,"en":"So they're going to put pressure on these soldiers, military police, to cross the line, give them permission to break the will of the enemy, to prepare them for interrogation, to soften them up, to take the gloves off.","zh":"所以他们要向这些士兵、宪兵施加压力，让他们越过界限，允许他们打破敌人的意志，让他们做好审讯的准备，让他们软化，让他们脱下手套。"},{"i":48,"start":295.91,"end":299.04,"en":"Those are the euphemisms, and this is how it was interpreted.","zh":"这些都是委婉说法，这就是它的解释方式。"},{"i":49,"start":299.79,"end":317.61,"en":"Let's go down to that dungeon. (Typewriting) [Abu Ghraib Iraq Prison Abuses 2008 Military Police Guards' Photos] [The following images include nudity and graphic depictions of violence]","zh":"我们去那个地牢吧。 （打字）【2008年阿布格莱布伊拉克监狱虐待事件宪兵警卫照片】【以下图片包含裸体和暴力画面描述】"},{"i":50,"start":318.34,"end":340.37,"en":"(Camera shutter sounds) (Thuds)","zh":"（相机快门声）（轰鸣声）"},{"i":51,"start":345.72,"end":360.71,"en":"(Camera shutter) (Camera shutter)","zh":"（相机快门） （相机快门）"},{"i":52,"start":369.16,"end":408.58,"en":"(Breathing) (Bells) (Bells end)","zh":"（呼吸）（铃声）（铃声结束）"},{"i":53,"start":409.24,"end":415.31,"en":"So, pretty horrific. That's one of the visual illustrations of evil.","zh":"所以，非常可怕。这是邪恶的视觉例证之一。"},{"i":54,"start":415.33,"end":425.74,"en":"And it should not have escaped you that the reason I paired the prisoner with his arms out with Leonardo da Vinci's ode to humanity is that prisoner was mentally ill.","zh":"你不应该忽视的是，我之所以将张开双臂的囚犯与列奥纳多·达·芬奇的人性颂歌配对，是因为该囚犯患有精神疾病。"},{"i":55,"start":425.77,"end":430.56,"en":"That prisoner covered himself with shit every day, they had to roll him in dirt so he wouldn't stink.","zh":"那个犯人每天浑身上下都是屎，还得用泥土把他滚起来，不让他发臭。"},{"i":56,"start":430.58,"end":432.93,"en":"But the guards ended up calling him \"Shit Boy.\"","zh":"但警卫最终称他为“狗屎男孩”。"},{"i":57,"start":432.96,"end":437.14,"en":"What was he doing in that prison rather than in some mental institution?","zh":"他在那座监狱而不是在某个精神病院里做什么？"},{"i":58,"start":437.66,"end":440.37,"en":"In any event, here's former Secretary of Defense Rumsfeld.","zh":"无论如何，这是前国防部长拉姆斯菲尔德。"},{"i":59,"start":440.4,"end":443.21,"en":"He comes down and says, \"I want to know, who is responsible?","zh":"他下来说道：“我想知道，谁该负责？"},{"i":60,"start":443.23,"end":446.04,"en":"Who are the bad apples?\" Well, that's a bad question.","zh":"谁是坏苹果？”嗯，这是一个糟糕的问题。"},{"i":61,"start":446.06,"end":448.69,"en":"You have to reframe it and ask, \"What is responsible?\"","zh":"你必须重新构建它并问：“什么负责？”"},{"i":62,"start":448.71,"end":454.63,"en":"\"What\" could be the who of people, but it could also be the what of the situation, and obviously that's wrongheaded.","zh":"“什么”可以指人的身份，也可以指情况的情况，显然这是错误的。"},{"i":63,"start":454.65,"end":462.36,"en":"How do psychologists try to understand such transformations of human character, if you believe that they were good soldiers before they went down to that dungeon?","zh":"如果你相信心理学家在进入地牢之前是好士兵，那么他们如何试图理解人类性格的这种转变？"},{"i":64,"start":462.38,"end":465.24,"en":"There are three ways. The main way is called dispositional.","zh":"有三种方法。主要的方式称为处置。"},{"i":65,"start":465.27,"end":468.14,"en":"We look at what's inside of the person, the bad apples.","zh":"我们看的是一个人的内心，即坏苹果。"},{"i":66,"start":468.16,"end":474.16,"en":"This is the foundation of all of social science, the foundation of religion, the foundation of war.","zh":"这是所有社会科学的基础、宗教的基础、战争的基础。"},{"i":67,"start":475.16,"end":481.92,"en":"Social psychologists like me come along and say, \"Yeah, people are the actors on the stage, but you'll have to be aware of the situation.","zh":"像我这样的社会心理学家会说：“是的，人们是舞台上的演员，但你必须意识到这种情况。"},{"i":68,"start":481.94,"end":484.32,"en":"Who are the cast of characters? What's the costume?","zh":"角色阵容有哪些？服装是什么？"},{"i":69,"start":484.35,"end":490.5,"en":"Is there a stage director?\" And so we're interested in what are the external factors around the individual -- the bad barrel?","zh":"有舞台导演吗？”所以我们感兴趣的是个人周围的外部因素是什么——坏桶？"},{"i":70,"start":491.06,"end":496.97,"en":"Social scientists stop there and they miss the big point that I discovered when I became an expert witness for Abu Ghraib.","zh":"社会科学家就此止步，他们忽略了我在成为阿布格莱布监狱专家证人时发现的要点。"},{"i":71,"start":497.0,"end":506.62,"en":"The power is in the system. The system creates the situation that corrupts the individuals, and the system is the legal, political, economic, cultural background.","zh":"权力在系统里。制度创造了腐蚀个体的情境，制度就是法律、政治、经济、文化背景。"},{"i":72,"start":506.65,"end":509.94,"en":"And this is where the power is of the bad-barrel makers.","zh":"这就是坏桶制造商的力量所在。"},{"i":73,"start":510.3,"end":512.8,"en":"If you want to change a person, change the situation.","zh":"如果你想改变一个人，就先改变情况。"},{"i":74,"start":512.82,"end":516.21,"en":"And to change it, you've got to know where the power is, in the system.","zh":"要改变它，你必须知道系统中的权力在哪里。"},{"i":75,"start":516.24,"end":522.76,"en":"So the Lucifer effect involves understanding human character transformations with these three factors.","zh":"因此，路西法效应涉及通过这三个因素来理解人类性格的转变。"},{"i":76,"start":523.28,"end":526.76,"en":"And it's a dynamic interplay. What do the people bring into the situation?","zh":"这是一种动态的相互作用。人们给这种情况带来了什么？"},{"i":77,"start":526.79,"end":528.8,"en":"What does the situation bring out of them?","zh":"这种情况给他们带来了什么？"},{"i":78,"start":528.82,"end":532.14,"en":"And what is the system that creates and maintains that situation?","zh":"创造并维持这种情况的系统是什么？"},{"i":79,"start":532.78,"end":537.33,"en":"My recent book, \"The Lucifer Effect,\" is about, how do you understand how good people turn evil?","zh":"我最近的书《路西法效应》是关于，你如何理解好人如何变成邪恶的？"},{"i":80,"start":537.36,"end":540.62,"en":"And it has a lot of detail about what I'm going to talk about today.","zh":"其中有很多关于我今天要讨论的内容的细节。"},{"i":81,"start":541.06,"end":553.45,"en":"So Dr. Z's \"Lucifer Effect,\" although it focuses on evil, really is a celebration of the human mind's infinite capacity to make any of us kind or cruel, caring or indifferent, creative or destructive,","zh":"因此，Z博士的“路西法效应”虽然关注的是邪恶，但实际上是对人类思想无限能力的庆祝，它使我们任何人变得善良或残忍，关心或冷漠，富有创造力或破坏性，"},{"i":82,"start":553.47,"end":560.66,"en":"and it makes some of us villains. And the good news that I'm going to hopefully come to at the end is that it makes some of us heroes.","zh":"这让我们中的一些人变成了恶棍。我希望最后能得到的好消息是，它使我们中的一些人成为英雄。"},{"i":83,"start":561.81,"end":567.53,"en":"This wonderful cartoon in the New Yorker summarizes my whole talk: \"I'm neither a good cop nor a bad cop, Jerome.","zh":"《纽约客》上的这幅精彩漫画总结了我的整个演讲：“杰罗姆，我既不是好警察，也不是坏警察。"},{"i":84,"start":567.55,"end":575.52,"en":"Like yourself, I'm a complex amalgam of positive and negative personality traits that emerge or not, depending on the circumstances.\"","zh":"和你一样，我是一个积极和消极人格特质的复杂混合物，这些特质的出现与否取决于具体情况。”"},{"i":85,"start":575.54,"end":582.61,"en":"(Laughter) There's a study some of you think you know about, but very few people have ever read the story.","zh":"（笑声） 你们中有些人认为自己知道一项研究，但很少有人读过这个故事。"},{"i":86,"start":582.64,"end":591.06,"en":"You watched the movie. This is Stanley Milgram, little Jewish kid from the Bronx, and he asked the question, \"Could the Holocaust happen here, now?\"","zh":"你看过这部电影。这是斯坦利·米尔格拉姆，来自布朗克斯的犹太小孩子，他问了一个问题：“大屠杀现在会发生在这里吗？”"},{"i":87,"start":591.08,"end":594.59,"en":"People say, \"No, that's Nazi Germany, Hitler, you know, that's 1939.\"","zh":"人们说：“不，那是纳粹德国，希特勒，你知道，那是 1939 年。”"},{"i":88,"start":594.61,"end":600.2,"en":"He said, \"Yeah, but suppose Hitler asked you, 'Would you electrocute a stranger?' 'No way, I'm a good person.'\"","zh":"他说：“是的，但是假设希特勒问你，‘你会电死一个陌生人吗？’ “没办法，我是个好人。”"},{"i":89,"start":600.22,"end":604.58,"en":"He said, \"Why don't we put you in a situation and give you a chance to see what you would do?\"","zh":"他说：“我们为什么不把你置于一个情境中，给你一个机会，看看你会做什么？”"},{"i":90,"start":604.61,"end":607.69,"en":"And so what he did was he tested 1,000 ordinary people.","zh":"所以他所做的就是对 1000 名普通人进行了测试。"},{"i":91,"start":607.71,"end":611.78,"en":"500 New Haven, Connecticut, 500 Bridgeport.","zh":"500 纽黑文，康涅狄格州，500 布里奇波特。"},{"i":92,"start":611.8,"end":614.52,"en":"And the ad said, \"Psychologists want to understand memory.","zh":"广告中写道：“心理学家想要了解记忆。"},{"i":93,"start":614.54,"end":617.84,"en":"We want to improve people's memory, because it is the key to success.\"","zh":"我们希望提高人们的记忆力，因为这是成功的关键。”"},{"i":94,"start":617.86,"end":624.05,"en":"OK? \"We're going to give you five bucks -- four dollars for your time.","zh":"好的？ “我们将给你五美元——四美元作为你的时间。"},{"i":95,"start":624.07,"end":627.53,"en":"We don't want college students. We want men between 20 and 50.\"","zh":"我们不想要大学生。我们想要20岁到50岁之间的男性。”"},{"i":96,"start":627.55,"end":632.41,"en":"In the later studies, they ran women. Ordinary people: barbers, clerks, white-collar people.","zh":"在后来的研究中，他们跑的是女性。普通人：理发师、店员、白领。"},{"i":97,"start":632.43,"end":636.55,"en":"So, you go down, one of you will be a learner, one will be a teacher.","zh":"所以，你们下去，你们中的一个将成为学习者，一个将成为老师。"},{"i":98,"start":636.57,"end":638.48,"en":"The learner's a genial, middle-aged guy.","zh":"学习者是一位和蔼可亲的中年男子。"},{"i":99,"start":638.5,"end":641.61,"en":"He gets tied up to the shock apparatus in another room.","zh":"他被绑在另一个房间的电击装置上。"},{"i":100,"start":641.63,"end":645.2,"en":"The learner could be middle-aged, could be as young as 20.","zh":"学习者可能是中年人，也可能只有20岁。"},{"i":101,"start":645.23,"end":651.08,"en":"And one of you is told by the authority, the guy in the lab coat, \"Your job as teacher is to give him material to learn.","zh":"权威人士、穿着实验服的家伙告诉你们中的一个人，“作为老师，你的工作就是给他提供学习材料。"},{"i":102,"start":651.11,"end":654.74,"en":"Gets it right, reward. Gets it wrong, you press a button on the shock box.","zh":"做对了，奖励。弄错了，你按一下震动盒上的按钮。"},{"i":103,"start":654.76,"end":657.61,"en":"The first button is 15 volts. He doesn't even feel it.\"","zh":"第一个按钮是 15 伏。他甚至没有感觉到。”"},{"i":104,"start":658.16,"end":661.14,"en":"That's the key. All evil starts with 15 volts.","zh":"这就是关键。一切邪恶都是从 15 伏开始的。"},{"i":105,"start":661.16,"end":663.57,"en":"And then the next step is another 15 volts.","zh":"然后下一步是另外 15 伏。"},{"i":106,"start":664.01,"end":667.01,"en":"The problem is, at the end of the line, it's 450 volts.","zh":"问题是，线路末端的电压为 450 伏。"},{"i":107,"start":667.03,"end":671.35,"en":"And as you go along, the guy is screaming, \"I've got a heart condition! I'm out of here!\"","zh":"当你继续前行时，那家伙尖叫着，“我有心脏病！我要离开这里！”"},{"i":108,"start":671.38,"end":675.96,"en":"You're a good person. You complain. \"Sir, who will be responsible if something happens to him?\"","zh":"你是个好人。你抱怨。 “先生，如果他出了什么事，谁来负责？”"},{"i":109,"start":675.99,"end":678.75,"en":"The experimenter says, \"Don't worry, I will be responsible.","zh":"实验者说：“放心，我会负责的。"},{"i":110,"start":678.77,"end":683.93,"en":"Continue, teacher.\" And the question is, who would go all the way to 450 volts?","zh":"继续吧，老师。”问题是，谁会一直使用 450 伏电压？"},{"i":111,"start":683.95,"end":688.08,"en":"You should notice here, when it gets up to 375, it says, \"Danger. Severe Shock.\"","zh":"您应该注意到这里，当它达到 375 时，它会显示“危险。严重休克”。"},{"i":112,"start":688.1,"end":691.44,"en":"When it gets up to here, there's \"XXX\" -- the pornography of power.","zh":"说到这里，就是“XXX”——权力的色情。"},{"i":113,"start":691.9,"end":697.14,"en":"So Milgram asks 40 psychiatrists, \"What percent of American citizens would go to the end?\"","zh":"因此米尔格拉姆问 40 名精神科医生，“有百分之多少的美国公民愿意走到最后？”"},{"i":114,"start":697.16,"end":704.37,"en":"They said only one percent. Because that's sadistic behavior, and we know, psychiatry knows, only one percent of Americans are sadistic.","zh":"他们说只有百分之一。因为这是施虐行为，而且我们知道，精神病学也知道，只有百分之一的美国人有施虐倾向。"},{"i":115,"start":704.39,"end":708.75,"en":"OK. Here's the data. They could not be more wrong.","zh":"好的。这是数据。他们大错特错了。"},{"i":116,"start":708.78,"end":713.14,"en":"Two thirds go all the way to 450 volts. This was just one study.","zh":"三分之二的电压一直达到 450 伏。这只是一项研究。"},{"i":117,"start":713.16,"end":716.7,"en":"Milgram did more than 16 studies. And look at this.","zh":"米尔格拉姆做了超过 16 项研究。看看这个。"},{"i":118,"start":717.49,"end":721.82,"en":"In study 16, where you see somebody like you go all the way, 90 percent go all the way.","zh":"在研究 16 中，你看到像你这样的人一路走来，90% 的人一路走来。"},{"i":119,"start":722.45,"end":726.0,"en":"In study five, if you see people rebel, 90 percent rebel.","zh":"在研究五中，如果你看到人们叛逆，90% 的人都会叛逆。"},{"i":120,"start":726.77,"end":729.62,"en":"What about women? Study 13 -- no different than men.","zh":"那么女性呢？研究 13——与男性没有什么不同。"},{"i":121,"start":729.94,"end":736.3,"en":"So Milgram is quantifying evil as the willingness of people to blindly obey authority, to go all the way to 450 volts.","zh":"因此，米尔格拉姆将邪恶量化为人们盲目服从权威、一路承受 450 伏电压的意愿。"},{"i":122,"start":736.61,"end":745.85,"en":"And it's like a dial on human nature. A dial in a sense that you can make almost everybody totally obedient, down to the majority, down to none.","zh":"这就像人性的表盘。从某种意义上说，你可以让几乎每个人都完全服从，低至大多数，低至没有。"},{"i":123,"start":746.77,"end":749.77,"en":"What are the external parallels? For all research is artificial.","zh":"外部的相似之处是什么？因为所有的研究都是人为的。"},{"i":124,"start":749.79,"end":763.43,"en":"What's the validity in the real world? 912 American citizens committed suicide or were murdered by family and friends in Guyana jungle in 1978, because they were blindly obedient to this guy, their pastor -- not their priest -- their pastor, Reverend Jim Jones.","zh":"在现实世界中的有效性是什么？ 1978年，912名美国公民在圭亚那丛林自杀或被家人和朋友谋杀，因为他们盲目服从这个人，他们的牧师——而不是他们的神父——他们的牧师吉姆·琼斯牧师。"},{"i":125,"start":763.46,"end":766.25,"en":"He persuaded them to commit mass suicide.","zh":"他说服他们集体自杀。"},{"i":126,"start":766.28,"end":771.02,"en":"And so, he's the modern Lucifer effect, a man of God who becomes the Angel of Death.","zh":"所以，他就是现代的路西法效应，一个成为死亡天使的神人。"},{"i":127,"start":772.66,"end":777.06,"en":"Milgram's study is all about individual authority to control people.","zh":"米尔格拉姆的研究都是关于控制他人的个人权力。"},{"i":128,"start":777.79,"end":785.66,"en":"Most of the time, we are in institutions, so the Stanford Prison Study is a study of the power of institutions to influence individual behavior.","zh":"大多数时候，我们都在机构中，因此斯坦福监狱研究是对机构影响个人行为的力量的研究。"},{"i":129,"start":785.68,"end":792.02,"en":"Interestingly, Stanley Milgram and I were in the same high school class in James Monroe in the Bronx, 1954.","zh":"有趣的是，1954 年，斯坦利·米尔格拉姆和我在布朗克斯区詹姆斯·门罗的高中同班。"},{"i":130,"start":793.14,"end":798.07,"en":"I did this study with my graduate students, especially Craig Haney -- and it also began work with an ad.","zh":"我和我的研究生，特别是克雷格哈尼一起做了这项研究，它也开始与广告一起工作。"},{"i":131,"start":798.1,"end":802.3,"en":"We had a cheap, little ad, but we wanted college students for a study of prison life.","zh":"我们有一个廉价的小广告，但我们想要大学生来研究监狱生活。"},{"i":132,"start":803.25,"end":805.69,"en":"75 people volunteered, took personality tests.","zh":"75 人自愿参加了性格测试。"},{"i":133,"start":805.71,"end":809.43,"en":"We did interviews. Picked two dozen: the most normal, the most healthy.","zh":"我们做了采访。选了两打：最正常的，最健康的。"},{"i":134,"start":809.46,"end":811.72,"en":"Randomly assigned them to be prisoner and guard.","zh":"随机分配他们为囚犯和看守。"},{"i":135,"start":811.75,"end":813.77,"en":"So on day one, we knew we had good apples.","zh":"所以从第一天起，我们就知道我们买到了好苹果。"},{"i":136,"start":813.79,"end":815.75,"en":"I'm going to put them in a bad situation.","zh":"我会让他们处于一个糟糕的境地。"},{"i":137,"start":815.77,"end":821.41,"en":"And secondly, we know there's no difference between the boys who will be guards and those who will be prisoners.","zh":"其次，我们知道将成为警卫的男孩和将成为囚犯的男孩之间没有区别。"},{"i":138,"start":821.44,"end":825.11,"en":"To the prisoners, we said, \"Wait at home. The study will begin Sunday.\"","zh":"我们对囚犯说：“在家等一下。学习将于周日开始。”"},{"i":139,"start":825.14,"end":829.56,"en":"We didn't tell them that the city police were going to come and do realistic arrests.","zh":"我们没有告诉他们市警察会来进行实际的逮捕。"},{"i":140,"start":829.58,"end":868.45,"en":"(Video) (Music) [Day 1] Student: A police car pulls up in front, and a cop comes to the front door,","zh":"（视频）（音乐）【第一天】学生：一辆警车停在前面，一名警察来到前门，"},{"i":141,"start":868.47,"end":870.47,"en":"and knocks, and says he's looking for me.","zh":"然后敲门，说他在找我。"},{"i":142,"start":870.49,"end":876.93,"en":"So they, right there, you know, they took me out the door, they put my hands against the car.","zh":"所以他们就在那里，你知道，他们把我带出了门，他们把我的手放在车上。"},{"i":143,"start":876.96,"end":884.29,"en":"It was a real cop car, it was a real policeman, and there were real neighbors in the street, who didn't know that this was an experiment.","zh":"这是一辆真正的警车，这是一位真正的警察，街上还有真正的邻居，他们不知道这是一个实验。"},{"i":144,"start":884.79,"end":887.54,"en":"And there was cameras all around and neighbors all around.","zh":"周围都是摄像头，周围都是邻居。"},{"i":145,"start":887.57,"end":890.78,"en":"They put me in the car, then they drove me around Palo Alto.","zh":"他们把我放进车里，然后开车带我绕帕洛阿尔托转了一圈。"},{"i":146,"start":892.34,"end":897.33,"en":"They took me to the basement of the police station.","zh":"他们把我带到派出所的地下室。"},{"i":147,"start":904.37,"end":911.53,"en":"Then they put me in a cell. I was the first one to be picked up, so they put me in a cell, which was just like a room with a door with bars on it.","zh":"然后他们把我关进牢房。我是第一个被抓起来的，所以他们把我关进一个牢房，就像一个房间，门上有铁栅栏。"},{"i":148,"start":912.45,"end":918.03,"en":"You could tell it wasn't a real jail. They locked me in there, in this degrading little outfit.","zh":"你可以看出这不是真正的监狱。他们把我锁在那里，穿着这件有辱人格的小衣服。"},{"i":149,"start":918.77,"end":921.35,"en":"They were taking this experiment too seriously.","zh":"他们太认真地对待这个实验了。"},{"i":150,"start":921.37,"end":925.2,"en":"Here are the prisoners, who are going to be dehumanized, they'll become numbers.","zh":"这些囚犯将被非人化，他们将成为数字。"},{"i":151,"start":925.23,"end":928.12,"en":"Here are the guards with the symbols of power and anonymity.","zh":"这里是带有权力和匿名象征的守卫。"},{"i":152,"start":928.14,"end":933.09,"en":"Guards get prisoners to clean the toilet bowls out with their bare hands, to do other humiliating tasks.","zh":"狱警让囚犯徒手清理马桶，或者做其他羞辱性的工作。"},{"i":153,"start":933.11,"end":935.35,"en":"They strip them naked. They sexually taunt them.","zh":"他们剥光他们的衣服。他们对他们进行性嘲弄。"},{"i":154,"start":935.38,"end":938.91,"en":"They begin to do degrading activities, like having them simulate sodomy.","zh":"他们开始进行有辱人格的活动，比如让他们模拟鸡奸。"},{"i":155,"start":938.94,"end":942.17,"en":"You saw simulating fellatio in soldiers in Abu Ghraib.","zh":"你在阿布格莱布监狱见过士兵模拟口交。"},{"i":156,"start":942.19,"end":950.39,"en":"My guards did it in five days. The stress reaction was so extreme that normal kids we picked because they were healthy had breakdowns within 36 hours.","zh":"我的警卫在五天内就完成了。压力反应如此极端，以至于我们挑选的健康孩子在 36 小时内就崩溃了。"},{"i":157,"start":950.41,"end":954.44,"en":"The study ended after six days, because it was out of control.","zh":"该研究在六天后结束，因为它失去了控制。"},{"i":158,"start":954.46,"end":962.67,"en":"Five kids had emotional breakdowns. Does it make a difference if warriors go to battle changing their appearance or not?","zh":"五个孩子情绪崩溃。战士们上战场时改变外貌有什么区别吗？"},{"i":159,"start":962.69,"end":965.45,"en":"If they're anonymous, how do they treat their victims?","zh":"如果他们是匿名的，他们会如何对待受害者？"},{"i":160,"start":965.47,"end":968.63,"en":"In some cultures, they go to war without changing their appearance.","zh":"在某些文化中，他们在打仗时不会改变自己的外表。"},{"i":161,"start":968.65,"end":971.38,"en":"In others, they paint themselves like \"Lord of the Flies.\"","zh":"在其他人中，他们把自己描绘成“蝇王”。"},{"i":162,"start":971.4,"end":974.68,"en":"In some, they wear masks. In many, soldiers are anonymous in uniform.","zh":"在某些情况下，他们戴着口罩。在许多地方，穿着制服的士兵都是匿名的。"},{"i":163,"start":974.71,"end":979.4,"en":"So this anthropologist, John Watson, found 23 cultures that had two bits of data.","zh":"因此，这位人类学家约翰·沃森 (John Watson) 发现了 23 种拥有两位数据的文化。"},{"i":164,"start":979.43,"end":984.1,"en":"Do they change their appearance? 15. Do they kill, torture, mutilate? 13.","zh":"他们会改变外貌吗？ 15. 他们会杀人、折磨、残害吗？ 13."},{"i":165,"start":984.4,"end":988.46,"en":"If they don't change their appearance, only one of eight kills, tortures or mutilates.","zh":"如果他们不改变外貌，八次杀戮、酷刑或残害中只有一次。"},{"i":166,"start":988.48,"end":994.62,"en":"The key is in the red zone. If they change their appearance, 12 of 13 -- that's 90 percent -- kill, torture, mutilate.","zh":"钥匙在红色区域。如果他们改变外貌，13 人中的 12 人——即 90%——就会杀人、折磨、残害。"},{"i":167,"start":995.14,"end":1000.57,"en":"And that's the power of anonymity. So what are the seven social processes that grease the slippery slope of evil?","zh":"这就是匿名的力量。那么，导致罪恶滑坡的七个社会过程是什么呢？"},{"i":168,"start":1000.59,"end":1005.38,"en":"Mindlessly taking the first small step. Dehumanization of others. De-individuation of self.","zh":"无意识地迈出第一步。他人的非人化。自我去个体化。"},{"i":169,"start":1005.41,"end":1008.98,"en":"Diffusion of personal responsibility. Blind obedience to authority.","zh":"个人责任的分散。盲目服从权威。"},{"i":170,"start":1009.0,"end":1014.14,"en":"Uncritical conformity to group norms. Passive tolerance of evil through inaction, or indifference.","zh":"不加批判地遵守群体规范。通过不作为或冷漠来被动容忍邪恶。"},{"i":171,"start":1014.16,"end":1017.02,"en":"And it happens when you're in a new or unfamiliar situation.","zh":"当你处于新的或不熟悉的情况时，这种情况就会发生。"},{"i":172,"start":1017.04,"end":1019.09,"en":"Your habitual response patterns don't work.","zh":"你的习惯反应模式不起作用。"},{"i":173,"start":1019.12,"end":1021.56,"en":"Your personality and morality are disengaged.","zh":"你的人格和道德脱节了。"},{"i":174,"start":1022.8,"end":1028.16,"en":"\"Nothing is easier than to denounce the evildoer; nothing more difficult than understanding him,\" Dostoyevsky.","zh":"陀思妥耶夫斯基说：“没有什么比谴责恶人更容易的了；没有什么比理解他更困难的了。”"},{"i":175,"start":1028.18,"end":1031.75,"en":"Understanding is not excusing. Psychology is not excuse-ology.","zh":"理解不是借口。心理学不是借口学。"},{"i":176,"start":1032.22,"end":1037.64,"en":"So social and psychological research reveals how ordinary, good people can be transformed without the drugs.","zh":"因此，社会和心理学研究揭示了如何在不使用药物的情况下改变普通的好人。"},{"i":177,"start":1037.67,"end":1040.97,"en":"You don't need it. You just need the social-psychological processes.","zh":"你不需要它。你只需要社会心理过程。"},{"i":178,"start":1040.99,"end":1044.89,"en":"Real world parallels? Compare this with this.","zh":"现实世界的相似之处？这个跟这个比较一下。"},{"i":179,"start":1046.14,"end":1057.11,"en":"James Schlesinger -- I'm going to end with this -- says, \"Psychologists have attempted to understand how and why individuals and groups who usually act humanely can sometimes act otherwise in certain circumstances.\"","zh":"詹姆斯·施莱辛格（James Schlesinger）——我将以此作为结束——说，“心理学家试图理解通常表现人道的个人和团体如何以及为什么有时在某些情况下会表现出不同的行为。”"},{"i":180,"start":1057.14,"end":1064.77,"en":"That's the Lucifer effect. And he goes on to say, \"The landmark Stanford study provides a cautionary tale for all military operations.\"","zh":"这就是路西法效应。他接着说：“斯坦福大学这项具有里程碑意义的研究为所有军事行动提供了警示。”"},{"i":181,"start":1064.8,"end":1068.64,"en":"If you give people power without oversight, it's a prescription for abuse.","zh":"如果你在没有监督的情况下赋予人们权力，那就是滥用权力的处方。"},{"i":182,"start":1068.67,"end":1076.89,"en":"They knew that, and let that happen. So another report, an investigative report by General Fay, says the system is guilty.","zh":"他们知道这一点，并让这种情况发生。因此，另一份报告，即费伊将军的调查报告，称该系统有罪。"},{"i":183,"start":1076.91,"end":1087.98,"en":"In this report, he says it was the environment that created Abu Ghraib, by leadership failures that contributed to the occurrence of such abuse, and because it remained undiscovered by higher authorities for a long period of time.","zh":"他在这份报告中表示，正是环境造就了阿布格莱布监狱，领导失误导致了此类虐待事件的发生，而且很长一段时间没有被上级当局发现。"},{"i":184,"start":1088.01,"end":1091.46,"en":"Those abuses went on for three months. Who was watching the store?","zh":"这些虐待行为持续了三个月。谁在看店？"},{"i":185,"start":1091.49,"end":1093.73,"en":"The answer is nobody, I think on purpose.","zh":"答案是没有人，我是故意的。"},{"i":186,"start":1093.76,"end":1099.14,"en":"He gave the guards permission to do those things, and they knew nobody was ever going to come down to that dungeon.","zh":"他允许守卫做这些事情，他们知道没有人会来到那个地牢。"},{"i":187,"start":1099.16,"end":1101.73,"en":"So you need a paradigm shift in all of these areas.","zh":"因此，您需要在所有这些领域进行范式转变。"},{"i":188,"start":1101.76,"end":1105.43,"en":"The shift is away from the medical model that focuses only on the individual.","zh":"这种转变远离了只关注个人的医疗模式。"},{"i":189,"start":1105.46,"end":1111.94,"en":"The shift is toward a public health model that recognizes situational and systemic vectors of disease.","zh":"这种转变是朝着认识疾病的情境性和系统性媒介的公共卫生模式转变。"},{"i":190,"start":1111.97,"end":1114.3,"en":"Bullying is a disease. Prejudice is a disease.","zh":"欺凌是一种病。偏见是一种病。"},{"i":191,"start":1114.33,"end":1119.29,"en":"Violence is a disease. Since the Inquisition, we've been dealing with problems at the individual level.","zh":"暴力是一种疾病。自宗教裁判所以来，我们一直在个人层面上处理问题。"},{"i":192,"start":1119.31,"end":1125.74,"en":"It doesn't work. Aleksandr Solzhenitsyn says, \"The line between good and evil cuts through the heart of every human being.\"","zh":"这不起作用。亚历山大·索尔仁尼琴说：“善与恶之间的界限贯穿每个人的心。”"},{"i":193,"start":1125.76,"end":1130.57,"en":"That means that line is not out there. That's a decision that you have to make, a personal thing.","zh":"这意味着这条线不存在。这是你必须做出的决定，是个人的事情。"},{"i":194,"start":1130.59,"end":1133.14,"en":"So I want to end very quickly on a positive note.","zh":"所以我想尽快以积极的态度结束。"},{"i":195,"start":1133.65,"end":1140.55,"en":"Heroism as the antidote to evil, by promoting the heroic imagination, especially in our kids, in our educational system.","zh":"英雄主义是邪恶的解药，通过在我们的教育系统中促进英雄想象力，特别是在我们的孩子身上。"},{"i":196,"start":1140.58,"end":1146.77,"en":"We want kids to think, \"I'm a hero in waiting, waiting for the right situation to come along, and I will act heroically.","zh":"我们希望孩子们这样想：“我是一个等待中的英雄，等待合适的情况出现，我会采取英雄行动。"},{"i":197,"start":1146.8,"end":1152.45,"en":"My whole life, I'm now going to focus away from evil -- that I've been in since I was a kid -- to understanding heroes.","zh":"我的一生，现在将把注意力从我从小就参与的邪恶中转移出来，去理解英雄。"},{"i":198,"start":1152.48,"end":1155.67,"en":"Banality of heroism. It's ordinary people who do heroic deeds.","zh":"英雄主义的平庸。做出英雄事迹的都是普通人。"},{"i":199,"start":1155.69,"end":1158.64,"en":"It's the counterpoint to Hannah Arendt's \"Banality of Evil.\"","zh":"这是汉娜·阿伦特的《平庸之恶》的对立面。"},{"i":200,"start":1158.66,"end":1162.63,"en":"Our traditional societal heroes are wrong, because they are the exceptions.","zh":"我们传统的社会英雄是错误的，因为他们是例外。"},{"i":201,"start":1162.65,"end":1165.99,"en":"They organize their life around this. That's why we know their names.","zh":"他们围绕这个组织自己的生活。这就是为什么我们知道他们的名字。"},{"i":202,"start":1166.01,"end":1170.25,"en":"Our kids' heroes are also wrong models for them, because they have supernatural talents.","zh":"我们孩子们的英雄对他们来说也是错误的榜样，因为他们拥有超自然的天赋。"},{"i":203,"start":1170.28,"end":1175.37,"en":"We want our kids to realize most heroes are everyday people, and the heroic act is unusual.","zh":"我们希望我们的孩子意识到大多数英雄都是普通人，而英雄行为是不寻常的。"},{"i":204,"start":1175.39,"end":1183.2,"en":"This is Joe Darby. He was the one that stopped those abuses you saw, because when he saw those images, he turned them over to a senior investigating officer.","zh":"这是乔·达比。他是那个制止了你所看到的那些虐待行为的人，因为当他看到这些图像时，他将它们交给了一名高级调查官员。"},{"i":205,"start":1183.23,"end":1185.96,"en":"He was a low-level private, and that stopped it.","zh":"他是一名低级二等兵，这就阻止了这一切。"},{"i":206,"start":1185.98,"end":1192.01,"en":"Was he a hero? No. They had to put him in hiding, because people wanted to kill him, and then his mother and his wife.","zh":"他是英雄吗？不。他们不得不把他藏起来，因为人们想杀死他，然后是他的母亲和妻子。"},{"i":207,"start":1192.03,"end":1196.63,"en":"For three years, they were in hiding. This is the woman who stopped the Stanford Prison Study.","zh":"他们躲藏了三年。这是停止斯坦福监狱研究的女人。"},{"i":208,"start":1196.65,"end":1199.9,"en":"When I said it got out of control, I was the prison superintendent.","zh":"当我说事情失控时，我是监狱长。"},{"i":209,"start":1199.92,"end":1202.92,"en":"I didn't know it was out of control. I was totally indifferent.","zh":"我不知道事情已经失控了。我完全无动于衷。"},{"i":210,"start":1202.95,"end":1207.47,"en":"She saw that madhouse and said, \"You know what, it's terrible what you're doing to those boys.","zh":"她看到了那个疯人院，说道：“你知道吗，你对那些男孩做的事情太可怕了。"},{"i":211,"start":1207.49,"end":1211.14,"en":"They're not prisoners nor guards, they're boys, and you are responsible.\"","zh":"他们不是囚犯，也不是看守，他们是男孩，你要对此负责。”"},{"i":212,"start":1211.16,"end":1215.81,"en":"And I ended the study the next day. The good news is I married her the next year.","zh":"第二天我就结束了研究。好消息是我第二年就娶了她。"},{"i":213,"start":1215.83,"end":1227.62,"en":"(Laughter) (Applause) I just came to my senses, obviously.","zh":"（笑声）（掌声）显然，我刚刚醒悟过来。"},{"i":214,"start":1227.64,"end":1230.31,"en":"So situations have the power to do [three things].","zh":"因此，情境有能力做[三件事]。"},{"i":215,"start":1230.33,"end":1240.58,"en":"But the point is, this is the same situation that can inflame the hostile imagination in some of us, that makes us perpetrators of evil, can inspire the heroic imagination in others.","zh":"但关键是，这种情况可以激发我们中一些人的敌对想象，使我们成为邪恶的肇事者，也可以激发其他人的英雄想象。"},{"i":216,"start":1240.61,"end":1243.72,"en":"It's the same situation and you're on one side or the other.","zh":"这是同样的情况，你站在一边或另一边。"},{"i":217,"start":1243.74,"end":1249.31,"en":"Most people are guilty of the evil of inaction, because your mother said, \"Don't get involved. Mind your own business.\"","zh":"大多数人都犯有不作为之罪，因为你的母亲说：“不要参与其中，管好你自己的事。”"},{"i":218,"start":1249.33,"end":1251.81,"en":"And you have to say, \"Mama, humanity is my business.\"","zh":"你必须说：“妈妈，人类是我的事。”"},{"i":219,"start":1251.83,"end":1263.86,"en":"So the psychology of heroism is -- we're going to end in a moment -- how do we encourage children in new hero courses, that I'm working on with Matt Langdon -- he has a hero workshop -- to develop this heroic imagination, this self-labeling,","zh":"所以英雄主义的心理学是——我们马上就要结束——我们如何鼓励孩子们参加新的英雄课程，我正在与马特·兰登合作——他有一个英雄研讨会——来发展这种英雄想象力，这种自我标签，"},{"i":220,"start":1263.88,"end":1266.64,"en":"\"I am a hero in waiting,\" and teach them skills.","zh":"“我是等待中的英雄”，并教给他们技能。"},{"i":221,"start":1266.67,"end":1272.05,"en":"To be a hero, you have to learn to be a deviant, because you're always going against the conformity of the group.","zh":"要成为英雄，你必须学会​​成为一个离经叛道的人，因为你总是违背群体的一致性。"},{"i":222,"start":1272.7,"end":1276.54,"en":"Heroes are ordinary people whose social actions are extraordinary. Who act.","zh":"英雄是平凡的人，但他们的社会行为却是不平凡的。谁行动。"},{"i":223,"start":1276.56,"end":1280.72,"en":"The key to heroism is two things. You have to act when other people are passive.","zh":"英雄主义的关键有两点。当别人消极的时候，你必须采取行动。"},{"i":224,"start":1280.74,"end":1283.51,"en":"B: You have to act socio-centrically, not egocentrically.","zh":"B：你必须以社会为中心，而不是以自我为中心。"},{"i":225,"start":1283.53,"end":1287.31,"en":"And I want to end with a known story about Wesley Autrey, New York subway hero.","zh":"我想以一个关于纽约地铁英雄韦斯利·奥特里 (Wesley Autrey) 的著名故事作为结尾。"},{"i":226,"start":1287.34,"end":1291.14,"en":"Fifty-year-old African-American construction worker standing on a subway.","zh":"五十岁的非裔美国建筑工人站在地铁上。"},{"i":227,"start":1291.16,"end":1295.17,"en":"A white guy falls on the tracks. The subway train is coming. There's 75 people there.","zh":"一个白人摔倒在铁轨上。地铁列车来了。那里有 75 个人。"},{"i":228,"start":1295.2,"end":1298.58,"en":"You know what? They freeze. He's got a reason not to get involved.","zh":"你知道吗？他们冻结了。他有理由不参与其中。"},{"i":229,"start":1298.61,"end":1301.02,"en":"He's black, the guy's white, and he's got two kids.","zh":"他是黑人，那个人是白人，他有两个孩子。"},{"i":230,"start":1301.05,"end":1307.7,"en":"Instead, he gives his kids to a stranger, jumps on the tracks, puts the guy between the tracks, lays on him, the subway goes over him.","zh":"相反，他把孩子交给了一个陌生人，跳上铁轨，把那家伙放在铁轨之间，压在他身上，地铁从他身上碾过。"},{"i":231,"start":1307.72,"end":1310.98,"en":"Wesley and the guy -- 20 and a half inches height.","zh":"韦斯利和那个家伙——20英寸半高。"},{"i":232,"start":1311.0,"end":1315.94,"en":"The train clearance is 21 inches. A half an inch would have taken his head off.","zh":"火车间隙为 21 英寸。半英寸就会把他的头砍掉。"},{"i":233,"start":1316.54,"end":1320.61,"en":"And he said, \"I did what anyone could do,\" no big deal to jump on the tracks.","zh":"他说，“我做了任何人都能做的事”，跳上铁轨没什么大不了的。"},{"i":234,"start":1320.63,"end":1324.28,"en":"And the moral imperative is \"I did what everyone should do.\"","zh":"道德要求是“我做了每个人都应该做的事”。"},{"i":235,"start":1324.3,"end":1326.69,"en":"And so one day, you will be in a new situation.","zh":"所以有一天，你将处于一种新的境地。"},{"i":236,"start":1327.16,"end":1329.78,"en":"Take path one, you're going to be a perpetrator of evil.","zh":"走第一条路，你就会成为邪恶的肇事者。"},{"i":237,"start":1329.8,"end":1332.14,"en":"Evil, meaning you're going to be Arthur Andersen.","zh":"邪恶，意味着你将成为亚瑟·安德森。"},{"i":238,"start":1332.16,"end":1334.88,"en":"You're going to cheat, or you're going to allow bullying.","zh":"你要么作弊，要么纵容欺凌行为。"},{"i":239,"start":1334.9,"end":1337.71,"en":"Path two, you become guilty of the evil of passive inaction.","zh":"第二条路，你会因消极不作为而犯下罪恶。"},{"i":240,"start":1337.74,"end":1348.22,"en":"Path three, you become a hero. The point is, are we ready to take the path to celebrating ordinary heroes, waiting for the right situation to come along to put heroic imagination into action?","zh":"第三条路，你成为英雄。关键是，我们是否准备好走上歌颂平凡英雄的道路，等待合适的时机将英雄的想象付诸行动？"},{"i":241,"start":1348.24,"end":1355.66,"en":"Because it may only happen once in your life, and when you pass it by, you'll always know, I could have been a hero and I let it pass me by.","zh":"因为它可能在你的一生中只发生一次，当你错过它时，你永远会知道，我本来可以成为英雄，但我让它从我身边溜走了。"},{"i":242,"start":1355.69,"end":1357.86,"en":"So the point is thinking it and then doing it.","zh":"所以重点是思考然后去做。"},{"i":243,"start":1358.56,"end":1365.14,"en":"So I want to thank you. Thank you. Let's oppose the power of evil systems at home and abroad, and let's focus on the positive.","zh":"所以我想谢谢你。谢谢。让我们反对国内外邪恶制度的力量，让我们关注积极的一面。"},{"i":244,"start":1365.16,"end":1371.04,"en":"Advocate for respect of personal dignity, for justice and peace, which sadly our administration has not been doing.","zh":"倡导尊重个人尊严、正义与和平，遗憾的是我们的政府并没有这样做。"},{"i":245,"start":1371.07,"end":1375.45,"en":"Thanks so much. (Applause)","zh":"非常感谢。 （掌声）"}]}
+{
+  "slug": "philip_zimbardo_on_the_psychology_of_evil",
+  "title": "The psychology of evil",
+  "speaker": "Philip Zimbardo",
+  "category": "ted",
+  "school": null,
+  "year": null,
+  "duration": 1390.67,
+  "cover": "/covers/philip_zimbardo_on_the_psychology_of_evil.jpg",
+  "views": 5842377,
+  "sourceUrl": "https://www.youtube.com/watch?v=OsFEV35tWsg",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/philip_zimbardo_on_the_psychology_of_evil.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/philip_zimbardo_on_the_psychology_of_evil.m4a"
+  },
+  "zhSource": "official",
+  "sentences": [
+    {
+      "i": 0,
+      "start": 12.79,
+      "end": 20.14,
+      "en": "Philosophers, dramatists, theologians have grappled with this question for centuries: what makes people go wrong?",
+      "zh": "我在纽约南布朗克斯市中的贫民窟长大，周围充满了罪恶，如同所有在贫民窟长大的孩子一样。我有一些朋友，他们曾是好孩子，但他们的人生却如同罗伯特·路易斯·斯蒂文森笔下的变身怪医，由善转恶。"
+    },
+    {
+      "i": 1,
+      "start": 20.16,
+      "end": 23.14,
+      "en": "Interestingly, I asked this question when I was a little kid.",
+      "zh": "但他们的人生却如同罗伯特·路易斯·斯蒂文森笔下的变身怪医，由善转恶。"
+    },
+    {
+      "i": 2,
+      "start": 23.16,
+      "end": 30.3,
+      "en": "I grew up in the South Bronx, inner-city ghetto in New York, and I was surrounded by evil, as all kids are who grew up in an inner city.",
+      "zh": "但他们的人生却如同罗伯特·路易斯·斯蒂文森笔下的变身怪医，由善转恶。他们染毒，惹了麻烦，然后进了监狱。有些丧了命，即使并没有沾染毒品。"
+    },
+    {
+      "i": 3,
+      "start": 30.33,
+      "end": 36.97,
+      "en": "And I had friends who were really good kids, who lived out the Dr. Jekyll Mr. Hyde scenario -- Robert Louis Stevenson.",
+      "zh": "有些丧了命，即使并没有沾染毒品。所以当我读罗伯特·路易斯·斯蒂文森的作品时，我觉得那不是小说。唯一的问题是：酿成由善转恶的毒药是什么？更重要的是，善恶之间的界限——"
+    },
+    {
+      "i": 4,
+      "start": 36.99,
+      "end": 40.14,
+      "en": "That is, they took drugs, got in trouble, went to jail.",
+      "zh": "更重要的是，善恶之间的界限——"
+    },
+    {
+      "i": 5,
+      "start": 40.16,
+      "end": 44.02,
+      "en": "Some got killed, and some did it without drug assistance.",
+      "zh": "更重要的是，善恶之间的界限——特权阶层喜欢认定这个界限是固定且不可逾越的，认为他们是在善的一边，其他人在恶的一边——"
+    },
+    {
+      "i": 6,
+      "start": 44.45,
+      "end": 47.24,
+      "en": "So when I read Robert Louis Stevenson, that wasn't fiction.",
+      "zh": "认为他们是在善的一边，其他人在恶的一边——而我以前就知道这个界限是可以移动的，而且是可逾越的。"
+    },
+    {
+      "i": 7,
+      "start": 47.27,
+      "end": 49.49,
+      "en": "The only question is, what was in the juice?",
+      "zh": "而我以前就知道这个界限是可以移动的，而且是可逾越的。"
+    },
+    {
+      "i": 8,
+      "start": 49.51,
+      "end": 62.41,
+      "en": "And more importantly, that line between good and evil -- which privileged people like to think is fixed and impermeable, with them on the good side, the others on the bad side -- I knew that line was movable, and it was permeable.",
+      "zh": "而我以前就知道这个界限是可以移动的，而且是可逾越的。好人可以受诱惑而越界，偶尔在某些比较好的情况下，坏孩子也可能依靠外界的帮助、改造、治疗，以重塑人生。所以，我想以荷兰艺术家M. C. Escher这幅奇妙的作品开始说起。"
+    },
+    {
+      "i": 9,
+      "start": 62.44,
+      "end": 71.33,
+      "en": "Good people could be seduced across that line, and under good and some rare circumstances, bad kids could recover with help, with reform, with rehabilitation.",
+      "zh": "这幅奇妙的作品开始说起。如果你把视线集中在白色区域，你会看到一个充满了天使的世界。但是当我们再靠近一点看，魔鬼就出现了，世间的魔鬼。"
+    },
+    {
+      "i": 10,
+      "start": 72.16,
+      "end": 76.94,
+      "en": "So I want to begin with this wonderful illusion by [Dutch] artist M.C. Escher.",
+      "zh": "魔鬼就出现了，世间的魔鬼。这告诉我们几点。一：这个世界，无论过去，现在，还是将来，都总是由善和恶组成，"
+    },
+    {
+      "i": 11,
+      "start": 76.96,
+      "end": 80.82,
+      "en": "If you look at it and focus on the white, what you see is a world full of angels.",
+      "zh": "一：这个世界，无论过去，现在，还是将来，都总是由善和恶组成，因为善恶就如人类的阴阳。"
+    },
+    {
+      "i": 12,
+      "start": 80.84,
+      "end": 86.46,
+      "en": "But let's look more deeply, and as we do, what appears is the demons, the devils in the world.",
+      "zh": "因为善恶就如人类的阴阳。它也告诉我另外一件事。如果你还记得，上帝最喜欢的天使是路西法。"
+    },
+    {
+      "i": 13,
+      "start": 86.99,
+      "end": 94.58,
+      "en": "That tells us several things. One, the world is, was, will always be filled with good and evil, because good and evil is the yin and yang of the human condition.",
+      "zh": "上帝最喜欢的天使是路西法。显然，路西法的意思是“光明”。在某些经文里，它也有“黎明之星”的意思。显然他后来背叛了上帝，"
+    },
+    {
+      "i": 14,
+      "start": 94.6,
+      "end": 98.94,
+      "en": "It tells me something else. If you remember, God's favorite angel was Lucifer.",
+      "zh": "显然他后来背叛了上帝，这是对权威的终极背叛。当他率众背叛后，上帝派迈克天使长"
+    },
+    {
+      "i": 15,
+      "start": 99.45,
+      "end": 104.64,
+      "en": "Apparently, Lucifer means \"the light.\" It also means \"the morning star,\" in some scripture.",
+      "zh": "当他率众背叛后，上帝派迈克天使长将他和其他堕落的天使一起赶出天堂。"
+    },
+    {
+      "i": 16,
+      "start": 104.66,
+      "end": 110.38,
+      "en": "And apparently, he disobeyed God, and that's the ultimate disobedience to authority.",
+      "zh": "将他和其他堕落的天使一起赶出天堂。于是路西法降入地狱，成为撒旦，成为恶魔，宇宙中的恶之能量诞生了。"
+    },
+    {
+      "i": 17,
+      "start": 110.41,
+      "end": 117.93,
+      "en": "And when he did, Michael, the archangel, was sent to kick him out of heaven along with the other fallen angels.",
+      "zh": "成为恶魔，宇宙中的恶之能量诞生了。矛盾的是，是上帝造出了恶的容身之处---地狱。他却没能使恶一直呆在那里。"
+    },
+    {
+      "i": 18,
+      "start": 117.95,
+      "end": 124.16,
+      "en": "And so Lucifer descends into hell, becomes Satan, becomes the devil, and the force of evil in the universe begins.",
+      "zh": "他却没能使恶一直呆在那里。所以，从上帝最受宠的天使变为恶魔，这个巨大的转变，为我设立了一个大背景，"
+    },
+    {
+      "i": 19,
+      "start": 124.18,
+      "end": 128.65,
+      "en": "Paradoxically, it was God who created hell as a place to store evil.",
+      "zh": "为我设立了一个大背景，去理解那些从好人或者普通人"
+    },
+    {
+      "i": 20,
+      "start": 129.14,
+      "end": 131.52,
+      "en": "He didn't do a good job of keeping it there though.",
+      "zh": "去理解那些从好人或者普通人转变成坏人的人。"
+    },
+    {
+      "i": 21,
+      "start": 131.54,
+      "end": 144.14,
+      "en": "So, this arc of the cosmic transformation of God's favorite angel into the Devil, for me, sets the context for understanding human beings who are transformed from good, ordinary people into perpetrators of evil.",
+      "zh": "转变成坏人的人。所以，路西法效应，尽管它集中在阴暗的方面——人们可能投向阴暗，但他们本身并非阴暗——引导我作出一个心理学定义：恶是行使权力"
+    },
+    {
+      "i": 22,
+      "start": 144.74,
+      "end": 156.81,
+      "en": "So the Lucifer effect, although it focuses on the negatives -- the negatives that people can become, not the negatives that people are -- leads me to a psychological definition.",
+      "zh": "引导我作出一个心理学定义：恶是行使权力这才是关键：权力。来故意对他人进行心理伤害，对他人进行身体伤害，残害他人生命或思想，犯下反人道的罪行。"
+    },
+    {
+      "i": 23,
+      "start": 156.83,
+      "end": 161.07,
+      "en": "Evil is the exercise of power. And that's the key: it's about power.",
+      "zh": "犯下反人道的罪行。如果你用谷歌搜索evil (恶) 这个词——时至今日，这本是个早应消亡的词，"
+    },
+    {
+      "i": 24,
+      "start": 161.09,
+      "end": 169.63,
+      "en": "To intentionally harm people psychologically, to hurt people physically, to destroy people mortally, or ideas, and to commit crimes against humanity.",
+      "zh": "如果你用谷歌搜索evil (恶) 这个词——时至今日，这本是个早应消亡的词，你会在1/3秒内得到1.36亿个搜索结果。几年前发生的一件事——我知道你们当时一定和我一样震惊，"
+    },
+    {
+      "i": 25,
+      "start": 171.16,
+      "end": 178.14,
+      "en": "If you Google \"evil,\" a word that should surely have withered by now, you come up with 136 million hits in a third of a second.",
+      "zh": "就是揭露美军士兵在那场争议性的对伊战争中中的虐囚行为：阿布格莱布虐囚事件。"
+    },
+    {
+      "i": 26,
+      "start": 178.16,
+      "end": 191.14,
+      "en": "A few years ago -- I am sure all of you were shocked, as I was, with the revelation of American soldiers abusing prisoners in a strange place in a controversial war, Abu Ghraib in Iraq.",
+      "zh": "中的虐囚行为：阿布格莱布虐囚事件。这些士兵，有男性也有女性，对囚犯们实施了让人难以置信的羞辱。我很震惊，但是并不感到意外，因为我以前看到过类似的情况，当时我是斯坦福监狱实验的负责人。"
+    },
+    {
+      "i": 27,
+      "start": 191.16,
+      "end": 197.48,
+      "en": "And these were men and women who were putting prisoners through unbelievable humiliation.",
+      "zh": "当时我是斯坦福监狱实验的负责人。布什政府军方对此事的第一反应是什么？是丑闻发生后任何官方都会说的套词，"
+    },
+    {
+      "i": 28,
+      "start": 198.14,
+      "end": 205.56,
+      "en": "I was shocked, but I wasn't surprised, because I had seen those same visual parallels when I was the prison superintendent of the Stanford Prison Study.",
+      "zh": "\"不要怪我们。这与整个系统无关。只是几个坏苹果而已，只是一小撮恶劣的士兵而已。\"而我的假设是，美国士兵通常情况下是好的。"
+    },
+    {
+      "i": 29,
+      "start": 205.59,
+      "end": 208.3,
+      "en": "Immediately the Bush administration military said what?",
+      "zh": "而我的假设是，美国士兵通常情况下是好的。也许是装苹果的桶坏了。但我如何证明这个假设呢？"
+    },
+    {
+      "i": 30,
+      "start": 208.68,
+      "end": 213.06,
+      "en": "What all administrations say when there's a scandal: \"Don't blame us. It's not the system.",
+      "zh": "但我如何证明这个假设呢？我成为了其中一个名叫奇普·弗莱德里克中士的专家证人，"
+    },
+    {
+      "i": 31,
+      "start": 213.08,
+      "end": 215.48,
+      "en": "It's the few bad apples, the few rogue soldiers.\"",
+      "zh": "奇普·弗莱德里克中士的专家证人，在这个位置上，我可以接触到关于此事的十几份调查报告。"
+    },
+    {
+      "i": 32,
+      "start": 215.5,
+      "end": 218.53,
+      "en": "My hypothesis is, American soldiers are good, usually.",
+      "zh": "在这个位置上，我可以接触到关于此事的十几份调查报告。我同他接触，我可以研究他，"
+    },
+    {
+      "i": 33,
+      "start": 218.56,
+      "end": 223.14,
+      "en": "Maybe it was the barrel that was bad. But how am I going to deal with that hypothesis?",
+      "zh": "我同他接触，我可以研究他，让他来我家，了解他，作些心理上的分析来判断他是个好苹果还是坏苹果。"
+    },
+    {
+      "i": 34,
+      "start": 223.16,
+      "end": 230.78,
+      "en": "I became an expert witness for one of the guards, Sergeant Chip Frederick, and in that position, I had access to the dozen investigative reports.",
+      "zh": "作些心理上的分析来判断他是个好苹果还是坏苹果。第三点，我可以查看所有的"
+    },
+    {
+      "i": 35,
+      "start": 230.81,
+      "end": 239.36,
+      "en": "I had access to him. I could study him, have him come to my home, get to know him, do psychological analysis to see, was he a good apple or bad apple.",
+      "zh": "第三点，我可以查看所有的1000多张士兵拍摄的照片。这些照片都是暴力或色情的。所有这些都是美军士兵用相机拍摄的。因为每个人都有数码相机或手机相机，"
+    },
+    {
+      "i": 36,
+      "start": 239.39,
+      "end": 244.54,
+      "en": "And thirdly, I had access to all of the 1,000 pictures that these soldiers took.",
+      "zh": "因为每个人都有数码相机或手机相机，他们什么都拍。拍了超过1000张照片。我所做的是把它们分类。"
+    },
+    {
+      "i": 37,
+      "start": 245.03,
+      "end": 247.53,
+      "en": "These pictures are of a violent or sexual nature.",
+      "zh": "我所做的是把它们分类。但这些由陆军预备役的美军宪兵所拍摄的。"
+    },
+    {
+      "i": 38,
+      "start": 247.56,
+      "end": 250.52,
+      "en": "All of them come from the cameras of American soldiers.",
+      "zh": "但这些由陆军预备役的美军宪兵所拍摄的。"
+    },
+    {
+      "i": 39,
+      "start": 250.97,
+      "end": 256.19,
+      "en": "Because everybody has a digital camera or cell phone camera, they took pictures of everything, more than 1,000.",
+      "zh": "但这些由陆军预备役的美军宪兵所拍摄的。他们完全不是为执行此项任务而设立的部队。而此事仅发生在一个地点，1A层，在夜间值班时间。"
+    },
+    {
+      "i": 40,
+      "start": 256.21,
+      "end": 259.16,
+      "en": "And what I've done is I organized them into various categories.",
+      "zh": "而此事仅发生在一个地点，1A层，在夜间值班时间。"
+    },
+    {
+      "i": 41,
+      "start": 259.19,
+      "end": 264.13,
+      "en": "But these are by United States military police, army reservists.",
+      "zh": "而此事仅发生在一个地点，1A层，在夜间值班时间。为什么？1A层是军方情报中心。是审讯关押处。中央情报局在那里。"
+    },
+    {
+      "i": 42,
+      "start": 264.64,
+      "end": 268.12,
+      "en": "They are not soldiers prepared for this mission at all.",
+      "zh": "是审讯关押处。中央情报局在那里。巨人公司（美军外包公司）的审讯人员，全部都在那里，"
+    },
+    {
+      "i": 43,
+      "start": 268.14,
+      "end": 271.82,
+      "en": "And it all happened in a single place, Tier 1-A, on the night shift.",
+      "zh": "巨人公司（美军外包公司）的审讯人员，全部都在那里，而他们得不到任何关于暴动的信息。"
+    },
+    {
+      "i": 44,
+      "start": 271.84,
+      "end": 275.67,
+      "en": "Why? Tier 1-A was the center for military intelligence.",
+      "zh": "而他们得不到任何关于暴动的信息。于是他们向这些宪兵队士兵施加压力，迫使他们越线，"
+    },
+    {
+      "i": 45,
+      "start": 275.69,
+      "end": 278.89,
+      "en": "It was the interrogation hold. The CIA was there.",
+      "zh": "迫使他们越线，允许他们采取措施来击溃敌人的意志，"
+    },
+    {
+      "i": 46,
+      "start": 278.92,
+      "end": 284.88,
+      "en": "Interrogators from Titan Corporation, all there, and they're getting no information about the insurgency.",
+      "zh": "允许他们采取措施来击溃敌人的意志，挽起袖子，为审讯做准备，使他们屈服。这些都是婉辞，而这就是他们如何阐释的。"
+    },
+    {
+      "i": 47,
+      "start": 284.91,
+      "end": 295.89,
+      "en": "So they're going to put pressure on these soldiers, military police, to cross the line, give them permission to break the will of the enemy, to prepare them for interrogation, to soften them up, to take the gloves off.",
+      "zh": "而这就是他们如何阐释的。让我们进入那个地牢吧。（相机快门声）（以下图片含有裸露及暴力展示）"
+    },
+    {
+      "i": 48,
+      "start": 295.91,
+      "end": 299.04,
+      "en": "Those are the euphemisms, and this is how it was interpreted.",
+      "zh": "（相机快门声）（以下图片含有裸露及暴力展示）"
+    },
+    {
+      "i": 49,
+      "start": 299.79,
+      "end": 317.61,
+      "en": "Let's go down to that dungeon. (Typewriting) [Abu Ghraib Iraq Prison Abuses 2008 Military Police Guards' Photos] [The following images include nudity and graphic depictions of violence]",
+      "zh": "（相机快门声）（以下图片含有裸露及暴力展示）"
+    },
+    {
+      "i": 50,
+      "start": 318.34,
+      "end": 340.37,
+      "en": "(Camera shutter sounds) (Thuds)",
+      "zh": "（相机快门声）（以下图片含有裸露及暴力展示）（重击声）（相机快门声）"
+    },
+    {
+      "i": 51,
+      "start": 345.72,
+      "end": 360.71,
+      "en": "(Camera shutter) (Camera shutter)",
+      "zh": "（相机快门声）（重击声）（喘息声）"
+    },
+    {
+      "i": 52,
+      "start": 369.16,
+      "end": 408.58,
+      "en": "(Breathing) (Bells) (Bells end)",
+      "zh": "（钟声）很恐怖。这是恶的一种视觉展示。你应该不会没有注意到，我把那个伸开双臂的囚犯和达芬奇颂扬人类的作品放在一起的原因，"
+    },
+    {
+      "i": 53,
+      "start": 409.24,
+      "end": 415.31,
+      "en": "So, pretty horrific. That's one of the visual illustrations of evil.",
+      "zh": "和达芬奇颂扬人类的作品放在一起的原因，是那个犯人得了精神疾病。那个犯人每天用大便涂抹在身上，士兵们不得不使他在泥土里打滚，以消除臭味。"
+    },
+    {
+      "i": 54,
+      "start": 415.33,
+      "end": 425.74,
+      "en": "And it should not have escaped you that the reason I paired the prisoner with his arms out with Leonardo da Vinci's ode to humanity is that prisoner was mentally ill.",
+      "zh": "士兵们不得不使他在泥土里打滚，以消除臭味。但士兵们最终还是叫他屎男。他在监狱里做什么？!他本应在精神病院。不管怎样，前国防部长拉姆斯菲尔德"
+    },
+    {
+      "i": 55,
+      "start": 425.77,
+      "end": 430.56,
+      "en": "That prisoner covered himself with shit every day, they had to roll him in dirt so he wouldn't stink.",
+      "zh": "不管怎样，前国防部长拉姆斯菲尔德下来问，\"我想知道谁该为此负责？到底谁才是那几个坏苹果？\"嗯，这是个差劲的问题。"
+    },
+    {
+      "i": 56,
+      "start": 430.58,
+      "end": 432.93,
+      "en": "But the guards ended up calling him \"Shit Boy.\"",
+      "zh": "到底谁才是那几个坏苹果？\"嗯，这是个差劲的问题。"
+    },
+    {
+      "i": 57,
+      "start": 432.96,
+      "end": 437.14,
+      "en": "What was he doing in that prison rather than in some mental institution?",
+      "zh": "到底谁才是那几个坏苹果？\"嗯，这是个差劲的问题。你应该重新组织一下这个句子，\"是什么为此负责？\"因为\"什么\"既可以是指人，"
+    },
+    {
+      "i": 58,
+      "start": 437.66,
+      "end": 440.37,
+      "en": "In any event, here's former Secretary of Defense Rumsfeld.",
+      "zh": "因为\"什么\"既可以是指人，也可以是指情境，而显然那样问是坚持错误。"
+    },
+    {
+      "i": 59,
+      "start": 440.4,
+      "end": 443.21,
+      "en": "He comes down and says, \"I want to know, who is responsible?",
+      "zh": "而显然那样问是坚持错误。那么心理学家是如何理解"
+    },
+    {
+      "i": 60,
+      "start": 443.23,
+      "end": 446.04,
+      "en": "Who are the bad apples?\" Well, that's a bad question.",
+      "zh": "那么心理学家是如何理解这种人性的转变呢？如果你相信他们在进入地牢之前"
+    },
+    {
+      "i": 61,
+      "start": 446.06,
+      "end": 448.69,
+      "en": "You have to reframe it and ask, \"What is responsible?\"",
+      "zh": "如果你相信他们在进入地牢之前是好士兵的话。"
+    },
+    {
+      "i": 62,
+      "start": 448.71,
+      "end": 454.63,
+      "en": "\"What\" could be the who of people, but it could also be the what of the situation, and obviously that's wrongheaded.",
+      "zh": "是好士兵的话。有三种方式。最主要的方式是所谓的特质论。我们查看那些坏苹果的内在特征。"
+    },
+    {
+      "i": 63,
+      "start": 454.65,
+      "end": 462.36,
+      "en": "How do psychologists try to understand such transformations of human character, if you believe that they were good soldiers before they went down to that dungeon?",
+      "zh": "我们查看那些坏苹果的内在特征。这是所有社会科学的基础，宗教的基础，战争的基础。"
+    },
+    {
+      "i": 64,
+      "start": 462.38,
+      "end": 465.24,
+      "en": "There are three ways. The main way is called dispositional.",
+      "zh": "宗教的基础，战争的基础。像我这样的社会心理学家会出来说，\"是啊，人们是舞台上的演员，"
+    },
+    {
+      "i": 65,
+      "start": 465.27,
+      "end": 468.14,
+      "en": "We look at what's inside of the person, the bad apples.",
+      "zh": "人们是舞台上的演员，但你得清楚其所处的情境。"
+    },
+    {
+      "i": 66,
+      "start": 468.16,
+      "end": 474.16,
+      "en": "This is the foundation of all of social science, the foundation of religion, the foundation of war.",
+      "zh": "但你得清楚其所处的情境。扮演角色的演员是哪些人？戏服什么样？有舞台导演吗？所以我们感兴趣的是，个体周围的外界因素"
+    },
+    {
+      "i": 67,
+      "start": 475.16,
+      "end": 481.92,
+      "en": "Social psychologists like me come along and say, \"Yeah, people are the actors on the stage, but you'll have to be aware of the situation.",
+      "zh": "所以我们感兴趣的是，个体周围的外界因素是什么，坏的苹果桶？社会学家研究的仅限于此，却遗漏了这个很重要的问题，即我在成为阿布格莱布虐囚事件的专家证人后所发现的："
+    },
+    {
+      "i": 68,
+      "start": 481.94,
+      "end": 484.32,
+      "en": "Who are the cast of characters? What's the costume?",
+      "zh": "即我在成为阿布格莱布虐囚事件的专家证人后所发现的：权力存在于系统中。"
+    },
+    {
+      "i": 69,
+      "start": 484.35,
+      "end": 490.5,
+      "en": "Is there a stage director?\" And so we're interested in what are the external factors around the individual -- the bad barrel?",
+      "zh": "权力存在于系统中。系统制造出腐化个体的情境，这个系统，是指法制、政治、经济和文化背景。"
+    },
+    {
+      "i": 70,
+      "start": 491.06,
+      "end": 496.97,
+      "en": "Social scientists stop there and they miss the big point that I discovered when I became an expert witness for Abu Ghraib.",
+      "zh": "这个系统，是指法制、政治、经济和文化背景。该系统即苹果桶制造者权力之所在。"
+    },
+    {
+      "i": 71,
+      "start": 497.0,
+      "end": 506.62,
+      "en": "The power is in the system. The system creates the situation that corrupts the individuals, and the system is the legal, political, economic, cultural background.",
+      "zh": "如果你想改变一个人，你就得改变其所处的情境。如果你要改变情境，你得知道其权力存在于系统的何处。所以路西法效应牵涉到理解人性转变是如何受这三项因素影响的。"
+    },
+    {
+      "i": 72,
+      "start": 506.65,
+      "end": 509.94,
+      "en": "And this is where the power is of the bad-barrel makers.",
+      "zh": "人性转变是如何受这三项因素影响的。"
+    },
+    {
+      "i": 73,
+      "start": 510.3,
+      "end": 512.8,
+      "en": "If you want to change a person, change the situation.",
+      "zh": "人性转变是如何受这三项因素影响的。它是一个相互作用的过程。人们会怎样影响情境？"
+    },
+    {
+      "i": 74,
+      "start": 512.82,
+      "end": 516.21,
+      "en": "And to change it, you've got to know where the power is, in the system.",
+      "zh": "人们会怎样影响情境？情境如何影响人们？制造并维持该情境的系统是什么？"
+    },
+    {
+      "i": 75,
+      "start": 516.24,
+      "end": 522.76,
+      "en": "So the Lucifer effect involves understanding human character transformations with these three factors.",
+      "zh": "制造并维持该情境的系统是什么？我最近出版的书《路西法效应》，就是关于我们如何理解好人是怎样变成恶人的。"
+    },
+    {
+      "i": 76,
+      "start": 523.28,
+      "end": 526.76,
+      "en": "And it's a dynamic interplay. What do the people bring into the situation?",
+      "zh": "就是关于我们如何理解好人是怎样变成恶人的。书中有关于我今天演讲内容的大量细节。"
+    },
+    {
+      "i": 77,
+      "start": 526.79,
+      "end": 528.8,
+      "en": "What does the situation bring out of them?",
+      "zh": "的大量细节。"
+    },
+    {
+      "i": 78,
+      "start": 528.82,
+      "end": 532.14,
+      "en": "And what is the system that creates and maintains that situation?",
+      "zh": "的大量细节。所以，津博士的《路西法效应》，尽管着重于恶，但其实是颂扬人类有无限的潜力，"
+    },
+    {
+      "i": 79,
+      "start": 532.78,
+      "end": 537.33,
+      "en": "My recent book, \"The Lucifer Effect,\" is about, how do you understand how good people turn evil?",
+      "zh": "但其实是颂扬人类有无限的潜力，使我们任何人向善或作恶，"
+    },
+    {
+      "i": 80,
+      "start": 537.36,
+      "end": 540.62,
+      "en": "And it has a lot of detail about what I'm going to talk about today.",
+      "zh": "使我们任何人向善或作恶，关怀或冷漠，创造或毁灭，"
+    },
+    {
+      "i": 81,
+      "start": 541.06,
+      "end": 553.45,
+      "en": "So Dr. Z's \"Lucifer Effect,\" although it focuses on evil, really is a celebration of the human mind's infinite capacity to make any of us kind or cruel, caring or indifferent, creative or destructive,",
+      "zh": "甚至可以使得我们其中一些人成为恶棍。而我在最后将满怀希望地给大家讲一个好消息的故事，即这潜力也可以使我们其中一些人成为英雄。这是登在《纽约客》上非常棒的一个漫画，它其实总结了我的全部演讲：\"杰罗姆，我既不是好警察也不是坏警察，"
+    },
+    {
+      "i": 82,
+      "start": 553.47,
+      "end": 560.66,
+      "en": "and it makes some of us villains. And the good news that I'm going to hopefully come to at the end is that it makes some of us heroes.",
+      "zh": "\"杰罗姆，我既不是好警察也不是坏警察，跟你一样，我是一个正面和负面人格特质的复杂混合体，至于体现哪一面，要靠具体情况而言。\""
+    },
+    {
+      "i": 83,
+      "start": 561.81,
+      "end": 567.53,
+      "en": "This wonderful cartoon in the New Yorker summarizes my whole talk: \"I'm neither a good cop nor a bad cop, Jerome.",
+      "zh": "至于体现哪一面，要靠具体情况而言。\"（笑声）有一项研究，你们其中一些人可能以为自己知道，"
+    },
+    {
+      "i": 84,
+      "start": 567.55,
+      "end": 575.52,
+      "en": "Like yourself, I'm a complex amalgam of positive and negative personality traits that emerge or not, depending on the circumstances.\"",
+      "zh": "有一项研究，你们其中一些人可能以为自己知道，但极少数人读过这个故事。你看过电影。这是斯坦利·米尔格拉姆，自小在布朗克斯长大的一个犹太人，他问，\"大屠杀在此时此地发生吗？\""
+    },
+    {
+      "i": 85,
+      "start": 575.54,
+      "end": 582.61,
+      "en": "(Laughter) There's a study some of you think you know about, but very few people have ever read the story.",
+      "zh": "他问，\"大屠杀在此时此地发生吗？\"人们回答，\"不，那是纳粹德国，那是希特勒，你知道，那是1939年。\"他说，\"是啊，但如果希特勒问你，"
+    },
+    {
+      "i": 86,
+      "start": 582.64,
+      "end": 591.06,
+      "en": "You watched the movie. This is Stanley Milgram, little Jewish kid from the Bronx, and he asked the question, \"Could the Holocaust happen here, now?\"",
+      "zh": "他说，\"是啊，但如果希特勒问你，'你会用电刑处死一个陌生人吗？' ' 没门儿，我肯定不会，我是个好人。\"他说，\"那么我们不如把你放在一个情境里，给你一个机会，看看你会怎么做？\"于是，他找了1000个普通人来做测试。"
+    },
+    {
+      "i": 87,
+      "start": 591.08,
+      "end": 594.59,
+      "en": "People say, \"No, that's Nazi Germany, Hitler, you know, that's 1939.\"",
+      "zh": "于是，他找了1000个普通人来做测试。"
+    },
+    {
+      "i": 88,
+      "start": 594.61,
+      "end": 600.2,
+      "en": "He said, \"Yeah, but suppose Hitler asked you, 'Would you electrocute a stranger?' 'No way, I'm a good person.'\"",
+      "zh": "于是，他找了1000个普通人来做测试。500人来自康州纽黑文，500人来自布里奇波特。广告是这样说的，\"心理学家想要研究人的记忆，"
+    },
+    {
+      "i": 89,
+      "start": 600.22,
+      "end": 604.58,
+      "en": "He said, \"Why don't we put you in a situation and give you a chance to see what you would do?\"",
+      "zh": "广告是这样说的，\"心理学家想要研究人的记忆，我们想改善人的记忆，因为记忆是成功的关键。\""
+    },
+    {
+      "i": 90,
+      "start": 604.61,
+      "end": 607.69,
+      "en": "And so what he did was he tested 1,000 ordinary people.",
+      "zh": "因为记忆是成功的关键。\"\"我们会给你5美元——4元用来支付时间。\""
+    },
+    {
+      "i": 91,
+      "start": 607.71,
+      "end": 611.78,
+      "en": "500 New Haven, Connecticut, 500 Bridgeport.",
+      "zh": "\"我们会给你5美元——4元用来支付时间。\""
+    },
+    {
+      "i": 92,
+      "start": 611.8,
+      "end": 614.52,
+      "en": "And the ad said, \"Psychologists want to understand memory.",
+      "zh": "\"我们会给你5美元——4元用来支付时间。\"上面写着，\"我们不要大学生，我们需要20到50岁之间的男性。\""
+    },
+    {
+      "i": 93,
+      "start": 614.54,
+      "end": 617.84,
+      "en": "We want to improve people's memory, because it is the key to success.\"",
+      "zh": "我们需要20到50岁之间的男性。\"——他们在后来的实验中也研究了女性——他们都是普通人：理发师，收银员，白领等等。"
+    },
+    {
+      "i": 94,
+      "start": 617.86,
+      "end": 624.05,
+      "en": "OK? \"We're going to give you five bucks -- four dollars for your time.",
+      "zh": "他们都是普通人：理发师，收银员，白领等等。于是你们下去，其中一个扮演学生，另一个扮演教师。学生是一个和蔼的中年男子。"
+    },
+    {
+      "i": 95,
+      "start": 624.07,
+      "end": 627.53,
+      "en": "We don't want college students. We want men between 20 and 50.\"",
+      "zh": "学生是一个和蔼的中年男子。在另外一间屋子里，他被绑在一个电击仪器上。"
+    },
+    {
+      "i": 96,
+      "start": 627.55,
+      "end": 632.41,
+      "en": "In the later studies, they ran women. Ordinary people: barbers, clerks, white-collar people.",
+      "zh": "在另外一间屋子里，他被绑在一个电击仪器上。学生可能是中年人，也可能是二十多岁。穿实验室工作服的负责人，即权威角色，会告诉你们其中一个人说，"
+    },
+    {
+      "i": 97,
+      "start": 632.43,
+      "end": 636.55,
+      "en": "So, you go down, one of you will be a learner, one will be a teacher.",
+      "zh": "穿实验室工作服的负责人，即权威角色，会告诉你们其中一个人说，\"你作为教师的工作就是让这个人学习材料。"
+    },
+    {
+      "i": 98,
+      "start": 636.57,
+      "end": 638.48,
+      "en": "The learner's a genial, middle-aged guy.",
+      "zh": "\"你作为教师的工作就是让这个人学习材料。"
+    },
+    {
+      "i": 99,
+      "start": 638.5,
+      "end": 641.61,
+      "en": "He gets tied up to the shock apparatus in another room.",
+      "zh": "\"你作为教师的工作就是让这个人学习材料。记对了，就奖励他。记错了，你就按这个电击盒上的按钮。"
+    },
+    {
+      "i": 100,
+      "start": 641.63,
+      "end": 645.2,
+      "en": "The learner could be middle-aged, could be as young as 20.",
+      "zh": "记错了，你就按这个电击盒上的按钮。第一个按钮是15伏特。他基本感觉不到。\""
+    },
+    {
+      "i": 101,
+      "start": 645.23,
+      "end": 651.08,
+      "en": "And one of you is told by the authority, the guy in the lab coat, \"Your job as teacher is to give him material to learn.",
+      "zh": "第一个按钮是15伏特。他基本感觉不到。\"这就是关键。所有的恶都是从15伏特开始的。下一个再加15伏特。"
+    },
+    {
+      "i": 102,
+      "start": 651.11,
+      "end": 654.74,
+      "en": "Gets it right, reward. Gets it wrong, you press a button on the shock box.",
+      "zh": "下一个再加15伏特。问题是，最后一个按钮，是450伏特。随着你不断加电压，那个人就会惨叫，"
+    },
+    {
+      "i": 103,
+      "start": 654.76,
+      "end": 657.61,
+      "en": "The first button is 15 volts. He doesn't even feel it.\"",
+      "zh": "随着你不断加电压，那个人就会惨叫，\"我有心脏问题！我要出去！\""
+    },
+    {
+      "i": 104,
+      "start": 658.16,
+      "end": 661.14,
+      "en": "That's the key. All evil starts with 15 volts.",
+      "zh": "\"我有心脏问题！我要出去！\"你是一个好人。你去投诉。\"先生，如果他出事了，谁来负责？\""
+    },
+    {
+      "i": 105,
+      "start": 661.16,
+      "end": 663.57,
+      "en": "And then the next step is another 15 volts.",
+      "zh": "\"先生，如果他出事了，谁来负责？\"实验人员说，\"不要紧，我来负责。"
+    },
+    {
+      "i": 106,
+      "start": 664.01,
+      "end": 667.01,
+      "en": "The problem is, at the end of the line, it's 450 volts.",
+      "zh": "实验人员说，\"不要紧，我来负责。请继续，教师。\"问题是，谁会一直按到450伏特？"
+    },
+    {
+      "i": 107,
+      "start": 667.03,
+      "end": 671.35,
+      "en": "And as you go along, the guy is screaming, \"I've got a heart condition! I'm out of here!\"",
+      "zh": "问题是，谁会一直按到450伏特？"
+    },
+    {
+      "i": 108,
+      "start": 671.38,
+      "end": 675.96,
+      "en": "You're a good person. You complain. \"Sir, who will be responsible if something happens to him?\"",
+      "zh": "问题是，谁会一直按到450伏特？你们会注意到，到375伏特时，上面写着，\"危险：强烈电击\""
+    },
+    {
+      "i": 109,
+      "start": 675.99,
+      "end": 678.75,
+      "en": "The experimenter says, \"Don't worry, I will be responsible.",
+      "zh": "上面写着，\"危险：强烈电击\"到这儿的时候，那儿标着 \"XXX\" ：少儿不宜的级别。"
+    },
+    {
+      "i": 110,
+      "start": 678.77,
+      "end": 683.93,
+      "en": "Continue, teacher.\" And the question is, who would go all the way to 450 volts?",
+      "zh": "到这儿的时候，那儿标着 \"XXX\" ：少儿不宜的级别。（笑声）于是米尔格拉姆问了40个精神病医生，\"百分之多少的美国人会按到最高电压？\""
+    },
+    {
+      "i": 111,
+      "start": 683.95,
+      "end": 688.08,
+      "en": "You should notice here, when it gets up to 375, it says, \"Danger. Severe Shock.\"",
+      "zh": "\"百分之多少的美国人会按到最高电压？\"他们回答只有百分之1。因为那属于虐待狂行为，而且我们知道，精神病学显示，只有百分之1的美国人是虐待狂。"
+    },
+    {
+      "i": 112,
+      "start": 688.1,
+      "end": 691.44,
+      "en": "When it gets up to here, there's \"XXX\" -- the pornography of power.",
+      "zh": "而且我们知道，精神病学显示，只有百分之1的美国人是虐待狂。"
+    },
+    {
+      "i": 113,
+      "start": 691.9,
+      "end": 697.14,
+      "en": "So Milgram asks 40 psychiatrists, \"What percent of American citizens would go to the end?\"",
+      "zh": "而且我们知道，精神病学显示，只有百分之1的美国人是虐待狂。好。这里是研究资料。他们大错特错。三分之二的人会一直按到450伏特。这只是一个研究而已。"
+    },
+    {
+      "i": 114,
+      "start": 697.16,
+      "end": 704.37,
+      "en": "They said only one percent. Because that's sadistic behavior, and we know, psychiatry knows, only one percent of Americans are sadistic.",
+      "zh": "三分之二的人会一直按到450伏特。这只是一个研究而已。米尔格拉姆做了超过16项研究。我们看一下这个。在第16个研究中，你可以看到跟你们一样的人们有百分之90"
+    },
+    {
+      "i": 115,
+      "start": 704.39,
+      "end": 708.75,
+      "en": "OK. Here's the data. They could not be more wrong.",
+      "zh": "在第16个研究中，你可以看到跟你们一样的人们有百分之90会一直按到450伏特。在第5个研究中，如果有人反抗，百分之90的人反抗。"
+    },
+    {
+      "i": 116,
+      "start": 708.78,
+      "end": 713.14,
+      "en": "Two thirds go all the way to 450 volts. This was just one study.",
+      "zh": "会一直按到450伏特。在第5个研究中，如果有人反抗，百分之90的人反抗。"
+    },
+    {
+      "i": 117,
+      "start": 713.16,
+      "end": 716.7,
+      "en": "Milgram did more than 16 studies. And look at this.",
+      "zh": "会一直按到450伏特。在第5个研究中，如果有人反抗，百分之90的人反抗。女性呢？第13个研究：与男性无差别。"
+    },
+    {
+      "i": 118,
+      "start": 717.49,
+      "end": 721.82,
+      "en": "In study 16, where you see somebody like you go all the way, 90 percent go all the way.",
+      "zh": "女性呢？第13个研究：与男性无差别。米尔格拉姆在以人们盲目服从权威，一直按到450伏特的意愿，来数量化恶。"
+    },
+    {
+      "i": 119,
+      "start": 722.45,
+      "end": 726.0,
+      "en": "In study five, if you see people rebel, 90 percent rebel.",
+      "zh": "一直按到450伏特的意愿，来数量化恶。这就好像是在调节人性。"
+    },
+    {
+      "i": 120,
+      "start": 726.77,
+      "end": 729.62,
+      "en": "What about women? Study 13 -- no different than men.",
+      "zh": "调节的意思是，你几乎可以从使绝大多数人完全服从，"
+    },
+    {
+      "i": 121,
+      "start": 729.94,
+      "end": 736.3,
+      "en": "So Milgram is quantifying evil as the willingness of people to blindly obey authority, to go all the way to 450 volts.",
+      "zh": "调节的意思是，你几乎可以从使绝大多数人完全服从，到使没有人服从。那么，外界世界有什么类似情况吗？毕竟所有的实验都是人为的。"
+    },
+    {
+      "i": 122,
+      "start": 736.61,
+      "end": 745.85,
+      "en": "And it's like a dial on human nature. A dial in a sense that you can make almost everybody totally obedient, down to the majority, down to none.",
+      "zh": "那么，外界世界有什么类似情况吗？毕竟所有的实验都是人为的。它在真实世界中的有效性如何？1978年，在圭亚那丛林里，有912名美国人自杀或遭其家人朋友杀害，因为他们盲目地服从这个家伙，他们的传道者。"
+    },
+    {
+      "i": 123,
+      "start": 746.77,
+      "end": 749.77,
+      "en": "What are the external parallels? For all research is artificial.",
+      "zh": "因为他们盲目地服从这个家伙，他们的传道者。不是他们的神父。他们的传道者，吉姆·琼斯主教。"
+    },
+    {
+      "i": 124,
+      "start": 749.79,
+      "end": 763.43,
+      "en": "What's the validity in the real world? 912 American citizens committed suicide or were murdered by family and friends in Guyana jungle in 1978, because they were blindly obedient to this guy, their pastor -- not their priest -- their pastor, Reverend Jim Jones.",
+      "zh": "不是他们的神父。他们的传道者，吉姆·琼斯主教。他说服他们进行集体自杀。所以他是一个当代的路西法效应。从上帝使者变成死亡天使。米尔格拉姆的研究完全是关于控制大众的个人权力。"
+    },
+    {
+      "i": 125,
+      "start": 763.46,
+      "end": 766.25,
+      "en": "He persuaded them to commit mass suicide.",
+      "zh": "米尔格拉姆的研究完全是关于控制大众的个人权力。大多数时间我们在机构里，"
+    },
+    {
+      "i": 126,
+      "start": 766.28,
+      "end": 771.02,
+      "en": "And so, he's the modern Lucifer effect, a man of God who becomes the Angel of Death.",
+      "zh": "大多数时间我们在机构里，所以斯坦福监狱实验，研究的是机构权力如何影响个人行为。"
+    },
+    {
+      "i": 127,
+      "start": 772.66,
+      "end": 777.06,
+      "en": "Milgram's study is all about individual authority to control people.",
+      "zh": "如何影响个人行为。有趣的是，斯坦利·米尔格拉姆和我上高中的时候在同一个班级，那是1954年，在布朗克斯的詹姆斯·门罗高中。"
+    },
+    {
+      "i": 128,
+      "start": 777.79,
+      "end": 785.66,
+      "en": "Most of the time, we are in institutions, so the Stanford Prison Study is a study of the power of institutions to influence individual behavior.",
+      "zh": "那是1954年，在布朗克斯的詹姆斯·门罗高中。这个实验室是我跟我的研究生做的，尤其是克雷格·汉尼，我们也从打广告开始。我们没什么钱，于是我们打了一个简单的小广告，"
+    },
+    {
+      "i": 129,
+      "start": 785.68,
+      "end": 792.02,
+      "en": "Interestingly, Stanley Milgram and I were in the same high school class in James Monroe in the Bronx, 1954.",
+      "zh": "我们没什么钱，于是我们打了一个简单的小广告，我们想找大学生来研究一下监狱生活。75个人志愿参加，做了人格测试。"
+    },
+    {
+      "i": 130,
+      "start": 793.14,
+      "end": 798.07,
+      "en": "I did this study with my graduate students, especially Craig Haney -- and it also began work with an ad.",
+      "zh": "我们做了面试。挑选了24名：他们是最正常的，最健康的。然后随机把他们分成囚犯和警卫两组。"
+    },
+    {
+      "i": 131,
+      "start": 798.1,
+      "end": 802.3,
+      "en": "We had a cheap, little ad, but we wanted college students for a study of prison life.",
+      "zh": "然后随机把他们分成囚犯和警卫两组。所以在第一天，我们知道他们都是好苹果。而我将把他们放在一个坏的情境里。"
+    },
+    {
+      "i": 132,
+      "start": 803.25,
+      "end": 805.69,
+      "en": "75 people volunteered, took personality tests.",
+      "zh": "其次，我们知道"
+    },
+    {
+      "i": 133,
+      "start": 805.71,
+      "end": 809.43,
+      "en": "We did interviews. Picked two dozen: the most normal, the most healthy.",
+      "zh": "其次，我们知道在将要扮演警卫和扮演囚犯的男生之间没有任何区别。我们对那些将要扮演囚犯的男生说，"
+    },
+    {
+      "i": 134,
+      "start": 809.46,
+      "end": 811.72,
+      "en": "Randomly assigned them to be prisoner and guard.",
+      "zh": "我们对那些将要扮演囚犯的男生说，\"在住处等着，实验在星期天开始。\""
+    },
+    {
+      "i": 135,
+      "start": 811.75,
+      "end": 813.77,
+      "en": "So on day one, we knew we had good apples.",
+      "zh": "\"在住处等着，实验在星期天开始。\"我们没有告诉他们的是，"
+    },
+    {
+      "i": 136,
+      "start": 813.79,
+      "end": 815.75,
+      "en": "I'm going to put them in a bad situation.",
+      "zh": "我们没有告诉他们的是，市警察局的警察会上门做真实的逮捕。"
+    },
+    {
+      "i": 137,
+      "start": 815.77,
+      "end": 821.41,
+      "en": "And secondly, we know there's no difference between the boys who will be guards and those who will be prisoners.",
+      "zh": "市警察局的警察会上门做真实的逮捕。"
+    },
+    {
+      "i": 138,
+      "start": 821.44,
+      "end": 825.11,
+      "en": "To the prisoners, we said, \"Wait at home. The study will begin Sunday.\"",
+      "zh": "市警察局的警察会上门做真实的逮捕。"
+    },
+    {
+      "i": 139,
+      "start": 825.14,
+      "end": 829.56,
+      "en": "We didn't tell them that the city police were going to come and do realistic arrests.",
+      "zh": "市警察局的警察会上门做真实的逮捕。"
+    },
+    {
+      "i": 140,
+      "start": 829.58,
+      "end": 868.45,
+      "en": "(Video) (Music) [Day 1] Student: A police car pulls up in front, and a cop comes to the front door,",
+      "zh": "市警察局的警察会上门做真实的逮捕。录像中的男人：一辆警车停在房子前面，一个警察来到前门敲门，说是找我。于是他们，就在那儿，你懂的，把我抓出去，把我的双手放车上。那是辆真警车，是个真警察，街上的邻居也是真的，他们不知道这是个实验。"
+    },
+    {
+      "i": 141,
+      "start": 868.47,
+      "end": 870.47,
+      "en": "and knocks, and says he's looking for me.",
+      "zh": "他们不知道这是个实验。"
+    },
+    {
+      "i": 142,
+      "start": 870.49,
+      "end": 876.93,
+      "en": "So they, right there, you know, they took me out the door, they put my hands against the car.",
+      "zh": "他们不知道这是个实验。周围都是相机，围满了邻居。他们让我上警车，在帕罗奥图市的大街上行驶。"
+    },
+    {
+      "i": 143,
+      "start": 876.96,
+      "end": 884.29,
+      "en": "It was a real cop car, it was a real policeman, and there were real neighbors in the street, who didn't know that this was an experiment.",
+      "zh": "他们让我上警车，在帕罗奥图市的大街上行驶。他们把我抓到警察局，警察局的地下室。他们把我关到一间牢房里。"
+    },
+    {
+      "i": 144,
+      "start": 884.79,
+      "end": 887.54,
+      "en": "And there was cameras all around and neighbors all around.",
+      "zh": "警察局的地下室。他们把我关到一间牢房里。"
+    },
+    {
+      "i": 145,
+      "start": 887.57,
+      "end": 890.78,
+      "en": "They put me in the car, then they drove me around Palo Alto.",
+      "zh": "警察局的地下室。他们把我关到一间牢房里。"
+    },
+    {
+      "i": 146,
+      "start": 892.34,
+      "end": 897.33,
+      "en": "They took me to the basement of the police station.",
+      "zh": "警察局的地下室。他们把我关到一间牢房里。我是第一个被抓来的，所以他们把我关进一间单人牢房，基本上就是一间门上有栏杆的房间。"
+    },
+    {
+      "i": 147,
+      "start": 904.37,
+      "end": 911.53,
+      "en": "Then they put me in a cell. I was the first one to be picked up, so they put me in a cell, which was just like a room with a door with bars on it.",
+      "zh": "他们把我锁在那儿，穿着这件丢人的衣服。他们对这个实验太认真了。这就是那些将要被剥夺人性的囚犯。他们的名字将被号码代替。"
+    },
+    {
+      "i": 148,
+      "start": 912.45,
+      "end": 918.03,
+      "en": "You could tell it wasn't a real jail. They locked me in there, in this degrading little outfit.",
+      "zh": "这是那些警卫，他们的装扮标志着权力和匿名性。警卫们让囚犯们徒手清理马桶，让他们做其他一些羞辱性的任务。"
+    },
+    {
+      "i": 149,
+      "start": 918.77,
+      "end": 921.35,
+      "en": "They were taking this experiment too seriously.",
+      "zh": "让他们做其他一些羞辱性的任务。他们脱光囚犯的衣服，性侮辱他们。"
+    },
+    {
+      "i": 150,
+      "start": 921.37,
+      "end": 925.2,
+      "en": "Here are the prisoners, who are going to be dehumanized, they'll become numbers.",
+      "zh": "他们脱光囚犯的衣服，性侮辱他们。他们开始做侮辱行为，譬如强迫囚犯们模拟鸡奸。"
+    },
+    {
+      "i": 151,
+      "start": 925.23,
+      "end": 928.12,
+      "en": "Here are the guards with the symbols of power and anonymity.",
+      "zh": "譬如强迫囚犯们模拟鸡奸。你们看到阿布格莱布的士兵强迫囚犯模拟口交。"
+    },
+    {
+      "i": 152,
+      "start": 928.14,
+      "end": 933.09,
+      "en": "Guards get prisoners to clean the toilet bowls out with their bare hands, to do other humiliating tasks.",
+      "zh": "你们看到阿布格莱布的士兵强迫囚犯模拟口交。我的警卫在五天内就做了。囚犯们的应激反应是非常极端的，"
+    },
+    {
+      "i": 153,
+      "start": 933.11,
+      "end": 935.35,
+      "en": "They strip them naked. They sexually taunt them.",
+      "zh": "我的警卫在五天内就做了。囚犯们的应激反应是非常极端的，我们当初挑选他们是因为他们是健康的，"
+    },
+    {
+      "i": 154,
+      "start": 935.38,
+      "end": 938.91,
+      "en": "They begin to do degrading activities, like having them simulate sodomy.",
+      "zh": "我们当初挑选他们是因为他们是健康的，而这些正常的男生在36小时内就有人崩溃了。这个实验在6天后结束因为它已经失控了。"
+    },
+    {
+      "i": 155,
+      "start": 938.94,
+      "end": 942.17,
+      "en": "You saw simulating fellatio in soldiers in Abu Ghraib.",
+      "zh": "这个实验在6天后结束因为它已经失控了。五个男生情绪崩溃。"
+    },
+    {
+      "i": 156,
+      "start": 942.19,
+      "end": 950.39,
+      "en": "My guards did it in five days. The stress reaction was so extreme that normal kids we picked because they were healthy had breakdowns within 36 hours.",
+      "zh": "五个男生情绪崩溃。战士们是否更换统一服装对于他们在战场上的表现会有影响吗？他们是否匿名"
+    },
+    {
+      "i": 157,
+      "start": 950.41,
+      "end": 954.44,
+      "en": "The study ended after six days, because it was out of control.",
+      "zh": "他们是否匿名对于他们对付受害者会有影响吗？我们知道在某些文化里，人们上战场时是不换服装的。"
+    },
+    {
+      "i": 158,
+      "start": 954.46,
+      "end": 962.67,
+      "en": "Five kids had emotional breakdowns. Does it make a difference if warriors go to battle changing their appearance or not?",
+      "zh": "是不换服装的。在另外一些文化里，他们把自己涂成\"苍蝇王\"的样子。在某些文化里他们戴着面具。在许多文化中，战士们穿着统一服装达到匿名性。人类学家约翰·华生"
+    },
+    {
+      "i": 159,
+      "start": 962.69,
+      "end": 965.45,
+      "en": "If they're anonymous, how do they treat their victims?",
+      "zh": "人类学家约翰·华生在23个文化中发现两组数据。"
+    },
+    {
+      "i": 160,
+      "start": 965.47,
+      "end": 968.63,
+      "en": "In some cultures, they go to war without changing their appearance.",
+      "zh": "在23个文化中发现两组数据。他们是否更换服装？15个是。"
+    },
+    {
+      "i": 161,
+      "start": 968.65,
+      "end": 971.38,
+      "en": "In others, they paint themselves like \"Lord of the Flies.\"",
+      "zh": "他们是否更换服装？15个是。他们是否杀戮，折磨，残害？13个是。如果他们不换服装，"
+    },
+    {
+      "i": 162,
+      "start": 971.4,
+      "end": 974.68,
+      "en": "In some, they wear masks. In many, soldiers are anonymous in uniform.",
+      "zh": "如果他们不换服装，八个文化中只有一个杀戮，折磨或残害。"
+    },
+    {
+      "i": 163,
+      "start": 974.71,
+      "end": 979.4,
+      "en": "So this anthropologist, John Watson, found 23 cultures that had two bits of data.",
+      "zh": "八个文化中只有一个杀戮，折磨或残害。关键在这个红色区域。如果他们更换服装，13个文化中有12个，即百分之90，会杀戮，折磨，残害。"
+    },
+    {
+      "i": 164,
+      "start": 979.43,
+      "end": 984.1,
+      "en": "Do they change their appearance? 15. Do they kill, torture, mutilate? 13.",
+      "zh": "13个文化中有12个，即百分之90，会杀戮，折磨，残害。这就是匿名性的威力。那么是哪七个社会性过程"
+    },
+    {
+      "i": 165,
+      "start": 984.4,
+      "end": 988.46,
+      "en": "If they don't change their appearance, only one of eight kills, tortures or mutilates.",
+      "zh": "那么是哪七个社会性过程会导致恶的逐渐产生呢？无意中迈出第一步。"
+    },
+    {
+      "i": 166,
+      "start": 988.48,
+      "end": 994.62,
+      "en": "The key is in the red zone. If they change their appearance, 12 of 13 -- that's 90 percent -- kill, torture, mutilate.",
+      "zh": "无意中迈出第一步。对他人去人性化。对自己去个体化。推卸个人责任。盲目服从权威。"
+    },
+    {
+      "i": 167,
+      "start": 995.14,
+      "end": 1000.57,
+      "en": "And that's the power of anonymity. So what are the seven social processes that grease the slippery slope of evil?",
+      "zh": "推卸个人责任。盲目服从权威。不加鉴别地依从群体规范。袖手旁观，漠不关心，对恶行消极容忍。"
+    },
+    {
+      "i": 168,
+      "start": 1000.59,
+      "end": 1005.38,
+      "en": "Mindlessly taking the first small step. Dehumanization of others. De-individuation of self.",
+      "zh": "袖手旁观，漠不关心，对恶行消极容忍。而其容易在新的或不熟悉的环境中发生。你的习惯性反应失效了。"
+    },
+    {
+      "i": 169,
+      "start": 1005.41,
+      "end": 1008.98,
+      "en": "Diffusion of personal responsibility. Blind obedience to authority.",
+      "zh": "你的习惯性反应失效了。你的人格和道德感被关闭了。"
+    },
+    {
+      "i": 170,
+      "start": 1009.0,
+      "end": 1014.14,
+      "en": "Uncritical conformity to group norms. Passive tolerance of evil through inaction, or indifference.",
+      "zh": "\"没有什么比公开谴责作恶者更容易，也没什么比理解他更难。\"陀思妥耶夫斯基告诉我们。"
+    },
+    {
+      "i": 171,
+      "start": 1014.16,
+      "end": 1017.02,
+      "en": "And it happens when you're in a new or unfamiliar situation.",
+      "zh": "也没什么比理解他更难。\"陀思妥耶夫斯基告诉我们。理解不是找借口。心理学不是借口学。"
+    },
+    {
+      "i": 172,
+      "start": 1017.04,
+      "end": 1019.09,
+      "en": "Your habitual response patterns don't work.",
+      "zh": "理解不是找借口。心理学不是借口学。"
+    },
+    {
+      "i": 173,
+      "start": 1019.12,
+      "end": 1021.56,
+      "en": "Your personality and morality are disengaged.",
+      "zh": "理解不是找借口。心理学不是借口学。社会学和心理学研究揭示了在无需药物的情况下，普通的好人是如何被转变的。"
+    },
+    {
+      "i": 174,
+      "start": 1022.8,
+      "end": 1028.16,
+      "en": "\"Nothing is easier than to denounce the evildoer; nothing more difficult than understanding him,\" Dostoyevsky.",
+      "zh": "在无需药物的情况下，普通的好人是如何被转变的。你不需要药物，你只需要社会心理学的过程。真实世界的情况？和这个比较一下。"
+    },
+    {
+      "i": 175,
+      "start": 1028.18,
+      "end": 1031.75,
+      "en": "Understanding is not excusing. Psychology is not excuse-ology.",
+      "zh": "真实世界的情况？和这个比较一下。"
+    },
+    {
+      "i": 176,
+      "start": 1032.22,
+      "end": 1037.64,
+      "en": "So social and psychological research reveals how ordinary, good people can be transformed without the drugs.",
+      "zh": "真实世界的情况？和这个比较一下。我以詹姆斯·施莱辛格的话作为结束，\"心理学家已尝试理解,"
+    },
+    {
+      "i": 177,
+      "start": 1037.67,
+      "end": 1040.97,
+      "en": "You don't need it. You just need the social-psychological processes.",
+      "zh": "\"心理学家已尝试理解,一般情况下具备人性的个体和群体，为什么以及如何"
+    },
+    {
+      "i": 178,
+      "start": 1040.99,
+      "end": 1044.89,
+      "en": "Real world parallels? Compare this with this.",
+      "zh": "一般情况下具备人性的个体和群体，为什么以及如何会在某些情境下，作出反常行为。\""
+    },
+    {
+      "i": 179,
+      "start": 1046.14,
+      "end": 1057.11,
+      "en": "James Schlesinger -- I'm going to end with this -- says, \"Psychologists have attempted to understand how and why individuals and groups who usually act humanely can sometimes act otherwise in certain circumstances.\"",
+      "zh": "他接着说，\"具有标志性的斯坦福实验给了所有军事行为一个警告。\"如果你在没有监督的情况下赋予人们权力，那就是在给滥用开通行证。他们明明了解后果，却任其发生。"
+    },
+    {
+      "i": 180,
+      "start": 1057.14,
+      "end": 1064.77,
+      "en": "That's the Lucifer effect. And he goes on to say, \"The landmark Stanford study provides a cautionary tale for all military operations.\"",
+      "zh": "那就是在给滥用开通行证。他们明明了解后果，却任其发生。另一个报告，是费将军所做的调查，认为整个系统是有罪的，在该报告中，"
+    },
+    {
+      "i": 181,
+      "start": 1064.8,
+      "end": 1068.64,
+      "en": "If you give people power without oversight, it's a prescription for abuse.",
+      "zh": "认为整个系统是有罪的，在该报告中，他认为是环境造成了阿布格莱布事件，领导力的失误，"
+    },
+    {
+      "i": 182,
+      "start": 1068.67,
+      "end": 1076.89,
+      "en": "They knew that, and let that happen. So another report, an investigative report by General Fay, says the system is guilty.",
+      "zh": "领导力的失误，导致了虐待的发生，以及在很长一段时间内，当局高层一直被蒙在鼓里。那些虐待行为持续了三个月。有谁在看管吗？"
+    },
+    {
+      "i": 183,
+      "start": 1076.91,
+      "end": 1087.98,
+      "en": "In this report, he says it was the environment that created Abu Ghraib, by leadership failures that contributed to the occurrence of such abuse, and because it remained undiscovered by higher authorities for a long period of time.",
+      "zh": "那些虐待行为持续了三个月。有谁在看管吗？答案是没有人，我认为，是没有人主动去。他允许警卫们作那些恶行，他们知道没有人会下地牢来查看。所以我们在所有这些方面进行模式上的转变。"
+    },
+    {
+      "i": 184,
+      "start": 1088.01,
+      "end": 1091.46,
+      "en": "Those abuses went on for three months. Who was watching the store?",
+      "zh": "所以我们在所有这些方面进行模式上的转变。原来的医疗模式，只集中于个体，"
+    },
+    {
+      "i": 185,
+      "start": 1091.49,
+      "end": 1093.73,
+      "en": "The answer is nobody, I think on purpose.",
+      "zh": "只集中于个体，必须转向一个公共健康模式，"
+    },
+    {
+      "i": 186,
+      "start": 1093.76,
+      "end": 1099.14,
+      "en": "He gave the guards permission to do those things, and they knew nobody was ever going to come down to that dungeon.",
+      "zh": "必须转向一个公共健康模式，这个模式同时考虑情境和系统对疾病的作用。欺侮是病。偏见是病。暴力是病。"
+    },
+    {
+      "i": 187,
+      "start": 1099.16,
+      "end": 1101.73,
+      "en": "So you need a paradigm shift in all of these areas.",
+      "zh": "欺侮是病。偏见是病。暴力是病。"
+    },
+    {
+      "i": 188,
+      "start": 1101.76,
+      "end": 1105.43,
+      "en": "The shift is away from the medical model that focuses only on the individual.",
+      "zh": "欺侮是病。偏见是病。暴力是病。自从审讯以来，我们一直在个人层面解决问题。你猜怎么着，没用。"
+    },
+    {
+      "i": 189,
+      "start": 1105.46,
+      "end": 1111.94,
+      "en": "The shift is toward a public health model that recognizes situational and systemic vectors of disease.",
+      "zh": "解决问题。你猜怎么着，没用。亚历山大·索尔仁尼琴认为每个人心中都有善恶的分界线。"
+    },
+    {
+      "i": 190,
+      "start": 1111.97,
+      "end": 1114.3,
+      "en": "Bullying is a disease. Prejudice is a disease.",
+      "zh": "都有善恶的分界线。也就是说，这条线不是外在的。"
+    },
+    {
+      "i": 191,
+      "start": 1114.33,
+      "end": 1119.29,
+      "en": "Violence is a disease. Since the Inquisition, we've been dealing with problems at the individual level.",
+      "zh": "也就是说，这条线不是外在的。这是一个你必须作出的决定。是个人层面的。那么，我想以一个正面的意见来做个简短的结尾："
+    },
+    {
+      "i": 192,
+      "start": 1119.31,
+      "end": 1125.74,
+      "en": "It doesn't work. Aleksandr Solzhenitsyn says, \"The line between good and evil cuts through the heart of every human being.\"",
+      "zh": "那么，我想以一个正面的意见来做个简短的结尾：英雄主义是恶的解药。通过推广英雄主义想象，尤其是在我们的孩子之中，在教育系统里。"
+    },
+    {
+      "i": 193,
+      "start": 1125.76,
+      "end": 1130.57,
+      "en": "That means that line is not out there. That's a decision that you have to make, a personal thing.",
+      "zh": "尤其是在我们的孩子之中，在教育系统里。我们要孩子们想，我是那个等待中的英雄，等待合适的情境出现，"
+    },
+    {
+      "i": 194,
+      "start": 1130.59,
+      "end": 1133.14,
+      "en": "So I want to end very quickly on a positive note.",
+      "zh": "等待合适的情境出现，届时我会行英雄之事。"
+    },
+    {
+      "i": 195,
+      "start": 1133.65,
+      "end": 1140.55,
+      "en": "Heroism as the antidote to evil, by promoting the heroic imagination, especially in our kids, in our educational system.",
+      "zh": "届时我会行英雄之事。我一生自小与恶相伴，如今我毕生努力之重点，将从研究恶转向理解英雄主义。现在所谓的英雄主义是，"
+    },
+    {
+      "i": 196,
+      "start": 1140.58,
+      "end": 1146.77,
+      "en": "We want kids to think, \"I'm a hero in waiting, waiting for the right situation to come along, and I will act heroically.",
+      "zh": "现在所谓的英雄主义是，平凡之人行英雄之事。这是对汉娜·阿伦特的平庸之恶的反驳。我们传统的社会英雄是错误的，"
+    },
+    {
+      "i": 197,
+      "start": 1146.8,
+      "end": 1152.45,
+      "en": "My whole life, I'm now going to focus away from evil -- that I've been in since I was a kid -- to understanding heroes.",
+      "zh": "我们传统的社会英雄是错误的，因为他们是极少数例外。他们为目标投入毕生之努力。因此我们才知道他们的名字。"
+    },
+    {
+      "i": 198,
+      "start": 1152.48,
+      "end": 1155.67,
+      "en": "Banality of heroism. It's ordinary people who do heroic deeds.",
+      "zh": "因此我们才知道他们的名字。孩子们的英雄也是他们的榜样，因为他们有超自然能力。"
+    },
+    {
+      "i": 199,
+      "start": 1155.69,
+      "end": 1158.64,
+      "en": "It's the counterpoint to Hannah Arendt's \"Banality of Evil.\"",
+      "zh": "因为他们有超自然能力。我们想要让孩子们意识到，大多数英雄是平凡的人们，"
+    },
+    {
+      "i": 200,
+      "start": 1158.66,
+      "end": 1162.63,
+      "en": "Our traditional societal heroes are wrong, because they are the exceptions.",
+      "zh": "我们想要让孩子们意识到，大多数英雄是平凡的人们，而英雄行为是不平凡的。这是乔·达比。"
+    },
+    {
+      "i": 201,
+      "start": 1162.65,
+      "end": 1165.99,
+      "en": "They organize their life around this. That's why we know their names.",
+      "zh": "而英雄行为是不平凡的。这是乔·达比。就是他阻止了你们前面所见的那些虐行，"
+    },
+    {
+      "i": 202,
+      "start": 1166.01,
+      "end": 1170.25,
+      "en": "Our kids' heroes are also wrong models for them, because they have supernatural talents.",
+      "zh": "因为当他看到那些图片时，他把它们交给了一位高级调查官。"
+    },
+    {
+      "i": 203,
+      "start": 1170.28,
+      "end": 1175.37,
+      "en": "We want our kids to realize most heroes are everyday people, and the heroic act is unusual.",
+      "zh": "他把它们交给了一位高级调查官。他是一个低级列兵但却阻止了此事。他是英雄吗？不是。他们不得不把他藏起来，因为有人想杀他，"
+    },
+    {
+      "i": 204,
+      "start": 1175.39,
+      "end": 1183.2,
+      "en": "This is Joe Darby. He was the one that stopped those abuses you saw, because when he saw those images, he turned them over to a senior investigating officer.",
+      "zh": "他们不得不把他藏起来，因为有人想杀他，还有他的母亲和妻子。他们隐藏了三年。这个女人阻止了斯坦福监狱实验。"
+    },
+    {
+      "i": 205,
+      "start": 1183.23,
+      "end": 1185.96,
+      "en": "He was a low-level private, and that stopped it.",
+      "zh": "这个女人阻止了斯坦福监狱实验。当我说实验失控的时候，我当时是监狱实验负责人。"
+    },
+    {
+      "i": 206,
+      "start": 1185.98,
+      "end": 1192.01,
+      "en": "Was he a hero? No. They had to put him in hiding, because people wanted to kill him, and then his mother and his wife.",
+      "zh": "当我说实验失控的时候，我当时是监狱实验负责人。我不知道实验已经失控了。我完全无动于衷。她下来看到这疯人院一样的监狱说，\"你知道吗？你对这些男孩所做的一切实在是太可怕了。"
+    },
+    {
+      "i": 207,
+      "start": 1192.03,
+      "end": 1196.63,
+      "en": "For three years, they were in hiding. This is the woman who stopped the Stanford Prison Study.",
+      "zh": "\"你知道吗？你对这些男孩所做的一切实在是太可怕了。他们不是囚犯，不是警卫，他们只是孩子，你要为他们负责。\""
+    },
+    {
+      "i": 208,
+      "start": 1196.65,
+      "end": 1199.9,
+      "en": "When I said it got out of control, I was the prison superintendent.",
+      "zh": "他们只是孩子，你要为他们负责。\"我第二天就停止了这个实验。"
+    },
+    {
+      "i": 209,
+      "start": 1199.92,
+      "end": 1202.92,
+      "en": "I didn't know it was out of control. I was totally indifferent.",
+      "zh": "我第二天就停止了这个实验。好消息是，我第二年就娶了她。"
+    },
+    {
+      "i": 210,
+      "start": 1202.95,
+      "end": 1207.47,
+      "en": "She saw that madhouse and said, \"You know what, it's terrible what you're doing to those boys.",
+      "zh": "好消息是，我第二年就娶了她。（笑声）（鼓掌）"
+    },
+    {
+      "i": 211,
+      "start": 1207.49,
+      "end": 1211.14,
+      "en": "They're not prisoners nor guards, they're boys, and you are responsible.\"",
+      "zh": "（鼓掌）"
+    },
+    {
+      "i": 212,
+      "start": 1211.16,
+      "end": 1215.81,
+      "en": "And I ended the study the next day. The good news is I married her the next year.",
+      "zh": "（鼓掌）显然，我醒悟了。所以情境是有力量的——"
+    },
+    {
+      "i": 213,
+      "start": 1215.83,
+      "end": 1227.62,
+      "en": "(Laughter) (Applause) I just came to my senses, obviously.",
+      "zh": "所以情境是有力量的——关键是，这个情境可以刺激一些人内心的敌意想象，使我们成为恶之犯人，也可以激发另外一些人内心的英雄想象。情境是同样的情境。"
+    },
+    {
+      "i": 214,
+      "start": 1227.64,
+      "end": 1230.31,
+      "en": "So situations have the power to do [three things].",
+      "zh": "也可以激发另外一些人内心的英雄想象。情境是同样的情境。而你二者必居其一。"
+    },
+    {
+      "i": 215,
+      "start": 1230.33,
+      "end": 1240.58,
+      "en": "But the point is, this is the same situation that can inflame the hostile imagination in some of us, that makes us perpetrators of evil, can inspire the heroic imagination in others.",
+      "zh": "而你二者必居其一。大多数人对袖手旁观之恶感到内疚，因为你母亲会说，\"别管闲事，先管好你自己的事。\"你一定得这么回答，\"妈妈，人性就是我的事。\"英雄主义的心理学是——我们很快会结束——"
+    },
+    {
+      "i": 216,
+      "start": 1240.61,
+      "end": 1243.72,
+      "en": "It's the same situation and you're on one side or the other.",
+      "zh": "英雄主义的心理学是——我们很快会结束——我们如何在新的英雄课程里鼓励孩子们，"
+    },
+    {
+      "i": 217,
+      "start": 1243.74,
+      "end": 1249.31,
+      "en": "Most people are guilty of the evil of inaction, because your mother said, \"Don't get involved. Mind your own business.\"",
+      "zh": "我们如何在新的英雄课程里鼓励孩子们，我正与马特·郎登从事这项工作——他有一个英雄工作坊——来培养这种英雄想象，这种自我标签，"
+    },
+    {
+      "i": 218,
+      "start": 1249.33,
+      "end": 1251.81,
+      "en": "And you have to say, \"Mama, humanity is my business.\"",
+      "zh": "来培养这种英雄想象，这种自我标签，\"我是一个等待中的英雄\"，并且教会他们技能。"
+    },
+    {
+      "i": 219,
+      "start": 1251.83,
+      "end": 1263.86,
+      "en": "So the psychology of heroism is -- we're going to end in a moment -- how do we encourage children in new hero courses, that I'm working on with Matt Langdon -- he has a hero workshop -- to develop this heroic imagination, this self-labeling,",
+      "zh": "\"我是一个等待中的英雄\"，并且教会他们技能。想成为英雄的话，你一定要学会成为一个\"异类\"，因为你得总是与群体规范相左。英雄是那些在社会上行非凡之事的平凡人。那些有所为之人。英雄主义之关键有二。"
+    },
+    {
+      "i": 220,
+      "start": 1263.88,
+      "end": 1266.64,
+      "en": "\"I am a hero in waiting,\" and teach them skills.",
+      "zh": "英雄主义之关键有二。一：在众人消极冷漠之时有所作为。"
+    },
+    {
+      "i": 221,
+      "start": 1266.67,
+      "end": 1272.05,
+      "en": "To be a hero, you have to learn to be a deviant, because you're always going against the conformity of the group.",
+      "zh": "一：在众人消极冷漠之时有所作为。二：你的作为必须以社会为中心，而非以自我为中心。我想以韦斯利·奥特里，纽约地铁英雄的故事来结尾，"
+    },
+    {
+      "i": 222,
+      "start": 1272.7,
+      "end": 1276.54,
+      "en": "Heroes are ordinary people whose social actions are extraordinary. Who act.",
+      "zh": "我想以韦斯利·奥特里，纽约地铁英雄的故事来结尾，你们其中一些人知道这个故事。他是一个50岁的非裔美国人，是一个建筑工人。"
+    },
+    {
+      "i": 223,
+      "start": 1276.56,
+      "end": 1280.72,
+      "en": "The key to heroism is two things. You have to act when other people are passive.",
+      "zh": "他是一个50岁的非裔美国人，是一个建筑工人。他在纽约地铁等车的时候，一个白人掉进地铁轨道里。当时地铁正开过来。当时有75个人在那儿。"
+    },
+    {
+      "i": 224,
+      "start": 1280.74,
+      "end": 1283.51,
+      "en": "B: You have to act socio-centrically, not egocentrically.",
+      "zh": "当时地铁正开过来。当时有75个人在那儿。你猜怎么着，他们全都僵住了。"
+    },
+    {
+      "i": 225,
+      "start": 1283.53,
+      "end": 1287.31,
+      "en": "And I want to end with a known story about Wesley Autrey, New York subway hero.",
+      "zh": "你猜怎么着，他们全都僵住了。他有理由袖手旁观。他是黑人，那个人是白人，他还有两个小孩。"
+    },
+    {
+      "i": 226,
+      "start": 1287.34,
+      "end": 1291.14,
+      "en": "Fifty-year-old African-American construction worker standing on a subway.",
+      "zh": "他是黑人，那个人是白人，他还有两个小孩。相反的是，他把两个孩子交给一个陌生人看管，跳进铁轨里，把那男子压在铁轨之间，"
+    },
+    {
+      "i": 227,
+      "start": 1291.16,
+      "end": 1295.17,
+      "en": "A white guy falls on the tracks. The subway train is coming. There's 75 people there.",
+      "zh": "跳进铁轨里，把那男子压在铁轨之间，趴在他身上，地铁就从他身上开了过去。韦斯利和那个男子摞起来高20.5英寸。"
+    },
+    {
+      "i": 228,
+      "start": 1295.2,
+      "end": 1298.58,
+      "en": "You know what? They freeze. He's got a reason not to get involved.",
+      "zh": "韦斯利和那个男子摞起来高20.5英寸。"
+    },
+    {
+      "i": 229,
+      "start": 1298.61,
+      "end": 1301.02,
+      "en": "He's black, the guy's white, and he's got two kids.",
+      "zh": "韦斯利和那个男子摞起来高20.5英寸。地铁列车下的空隙高21英寸。再低半英寸就会把他的脑袋铲去。"
+    },
+    {
+      "i": 230,
+      "start": 1301.05,
+      "end": 1307.7,
+      "en": "Instead, he gives his kids to a stranger, jumps on the tracks, puts the guy between the tracks, lays on him, the subway goes over him.",
+      "zh": "再低半英寸就会把他的脑袋铲去。而他却说\"我做了任何人都会做的事\"，跳下铁轨没什么大不了的。"
+    },
+    {
+      "i": 231,
+      "start": 1307.72,
+      "end": 1310.98,
+      "en": "Wesley and the guy -- 20 and a half inches height.",
+      "zh": "跳下铁轨没什么大不了的。从道德责任的角度说应该是\"我做了任何人应该做的事\"。"
+    },
+    {
+      "i": 232,
+      "start": 1311.0,
+      "end": 1315.94,
+      "en": "The train clearance is 21 inches. A half an inch would have taken his head off.",
+      "zh": "从道德责任的角度说应该是\"我做了任何人应该做的事\"。那么，将来有一天，你会遇到一个新的情境。第一条路，你会成为恶之犯人。"
+    },
+    {
+      "i": 233,
+      "start": 1316.54,
+      "end": 1320.61,
+      "en": "And he said, \"I did what anyone could do,\" no big deal to jump on the tracks.",
+      "zh": "第一条路，你会成为恶之犯人。恶，即你将成为亚瑟·安德森。你将会欺骗，或允许欺侮。"
+    },
+    {
+      "i": 234,
+      "start": 1320.63,
+      "end": 1324.28,
+      "en": "And the moral imperative is \"I did what everyone should do.\"",
+      "zh": "你将会欺骗，或允许欺侮。第二条路：你将因漠不关心袖手旁观而内疚。"
+    },
+    {
+      "i": 235,
+      "start": 1324.3,
+      "end": 1326.69,
+      "en": "And so one day, you will be in a new situation.",
+      "zh": "第二条路：你将因漠不关心袖手旁观而内疚。第三条路：你成为一个英雄。关键是，我们是否做好准备来选择这条路"
+    },
+    {
+      "i": 236,
+      "start": 1327.16,
+      "end": 1329.78,
+      "en": "Take path one, you're going to be a perpetrator of evil.",
+      "zh": "关键是，我们是否做好准备来选择这条路以颂扬平凡的英雄，"
+    },
+    {
+      "i": 237,
+      "start": 1329.8,
+      "end": 1332.14,
+      "en": "Evil, meaning you're going to be Arthur Andersen.",
+      "zh": "以颂扬平凡的英雄，等待合适的情境出现，"
+    },
+    {
+      "i": 238,
+      "start": 1332.16,
+      "end": 1334.88,
+      "en": "You're going to cheat, or you're going to allow bullying.",
+      "zh": "等待合适的情境出现，将对于英雄的想象付诸于实施呢？"
+    },
+    {
+      "i": 239,
+      "start": 1334.9,
+      "end": 1337.71,
+      "en": "Path two, you become guilty of the evil of passive inaction.",
+      "zh": "将对于英雄的想象付诸于实施呢？因为这可能是你平生仅有的机会，"
+    },
+    {
+      "i": 240,
+      "start": 1337.74,
+      "end": 1348.22,
+      "en": "Path three, you become a hero. The point is, are we ready to take the path to celebrating ordinary heroes, waiting for the right situation to come along to put heroic imagination into action?",
+      "zh": "因为这可能是你平生仅有的机会，而当你错过的时候，你将永远记得，我本可以成为一个英雄但我让这机会溜走了。所以关键是先想再做。所以我想谢谢你们。谢谢你们。谢谢。让我们反对国内外的恶之系统的力量，"
+    },
+    {
+      "i": 241,
+      "start": 1348.24,
+      "end": 1355.66,
+      "en": "Because it may only happen once in your life, and when you pass it by, you'll always know, I could have been a hero and I let it pass me by.",
+      "zh": "让我们反对国内外的恶之系统的力量，并集中于积极的一面。倡导对个人高尚行为之尊敬，倡导正义与和平，"
+    },
+    {
+      "i": 242,
+      "start": 1355.69,
+      "end": 1357.86,
+      "en": "So the point is thinking it and then doing it.",
+      "zh": "倡导对个人高尚行为之尊敬，倡导正义与和平，遗憾的是，我们的当局并没有在做这些。"
+    },
+    {
+      "i": 243,
+      "start": 1358.56,
+      "end": 1365.14,
+      "en": "So I want to thank you. Thank you. Let's oppose the power of evil systems at home and abroad, and let's focus on the positive.",
+      "zh": "非常感谢。（掌声）"
+    },
+    {
+      "i": 244,
+      "start": 1365.16,
+      "end": 1371.04,
+      "en": "Advocate for respect of personal dignity, for justice and peace, which sadly our administration has not been doing.",
+      "zh": "（掌声）"
+    },
+    {
+      "i": 245,
+      "start": 1371.07,
+      "end": 1375.45,
+      "en": "Thanks so much. (Applause)",
+      "zh": "非常感谢。 （掌声）"
+    }
+  ]
+}
