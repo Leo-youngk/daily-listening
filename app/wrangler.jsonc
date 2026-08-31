@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "daily-listening",
+  "compatibility_date": "2026-08-31",
+  "pages_build_output_dir": "./dist",
+  // functions/api/lookup.ts 用原生绑定调 Workers AI，浏览器和源码里都不出现 API Token
+  "ai": {
+    "binding": "AI"
+  },
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
+  }
+}

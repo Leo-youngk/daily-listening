@@ -1,4 +1,5 @@
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import type { ReactNode } from 'react'
 import { usePlayer, usePlayerClock } from '../store/PlayerContext'
 import { loadSettings, saveSettings, toggleFavorite, isFavorite } from '../lib/storage'
 import type { Sentence, Settings } from '../lib/types'
@@ -13,46 +14,43 @@ import { Switch } from '@/components/ui/switch'
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
 import DictPanel from '../components/DictPanel'
+import type { DictTarget } from '../components/DictPanel'
+import { normalizeTerm, tokenizeSentence } from '../lib/lookup'
 import { navigate } from '../hooks/useHashRoute'
 
-const WORD_RE = /([A-Za-z][A-Za-z'’-]*)/g
-
-/** 可点词的英文句子；active 时带词级高亮跟随 */
+/** 可点词的英文句子；active 时带词级高亮跟随。词序与查词接口共用同一套分词 */
 function TokenizedText({ text, scale, onWord, progress }: {
   text: string
   scale: number
-  onWord: (w: string) => void
+  onWord: (wordIndex: number) => void
   progress?: number // 0~1，当前句播放进度（词级高亮用）
 }) {
-  const parts = useMemo(() => text.split(WORD_RE), [text])
-  const wordCount = Math.ceil(parts.length / 2)
-  const activeWord = progress !== undefined ? Math.min(wordCount - 1, Math.floor(progress * wordCount)) : -1
-  let wordIdx = -1
+  const tokens = useMemo(() => tokenizeSentence(text), [text])
+  const activeWord = progress !== undefined ? Math.min(tokens.length - 1, Math.floor(progress * tokens.length)) : -1
+  const nodes: ReactNode[] = []
+  let cursor = 0
+  tokens.forEach((token, i) => {
+    if (token.start > cursor) nodes.push(<span key={`gap-${i}`}>{text.slice(cursor, token.start)}</span>)
+    const isPassed = i <= activeWord
+    const isCurrent = i === activeWord && progress !== undefined && progress < 1
+    nodes.push(
+      <span
+        key={`w-${i}`}
+        onClick={e => { e.stopPropagation(); onWord(i) }}
+        className={cn(
+          'cursor-pointer rounded px-px transition-colors duration-150 active:bg-primary/25',
+          isPassed && 'text-primary',
+          isCurrent && 'font-semibold',
+        )}
+      >
+        {token.text}
+      </span>,
+    )
+    cursor = token.end
+  })
+  if (cursor < text.length) nodes.push(<span key="tail">{text.slice(cursor)}</span>)
   return (
-    <p className="leading-relaxed" style={{ fontSize: `${17 * scale}px` }}>
-      {parts.map((p, i) =>
-        i % 2 === 1 ? (() => {
-          wordIdx += 1
-          const isPassed = wordIdx <= activeWord
-          const isCurrent = wordIdx === activeWord && progress !== undefined && progress < 1
-          return (
-            <span
-              key={i}
-              onClick={e => { e.stopPropagation(); onWord(p) }}
-              className={cn(
-                'cursor-pointer rounded px-px transition-colors duration-150 active:bg-primary/25',
-                isPassed && 'text-primary',
-                isCurrent && 'font-semibold',
-              )}
-            >
-              {p}
-            </span>
-          )
-        })() : (
-          <span key={i}>{p}</span>
-        ),
-      )}
-    </p>
+    <p className="leading-relaxed" style={{ fontSize: `${17 * scale}px` }}>{nodes}</p>
   )
 }
 
@@ -63,7 +61,7 @@ const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, progre
   hideZh: boolean
   progress?: number
   onSeek: (s: Sentence) => void
-  onWord: (w: string, src: string) => void
+  onWord: (wordIndex: number, sentence: Sentence) => void
 }) {
   return (
     <div
@@ -77,7 +75,7 @@ const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, progre
         {fmtTime(s.start)}
       </span>
       <div className="min-w-0 flex-1">
-        <TokenizedText text={s.en} scale={scale} onWord={w => onWord(w, s.en)} progress={active ? progress : undefined} />
+        <TokenizedText text={s.en} scale={scale} onWord={i => onWord(i, s)} progress={active ? progress : undefined} />
         {!hideZh && s.zh && (
           <p className="mt-1 text-muted-foreground" style={{ fontSize: `${14 * scale}px`, lineHeight: 1.5 }}>
             {s.zh}
@@ -94,7 +92,7 @@ export default function Player({ slug }: { slug: string }) {
   const p = usePlayer()
   const clock = usePlayerClock()
   const [settings, setSettings] = useState(loadSettings)
-  const [dict, setDict] = useState<{ word: string; source: string } | null>(null)
+  const [dict, setDict] = useState<DictTarget | null>(null)
   const [showSettings, setShowSettings] = useState(false)
   const [, force] = useState(0)
   const rowRefs = useRef<(HTMLDivElement | null)[]>([])
@@ -130,7 +128,19 @@ export default function Player({ slug }: { slug: string }) {
 
   // 稳定引用，让 SentenceRow 的 memo 生效（否则 60fps 下 200 行全部重渲染）
   const handleSeek = useCallback((sen: Sentence) => p.seek(sen.start), [p.seek]) // eslint-disable-line
-  const handleWord = useCallback((w: string, src: string) => setDict({ word: w.toLowerCase(), source: src }), [])
+  const handleWord = useCallback((wordIndex: number, sen: Sentence) => {
+    const token = tokenizeSentence(sen.en)[wordIndex]
+    if (!token) return
+    setDict({
+      word: normalizeTerm(token.text),
+      wordIndex,
+      sentence: sen.en,
+      sentenceZh: sen.zh || undefined,
+      slug,
+      sentenceIdx: sen.i,
+      startTime: sen.start,
+    })
+  }, [slug])
 
   return (
     <div className="mx-auto flex h-full max-w-lg flex-col">
@@ -157,7 +167,7 @@ export default function Player({ slug }: { slug: string }) {
       </header>
 
       {/* 字幕流 */}
-      <div ref={scrollBoxRef} className="min-h-0 flex-1 overflow-y-auto no-scrollbar px-3 py-3">
+      <div ref={scrollBoxRef} className="min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll px-3 py-3">
         {p.loading && <p className="py-10 text-center text-sm text-muted-foreground">正在加载音频与字幕…</p>}
         {p.error && (
           <div className="mb-3 rounded-xl bg-destructive/10 px-3 py-3 text-center text-sm text-destructive">
@@ -336,7 +346,7 @@ export default function Player({ slug }: { slug: string }) {
         </SheetContent>
       </Sheet>
 
-      {dict && <DictPanel word={dict.word} source={dict.source} onClose={() => setDict(null)} />}
+      {dict && <DictPanel target={dict} onClose={() => setDict(null)} />}
     </div>
   )
 }

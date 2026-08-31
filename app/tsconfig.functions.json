@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.functions.tsbuildinfo",
+    "target": "es2023",
+    "lib": ["ES2023"],
+    "types": ["@cloudflare/workers-types"],
+    "skipLibCheck": true,
+
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  // lookup.ts 是前后端共用的纯逻辑，跟着 Function 一起类型检查
+  "include": ["functions", "src/lib/lookup.ts"]
+}

@@ -4,6 +4,9 @@ import type { VocabItem } from '../lib/types'
 import { BookOpenIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { usePlayerActions } from '../store/PlayerContext'
+import { navigate } from '../hooks/useHashRoute'
+import { fmtTime } from '../lib/format'
 
 function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void }) {
   const [idx, setIdx] = useState(0)
@@ -12,7 +15,7 @@ function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void 
   if (!item) return null
 
   const next = (known: boolean) => {
-    if (known) updateVocab(item.word, { mastered: true })
+    if (known) updateVocab(item.id, { mastered: true })
     setFlipped(false)
     if (idx + 1 >= items.length) onExit()
     else setIdx(idx + 1)
@@ -29,14 +32,17 @@ function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void 
           className="w-full rounded-xl bg-card p-6 text-center shadow-xs ring-1 ring-foreground/5"
           onClick={() => setFlipped(!flipped)}
         >
-          <p className="text-3xl font-bold">{item.word}</p>
+          <p className="text-3xl font-bold">{item.term}</p>
           {item.phonetic && !flipped && <p className="mt-2 text-sm text-muted-foreground">{item.phonetic}</p>}
           {!flipped ? (
             <p className="mt-6 text-xs text-muted-foreground">点击卡片查看释义</p>
           ) : (
             <div className="mt-4 text-left">
-              {item.meaning && <p className="text-sm leading-relaxed">{item.meaning}</p>}
-              {item.source && <p className="mt-2 text-xs italic text-muted-foreground">“{item.source}”</p>}
+              <p className="text-sm leading-relaxed">{item.contextMeaning}</p>
+              {item.explanation && (
+                <p className="mt-1 text-xs leading-snug text-muted-foreground">{item.explanation}</p>
+              )}
+              {item.sentenceEn && <p className="mt-2 text-xs italic text-muted-foreground">“{item.sentenceEn}”</p>}
             </div>
           )}
         </div>
@@ -52,9 +58,15 @@ function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void 
 export default function Vocab() {
   const [items, setItems] = useState<VocabItem[]>(loadVocab)
   const [review, setReview] = useState(false)
-  const [, force] = useState(0)
+  const { playTalk } = usePlayerActions()
 
-  const refresh = () => { setItems(loadVocab()); force(x => x + 1) }
+  const refresh = () => setItems(loadVocab())
+
+  const jumpToSource = (v: VocabItem) => {
+    if (!v.slug) return
+    playTalk(v.slug, v.startTime ?? 0)
+    navigate(`/talk/${v.slug}`)
+  }
 
   if (review) {
     const pool = items.filter(v => !v.mastered)
@@ -86,19 +98,20 @@ export default function Vocab() {
         </div>
       )}
 
-      <div className="space-y-2 overflow-y-auto no-scrollbar">
+      <div className="space-y-2 overflow-y-auto no-scrollbar vertical-scroll">
         {items.map(v => (
-          <div key={v.word} className={`rounded-xl bg-card p-3 shadow-xs ring-1 ring-foreground/5 ${v.mastered ? 'opacity-50' : ''}`}>
+          <div key={v.id} className={`rounded-xl bg-card p-3 shadow-xs ring-1 ring-foreground/5 ${v.mastered ? 'opacity-50' : ''}`}>
             <div className="flex items-center gap-2">
-              <p className="text-[15px] font-bold">{v.word}</p>
-              {v.phonetic && <p className="text-xs text-muted-foreground">{v.phonetic}</p>}
+              <p className="text-[15px] font-bold">{v.term}</p>
+              {v.partOfSpeech && <span className="text-xs italic text-muted-foreground">{v.partOfSpeech}</span>}
+              {v.phonetic && <p className="truncate text-xs text-muted-foreground">{v.phonetic}</p>}
               <span className="flex-1" />
               <Badge
                 asChild
                 variant={v.mastered ? 'secondary' : 'default'}
                 className={`h-6 cursor-pointer rounded-full px-2.5 ${v.mastered ? 'text-muted-foreground' : ''}`}
               >
-                <button onClick={() => { updateVocab(v.word, { mastered: !v.mastered }); refresh() }}>
+                <button onClick={() => { updateVocab(v.id, { mastered: !v.mastered }); refresh() }}>
                   {v.mastered ? '已掌握' : '标为掌握'}
                 </button>
               </Badge>
@@ -106,13 +119,29 @@ export default function Vocab() {
                 variant="secondary"
                 size="xs"
                 className="rounded-full px-2.5 text-muted-foreground"
-                onClick={() => { removeVocab(v.word); refresh() }}
+                onClick={() => { removeVocab(v.id); refresh() }}
               >
                 删除
               </Button>
             </div>
-            {v.meaning && <p className="mt-1.5 text-[13px] leading-snug">{v.meaning}</p>}
-            {v.source && <p className="mt-1 truncate text-[11px] italic text-muted-foreground">“{v.source}”</p>}
+            <p className="mt-1.5 text-[13px] leading-snug">{v.contextMeaning}</p>
+            {v.term !== v.word && (
+              <p className="mt-0.5 text-[11px] text-muted-foreground">本句中出现为 {v.word}</p>
+            )}
+            {v.sentenceEn && (
+              <button
+                onClick={() => jumpToSource(v)}
+                disabled={!v.slug}
+                className="mt-1 w-full text-left text-[11px] italic leading-snug text-muted-foreground disabled:opacity-100"
+              >
+                <span className="line-clamp-2">“{v.sentenceEn}”</span>
+                {v.slug && (
+                  <span className="mt-0.5 inline-block not-italic text-primary">
+                    回到原文 {v.startTime !== undefined ? fmtTime(v.startTime) : ''}
+                  </span>
+                )}
+              </button>
+            )}
           </div>
         ))}
       </div>

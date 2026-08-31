@@ -89,7 +89,7 @@ export default function Library() {
       </div>
 
       {/* 排序与筛选 */}
-      <div className="mt-2.5 flex gap-2 overflow-x-auto no-scrollbar">
+      <div className="mt-2.5 flex gap-2 overflow-x-auto no-scrollbar horizontal-scroll">
         {([['hot', tab === 'ted' ? '最热' : tab === 'commencement' ? '经典排序' : '最新'], ['duration', '按时长']] as [Sort, string][]).map(([k, label]) => (
           <Chip key={k} active={sort === k} onClick={() => setSort(k)}>{label}</Chip>
         ))}

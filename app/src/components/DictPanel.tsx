@@ -4,176 +4,188 @@ import { Volume2Icon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet'
-import { fetchJson } from '../lib/http'
+import { lookupContext, lookupLocal, readCachedSense, senseCacheKeyOf } from '../lib/dict'
+import type { DictEntry, LookupRequest, LookupResult } from '../lib/lookup'
 
-interface DictEntry {
-  word: string
-  phonetic?: string
-  meanings: { partOfSpeech: string; definitions: { definition: string; example?: string }[] }[]
-}
+export interface DictTarget extends LookupRequest {}
 
-interface DictResult {
-  entry: DictEntry | null
-  zhGloss: string // 中文简译（MyMemory 机器翻译兑底）
-}
+type ContextState = 'idle' | 'loading' | 'ok' | 'degraded'
 
-const CACHE_KEY = 'dtl.dictcache'
-const CACHE_LIMIT = 500
+export default function DictPanel({ target, onClose }: { target: DictTarget; onClose: () => void }) {
+  const [local, setLocal] = useState<{ term: string; entry?: DictEntry } | null>(null)
+  const [localState, setLocalState] = useState<'loading' | 'done'>('loading')
+  const [sense, setSense] = useState<LookupResult | null>(null)
+  const [contextState, setContextState] = useState<ContextState>('loading')
+  const [added, setAdded] = useState<'idle' | 'added' | 'exists' | 'failed'>('idle')
 
-function readCache(): Record<string, DictResult & { ts: number }> {
-  try { return JSON.parse(localStorage.getItem(CACHE_KEY) || '{}') } catch { return {} }
-}
-function writeCache(word: string, result: DictResult) {
-  try {
-    const all = readCache()
-    all[word] = { ...result, ts: Date.now() }
-    const keys = Object.keys(all)
-    if (keys.length > CACHE_LIMIT) {
-      keys.sort((a, b) => all[a].ts - all[b].ts)
-        .slice(0, keys.length - CACHE_LIMIT)
-        .forEach(k => delete all[k])
-    }
-    localStorage.setItem(CACHE_KEY, JSON.stringify(all))
-  } catch { /* ignore */ }
-}
-
-/** 英英释义查询：dictionaryapi.dev */
-function lookupEntry(word: string, signal: AbortSignal): Promise<DictEntry | null> {
-  return fetchJson<DictEntry[]>(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`, {
-    signal,
-    timeoutMs: 8_000,
-    retries: 1,
-  }).then(list => list[0] ?? null)
-}
-
-/** 中文简译查询：MyMemory 机器翻译，响应较慢且不稳定，不重试以免拖长等待 */
-function lookupZhGloss(word: string, signal: AbortSignal): Promise<string> {
-  return fetchJson<{ responseData?: { translatedText?: string } }>(
-    `https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|zh-CN`,
-    { signal, timeoutMs: 6_000, retries: 0 },
-  ).then(d => (d?.responseData?.translatedText as string) || '')
-}
-
-export default function DictPanel({ word, source, onClose }: {
-  word: string
-  source?: string
-  onClose: () => void
-}) {
-  const [entry, setEntry] = useState<DictEntry | null>(null)
-  const [entryState, setEntryState] = useState<'loading' | 'ok' | 'error'>('loading')
-  const [zhGloss, setZhGloss] = useState('')
-  const [zhState, setZhState] = useState<'loading' | 'ok' | 'error'>('loading')
-  const [added, setAdded] = useState(false)
+  const { word, sentence, wordIndex } = target
 
   useEffect(() => {
-    const key = word.toLowerCase()
-    setAdded(false)
-
-    const cached = readCache()[key]
-    if (cached) {
-      setEntry(cached.entry)
-      setEntryState('ok')
-      setZhGloss(cached.zhGloss)
-      setZhState(cached.zhGloss ? 'ok' : 'error')
-      return
-    }
-
-    setEntry(null)
-    setEntryState('loading')
-    setZhGloss('')
-    setZhState('loading')
-
+    let alive = true
     const controller = new AbortController()
-    let entryDone: DictEntry | null | undefined
-    let zhDone: string | undefined
-    const trySaveCache = () => {
-      if (entryDone === undefined || zhDone === undefined) return
-      if (entryDone === null && !zhDone) return // 双双失败不缓存，允许下次重试
-      writeCache(key, { entry: entryDone, zhGloss: zhDone })
+    setLocal(null)
+    setLocalState('loading')
+    setSense(null)
+    setAdded('idle')
+
+    void lookupLocal(sentence, wordIndex).then(result => {
+      if (!alive) return
+      setLocal({ term: result.term, entry: result.entry })
+      setLocalState('done')
+    })
+
+    const cached = readCachedSense(senseCacheKeyOf(target))
+    if (cached) {
+      setSense(cached)
+      setContextState('ok')
+      return () => { alive = false; controller.abort() }
     }
 
-    lookupEntry(word, controller.signal)
-      .then(e => { setEntry(e); setEntryState('ok'); entryDone = e; trySaveCache() })
-      .catch(() => { if (!controller.signal.aborted) { setEntryState('error'); entryDone = null; trySaveCache() } })
+    setContextState('loading')
+    lookupContext(target, controller.signal)
+      .then(result => {
+        if (!alive) return
+        setSense(result)
+        setContextState(result.source === 'ai' && result.contextMeaning ? 'ok' : 'degraded')
+      })
+      .catch(error => {
+        if (!alive || controller.signal.aborted) return
+        console.error('context lookup failed', error)
+        setContextState('degraded')
+      })
 
-    lookupZhGloss(word, controller.signal)
-      .then(g => { setZhGloss(g); setZhState(g ? 'ok' : 'error'); zhDone = g; trySaveCache() })
-      .catch(() => { if (!controller.signal.aborted) { setZhState('error'); zhDone = ''; trySaveCache() } })
+    return () => { alive = false; controller.abort() }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [word, sentence, wordIndex])
 
-    return () => controller.abort()
-  }, [word])
-
-  const state: 'loading' | 'ok' | 'error' =
-    entryState === 'loading' || zhState === 'loading'
-      ? (entry || zhGloss ? 'ok' : 'loading')
-      : (entry || zhGloss ? 'ok' : 'error')
+  const headword = sense?.term ?? local?.term ?? word
+  const phonetic = sense?.phonetic || local?.entry?.ph || ''
+  // 上下文义项优先，其余常用义项来自本地 ECDICT
+  const otherMeanings = sense?.otherMeanings?.length
+    ? sense.otherMeanings
+    : (local?.entry?.senses ?? []).map(s => ({ partOfSpeech: s.pos.replace(/\.$/, ''), zh: s.zh }))
 
   const speak = () => {
     speechSynthesis.cancel()
-    const u = new SpeechSynthesisUtterance(word)
+    const u = new SpeechSynthesisUtterance(headword)
     u.lang = 'en-US'
     speechSynthesis.speak(u)
   }
 
   const onAdd = () => {
-    const meaning = entry?.meanings?.[0]?.definitions?.[0]?.definition
-    addVocab({
+    const meaning = sense?.contextMeaning || otherMeanings[0]?.zh || ''
+    if (!meaning) {
+      setAdded('failed')
+      return
+    }
+    setAdded(addVocab({
+      term: headword,
       word,
-      phonetic: entry?.phonetic,
-      meaning: meaning
-        ? (meaning.length > 120 ? meaning.slice(0, 117) + '...' : meaning)
-        : (zhGloss || undefined),
-      source,
-    })
-    setAdded(true)
+      lemma: sense?.lemma || local?.entry?.lemma || headword,
+      phonetic: phonetic || undefined,
+      partOfSpeech: sense?.partOfSpeech || otherMeanings[0]?.partOfSpeech,
+      contextMeaning: meaning,
+      explanation: sense?.explanation,
+      otherMeanings,
+      sentenceEn: sentence,
+      sentenceZh: target.sentenceZh,
+      slug: target.slug,
+      sentenceIdx: target.sentenceIdx,
+      startTime: target.startTime,
+    }))
   }
+
+  const addLabel = {
+    idle: '＋ 加入生词本',
+    added: '已加入生词本',
+    exists: '这个义项已在生词本',
+    failed: '保存失败，请重试',
+  }[added]
 
   return (
     <Sheet open onOpenChange={o => { if (!o) onClose() }}>
       <SheetContent side="bottom" className="mx-auto max-h-[80%] w-full max-w-lg overflow-y-auto rounded-t-2xl px-4 pt-3 pb-5">
         <div className="flex items-start justify-between">
-          <div>
-            <SheetTitle className="text-xl font-bold">{word}</SheetTitle>
-            {entry?.phonetic && <p className="text-sm text-muted-foreground">{entry.phonetic}</p>}
+          <div className="min-w-0">
+            <SheetTitle className="text-xl font-bold">{headword}</SheetTitle>
+            <p className="text-sm text-muted-foreground">
+              {phonetic}
+              {local?.entry?.note ? <span className="ml-2">{local.entry.note}</span> : null}
+            </p>
           </div>
-          <Button variant="secondary" size="sm" className="rounded-full" onClick={speak}>
+          <Button variant="secondary" size="sm" className="shrink-0 rounded-full" onClick={speak}>
             <Volume2Icon data-icon="inline-start" />发音
           </Button>
         </div>
 
-        {state === 'loading' && <p className="mt-4 text-sm text-muted-foreground">查询中…</p>}
-        {state === 'error' && <p className="mt-4 text-sm text-muted-foreground">暂无释义（可能离线）</p>}
-        {state === 'ok' && (
-          <div className="mt-3 space-y-3">
-            {zhState === 'loading' && <p className="text-xs text-muted-foreground">中文翻译加载中…</p>}
-            {zhGloss && (
-              <p className="rounded-lg bg-primary/8 px-3 py-2 text-sm">
-                <span className="mr-1 text-xs text-primary">中文</span>{zhGloss}
+        <div className="mt-3 space-y-3">
+          {contextState === 'loading' && (
+            <div className="rounded-lg bg-primary/8 px-3 py-2">
+              <p className="text-xs text-primary">本句义</p>
+              <div className="mt-1.5 h-4 w-2/3 animate-pulse rounded bg-primary/15" />
+            </div>
+          )}
+
+          {contextState === 'ok' && sense && (
+            <div className="rounded-lg bg-primary/8 px-3 py-2">
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-primary">本句义</span>
+                {sense.partOfSpeech && (
+                  <Badge variant="outline" className="h-5 italic text-primary">{sense.partOfSpeech}</Badge>
+                )}
+              </div>
+              <p className="mt-1 text-sm font-medium leading-snug">{sense.contextMeaning}</p>
+              {sense.explanation && (
+                <p className="mt-1 text-xs leading-snug text-muted-foreground">{sense.explanation}</p>
+              )}
+            </div>
+          )}
+
+          {contextState === 'degraded' && (
+            <p className="rounded-lg bg-muted/70 px-3 py-2 text-xs leading-snug text-muted-foreground">
+              上下文判义暂不可用，当前显示常用词典义项
+            </p>
+          )}
+
+          {localState === 'loading' && <div className="h-4 w-1/2 animate-pulse rounded bg-muted" />}
+
+          {localState === 'done' && otherMeanings.length > 0 && (
+            <div>
+              <p className="mb-1 text-xs text-muted-foreground">
+                {contextState === 'ok' ? '其他常见义项' : '常用义项'}
               </p>
-            )}
-            {entryState === 'loading' && <p className="text-xs text-muted-foreground">英文释义加载中…</p>}
-            {entry?.meanings.slice(0, 3).map((m, i) => (
-              <div key={i}>
-                <Badge variant="outline" className="italic text-primary">{m.partOfSpeech}</Badge>
-                {m.definitions.slice(0, 2).map((d, j) => (
-                  <div key={j} className="mt-1">
-                    <p className="text-sm leading-snug">{d.definition}</p>
-                    {d.example && <p className="mt-0.5 text-xs italic text-muted-foreground">“{d.example}”</p>}
+              <div className="space-y-1">
+                {otherMeanings.map((m, i) => (
+                  <div key={`${m.partOfSpeech}-${i}`} className="flex gap-2">
+                    {m.partOfSpeech && (
+                      <span className="shrink-0 pt-0.5 text-xs italic text-muted-foreground">{m.partOfSpeech}</span>
+                    )}
+                    <p className="text-sm leading-snug">{m.zh}</p>
                   </div>
                 ))}
               </div>
-            ))}
-          </div>
-        )}
+            </div>
+          )}
 
-        {source && (
-          <p className="mt-3 rounded-lg bg-muted/60 p-2 text-xs leading-snug text-muted-foreground">
-            来源：{source}
-          </p>
-        )}
+          {localState === 'done' && local?.entry?.en && (
+            <p className="text-xs leading-snug text-muted-foreground">{local.entry.en}</p>
+          )}
 
-        <Button onClick={onAdd} disabled={added} className="mt-4 h-11 w-full rounded-xl text-sm font-semibold">
-          {added ? '已加入生词本' : '＋ 加入生词本'}
+          {localState === 'done' && otherMeanings.length === 0 && contextState !== 'loading' && (
+            <p className="text-sm text-muted-foreground">词典里没有收录这个词</p>
+          )}
+        </div>
+
+        <p className="mt-3 rounded-lg bg-muted/60 p-2 text-xs leading-snug text-muted-foreground">
+          {sentence}
+        </p>
+
+        <Button
+          onClick={onAdd}
+          disabled={added === 'added' || added === 'exists'}
+          className="mt-4 h-11 w-full rounded-xl text-sm font-semibold"
+        >
+          {addLabel}
         </Button>
       </SheetContent>
     </Sheet>

@@ -123,7 +123,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior: none;
-  touch-action: pan-y;
+  /* pan-x pan-y = 允许两个方向滚动，但禁掉双指缩放和双击缩放。
+     这里不能写 pan-y：touch-action 沿祖先链取交集，会把横向素材列表一起锁死。 */
+  touch-action: pan-x pan-y;
 }
 
 .safe-bottom {
@@ -139,12 +141,21 @@ body {
   -webkit-backdrop-filter: blur(18px);
 }
 
-/* 隐藏滚动条但保持可滚动 */
+/* 隐藏滚动条但保持可滚动；触摸方向由 vertical-scroll / horizontal-scroll 决定 */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar {
   scrollbar-width: none;
+}
+
+/* iOS Safari 不支持 overscroll-behavior，横向滑动只能靠 touch-action 区分方向。
+   body 上的 pan-y 会连横向素材列表一起锁死，所以按容器分别声明。 */
+.vertical-scroll {
   touch-action: pan-y;
   overscroll-behavior-y: none;
+}
+.horizontal-scroll {
+  touch-action: pan-x;
+  overscroll-behavior-x: none;
 }
 
 @theme inline {

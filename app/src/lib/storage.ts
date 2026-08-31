@@ -1,6 +1,7 @@
 import type { ProgressMap, Settings, VocabItem } from './types'
 import { DEFAULT_SETTINGS } from './types'
 import { localDateKey } from './date'
+import { senseId } from './lookup'
 
 const K = {
   progress: 'dtl.progress',
@@ -8,6 +9,18 @@ const K = {
   vocab: 'dtl.vocab',
   stats: 'dtl.stats',
   settings: 'dtl.settings',
+}
+
+export const STORAGE_ERROR_EVENT = 'dtl-storage-error'
+
+function reportStorageError(key: string, error: unknown) {
+  const quota = error instanceof DOMException
+    && (error.name === 'QuotaExceededError' || error.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+  const message = quota
+    ? '本地存储已满，数据没有保存成功'
+    : '本地存储不可用（可能处于无痕模式），数据没有保存成功'
+  console.error('localStorage write failed', { key, error })
+  window.dispatchEvent(new CustomEvent(STORAGE_ERROR_EVENT, { detail: message }))
 }
 
 function read<T>(key: string, fallback: T): T {
@@ -19,20 +32,24 @@ function read<T>(key: string, fallback: T): T {
   }
 }
 
-function write(key: string, val: unknown) {
+function write(key: string, val: unknown): boolean {
   try {
     localStorage.setItem(key, JSON.stringify(val))
     window.dispatchEvent(new CustomEvent('dtl-storage', { detail: key }))
-  } catch { /* ignore */ }
+    return true
+  } catch (error) {
+    reportStorageError(key, error)
+    return false
+  }
 }
 
 export function loadProgress(): ProgressMap {
   return read<ProgressMap>(K.progress, {})
 }
-export function saveProgress(slug: string, pos: number, duration: number) {
+export function saveProgress(slug: string, pos: number, duration: number): boolean {
   const all = loadProgress()
   all[slug] = { pos, duration, updatedAt: Date.now() }
-  write(K.progress, all)
+  return write(K.progress, all)
 }
 
 export function loadFavorites(): string[] {
@@ -50,21 +67,54 @@ export function isFavorite(slug: string) {
   return loadFavorites().includes(slug)
 }
 
+/** 旧版按 word 存的生词补齐新字段，避免升级后丢失用户已收藏的词 */
+function normalizeVocab(raw: Partial<VocabItem> & { meaning?: string; source?: string }): VocabItem | null {
+  const term = raw.term ?? raw.word
+  if (!term) return null
+  const contextMeaning = raw.contextMeaning ?? raw.meaning ?? ''
+  const lemma = raw.lemma ?? term
+  return {
+    id: raw.id ?? senseId(term, lemma, contextMeaning),
+    term,
+    word: raw.word ?? term,
+    lemma,
+    phonetic: raw.phonetic,
+    partOfSpeech: raw.partOfSpeech,
+    contextMeaning,
+    explanation: raw.explanation,
+    otherMeanings: raw.otherMeanings ?? [],
+    sentenceEn: raw.sentenceEn ?? raw.source ?? '',
+    sentenceZh: raw.sentenceZh,
+    slug: raw.slug,
+    sentenceIdx: raw.sentenceIdx,
+    startTime: raw.startTime,
+    addedAt: raw.addedAt ?? Date.now(),
+    mastered: raw.mastered ?? false,
+  }
+}
+
 export function loadVocab(): VocabItem[] {
   return read<VocabItem[]>(K.vocab, [])
+    .map(normalizeVocab)
+    .filter((v): v is VocabItem => v !== null)
 }
-export function addVocab(item: Omit<VocabItem, 'addedAt' | 'mastered'>) {
+
+export type AddVocabResult = 'added' | 'exists' | 'failed'
+
+export function addVocab(item: Omit<VocabItem, 'id' | 'addedAt' | 'mastered'>): AddVocabResult {
   const all = loadVocab()
-  if (all.some(v => v.word === item.word)) return
-  all.unshift({ ...item, addedAt: Date.now(), mastered: false })
-  write(K.vocab, all)
+  const id = senseId(item.term, item.lemma, item.contextMeaning)
+  if (all.some(v => v.id === id)) return 'exists'
+  all.unshift({ ...item, id, addedAt: Date.now(), mastered: false })
+  return write(K.vocab, all) ? 'added' : 'failed'
 }
-export function updateVocab(word: string, patch: Partial<VocabItem>) {
-  const all = loadVocab().map(v => (v.word === word ? { ...v, ...patch } : v))
-  write(K.vocab, all)
+
+export function updateVocab(id: string, patch: Partial<VocabItem>): boolean {
+  return write(K.vocab, loadVocab().map(v => (v.id === id ? { ...v, ...patch } : v)))
 }
-export function removeVocab(word: string) {
-  write(K.vocab, loadVocab().filter(v => v.word !== word))
+
+export function removeVocab(id: string): boolean {
+  return write(K.vocab, loadVocab().filter(v => v.id !== id))
 }
 
 export interface Stats {
@@ -99,6 +149,6 @@ export function streakDays(): number {
 export function loadSettings(): Settings {
   return { ...DEFAULT_SETTINGS, ...read<Partial<Settings>>(K.settings, {}) }
 }
-export function saveSettings(patch: Partial<Settings>) {
-  write(K.settings, { ...loadSettings(), ...patch })
+export function saveSettings(patch: Partial<Settings>): boolean {
+  return write(K.settings, { ...loadSettings(), ...patch })
 }

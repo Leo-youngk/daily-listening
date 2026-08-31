@@ -118,7 +118,12 @@ export default function Me() {
           </div>
         </div>
         <p className="mt-3 text-center text-[11px] leading-relaxed text-muted-foreground">
-          字幕、封面与词典会自动缓存；音频在线播放<br />素材来自 TED 与公开毕业演讲，仅供个人学习
+          字幕、封面与词典会自动缓存；音频在线播放<br />
+          素材来自 TED 与公开毕业演讲，仅供个人学习<br />
+          词典数据基于 ECDICT（MIT License）
+        </p>
+        <p className="mt-1 text-center text-[11px] tabular-nums text-muted-foreground">
+          版本 {__BUILD_SHA__} · {__BUILD_TIME__}
         </p>
       </section>
     </div>

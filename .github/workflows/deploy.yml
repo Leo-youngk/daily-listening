@@ -1,0 +1,68 @@
+name: build-and-deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 安装依赖
+        working-directory: app
+        run: npm ci
+
+      - name: Lint
+        working-directory: app
+        run: npm run lint
+
+      - name: 类型检查（含 Pages Functions）
+        working-directory: app
+        run: npm run typecheck
+
+      - name: 单元测试
+        working-directory: app
+        run: npm test
+
+      - name: 构建
+        working-directory: app
+        run: npm run build
+
+      - name: 同步素材与词典到 dist
+        run: python scripts/sync_dist.py
+
+      - name: 校验 Pages Functions 能编译
+        working-directory: app
+        run: npx wrangler pages functions build --outdir=.wrangler/fnbuild
+
+      # 只有推到 main 才真的发版；PR 只跑到构建为止
+      - name: 部署到 Cloudflare Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        working-directory: app
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: npx wrangler pages deploy dist --project-name=daily-listening --branch=main
+
+      - name: 线上验收
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: python scripts/verify_deploy.py

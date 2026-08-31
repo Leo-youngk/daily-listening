@@ -18,7 +18,7 @@
 │   ├── fetch.py          # 下载音频 + json3 字幕（断点续抓）
 │   ├── vtt2json.py       # 字幕转逐句双语 JSON + 机译 + 生成 manifest（内置时长一致性校验）
 │   ├── fill_covers.py    # 补齐封面缩略图
-│   └── sync_dist.ps1     # 构建后把素材同步到 dist
+│   └── sync_dist.py      # 构建后把素材同步到 dist
 └── public/
     ├── audio/            # m4a 音频
     ├── data/             # manifest.json + 每篇逐句双语 JSON
@@ -39,7 +39,7 @@ iPhone 使用：把站点部署（或局域网开放）后，用 Safari 打开 �
 
 ```powershell
 cd app; npm run build          # 产物在 app/dist（不含素材）
-..\scripts\sync_dist.ps1       # 把 audio/data/icons 同步进 dist
+python ../scripts/sync_dist.py # 把 data/icons/covers/dict 同步进 dist
 ```
 
 ## 素材管线（一次性，已全部跑完；增量补抓时参考）

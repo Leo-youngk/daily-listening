@@ -1,0 +1,259 @@
+[
+  {
+    "slug": "jill_bolte_taylor_s_powerful_stroke_of_insight",
+    "duration": 1211.13,
+    "lastEnd": 1097.24,
+    "gap": 113.8900000000001,
+    "verdict": "unknown",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": [
+      {
+        "start": 1095.72,
+        "end": 1099.68,
+        "text": "And I thought that was an idea worth spreading."
+      }
+    ]
+  },
+  {
+    "slug": "seth_godin_on_sliced_bread",
+    "duration": 1138.31,
+    "lastEnd": 1028.54,
+    "gap": 109.76999999999998,
+    "verdict": "unknown",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": [
+      {
+        "start": 1023.54,
+        "end": 1029.54,
+        "text": "you, but if they build it, that's where I'm gonna go. Thank you very much for your attention. I appreciate it."
+      }
+    ]
+  },
+  {
+    "slug": "pranav_mistry_the_thrilling_potential_of_sixthsense_technology",
+    "duration": 919.86,
+    "lastEnd": 825.26,
+    "gap": 94.60000000000002,
+    "verdict": "silence",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": []
+  },
+  {
+    "slug": "shonda-rhimes-dartmouth-2014",
+    "duration": 1441.45,
+    "lastEnd": 1390.62,
+    "gap": 50.830000000000155,
+    "verdict": "silence",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": []
+  },
+  {
+    "slug": "jim-carrey-mum-2014",
+    "duration": 1568.09,
+    "lastEnd": 1521.67,
+    "gap": 46.419999999999845,
+    "verdict": "silence",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": []
+  },
+  {
+    "slug": "david_gallo_shows_underwater_astonishments",
+    "duration": 360.93,
+    "lastEnd": 315.93,
+    "gap": 45.0,
+    "verdict": "unknown",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": [
+      {
+        "start": 310.93,
+        "end": 317.61,
+        "text": "And now he's gone and so am I. Thank you very much."
+      },
+      {
+        "start": 317.61,
+        "end": 320.41,
+        "text": "Thank you."
+      },
+      {
+        "start": 320.41,
+        "end": 321.41,
+        "text": "Thank you."
+      },
+      {
+        "start": 321.41,
+        "end": 322.41,
+        "text": "Thank you."
+      }
+    ]
+  },
+  {
+    "slug": "johnny_lee_demos_wii_remote_hacks",
+    "duration": 373.35,
+    "lastEnd": 331.1,
+    "gap": 42.25,
+    "verdict": "silence",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": []
+  },
+  {
+    "slug": "barry_schwartz_on_the_paradox_of_choice",
+    "duration": 1222.72,
+    "lastEnd": 1183.94,
+    "gap": 38.77999999999997,
+    "verdict": "ad",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": [
+      {
+        "start": 1180.74,
+        "end": 1190.63,
+        "text": "Thank you very much."
+      },
+      {
+        "start": 1190.63,
+        "end": 1195.75,
+        "text": "What if great ideas weren't cherished?"
+      },
+      {
+        "start": 1195.75,
+        "end": 1208.21,
+        "text": "What if they carried no importance or held no value?"
+      },
+      {
+        "start": 1208.21,
+        "end": 1212.77,
+        "text": "There is a place where artistic vision is protected, where inspired design ideas live"
+      },
+      {
+        "start": 1212.77,
+        "end": 1216.17,
+        "text": "on to become ultimate driving machines."
+      }
+    ]
+  },
+  {
+    "slug": "ze_frank_s_nerdcore_comedy",
+    "duration": 1182.48,
+    "lastEnd": 1144.45,
+    "gap": 38.02999999999997,
+    "verdict": "ad",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": [
+      {
+        "start": 1139.45,
+        "end": 1150.22,
+        "text": "Come on, Mr. Zephyr."
+      },
+      {
+        "start": 1150.22,
+        "end": 1155.3300000000002,
+        "text": "What if great ideas weren't cherished?"
+      },
+      {
+        "start": 1155.3300000000002,
+        "end": 1168.07,
+        "text": "What if they carried no importance or held no value?"
+      },
+      {
+        "start": 1168.07,
+        "end": 1171.07,
+        "text": "There is a place where artistic vision is protected,"
+      },
+      {
+        "start": 1171.07,
+        "end": 1176.07,
+        "text": "where inspired design ideas live on to become ultimate driving machines."
+      }
+    ]
+  },
+  {
+    "slug": "ava-duvernay-commencement",
+    "duration": 1303.2,
+    "lastEnd": 1265.91,
+    "gap": 37.289999999999964,
+    "verdict": "silence",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": []
+  },
+  {
+    "slug": "barack-obama-rutgers-2016",
+    "duration": 2727.09,
+    "lastEnd": 2691.4,
+    "gap": 35.690000000000055,
+    "verdict": "silence",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": []
+  },
+  {
+    "slug": "malala-yousafzai-commencement",
+    "duration": 1579.79,
+    "lastEnd": 1545.78,
+    "gap": 34.00999999999999,
+    "verdict": "unknown",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": [
+      {
+        "start": 1545.78,
+        "end": 1547.78,
+        "text": "Thank you."
+      }
+    ]
+  },
+  {
+    "slug": "mary_roach_10_things_you_didn_t_know_about_orgasm",
+    "duration": 1031.31,
+    "lastEnd": 997.33,
+    "gap": 33.979999999999905,
+    "verdict": "unknown",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": [
+      {
+        "start": 992.33,
+        "end": 997.37,
+        "text": "Yeah, I'm sorry."
+      }
+    ]
+  },
+  {
+    "slug": "anderson-cooper-commencement",
+    "duration": 1084.28,
+    "lastEnd": 1051.88,
+    "gap": 32.399999999999864,
+    "verdict": "silence",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": []
+  },
+  {
+    "slug": "monica_lewinsky_the_price_of_shame",
+    "duration": 1350.59,
+    "lastEnd": 1324.08,
+    "gap": 26.50999999999999,
+    "verdict": "silence",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": []
+  },
+  {
+    "slug": "hugh_herr_the_new_bionics_that_let_us_run_climb_and_dance",
+    "duration": 1140.36,
+    "lastEnd": 1118.77,
+    "gap": 21.589999999999918,
+    "verdict": "silence",
+    "candidates": [],
+    "added": 0,
+    "tailSegments": []
+  }
+]

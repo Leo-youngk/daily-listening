@@ -3,3 +3,6 @@
 
 /covers/*
   Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/dict/*
+  Cache-Control: public, max-age=31536000, immutable

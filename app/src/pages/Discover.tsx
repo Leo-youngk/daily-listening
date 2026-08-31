@@ -170,7 +170,7 @@ export default function Discover() {
             全部<ChevronRightIcon className="size-3.5" />
           </button>
         </div>
-        <div className="flex gap-3 overflow-x-auto no-scrollbar pb-1">
+        <div className="flex gap-3 overflow-x-auto no-scrollbar horizontal-scroll pb-1">
           {recs.map(m => (
             <button
               key={m.slug}
