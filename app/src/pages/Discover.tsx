@@ -22,10 +22,20 @@ function useDailyQuote(manifest: { slug: string }[]) {
   }, [manifest])
 }
 
-function pickRandom<T>(arr: T[], count: number): T[] {
+function mulberry32(seed: number) {
+  return () => {
+    seed |= 0; seed = (seed + 0x6D2B79F5) | 0
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+}
+
+function pickRandom<T>(arr: T[], count: number, seed: number): T[] {
+  const rng = mulberry32(seed)
   const pool = [...arr]
   for (let i = pool.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
+    const j = Math.floor(rng() * (i + 1))
     ;[pool[i], pool[j]] = [pool[j], pool[i]]
   }
   return pool.slice(0, count)
@@ -59,7 +69,9 @@ export default function Discover() {
   const recs = useMemo(() => {
     const prog = loadProgress()
     const unlistened = manifest.filter(m => !prog[m.slug])
-    return pickRandom(unlistened.length > 0 ? unlistened : manifest, 6)
+    let seed = 0
+    for (const c of localDateKey()) seed = (seed * 31 + c.charCodeAt(0)) >>> 0
+    return pickRandom(unlistened.length > 0 ? unlistened : manifest, 6, seed)
   }, [manifest])
 
   // 加载每日一句（懒加载该篇字幕，随机挑一句有中文的）
@@ -122,7 +134,7 @@ export default function Discover() {
           navigate(`/talk/${quote.slug}`)
         }}
       >
-        <div className="absolute -right-4 -top-6 text-[72px] leading-none text-primary/10 select-none">“</div>
+        <div className="absolute -right-4 -top-6 text-[72px] leading-none text-primary/10 select-none">"</div>
         <p className="flex items-center gap-1 text-xs font-semibold text-primary">
           <SparklesIcon className="size-3.5" />每日一句
         </p>

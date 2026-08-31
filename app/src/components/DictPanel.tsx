@@ -114,7 +114,8 @@ export default function DictPanel({ target, onClose }: { target: DictTarget; onC
             </p>
           </div>
           <Button variant="secondary" size="sm" className="shrink-0 rounded-full" onClick={speak}>
-            <Volume2Icon data-icon="inline-start" />发音
+            <Volume2Icon className="size-4" />
+            <span>发音</span>
           </Button>
         </div>
 

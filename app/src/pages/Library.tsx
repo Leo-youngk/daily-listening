@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useCatalog } from '../store/PlayerContext'
 import { loadProgress } from '../lib/storage'
 import { SearchIcon } from 'lucide-react'
@@ -11,6 +11,22 @@ import TalkCard from '../components/TalkCard'
 type Tab = 'ted' | 'commencement' | 'bbc' | 'voa'
 type Sort = 'hot' | 'duration'
 type Filter = 'all' | 'listened' | 'unlistened'
+
+const VALID_TABS = new Set<Tab>(['ted', 'commencement', 'bbc', 'voa'])
+const VALID_SORTS = new Set<Sort>(['hot', 'duration'])
+const VALID_FILTERS = new Set<Filter>(['all', 'listened', 'unlistened'])
+
+function syncLibraryUrl(tab: string, sort: string, filter: string) {
+  const params = new URLSearchParams()
+  if (tab !== 'ted') params.set('tab', tab)
+  if (sort !== 'hot') params.set('sort', sort)
+  if (filter !== 'all') params.set('filter', filter)
+  const qs = params.toString()
+  const newHash = `/library${qs ? `?${qs}` : ''}`
+  if (location.hash.slice(1) !== newHash) {
+    history.replaceState(null, '', `#${newHash}`)
+  }
+}
 
 /** 可点击的筛选胶囊 */
 function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: string }) {
@@ -25,12 +41,35 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
   )
 }
 
-export default function Library() {
+export default function Library({ query }: { query?: URLSearchParams }) {
   const { manifest, manifestReady, manifestError, reloadManifest } = useCatalog()
-  const [tab, setTab] = useState<Tab>('ted')
-  const [sort, setSort] = useState<Sort>('hot')
-  const [filter, setFilter] = useState<Filter>('all')
+  const [tab, setTab] = useState<Tab>(() => {
+    const t = query?.get('tab') as Tab
+    return t && VALID_TABS.has(t) ? t : 'ted'
+  })
+  const [sort, setSort] = useState<Sort>(() => {
+    const s = query?.get('sort') as Sort
+    return s && VALID_SORTS.has(s) ? s : 'hot'
+  })
+  const [filter, setFilter] = useState<Filter>(() => {
+    const f = query?.get('filter') as Filter
+    return f && VALID_FILTERS.has(f) ? f : 'all'
+  })
   const [q, setQ] = useState('')
+
+  useEffect(() => {
+    if (!query) return
+    const t = query.get('tab') as Tab
+    if (t && VALID_TABS.has(t)) setTab(t)
+    const s = query.get('sort') as Sort
+    if (s && VALID_SORTS.has(s)) setSort(s)
+    const f = query.get('filter') as Filter
+    if (f && VALID_FILTERS.has(f)) setFilter(f)
+  }, [query])
+
+  const updateTab = useCallback((t: Tab) => { setTab(t); syncLibraryUrl(t, sort, filter) }, [sort, filter])
+  const updateSort = useCallback((s: Sort) => { setSort(s); syncLibraryUrl(tab, s, filter) }, [tab, filter])
+  const updateFilter = useCallback((f: Filter) => { setFilter(f); syncLibraryUrl(tab, sort, f) }, [tab, sort])
 
   const list = useMemo(() => {
     let arr = manifest.filter(m => m.category === tab)
@@ -66,7 +105,7 @@ export default function Library() {
       <h1 className="safe-top pb-2 pt-3 text-xl font-bold">听力库</h1>
 
       {/* 分类 */}
-      <Tabs value={tab} onValueChange={v => setTab(v as Tab)} className="gap-0">
+      <Tabs value={tab} onValueChange={v => updateTab(v as Tab)} className="gap-0">
         <TabsList className="grid h-10 w-full grid-cols-4 rounded-xl">
           <TabsTrigger value="ted" className="rounded-lg">TED 演讲</TabsTrigger>
           <TabsTrigger value="commencement" className="rounded-lg">毕业演讲</TabsTrigger>
@@ -91,11 +130,11 @@ export default function Library() {
       {/* 排序与筛选 */}
       <div className="mt-2.5 flex gap-2 overflow-x-auto no-scrollbar horizontal-scroll">
         {([['hot', tab === 'ted' ? '最热' : tab === 'commencement' ? '经典排序' : '最新'], ['duration', '按时长']] as [Sort, string][]).map(([k, label]) => (
-          <Chip key={k} active={sort === k} onClick={() => setSort(k)}>{label}</Chip>
+          <Chip key={k} active={sort === k} onClick={() => updateSort(k)}>{label}</Chip>
         ))}
         <span className="w-1 shrink-0" />
         {([['all', '全部'], ['unlistened', '未听过'], ['listened', '听过']] as [Filter, string][]).map(([k, label]) => (
-          <Chip key={k} active={filter === k} onClick={() => setFilter(k)}>{label}</Chip>
+          <Chip key={k} active={filter === k} onClick={() => updateFilter(k)}>{label}</Chip>
         ))}
       </div>
 

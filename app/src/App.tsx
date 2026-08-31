@@ -13,7 +13,7 @@ import Me from './pages/Me'
 
 export default function App() {
   const hash = useHashRoute()
-  const { page, param } = parseRoute(hash)
+  const { page, param, query } = parseRoute(hash)
 
   // 主题
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function App() {
       ) : (
         <div className="mx-auto flex h-full max-w-lg flex-col">
           <main className="min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll">
-            {page === 'library' && <Library />}
+            {page === 'library' && <Library query={query} />}
             {page === 'vocab' && <Vocab />}
             {page === 'me' && <Me />}
             {page === 'discover' && <Discover />}

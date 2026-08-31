@@ -278,11 +278,14 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, [audio, manifestBySlug, quality, rate, startPlayback, updateClock])
 
   useEffect(() => {
-    const onMetadata = () => {
+    const applyPendingSeek = () => {
       if (pendingSeekRef.current !== null) {
         audio.currentTime = Math.max(0, Math.min(pendingSeekRef.current, audio.duration || pendingSeekRef.current))
         pendingSeekRef.current = null
       }
+    }
+    const onMetadata = () => {
+      applyPendingSeek()
       updateClock()
     }
     const onPlay = () => {
@@ -297,7 +300,10 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       if (slugRef.current) saveProgress(slugRef.current, audio.currentTime, audio.duration || 0)
     }
     const onWaiting = () => setBuffering(true)
-    const onCanPlay = () => setBuffering(false)
+    const onCanPlay = () => {
+      setBuffering(false)
+      applyPendingSeek()
+    }
     const onError = () => {
       setBuffering(false)
       setPlaying(false)

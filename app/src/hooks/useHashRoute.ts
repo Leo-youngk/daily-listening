@@ -14,12 +14,21 @@ export function useHashRoute() {
   return hash
 }
 
-export function navigate(path: string) {
-  location.hash = path
+export function navigate(path: string, params?: Record<string, string>) {
+  let hash = path
+  if (params) {
+    const qs = new URLSearchParams(params).toString()
+    if (qs) hash += `?${qs}`
+  }
+  location.hash = hash
 }
 
-export function parseRoute(hash: string): { page: string; param: string } {
-  // 形如 /talk/xxx、/library、/vocab、/me、/
-  const parts = hash.split('/').filter(Boolean)
-  return { page: parts[0] || 'discover', param: parts.slice(1).join('/') }
+export function parseRoute(hash: string): { page: string; param: string; query: URLSearchParams } {
+  const [pathname, search] = hash.split('?')
+  const parts = pathname.split('/').filter(Boolean)
+  return {
+    page: parts[0] || 'discover',
+    param: parts.slice(1).join('/'),
+    query: new URLSearchParams(search || ''),
+  }
 }

@@ -26,6 +26,8 @@ function wait(ms: number, signal?: AbortSignal) {
   })
 }
 
+const TIMEOUT_REASON = 'dtl-timeout'
+
 export async function fetchJson<T>(url: string, options: FetchJsonOptions = {}): Promise<T> {
   const { signal, timeoutMs = 12_000, retries = 1 } = options
   let lastError: unknown
@@ -34,7 +36,7 @@ export async function fetchJson<T>(url: string, options: FetchJsonOptions = {}):
     const controller = new AbortController()
     const relayAbort = () => controller.abort(signal?.reason)
     signal?.addEventListener('abort', relayAbort, { once: true })
-    const timer = window.setTimeout(() => controller.abort('timeout'), timeoutMs)
+    const timer = window.setTimeout(() => controller.abort(TIMEOUT_REASON), timeoutMs)
     try {
       const response = await fetch(url, {
         signal: controller.signal,
@@ -58,7 +60,11 @@ export async function fetchJson<T>(url: string, options: FetchJsonOptions = {}):
   }
 
   if (lastError instanceof DOMException && lastError.name === 'AbortError') {
-    throw new HttpError('请求超时，请检查网络后重试')
+    const reason = (lastError as DOMException & { reason?: unknown }).reason
+    if (reason === TIMEOUT_REASON) {
+      throw new HttpError('请求超时，请检查网络后重试')
+    }
+    throw lastError
   }
   if (lastError instanceof Error) throw lastError
   throw new HttpError('请求失败，请检查网络后重试')

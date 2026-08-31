@@ -136,12 +136,18 @@ export function streakDays(): number {
   const { days } = loadStats()
   const set = new Set(days)
   let streak = 0
-  const d = new Date()
-  // 今天没打卡则从昨天算起
-  if (!set.has(localDateKey(d))) d.setDate(d.getDate() - 1)
-  while (set.has(localDateKey(d))) {
+  const now = new Date()
+  let y = now.getFullYear()
+  let m = now.getMonth()
+  let d = now.getDate()
+  if (!set.has(localDateKey(now))) {
+    d -= 1
+  }
+  while (true) {
+    const key = localDateKey(new Date(y, m, d))
+    if (!set.has(key)) break
     streak++
-    d.setDate(d.getDate() - 1)
+    d -= 1
   }
   return streak
 }

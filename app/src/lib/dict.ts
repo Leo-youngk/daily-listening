@@ -102,7 +102,12 @@ export async function lookupContext(req: LookupRequest, signal: AbortSignal): Pr
   })
   const data = await res.json() as LookupResult
   if (!res.ok && res.status !== 429) throw new Error(`lookup failed: ${res.status}`)
-  // 结果一到就落缓存，不等其他请求；降级结果不写，允许下次重试
+  if (!data || typeof data.source !== 'string') {
+    return {
+      term: req.word, lemma: req.word, phonetic: '', partOfSpeech: '',
+      contextMeaning: '', explanation: '', otherMeanings: [], source: 'dictionary',
+    }
+  }
   if (data.source === 'ai' && data.contextMeaning) writeCachedSense(senseCacheKeyOf(req), data)
   return data
 }

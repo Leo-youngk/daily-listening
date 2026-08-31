@@ -1,12 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { loadVocab, removeVocab, updateVocab } from '../lib/storage'
 import type { VocabItem } from '../lib/types'
-import { BookOpenIcon } from 'lucide-react'
+import { BookOpenIcon, SearchIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
 import { usePlayerActions } from '../store/PlayerContext'
 import { navigate } from '../hooks/useHashRoute'
 import { fmtTime } from '../lib/format'
+
+const PAGE_SIZE = 30
 
 function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void }) {
   const [idx, setIdx] = useState(0)
@@ -42,7 +45,7 @@ function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void 
               {item.explanation && (
                 <p className="mt-1 text-xs leading-snug text-muted-foreground">{item.explanation}</p>
               )}
-              {item.sentenceEn && <p className="mt-2 text-xs italic text-muted-foreground">“{item.sentenceEn}”</p>}
+              {item.sentenceEn && <p className="mt-2 text-xs italic text-muted-foreground">"{item.sentenceEn}"</p>}
             </div>
           )}
         </div>
@@ -58,9 +61,35 @@ function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void 
 export default function Vocab() {
   const [items, setItems] = useState<VocabItem[]>(loadVocab)
   const [review, setReview] = useState(false)
+  const [search, setSearch] = useState('')
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const { playTalk } = usePlayerActions()
 
   const refresh = () => setItems(loadVocab())
+
+  useEffect(() => {
+    const onStorage = (e: Event) => {
+      const detail = (e as CustomEvent).detail
+      if (detail === 'dtl.vocab') refresh()
+    }
+    window.addEventListener('dtl-storage', onStorage)
+    return () => window.removeEventListener('dtl-storage', onStorage)
+  }, [])
+
+  const filtered = useMemo(() => {
+    if (!search.trim()) return items
+    const kw = search.toLowerCase().trim()
+    return items.filter(v =>
+      v.term.toLowerCase().includes(kw) ||
+      v.contextMeaning.toLowerCase().includes(kw) ||
+      (v.word && v.word.toLowerCase().includes(kw)),
+    )
+  }, [items, search])
+
+  const visible = filtered.slice(0, visibleCount)
+  const hasMore = visible.length < filtered.length
+
+  useEffect(() => { setVisibleCount(PAGE_SIZE) }, [search])
 
   const jumpToSource = (v: VocabItem) => {
     if (!v.slug) return
@@ -90,6 +119,18 @@ export default function Vocab() {
         )}
       </div>
 
+      {items.length > 0 && (
+        <div className="relative mb-2">
+          <SearchIcon className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
+          <Input
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            placeholder="搜索生词或释义"
+            className="h-9 rounded-xl border-transparent bg-card pl-9 text-sm shadow-xs ring-1 ring-foreground/5"
+          />
+        </div>
+      )}
+
       {items.length === 0 && (
         <div className="flex flex-1 flex-col items-center justify-center text-center text-muted-foreground">
           <BookOpenIcon className="size-10" strokeWidth={1.5} />
@@ -99,7 +140,7 @@ export default function Vocab() {
       )}
 
       <div className="space-y-2 overflow-y-auto no-scrollbar vertical-scroll">
-        {items.map(v => (
+        {visible.map(v => (
           <div key={v.id} className={`rounded-xl bg-card p-3 shadow-xs ring-1 ring-foreground/5 ${v.mastered ? 'opacity-50' : ''}`}>
             <div className="flex items-center gap-2">
               <p className="text-[15px] font-bold">{v.term}</p>
@@ -134,7 +175,7 @@ export default function Vocab() {
                 disabled={!v.slug}
                 className="mt-1 w-full text-left text-[11px] italic leading-snug text-muted-foreground disabled:opacity-100"
               >
-                <span className="line-clamp-2">“{v.sentenceEn}”</span>
+                <span className="line-clamp-2">"{v.sentenceEn}"</span>
                 {v.slug && (
                   <span className="mt-0.5 inline-block not-italic text-primary">
                     回到原文 {v.startTime !== undefined ? fmtTime(v.startTime) : ''}
@@ -144,6 +185,18 @@ export default function Vocab() {
             )}
           </div>
         ))}
+        {filtered.length === 0 && items.length > 0 && (
+          <p className="py-8 text-center text-sm text-muted-foreground">没有匹配的生词</p>
+        )}
+        {hasMore && (
+          <Button
+            variant="ghost"
+            className="w-full text-xs text-muted-foreground"
+            onClick={() => setVisibleCount(c => c + PAGE_SIZE)}
+          >
+            加载更多（{filtered.length - visible.length} 条剩余）
+          </Button>
+        )}
       </div>
     </div>
   )
