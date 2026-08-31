@@ -109,7 +109,8 @@ def verify_build(base: str) -> None:
         return
     status, js = fetch(base, m.group(1))
     check(status == 200, "主 JS 可访问", f"HTTP {status}")
-    sha = re.search(r'版本 ([0-9a-f]{7}|nogit)', js)
+    # 压缩后 "版本 " 和 sha 会被拆成相邻的独立字面量，中间夹引号和逗号
+    sha = re.search(r'版本 [`\'",\s]{0,6}([0-9a-f]{7}|nogit)', js)
     check(bool(sha), "构建版本号已内联", sha.group(1) if sha else "未找到")
     check("mymemory" not in js.lower(), "已移除 MyMemory 翻译接口")
     check("dictionaryapi.dev" not in js, "已移除浏览器直连 dictionaryapi.dev")
