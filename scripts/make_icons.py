@@ -16,7 +16,8 @@ from PIL import Image, ImageDraw
 HERE = os.path.dirname(os.path.abspath(__file__))
 ICON_DIR = os.path.join(os.path.dirname(HERE), "public", "icons")
 
-BG = (91, 143, 217)
+# 与 index.css 的 --color-brand / manifest 的 theme_color 保持同一个蓝
+BG = (47, 143, 224)
 WHITE = (255, 255, 255)
 PINK = (243, 179, 190)
 INK = (42, 50, 66)
