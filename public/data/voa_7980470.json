@@ -1,1 +1,356 @@
-{"slug":"voa_7980470","title":"Tech Tip: How to Block Location Tracking on your Phone","speaker":"VOA Learning English","category":"voa","school":null,"year":2025,"duration":415.24,"cover":"/covers/voa_7980470.jpg","views":null,"sourceUrl":"https://learningenglish.voanews.com/a/tech-tip-how-to-block-location-tracking-on-your-phone/7980470.html","audioUrls":{"standard":"https://daily-listening-media.if5v.workers.dev/v1/standard/voa_7980470.m4a","high":"https://daily-listening-media.if5v.workers.dev/v1/high/voa_7980470.m4a"},"zhSource":"mt","sentences":[{"i":0,"start":0.11,"end":8.31,"en":"Smartphones have become valuable tools for helping to organize our lives.","zh":"智能手机已成为帮助组织我们生活的宝贵工具。"},{"i":1,"start":9.39,"end":21.47,"en":"However, the devices can also capture personal data and location information that users might want to keep private.","zh":"但是,这些装置还可以捕捉个人数据和用户可能希望保密的定位信息。"},{"i":2,"start":22.47,"end":37.75,"en":"Here are some tips, suggested by the Associated Press (AP), to help smartphone users limit the collection of private data on personal devices.","zh":"以下是美联社提出的一些建议,以帮助智能电话用户限制个人设备上私人数据的收集。"},{"i":3,"start":37.75,"end":39.01,"en":"How does a smartphone track your location?","zh":"智能手机如何追踪你的位置?"},{"i":4,"start":39.01,"end":50.95,"en":"All a user has to do is open a phone’s map tool to search for a restaurant or other business to activate data tracking .","zh":"用户只需打开电话的地图工具,"},{"i":5,"start":51.47,"end":67.71,"en":"Similarly, someone choosing to look up the price of a product online can unknowingly permit the smartphone to track the user’s location and share data with others.","zh":"同样,选择在网上查寻产品价格的人可以在不知情的情况下允许智能手机跟踪用户的位置并与他人共享数据。"},{"i":6,"start":68.71,"end":78.15,"en":"Darren Guccione is the chief executive of U.S.-based internet security company Keeper Security.","zh":"Darren Guccione是美国互联网安全公司的首席执行官"},{"i":7,"start":79.15,"end":94.99,"en":"He told the AP that many apps, “from fitness tracking to navigation ,” can record data signals that show a user’s movements, both physical and digital .","zh":"他告诉AP公司,许多应用程序,“从健身跟踪到导航”可以记录显示用户物理和数字动态的数据信号。"},{"i":8,"start":94.99,"end":123.39,"en":"Guccione’s advice to users is to “turn on location tracking only when necessary, such as during navigation, emergencies or sharing updates with trusted contacts…” He adds that after this kind of necessary tracking is complete, users should immediately turn off location tracking.","zh":"Guccione对用户的建议是“仅在必要的时候,如在导航、紧急情况或与信任的联系人分享最新消息时,才开始追踪位置......”。 他补充说,在完成这种必要的跟踪之后,用户应立即关闭定位跟踪。"},{"i":9,"start":123.39,"end":133.11,"en":"Identify your app permissions One step to limit smartphone tracking is to identify and change app permission settings.","zh":"限制智能手机跟踪的一个步骤是识别和更改应用程序权限设置。"},{"i":10,"start":134.15,"end":141.99,"en":"To do this, iPhone users can first go to the device’s Privacy & Security settings.","zh":"为此,iPhone用户可以先访问该设备的隐私和安全设置。"},{"i":11,"start":142.91,"end":148.95,"en":"Then go to Location Services to check settings for individual apps.","zh":"然后到位置服务处检查单个应用程序的设置 。"},{"i":12,"start":149.95,"end":159.53,"en":"Internet security experts say it is not a good idea to let apps always use your location in the background.","zh":"互联网安全专家说,让应用程序总是在背景中使用你的位置不是一个好主意。"},{"i":13,"start":160.75,"end":169.95,"en":"Instead, get the app to either ask first before using your location, or use it only when the app is open.","zh":"相反,让应用程序在使用您的位置之前先询问,或者仅在应用程序打开时才使用。"},{"i":14,"start":170.91,"end":177.31,"en":"A user can also choose the setting that never lets an app track location.","zh":"用户也可以选择从不允许应用程序跟踪位置的设置 。"},{"i":15,"start":178.27,"end":186.79,"en":"The process works a little differently for Android phones because manufacturers have different versions.","zh":"这个过程对安道尔手机的作用有点不同 因为制造商有不同的版本。"},{"i":16,"start":187.99,"end":192.05,"en":"In general, Android users should go to settings.","zh":"一般来说,Android用户应该去设置。"},{"i":17,"start":192.93,"end":198.61,"en":"Then go to Location to turn the setting on or off for all apps.","zh":"然后到位置 关闭所有应用程序的设定 。"},{"i":18,"start":198.61,"end":213.37,"en":"Ad trackers To avoid being tracked by advertising systems, privacy experts suggest that users block advertising identifiers on Android or Apple devices.","zh":"为避免被广告系统跟踪,隐私专家建议用户封锁安卓或苹果设备上的广告标识。"},{"i":19,"start":214.21,"end":220.29,"en":"This can stop third parties from tracking ads to target users.","zh":"这样做可以阻止第三方跟踪目标用户的广告。"},{"i":20,"start":220.95,"end":228.59,"en":"To do this, iPhone users can go to the Privacy setting, then find Apple Advertising.","zh":"要做到这一点,iPhone用户可以去隐私设置,然后找到苹果广告。"},{"i":21,"start":229.75,"end":244.43,"en":"Then turn off Personalized Ads. On newer Android phones, users should go to the Privacy setting, then to Ads, and choose Delete Advertising ID.","zh":"然后关掉个性化Ads。在更新的Android手机上,用户应该去隐私环境,然后去Ads,选择删除广告标识。"},{"i":22,"start":244.43,"end":259.57,"en":"Check your Google account Along with app permissions for your device, security experts say it is a good idea to look closely at your Google account to make sure it is not tracking you.","zh":"安全专家表示, 仔细查看您的 Google 账户是一个很好的办法, 以确保它不会跟踪你。"},{"i":23,"start":260.27,"end":267.73,"en":"To find this out, go to myaccount.google.com and find Data & Privacy.","zh":"为了找到这个,去我的账户。google.com 并找到数据与隐私。"},{"i":24,"start":268.97,"end":273.13,"en":"Users can find Location History controls there.","zh":"用户可以在那里找到位置历史控件 。"},{"i":25,"start":274.13,"end":284.07,"en":"Under recent changes, the history will be removed after three months although users can change that setting as well.","zh":"根据最近的变化,三个月后历史将被删除,尽管用户也可以改变这一环境。"},{"i":26,"start":284.07,"end":295.01,"en":"How to use web browsers Popular web browsers for smartphones – like Safari or Chrome – could also give away location information.","zh":"如何使用网络浏览器(Safari或Chrome等智能手机通用网络浏览器)也可以提供定位信息。"},{"i":27,"start":295.89,"end":299.81,"en":"Try using one that does not store your data.","zh":"尝试使用一个不存储您的数据 。"},{"i":28,"start":300.73,"end":307.67,"en":"Such browsers include DuckDuckGo, Firefox Focus or Ecosia.","zh":"这种浏览器包括 DuckDuckGo、 Firefox Focus 或 Ecosia。"},{"i":29,"start":308.69,"end":320.15,"en":"If a privacy-protected browser needs to identify your location through an IP address, it will ask first before doing so.","zh":"如果受隐私保护的浏览器需要通过 IP 地址来识别您的位置, 它会在这样做之前先询问 。"},{"i":30,"start":321.13,"end":330.97,"en":"These kinds of browsers will also let users easily remove internet cookies and other web browsing data.","zh":"这些浏览器也会让用户容易地删除互联网饼干和其他浏览数据。"},{"i":31,"start":330.97,"end":345.33,"en":"Find my device Phones or tablets can also be tracked with Apple's Find My or Google's Find My Device services designed to recover lost devices.","zh":"寻找我的设备 电话或平板电脑 也可以通过苹果的“找到我”或“谷歌”的“找到我的设备”服务 来追踪 来找回丢失的设备"},{"i":32,"start":346.33,"end":358.15,"en":"Users can turn this tool off if they think someone was able to take control of their Apple or Google account and is using it for tracking.","zh":"用户可以关闭这个工具, 如果他们认为有人能够控制他们的苹果账户或谷歌账户,"},{"i":33,"start":358.15,"end":369.03,"en":"Block the signal Some cybersecurity websites advise using a smartphone’s Airplane Mode to block tracking operations.","zh":"一些网络安全网站建议使用智能手机的飞机模式来阻断追踪操作。"},{"i":34,"start":369.03,"end":376.17,"en":"But some experts say this does not always turn off all tracking signals.","zh":"但一些专家说,这并不总是关闭所有的跟踪信号。"},{"i":35,"start":377.61,"end":382.97,"en":"Users should not depend on this setting alone to block data collection.","zh":"用户不应仅仅依靠这一设置来阻止数据收集。"},{"i":36,"start":384.01,"end":390.47,"en":"A better tool in many situations would be a signal-blocking Faraday bag .","zh":"在许多情况下,更好的工具是阻塞信号袋。"},{"i":37,"start":391.47,"end":395.81,"en":"These block all wireless signals to the smartphone.","zh":"这些街区所有的无线信号 智能手机。"},{"i":38,"start":395.81,"end":403.07,"en":"Experts suggest testing the bag to make sure data is actually being blocked.","zh":"专家建议测试这个袋子 以确保数据实际上被封锁。"},{"i":39,"start":404.17,"end":411.73,"en":"While such bags can be helpful, devices kept inside the containers cannot be used.","zh":"虽然这些袋子有帮助,但不能使用容器内存放的装置。"},{"i":40,"start":411.73,"end":414.85,"en":"I’m Bryan Lynn. The Associated Press reported this story.","zh":"我是Bryan Lynn, 美联社报导了这个故事。"},{"i":41,"start":414.85,"end":414.86,"en":"Bryan Lynn adapted the report for VOA Learning English.","zh":"Bryan Lynn改编了VOA学习英语的报告。"}]}
+{
+  "slug": "voa_7980470",
+  "title": "Tech Tip: How to Block Location Tracking on your Phone",
+  "speaker": "VOA Learning English",
+  "category": "voa",
+  "school": null,
+  "year": 2025,
+  "duration": 415.24,
+  "cover": "/covers/voa_7980470.jpg",
+  "views": null,
+  "sourceUrl": "https://learningenglish.voanews.com/a/tech-tip-how-to-block-location-tracking-on-your-phone/7980470.html",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/voa_7980470.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/voa_7980470.m4a"
+  },
+  "zhSource": "mt",
+  "sentences": [
+    {
+      "i": 0,
+      "start": 0.11,
+      "end": 8.31,
+      "en": "Smartphones have become valuable tools for helping to organize our lives.",
+      "zh": "智能手机已成为帮助组织我们生活的宝贵工具。",
+      "w": [0.11,1.31,1.31,1.93,1.93,2.53,2.53,3.37,3.37,4.15,4.15,5.11,5.11,5.59,5.59,6.03,6.03,6.73,6.73,7.49,7.49,8.31]
+    },
+    {
+      "i": 1,
+      "start": 9.39,
+      "end": 21.47,
+      "en": "However, the devices can also capture personal data and location information that users might want to keep private.",
+      "zh": "但是,这些装置还可以捕捉个人数据和用户可能希望保密的定位信息。",
+      "w": [9.39,9.79,10.39,10.51,10.51,11.11,11.11,11.73,11.73,12.23,12.23,12.93,12.93,13.97,13.97,14.49,14.49,15.39,15.39,16.31,16.31,17.03,17.03,18.13,18.13,18.75,18.75,19.43,19.43,19.89,19.89,20.23,20.23,20.61,20.61,21.47]
+    },
+    {
+      "i": 2,
+      "start": 22.47,
+      "end": 37.75,
+      "en": "Here are some tips, suggested by the Associated Press (AP), to help smartphone users limit the collection of private data on personal devices.",
+      "zh": "以下是美联社提出的一些建议,以帮助智能电话用户限制个人设备上私人数据的收集。",
+      "w": [22.47,23.13,23.13,23.55,23.55,23.91,23.91,24.63,24.63,25.77,25.77,26.37,26.37,26.57,26.57,27.27,27.27,27.91,27.91,28.89,28.89,29.71,29.71,30.23,30.23,31.05,31.05,31.63,32.03,32.83,32.83,33.27,33.27,33.83,33.83,34.47,34.47,35.01,35.01,35.59,35.59,36.25,36.25,36.93,36.93,37.75]
+    },
+    {
+      "i": 3,
+      "start": 37.75,
+      "end": 39.01,
+      "en": "How does a smartphone track your location?",
+      "zh": "智能手机如何追踪你的位置?",
+      "w": [37.75,37.93,37.93,38.11,38.11,38.29,38.29,38.47,38.47,38.65,38.65,38.83,38.83,39.01]
+    },
+    {
+      "i": 4,
+      "start": 39.01,
+      "end": 50.95,
+      "en": "All a user has to do is open a phone’s map tool to search for a restaurant or other business to activate data tracking .",
+      "zh": "用户只需打开电话的地图工具,",
+      "w": [39.01,39.51,39.51,39.87,39.87,40.37,40.37,40.83,40.83,41.15,41.15,41.53,41.53,41.91,41.91,42.47,42.47,42.79,42.79,43.49,43.49,43.83,43.83,44.51,44.51,45.21,45.21,45.63,45.63,46.13,46.13,46.33,46.33,46.99,46.99,47.37,47.37,47.73,47.73,48.27,48.27,49.01,49.01,49.67,49.67,50.37,50.37,50.95]
+    },
+    {
+      "i": 5,
+      "start": 51.47,
+      "end": 67.71,
+      "en": "Similarly, someone choosing to look up the price of a product online can unknowingly permit the smartphone to track the user’s location and share data with others.",
+      "zh": "同样,选择在网上查寻产品价格的人可以在不知情的情况下允许智能手机跟踪用户的位置并与他人共享数据。",
+      "w": [51.47,52.83,53.71,54.01,54.01,54.55,54.55,55.07,55.07,55.31,55.31,55.53,55.53,55.83,55.83,56.21,56.21,56.55,56.55,56.73,56.73,57.29,57.29,57.97,57.97,58.85,58.85,59.75,59.75,60.47,60.47,60.91,60.91,61.63,61.63,62.33,62.33,62.87,62.87,63.37,63.37,64.13,64.13,64.83,64.83,65.67,65.67,66.21,66.21,66.69,66.69,67.07,67.07,67.71]
+    },
+    {
+      "i": 6,
+      "start": 68.71,
+      "end": 78.15,
+      "en": "Darren Guccione is the chief executive of U.S.-based internet security company Keeper Security.",
+      "zh": "Darren Guccione是美国互联网安全公司的首席执行官",
+      "w": [68.71,69.41,69.41,70.33,70.33,70.85,70.85,71.13,71.13,71.53,71.53,72.25,72.25,72.93,72.93,73.19,73.19,73.45,73.45,74.19,74.19,75.03,75.03,75.87,75.87,76.51,76.99,77.33,77.33,78.15]
+    },
+    {
+      "i": 7,
+      "start": 79.15,
+      "end": 94.99,
+      "en": "He told the AP that many apps, “from fitness tracking to navigation ,” can record data signals that show a user’s movements, both physical and digital .",
+      "zh": "他告诉AP公司,许多应用程序,“从健身跟踪到导航”可以记录显示用户物理和数字动态的数据信号。",
+      "w": [79.15,79.53,79.53,79.91,79.91,80.19,80.19,80.67,80.67,81.31,81.31,81.87,81.87,82.59,83.19,83.39,83.39,83.99,83.99,84.51,84.51,85.15,85.15,86.05,86.63,86.83,86.83,87.73,87.73,88.29,88.29,89.07,89.07,89.81,89.81,90.35,90.35,90.71,90.71,91.49,91.49,92.17,92.79,92.99,92.99,93.53,93.53,94.33,94.33,94.99]
+    },
+    {
+      "i": 8,
+      "start": 95.99,
+      "end": 123.39,
+      "en": "Guccione’s advice to users is to “turn on location tracking only when necessary, such as during navigation, emergencies or sharing updates with trusted contacts…” He adds that after this kind of necessary tracking is complete, users should immediately turn off location tracking.",
+      "zh": "Guccione对用户的建议是“仅在必要的时候,如在导航、紧急情况或与信任的联系人分享最新消息时,才开始追踪位置......”。 他补充说,在完成这种必要的跟踪之后,用户应立即关闭定位跟踪。",
+      "w": [95.99,97.11,97.11,97.57,97.57,98.25,98.25,98.97,98.97,99.71,99.71,100.03,100.03,100.47,100.47,100.85,100.85,101.59,101.59,102.25,102.25,103.13,103.13,103.57,103.57,104.45,105.11,105.21,105.21,105.61,105.61,105.95,105.95,106.85,107.41,108.15,108.95,109.01,109.01,109.55,109.55,110.25,110.25,110.79,110.79,111.49,111.49,112.37,113.25,113.51,113.51,114.13,114.13,114.49,114.49,114.95,114.95,115.29,115.29,115.63,115.63,115.97,115.97,116.53,116.53,117.31,117.31,117.67,117.67,118.53,119.31,119.67,119.67,120.29,120.29,120.85,120.85,121.49,121.49,121.91,121.91,122.65,122.65,123.39]
+    },
+    {
+      "i": 9,
+      "start": 123.39,
+      "end": 133.11,
+      "en": "Identify your app permissions One step to limit smartphone tracking is to identify and change app permission settings.",
+      "zh": "限制智能手机跟踪的一个步骤是识别和更改应用程序权限设置。",
+      "w": [123.39,123.6,123.6,123.81,123.81,124.02,124.02,124.23,124.23,124.81,124.81,125.33,125.33,125.83,125.83,126.25,126.25,127.11,127.11,127.81,127.81,128.51,128.51,128.79,128.79,129.53,129.53,130.11,130.11,130.85,130.85,131.39,131.39,132.19,132.19,133.11]
+    },
+    {
+      "i": 10,
+      "start": 134.15,
+      "end": 141.99,
+      "en": "To do this, iPhone users can first go to the device’s Privacy & Security settings.",
+      "zh": "为此,iPhone用户可以先访问该设备的隐私和安全设置。",
+      "w": [134.15,134.25,134.25,134.47,134.47,134.91,135.23,135.57,135.57,136.25,136.25,136.83,136.83,137.45,137.45,137.89,137.89,138.15,138.15,138.27,138.27,139.33,139.33,139.91,140.49,141.09,141.09,141.99]
+    },
+    {
+      "i": 11,
+      "start": 142.91,
+      "end": 148.95,
+      "en": "Then go to Location Services to check settings for individual apps.",
+      "zh": "然后到位置服务处检查单个应用程序的设置 。",
+      "w": [142.91,143.39,143.39,143.79,143.79,144.63,144.63,144.68,144.63,145.59,145.59,146.29,146.29,146.63,146.63,147.17,147.17,147.55,147.55,148.23,148.23,148.95]
+    },
+    {
+      "i": 12,
+      "start": 149.95,
+      "end": 159.53,
+      "en": "Internet security experts say it is not a good idea to let apps always use your location in the background.",
+      "zh": "互联网安全专家说,让应用程序总是在背景中使用你的位置不是一个好主意。",
+      "w": [149.95,150.49,150.49,151.29,151.29,152.29,152.29,153.01,153.01,153.29,153.29,153.49,153.49,153.91,153.91,154.09,154.09,154.23,154.23,154.79,154.79,155.41,155.41,155.67,155.67,156.19,156.19,156.71,156.71,157.25,157.25,157.57,157.57,158.29,158.29,158.75,158.75,158.95,158.95,159.53]
+    },
+    {
+      "i": 13,
+      "start": 160.75,
+      "end": 169.95,
+      "en": "Instead, get the app to either ask first before using your location, or use it only when the app is open.",
+      "zh": "相反,让应用程序在使用您的位置之前先询问,或者仅在应用程序打开时才使用。",
+      "w": [160.75,161.29,161.75,161.89,161.89,162.19,162.19,162.53,162.53,162.89,162.89,163.15,163.15,163.75,163.75,164.55,164.55,165.17,165.17,165.65,165.65,165.97,165.97,166.67,166.67,167.49,167.49,167.81,167.81,168.01,168.01,168.39,168.39,168.79,168.79,168.99,168.99,169.27,169.27,169.49,169.49,169.95]
+    },
+    {
+      "i": 14,
+      "start": 170.91,
+      "end": 177.31,
+      "en": "A user can also choose the setting that never lets an app track location.",
+      "zh": "用户也可以选择从不允许应用程序跟踪位置的设置 。",
+      "w": [170.91,171.13,171.13,171.57,171.57,171.99,171.99,172.43,172.43,173.07,173.07,173.53,173.53,173.95,173.95,174.55,174.55,174.97,174.97,175.29,175.29,175.57,175.57,175.87,175.87,176.43,176.43,177.31]
+    },
+    {
+      "i": 15,
+      "start": 178.27,
+      "end": 186.79,
+      "en": "The process works a little differently for Android phones because manufacturers have different versions.",
+      "zh": "这个过程对安道尔手机的作用有点不同 因为制造商有不同的版本。",
+      "w": [178.27,178.77,178.77,179.47,179.47,180.21,180.21,180.55,180.55,180.71,180.71,181.43,181.43,181.93,181.93,182.65,182.65,183.17,183.17,184.25,184.25,185.15,185.15,185.77,185.77,186.25,186.25,186.79]
+    },
+    {
+      "i": 16,
+      "start": 187.99,
+      "end": 192.05,
+      "en": "In general, Android users should go to settings.",
+      "zh": "一般来说,Android用户应该去设置。",
+      "w": [187.99,188.19,188.19,188.73,189.51,189.69,189.69,190.31,190.31,190.97,190.97,191.29,191.29,191.63,191.63,192.05]
+    },
+    {
+      "i": 17,
+      "start": 192.93,
+      "end": 198.61,
+      "en": "Then go to Location to turn the setting on or off for all apps.",
+      "zh": "然后到位置 关闭所有应用程序的设定 。",
+      "w": [192.93,193.15,193.15,193.43,193.43,194.43,194.43,194.48,194.43,194.89,194.89,195.25,195.25,195.49,195.49,195.85,195.85,196.35,196.35,196.75,196.75,197.19,197.19,197.79,197.79,198.17,198.17,198.61]
+    },
+    {
+      "i": 18,
+      "start": 198.61,
+      "end": 213.37,
+      "en": "Ad trackers To avoid being tracked by advertising systems, privacy experts suggest that users block advertising identifiers on Android or Apple devices.",
+      "zh": "为避免被广告系统跟踪,隐私专家建议用户封锁安卓或苹果设备上的广告标识。",
+      "w": [198.61,199.01,199.01,199.41,199.41,199.99,199.99,200.49,200.49,201.07,201.07,201.51,201.51,201.95,201.95,202.79,202.79,203.77,204.49,204.91,204.91,205.73,205.73,206.51,206.51,207.05,207.05,207.55,207.55,208.13,208.13,209.23,209.23,210.25,210.25,211.05,211.05,211.73,211.73,212.17,212.17,212.65,212.65,213.37]
+    },
+    {
+      "i": 19,
+      "start": 214.21,
+      "end": 220.29,
+      "en": "This can stop third parties from tracking ads to target users.",
+      "zh": "这样做可以阻止第三方跟踪目标用户的广告。",
+      "w": [214.21,214.61,214.61,215.01,215.01,215.57,215.57,216.23,216.23,216.81,216.81,217.25,217.25,217.81,217.81,218.35,218.35,219.05,219.05,219.49,219.49,220.29]
+    },
+    {
+      "i": 20,
+      "start": 220.95,
+      "end": 228.59,
+      "en": "To do this, iPhone users can go to the Privacy setting, then find Apple Advertising.",
+      "zh": "要做到这一点,iPhone用户可以去隐私设置,然后找到苹果广告。",
+      "w": [220.95,221.45,221.45,221.69,221.69,222.21,222.59,223.03,223.03,223.63,223.63,224.13,224.13,224.45,224.45,224.65,224.65,224.81,224.81,225.37,225.37,226.07,226.55,226.79,226.79,227.25,227.25,227.79,227.79,228.59]
+    },
+    {
+      "i": 21,
+      "start": 229.75,
+      "end": 244.43,
+      "en": "Then turn off Personalized Ads. On newer Android phones, users should go to the Privacy setting, then to Ads, and choose Delete Advertising ID.",
+      "zh": "然后关掉个性化Ads。在更新的Android手机上,用户应该去隐私环境,然后去Ads,选择删除广告标识。",
+      "w": [229.75,230.27,230.27,230.75,230.75,231.21,231.21,232.11,232.11,232.95,233.99,234.27,234.27,234.67,234.67,235.37,235.37,236.09,236.39,236.79,236.79,237.31,237.31,237.59,237.59,237.81,237.81,237.99,237.99,238.53,238.53,239.29,239.69,240.01,240.01,240.31,240.31,240.83,241.51,241.56,241.55,241.99,241.99,242.61,242.61,243.71,243.71,244.43]
+    },
+    {
+      "i": 22,
+      "start": 244.43,
+      "end": 259.57,
+      "en": "Check your Google account Along with app permissions for your device, security experts say it is a good idea to look closely at your Google account to make sure it is not tracking you.",
+      "zh": "安全专家表示, 仔细查看您的 Google 账户是一个很好的办法, 以确保它不会跟踪你。",
+      "w": [244.43,244.68,244.68,244.93,244.93,245.18,245.18,245.43,245.43,245.99,245.99,246.37,246.37,246.79,246.79,247.51,247.51,248.03,248.03,248.27,248.27,248.97,249.71,250.01,250.01,250.85,250.85,251.49,251.49,251.75,251.75,251.91,251.91,252.05,252.05,252.31,252.31,252.91,252.91,253.49,253.49,253.71,253.71,254.37,254.37,254.87,254.87,255.19,255.19,255.61,255.61,256.21,256.21,256.93,256.93,257.15,257.15,257.49,257.49,257.87,257.87,258.15,258.15,258.45,258.45,258.97,258.97,259.57]
+    },
+    {
+      "i": 23,
+      "start": 260.27,
+      "end": 267.73,
+      "en": "To find this out, go to myaccount.google.com and find Data & Privacy.",
+      "zh": "为了找到这个,去我的账户。google.com 并找到数据与隐私。",
+      "w": [260.27,260.47,260.47,260.79,260.79,261.13,261.13,261.59,261.83,261.93,261.93,262.29,262.29,263.17,263.17,264.09,264.09,265.19,265.19,265.83,265.83,266.29,266.29,266.75,267.15,267.73]
+    },
+    {
+      "i": 24,
+      "start": 268.97,
+      "end": 273.13,
+      "en": "Users can find Location History controls there.",
+      "zh": "用户可以在那里找到位置历史控件 。",
+      "w": [268.97,269.19,269.19,269.77,269.77,270.23,270.23,271.05,271.05,271.67,271.67,272.41,272.41,273.13]
+    },
+    {
+      "i": 25,
+      "start": 274.13,
+      "end": 284.07,
+      "en": "Under recent changes, the history will be removed after three months although users can change that setting as well.",
+      "zh": "根据最近的变化,三个月后历史将被删除,尽管用户也可以改变这一环境。",
+      "w": [274.13,274.75,274.75,275.23,275.23,275.99,276.51,276.57,276.57,277.03,277.03,277.39,277.39,277.61,277.61,278.27,278.27,278.71,278.71,279.11,279.11,279.65,279.95,280.47,280.47,281.07,281.07,281.57,281.57,282.15,282.15,282.63,282.63,283.17,283.17,283.59,283.59,284.07]
+    },
+    {
+      "i": 26,
+      "start": 284.07,
+      "end": 295.01,
+      "en": "How to use web browsers Popular web browsers for smartphones – like Safari or Chrome – could also give away location information.",
+      "zh": "如何使用网络浏览器(Safari或Chrome等智能手机通用网络浏览器)也可以提供定位信息。",
+      "w": [284.07,284.43,284.43,284.78,284.78,285.14,285.14,285.49,285.49,285.85,285.85,285.93,285.93,286.43,286.43,287.23,287.23,287.77,287.77,288.49,289.11,289.37,289.37,289.97,289.97,290.57,290.57,291.21,291.55,291.93,291.93,292.35,292.35,292.69,292.69,293.17,293.17,293.97,293.97,295.01]
+    },
+    {
+      "i": 27,
+      "start": 295.89,
+      "end": 299.81,
+      "en": "Try using one that does not store your data.",
+      "zh": "尝试使用一个不存储您的数据 。",
+      "w": [295.89,296.43,296.43,297.03,297.03,297.49,297.49,297.83,297.83,298.09,298.09,298.49,298.49,299.03,299.03,299.33,299.33,299.81]
+    },
+    {
+      "i": 28,
+      "start": 300.73,
+      "end": 307.67,
+      "en": "Such browsers include DuckDuckGo, Firefox Focus or Ecosia.",
+      "zh": "这种浏览器包括 DuckDuckGo、 Firefox Focus 或 Ecosia。",
+      "w": [300.73,300.87,300.87,301.51,301.51,302.37,302.37,303.71,304.35,304.93,304.93,305.69,306.53,306.67,306.67,307.67]
+    },
+    {
+      "i": 29,
+      "start": 308.69,
+      "end": 320.15,
+      "en": "If a privacy-protected browser needs to identify your location through an IP address, it will ask first before doing so.",
+      "zh": "如果受隐私保护的浏览器需要通过 IP 地址来识别您的位置, 它会在这样做之前先询问 。",
+      "w": [308.69,308.95,308.95,309.49,309.49,310.87,310.87,311.39,311.39,312.03,312.03,312.41,312.41,313.07,313.07,313.55,313.55,314.33,314.33,315.05,315.05,315.25,315.25,315.67,315.67,316.27,316.79,317.03,317.03,317.23,317.23,317.77,317.77,318.55,318.55,319.23,319.23,319.65,319.65,320.15]
+    },
+    {
+      "i": 30,
+      "start": 321.13,
+      "end": 330.97,
+      "en": "These kinds of browsers will also let users easily remove internet cookies and other web browsing data.",
+      "zh": "这些浏览器也会让用户容易地删除互联网饼干和其他浏览数据。",
+      "w": [321.13,321.69,321.69,322.11,322.11,322.51,322.51,323.07,323.07,323.53,323.53,324.07,324.07,324.43,324.43,325.03,325.03,325.93,325.93,326.75,326.75,327.37,327.37,328.03,328.03,328.85,328.85,329.27,329.27,329.67,329.67,330.27,330.27,330.97]
+    },
+    {
+      "i": 31,
+      "start": 330.97,
+      "end": 345.33,
+      "en": "Find my device Phones or tablets can also be tracked with Apple's Find My or Google's Find My Device services designed to recover lost devices.",
+      "zh": "寻找我的设备 电话或平板电脑 也可以通过苹果的“找到我”或“谷歌”的“找到我的设备”服务 来追踪 来找回丢失的设备",
+      "w": [330.97,331.44,331.44,331.92,331.92,332.39,332.39,332.73,332.73,333.17,333.17,333.91,333.91,334.41,334.41,334.81,334.81,335.07,335.07,335.53,335.53,335.93,335.93,337.17,337.17,337.45,337.45,338.01,338.01,338.45,338.45,339.27,339.27,339.67,339.67,340.03,340.03,340.65,340.65,341.53,341.53,342.67,342.67,343.15,343.15,343.73,343.73,344.37,344.37,345.33]
+    },
+    {
+      "i": 32,
+      "start": 346.33,
+      "end": 358.15,
+      "en": "Users can turn this tool off if they think someone was able to take control of their Apple or Google account and is using it for tracking.",
+      "zh": "用户可以关闭这个工具, 如果他们认为有人能够控制他们的苹果账户或谷歌账户,",
+      "w": [346.33,347.01,347.01,347.69,347.69,348.07,348.07,348.47,348.47,348.91,348.91,349.47,349.47,349.79,349.79,350.05,350.05,350.41,350.41,351.01,351.01,351.31,351.31,351.61,351.61,351.93,351.93,352.19,352.19,352.89,352.89,353.37,353.37,353.57,353.57,354.11,354.11,354.47,354.47,354.93,354.93,355.43,355.43,356.37,356.37,356.59,356.59,357.03,357.03,357.31,357.31,357.63,357.63,358.15]
+    },
+    {
+      "i": 33,
+      "start": 358.15,
+      "end": 369.03,
+      "en": "Block the signal Some cybersecurity websites advise using a smartphone’s Airplane Mode to block tracking operations.",
+      "zh": "一些网络安全网站建议使用智能手机的飞机模式来阻断追踪操作。",
+      "w": [358.15,358.6,358.6,359.06,359.06,359.51,359.51,359.89,359.89,360.93,360.93,361.85,361.85,362.67,362.67,363.49,363.49,363.87,363.87,365.15,365.15,365.79,365.79,366.45,366.45,366.95,366.95,367.35,367.35,367.97,367.97,369.03]
+    },
+    {
+      "i": 34,
+      "start": 369.03,
+      "end": 376.17,
+      "en": "But some experts say this does not always turn off all tracking signals.",
+      "zh": "但一些专家说,这并不总是关闭所有的跟踪信号。",
+      "w": [369.03,370.15,370.15,370.59,370.59,371.21,371.21,371.83,371.83,372.19,372.19,372.51,372.51,372.91,372.91,373.63,373.63,374.17,374.17,374.43,374.43,374.81,374.81,375.35,375.35,376.17]
+    },
+    {
+      "i": 35,
+      "start": 377.61,
+      "end": 382.97,
+      "en": "Users should not depend on this setting alone to block data collection.",
+      "zh": "用户不应仅仅依靠这一设置来阻止数据收集。",
+      "w": [377.61,377.66,377.61,378.21,378.21,378.51,378.51,379.05,379.05,379.39,379.39,379.75,379.75,380.25,380.25,380.85,380.85,381.43,381.43,381.81,381.81,382.27,382.27,382.97]
+    },
+    {
+      "i": 36,
+      "start": 384.01,
+      "end": 390.47,
+      "en": "A better tool in many situations would be a signal-blocking Faraday bag .",
+      "zh": "在许多情况下,更好的工具是阻塞信号袋。",
+      "w": [384.01,384.23,384.23,384.57,384.57,385.03,385.03,385.39,385.39,385.67,385.67,386.63,386.63,387.15,387.15,387.43,387.43,387.71,387.71,388.89,388.89,389.93,389.93,390.47]
+    },
+    {
+      "i": 37,
+      "start": 391.47,
+      "end": 395.81,
+      "en": "These block all wireless signals to the smartphone.",
+      "zh": "这些街区所有的无线信号 智能手机。",
+      "w": [391.47,392.05,392.05,392.53,392.53,393.07,393.07,393.75,393.75,394.49,394.49,395.01,395.01,395.19,395.19,395.81]
+    },
+    {
+      "i": 38,
+      "start": 395.81,
+      "end": 403.07,
+      "en": "Experts suggest testing the bag to make sure data is actually being blocked.",
+      "zh": "专家建议测试这个袋子 以确保数据实际上被封锁。",
+      "w": [395.81,397.43,397.43,398.37,398.37,399.25,399.25,399.53,399.53,399.87,399.87,400.15,400.15,400.35,400.35,400.67,400.67,401.07,401.07,401.43,401.43,402.05,402.05,402.49,402.49,403.07]
+    },
+    {
+      "i": 39,
+      "start": 404.17,
+      "end": 411.73,
+      "en": "While such bags can be helpful, devices kept inside the containers cannot be used.",
+      "zh": "虽然这些袋子有帮助,但不能使用容器内存放的装置。",
+      "w": [404.17,404.35,404.35,404.73,404.73,405.31,405.31,405.77,405.77,405.99,405.99,406.49,407.19,407.59,407.59,408.09,408.09,408.73,408.73,409.03,409.03,409.81,409.81,410.49,410.49,410.99,410.99,411.73]
+    },
+    {
+      "i": 40,
+      "start": 412.85,
+      "end": 414.9,
+      "en": "I’m Bryan Lynn. The Associated Press reported this story.",
+      "zh": "我是Bryan Lynn, 美联社报导了这个故事。",
+      "w": [412.85,413.67,413.67,414.35,414.35,414.85,414.85,414.9,414.85,414.9,414.85,414.9,414.85,414.9,414.85,414.9,414.85,414.9]
+    },
+    {
+      "i": 41,
+      "start": 414.85,
+      "end": 414.91,
+      "en": "Bryan Lynn adapted the report for VOA Learning English.",
+      "zh": "Bryan Lynn改编了VOA学习英语的报告。",
+      "w": [414.85,414.9,414.85,414.9,414.86,414.91,414.86,414.91,414.86,414.91,414.86,414.91,414.86,414.91,414.86,414.91,414.86,414.91]
+    }
+  ],
+  "wSource": "asr"
+}

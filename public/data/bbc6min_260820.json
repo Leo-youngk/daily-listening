@@ -1,1 +1,492 @@
-{"slug":"bbc6min_260820","title":"Sharing the road with driverless cars","speaker":"BBC Learning English","category":"bbc","school":null,"year":2026,"duration":375.39,"cover":"/covers/bbc6min_260820.jpg","views":null,"sourceUrl":"https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260820","audioUrls":{"standard":"https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260820.m4a","high":"https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260820.m4a"},"zhSource":"mt","sentences":[{"i":0,"start":4.56,"end":12.04,"en":"Hello, this is 6 Minute English from BBC Learning English.","zh":"你好,这是6分钟英语 从英国广播公司学习英语。"},{"i":1,"start":12.16,"end":18.08,"en":"I'm Phil. And I'm Pippa. Here at 6 Minute English, we love discussing new tech.","zh":"我是菲尔,我是皮帕,6分钟英语,我们喜欢讨论新科技"},{"i":2,"start":18.38,"end":29.37,"en":"One of the most controversial technologies of recent years is driverless cars, also known as self-driving cars, autonomous cars or robotaxis.","zh":"近年来最有争议的技术之一是无司机汽车,也称为自驾车、自驾车或机器人轴。"},{"i":3,"start":29.37,"end":39.84,"en":"Many people say they wouldn't feel safe in a car without a human driver, but there are concerns from other road users too – pedestrians, runners and cyclists.","zh":"许多人说没有人驾驶员在车里会觉得不安全, 但其他道路使用者 — — 行人、跑者和骑自行车者 — — 也担心。"},{"i":4,"start":40.38,"end":42.64,"en":"How will driverless cars interact with them?","zh":"无司机的汽车如何与他们互动?"},{"i":5,"start":43.32,"end":48.32,"en":"It's a problem Professor Stephen Brewster, from Glasgow University, has been working on.","zh":"格拉斯哥大学的Stephen Brewster教授 一直在研究这个问题"},{"i":6,"start":48.72,"end":52.28,"en":"He explained more to BBC World Service programme Tech Life.","zh":"他向英国广播公司世界服务节目Tech Life作了更多解释。"},{"i":7,"start":52.74,"end":58.52,"en":"If you're outside a vehicle right now, you can see the driver inside the vehicle, you can wave to them, they can see you, you can make eye contact.","zh":"如果你现在在车外, 你可以看见车内的司机, 你可以向他们挥手, 他们可以看到你, 你可以让眼睛接触。"},{"i":8,"start":59.22,"end":68.3,"en":"But when you come to an autonomous vehicle, there's no person in the driving seat, so how do you negotiate whether they're going to go, whether they're going to let you go?","zh":"但是,当你来到一个自主的汽车, 没有人在驾驶座上, 所以你如何谈判 他们是否要去, 他们是否要让你去?"},{"i":9,"start":68.54,"end":70.98,"en":"On my walk to work, I need to cross the road.","zh":"我走路去上班时,我需要过马路"},{"i":10,"start":71.48,"end":74.04,"en":"Usually, a driver makes eye contact with me.","zh":"司机通常会和我眼神接触"},{"i":11,"start":74.16,"end":77.46,"en":"They look directly into my eyes and then wave me across.","zh":"他们直视我的眼睛,然后向我挥手。"},{"i":12,"start":78.26,"end":82.2,"en":"To wave means to raise your hand and move it from side to side.","zh":"挥手意味着举起你的手 从一边移到另一边"},{"i":13,"start":82.6,"end":86.98,"en":"It's a gesture for saying hello, or a way of telling a person to do something.","zh":"这是打招呼的手势 或叫人做点什么的方式"},{"i":14,"start":87.28,"end":94.14,"en":"Luckily, Phil, you usually arrive safely at work and as yet there are no driverless cars in London.","zh":"幸运的是,菲尔,你通常 安全地到达工作............"},{"i":15,"start":94.8,"end":100.16,"en":"But, Phil, how would you feel about crossing that road in front of a robotaxi?","zh":"但是,菲尔,你对在机器人面前穿越那条路会有什么感觉?"},{"i":16,"start":100.16,"end":104.6,"en":"Well, maybe a little bit nervous. I might wait for it to go and go behind it or something.","zh":"可能有点紧张,我可能要等它走后方"},{"i":17,"start":104.6,"end":114.43,"en":"Mmm... yeah, I get that. I think maybe as we get more used to these technologies, we'll get more used to how to deal with them and when to cross.","zh":"嗯,是的,我明白了 也许当我们越来越习惯这些技术时"},{"i":18,"start":114.43,"end":120.42,"en":"But in this episode, we investigate the tech helping driverless cars communicate on the roads.","zh":"但是在这集中,我们调查了 帮助无司机汽车在路上沟通的技术。"},{"i":19,"start":120.94,"end":129.8,"en":"We'll learn some useful new words and phrases, and as usual you'll find all the vocabulary on our website, bbclearningenglish.com.","zh":"我们将学习一些有用的新词和短语, 和往常一样,你会发现所有的词汇 在我们的网站,bbclearingenglish.com。"},{"i":20,"start":129.8,"end":133.1,"en":"But first, I have a question for you, Pippa.","zh":"但首先 我有一个问题要问你 皮帕"},{"i":21,"start":133.58,"end":137.22,"en":"As you mentioned, we don't have self-driving cars here in London yet.","zh":"正如你提到的,我们还没有 自行驾驶汽车在这里在伦敦。"},{"i":22,"start":137.96,"end":143.68,"en":"So, which was the first city to have fully driverless robotaxis on the streets?","zh":"那么,哪个城市是第一个 完全没有驾驶的机器人在街上?"},{"i":23,"start":144.36,"end":149.46,"en":"Was it: a) Philadelphia, b) Phoenix, or c) San Francisco?","zh":"是:(a)费城,(b)凤凰城,还是(c)旧金山?"},{"i":24,"start":150.1,"end":156.06,"en":"I'm going to say b) Phoenix because I think it's quite a car-friendly city.","zh":"我要说b)凤凰城,因为我觉得这城市很方便汽车。"},{"i":25,"start":156.32,"end":160.52,"en":"OK. Well, we will find out the answer, but at the end of the programme.","zh":"好吧 我们会找到答案的 但是在节目结束时"},{"i":26,"start":160.94,"end":169.24,"en":"Because accidents are often caused by not seeing the oncoming danger, Professor Brewster wants to make driverless cars more visible.","zh":"Brewster教授想让没有司机的汽车更显眼。"},{"i":27,"start":169.24,"end":175.12,"en":"He discussed his work with BBC Tech Life's presenter Chris Vallance.","zh":"他和BBC Tech Life的主持人Chris Vallance讨论了他的工作。"},{"i":28,"start":175.12,"end":183.42,"en":"What kind of signals worked in terms of alerting pedestrians and runners and cyclists to the intentions of the vehicle?","zh":"在提醒行人、跑者和骑自行车者注意车辆意图方面,什么样的信号起作用了?"},{"i":29,"start":183.82,"end":188.4,"en":"We tested two things. We tested animations and fixed, coloured light rings.","zh":"我们测试了两件事,我们测试了动画和固定的彩色光环。"},{"i":30,"start":189.1,"end":199.0,"en":"The animations – they work well for pedestrians, but when it came to runners and cyclists, they have much less time to make their decisions, so if you do a quick glance at a vehicle, you don't really see the animation.","zh":"动画——对行人来说效果很好,但是对于跑步者和骑自行车者来说,他们做决定的时间要少得多,所以,如果你对车辆做一眼,你就不会真正看到动画。"},{"i":31,"start":199.74,"end":203.08,"en":"It's important to alert people to driverless cars.","zh":"提醒人们注意没有司机的车很重要"},{"i":32,"start":203.62,"end":207.48,"en":"To alert somebody means to warn them about a potential danger.","zh":"警告某人 意味着警告他们潜在的危险"},{"i":33,"start":207.88,"end":211.64,"en":"Some cars do this with animations – displays of moving images.","zh":"有些汽车用动画来做这些动作 — — 显示移动图像。"},{"i":34,"start":212.1,"end":215.72,"en":"For example, a green man walking to signal it's safe to cross.","zh":"比如说,一个绿色男人走过来 表示它是安全的穿越。"},{"i":35,"start":216.52,"end":223.04,"en":"Animations alert pedestrians but are not suitable for runners and cyclists, who are travelling too fast to react.","zh":"动画提醒行人,但不适合跑步者和骑自行车者,他们走得太快,无法作出反应。"},{"i":36,"start":223.78,"end":228.9,"en":"They only have time for a glance. A glance at something means a quick look.","zh":"他们只有时间看一眼,看一眼就意味着快看一眼"},{"i":37,"start":229.46,"end":236.22,"en":"So, instead Stephen's team used coloured light rings, similar to traffic lights, to warn cyclists and runners.","zh":"Stephen的团队使用彩色光环, 类似于交通灯, 来警告骑自行车者和跑者。"},{"i":38,"start":236.98,"end":241.3,"en":"Culture is another problem. The meaning of body language can change.","zh":"文化是另一个问题,身体语言的意义可以改变。"},{"i":39,"start":241.54,"end":247.6,"en":"For example, hand waving can mean 'please proceed' in one culture, but 'thank you' in another.","zh":"举个例子,手挥手在一种文化中意味着“请继续”,但在另一种文化中意味着“谢谢”。"},{"i":40,"start":247.6,"end":253.6,"en":"Ammar Al-Taie is a researcher at the Advanced Institute of Science and Technology in South Korea.","zh":"Ammar Al-Tai是韩国高级科学技术研究所的研究员。"},{"i":41,"start":254.08,"end":262.6,"en":"Here, Ammar tells BBC World Service's Tech Life why Korean culture is especially suited to self-driving cars.","zh":"为何韩国文化特别适合自行驾驶汽车。"},{"i":42,"start":262.88,"end":268.36,"en":"In South Korea, for example, jaywalking is illegal, whereas in the UK, you know, we tend to jaywalk a lot.","zh":"例如,在韩国,乱行不合法,而在英国,我们往往经常乱行。"},{"i":43,"start":268.82,"end":276.8,"en":"Jaywalking is an American English word. It means crossing the road at a place where crossing is not allowed or without taking care.","zh":"Jaywalking是美国人的英语词,意指在不允许或不小心通行的地方穿越道路。"},{"i":44,"start":277.14,"end":283.42,"en":"Unlike Britain, jaywalking is rare in South Korea, making the country safer for autonomous cars.","zh":"与英国不同, 南朝鲜很少发生乱行,"},{"i":45,"start":283.86,"end":294.04,"en":"We've heard a lot about making driverless cars safer, and with plans to introduce them to London later this year, we'll soon see how safe they really are.","zh":"我们听到很多关于让没有司机的汽车更安全的事, 并且计划在今年晚些时候把它们介绍到伦敦, 我们很快会看到它们有多安全。"},{"i":46,"start":294.32,"end":297.56,"en":"Now, isn't it time to reveal the answer to your question, Phil?","zh":"现在,是不是该透露你的问题的答案了,菲尔?"},{"i":47,"start":297.78,"end":306.96,"en":"I asked you which city was the first to have self-driving cars on the road, and you said it was Phoenix... and that is the correct answer.","zh":"我问你哪个城市是第一个在路上自驾车的人 你说是凤凰城 那是正确的答案"},{"i":48,"start":307.48,"end":316.68,"en":"Phoenix, Arizona, was the first city in the world to have self-driving cars operating on public roads without a human safety driver, and that was in 2017.","zh":"菲尼克斯,亚利桑那州, 是世界上第一个拥有自驾车的城市 在公共道路上运行 没有人的安全驾驶员, 那是在2017年。"},{"i":49,"start":317.28,"end":324.42,"en":"Let's recap the vocabulary we've learned, starting with eye contact – looking directly into someone's eyes.","zh":"让我们回顾一下我们学到的词汇,从眼神接触开始-- 直接看着某人的眼睛。"},{"i":50,"start":324.9,"end":330.56,"en":"To wave at someone is a way of saying hi, by raising your hand and waving it from side to side.","zh":"向别人挥手就是打招呼 举起手来挥手"},{"i":51,"start":330.56,"end":334.12,"en":"If you alert someone, you warn them of potential danger.","zh":"如果你警告别人 你警告他们潜在的危险"},{"i":52,"start":334.58,"end":338.0,"en":"An animation is a display made up of moving images.","zh":"动画是由移动图像组成的显示 。"},{"i":53,"start":338.48,"end":341.12,"en":"A glance is a quick, brief look at something.","zh":"看一眼就是快速、简要地看一看。"},{"i":54,"start":341.64,"end":347.66,"en":"And finally, the American English term jaywalking means crossing the road where you're not supposed to.","zh":"最后,美国的英语术语 Jaywalking 意味着穿越道路 你不应该在那里。"},{"i":55,"start":348.14,"end":356.96,"en":"Once again, our six minutes are up. If you'd like to hear more programmes about technology, you'll find plenty on our tech topic page, all on our website.","zh":"再说一遍,六分钟就到了。如果你想听到更多关于技术的节目, 你会在我们的科技主题网页上找到很多东西, 都在我们的网站上。"},{"i":56,"start":357.18,"end":360.76,"en":"And there you'll also find a quiz and worksheet for this episode.","zh":"在那里,你也会为这集找到一个测验和工作表。"},{"i":57,"start":361.44,"end":366.36,"en":"Visit bbclearningenglish.com. We'll see you again soon, but for now it's goodbye.","zh":"参观bbc学习英语.com。我们很快会再见到你,但现在再见了。"},{"i":58,"start":366.94,"end":367.42,"en":"Goodbye!","zh":"再见!"}]}
+{
+  "slug": "bbc6min_260820",
+  "title": "Sharing the road with driverless cars",
+  "speaker": "BBC Learning English",
+  "category": "bbc",
+  "school": null,
+  "year": 2026,
+  "duration": 375.39,
+  "cover": "/covers/bbc6min_260820.jpg",
+  "views": null,
+  "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260820",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260820.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260820.m4a"
+  },
+  "zhSource": "mt",
+  "sentences": [
+    {
+      "i": 0,
+      "start": 4.36,
+      "end": 11.96,
+      "en": "Hello, this is 6 Minute English from BBC Learning English.",
+      "zh": "你好,这是6分钟英语 从英国广播公司学习英语。",
+      "w": [4.36,5.12,8.34,8.7,8.7,8.96,9.42,9.72,9.72,10.06,10.06,10.44,10.44,10.9,10.9,11.56,11.56,11.96]
+    },
+    {
+      "i": 1,
+      "start": 12.16,
+      "end": 17.98,
+      "en": "I'm Phil. And I'm Pippa. Here at 6 Minute English, we love discussing new tech.",
+      "zh": "我是菲尔,我是皮帕,6分钟英语,我们喜欢讨论新科技",
+      "w": [12.16,12.34,12.34,12.56,12.98,13.12,13.12,13.5,13.5,13.92,14.2,14.44,14.44,14.78,15.04,15.24,15.24,15.56,15.9,15.95,15.94,16.48,16.48,17.2,17.2,17.66,17.66,17.98]
+    },
+    {
+      "i": 2,
+      "start": 18.4,
+      "end": 29.26,
+      "en": "One of the most controversial technologies of recent years is driverless cars, also known as self-driving cars, autonomous cars or robotaxis.",
+      "zh": "近年来最有争议的技术之一是无司机汽车,也称为自驾车、自驾车或机器人轴。",
+      "w": [18.4,18.45,18.42,18.54,18.54,18.64,18.64,18.82,18.82,19.38,19.38,20.1,20.1,20.64,20.64,20.96,20.96,21.48,21.48,21.82,21.82,22.74,22.74,23.08,23.72,24.22,24.22,24.48,24.48,24.7,24.7,25.7,25.7,26.1,26.46,26.72,26.72,27.22,27.22,27.6,27.6,29.26]
+    },
+    {
+      "i": 3,
+      "start": 29.26,
+      "end": 39.68,
+      "en": "Many people say they wouldn't feel safe in a car without a human driver, but there are concerns from other road users too – pedestrians, runners and cyclists.",
+      "zh": "许多人说没有人驾驶员在车里会觉得不安全, 但其他道路使用者 — — 行人、跑者和骑自行车者 — — 也担心。",
+      "w": [29.26,29.58,29.58,30.06,30.06,30.42,30.42,30.72,30.72,31.12,31.12,31.34,31.34,31.74,31.74,32.1,32.1,32.2,32.2,32.44,32.44,32.7,32.7,33.0,33.0,33.26,33.26,33.6,34.12,34.34,34.34,34.54,34.54,34.78,34.78,35.24,35.24,35.66,35.66,35.98,35.98,36.24,36.24,36.6,36.6,36.98,37.6,38.18,38.58,38.78,38.78,39.26,39.26,39.68]
+    },
+    {
+      "i": 4,
+      "start": 40.32,
+      "end": 42.54,
+      "en": "How will driverless cars interact with them?",
+      "zh": "无司机的汽车如何与他们互动?",
+      "w": [40.32,40.5,40.5,40.72,40.72,41.22,41.22,41.5,41.5,41.94,41.94,42.32,42.32,42.54]
+    },
+    {
+      "i": 5,
+      "start": 43.42,
+      "end": 48.14,
+      "en": "It's a problem Professor Stephen Brewster, from Glasgow University, has been working on.",
+      "zh": "格拉斯哥大学的Stephen Brewster教授 一直在研究这个问题",
+      "w": [43.42,43.58,43.58,43.64,43.64,43.98,43.98,44.42,44.42,44.98,44.98,45.42,45.42,45.78,45.78,46.02,46.02,46.7,46.7,47.4,47.4,47.54,47.54,47.88,47.88,48.14]
+    },
+    {
+      "i": 6,
+      "start": 48.6,
+      "end": 52.66,
+      "en": "He explained more to BBC World Service programme Tech Life.",
+      "zh": "他向英国广播公司世界服务节目Tech Life作了更多解释。",
+      "w": [48.6,48.84,48.84,49.16,49.16,49.6,49.6,49.84,49.84,50.1,50.1,50.5,50.5,50.74,50.74,51.28,51.28,51.97,51.97,52.66]
+    },
+    {
+      "i": 7,
+      "start": 52.66,
+      "end": 58.4,
+      "en": "If you're outside a vehicle right now, you can see the driver inside the vehicle, you can wave to them, they can see you, you can make eye contact.",
+      "zh": "如果你现在在车外, 你可以看见车内的司机, 你可以向他们挥手, 他们可以看到你, 你可以让眼睛接触。",
+      "w": [52.66,52.9,52.9,53.04,53.04,53.32,53.32,53.5,53.5,53.64,53.64,53.84,53.84,54.04,54.1,54.16,54.16,54.26,54.26,54.42,54.42,54.54,54.54,54.72,54.72,55.04,55.04,55.28,55.28,55.5,55.5,55.56,55.56,55.62,55.62,55.67,55.67,55.73,55.73,55.79,55.79,55.85,55.85,55.9,55.9,55.96,55.96,56.02,56.02,57.42,57.42,57.64,57.64,57.8,57.8,58.02,58.02,58.4]
+    },
+    {
+      "i": 8,
+      "start": 59.16,
+      "end": 68.2,
+      "en": "But when you come to an autonomous vehicle, there's no person in the driving seat, so how do you negotiate whether they're going to go, whether they're going to let you go?",
+      "zh": "但是,当你来到一个自主的汽车, 没有人在驾驶座上, 所以你如何谈判 他们是否要去, 他们是否要让你去?",
+      "w": [59.16,59.24,59.24,59.38,59.38,59.52,59.52,59.66,59.66,59.78,59.78,59.88,59.88,60.16,60.16,60.36,61.16,61.34,61.34,61.54,61.54,61.96,61.96,62.12,62.12,62.2,62.2,62.38,62.38,62.7,63.22,63.28,63.28,63.58,63.58,63.9,63.9,64.06,64.06,64.84,64.84,65.74,65.74,66.16,66.16,66.32,66.32,66.46,66.46,66.7,66.86,67.04,67.04,67.24,67.24,67.38,67.38,67.52,67.52,67.68,67.68,67.9,67.9,68.2]
+    },
+    {
+      "i": 9,
+      "start": 68.58,
+      "end": 70.88,
+      "en": "On my walk to work, I need to cross the road.",
+      "zh": "我走路去上班时,我需要过马路",
+      "w": [68.58,68.7,68.7,68.88,68.88,69.02,69.02,69.16,69.16,69.66,69.66,69.9,69.9,70.08,70.08,70.28,70.28,70.46,70.46,70.66,70.66,70.88]
+    },
+    {
+      "i": 10,
+      "start": 71.74,
+      "end": 73.96,
+      "en": "Usually, a driver makes eye contact with me.",
+      "zh": "司机通常会和我眼神接触",
+      "w": [71.74,71.79,71.74,71.92,71.92,72.2,72.2,72.56,72.56,72.92,72.92,73.38,73.38,73.76,73.76,73.96]
+    },
+    {
+      "i": 11,
+      "start": 74.16,
+      "end": 77.24,
+      "en": "They look directly into my eyes and then wave me across.",
+      "zh": "他们直视我的眼睛,然后向我挥手。",
+      "w": [74.16,74.24,74.24,74.4,74.4,74.76,74.76,75.46,75.46,75.66,75.66,75.92,75.92,76.28,76.28,76.38,76.38,76.7,76.7,77.02,77.02,77.24]
+    },
+    {
+      "i": 12,
+      "start": 78.26,
+      "end": 82.78,
+      "en": "To wave means to raise your hand and move it from side to side.",
+      "zh": "挥手意味着举起你的手 从一边移到另一边",
+      "w": [78.26,78.31,78.28,78.68,78.68,79.26,79.26,79.74,79.74,79.94,79.94,80.12,80.12,80.38,80.38,80.68,80.68,80.96,80.96,81.08,81.08,81.26,81.26,81.52,81.52,81.76,81.76,82.78]
+    },
+    {
+      "i": 13,
+      "start": 82.78,
+      "end": 86.7,
+      "en": "It's a gesture for saying hello, or a way of telling a person to do something.",
+      "zh": "这是打招呼的手势 或叫人做点什么的方式",
+      "w": [82.78,82.88,82.88,82.93,82.9,83.24,83.24,83.62,83.62,83.86,83.86,84.24,84.24,84.76,84.76,84.86,84.86,85.1,85.1,85.22,85.22,85.52,85.52,85.74,85.74,86.04,86.04,86.26,86.26,86.44,86.44,86.7]
+    },
+    {
+      "i": 14,
+      "start": 87.14,
+      "end": 94.14,
+      "en": "Luckily, Phil, you usually arrive safely at work and as yet there are no driverless cars in London.",
+      "zh": "幸运的是,菲尔,你通常 安全地到达工作............",
+      "w": [87.14,87.58,87.58,87.96,88.4,88.48,88.48,88.9,88.9,89.34,89.34,89.74,89.74,90.26,90.26,90.54,90.54,91.18,91.18,91.38,91.38,91.62,91.62,91.86,91.86,92.22,92.22,92.48,92.48,93.12,93.12,93.42,93.42,93.74,93.74,94.14]
+    },
+    {
+      "i": 15,
+      "start": 94.72,
+      "end": 100.06,
+      "en": "But, Phil, how would you feel about crossing that road in front of a robotaxi?",
+      "zh": "但是,菲尔,你对在机器人面前穿越那条路会有什么感觉?",
+      "w": [94.72,94.92,94.92,95.26,95.58,95.78,95.78,95.94,95.94,96.08,96.08,96.3,96.3,96.72,96.72,97.2,97.2,97.62,97.62,97.94,97.94,98.24,98.24,98.46,98.46,98.72,98.72,98.84,98.84,100.06]
+    },
+    {
+      "i": 16,
+      "start": 100.06,
+      "end": 104.42,
+      "en": "Well, maybe a little bit nervous. I might wait for it to go and go behind it or something.",
+      "zh": "可能有点紧张,我可能要等它走后方",
+      "w": [100.06,100.22,100.22,100.62,100.62,100.84,100.84,101.12,101.12,101.32,101.32,101.56,101.72,102.0,102.0,102.2,102.2,102.56,102.56,102.76,102.76,102.84,102.84,102.96,102.96,103.12,103.12,103.3,103.3,103.44,103.44,103.78,103.78,104.04,104.04,104.12,104.12,104.42]
+    },
+    {
+      "i": 17,
+      "start": 104.42,
+      "end": 113.98,
+      "en": "Mmm... yeah, I get that. I think maybe as we get more used to these technologies, we'll get more used to how to deal with them and when to cross.",
+      "zh": "嗯,是的,我明白了 也许当我们越来越习惯这些技术时",
+      "w": [104.42,104.9,104.9,105.3,105.96,106.08,106.08,106.26,106.26,106.54,106.82,106.9,106.9,107.08,107.08,107.5,107.5,108.06,108.06,108.28,108.28,108.44,108.44,108.74,108.74,109.06,109.06,109.36,109.36,109.58,109.58,109.98,110.46,110.54,110.54,110.7,110.7,111.26,111.26,111.7,111.7,112.16,112.16,112.36,112.36,112.62,112.62,112.82,112.82,113.02,113.02,113.22,113.22,113.42,113.42,113.56,113.56,113.76,113.76,113.98]
+    },
+    {
+      "i": 18,
+      "start": 114.52,
+      "end": 120.26,
+      "en": "But in this episode, we investigate the tech helping driverless cars communicate on the roads.",
+      "zh": "但是在这集中,我们调查了 帮助无司机汽车在路上沟通的技术。",
+      "w": [114.52,114.84,114.84,115.14,115.14,115.38,115.38,115.96,116.2,116.42,116.42,116.98,116.98,117.4,117.4,117.58,117.58,117.96,117.96,118.6,118.6,118.84,118.84,119.3,119.3,119.94,119.94,120.04,120.04,120.26]
+    },
+    {
+      "i": 19,
+      "start": 120.92,
+      "end": 129.62,
+      "en": "We'll learn some useful new words and phrases, and as usual you'll find all the vocabulary on our website, bbclearningenglish.com.",
+      "zh": "我们将学习一些有用的新词和短语, 和往常一样,你会发现所有的词汇 在我们的网站,bbclearingenglish.com。",
+      "w": [120.92,121.14,121.14,121.34,121.34,121.62,121.62,122.0,122.0,122.34,122.34,122.66,122.66,122.88,122.88,123.14,123.14,123.76,123.76,124.08,124.08,124.56,124.56,124.96,124.96,125.2,125.2,125.48,125.48,125.68,125.68,125.94,125.94,126.6,126.6,126.78,126.78,127.14,127.7,128.96,128.96,129.62]
+    },
+    {
+      "i": 20,
+      "start": 129.88,
+      "end": 133.52,
+      "en": "But first, I have a question for you, Pippa.",
+      "zh": "但首先 我有一个问题要问你 皮帕",
+      "w": [129.88,130.16,130.16,130.58,131.2,131.48,131.48,131.76,131.76,131.88,131.88,132.26,132.26,132.58,132.58,132.74,132.74,133.52]
+    },
+    {
+      "i": 21,
+      "start": 133.52,
+      "end": 137.1,
+      "en": "As you mentioned, we don't have self-driving cars here in London yet.",
+      "zh": "正如你提到的,我们还没有 自行驾驶汽车在这里在伦敦。",
+      "w": [133.52,133.7,133.7,133.86,133.86,134.16,134.4,134.45,134.44,134.9,134.9,135.12,135.12,135.66,135.66,136.04,136.04,136.28,136.28,136.42,136.42,136.6,136.6,137.1]
+    },
+    {
+      "i": 22,
+      "start": 137.5,
+      "end": 143.62,
+      "en": "So, which was the first city to have fully driverless robotaxis on the streets?",
+      "zh": "那么,哪个城市是第一个 完全没有驾驶的机器人在街上?",
+      "w": [137.5,138.14,138.14,138.46,138.46,139.02,139.02,139.24,139.24,139.78,139.78,140.24,140.24,140.66,140.66,140.88,140.88,141.24,141.24,141.94,141.94,142.94,142.94,143.2,143.2,143.34,143.34,143.62]
+    },
+    {
+      "i": 23,
+      "start": 144.4,
+      "end": 149.12,
+      "en": "Was it: a) Philadelphia, b) Phoenix, or c) San Francisco?",
+      "zh": "是:(a)费城,(b)凤凰城,还是(c)旧金山?",
+      "w": [144.4,144.45,144.44,144.66,144.66,144.92,144.92,145.5,146.38,146.46,147.1,147.16,147.16,147.74,147.74,148.08,148.78,148.83,148.78,149.12]
+    },
+    {
+      "i": 24,
+      "start": 149.86,
+      "end": 155.98,
+      "en": "I'm going to say b) Phoenix because I think it's quite a car-friendly city.",
+      "zh": "我要说b)凤凰城,因为我觉得这城市很方便汽车。",
+      "w": [149.86,150.18,150.18,150.38,150.38,150.64,150.64,150.88,150.88,151.6,152.04,152.5,152.5,153.0,153.0,153.18,153.18,153.38,153.38,153.64,153.64,154.0,154.0,154.48,154.48,155.38,155.38,155.98]
+    },
+    {
+      "i": 25,
+      "start": 155.98,
+      "end": 160.42,
+      "en": "OK. Well, we will find out the answer, but at the end of the programme.",
+      "zh": "好吧 我们会找到答案的 但是在节目结束时",
+      "w": [155.98,156.8,156.8,156.88,156.88,157.16,157.16,157.56,157.56,157.8,157.8,157.92,157.92,158.08,158.08,158.36,159.08,159.16,159.16,159.3,159.3,159.44,159.44,159.76,159.76,159.94,159.94,160.06,160.06,160.42]
+    },
+    {
+      "i": 26,
+      "start": 161.1,
+      "end": 168.98,
+      "en": "Because accidents are often caused by not seeing the oncoming danger, Professor Brewster wants to make driverless cars more visible.",
+      "zh": "Brewster教授想让没有司机的汽车更显眼。",
+      "w": [161.1,161.15,161.12,161.66,161.66,162.1,162.1,162.36,162.36,162.72,162.72,163.04,163.04,163.4,163.4,163.92,163.92,164.2,164.2,164.68,164.68,164.96,165.68,165.98,165.98,166.7,166.7,167.06,167.06,167.18,167.18,167.32,167.32,168.04,168.04,168.32,168.32,168.68,168.68,168.98]
+    },
+    {
+      "i": 27,
+      "start": 169.76,
+      "end": 174.42,
+      "en": "He discussed his work with BBC Tech Life's presenter Chris Vallance.",
+      "zh": "他和BBC Tech Life的主持人Chris Vallance讨论了他的工作。",
+      "w": [169.76,169.86,169.86,170.14,170.14,170.48,170.48,170.74,170.74,170.96,170.96,171.34,171.34,171.82,171.82,172.36,172.36,172.8,172.8,173.74,173.74,174.42]
+    },
+    {
+      "i": 28,
+      "start": 174.96,
+      "end": 183.3,
+      "en": "What kind of signals worked in terms of alerting pedestrians and runners and cyclists to the intentions of the vehicle?",
+      "zh": "在提醒行人、跑者和骑自行车者注意车辆意图方面,什么样的信号起作用了?",
+      "w": [174.96,175.22,175.22,175.48,175.48,175.7,175.7,176.02,176.02,176.9,176.9,177.42,177.42,177.62,177.62,177.82,177.82,178.78,178.78,179.42,179.42,179.98,179.98,180.2,180.2,180.58,180.58,181.02,181.02,181.94,181.94,182.06,182.06,182.52,182.52,182.9,182.9,183.02,183.02,183.3]
+    },
+    {
+      "i": 29,
+      "start": 183.8,
+      "end": 188.3,
+      "en": "We tested two things. We tested animations and fixed, coloured light rings.",
+      "zh": "我们测试了两件事,我们测试了动画和固定的彩色光环。",
+      "w": [183.8,183.9,183.9,184.08,184.08,184.34,184.34,184.6,184.76,184.81,184.76,185.0,185.0,185.7,185.7,186.8,186.8,187.14,187.14,187.64,187.64,188.08,188.08,188.3]
+    },
+    {
+      "i": 30,
+      "start": 189.06,
+      "end": 198.68,
+      "en": "The animations – they work well for pedestrians, but when it came to runners and cyclists, they have much less time to make their decisions, so if you do a quick glance at a vehicle, you don't really see the animation.",
+      "zh": "动画——对行人来说效果很好,但是对于跑步者和骑自行车者来说,他们做决定的时间要少得多,所以,如果你对车辆做一眼,你就不会真正看到动画。",
+      "w": [189.06,189.12,189.12,189.42,189.52,189.86,189.86,190.04,190.04,190.26,190.26,190.44,190.44,190.66,191.2,191.34,191.34,191.48,191.48,191.56,191.56,191.7,191.7,191.88,191.88,192.1,192.1,192.56,192.56,193.02,193.78,193.88,193.88,194.04,194.04,194.24,194.24,194.48,194.48,194.72,194.72,194.88,194.88,194.98,194.98,195.12,195.12,195.38,195.38,195.64,195.64,195.7,195.7,195.76,195.76,195.88,195.88,195.96,195.96,196.2,196.2,196.56,196.56,196.92,196.92,197.0,197.0,197.22,197.72,197.77,197.76,197.82,197.82,197.98,197.98,198.3,198.3,198.44,198.44,198.68]
+    },
+    {
+      "i": 31,
+      "start": 199.64,
+      "end": 202.94,
+      "en": "It's important to alert people to driverless cars.",
+      "zh": "提醒人们注意没有司机的车很重要",
+      "w": [199.64,199.8,199.8,200.1,200.1,200.72,200.72,201.2,201.2,201.84,201.84,202.16,202.16,202.64,202.64,202.94]
+    },
+    {
+      "i": 32,
+      "start": 203.72,
+      "end": 207.3,
+      "en": "To alert somebody means to warn them about a potential danger.",
+      "zh": "警告某人 意味着警告他们潜在的危险",
+      "w": [203.72,203.78,203.78,204.12,204.12,204.66,204.66,205.06,205.06,205.34,205.34,205.58,205.58,205.86,205.86,206.24,206.24,206.46,206.46,206.68,206.68,207.3]
+    },
+    {
+      "i": 33,
+      "start": 207.86,
+      "end": 211.5,
+      "en": "Some cars do this with animations – displays of moving images.",
+      "zh": "有些汽车用动画来做这些动作 — — 显示移动图像。",
+      "w": [207.86,207.98,207.98,208.32,208.32,208.6,208.6,208.84,208.84,208.98,208.98,209.36,210.08,210.34,210.34,210.78,210.78,211.0,211.0,211.5]
+    },
+    {
+      "i": 34,
+      "start": 212.14,
+      "end": 215.6,
+      "en": "For example, a green man walking to signal it's safe to cross.",
+      "zh": "比如说,一个绿色男人走过来 表示它是安全的穿越。",
+      "w": [212.14,212.19,212.16,212.38,212.38,212.78,212.78,213.02,213.02,213.38,213.38,213.82,213.82,214.38,214.38,214.66,214.66,215.0,215.0,215.18,215.18,215.36,215.36,215.6]
+    },
+    {
+      "i": 35,
+      "start": 216.38,
+      "end": 222.92,
+      "en": "Animations alert pedestrians but are not suitable for runners and cyclists, who are travelling too fast to react.",
+      "zh": "动画提醒行人,但不适合跑步者和骑自行车者,他们走得太快,无法作出反应。",
+      "w": [216.38,216.98,216.98,217.46,217.46,217.92,218.24,219.02,219.02,219.12,219.12,219.24,219.24,219.52,219.52,219.98,219.98,220.28,220.28,220.72,220.72,221.18,221.18,221.48,221.48,221.56,221.56,221.84,221.84,222.1,222.1,222.4,222.4,222.66,222.66,222.92]
+    },
+    {
+      "i": 36,
+      "start": 223.66,
+      "end": 228.8,
+      "en": "They only have time for a glance. A glance at something means a quick look.",
+      "zh": "他们只有时间看一眼,看一眼就意味着快看一眼",
+      "w": [223.66,223.82,223.82,224.0,224.0,224.28,224.28,224.58,224.58,224.82,224.82,224.96,224.96,225.4,226.16,226.3,226.3,226.72,226.72,227.3,227.3,227.72,227.72,228.1,228.1,228.26,228.26,228.46,228.46,228.8]
+    },
+    {
+      "i": 37,
+      "start": 229.52,
+      "end": 235.96,
+      "en": "So, instead Stephen's team used coloured light rings, similar to traffic lights, to warn cyclists and runners.",
+      "zh": "Stephen的团队使用彩色光环, 类似于交通灯, 来警告骑自行车者和跑者。",
+      "w": [229.52,229.58,229.58,229.8,229.8,231.04,231.04,231.22,231.22,231.56,231.56,231.94,231.94,232.48,232.48,232.76,232.76,233.26,233.26,233.5,233.5,233.94,233.94,234.2,234.2,234.54,234.54,234.92,234.92,235.5,235.5,235.76,235.76,235.96]
+    },
+    {
+      "i": 38,
+      "start": 236.66,
+      "end": 241.02,
+      "en": "Culture is another problem. The meaning of body language can change.",
+      "zh": "文化是另一个问题,身体语言的意义可以改变。",
+      "w": [236.66,237.06,237.06,237.66,237.66,238.04,238.04,238.5,239.18,239.23,239.2,239.52,239.52,239.76,239.76,239.92,239.92,240.36,240.36,240.7,240.7,241.02]
+    },
+    {
+      "i": 39,
+      "start": 241.58,
+      "end": 247.48,
+      "en": "For example, hand waving can mean 'please proceed' in one culture, but 'thank you' in another.",
+      "zh": "举个例子,手挥手在一种文化中意味着“请继续”,但在另一种文化中意味着“谢谢”。",
+      "w": [241.58,241.63,241.6,241.82,242.28,242.44,242.44,242.78,242.78,243.22,243.22,243.52,243.52,244.14,244.14,244.54,244.54,245.1,245.1,245.28,245.28,245.54,246.2,246.3,246.3,246.6,246.6,246.94,246.94,247.2,247.2,247.48]
+    },
+    {
+      "i": 40,
+      "start": 247.48,
+      "end": 253.42,
+      "en": "Ammar Al-Taie is a researcher at the Advanced Institute of Science and Technology in South Korea.",
+      "zh": "Ammar Al-Tai是韩国高级科学技术研究所的研究员。",
+      "w": [247.48,248.0,248.0,249.04,249.04,249.22,249.22,249.32,249.32,249.76,249.76,250.1,250.1,250.24,250.24,250.5,250.5,251.28,251.28,251.54,251.54,251.82,251.82,252.06,252.06,252.46,252.46,252.9,252.9,253.12,253.12,253.42]
+    },
+    {
+      "i": 41,
+      "start": 254.02,
+      "end": 262.4,
+      "en": "Here, Ammar tells BBC World Service's Tech Life why Korean culture is especially suited to self-driving cars.",
+      "zh": "为何韩国文化特别适合自行驾驶汽车。",
+      "w": [254.02,254.36,254.36,255.0,255.0,255.3,255.3,255.72,255.72,256.24,256.24,256.76,256.76,257.22,257.22,257.58,257.58,258.38,258.38,258.76,258.76,259.44,259.44,259.76,259.76,260.28,260.28,260.86,260.86,261.16,261.16,261.96,261.96,262.4]
+    },
+    {
+      "i": 42,
+      "start": 262.9,
+      "end": 268.32,
+      "en": "In South Korea, for example, jaywalking is illegal, whereas in the UK, you know, we tend to jaywalk a lot.",
+      "zh": "例如,在韩国,乱行不合法,而在英国,我们往往经常乱行。",
+      "w": [262.9,262.96,262.96,263.14,263.14,263.42,263.64,263.7,263.7,263.96,263.96,264.68,264.68,265.0,265.0,265.26,265.64,265.8,265.8,266.22,266.22,266.4,266.4,266.66,266.66,266.71,266.67,266.72,266.67,267.18,267.18,267.36,267.36,267.52,267.52,268.04,268.04,268.16,268.16,268.32]
+    },
+    {
+      "i": 43,
+      "start": 268.32,
+      "end": 276.68,
+      "en": "Jaywalking is an American English word. It means crossing the road at a place where crossing is not allowed or without taking care.",
+      "zh": "Jaywalking是美国人的英语词,意指在不允许或不小心通行的地方穿越道路。",
+      "w": [268.32,269.38,269.38,269.82,269.82,270.0,270.0,270.34,270.34,270.84,270.84,271.16,271.68,271.78,271.78,271.96,271.96,272.46,272.46,272.8,272.8,273.0,273.0,273.34,273.34,273.4,273.4,273.64,273.64,274.0,274.0,274.28,274.28,274.66,274.66,274.88,274.88,275.18,275.18,275.68,275.68,275.86,275.86,276.28,276.28,276.68]
+    },
+    {
+      "i": 44,
+      "start": 276.68,
+      "end": 283.16,
+      "en": "Unlike Britain, jaywalking is rare in South Korea, making the country safer for autonomous cars.",
+      "zh": "与英国不同, 南朝鲜很少发生乱行,",
+      "w": [276.68,277.32,277.32,277.78,277.78,278.68,278.68,279.1,279.1,279.38,279.38,279.76,279.76,280.0,280.0,280.3,280.76,280.92,280.92,281.12,281.12,281.26,281.26,281.88,281.88,282.26,282.26,282.68,282.68,283.16]
+    },
+    {
+      "i": 45,
+      "start": 283.76,
+      "end": 293.88,
+      "en": "We've heard a lot about making driverless cars safer, and with plans to introduce them to London later this year, we'll soon see how safe they really are.",
+      "zh": "我们听到很多关于让没有司机的汽车更安全的事, 并且计划在今年晚些时候把它们介绍到伦敦, 我们很快会看到它们有多安全。",
+      "w": [283.76,284.06,284.06,284.24,284.24,284.38,284.38,284.74,284.74,285.16,285.16,285.66,285.66,286.34,286.34,286.7,286.7,287.34,287.86,287.92,287.92,288.1,288.1,288.48,288.48,288.72,288.72,289.04,289.04,289.34,289.34,289.48,289.48,289.8,289.8,290.18,290.18,290.52,290.52,290.78,291.24,291.44,291.44,291.66,291.66,292.06,292.06,292.38,292.38,292.84,292.84,293.1,293.1,293.5,293.5,293.88]
+    },
+    {
+      "i": 46,
+      "start": 294.24,
+      "end": 297.44,
+      "en": "Now, isn't it time to reveal the answer to your question, Phil?",
+      "zh": "现在,是不是该透露你的问题的答案了,菲尔?",
+      "w": [294.24,294.62,294.84,295.14,295.14,295.26,295.26,295.48,295.48,295.7,295.7,295.98,295.98,296.24,296.24,296.4,296.4,296.7,296.7,296.82,296.82,297.18,297.38,297.44]
+    },
+    {
+      "i": 47,
+      "start": 297.88,
+      "end": 306.82,
+      "en": "I asked you which city was the first to have self-driving cars on the road, and you said it was Phoenix... and that is the correct answer.",
+      "zh": "我问你哪个城市是第一个在路上自驾车的人 你说是凤凰城 那是正确的答案",
+      "w": [297.88,298.28,298.28,298.52,298.52,298.7,298.7,298.9,298.9,299.26,299.26,299.5,299.5,299.68,299.68,300.08,300.08,300.62,300.62,300.82,300.82,301.34,301.34,301.76,301.76,302.0,302.0,302.12,302.12,302.34,302.6,302.65,302.64,302.78,302.78,303.0,303.0,303.3,303.3,303.5,303.5,303.98,304.76,305.02,305.02,305.4,305.4,306.16,306.16,306.3,306.3,306.48,306.48,306.82]
+    },
+    {
+      "i": 48,
+      "start": 307.26,
+      "end": 315.68,
+      "en": "Phoenix, Arizona, was the first city in the world to have self-driving cars operating on public roads without a human safety driver, and that was in 2017.",
+      "zh": "菲尼克斯,亚利桑那州, 是世界上第一个拥有自驾车的城市 在公共道路上运行 没有人的安全驾驶员, 那是在2017年。",
+      "w": [307.26,307.56,307.9,308.36,308.46,308.84,308.84,309.0,309.0,309.3,309.3,309.8,309.8,310.14,310.14,310.28,310.28,310.54,310.54,310.8,310.8,310.96,310.96,311.58,311.58,312.0,312.0,312.44,312.44,312.74,312.74,312.94,312.94,313.3,313.3,313.72,313.72,313.96,313.96,314.24,314.24,314.52,314.52,314.94,315.34,315.39,315.34,315.44,315.44,315.54,315.54,315.68]
+    },
+    {
+      "i": 49,
+      "start": 317.16,
+      "end": 324.18,
+      "en": "Let's recap the vocabulary we've learned, starting with eye contact – looking directly into someone's eyes.",
+      "zh": "让我们回顾一下我们学到的词汇,从眼神接触开始-- 直接看着某人的眼睛。",
+      "w": [317.16,317.52,317.52,317.78,317.78,318.52,318.52,318.57,318.52,318.9,318.9,319.52,319.52,319.86,319.86,320.22,320.22,320.7,320.7,321.12,321.66,322.1,322.1,322.48,322.48,323.32,323.32,323.92,323.92,324.18]
+    },
+    {
+      "i": 50,
+      "start": 324.78,
+      "end": 330.46,
+      "en": "To wave at someone is a way of saying hi, by raising your hand and waving it from side to side.",
+      "zh": "向别人挥手就是打招呼 举起手来挥手",
+      "w": [324.78,325.1,325.1,325.38,325.38,325.64,325.64,325.94,325.94,326.32,326.32,326.44,326.44,326.62,326.62,326.86,326.86,327.1,327.1,327.48,327.48,327.94,327.94,328.26,328.26,328.5,328.5,328.76,328.76,329.0,329.0,329.24,329.24,329.54,329.54,329.68,329.68,329.92,329.92,330.12,330.12,330.46]
+    },
+    {
+      "i": 51,
+      "start": 330.46,
+      "end": 334.0,
+      "en": "If you alert someone, you warn them of potential danger.",
+      "zh": "如果你警告别人 你警告他们潜在的危险",
+      "w": [330.46,330.98,330.98,331.14,331.14,331.34,331.34,332.1,332.42,332.5,332.5,332.86,332.86,333.04,333.04,333.16,333.16,333.42,333.42,334.0]
+    },
+    {
+      "i": 52,
+      "start": 334.5,
+      "end": 337.96,
+      "en": "An animation is a display made up of moving images.",
+      "zh": "动画是由移动图像组成的显示 。",
+      "w": [334.5,334.6,334.6,334.96,334.96,335.58,335.58,335.68,335.68,336.02,336.02,336.48,336.48,336.8,336.8,337.0,337.0,337.26,337.26,337.96]
+    },
+    {
+      "i": 53,
+      "start": 338.38,
+      "end": 340.9,
+      "en": "A glance is a quick, brief look at something.",
+      "zh": "看一眼就是快速、简要地看一看。",
+      "w": [338.38,338.44,338.44,338.72,338.72,339.12,339.12,339.24,339.24,339.48,339.78,340.06,340.06,340.52,340.52,340.64,340.64,340.9]
+    },
+    {
+      "i": 54,
+      "start": 341.54,
+      "end": 347.56,
+      "en": "And finally, the American English term jaywalking means crossing the road where you're not supposed to.",
+      "zh": "最后,美国的英语术语 Jaywalking 意味着穿越道路 你不应该在那里。",
+      "w": [341.54,341.78,341.78,342.18,342.6,342.72,342.72,343.1,343.1,343.72,343.72,344.1,344.1,345.3,345.3,345.44,345.44,345.8,345.8,346.12,346.12,346.32,346.32,346.58,346.58,346.74,346.74,346.9,346.9,347.14,347.14,347.56]
+    },
+    {
+      "i": 55,
+      "start": 348.0,
+      "end": 356.8,
+      "en": "Once again, our six minutes are up. If you'd like to hear more programmes about technology, you'll find plenty on our tech topic page, all on our website.",
+      "zh": "再说一遍,六分钟就到了。如果你想听到更多关于技术的节目, 你会在我们的科技主题网页上找到很多东西, 都在我们的网站上。",
+      "w": [348.0,348.22,348.22,348.6,348.82,348.92,348.92,349.2,349.2,349.54,349.54,349.78,349.78,349.92,350.2,350.3,350.3,350.54,350.54,350.66,350.66,350.82,350.82,351.0,351.0,351.24,351.24,351.62,351.62,352.04,352.04,352.46,352.96,353.12,353.12,353.42,353.42,353.78,353.78,354.4,354.4,354.56,354.56,354.82,354.82,355.18,355.18,355.56,355.56,356.16,356.16,356.36,356.36,356.5,356.5,356.8]
+    },
+    {
+      "i": 56,
+      "start": 356.8,
+      "end": 360.72,
+      "en": "And there you'll also find a quiz and worksheet for this episode.",
+      "zh": "在那里,你也会为这集找到一个测验和工作表。",
+      "w": [356.8,357.48,357.48,357.66,357.66,357.98,357.98,358.32,358.32,358.68,358.68,358.86,358.86,359.08,359.08,359.38,359.38,359.88,359.88,360.06,360.06,360.22,360.22,360.72]
+    },
+    {
+      "i": 57,
+      "start": 361.14,
+      "end": 366.12,
+      "en": "Visit bbclearningenglish.com. We'll see you again soon, but for now it's goodbye.",
+      "zh": "参观bbc学习英语.com。我们很快会再见到你,但现在再见了。",
+      "w": [361.14,361.3,361.3,362.7,362.7,363.26,363.86,364.08,364.08,364.24,364.24,364.38,364.38,364.54,364.54,364.84,364.84,365.2,365.2,365.36,365.36,365.6,365.6,365.98,365.98,366.12]
+    },
+    {
+      "i": 58,
+      "start": 366.86,
+      "end": 367.26,
+      "en": "Goodbye!",
+      "zh": "再见!",
+      "w": [366.86,367.26]
+    }
+  ],
+  "wSource": "asr"
+}

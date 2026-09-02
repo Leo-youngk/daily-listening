@@ -1,1 +1,468 @@
-{"slug":"bbc6min_260507","title":"Searching for life on another planet","speaker":"BBC Learning English","category":"bbc","school":null,"year":2026,"duration":373.24,"cover":"/covers/bbc6min_260507.jpg","views":null,"sourceUrl":"https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260507","audioUrls":{"standard":"https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260507.m4a","high":"https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260507.m4a"},"zhSource":"mt","sentences":[{"i":0,"start":4.58,"end":11.08,"en":"Hello. This is 6 Minute English from BBC Learning English.","zh":"你好,这是英国广播公司英文课的6分钟英语课"},{"i":1,"start":11.3,"end":17.26,"en":"I'm Neil. And I'm Becca. Neil, do you believe that life exists away from planet Earth?","zh":"我是尼尔,我是贝卡 尼尔,你相信生命存在于地球之外吗?"},{"i":2,"start":17.66,"end":27.94,"en":"Well, I'm not sure about the kind of little green men that you see in science fiction movies, but also, I think we cannot be alone in the universe.","zh":"我不确定你在科幻电影里看到的 那种小绿人 但我也认为我们不可能孤军奋战"},{"i":3,"start":28.44,"end":30.2,"en":"What about you, Becca? What do you think?","zh":"你呢 贝卡 你觉得呢"},{"i":4,"start":30.2,"end":38.78,"en":"I agree, I think that maybe life does exist beyond our planet, but maybe not as we see in alien movies.","zh":"我同意,我认为也许生命 确实存在于我们的星球之外, 但也许不像我们在外星电影中看到的。"},{"i":5,"start":39.46,"end":48.98,"en":"Well, in this episode, we'll be learning from science and space experts about whether the conditions for life exist on a planet 40 light years away.","zh":"那么,在这一集, 我们将学习 从科学和空间专家 有关生命的条件 存在于一个星球上40光年。"},{"i":6,"start":49.76,"end":59.0,"en":"Yes, and as usual, you can find a transcript for this episode, along with all the vocabulary and a worksheet, on our website bbclearningenglish.com.","zh":"是的,和往常一样,你可以在我们的bbclearingenglish.com网站上找到这集的笔录,以及所有词汇和工作表。"},{"i":7,"start":59.56,"end":67.86,"en":"OK, a quiz question for you, Becca. How long would it take to drive a car to the Sun at 100km an hour?","zh":"好 问你个问题 Becca 一小时100公里开车去太阳要多久?"},{"i":8,"start":68.36,"end":75.54,"en":"Is it: a) 70 years, b) 170 years, or c) 1,700 years?","zh":"是:(a) 70岁,(b) 170岁,还是(c) 1 700岁?"},{"i":9,"start":75.94,"end":82.84,"en":"Well, Neil, the Sun seems very far away so I’ll go for c) 1,700 years.","zh":"那么,尼尔,太阳似乎很远 所以我会去1700年。"},{"i":10,"start":83.44,"end":88.18,"en":"I hope you have enough petrol for that. Well, we’ll find out the answer to the question later.","zh":"希望你们有足够的汽油。"},{"i":11,"start":88.82,"end":95.22,"en":"Now, though, some science and space experts are excited about a planet in a different solar system from our own.","zh":"但是,有些科学和空间专家 却对一个与我们不同的太阳系中的行星感到兴奋。"},{"i":12,"start":96.08,"end":102.18,"en":"Science journalist, Caroline Steele, talks about this discovery on the BBC World Service programme What in the World.","zh":"科学记者Caroline Steele在英国广播公司世界服务节目《世界新闻》上谈到这一发现。"},{"i":13,"start":102.46,"end":105.66,"en":"So, scientists have been looking at an exoplanet.","zh":"所以,科学家们一直在寻找一个外行星。"},{"i":14,"start":105.74,"end":114.1,"en":"So, that's a planet that exists in a solar system that isn't our own, called TRAPPIST-1e, um, and it's a rocky planet like Earth.","zh":"所以,这是一个存在于太阳系中的行星, 它不是我们自己的, 叫做TRAPPIST-1e,嗯,它是一个像地球这样的岩石行星。"},{"i":15,"start":114.2,"end":123.18,"en":"It's a similar size to Earth, and it exists in the habitable zone around its sun, and its sun is called TRAPPIST-1.","zh":"它的大小与地球相似, 它存在于太阳周围的可居住区, 它的太阳被称为TRAPPIST-1。"},{"i":16,"start":123.9,"end":131.62,"en":"Caroline explains that scientists have discovered that the planet, TRAPPIST-1e, exists in the habitable zone around its sun.","zh":"Caroline解释说 科学家们发现 这个行星 TRAPPIST-1e 存在于太阳周围的可居住区"},{"i":17,"start":132.3,"end":137.64,"en":"The adjective habitable describes a place or habitat that is suitable for something to live.","zh":"这个形容词描述一个适合生活的地方或生境。"},{"i":18,"start":138.18,"end":141.3,"en":"Yes, and a zone is an area with a particular feature.","zh":"是的,一个区域是一个具有特定特征的区域。"},{"i":19,"start":141.64,"end":146.36,"en":"For example, people who live in earthquake zones have to be prepared for danger.","zh":"例如,生活在地震区的人必须做好防备危险的准备。"},{"i":20,"start":147.22,"end":150.96,"en":"So, a habitable zone is an area where something could live.","zh":"所以,一个可居住区 是一个可以居住的地方。"},{"i":21,"start":151.5,"end":155.58,"en":"Caroline goes on to explain why they think TRAPPIST-1e may be habitable.","zh":"Caroline继续解释为什么他们认为TRAPPIST -1e可能适合居住"},{"i":22,"start":155.88,"end":168.12,"en":"Scientists have been looking at the potential atmosphere around TRAPPIST-1e and they've ruled out that it's really full of hydrogen or carbon dioxide, which is a great thing because they're greenhouse gases, which would make the planet really hot.","zh":"科学家们一直在研究TRAPPIST-1e周围的潜在大气, 他们排除了它真的充满了氢或二氧化碳, 这是件好事,因为它们是温室气体, 这会使地球变得非常热。"},{"i":23,"start":168.28,"end":178.18,"en":"And there are some small clues that it might be a nitrogen- dominated atmosphere, which, again, is another sort of clue that there could be life there.","zh":"有一些微小的线索 表明它可能是一个氮支配的大气, 这又是另一种线索, 说明那里可能存在生命。"},{"i":24,"start":178.62,"end":184.22,"en":"Caroline Steele says that scientists are looking at the potential atmosphere around TRAPPIST-1e.","zh":"Caroline Steele说 科学家们正在研究TRAPPIST -1e周围的潜在大气"},{"i":25,"start":184.44,"end":190.3,"en":"That is, that they want to find out if the atmosphere is capable or likely to become able to host life.","zh":"也就是说,他们想弄清楚 大气层是否有能力或有可能 成为宿主生活。"},{"i":26,"start":190.96,"end":195.72,"en":"If something has potential, it already has the qualities or abilities to do something.","zh":"如果某物有潜力,它已经具备了采取行动的素质或能力。"},{"i":27,"start":196.14,"end":200.76,"en":"The adjective potential has a similar meaning but refers to future capability.","zh":"形容词具有类似的含义,但是指未来的能力。"},{"i":28,"start":201.3,"end":206.64,"en":"Exactly. We could say the data has potential in that it shows signs of helping the research.","zh":"没错,我们可以说数据有潜力 因为它有帮助研究的迹象"},{"i":29,"start":207.02,"end":212.46,"en":"But when we talk about potential data, we're referring to data that could help us with future research.","zh":"但是当我们谈论潜在数据时, 我们指的是可以帮助我们未来研究的数据。"},{"i":30,"start":213.12,"end":219.74,"en":"She also mentions how scientists have ruled out that TRAPPIST-1e is full of hydrogen or carbon dioxide.","zh":"她还提到科学家们如何排除TRAPPIST-1e 充满氢或二氧化碳。"},{"i":31,"start":220.32,"end":225.1,"en":"The phrasal verb rule out means to dismiss the possibility or idea of something.","zh":"语句动词排除 意味着排除 可能性或想法的东西。"},{"i":32,"start":225.8,"end":231.08,"en":"Scientists have found that TRAPPIST-1e is not full of those greenhouse gases, they’ve ruled it out.","zh":"科学家发现TRAPPIST-1e并不充满这些温室气体,"},{"i":33,"start":231.08,"end":237.66,"en":"Indeed. And Caroline goes on to say how the atmosphere of TRAPPIST-1e is dominated by nitrogen.","zh":"没错 Caroline接着说 TRAPPIST-1e的大气层 是如何被氮气主宰的"},{"i":34,"start":238.52,"end":244.34,"en":"If something is dominated by something else, it is controlled by it or is the most significant element of it.","zh":"如果某些东西被其他东西所主宰,它就会被它控制,或者是其中最重要的部分。"},{"i":35,"start":244.88,"end":251.4,"en":"TRAPPIST-1e is full of nitrogen, which is exciting because nitrogen is a sign of life and habitability.","zh":"TRAPPIST-1e是充满氮, 这是令人兴奋的,因为氮 是生命和可居住性的一个标志。"},{"i":36,"start":252.48,"end":255.72,"en":"So, what if nitrogen is actually found on this planet?","zh":"那么,如果这个星球上真的发现了氮呢?"},{"i":37,"start":255.72,"end":271.76,"en":"Caroline Steele has more. My guess is what we'll do is try and see what other gases are in the atmosphere and use models to work out how warm the planet could be and whether or not it's a temperature that basically could support life, or maybe it's too hot or too cold, but fingers crossed it has nitrogen.","zh":"卡罗琳·斯蒂尔还有更多。我猜我们要做的是 尝试看看大气中的其他气体 并使用模型来研究这个星球的暖度, 以及它是否是一个能支撑生命的温度, 或者说它可能太热或者太冷, 但手指穿过它时有氮气。"},{"i":38,"start":272.5,"end":275.42,"en":"There's enough of it to keep the planet a decent temperature.","zh":"足够保持地球的温度"},{"i":39,"start":276.04,"end":278.0,"en":"And then that's one step closer to finding life.","zh":"然后,这是接近 寻找生命的一步。"},{"i":40,"start":278.52,"end":283.32,"en":"Caroline guesses that scientists will focus on the planet’s temperature and whether it could support life.","zh":"Caroline猜测科学家会关注地球的温度 以及它能否维系生命。"},{"i":41,"start":283.86,"end":288.32,"en":"She uses the expression fingers crossed to express hope for a positive outcome.","zh":"她用跨过表达的手指来表达对一个积极结果的希望。"},{"i":42,"start":288.86,"end":293.26,"en":"Yes. We often make the physical gesture of crossing our fingers for good luck.","zh":"是的,我们经常做身体上的动作 跨越我们的手指来祝好运"},{"i":43,"start":293.7,"end":296.86,"en":"We do. That reminds me Neil, the answer to your question!","zh":"这让我想起尼尔 你问题的答案!"},{"i":44,"start":297.28,"end":299.04,"en":"Fingers crossed that I answered correctly.","zh":"手指交叉,我答对了。"},{"i":45,"start":299.4,"end":309.92,"en":"I see what you've done there, Becca. Yes, I asked you how long it would take to drive to the Sun at 100km an hour, and you answered c) 1,700 years.","zh":"是的,我问你要多久才能以每小时100公里的速度开车去太阳,你回答说,c) 1700年。"},{"i":46,"start":310.46,"end":315.88,"en":"Well, the Sun is very far away, but the answer was b) only 170 years.","zh":"太阳离我们很远 但答案是(b)只有170年"},{"i":47,"start":316.2,"end":318.84,"en":"Oh well, that’s still longer than my lifetime!","zh":"这比我的一生还长!"},{"i":48,"start":319.42,"end":328.3,"en":"Now let’s have a recap of the language we've learnt in this episode, starting with habitable, which describes a place or habitat that is suitable for something to live.","zh":"现在让我们回顾一下我们在这集中所学会的语言, 首先是可居住性, 它描述了适合居住的地方或栖息地。"},{"i":49,"start":328.68,"end":330.94,"en":"A zone is an area with a particular feature.","zh":"区域是一个具有特定特征的区域。"},{"i":50,"start":331.54,"end":335.38,"en":"Potential describes possibly having qualities or abilities to do something.","zh":"潜力说明,可能具有采取行动的素质或能力。"},{"i":51,"start":335.82,"end":340.48,"en":"The phrasal verb rule out means to dismiss the possibility or idea of something.","zh":"语句动词排除 意味着排除 可能性或想法的东西。"},{"i":52,"start":341.06,"end":349.2,"en":"We also had dominated. If something is dominated by something else, it is controlled by it or is the most significant element of it.","zh":"我们也曾统治过。如果某种东西被其他东西主宰,它就会被它控制,或者是其中最重要的元素。"},{"i":53,"start":349.92,"end":354.88,"en":"And finally, the expression fingers crossed is used to wish for hope or luck.","zh":"最后, 表达的手指交叉 用来希望 希望或运气。"},{"i":54,"start":355.38,"end":362.3,"en":"Once again, our six minutes are up, but head over to our website, bbclearningenglish.com, for a quiz and worksheet for this episode.","zh":"再一次,我们的六分钟已经到了, 但是去我们的网站,bbclearingenglish.com, 为这集的测验和工作单。"},{"i":55,"start":362.84,"end":365.02,"en":"See you soon. Goodbye for now. Bye!","zh":"再见,再见,再见"}]}
+{
+  "slug": "bbc6min_260507",
+  "title": "Searching for life on another planet",
+  "speaker": "BBC Learning English",
+  "category": "bbc",
+  "school": null,
+  "year": 2026,
+  "duration": 373.24,
+  "cover": "/covers/bbc6min_260507.jpg",
+  "views": null,
+  "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260507",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260507.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260507.m4a"
+  },
+  "zhSource": "mt",
+  "sentences": [
+    {
+      "i": 0,
+      "start": 2.18,
+      "end": 10.92,
+      "en": "Hello. This is 6 Minute English from BBC Learning English.",
+      "zh": "你好,这是英国广播公司英文课的6分钟英语课",
+      "w": [2.18,2.76,8.34,8.46,8.46,8.58,8.8,9.06,9.06,9.34,9.34,9.7,9.7,10.14,10.14,10.64,10.64,10.92]
+    },
+    {
+      "i": 1,
+      "start": 11.22,
+      "end": 17.18,
+      "en": "I'm Neil. And I'm Becca. Neil, do you believe that life exists away from planet Earth?",
+      "zh": "我是尼尔,我是贝卡 尼尔,你相信生命存在于地球之外吗?",
+      "w": [11.22,11.44,11.44,11.6,11.94,12.06,12.06,12.34,12.34,12.62,13.18,13.46,13.84,14.02,14.02,14.18,14.18,14.54,14.54,14.88,14.88,15.08,15.08,15.56,15.56,16.2,16.2,16.52,16.52,16.76,16.76,17.18]
+    },
+    {
+      "i": 2,
+      "start": 17.68,
+      "end": 27.84,
+      "en": "Well, I'm not sure about the kind of little green men that you see in science fiction movies, but also, I think we cannot be alone in the universe.",
+      "zh": "我不确定你在科幻电影里看到的 那种小绿人 但我也认为我们不可能孤军奋战",
+      "w": [17.68,17.88,18.24,18.5,18.5,18.7,18.7,19.08,19.08,19.48,19.48,20.02,20.02,20.2,20.2,20.4,20.4,20.56,20.56,20.9,20.9,21.28,21.28,21.6,21.6,21.78,21.78,22.04,22.04,22.48,22.48,22.86,22.86,23.18,23.18,23.78,24.04,24.24,24.24,24.8,24.8,25.4,25.4,25.68,25.68,26.1,26.1,26.42,26.42,26.84,26.84,27.08,27.08,27.38,27.38,27.52,27.52,27.84]
+    },
+    {
+      "i": 3,
+      "start": 28.4,
+      "end": 30.14,
+      "en": "What about you, Becca? What do you think?",
+      "zh": "你呢 贝卡 你觉得呢",
+      "w": [28.4,28.56,28.56,28.76,28.76,29.06,29.06,29.4,29.6,29.65,29.64,29.8,29.8,29.9,29.9,30.14]
+    },
+    {
+      "i": 4,
+      "start": 30.14,
+      "end": 38.64,
+      "en": "I agree, I think that maybe life does exist beyond our planet, but maybe not as we see in alien movies.",
+      "zh": "我同意,我认为也许生命 确实存在于我们的星球之外, 但也许不像我们在外星电影中看到的。",
+      "w": [30.14,30.62,30.62,31.02,31.46,31.54,31.54,31.82,31.82,32.16,32.16,32.44,32.44,32.96,32.96,33.24,33.24,33.64,33.64,34.24,34.24,34.76,34.76,35.06,35.52,35.68,35.68,35.96,35.96,36.5,36.5,36.9,36.9,37.08,37.08,37.4,37.4,37.86,37.86,38.18,38.18,38.64]
+    },
+    {
+      "i": 5,
+      "start": 39.4,
+      "end": 48.88,
+      "en": "Well, in this episode, we'll be learning from science and space experts about whether the conditions for life exist on a planet 40 light years away.",
+      "zh": "那么,在这一集, 我们将学习 从科学和空间专家 有关生命的条件 存在于一个星球上40光年。",
+      "w": [39.4,39.68,39.76,39.9,39.9,40.02,40.02,40.46,40.76,40.86,40.86,40.98,40.98,41.2,41.2,41.46,41.46,41.78,41.78,42.1,42.1,42.4,42.4,43.04,43.04,43.48,43.48,43.94,43.94,44.12,44.12,44.62,44.62,45.08,45.08,45.38,45.38,45.9,45.9,46.24,46.24,46.32,46.32,46.66,47.52,48.2,48.2,48.5,48.5,48.88]
+    },
+    {
+      "i": 6,
+      "start": 49.44,
+      "end": 58.82,
+      "en": "Yes, and as usual, you can find a transcript for this episode, along with all the vocabulary and a worksheet, on our website bbclearningenglish.com.",
+      "zh": "是的,和往常一样,你可以在我们的bbclearingenglish.com网站上找到这集的笔录,以及所有词汇和工作表。",
+      "w": [49.44,50.12,50.12,50.54,50.54,50.7,50.7,51.04,51.36,51.52,51.52,51.66,51.66,51.92,51.92,52.1,52.1,52.48,52.48,52.82,52.82,53.0,53.0,53.48,53.48,53.86,53.86,54.1,54.1,54.34,54.34,54.48,54.48,54.8,54.8,55.48,55.48,55.6,55.6,56.02,56.02,56.3,56.3,56.44,56.44,56.78,57.3,58.28,58.28,58.82]
+    },
+    {
+      "i": 7,
+      "start": 58.82,
+      "end": 67.82,
+      "en": "OK, a quiz question for you, Becca. How long would it take to drive a car to the Sun at 100km an hour?",
+      "zh": "好 问你个问题 Becca 一小时100公里开车去太阳要多久?",
+      "w": [58.82,60.0,60.0,60.05,60.02,60.22,60.22,60.66,60.66,60.98,60.98,61.16,61.16,61.46,61.86,61.96,61.96,62.38,62.38,62.82,62.82,62.92,62.92,63.2,63.2,63.52,63.52,63.94,63.94,64.38,64.38,64.72,64.72,65.24,65.24,65.38,65.38,65.72,65.72,66.32,66.32,67.08,67.08,67.54,67.54,67.82]
+    },
+    {
+      "i": 8,
+      "start": 68.42,
+      "end": 75.42,
+      "en": "Is it: a) 70 years, b) 170 years, or c) 1,700 years?",
+      "zh": "是:(a) 70岁,(b) 170岁,还是(c) 1 700岁?",
+      "w": [68.42,68.47,68.42,68.56,68.56,68.82,69.54,69.98,70.6,70.66,71.48,72.3,72.6,72.65,72.62,72.94,74.62,75.42]
+    },
+    {
+      "i": 9,
+      "start": 75.86,
+      "end": 82.64,
+      "en": "Well, Neil, the Sun seems very far away so I’ll go for c) 1,700 years.",
+      "zh": "那么,尼尔,太阳似乎很远 所以我会去1700年。",
+      "w": [75.86,76.24,76.52,76.57,76.88,76.93,76.9,77.14,77.14,77.44,77.44,77.98,77.98,78.5,78.5,78.84,79.14,79.24,79.24,79.64,79.64,79.84,79.84,80.18,80.18,80.42,81.88,82.64]
+    },
+    {
+      "i": 10,
+      "start": 83.6,
+      "end": 88.2,
+      "en": "I hope you have enough petrol for that. Well, we’ll find out the answer to the question later.",
+      "zh": "希望你们有足够的汽油。",
+      "w": [83.6,83.8,83.8,83.96,83.96,84.04,84.04,84.2,84.2,84.28,84.28,84.56,84.56,84.9,84.9,85.06,85.06,85.72,86.0,86.16,86.16,86.44,86.44,86.62,86.62,86.78,86.78,87.1,87.1,87.26,87.26,87.34,87.34,87.6,87.6,88.2]
+    },
+    {
+      "i": 11,
+      "start": 88.84,
+      "end": 95.16,
+      "en": "Now, though, some science and space experts are excited about a planet in a different solar system from our own.",
+      "zh": "但是,有些科学和空间专家 却对一个与我们不同的太阳系中的行星感到兴奋。",
+      "w": [88.84,89.08,89.08,89.28,89.52,89.7,89.7,90.08,90.08,90.32,90.32,90.54,90.54,91.06,91.06,91.34,91.34,91.7,91.7,92.26,92.26,92.4,92.4,92.76,92.76,93.1,93.1,93.18,93.18,93.5,93.5,93.84,93.84,94.34,94.34,94.64,94.64,94.82,94.82,95.16]
+    },
+    {
+      "i": 12,
+      "start": 95.76,
+      "end": 102.06,
+      "en": "Science journalist, Caroline Steele, talks about this discovery on the BBC World Service programme What in the World.",
+      "zh": "科学记者Caroline Steele在英国广播公司世界服务节目《世界新闻》上谈到这一发现。",
+      "w": [95.76,96.06,96.06,96.36,96.36,96.88,96.88,97.46,97.46,98.0,98.0,98.34,98.34,98.6,98.6,98.98,98.98,99.54,99.54,99.62,99.62,99.86,99.86,100.34,100.34,100.6,100.6,101.14,101.56,101.61,101.58,101.74,101.74,101.82,101.82,102.06]
+    },
+    {
+      "i": 13,
+      "start": 102.44,
+      "end": 105.62,
+      "en": "So, scientists have been looking at an exoplanet.",
+      "zh": "所以,科学家们一直在寻找一个外行星。",
+      "w": [102.44,102.7,103.12,103.56,103.56,103.76,103.76,103.88,103.88,104.14,104.14,104.44,104.44,104.58,104.58,105.62]
+    },
+    {
+      "i": 14,
+      "start": 105.76,
+      "end": 114.02,
+      "en": "So, that's a planet that exists in a solar system that isn't our own, called TRAPPIST-1e, um, and it's a rocky planet like Earth.",
+      "zh": "所以,这是一个存在于太阳系中的行星, 它不是我们自己的, 叫做TRAPPIST-1e,嗯,它是一个像地球这样的岩石行星。",
+      "w": [105.76,105.81,105.78,106.02,106.02,106.08,106.08,106.38,106.38,107.0,107.0,107.24,107.24,107.5,107.5,107.58,107.58,107.82,107.82,108.16,108.16,108.34,108.34,108.68,108.68,108.86,108.86,109.28,109.6,109.82,109.82,110.26,110.26,110.7,110.7,111.14,111.14,111.74,111.74,112.36,112.36,112.46,112.46,112.88,112.88,113.36,113.36,113.74,113.74,114.02]
+    },
+    {
+      "i": 15,
+      "start": 114.24,
+      "end": 123.56,
+      "en": "It's a similar size to Earth, and it exists in the habitable zone around its sun, and its sun is called TRAPPIST-1.",
+      "zh": "它的大小与地球相似, 它存在于太阳周围的可居住区, 它的太阳被称为TRAPPIST-1。",
+      "w": [114.24,114.34,114.34,114.4,114.4,114.68,114.68,115.2,115.2,115.44,115.44,115.82,116.22,116.42,116.42,116.56,116.56,117.08,117.08,117.4,117.4,117.48,117.48,117.86,117.86,118.38,118.38,119.1,119.1,119.74,119.74,120.52,120.88,121.08,121.08,121.18,121.18,121.4,121.4,121.58,121.58,121.84,121.84,123.56]
+    },
+    {
+      "i": 16,
+      "start": 123.56,
+      "end": 131.52,
+      "en": "Caroline explains that scientists have discovered that the planet, TRAPPIST-1e, exists in the habitable zone around its sun.",
+      "zh": "Caroline解释说 科学家们发现 这个行星 TRAPPIST-1e 存在于太阳周围的可居住区",
+      "w": [123.56,124.04,124.04,124.68,124.68,125.16,125.16,125.32,125.32,125.9,125.9,126.26,126.26,126.78,126.78,126.9,126.9,127.12,127.12,127.92,127.92,128.72,128.72,129.22,129.22,129.66,129.66,129.78,129.78,130.06,130.06,130.62,130.62,130.94,130.94,131.16,131.16,131.52]
+    },
+    {
+      "i": 17,
+      "start": 132.28,
+      "end": 137.52,
+      "en": "The adjective habitable describes a place or habitat that is suitable for something to live.",
+      "zh": "这个形容词描述一个适合生活的地方或生境。",
+      "w": [132.28,132.5,132.5,132.78,132.78,133.72,133.72,134.14,134.14,134.68,134.68,134.98,134.98,135.3,135.3,135.62,135.62,136.16,136.16,136.28,136.28,136.46,136.46,136.92,136.92,137.1,137.1,137.36,137.36,137.52]
+    },
+    {
+      "i": 18,
+      "start": 137.52,
+      "end": 141.32,
+      "en": "Yes, and a zone is an area with a particular feature.",
+      "zh": "是的,一个区域是一个具有特定特征的区域。",
+      "w": [137.52,138.4,138.62,138.72,138.72,138.77,138.76,139.04,139.04,139.4,139.4,139.52,139.52,139.84,139.84,140.16,140.16,140.24,140.24,140.5,140.5,141.32]
+    },
+    {
+      "i": 19,
+      "start": 141.74,
+      "end": 146.26,
+      "en": "For example, people who live in earthquake zones have to be prepared for danger.",
+      "zh": "例如,生活在地震区的人必须做好防备危险的准备。",
+      "w": [141.74,141.79,141.76,142.04,142.38,142.54,142.54,142.78,142.78,142.98,142.98,143.28,143.28,143.78,143.78,144.32,144.32,144.94,144.94,145.12,145.12,145.24,145.24,145.6,145.6,145.92,145.92,146.26]
+    },
+    {
+      "i": 20,
+      "start": 147.14,
+      "end": 150.86,
+      "en": "So, a habitable zone is an area where something could live.",
+      "zh": "所以,一个可居住区 是一个可以居住的地方。",
+      "w": [147.14,147.46,147.46,147.84,147.84,148.16,148.16,148.68,148.68,148.96,148.96,149.1,149.1,149.46,149.46,149.88,149.88,150.2,150.2,150.54,150.54,150.86]
+    },
+    {
+      "i": 21,
+      "start": 151.6,
+      "end": 155.42,
+      "en": "Caroline goes on to explain why they think TRAPPIST-1e may be habitable.",
+      "zh": "Caroline继续解释为什么他们认为TRAPPIST -1e可能适合居住",
+      "w": [151.6,151.65,151.62,152.0,152.0,152.22,152.22,152.44,152.44,152.78,152.78,153.14,153.14,153.34,153.34,153.62,153.62,154.04,154.04,154.46,154.46,154.86,154.86,155.06,155.06,155.42]
+    },
+    {
+      "i": 22,
+      "start": 155.84,
+      "end": 168.02,
+      "en": "Scientists have been looking at the potential atmosphere around TRAPPIST-1e and they've ruled out that it's really full of hydrogen or carbon dioxide, which is a great thing because they're greenhouse gases, which would make the planet really hot.",
+      "zh": "科学家们一直在研究TRAPPIST-1e周围的潜在大气, 他们排除了它真的充满了氢或二氧化碳, 这是件好事,因为它们是温室气体, 这会使地球变得非常热。",
+      "w": [155.84,156.12,156.12,156.34,156.34,156.44,156.44,156.7,156.7,157.0,157.0,157.82,157.82,158.18,158.18,158.72,158.72,159.22,159.22,159.69,159.69,160.16,160.16,160.21,160.18,160.4,160.4,160.56,160.56,160.86,160.86,161.08,161.08,161.32,161.32,161.66,161.66,162.04,162.04,162.14,162.14,162.52,162.52,162.84,162.84,163.04,163.04,163.32,163.56,163.82,163.82,163.94,163.94,164.02,164.02,164.18,164.18,164.42,164.42,164.72,164.72,165.72,165.72,166.04,166.04,166.5,166.7,166.75,166.7,166.82,166.82,166.98,166.98,167.1,167.1,167.4,167.4,167.64,167.64,168.02]
+    },
+    {
+      "i": 23,
+      "start": 168.72,
+      "end": 178.08,
+      "en": "And there are some small clues that it might be a nitrogen- dominated atmosphere, which, again, is another sort of clue that there could be life there.",
+      "zh": "有一些微小的线索 表明它可能是一个氮支配的大气, 这又是另一种线索, 说明那里可能存在生命。",
+      "w": [168.72,168.8,168.8,168.96,168.96,169.06,169.06,169.24,169.24,169.68,169.68,170.1,170.76,171.02,171.02,171.12,171.12,171.36,171.36,171.7,171.7,171.96,171.96,172.46,172.46,173.44,173.44,174.22,174.8,175.0,175.0,175.66,175.66,175.98,175.98,176.24,176.24,176.44,176.44,176.54,176.54,176.8,176.8,177.04,177.04,177.16,177.16,177.4,177.4,177.62,177.62,177.82,177.82,178.08]
+    },
+    {
+      "i": 24,
+      "start": 178.26,
+      "end": 184.36,
+      "en": "Caroline Steele says that scientists are looking at the potential atmosphere around TRAPPIST-1e.",
+      "zh": "Caroline Steele说 科学家们正在研究TRAPPIST -1e周围的潜在大气",
+      "w": [178.26,178.48,178.48,178.84,178.84,179.42,179.42,179.58,179.58,179.9,179.9,180.38,180.38,180.64,180.64,180.94,180.94,181.06,181.06,181.6,181.6,182.32,182.32,183.0,183.0,183.68,183.68,184.36]
+    },
+    {
+      "i": 25,
+      "start": 184.36,
+      "end": 190.16,
+      "en": "That is, that they want to find out if the atmosphere is capable or likely to become able to host life.",
+      "zh": "也就是说,他们想弄清楚 大气层是否有能力或有可能 成为宿主生活。",
+      "w": [184.36,184.7,184.7,184.92,184.92,185.12,185.12,185.17,185.14,185.32,185.32,185.46,185.46,185.7,185.7,185.94,185.94,186.2,186.2,186.34,186.34,186.74,186.74,187.16,187.16,187.56,187.56,187.94,187.94,188.24,188.24,188.58,188.58,188.78,188.78,189.14,189.14,189.4,189.4,189.84,189.84,190.16]
+    },
+    {
+      "i": 26,
+      "start": 190.16,
+      "end": 195.54,
+      "en": "If something has potential, it already has the qualities or abilities to do something.",
+      "zh": "如果某物有潜力,它已经具备了采取行动的素质或能力。",
+      "w": [190.16,190.9,190.9,191.32,191.32,191.56,191.56,191.98,192.62,192.68,192.68,192.94,192.94,193.4,193.4,193.54,193.54,194.04,194.04,194.28,194.28,194.7,194.7,195.06,195.06,195.22,195.22,195.54]
+    },
+    {
+      "i": 27,
+      "start": 196.2,
+      "end": 200.62,
+      "en": "The adjective potential has a similar meaning but refers to future capability.",
+      "zh": "形容词具有类似的含义,但是指未来的能力。",
+      "w": [196.2,196.26,196.26,196.66,196.66,197.2,197.2,197.82,197.82,197.92,197.92,198.12,198.12,198.58,198.92,199.02,199.02,199.32,199.32,199.68,199.68,200.1,200.1,200.62]
+    },
+    {
+      "i": 28,
+      "start": 201.22,
+      "end": 206.5,
+      "en": "Exactly. We could say the data has potential in that it shows signs of helping the research.",
+      "zh": "没错,我们可以说数据有潜力 因为它有帮助研究的迹象",
+      "w": [201.22,201.62,202.28,202.54,202.54,202.72,202.72,202.92,202.92,203.1,203.1,203.3,203.3,203.64,203.64,203.84,203.84,204.68,204.68,204.82,204.82,204.94,204.94,205.12,205.12,205.46,205.46,205.72,205.72,205.96,205.96,206.2,206.2,206.5]
+    },
+    {
+      "i": 29,
+      "start": 207.06,
+      "end": 212.14,
+      "en": "But when we talk about potential data, we're referring to data that could help us with future research.",
+      "zh": "但是当我们谈论潜在数据时, 我们指的是可以帮助我们未来研究的数据。",
+      "w": [207.06,207.16,207.16,207.32,207.32,207.44,207.44,207.62,207.62,207.9,207.9,208.22,208.22,208.82,209.16,209.34,209.34,209.6,209.6,209.96,209.96,210.2,210.2,210.56,210.56,210.72,210.72,210.92,210.92,211.18,211.18,211.42,211.42,211.7,211.7,212.14]
+    },
+    {
+      "i": 30,
+      "start": 212.84,
+      "end": 219.4,
+      "en": "She also mentions how scientists have ruled out that TRAPPIST-1e is full of hydrogen or carbon dioxide.",
+      "zh": "她还提到科学家们如何排除TRAPPIST-1e 充满氢或二氧化碳。",
+      "w": [212.84,213.34,213.34,213.5,213.5,214.04,214.04,214.32,214.32,214.7,214.7,215.1,215.1,215.4,215.4,215.88,215.88,216.2,216.2,216.74,216.74,217.28,217.28,217.58,217.58,217.8,217.8,217.96,217.96,218.46,218.46,218.78,218.78,219.1,219.1,219.4]
+    },
+    {
+      "i": 31,
+      "start": 220.34,
+      "end": 225.0,
+      "en": "The phrasal verb rule out means to dismiss the possibility or idea of something.",
+      "zh": "语句动词排除 意味着排除 可能性或想法的东西。",
+      "w": [220.34,220.46,220.46,220.86,220.86,221.02,221.02,221.48,221.48,221.82,221.82,222.16,222.16,222.46,222.46,222.72,222.72,223.12,223.12,223.56,223.56,224.0,224.0,224.38,224.38,224.66,224.66,225.0]
+    },
+    {
+      "i": 32,
+      "start": 225.62,
+      "end": 230.96,
+      "en": "Scientists have found that TRAPPIST-1e is not full of those greenhouse gases, they’ve ruled it out.",
+      "zh": "科学家发现TRAPPIST-1e并不充满这些温室气体,",
+      "w": [225.62,226.04,226.04,226.38,226.38,226.62,226.62,226.78,226.78,227.19,227.19,227.6,227.6,227.86,227.86,228.14,228.14,228.42,228.42,228.56,228.56,228.74,228.74,229.04,229.04,229.78,230.08,230.36,230.36,230.5,230.5,230.74,230.74,230.96]
+    },
+    {
+      "i": 33,
+      "start": 231.32,
+      "end": 237.36,
+      "en": "Indeed. And Caroline goes on to say how the atmosphere of TRAPPIST-1e is dominated by nitrogen.",
+      "zh": "没错 Caroline接着说 TRAPPIST-1e的大气层 是如何被氮气主宰的",
+      "w": [231.32,231.72,232.38,232.56,232.56,232.86,232.86,233.2,233.2,233.4,233.4,233.56,233.56,233.78,233.78,234.0,234.0,234.14,234.14,234.58,234.58,234.98,234.98,235.41,235.41,235.84,235.84,236.18,236.18,236.5,236.5,237.12,237.12,237.36]
+    },
+    {
+      "i": 34,
+      "start": 238.2,
+      "end": 244.22,
+      "en": "If something is dominated by something else, it is controlled by it or is the most significant element of it.",
+      "zh": "如果某些东西被其他东西所主宰,它就会被它控制,或者是其中最重要的部分。",
+      "w": [238.2,238.74,238.74,239.06,239.06,239.26,239.26,239.62,239.62,240.1,240.1,240.4,240.4,240.68,241.06,241.12,241.12,241.18,241.18,241.52,241.52,241.88,241.88,242.06,242.06,242.36,242.36,242.48,242.48,242.6,242.6,242.8,242.8,243.12,243.12,243.54,243.54,244.08,244.08,244.22]
+    },
+    {
+      "i": 35,
+      "start": 244.22,
+      "end": 251.18,
+      "en": "TRAPPIST-1e is full of nitrogen, which is exciting because nitrogen is a sign of life and habitability.",
+      "zh": "TRAPPIST-1e是充满氮, 这是令人兴奋的,因为氮 是生命和可居住性的一个标志。",
+      "w": [244.22,244.98,244.98,245.74,245.74,246.04,246.04,246.3,246.3,246.46,246.46,246.62,247.22,247.3,247.3,247.46,247.46,247.82,247.82,248.46,248.46,248.82,248.82,249.4,249.4,249.5,249.5,249.72,249.72,249.92,249.92,250.16,250.16,250.62,250.62,251.18]
+    },
+    {
+      "i": 36,
+      "start": 252.3,
+      "end": 255.68,
+      "en": "So, what if nitrogen is actually found on this planet?",
+      "zh": "那么,如果这个星球上真的发现了氮呢?",
+      "w": [252.3,252.76,252.76,253.04,253.04,253.22,253.22,253.64,253.64,254.08,254.08,254.5,254.5,254.84,254.84,255.16,255.16,255.36,255.36,255.68]
+    },
+    {
+      "i": 37,
+      "start": 255.68,
+      "end": 271.72,
+      "en": "Caroline Steele has more. My guess is what we'll do is try and see what other gases are in the atmosphere and use models to work out how warm the planet could be and whether or not it's a temperature that basically could support life, or maybe it's too hot or too cold, but fingers crossed it has nitrogen.",
+      "zh": "卡罗琳·斯蒂尔还有更多。我猜我们要做的是 尝试看看大气中的其他气体 并使用模型来研究这个星球的暖度, 以及它是否是一个能支撑生命的温度, 或者说它可能太热或者太冷, 但手指穿过它时有氮气。",
+      "w": [255.68,256.3,256.3,256.92,256.92,257.36,257.36,257.62,257.88,258.14,258.14,258.32,258.32,258.5,258.5,258.6,258.6,258.74,258.74,259.06,259.06,259.26,259.26,259.42,259.42,259.6,259.6,259.74,259.74,259.92,259.92,260.06,260.06,260.4,260.4,260.64,260.64,260.78,260.78,260.94,260.94,261.58,261.58,261.94,261.94,262.14,262.14,262.42,262.42,262.78,262.78,262.94,262.94,263.1,263.1,263.34,263.34,263.76,263.76,264.36,264.36,264.7,264.7,265.12,265.12,265.42,265.42,265.68,265.68,265.88,265.88,265.93,265.9,266.14,266.14,266.28,266.28,266.33,266.32,266.58,266.58,266.84,266.84,267.12,267.75,268.0,268.0,268.24,268.24,268.58,268.58,268.88,268.88,269.46,269.46,269.64,269.64,269.8,269.8,270.0,270.0,270.1,270.1,270.26,270.26,270.44,270.66,270.71,270.68,270.86,270.86,271.08,271.16,271.22,271.22,271.36,271.48,271.72]
+    },
+    {
+      "i": 38,
+      "start": 272.36,
+      "end": 275.22,
+      "en": "There's enough of it to keep the planet a decent temperature.",
+      "zh": "足够保持地球的温度",
+      "w": [272.36,272.7,272.7,272.88,272.88,273.12,273.12,273.24,273.24,273.38,273.38,273.54,273.54,273.72,273.72,274.24,274.24,274.54,274.54,274.78,274.78,275.22]
+    },
+    {
+      "i": 39,
+      "start": 275.22,
+      "end": 277.9,
+      "en": "And then that's one step closer to finding life.",
+      "zh": "然后,这是接近 寻找生命的一步。",
+      "w": [275.22,276.04,276.04,276.14,276.14,276.4,276.4,276.54,276.54,276.84,276.84,277.1,277.1,277.36,277.36,277.6,277.6,277.9]
+    },
+    {
+      "i": 40,
+      "start": 278.12,
+      "end": 283.26,
+      "en": "Caroline guesses that scientists will focus on the planet’s temperature and whether it could support life.",
+      "zh": "Caroline猜测科学家会关注地球的温度 以及它能否维系生命。",
+      "w": [278.12,278.4,278.4,278.84,278.84,279.24,279.24,279.4,279.4,279.96,279.96,280.28,280.28,280.58,280.58,280.66,280.66,281.08,281.08,281.4,281.4,281.94,281.94,282.12,282.12,282.4,282.4,282.56,282.56,282.86,282.86,283.26]
+    },
+    {
+      "i": 41,
+      "start": 283.86,
+      "end": 288.14,
+      "en": "She uses the expression fingers crossed to express hope for a positive outcome.",
+      "zh": "她用跨过表达的手指来表达对一个积极结果的希望。",
+      "w": [283.86,284.0,284.0,284.28,284.28,284.54,284.54,284.9,284.9,285.58,285.58,285.92,285.92,286.44,286.44,286.8,286.8,287.12,287.12,287.34,287.34,287.4,287.4,287.76,287.76,288.14]
+    },
+    {
+      "i": 42,
+      "start": 288.74,
+      "end": 293.18,
+      "en": "Yes. We often make the physical gesture of crossing our fingers for good luck.",
+      "zh": "是的,我们经常做身体上的动作 跨越我们的手指来祝好运",
+      "w": [288.74,289.16,289.18,289.46,289.46,289.62,289.62,289.9,289.9,290.08,290.08,290.4,290.4,290.9,290.9,291.18,291.18,291.46,291.46,292.0,292.0,292.44,292.44,292.74,292.74,292.9,292.9,293.18]
+    },
+    {
+      "i": 43,
+      "start": 293.54,
+      "end": 296.66,
+      "en": "We do. That reminds me Neil, the answer to your question!",
+      "zh": "这让我想起尼尔 你问题的答案!",
+      "w": [293.54,293.74,293.74,294.02,294.48,294.58,294.58,294.78,294.78,295.36,295.36,295.41,295.66,295.71,295.68,295.84,295.84,296.12,296.12,296.3,296.3,296.66]
+    },
+    {
+      "i": 44,
+      "start": 297.42,
+      "end": 298.72,
+      "en": "Fingers crossed that I answered correctly.",
+      "zh": "手指交叉,我答对了。",
+      "w": [297.42,297.47,297.42,297.8,297.8,298.06,298.06,298.2,298.2,298.38,298.38,298.72]
+    },
+    {
+      "i": 45,
+      "start": 298.72,
+      "end": 309.82,
+      "en": "I see what you've done there, Becca. Yes, I asked you how long it would take to drive to the Sun at 100km an hour, and you answered c) 1,700 years.",
+      "zh": "是的,我问你要多久才能以每小时100公里的速度开车去太阳,你回答说,c) 1700年。",
+      "w": [298.72,299.56,299.56,299.7,299.7,299.82,299.82,299.94,299.94,300.12,300.12,300.38,300.38,301.2,301.2,301.5,301.58,301.9,301.9,302.22,302.22,302.38,302.38,302.58,302.58,302.88,302.88,303.12,303.12,303.24,303.24,303.48,303.48,303.72,303.72,304.06,304.06,304.38,304.38,304.52,304.52,304.84,304.84,305.32,305.32,305.96,305.96,306.4,306.4,306.64,306.64,306.9,306.9,307.1,307.1,307.38,307.38,307.8,309.18,309.82]
+    },
+    {
+      "i": 46,
+      "start": 310.32,
+      "end": 315.82,
+      "en": "Well, the Sun is very far away, but the answer was b) only 170 years.",
+      "zh": "太阳离我们很远 但答案是(b)只有170年",
+      "w": [310.32,310.68,311.04,311.14,311.14,311.32,311.32,311.48,311.48,311.84,311.84,312.08,312.08,312.38,312.9,312.95,312.94,313.06,313.06,313.2,313.2,313.58,313.58,313.82,314.2,314.5,315.04,315.82]
+    },
+    {
+      "i": 47,
+      "start": 316.2,
+      "end": 318.62,
+      "en": "Oh well, that’s still longer than my lifetime!",
+      "zh": "这比我的一生还长!",
+      "w": [316.2,316.4,316.4,316.74,317.2,317.5,317.5,317.66,317.66,317.9,317.9,318.1,318.1,318.3,318.3,318.62]
+    },
+    {
+      "i": 48,
+      "start": 319.42,
+      "end": 328.06,
+      "en": "Now let’s have a recap of the language we've learnt in this episode, starting with habitable, which describes a place or habitat that is suitable for something to live.",
+      "zh": "现在让我们回顾一下我们在这集中所学会的语言, 首先是可居住性, 它描述了适合居住的地方或栖息地。",
+      "w": [319.42,319.68,319.68,319.96,319.96,320.06,320.06,320.18,320.18,320.42,320.42,320.72,320.72,320.84,320.84,321.1,321.1,321.46,321.46,321.6,321.6,321.78,321.78,321.96,321.96,322.3,322.3,323.04,323.04,323.44,323.44,323.96,324.54,324.74,324.74,325.0,325.0,325.48,325.48,325.72,325.72,325.98,325.98,326.3,326.3,326.64,326.64,326.76,326.76,326.96,326.96,327.42,327.42,327.64,327.64,327.9,327.9,328.06]
+    },
+    {
+      "i": 49,
+      "start": 328.06,
+      "end": 330.84,
+      "en": "A zone is an area with a particular feature.",
+      "zh": "区域是一个具有特定特征的区域。",
+      "w": [328.06,328.64,328.64,328.96,328.96,329.18,329.18,329.3,329.3,329.58,329.58,329.88,329.88,329.96,329.96,330.28,330.28,330.84]
+    },
+    {
+      "i": 50,
+      "start": 331.34,
+      "end": 335.18,
+      "en": "Potential describes possibly having qualities or abilities to do something.",
+      "zh": "潜力说明,可能具有采取行动的素质或能力。",
+      "w": [331.34,331.6,331.6,332.06,332.06,332.11,332.06,332.66,332.94,333.58,333.58,333.94,333.94,334.32,334.32,334.76,334.76,334.9,334.9,335.18]
+    },
+    {
+      "i": 51,
+      "start": 335.86,
+      "end": 340.38,
+      "en": "The phrasal verb rule out means to dismiss the possibility or idea of something.",
+      "zh": "语句动词排除 意味着排除 可能性或想法的东西。",
+      "w": [335.86,335.98,335.98,336.34,336.34,336.56,336.56,336.9,336.9,337.2,337.2,337.5,337.5,337.78,337.78,338.16,338.16,338.56,338.56,339.0,339.0,339.42,339.42,339.74,339.74,340.0,340.0,340.38]
+    },
+    {
+      "i": 52,
+      "start": 341.04,
+      "end": 348.96,
+      "en": "We also had dominated. If something is dominated by something else, it is controlled by it or is the most significant element of it.",
+      "zh": "我们也曾统治过。如果某种东西被其他东西主宰,它就会被它控制,或者是其中最重要的元素。",
+      "w": [341.04,341.12,341.12,341.32,341.32,341.78,341.78,342.42,343.38,343.46,343.46,343.76,343.76,344.02,344.02,344.32,344.32,344.84,344.84,345.12,345.12,345.46,345.82,345.87,345.86,345.94,345.94,346.26,346.26,346.62,346.62,346.82,346.82,347.1,347.1,347.24,347.24,347.34,347.34,347.54,347.54,347.84,347.84,348.46,348.46,348.8,348.8,348.96]
+    },
+    {
+      "i": 53,
+      "start": 350.0,
+      "end": 354.78,
+      "en": "And finally, the expression fingers crossed is used to wish for hope or luck.",
+      "zh": "最后, 表达的手指交叉 用来希望 希望或运气。",
+      "w": [350.0,350.2,350.2,350.52,351.1,351.22,351.22,351.54,351.54,352.08,352.08,352.46,352.46,352.86,352.86,353.16,353.16,353.48,353.48,353.66,353.66,353.94,353.94,354.22,354.22,354.52,354.52,354.78]
+    },
+    {
+      "i": 54,
+      "start": 355.46,
+      "end": 362.08,
+      "en": "Once again, our six minutes are up, but head over to our website, bbclearningenglish.com, for a quiz and worksheet for this episode.",
+      "zh": "再一次,我们的六分钟已经到了, 但是去我们的网站,bbclearingenglish.com, 为这集的测验和工作单。",
+      "w": [355.46,355.51,355.46,355.76,355.92,355.98,355.98,356.14,356.14,356.42,356.42,356.64,356.64,356.76,357.12,357.32,357.32,357.48,357.48,357.68,357.68,357.88,357.88,358.02,358.02,358.34,359.2,359.68,359.68,360.16,360.16,360.38,360.38,360.46,360.46,360.7,360.7,360.94,360.94,361.46,361.46,361.68,361.68,361.82,361.82,362.08]
+    },
+    {
+      "i": 55,
+      "start": 362.78,
+      "end": 364.84,
+      "en": "See you soon. Goodbye for now. Bye!",
+      "zh": "再见,再见,再见",
+      "w": [362.78,362.92,362.92,363.08,363.08,363.3,363.64,363.74,363.74,364.0,364.0,364.18,364.58,364.84]
+    }
+  ],
+  "wSource": "asr"
+}

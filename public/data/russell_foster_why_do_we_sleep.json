@@ -1,1 +1,1524 @@
-{"slug":"russell_foster_why_do_we_sleep","title":"Why do we sleep?","speaker":"Russell Foster","category":"ted","school":null,"year":null,"duration":1306.68,"cover":"/covers/russell_foster_why_do_we_sleep.jpg","views":6504999,"sourceUrl":"https://www.youtube.com/watch?v=LWULB9Aoopc","audioUrls":{"standard":"https://daily-listening-media.if5v.workers.dev/v1/standard/russell_foster_why_do_we_sleep.m4a","high":"https://daily-listening-media.if5v.workers.dev/v1/high/russell_foster_why_do_we_sleep.m4a"},"zhSource":"mixed","sentences":[{"i":0,"start":12.47,"end":19.76,"en":"What I'd like to do today is talk about one of my favorite subjects, and that is the neuroscience of sleep.","zh":"今天我想谈谈 我最喜欢的话题之一—— 睡眠的神经科学。有一种"},{"i":1,"start":20.54,"end":27.17,"en":"Now, there is a sound -- (Alarm clock) Ah, it worked!","zh":"我最喜欢的话题之一—— 睡眠的神经科学。有一种 声音，一种令人绝望的声音，"},{"i":2,"start":27.19,"end":33.13,"en":"A sound that is desperately familiar to most of us, and of course it's the sound of the alarm clock.","zh":"睡眠的神经科学。有一种 声音，一种令人绝望的声音， 我们大多数人都很熟悉，那就是闹钟的声音。这种"},{"i":3,"start":33.16,"end":43.71,"en":"And what that truly ghastly, awful sound does is stop the single most important behavioral experience that we have, and that's sleep.","zh":"可怕的声音会打断 我们最重要的行为体验—— 睡眠。如果你是一个"},{"i":4,"start":44.7,"end":60.24,"en":"If you're an average sort of person, 36 percent of your life will be spent asleep, which means that if you live to 90, then 32 years will have been spent entirely asleep.","zh":"我们最重要的行为体验—— 睡眠。如果你是一个 普通人，你一生中36%的时间都在睡觉，这 意味着如果你活到90岁，那么你将有 32年的时间"},{"i":5,"start":61.59,"end":66.19,"en":"Now what that 32 years is telling us is that sleep at some level is important.","zh":"完全是在睡眠中度过的。这 32年告诉我们， 睡眠在某种程度上是重要的。"},{"i":6,"start":66.86,"end":69.81,"en":"And yet, for most of us, we don't give sleep a second thought.","zh":"睡眠在某种程度上是重要的。 然而，对我们大多数人来说，我们根本不会认真考虑睡眠，甚至把它 抛诸脑后，"},{"i":7,"start":69.84,"end":74.22,"en":"We throw it away. We really just don't think about sleep.","zh":"然而，对我们大多数人来说，我们根本不会认真考虑睡眠，甚至把它 抛诸脑后， 我们真的不会去想睡眠。"},{"i":8,"start":74.92,"end":81.72,"en":"And so what I'd like to do today is change your views, change your ideas and your thoughts about sleep.","zh":"我们真的不会去想睡眠。 所以，今天我想做的就是 改变你们对睡眠的看法和想法。"},{"i":9,"start":81.74,"end":86.55,"en":"And the journey that I want to take you on, we need to start by going back in time.","zh":"我想带你们踏上这段旅程，我们 需要回到过去，"},{"i":10,"start":88.71,"end":94.59,"en":"\"Enjoy the honey-heavy dew of slumber.\" Any ideas who said that?","zh":"需要回到过去， 享受睡眠的甜蜜和甜蜜。你们知道是谁说的吗？是莎士比亚的《 尤利乌斯·"},{"i":11,"start":96.64,"end":101.0,"en":"Shakespeare's Julius Caesar. Yes, let me give you a few more quotes.","zh":"享受睡眠的甜蜜和甜蜜。你们知道是谁说的吗？是莎士比亚的《 尤利乌斯· 凯撒》吗？ 是的，让我再举几个 例子。“哦，睡眠，哦，温柔的睡眠，"},{"i":12,"start":102.62,"end":107.92,"en":"\"O sleep, O gentle sleep, nature's soft nurse, how have I frighted thee?\"","zh":"凯撒》吗？ 是的，让我再举几个 例子。“哦，睡眠，哦，温柔的睡眠， 大自然的温柔护士，你多么令人疲惫啊！”——"},{"i":13,"start":107.94,"end":111.91,"en":"Shakespeare again, from -- I won't say it -- the Scottish play.","zh":"大自然的温柔护士，你多么令人疲惫啊！”—— 莎士比亚，出自《我不会说》；"},{"i":14,"start":111.94,"end":120.04,"en":"(Laughter) From the same time: \"Sleep is the golden chain that ties health and our bodies together.\"","zh":"莎士比亚，出自《我不会说》； 同时期的苏格兰戏剧《睡眠》；“睡眠是 连接健康和我们身体的金链”，——"},{"i":15,"start":120.06,"end":124.24,"en":"Extremely prophetic, by Thomas Dekker, another Elizabethan dramatist.","zh":"连接健康和我们身体的金链”，—— 另一位伊丽莎白时代剧作家托马斯·德克尔的预言性论述。但"},{"i":16,"start":124.64,"end":131.02,"en":"But if we jump forward 400 years, the tone about sleep changes somewhat.","zh":"另一位伊丽莎白时代剧作家托马斯·德克尔的预言性论述。但 如果我们快进400年，人们 对睡眠的看法就发生了变化。这是"},{"i":17,"start":131.04,"end":137.87,"en":"This is from Thomas Edison, from the beginning of the 20th century: \"Sleep is a criminal waste of time and a heritage from our cave days.\"","zh":"对睡眠的看法就发生了变化。这是 20世纪初托马斯·爱迪生的观点：睡眠是 浪费时间的罪恶，是我们"},{"i":18,"start":137.9,"end":150.6,"en":"Bang! (Laughter) And if we also jump into the 1980s, some of you may remember that Margaret Thatcher was reported to have said, \"Sleep is for wimps.\"","zh":"浪费时间的罪恶，是我们 穴居时代的遗物。砰！如果我们再跳到 20世纪80年代，你们有些人可能还记得，据 报道玛格丽特·撒切尔曾 说过“睡眠是懦夫的行为”。当然，还有那位"},{"i":19,"start":150.63,"end":157.89,"en":"And of course the infamous -- what was his name? -- the infamous Gordon Gekko from \"Wall Street\" said, \"Money never sleeps.\"","zh":"说过“睡眠是懦夫的行为”。当然，还有那位 臭名昭著的……他叫什么来着？ 华尔街的戈登·盖科 说过“金钱永不眠”。那么，"},{"i":20,"start":158.46,"end":161.12,"en":"What do we do in the 20th century about sleep?","zh":"说过“金钱永不眠”。那么， 20世纪我们是如何看待睡眠的呢？"},{"i":21,"start":161.14,"end":172.72,"en":"Well, of course, we use Thomas Edison's light bulb to invade the night, and we occupied the dark, and in the process of this occupation, we've treated sleep as an illness, almost.","zh":"20世纪我们是如何看待睡眠的呢？ 当然，我们用托马斯·爱迪生的 电灯泡照亮了黑夜，我们 占领了黑暗。在 这个过程中，我们几乎把睡眠当作了"},{"i":22,"start":172.74,"end":186.22,"en":"We've treated it as an enemy. At most now, I suppose, we tolerate the need for sleep, and at worst perhaps many of us think of sleep as an illness that needs some sort of a cure.","zh":"这个过程中，我们几乎把睡眠当作了 一种疾病。 我们曾经把睡眠视为 敌人，但现在我想我们大多数人都会 容忍睡眠的需求，最 糟糕的是，我们中的许多人甚至把睡眠看作 一种需要"},{"i":23,"start":186.25,"end":189.56,"en":"And our ignorance about sleep is really quite profound.","zh":"一种需要 治疗的疾病。我们对 睡眠的无知真是根深蒂固。"},{"i":24,"start":190.31,"end":193.64,"en":"Why is it? Why do we abandon sleep in our thoughts?","zh":"睡眠的无知真是根深蒂固。 为什么我们会如此轻视睡眠呢？"},{"i":25,"start":193.67,"end":197.57,"en":"Well, it's because you don't do anything much while you're asleep, it seems.","zh":"为什么我们会如此轻视睡眠呢？ 因为我们在 睡梦中似乎什么都不做，"},{"i":26,"start":198.01,"end":202.79,"en":"You don't eat. You don't drink. And you don't have sex.","zh":"睡梦中似乎什么都不做， 不吃不喝，也不做爱——至少"},{"i":27,"start":202.81,"end":207.23,"en":"Well, most of us anyway. And so, therefore it's -- Sorry.","zh":"不吃不喝，也不做爱——至少 我们大多数人是这样。 所以，我们认为睡眠完全是在"},{"i":28,"start":208.03,"end":211.66,"en":"It's a complete waste of time, right? Wrong.","zh":"所以，我们认为睡眠完全是在 浪费时间。"},{"i":29,"start":211.69,"end":220.13,"en":"Actually, sleep is an incredibly important part of our biology, and neuroscientists are beginning to explain why it's so very important.","zh":"浪费时间。 其实，睡眠是 我们生物学中极其重要的一部分，神经 科学家正在开始解释"},{"i":30,"start":220.55,"end":226.77,"en":"So let's move to the brain. Now, here we have a brain.","zh":"它为何如此重要。 现在让我们来看看大脑。这里有一个大脑模型，"},{"i":31,"start":228.14,"end":239.74,"en":"This is donated by a social scientist, and they said they didn't know what it was or indeed, how to use it, so -- (Laughter) Sorry.","zh":"现在让我们来看看大脑。这里有一个大脑模型， 是一位社会科学家捐赠的。 他说他们不知道这是什么，也不知道该 如何使用它。 （掌声）"},{"i":32,"start":240.71,"end":244.01,"en":"So I borrowed it. I don't think they noticed. OK.","zh":"（掌声） 所以我借用了它，我想他们没有 注意到。"},{"i":33,"start":244.03,"end":251.56,"en":"(Laughter) The point I'm trying to make is that when you're asleep, this thing doesn't shut down.","zh":"所以我借用了它，我想他们没有 注意到。 我想表达的观点是， 当你睡觉时，大脑并 不会停止运转。事实上，"},{"i":34,"start":251.58,"end":256.66,"en":"In fact, some areas of the brain are actually more active during the sleep state than during the wake state.","zh":"不会停止运转。事实上， 大脑的某些区域在 睡眠状态下比清醒时更加活跃。 在清醒状态下，"},{"i":35,"start":257.44,"end":265.18,"en":"The other thing that's really important about sleep is that it doesn't arise from a single structure within the brain, but is to some extent a network property.","zh":"在清醒状态下， 睡眠的另一个重要之处在于， 它并非源自 大脑中的单一结构，而是 一种网络属性。如果我们把"},{"i":36,"start":265.2,"end":277.41,"en":"If we flip the brain on its back -- I love this little bit of spinal cord here -- this bit here is the hypothalamus, and right under there is a whole raft of interesting structures,","zh":"一种网络属性。如果我们把 大脑翻过来，我特别喜欢这里的 一小段脊髓， 这里是下丘脑，它下方 是一系列有趣的"},{"i":37,"start":277.44,"end":291.26,"en":"not least the biological clock. The biological clock tells us when it's good to be up, when it's good to be asleep, and what that structure does is interact with a whole raft of other areas within the hypothalamus, the lateral hypothalamus, the ventrolateral preoptic nuclei.","zh":"是一系列有趣的 结构，其中最重要的就是生物钟。 生物钟告诉我们何时应该 醒来，何时应该 入睡。生物钟的功能是 与下丘脑内的其他许多结构相互作用，例如 外侧下丘脑、腹外 侧视前核等等。它们共同"},{"i":38,"start":291.29,"end":295.86,"en":"All of those combine, and they send projections down to the brain stem here.","zh":"外侧下丘脑、腹外 侧视前核等等。它们共同 向下投射到 脑干，然后脑干再"},{"i":39,"start":295.89,"end":308.03,"en":"The brain stem then projects forward and bathes the cortex, this wonderfully wrinkly bit over here, with neurotransmitters that keep us awake and essentially provide us with our consciousness.","zh":"向下投射到 脑干，然后脑干再 向前投射，将神经递质输送到大脑皮层—— 这片奇妙的褶皱区域——这些 神经递质使我们保持 清醒，并赋予我们 意识。因此，睡眠源于大脑内一系列"},{"i":40,"start":308.05,"end":317.64,"en":"So sleep arises from a whole raft of different interactions within the brain, and essentially, sleep is turned on and off as a result of a range of interactions in here.","zh":"清醒，并赋予我们 意识。因此，睡眠源于大脑内一系列 不同的相互作用， 睡眠的 开启和关闭本质上是由大脑内的 各种相互作用决定的。好了，"},{"i":41,"start":318.04,"end":328.16,"en":"OK. So where have we got to? We've said that sleep is complicated and it takes 32 years of our life.","zh":"各种相互作用决定的。好了， 我们说睡眠是一个 复杂的过程。 睡眠会占用我们生命中的32年， 但我还没有解释"},{"i":42,"start":328.19,"end":331.23,"en":"But what I haven't explained is what sleep is about.","zh":"复杂的过程。 睡眠会占用我们生命中的32年， 但我还没有解释 睡眠的本质，也就是我们为什么要"},{"i":43,"start":331.25,"end":337.69,"en":"So why do we sleep? And it won't surprise any of you that, of course, as scientists, we don't have a consensus.","zh":"但我还没有解释 睡眠的本质，也就是我们为什么要 睡觉。当然， 科学家们对此并没有达成 共识，"},{"i":44,"start":337.71,"end":342.99,"en":"There are dozens of different ideas about why we sleep, and I'm going to outline three of those.","zh":"科学家们对此并没有达成 共识， 关于睡眠的原因有几十种不同的说法，这一点大家应该都不会感到惊讶。 我将概述其中的三种。"},{"i":45,"start":343.52,"end":348.09,"en":"The first is sort of the restoration idea, and it's somewhat intuitive.","zh":"我将概述其中的三种。 第一种是修复 理论，这在某种程度上是直观的。"},{"i":46,"start":348.11,"end":354.14,"en":"Essentially, all the stuff we've burned up during the day, we restore, we replace, we rebuild during the night.","zh":"理论，这在某种程度上是直观的。 本质上，我们在白天消耗的所有能量都会 在夜间得到修复、补充和重建。事实上，这种"},{"i":47,"start":354.16,"end":359.81,"en":"And indeed, as an explanation, it goes back to Aristotle, so that's what -- 2,300 years ago.","zh":"在夜间得到修复、补充和重建。事实上，这种 解释可以 追溯到亚里士多德，也就是 2300年前的那个人。这个理论曾经流行过，也曾一度过时，但现在又重新流行起来，"},{"i":48,"start":359.84,"end":374.31,"en":"It's gone in and out of fashion. It's fashionable at the moment because what's been shown is that within the brain, a whole raft of genes have been shown to be turned on only during sleep, and those genes are associated with restoration and metabolic pathways.","zh":"追溯到亚里士多德，也就是 2300年前的那个人。这个理论曾经流行过，也曾一度过时，但现在又重新流行起来， 因为研究表明， 大脑中有很多基因只 在睡眠期间才会被激活，而这些基因 与修复和 代谢途径有关。因此，"},{"i":49,"start":374.33,"end":377.86,"en":"So there's good evidence for the whole restoration hypothesis.","zh":"与修复和 代谢途径有关。因此， 修复 假说得到了充分的证据支持。那么能量"},{"i":50,"start":378.44,"end":383.22,"en":"What about energy conservation? Again, perhaps intuitive.","zh":"假说得到了充分的证据支持。那么能量 守恒理论呢？这或许也是直观的，"},{"i":51,"start":383.76,"end":389.93,"en":"You essentially sleep to save calories. Now, when you do the sums, though, it doesn't really pan out.","zh":"守恒理论呢？这或许也是直观的， 睡眠本质上是为了节省卡路里。但是，如果 你比较一下"},{"i":52,"start":389.96,"end":402.58,"en":"If you compare an individual who has slept at night, or stayed awake and hasn't moved very much, the energy saving of sleeping is about 110 calories a night.","zh":"你比较一下 晚上睡觉的人和 保持清醒的人，就会发现这种说法并不完全正确。 睡眠节省能量的说法并没有太大改变， 现在每晚大约节省110卡路里，这"},{"i":53,"start":402.6,"end":405.22,"en":"Now, that's the equivalent of a hot dog bun.","zh":"现在每晚大约节省110卡路里，这 相当于一个热狗面包的热量。我觉得对于"},{"i":54,"start":405.93,"end":414.07,"en":"Now, I would say that a hot dog bun is kind of a meager return for such a complicated and demanding behavior as sleep.","zh":"相当于一个热狗面包的热量。我觉得对于 睡眠这种复杂且耗费能量的行为来说，这相当于一个热狗面包的热量简直是巨大的回报。所以我不太"},{"i":55,"start":414.45,"end":417.68,"en":"So I'm less convinced by the energy conservation idea.","zh":"睡眠这种复杂且耗费能量的行为来说，这相当于一个热狗面包的热量简直是巨大的回报。所以我不太 认同能量节约的 说法。但我比较感兴趣的第三个观点"},{"i":56,"start":418.4,"end":424.08,"en":"But the third idea I'm quite attracted to, which is brain processing and memory consolidation.","zh":"认同能量节约的 说法。但我比较感兴趣的第三个观点 是大脑处理 和记忆巩固。我们知道，"},{"i":57,"start":424.1,"end":432.38,"en":"What we know is that, if after you've tried to learn a task, and you sleep-deprive individuals, the ability to learn that task is smashed.","zh":"和记忆巩固。我们知道， 如果你在尝试学习一项 任务后，睡眠不足的人 学习这项任务的能力会受到严重影响，"},{"i":58,"start":432.4,"end":438.52,"en":"It's really hugely attenuated. So sleep and memory consolidation is also very important.","zh":"学习这项任务的能力会受到严重影响， 大幅 下降。所以睡眠和记忆 巩固也非常重要。"},{"i":59,"start":438.55,"end":442.64,"en":"However, it's not just the laying down of memory and recalling it.","zh":"巩固也非常重要。 然而，睡眠不仅仅是储存 和回忆记忆。"},{"i":60,"start":442.66,"end":452.0,"en":"What's turned out to be really exciting is that our ability to come up with novel solutions to complex problems is hugely enhanced by a night of sleep.","zh":"和回忆记忆。 真正令人兴奋的是，充足的睡眠可以 极大地增强我们提出解决复杂问题的新颖方案的能力。 事实上，据"},{"i":61,"start":452.03,"end":455.43,"en":"In fact, it's been estimated to give us a threefold advantage.","zh":"事实上，据 估计，夜间睡眠可以给我们带来三倍的 优势，并增强"},{"i":62,"start":455.46,"end":458.1,"en":"Sleeping at night enhances our creativity.","zh":"估计，夜间睡眠可以给我们带来三倍的 优势，并增强 我们的创造力。这似乎是"},{"i":63,"start":458.12,"end":471.64,"en":"And what seems to be going on is that, in the brain, those neural connections that are important, those synaptic connections that are important, are linked and strengthened, while those that are less important tend to fade away and be less important.","zh":"我们的创造力。这似乎是 因为在大脑中，那些 重要的神经连接， 那些重要的突触连接，在睡眠期间会得到 连接和加强。 那些不太重要的事情往往会逐渐 淡出人们的视线，变得不那么"},{"i":64,"start":472.22,"end":483.21,"en":"OK. So we've had three explanations for why we might sleep, and I think the important thing to realize is that the details will vary, and it's probable we sleep for multiple different reasons.","zh":"淡出人们的视线，变得不那么 重要。好的，我们已经讨论了三种 我们可能睡觉的原因， 我认为重要的是要意识到，具体 情况因人而异，我们 睡觉的原因可能有很多种，"},{"i":65,"start":483.24,"end":491.02,"en":"But sleep is not an indulgence. It's not some sort of thing that we can take on board rather casually.","zh":"睡觉的原因可能有很多种， 但睡眠不是一种享受， 也不是我们可以随意对待的事情。 我记得有人把"},{"i":66,"start":491.04,"end":497.93,"en":"I think that sleep was once likened to an upgrade from economy to business class, you know, the equivalent of.","zh":"我记得有人把 睡觉比作 从经济舱升到商务舱，你知道，这 甚至比不上从"},{"i":67,"start":497.95,"end":501.35,"en":"It's not even an upgrade from economy to first class.","zh":"从经济舱升到商务舱，你知道，这 甚至比不上从 经济舱升到 头等舱。关键是要"},{"i":68,"start":501.75,"end":508.24,"en":"The critical thing to realize is that if you don't sleep, you don't fly.","zh":"经济舱升到 头等舱。关键是要 明白，如果你不睡觉，你就 无法飞行，你根本到不了"},{"i":69,"start":508.26,"end":516.59,"en":"Essentially, you never get there. And what's extraordinary about much of our society these days is that we are desperately sleep-deprived.","zh":"无法飞行，你根本到不了 目的地。 如今，我们社会中很多人 严重睡眠不足，这很不寻常。所以"},{"i":70,"start":516.62,"end":524.3,"en":"So let's now look at sleep deprivation. Huge sectors of society are sleep-deprived, and let's look at our sleep-o-meter.","zh":"严重睡眠不足，这很不寻常。所以 现在让我们来看看睡眠不足的问题。 社会上很大一部分人都睡眠不足， 让我们来看看我们的睡眠情况。20"},{"i":71,"start":524.76,"end":530.71,"en":"So in the 1950s, good data suggests that most of us were getting around eight hours of sleep a night.","zh":"让我们来看看我们的睡眠情况。20 世纪50年代的可靠数据显示， 我们大多数人 每晚大约睡8个小时。而"},{"i":72,"start":531.49,"end":538.84,"en":"Nowadays, we sleep one and a half to two hours less every night, so we're in the six-and-a-half-hours every-night league.","zh":"每晚大约睡8个小时。而 现在，我们每晚的睡眠时间比以前少一个半到两个 小时，也就是大约 6个半小时。 青少年每晚的睡眠时间比晚上少得多，情况"},{"i":73,"start":539.69,"end":549.27,"en":"For teenagers, it's worse, much worse. They need nine hours for full brain performance, and many of them, on a school night, are only getting five hours of sleep.","zh":"6个半小时。 青少年每晚的睡眠时间比晚上少得多，情况 更糟。 他们需要九个小时的睡眠才能充分发挥 大脑功能，但许多青少年在 上学日晚上只能睡五个小时，"},{"i":74,"start":549.29,"end":562.45,"en":"It's simply not enough. If we think about other sectors of society -- the aged; if you are aged, then your ability to sleep in a single block is somewhat disrupted, and many sleep, again, less than five hours a night.","zh":"上学日晚上只能睡五个小时， 这远远不够。如果我们 考虑社会其他群体，比如 老年人，他们的睡眠能力会 受到影响，许多人的睡眠时间也少于"},{"i":75,"start":562.79,"end":572.01,"en":"Shift work. Shift work is extraordinary, perhaps 20 percent of the working population, and the body clock does not shift to the demands of working at night.","zh":"受到影响，许多人的睡眠时间也少于 五个小时。夜班工作非常 普遍，可能占 劳动人口的20%。他们的生物钟 不会随着夜间工作的需求而改变，它仍然和"},{"i":76,"start":572.03,"end":575.2,"en":"It's locked onto the same light-dark cycle as the rest of us.","zh":"不会随着夜间工作的需求而改变，它仍然和"},{"i":77,"start":575.22,"end":583.08,"en":"So when the poor old shift worker is going home to try and sleep during the day, desperately tired, the body clock is saying, \"Wake up. This is the time to be awake.\"","zh":"我们其他人一样，遵循着同样的昼夜循环。所以，当这些可怜的夜班工人 回家后，白天筋疲力尽地试图睡觉时，他们的 生物钟却在发出“ 醒来，现在是清醒的时候了”的信号。"},{"i":78,"start":583.1,"end":589.14,"en":"So the quality of sleep that you get as a night shift worker is usually very poor, again in that sort of five-hour region.","zh":"醒来，现在是清醒的时候了”的信号。 因此， 夜班工作者的睡眠质量通常 很差，睡眠时间也只有五个小时左右。当然，还有"},{"i":79,"start":589.56,"end":593.08,"en":"And then, of course, tens of millions of people suffer from jet lag.","zh":"很差，睡眠时间也只有五个小时左右。当然，还有 数千 万人遭受时差的困扰。那么，"},{"i":80,"start":593.1,"end":598.34,"en":"So who here has jet lag? Well, my goodness gracious.","zh":"万人遭受时差的困扰。那么， 在座各位谁有时差反应呢？我的天哪，真是太"},{"i":81,"start":598.37,"end":603.87,"en":"Well, thank you very much indeed for not falling asleep, because that's what your brain is craving.","zh":"在座各位谁有时差反应呢？我的天哪，真是太 感谢你们 没有睡着了，因为这正是 你们的大脑渴望的。"},{"i":82,"start":603.89,"end":613.21,"en":"One of the things that the brain does is indulge in micro-sleeps, this involuntary falling asleep, and you have essentially no control over it.","zh":"你们的大脑渴望的。 大脑会进行 微睡眠，也就是 无意识地打瞌睡，你 基本上无法控制它。"},{"i":83,"start":613.24,"end":618.0,"en":"Now, micro-sleeps can be sort of somewhat embarrassing, but they can also be deadly.","zh":"基本上无法控制它。 微睡眠可能有点 尴尬，但也可能致命。"},{"i":84,"start":618.02,"end":633.39,"en":"It's been estimated that 31 percent of drivers will fall asleep at the wheel at least once in their life, and in the US, the statistics are pretty good: 100,000 accidents on the freeway have been associated with tiredness,","zh":"尴尬，但也可能致命。 据估计，31%的司机 一生中至少会打瞌睡一次。在美国， 统计数据相当惊人： 高速公路上的十万起事故都 与疲劳、"},{"i":85,"start":633.42,"end":636.58,"en":"loss of vigilance, and falling asleep -- a hundred thousand a year.","zh":"与疲劳、 注意力不集中和 打瞌睡有关。数十万年来，这种情况屡见不鲜。更可怕的是，"},{"i":86,"start":636.6,"end":647.55,"en":"It's extraordinary. At another level of terror, we dip into the tragic accidents at Chernobyl and indeed the space shuttle Challenger, which was so tragically lost.","zh":"打瞌睡有关。数十万年来，这种情况屡见不鲜。更可怕的是， 我们来看看 切尔诺贝利核事故和 挑战者号航天飞机的悲剧。 在"},{"i":87,"start":647.58,"end":660.24,"en":"And in the investigations that followed those disasters, poor judgment as a result of extended shift work and loss of vigilance and tiredness was attributed to a big chunk of those disasters.","zh":"挑战者号航天飞机的悲剧。 在 这些灾难之后的调查中， 长时间轮班工作导致的判断力下降、 注意力不集中和疲劳被认为是造成 这些"},{"i":88,"start":662.41,"end":672.89,"en":"When you're tired and you lack sleep, you have poor memory, you have poor creativity, you have increased impulsiveness, and you have overall poor judgment.","zh":"灾难的主要原因。所以，当你疲惫不堪、 睡眠不足时，你的记忆力会下降， 创造力会降低， 冲动性会增加，整体"},{"i":89,"start":672.91,"end":676.0,"en":"But my friends, it's so much worse than that.","zh":"冲动性会增加，整体 判断力也会下降。但朋友们，情况 远比这糟糕得多。"},{"i":90,"start":676.02,"end":683.02,"en":"(Laughter) If you are a tired brain, the brain is craving things to wake it up.","zh":"判断力也会下降。但朋友们，情况 远比这糟糕得多。 如果你的大脑疲惫不堪，它会 渴望一些东西来弥补这种缺失。 在西方世界的大部分地区，兴奋剂和"},{"i":91,"start":683.04,"end":690.5,"en":"So drugs, stimulants. Caffeine represents the stimulant of choice across much of the Western world.","zh":"渴望一些东西来弥补这种缺失。 在西方世界的大部分地区，兴奋剂和 咖啡因是人们 首选的兴奋剂。"},{"i":92,"start":690.53,"end":695.59,"en":"Much of the day is fueled by caffeine, and if you're a really naughty tired brain, nicotine.","zh":"首选的兴奋剂。 一天中的大部分时间都靠 咖啡因提神。如果你真的“放纵”了， 大脑疲惫，那就用尼古丁来提神。当然，"},{"i":93,"start":695.61,"end":704.96,"en":"Of course, you're fueling the waking state with these stimulants, and then, of course, it gets to 11 o'clock at night, and the brain says to itself, \"Actually, I need to be asleep fairly shortly.","zh":"大脑疲惫，那就用尼古丁来提神。当然， 你用这些兴奋剂来维持清醒状态。 然后，到了 晚上十一点， 大脑会告诉自己：“啊， 其实我很快就需要睡觉了。” 那么，"},{"i":94,"start":704.99,"end":707.86,"en":"What do we do about that when I'm feeling completely wired?\"","zh":"其实我很快就需要睡觉了。” 那么， 当 我感觉精神亢奋的时候该怎么办呢？当然，你会"},{"i":95,"start":707.88,"end":710.17,"en":"Well, of course, you then resort to alcohol.","zh":"我感觉精神亢奋的时候该怎么办呢？当然，你会 求助于酒精。"},{"i":96,"start":710.76,"end":716.77,"en":"Now alcohol, short-term, you know, once or twice, to use to mildly sedate you, can be very useful.","zh":"求助于酒精。 短期内，比如一两次，酒精 可以起到轻微的镇静作用，"},{"i":97,"start":716.79,"end":719.65,"en":"It can actually ease the sleep transition.","zh":"可以起到轻微的镇静作用， 确实有助于 入睡。但你必须清楚地"},{"i":98,"start":719.67,"end":724.92,"en":"But what you must be so aware of is that alcohol doesn't provide sleep.","zh":"确实有助于 入睡。但你必须清楚地 认识到，酒精并不能提供 睡眠，它只是模拟睡眠，它"},{"i":99,"start":724.95,"end":727.64,"en":"A biological mimic for sleep, it sedates you.","zh":"认识到，酒精并不能提供 睡眠，它只是模拟睡眠，它"},{"i":100,"start":727.67,"end":733.99,"en":"So it actually harms some of the neural processing that's going on during memory consolidation and memory recall.","zh":"睡眠，它只是模拟睡眠，它"},{"i":101,"start":734.01,"end":741.48,"en":"So it's a short-term acute measure, but for goodness sake, don't become addicted to alcohol as a way of getting to sleep every night.","zh":"所以这是一个短期的急性量度, 但看在上帝的份上, 不要沉迷于酒精 作为一种方式得到睡眠 每天晚上。"},{"i":102,"start":742.1,"end":745.62,"en":"Another connection between loss of sleep is weight gain.","zh":"会让你昏昏欲睡，实际上会损害记忆巩固和回忆过程中的一些神经处理过程。所以，这只是一种短期的急性措施。但千万不要养成每晚靠酒精入睡的习惯。睡眠不足与体重增加之间还有另一个联系。 如果你"},{"i":103,"start":745.64,"end":753.11,"en":"If you sleep around about five hours or less every night, then you have a 50 percent likelihood of being obese.","zh":"会让你昏昏欲睡，实际上会损害记忆巩固和回忆过程中的一些神经处理过程。所以，这只是一种短期的急性措施。但千万不要养成每晚靠酒精入睡的习惯。睡眠不足与体重增加之间还有另一个联系。 如果你 每晚睡眠时间少于或等于五个小时，那么你 肥胖的几率会达到50%。这其中有"},{"i":104,"start":753.13,"end":760.42,"en":"What's the connection here? Well, sleep loss seems to give rise to the release of the hormone ghrelin, the hunger hormone.","zh":"肥胖的几率会达到50%。这其中有 什么联系呢？睡眠 不足似乎会导致饥饿 激素——胃饥饿素的释放。胃饥饿"},{"i":105,"start":760.45,"end":763.03,"en":"Ghrelin is released. It gets to the brain.","zh":"激素——胃饥饿素的释放。胃饥饿 素释放后会到达"},{"i":106,"start":763.06,"end":769.47,"en":"The brain says, \"I need carbohydrates,\" and what it does is seek out carbohydrates and particularly sugars.","zh":"素释放后会到达 大脑，大脑会发出需要 碳水化合物的信号，于是大脑会寻找 隐藏的碳水化合物，尤其是糖类。这就是"},{"i":107,"start":769.49,"end":775.78,"en":"So there's a link between tiredness and the metabolic predisposition for weight gain: stress.","zh":"隐藏的碳水化合物，尤其是糖类。这就是 疲劳与体重增加的代谢倾向之间的联系。压力过大的 人承受着巨大的压力，"},{"i":108,"start":775.8,"end":786.03,"en":"Tired people are massively stressed. And one of the things of stress, of course, is loss of memory, which is what I sort of just then had a little lapse of.","zh":"人承受着巨大的压力， 而压力带来的后果之一 当然是记忆力减退， 我刚才也稍微提到了这一点。 但压力的影响远不止"},{"i":109,"start":787.14,"end":796.09,"en":"But stress is so much more. So, if you're acutely stressed, not a great problem, but it's sustained stress associated with sleep loss that's the problem.","zh":"但压力的影响远不止 于此。如果你只是急性 压力，那问题不大；但 持续的压力加上睡眠 不足才是真正的问题所在。"},{"i":110,"start":796.12,"end":800.2,"en":"Sustained stress leads to suppressed immunity.","zh":"不足才是真正的问题所在。 持续的压力会导致 免疫力下降，因此疲劳的人更容易"},{"i":111,"start":800.22,"end":808.88,"en":"And so, tired people tend to have higher rates of overall infection, and there's some very good studies showing that shift workers, for example, have higher rates of cancer.","zh":"持续的压力会导致 免疫力下降，因此疲劳的人更容易 感染疾病。一些 研究表明，例如，轮班工作者 患癌症的几率更高。"},{"i":112,"start":808.91,"end":812.73,"en":"Increased levels of stress throw glucose into the circulation.","zh":"患癌症的几率更高。 压力通过 葡萄糖进入血液循环，葡萄糖"},{"i":113,"start":812.76,"end":819.27,"en":"Glucose becomes a dominant part of the vasculature and essentially you become glucose intolerant.","zh":"葡萄糖进入血液循环，葡萄糖 成为血管系统中的主要成分， 最终导致 葡萄糖耐受不良，"},{"i":114,"start":819.29,"end":827.49,"en":"Therefore, diabetes 2. Stress increases cardiovascular disease as a result of raising blood pressure.","zh":"葡萄糖耐受不良， 从而引发糖尿病。 睡眠不足会导致血压升高， 从而增加心血管疾病的风险。 所以，"},{"i":115,"start":827.51,"end":837.59,"en":"So there's a whole raft of things associated with sleep loss that are more than just a mildly impaired brain, which is where I think most people think that sleep loss resides.","zh":"所以， 睡眠不足带来的问题远 不止是轻微的脑功能障碍——而 大多数人认为 睡眠不足仅仅局限于此。现在，我们不妨"},{"i":116,"start":837.61,"end":844.21,"en":"So at this point in the talk, this is a nice time to think, \"Well, do you think on the whole I'm getting enough sleep?\"","zh":"睡眠不足仅仅局限于此。现在，我们不妨 思考一下：总的来说，你觉得自己睡眠充足吗？请"},{"i":117,"start":844.23,"end":848.6,"en":"So a quick show of hands. Who feels that they're getting enough sleep here?","zh":"举手示意一下，谁觉得自己 睡眠充足？"},{"i":118,"start":849.07,"end":854.61,"en":"Oh. Well, that's pretty impressive. Good. We'll talk more about that later, about what are your tips.","zh":"哦，这很不错，我们 稍后会详细讨论这个问题，以及 你们的建议。当然，我们大多数人都会"},{"i":119,"start":854.64,"end":859.37,"en":"So most of us, of course, ask the question, \"How do I know whether I'm getting enough sleep?\"","zh":"稍后会详细讨论这个问题，以及 你们的建议。当然，我们大多数人都会 问：我怎么知道自己 睡眠是否充足？其实这并不难理解。"},{"i":120,"start":859.39,"end":873.32,"en":"Well, it's not rocket science. If you need an alarm clock to get you out of bed in the morning, if you are taking a long time to get up, if you need lots of stimulants, if you're grumpy, if you're irritable, if you're told by your work colleagues that you're looking tired and irritable,","zh":"睡眠是否充足？其实这并不难理解。 如果你早上需要闹钟才能 起床，如果你 起床很慢，如果你需要 很多兴奋剂，如果你脾气暴躁，如果 你易怒，如果你的 同事说你看起来很 疲惫、很烦躁，那么你很可能"},{"i":121,"start":873.34,"end":877.8,"en":"chances are you are sleep-deprived. Listen to them. Listen to yourself.","zh":"同事说你看起来很 疲惫、很烦躁，那么你很可能 睡眠不足。听听他们的说法，也听听你 自己的感受。"},{"i":122,"start":877.82,"end":882.5,"en":"What do you do? Well -- and this is slightly offensive -- sleep for dummies.","zh":"自己的感受。 你会怎么做？嗯，这有点 冒犯人，但睡眠很重要。 给小白们：如何"},{"i":123,"start":882.53,"end":887.46,"en":"(Laughter) Make your bedroom a haven for sleep.","zh":"你会怎么做？嗯，这有点 冒犯人，但睡眠很重要。 给小白们：如何 把卧室打造成睡眠天堂？"},{"i":124,"start":887.48,"end":892.85,"en":"The first critical thing is make it as dark as you possibly can, and also make it slightly cool.","zh":"把卧室打造成睡眠天堂？ 首先，关键是要尽可能地让卧室变暗， 并保持 凉爽。这一点非常重要：睡前"},{"i":125,"start":892.88,"end":899.33,"en":"Very important. Actually, reduce your amount of light exposure at least half an hour before you go to bed.","zh":"并保持 凉爽。这一点非常重要：睡前 至少半小时减少光照。"},{"i":126,"start":899.35,"end":902.11,"en":"Light increases levels of alertness and will delay sleep.","zh":"光照会提高警觉性，从而 延迟睡眠。我们大多数人睡前做的最后一件事是什么？"},{"i":127,"start":902.13,"end":904.99,"en":"What's the last thing that most of us do before we go to bed?","zh":"光照会提高警觉性，从而 延迟睡眠。我们大多数人睡前做的最后一件事是什么？ 站在灯光刺眼的浴室里"},{"i":128,"start":905.02,"end":909.51,"en":"We stand in a massively lit bathroom, looking into the mirror cleaning our teeth.","zh":"站在灯光刺眼的浴室里 对着镜子刷牙。"},{"i":129,"start":909.53,"end":913.08,"en":"It's the worst thing we can possibly do before we go to sleep.","zh":"对着镜子刷牙。 睡前刷牙是最糟糕的事情。"},{"i":130,"start":913.11,"end":915.81,"en":"Turn off those mobile phones. Turn off those computers.","zh":"睡前刷牙是最糟糕的事情。 关掉手机，关掉 电脑，关掉所有会"},{"i":131,"start":915.84,"end":919.55,"en":"Turn off all of those things that are also going to excite the brain.","zh":"关掉手机，关掉 电脑，关掉所有会 刺激 大脑的东西。尽量不要"},{"i":132,"start":920.15,"end":925.69,"en":"Try not to drink caffeine too late in the day, ideally not after lunch.","zh":"刺激 大脑的东西。尽量不要 在一天中太晚的时候喝咖啡，最好不要在午饭后喝。"},{"i":133,"start":925.72,"end":934.29,"en":"Now, we've set about reducing light exposure before you go to bed, but light exposure in the morning is very good at setting the biological clock to the light-dark cycle.","zh":"在一天中太晚的时候喝咖啡，最好不要在午饭后喝。 我们刚才说了睡前要减少光照， 但 早晨的光照对于 调整生物钟，使其适应昼夜 循环非常有效。所以，尽量多接触晨光。"},{"i":134,"start":934.31,"end":938.45,"en":"So seek out morning light. Basically, listen to yourself.","zh":"调整生物钟，使其适应昼夜 循环非常有效。所以，尽量多接触晨光。 倾听自己内心的声音，放松身心，"},{"i":135,"start":938.47,"end":945.56,"en":"Wind down. Do those sorts of things that you know are going to ease you off into the honey-heavy dew of slumber.","zh":"倾听自己内心的声音，放松身心， 做一些 你知道能让你轻松入睡的事情。"},{"i":136,"start":946.2,"end":949.68,"en":"OK. That's some facts. What about some myths?","zh":"好了，以上 是一些事实。那么，关于"},{"i":137,"start":949.7,"end":957.64,"en":"Teenagers are lazy. No. Poor things. They have a biological predisposition to go to bed late and get up late, so give them a break.","zh":"是一些事实。那么，关于 青少年懒惰的误解呢？不，可怜的孩子们，他们 有生物钟。 有些人天生就喜欢 晚睡晚起，所以就别苛责他们了。"},{"i":138,"start":957.66,"end":962.55,"en":"We need eight hours of sleep a night. That's an average.","zh":"晚睡晚起，所以就别苛责他们了。 我们每晚需要八小时睡眠， 这是平均水平。有些人需要"},{"i":139,"start":962.57,"end":964.84,"en":"Some people need more. Some people need less.","zh":"我们每晚需要八小时睡眠， 这是平均水平。有些人需要 更多，有些人则需要更少。"},{"i":140,"start":964.86,"end":967.08,"en":"And what you need to do is listen to your body.","zh":"更多，有些人则需要更少。 你需要做的就是倾听你身体的声音："},{"i":141,"start":967.1,"end":969.44,"en":"Do you need that much or do you need more?","zh":"你需要做的就是倾听你身体的声音： 你需要那么多睡眠吗？还是需要更多？就这么"},{"i":142,"start":969.47,"end":972.99,"en":"Simple as that. Old people need less sleep.","zh":"你需要那么多睡眠吗？还是需要更多？就这么 简单。老年人需要的"},{"i":143,"start":973.01,"end":977.2,"en":"Not true. The sleep demands of the aged do not go down.","zh":"简单。老年人需要的 睡眠更少？这种说法并不正确。各个年龄段的睡眠需求并不会 减少，睡眠质量会逐渐下降，"},{"i":144,"start":977.58,"end":983.65,"en":"Essentially, sleep fragments and becomes less robust, but sleep requirements do not go down.","zh":"减少，睡眠质量会逐渐下降， 但 睡眠需求本身并没有减少。"},{"i":145,"start":983.67,"end":990.25,"en":"And the fourth myth is early to bed, early to rise makes a man healthy, wealthy and wise.","zh":"睡眠需求本身并没有减少。 第四个误区是早睡早起 使人健康、富有和"},{"i":146,"start":990.27,"end":993.03,"en":"Well, that's wrong at so many different levels.","zh":"使人健康、富有和 聪明。这种说法错得离谱。"},{"i":147,"start":993.05,"end":1001.36,"en":"(Laughter) There is no evidence that getting up early and going to bed early gives you more wealth at all.","zh":"聪明。这种说法错得离谱。 没有任何证据表明早睡早起能带来 更多益处。就"},{"i":148,"start":1001.39,"end":1004.0,"en":"There's no difference in socioeconomic status.","zh":"更多益处。就 我的经验而言，这与社会经济地位无关。"},{"i":149,"start":1004.02,"end":1011.92,"en":"In my experience, the only difference between morning people and evening people is that those people that get up in the morning early are just horribly smug.","zh":"我的经验而言，这与社会经济地位无关。 早起型和晚睡型的人唯一的区别就是， 那些早起的人……（此处原文疑似有误，无法翻译）好吧，"},{"i":150,"start":1011.95,"end":1024.94,"en":"(Laughter) (Applause) OK. So for the last few minutes, what I want to do is change gears and talk about some really new, breaking areas of neuroscience,","zh":"那些早起的人……（此处原文疑似有误，无法翻译）好吧， 最后 几分钟，我想换个 话题，谈谈神经科学中一些真正新的、 颠覆性的错误，即"},{"i":151,"start":1024.96,"end":1030.17,"en":"which is the association between mental health, mental illness and sleep disruption.","zh":"颠覆性的错误，即 精神健康、 精神疾病和睡眠紊乱之间的关联。"},{"i":152,"start":1030.19,"end":1039.08,"en":"We've known for 130 years that in severe mental illness, there is always, always sleep disruption, but it's been largely ignored.","zh":"精神疾病和睡眠紊乱之间的关联。 我们已经知道一百三 十年了，在严重的精神疾病中…… 睡眠紊乱一直存在， 但在20"},{"i":153,"start":1039.1,"end":1047.83,"en":"In the 1970s, when people started to think about this again, they said, \"Yes, well, of course you have sleep disruption in schizophrenia, because they're on antipsychotics.","zh":"但在20 世纪70年代，当人们重新开始关注这个问题时， 他们却说，精神分裂症患者当然 会有睡眠紊乱， 因为"},{"i":154,"start":1047.85,"end":1057.82,"en":"It's the antipsychotics causing the sleep problems,\" ignoring the fact that for a hundred years previously, sleep disruption had been reported before antipsychotics.","zh":"因为 抗精神病药物会 导致睡眠问题。他们忽略了一个 事实：在抗精神病药物出现之前的一百年里， 睡眠紊乱就已经被报道。 那么，究竟发生了什么？"},{"i":155,"start":1057.85,"end":1068.39,"en":"So what's going on? Several groups are studying conditions like depression, schizophrenia and bipolar and what's going on in terms of sleep disruption.","zh":"睡眠紊乱就已经被报道。 那么，究竟发生了什么？ 许多研究团队正在 研究抑郁症、 精神分裂症和双相情感障碍等疾病，以及 睡眠紊乱方面的情况。"},{"i":156,"start":1068.77,"end":1075.96,"en":"We have a big study which we published last year on schizophrenia, and the data were quite extraordinary.","zh":"睡眠紊乱方面的情况。 我们去年发表了一项关于精神分裂症的大型研究， 数据 非常惊人。在精神分裂症患者中，"},{"i":157,"start":1075.98,"end":1085.06,"en":"In those individuals with schizophrenia, much of the time, they were awake during the night phase and then they were asleep during the day.","zh":"非常惊人。在精神分裂症患者中， 他们大部分时间 在夜间保持清醒，白天则处于 睡眠状态。而其他一些"},{"i":158,"start":1085.09,"end":1089.6,"en":"Other groups showed no 24-hour patterns whatsoever -- their sleep was absolutely smashed.","zh":"睡眠状态。而其他一些 患者则完全没有24小时的睡眠规律， 他们的睡眠完全被"},{"i":159,"start":1089.62,"end":1093.78,"en":"And some had no ability to regulate their sleep by the light-dark cycle.","zh":"他们的睡眠完全被 打乱，有些人甚至无法 通过光照来调节睡眠，"},{"i":160,"start":1093.81,"end":1097.05,"en":"They were getting up later and later and later and later each night.","zh":"通过光照来调节睡眠， 他们每晚起床的时间越来越晚， 睡眠完全被"},{"i":161,"start":1097.07,"end":1110.45,"en":"It was smashed. So what's going on? And the really exciting news is that mental illness and sleep are not simply associated, but they are physically linked within the brain.","zh":"睡眠完全被 破坏。那么，究竟发生了什么？ 真正令人兴奋的消息是…… 精神 疾病和睡眠并非简单的 关联，它们 在大脑中存在着物理上的联系。那些"},{"i":162,"start":1110.47,"end":1117.84,"en":"The neural networks that predispose you to normal sleep, give you normal sleep, and those that give you normal mental health, are overlapping.","zh":"在大脑中存在着物理上的联系。那些 使你倾向于正常 睡眠的神经网络，以及那些 使你保持正常心理健康的神经网络，二者之间存在 重叠。那么，证据何在呢？研究表明，一些"},{"i":163,"start":1118.34,"end":1131.02,"en":"And what's the evidence for that? Well, genes that have been shown to be very important in the generation of normal sleep, when mutated, when changed, also predispose individuals to mental health problems.","zh":"使你保持正常心理健康的神经网络，二者之间存在 重叠。那么，证据何在呢？研究表明，一些 在 正常睡眠生成过程中起着至关重要作用的基因，一旦发生 改变，也会使 个体更容易出现心理健康 问题。去年，我们发表了一项"},{"i":164,"start":1131.04,"end":1139.77,"en":"And last year, we published a study which showed that a gene that's been linked to schizophrenia, when mutated, also smashes the sleep.","zh":"个体更容易出现心理健康 问题。去年，我们发表了一项 研究，该研究表明，一种与 精神分裂症相关的基因，一旦 发生突变，也会破坏睡眠。因此，我们"},{"i":165,"start":1139.79,"end":1145.28,"en":"So we have evidence of a genuine mechanistic overlap between these two important systems.","zh":"发生突变，也会破坏睡眠。因此，我们 有证据表明， 这两个重要的系统之间存在着真正的机制性重叠。"},{"i":166,"start":1145.81,"end":1160.75,"en":"Other work flowed from these studies. The first was that sleep disruption actually precedes certain types of mental illness, and we've shown that in those young individuals who are at high risk of developing bipolar disorder,","zh":"这两个重要的系统之间存在着真正的机制性重叠。 这些研究催生了其他工作。 首先，睡眠 紊乱实际上先于某些 类型的精神疾病出现。我们发现， 在那些患 双相情感障碍高风险的年轻人中， 他们在被"},{"i":167,"start":1160.78,"end":1166.79,"en":"they already have a sleep abnormality prior to any clinical diagnosis of bipolar.","zh":"双相情感障碍高风险的年轻人中， 他们在被 临床 诊断为双相情感障碍之前就已经存在睡眠异常。另一项"},{"i":168,"start":1167.46,"end":1177.35,"en":"The other bit of data was that sleep disruption may actually exacerbate, make worse, the mental illness state.","zh":"诊断为双相情感障碍之前就已经存在睡眠异常。另一项 数据表明，睡眠 障碍实际上可能会 加剧精神疾病的症状。我的"},{"i":169,"start":1177.38,"end":1185.86,"en":"My colleague Dan Freeman has used a range of agents which have stabilized sleep and reduced levels of paranoia in those individuals by 50 percent.","zh":"加剧精神疾病的症状。我的 同事丹·弗里曼（Dan Freeman）使用多种 药物来稳定患者的睡眠 并降低其妄想程度。 50% 的进展，所以"},{"i":170,"start":1186.19,"end":1193.07,"en":"So what have we got? We've got, in these connections, some really exciting things.","zh":"50% 的进展，所以 我们从这些联系中获得了一些 非常令人兴奋的"},{"i":171,"start":1193.72,"end":1203.1,"en":"In terms of the neuroscience, by understanding these two systems, we're really beginning to understand how both sleep and mental illness are generated and regulated within the brain.","zh":"非常令人兴奋的 神经科学发现。通过了解 这两个系统的神经科学，我们 开始真正理解 睡眠和精神疾病如何 在脑内产生和调节。"},{"i":172,"start":1203.13,"end":1211.6,"en":"The second area is that if we can use sleep and sleep disruption as an early warning signal, then we have the chance of going in.","zh":"在脑内产生和调节。 第二个方面是，如果我们能将睡眠 和睡眠障碍作为早期预警 信号，那么我们就有机会在"},{"i":173,"start":1211.62,"end":1216.57,"en":"If we know these individuals are vulnerable, early intervention then becomes possible.","zh":"信号，那么我们就有机会在 知道这些人容易受到 伤害时进行早期干预。 第三个方面，我"},{"i":174,"start":1216.59,"end":1223.35,"en":"And the third, which I think is the most exciting, is that we can think of the sleep centers within the brain as a new therapeutic target.","zh":"伤害时进行早期干预。 第三个方面，我 认为最令人兴奋的是，我们 可以将大脑中的睡眠中枢视为 一个新的治疗靶点。"},{"i":175,"start":1223.37,"end":1232.99,"en":"Stabilize sleep in those individuals who are vulnerable, we can certainly make them healthier, but also alleviate some of the appalling symptoms of mental illness.","zh":"一个新的治疗靶点。 对于那些容易受到伤害的人来说，稳定的睡眠 不仅能让 他们更健康，还能减轻一些 可怕的精神"},{"i":176,"start":1233.01,"end":1237.66,"en":"So let me just finish. What I started by saying is: Take sleep seriously.","zh":"可怕的精神 疾病症状。所以，让我总结一下我一 开始想说的： 认真对待睡眠。我们对睡眠的态度"},{"i":177,"start":1237.69,"end":1243.81,"en":"Our attitudes toward sleep are so very different from a pre-industrial age, when we were almost wrapped in a duvet.","zh":"开始想说的： 认真对待睡眠。我们对睡眠的态度 与 前工业时代截然不同，那时我们几乎都 裹在被子里，我们凭"},{"i":178,"start":1243.84,"end":1247.28,"en":"We used to understand intuitively the importance of sleep.","zh":"前工业时代截然不同，那时我们几乎都 裹在被子里，我们凭 直觉就能理解睡眠的重要性。这"},{"i":179,"start":1247.3,"end":1250.85,"en":"And this isn't some sort of crystal-waving nonsense.","zh":"直觉就能理解睡眠的重要性。这 并非故弄玄虚，而是 对健康的务实回应。"},{"i":180,"start":1250.88,"end":1253.5,"en":"This is a pragmatic response to good health.","zh":"并非故弄玄虚，而是 对健康的务实回应。 良好的睡眠可以"},{"i":181,"start":1253.52,"end":1260.35,"en":"If you have good sleep, it increases your concentration, attention, decision-making, creativity, social skills, health.","zh":"对健康的务实回应。 良好的睡眠可以 提高你的注意力、专注力、 决策能力、创造力、社交技能和健康水平。"},{"i":182,"start":1260.37,"end":1269.47,"en":"If you get sleep, it reduces your mood changes, your stress, your levels of anger, your impulsivity, and your tendency to drink and take drugs.","zh":"决策能力、创造力、社交技能和健康水平。 睡眠能 改善你的情绪，缓解压力，降低 愤怒、冲动 以及酗酒和"},{"i":183,"start":1269.49,"end":1282.92,"en":"And we finished by saying that an understanding of the neuroscience of sleep is really informing the way we think about some of the causes of mental illness, and indeed is providing us new ways","zh":"以及酗酒和 吸毒的倾向。我们最后提到，对睡眠 神经科学的理解 正在切实地影响我们 对某些精神疾病成因的思考， 并为我们"},{"i":184,"start":1282.95,"end":1286.4,"en":"to treat these incredibly debilitating conditions.","zh":"并为我们 治疗这些极其 痛苦的疾病提供了新的方法。"},{"i":185,"start":1287.67,"end":1293.52,"en":"Jim Butcher, the fantasy writer, said, \"Sleep is God. Go worship.\"","zh":"治疗这些极其 痛苦的疾病提供了新的方法。 奇幻作家吉姆·布彻曾说，睡眠是上帝，去"},{"i":186,"start":1293.55,"end":1295.75,"en":"And I can only recommend that you do the same.","zh":"奇幻作家吉姆·布彻曾说，睡眠是上帝，去 膜拜它吧！我强烈建议 你们也这样做。谢谢大家的聆听。"},{"i":187,"start":1295.78,"end":1300.99,"en":"Thank you for your attention. (Applause)","zh":"膜拜它吧！我强烈建议 你们也这样做。谢谢大家的聆听。 [掌声]"}]}
+{
+  "slug": "russell_foster_why_do_we_sleep",
+  "title": "Why do we sleep?",
+  "speaker": "Russell Foster",
+  "category": "ted",
+  "school": null,
+  "year": null,
+  "duration": 1306.68,
+  "cover": "/covers/russell_foster_why_do_we_sleep.jpg",
+  "views": 6504999,
+  "sourceUrl": "https://www.youtube.com/watch?v=LWULB9Aoopc",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/russell_foster_why_do_we_sleep.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/russell_foster_why_do_we_sleep.m4a"
+  },
+  "zhSource": "official",
+  "sentences": [
+    {
+      "i": 0,
+      "start": 11.69,
+      "end": 19.76,
+      "en": "What I'd like to do today is talk about one of my favorite subjects, and that is the neuroscience of sleep.",
+      "zh": "我今天想和大家探讨的是一个我很喜欢的主题，神经科学睡眠。",
+      "w": [11.69,12.69,12.69,12.84,12.84,13.11,13.11,13.17,13.17,13.38,13.38,13.53,13.53,14.13,14.13,14.4,14.4,14.51,14.51,15.51,15.51,15.63,15.63,15.75,15.75,16.14,16.14,16.59,16.59,17.04,17.04,17.34,17.34,17.66,17.66,18.66,18.66,19.26,19.26,19.35,19.35,19.76]
+    },
+    {
+      "i": 1,
+      "start": 19.76,
+      "end": 26.1,
+      "en": "Now, there is a sound -- (Alarm clock) Ah, it worked!",
+      "zh": "现在，有一个声音——（闹钟声）——哈哈，它响了——",
+      "w": [19.76,20.93,20.93,21.93,21.93,22.05,22.05,22.11,22.08,24.08,24.08,24.31,24.31,24.54,24.54,24.77,24.77,25.77,25.77,26.1]
+    },
+    {
+      "i": 2,
+      "start": 26.1,
+      "end": 32.4,
+      "en": "A sound that is desperately familiar to most of us, and of course it's the sound of the alarm clock.",
+      "zh": "我们大部人对这声音都非常非常熟悉，当然，这是闹钟声。",
+      "w": [26.1,27.05,27.05,28.05,28.05,28.2,28.2,28.35,28.35,29.85,29.85,29.97,29.97,30.36,30.36,30.51,30.51,30.69,30.69,30.81,30.81,30.99,30.99,31.08,31.08,31.14,31.11,31.41,31.41,31.56,31.56,31.8,31.8,31.98,31.98,32.1,32.1,32.16,32.16,32.4]
+    },
+    {
+      "i": 3,
+      "start": 32.4,
+      "end": 43.91,
+      "en": "And what that truly ghastly, awful sound does is stop the single most important behavioral experience that we have, and that's sleep.",
+      "zh": "这个讨人厌的可怕的声音做了什么呢它终止了我们所拥有的非常重要的一种行为体验那就是睡眠。",
+      "w": [32.4,33.06,33.06,33.51,33.51,33.69,33.69,34.02,34.02,34.68,34.68,35.16,35.16,35.46,35.46,35.79,35.79,36.68,36.68,37.68,37.68,38.49,38.49,38.94,38.94,39.09,39.09,40.04,40.04,41.04,41.04,41.52,41.52,41.76,41.76,41.88,41.88,42.18,42.18,42.51,42.51,42.93,42.93,43.91]
+    },
+    {
+      "i": 4,
+      "start": 43.91,
+      "end": 61.2,
+      "en": "If you're an average sort of person, 36 percent of your life will be spent asleep, which means that if you live to 90, then 32 years will have been spent entirely asleep.",
+      "zh": "如果你是一个正常人，那么你生命的36%都将花在睡眠上，这意味着如果你活到90岁，那么32年的时间完完全全地都用在了睡眠上。",
+      "w": [43.91,45.29,45.29,46.29,46.29,46.41,46.41,46.59,46.59,46.95,46.95,47.04,47.04,47.6,48.6,48.96,48.96,49.05,49.05,49.2,49.2,49.44,49.44,50.22,50.22,50.43,50.43,51.12,51.12,51.65,51.65,52.65,52.65,52.92,52.92,53.1,53.1,53.19,53.19,53.25,53.22,53.46,53.46,53.61,53.79,55.01,57.9,58.41,58.41,58.92,58.92,59.04,59.04,59.16,59.16,59.52,59.52,60.39,60.39,61.2]
+    },
+    {
+      "i": 5,
+      "start": 61.2,
+      "end": 66.33,
+      "en": "Now what that 32 years is telling us is that sleep at some level is important.",
+      "zh": "这32年告诉我们在某种程度上睡眠是重要的。",
+      "w": [61.2,61.77,61.77,61.92,61.92,62.49,62.49,62.55,62.52,62.85,62.85,63.18,63.18,63.27,63.27,63.32,63.27,63.51,63.51,64.14,64.14,64.35,64.35,64.8,64.8,65.25,65.25,65.46,65.46,66.33]
+    },
+    {
+      "i": 6,
+      "start": 66.33,
+      "end": 69.27,
+      "en": "And yet, for most of us, we don't give sleep a second thought.",
+      "zh": "但是，对于大部人来说，我们不会对睡眠这件事多加思索。",
+      "w": [66.33,66.57,66.57,67.23,67.23,67.41,67.41,67.59,67.59,67.74,67.74,67.83,67.83,68.1,68.1,68.22,68.22,68.46,68.46,68.67,68.67,68.76,68.76,69.09,69.09,69.27]
+    },
+    {
+      "i": 7,
+      "start": 69.27,
+      "end": 74.61,
+      "en": "We throw it away. We really just don't think about sleep.",
+      "zh": "我们把它扔掉了。关于睡眠，我们没有真正好好思考过。",
+      "w": [69.27,70.11,70.11,70.95,70.95,71.04,71.04,71.31,71.31,71.94,71.94,72.81,72.81,72.87,72.84,73.65,73.65,74.04,74.04,74.28,74.28,74.61]
+    },
+    {
+      "i": 8,
+      "start": 74.61,
+      "end": 81.03,
+      "en": "And so what I'd like to do today is change your views, change your ideas and your thoughts about sleep.",
+      "zh": "所以，今天我要做的就是改变你们对睡眠的认识，改变你们对睡眠的想法和观点。",
+      "w": [74.61,74.85,74.85,75.24,75.24,75.39,75.39,75.51,75.51,75.63,75.63,75.81,75.81,75.93,75.93,76.08,76.08,76.47,76.47,77.28,77.28,77.73,77.73,78.06,78.06,78.81,78.81,78.96,78.96,79.41,79.41,79.62,79.62,79.74,79.74,80.1,80.1,80.43,80.43,81.03]
+    },
+    {
+      "i": 9,
+      "start": 81.03,
+      "end": 88.1,
+      "en": "And the journey that I want to take you on, we need to start by going back in time.",
+      "zh": "在带领你们开始这段旅程的时候，我们先来个时光倒流。",
+      "w": [81.03,81.33,82.32,82.47,82.47,82.65,82.65,82.74,82.74,82.89,82.89,83.04,83.04,83.13,83.13,83.25,83.25,83.37,83.37,83.52,83.52,84.39,84.39,84.51,84.51,84.63,84.63,84.87,84.87,85.5,85.5,85.68,85.68,85.8,85.8,86.1,86.1,88.1]
+    },
+    {
+      "i": 10,
+      "start": 88.25,
+      "end": 96.23,
+      "en": "\"Enjoy the honey-heavy dew of slumber.\" Any ideas who said that?",
+      "zh": "“享受沉稳香甜的睡眠甘露。”知道谁说过这话吗？",
+      "w": [88.25,89.25,89.25,89.91,89.91,90.72,90.72,91.23,91.23,91.56,91.56,92.33,92.33,93.33,93.33,93.87,93.87,94.05,94.05,94.23,94.23,96.23]
+    },
+    {
+      "i": 11,
+      "start": 96.35,
+      "end": 100.2,
+      "en": "Shakespeare's Julius Caesar. Yes, let me give you a few more quotes.",
+      "zh": "莎士比亚的凯撒大帝。对，我再给你们多念点引用的句子吧。",
+      "w": [96.35,97.35,97.35,97.74,97.74,98.61,98.61,99.21,99.21,99.39,99.39,99.45,99.42,99.6,99.6,99.66,99.66,99.72,99.69,99.84,99.84,99.96,99.96,100.2]
+    },
+    {
+      "i": 12,
+      "start": 100.2,
+      "end": 107.67,
+      "en": "\"O sleep, O gentle sleep, nature's soft nurse, how have I frighted thee?\"",
+      "zh": "“噢，睡眠，噢，温柔的睡眠，自然界的温柔护士，我吓坏你了吗？”",
+      "w": [100.2,102.2,102.2,103.2,103.2,103.44,103.44,103.92,103.92,104.52,104.52,105.18,105.18,105.51,105.51,105.8,105.8,106.8,106.8,107.04,107.04,107.28,107.28,107.52,107.52,107.67]
+    },
+    {
+      "i": 13,
+      "start": 107.67,
+      "end": 113.12,
+      "en": "Shakespeare again, from -- I won't say it -- the Scottish play.",
+      "zh": "又是莎士比亚的，但我不会说出处。那是一个苏格兰戏剧。［更正：应为亨利四世，第二部分］（笑声）",
+      "w": [107.67,108.42,108.42,108.69,108.69,109.26,109.26,109.56,109.56,110.04,110.04,110.25,110.25,110.37,110.37,110.76,110.76,111.12,111.12,113.12]
+    },
+    {
+      "i": 14,
+      "start": 113.12,
+      "end": 119.63,
+      "en": "(Laughter) From the same time: \"Sleep is the golden chain that ties health and our bodies together.\"",
+      "zh": "来自同一时代：“睡眠是一个金链条将我们的健康和身体紧联。”",
+      "w": [113.12,113.8,113.8,114.8,114.8,114.89,114.89,115.1,115.1,115.4,115.4,116.18,116.18,116.42,116.42,116.54,116.54,116.93,116.93,117.23,117.23,117.68,117.68,117.95,117.95,118.31,118.31,118.64,118.64,119.03,119.03,119.39,119.39,119.63]
+    },
+    {
+      "i": 15,
+      "start": 119.63,
+      "end": 123.86,
+      "en": "Extremely prophetic, by Thomas Dekker, another Elizabethan dramatist.",
+      "zh": "托马斯·德克尔曾说过的，非常有预见性。另一位伊丽莎白时代的剧作家。",
+      "w": [119.63,120.47,120.47,121.04,121.04,121.28,121.28,121.58,121.58,121.76,121.76,122.36,122.36,123.32,123.32,123.86]
+    },
+    {
+      "i": 16,
+      "start": 123.86,
+      "end": 130.88,
+      "en": "But if we jump forward 400 years, the tone about sleep changes somewhat.",
+      "zh": "如果我们前进400年，关于睡眠的论调变了，",
+      "w": [123.86,124.85,124.85,124.94,124.94,125.06,125.06,125.54,125.54,126.01,127.01,127.34,127.34,127.88,127.88,128.35,128.35,129.35,129.35,129.65,129.65,130.28,130.28,130.88]
+    },
+    {
+      "i": 17,
+      "start": 130.88,
+      "end": 137.69,
+      "en": "This is from Thomas Edison, from the beginning of the 20th century: \"Sleep is a criminal waste of time and a heritage from our cave days.\"",
+      "zh": "下面这一句是托马斯·爱迪生说的，在20世纪初期，“睡眠是犯罪性的时间浪费，是原始人的遗物。” 砰。",
+      "w": [130.88,131.21,131.21,131.36,131.36,131.51,131.51,131.93,131.93,132.32,132.32,132.53,132.53,132.62,132.62,132.95,132.95,133.01,133.01,133.07,133.07,133.43,133.43,133.49,133.48,134.48,134.48,134.63,134.63,134.69,134.66,134.93,134.93,135.26,135.26,135.44,135.44,135.74,135.74,136.04,136.04,136.37,136.37,136.79,136.79,136.85,136.82,137.12,137.12,137.36,137.36,137.69]
+    },
+    {
+      "i": 18,
+      "start": 137.69,
+      "end": 150.38,
+      "en": "Bang! (Laughter) And if we also jump into the 1980s, some of you may remember that Margaret Thatcher was reported to have said, \"Sleep is for wimps.\"",
+      "zh": "（笑声）如果我们再跳到1980年代，你们有些人可能会记得撒切尔夫人在一次采访中曾经说道“懦夫才需要睡觉。”",
+      "w": [137.69,139.69,139.69,139.99,139.99,141.34,141.34,142.34,142.34,142.9,142.9,143.9,143.9,144.23,144.23,144.53,144.53,144.74,144.74,145.16,145.16,145.73,145.73,145.85,145.85,145.94,145.94,146.09,146.09,146.15,146.15,147.05,147.05,147.41,147.41,147.65,147.65,147.83,147.83,148.37,148.37,148.49,148.49,148.55,148.52,148.79,148.79,149.54,149.54,149.66,149.66,149.84,149.84,150.38]
+    },
+    {
+      "i": 19,
+      "start": 150.38,
+      "end": 157.72,
+      "en": "And of course the infamous -- what was his name? -- the infamous Gordon Gekko from \"Wall Street\" said, \"Money never sleeps.\"",
+      "zh": "当然，还有名声不怎么样的人——他叫什么来着？对，就是声名狼藉的《华尔街》电影中的戈登·盖柯，他说”金钱从不睡觉。“",
+      "w": [150.38,151.25,151.25,151.37,151.37,151.61,151.61,151.97,151.97,152.18,152.18,152.84,152.84,152.99,152.99,153.08,153.08,153.32,153.32,153.71,153.71,153.95,153.95,154.37,154.37,154.73,154.73,154.97,154.97,155.15,155.15,155.21,155.18,155.81,155.81,156.47,156.47,156.92,156.92,157.72]
+    },
+    {
+      "i": 20,
+      "start": 157.72,
+      "end": 160.79,
+      "en": "What do we do in the 20th century about sleep?",
+      "zh": "在20世纪，我们对睡眠做了什么？",
+      "w": [157.72,158.72,158.72,158.78,158.78,158.9,158.9,159.08,159.08,159.47,159.47,159.59,159.59,159.92,159.92,160.25,160.25,160.37,160.37,160.79]
+    },
+    {
+      "i": 21,
+      "start": 160.79,
+      "end": 172.7,
+      "en": "Well, of course, we use Thomas Edison's light bulb to invade the night, and we occupied the dark, and in the process of this occupation, we've treated sleep as an illness, almost.",
+      "zh": "当然，我们用托马斯·爱迪生的灯泡侵袭了夜晚，而且我们也占领了黑暗，并且在这个占领的过程中，我们对待睡眠几乎象对待一种疾病。",
+      "w": [160.79,161.39,161.39,161.63,161.63,161.96,161.96,162.59,162.59,162.77,162.77,163.16,163.16,163.55,163.55,163.76,163.76,164.03,164.03,164.69,164.69,165.02,165.02,165.17,165.17,165.35,165.35,165.8,165.8,166.16,166.16,166.7,166.7,166.88,166.88,167.12,167.12,167.48,167.48,168.17,168.17,168.26,168.26,168.68,168.68,168.86,168.86,169.22,169.22,169.49,169.49,170.36,170.36,170.63,170.63,171.11,171.11,171.35,171.35,171.74,171.74,171.89,171.89,172.7]
+    },
+    {
+      "i": 22,
+      "start": 172.7,
+      "end": 185.45,
+      "en": "We've treated it as an enemy. At most now, I suppose, we tolerate the need for sleep, and at worst perhaps many of us think of sleep as an illness that needs some sort of a cure.",
+      "zh": "我们把它当成敌人。现在，最多，我想我们容忍着对睡眠的需要，但在最坏的情况下，也许很多人认为睡眠是一种疾病，某种程度上它需要被治愈。",
+      "w": [172.7,172.94,172.94,173.54,173.54,173.59,173.54,173.69,173.69,173.81,173.81,174.11,174.11,175.97,175.97,176.27,176.27,176.57,176.57,176.87,176.87,177.58,178.97,179.42,179.42,179.87,179.87,180.02,180.02,180.17,180.17,180.38,180.38,180.47,180.47,180.8,180.8,181.4,181.4,181.64,181.64,182.18,182.18,182.42,182.42,182.51,182.51,182.63,182.63,182.78,182.78,182.93,182.93,183.2,183.2,183.35,183.35,183.47,183.47,183.68,183.68,184.01,184.01,184.07,184.07,184.79,184.79,185.0,185.0,185.06,185.06,185.15,185.15,185.45]
+    },
+    {
+      "i": 23,
+      "start": 185.45,
+      "end": 189.61,
+      "en": "And our ignorance about sleep is really quite profound.",
+      "zh": "我们对睡眠的无知真的是很严重。",
+      "w": [185.45,185.84,185.84,186.56,186.98,187.49,187.49,187.61,187.61,188.03,188.03,188.24,188.24,188.45,188.45,189.05,189.05,189.61]
+    },
+    {
+      "i": 24,
+      "start": 189.61,
+      "end": 193.25,
+      "en": "Why is it? Why do we abandon sleep in our thoughts?",
+      "zh": "为什么？为什么我们不想睡觉呢？",
+      "w": [189.61,190.61,190.61,190.67,190.67,190.97,190.97,191.33,191.33,191.39,191.39,191.78,191.78,192.02,192.02,192.53,192.53,192.8,192.8,192.95,192.95,193.25]
+    },
+    {
+      "i": 25,
+      "start": 193.25,
+      "end": 197.35,
+      "en": "Well, it's because you don't do anything much while you're asleep, it seems.",
+      "zh": "因为，在你睡觉时，看起来，你不做任何事情。",
+      "w": [193.25,193.85,193.85,193.97,193.97,194.27,194.27,194.87,194.87,195.05,195.05,195.32,195.32,195.56,195.56,195.92,195.92,196.25,196.25,196.31,196.28,196.61,196.61,196.94,196.94,197.35]
+    },
+    {
+      "i": 26,
+      "start": 197.35,
+      "end": 202.52,
+      "en": "You don't eat. You don't drink. And you don't have sex.",
+      "zh": "你不吃。你不喝。你也没有发生性行为。",
+      "w": [197.35,198.35,198.35,198.5,198.5,199.03,199.03,200.03,200.03,200.09,200.06,200.57,200.57,200.99,200.99,201.86,201.86,202.04,202.04,202.22,202.22,202.52]
+    },
+    {
+      "i": 27,
+      "start": 202.52,
+      "end": 206.66,
+      "en": "Well, most of us anyway. And so, therefore it's -- Sorry.",
+      "zh": "我指的是大部分人没有。所以它是——",
+      "w": [202.52,203.06,203.06,203.36,203.36,203.45,203.45,203.54,203.54,203.96,204.23,204.98,204.98,205.04,205.04,205.64,205.64,205.76,205.76,206.66]
+    },
+    {
+      "i": 28,
+      "start": 207.31,
+      "end": 211.0,
+      "en": "It's a complete waste of time, right? Wrong.",
+      "zh": "抱歉。睡眠完全是浪费时间，对不对？",
+      "w": [207.31,208.31,208.31,208.4,208.4,208.73,208.73,208.88,208.88,209.03,209.03,209.27,209.27,209.8,209.8,211.0]
+    },
+    {
+      "i": 29,
+      "start": 211.0,
+      "end": 220.19,
+      "en": "Actually, sleep is an incredibly important part of our biology, and neuroscientists are beginning to explain why it's so very important.",
+      "zh": "错了！事实上，睡眠对我们至关重要。神经科学家已经开始解释为什么睡眠是那么重要。",
+      "w": [211.0,212.0,212.0,212.9,212.9,213.11,213.11,213.23,213.23,213.71,213.71,214.37,214.37,214.43,214.4,214.61,214.61,214.76,214.76,214.97,214.97,215.42,215.42,216.71,216.71,216.89,216.89,217.7,217.7,217.82,217.82,218.21,218.21,218.57,218.57,219.14,219.14,219.41,219.41,219.65,219.65,220.19]
+    },
+    {
+      "i": 30,
+      "start": 220.19,
+      "end": 227.35,
+      "en": "So let's move to the brain. Now, here we have a brain.",
+      "zh": "我们来看看大脑。这里有一个大脑。",
+      "w": [220.19,220.73,220.73,220.91,220.91,221.15,221.15,221.48,221.48,221.75,221.75,222.61,222.61,224.38,224.38,225.38,225.38,226.07,226.07,226.13,226.1,226.28,226.28,227.35]
+    },
+    {
+      "i": 31,
+      "start": 227.35,
+      "end": 239.93,
+      "en": "This is donated by a social scientist, and they said they didn't know what it was or indeed, how to use it, so -- (Laughter) Sorry.",
+      "zh": "这是一个社会学家捐赠的，他们说他们不知道这是什么，或者他们不知道该怎么用它，所以——（笑声）抱歉。",
+      "w": [227.35,228.35,228.35,228.5,228.5,228.95,228.95,229.01,228.98,229.19,229.19,229.82,229.82,230.36,230.36,231.52,231.52,232.52,232.52,232.73,232.73,232.88,232.88,233.33,233.33,233.39,233.39,233.51,233.51,233.6,233.6,233.72,233.72,233.77,233.72,234.11,234.11,234.23,234.23,234.29,234.29,234.56,234.56,234.71,234.71,236.71,236.71,238.32,238.32,239.93]
+    },
+    {
+      "i": 32,
+      "start": 239.93,
+      "end": 244.54,
+      "en": "So I borrowed it. I don't think they noticed. OK.",
+      "zh": "所以，被我借过来了。我觉得他们没注意到。好吧。",
+      "w": [239.93,240.93,240.93,240.99,240.98,241.98,241.98,242.1,242.1,242.34,242.34,242.73,242.73,242.85,242.85,242.91,242.91,243.27,243.27,244.54]
+    },
+    {
+      "i": 33,
+      "start": 244.54,
+      "end": 251.37,
+      "en": "(Laughter) The point I'm trying to make is that when you're asleep, this thing doesn't shut down.",
+      "zh": "（笑声）我想说的是当你在睡觉时，大脑是不会停止的。",
+      "w": [244.54,245.81,245.81,246.81,246.81,247.08,247.08,247.26,247.26,247.32,247.29,247.59,247.59,247.65,247.65,248.04,248.04,248.28,248.28,248.94,248.94,249.06,249.06,249.6,249.6,250.08,250.08,250.41,250.41,250.74,250.74,251.07,251.07,251.37]
+    },
+    {
+      "i": 34,
+      "start": 251.37,
+      "end": 256.64,
+      "en": "In fact, some areas of the brain are actually more active during the sleep state than during the wake state.",
+      "zh": "事实是，当人在睡眠时，大脑的某些区域要比醒着的时候更活跃。",
+      "w": [251.37,251.64,251.64,251.91,251.91,252.21,252.21,252.51,252.51,252.6,252.6,252.66,252.66,252.81,252.81,252.93,252.93,253.17,253.17,253.5,253.5,253.68,253.68,254.52,254.52,254.7,254.7,254.88,254.88,255.12,255.12,255.54,255.54,255.72,255.72,255.84,255.84,255.99,255.99,256.64]
+    },
+    {
+      "i": 35,
+      "start": 256.64,
+      "end": 265.44,
+      "en": "The other thing that's really important about sleep is that it doesn't arise from a single structure within the brain, but is to some extent a network property.",
+      "zh": "另外一个关于睡眠的非常重要的事是它不会从大脑内部的单一的结构产生，而是在某种程度上由一个网状的结构产生，",
+      "w": [256.64,257.64,257.64,257.73,257.73,257.97,257.97,258.06,258.06,258.3,258.3,258.75,258.75,258.81,258.78,259.23,259.23,259.44,259.44,260.1,260.1,260.22,260.22,260.52,260.52,260.79,260.79,261.03,261.03,261.12,261.12,261.45,261.45,261.75,261.75,262.11,262.11,262.2,262.2,262.41,262.41,263.07,263.07,263.34,263.34,264.09,264.09,264.24,264.24,264.3,264.27,264.63,264.63,264.96,264.96,265.44]
+    },
+    {
+      "i": 36,
+      "start": 265.56,
+      "end": 277.5,
+      "en": "If we flip the brain on its back -- I love this little bit of spinal cord here -- this bit here is the hypothalamus, and right under there is a whole raft of interesting structures,",
+      "zh": "如果我们看大脑的后面——我喜欢这个，这是脊髓这个点是下丘脑在这下面是一个有趣的结构，",
+      "w": [265.56,265.65,265.65,265.74,265.74,265.89,265.89,266.07,266.07,266.25,266.25,266.4,266.4,266.52,266.52,266.73,266.73,267.11,267.11,268.11,268.11,268.17,268.17,268.44,268.44,268.62,268.62,268.71,268.71,269.07,269.07,269.13,269.1,269.96,269.96,270.96,270.96,271.2,271.2,271.44,271.44,271.65,271.65,272.25,272.25,272.88,272.88,273.23,273.23,274.23,274.23,274.5,274.5,274.68,274.68,274.95,274.95,275.67,275.67,276.12,276.12,276.36,276.36,276.6,276.6,277.08,277.08,277.5]
+    },
+    {
+      "i": 37,
+      "start": 277.5,
+      "end": 291.33,
+      "en": "not least the biological clock. The biological clock tells us when it's good to be up, when it's good to be asleep, and what that structure does is interact with a whole raft of other areas within the hypothalamus, the lateral hypothalamus, the ventrolateral preoptic nuclei.",
+      "zh": "尤其是生物钟。生物钟告诉我们何时该起床，何时该睡觉，这个结构是与下脑丘内的其它部位互动，与下丘脑外侧，脑侧室前视核互动。",
+      "w": [277.5,277.65,277.65,277.92,277.92,278.07,278.07,278.58,278.58,278.67,278.67,279.12,279.12,279.63,279.63,279.75,279.75,280.44,280.44,280.59,280.59,280.77,280.77,280.89,280.89,281.1,281.1,281.19,281.19,281.31,281.31,281.46,281.46,281.88,281.88,282.03,282.03,282.21,282.21,282.33,282.33,282.42,282.42,282.87,282.87,283.14,283.14,283.59,283.59,283.8,283.8,284.16,284.16,284.43,284.43,284.64,284.64,285.06,285.06,285.3,285.3,285.36,285.36,285.54,285.54,285.78,285.78,286.02,286.02,286.49,286.49,287.49,287.49,287.7,287.7,287.85,287.85,288.42,288.42,288.57,288.57,288.93,288.93,289.08,289.08,289.74,289.74,290.34,290.34,290.82,290.82,291.33]
+    },
+    {
+      "i": 38,
+      "start": 291.33,
+      "end": 295.47,
+      "en": "All of those combine, and they send projections down to the brain stem here.",
+      "zh": "所有这些组合在一起，他们发出预测信息向下传送到这里的脑干。",
+      "w": [291.33,291.57,291.57,291.69,291.69,291.81,291.81,292.26,292.26,292.56,292.56,292.95,292.95,293.22,293.22,293.34,293.34,294.06,294.06,294.6,294.6,294.72,294.72,294.96,294.96,295.2,295.2,295.47]
+    },
+    {
+      "i": 39,
+      "start": 295.47,
+      "end": 307.25,
+      "en": "The brain stem then projects forward and bathes the cortex, this wonderfully wrinkly bit over here, with neurotransmitters that keep us awake and essentially provide us with our consciousness.",
+      "zh": "之后，脑干再将信息发送出并且包裹住大脑皮层，覆盖这里的这些漂亮的褶皱型的物质，和神经递质一起让我们保持清醒让我们有意识。",
+      "w": [295.47,296.01,296.01,296.26,296.26,296.52,296.52,297.11,297.11,298.11,298.11,298.62,298.62,298.86,298.86,299.55,299.55,300.15,300.15,300.66,300.66,300.93,300.93,301.38,301.38,301.83,301.83,302.01,302.01,302.28,302.28,302.52,302.52,303.27,303.27,304.2,304.2,304.47,304.47,304.86,304.86,304.98,304.98,305.25,305.25,305.58,305.58,305.94,305.94,306.24,306.24,306.39,306.39,306.45,306.45,306.69,306.69,307.25]
+    },
+    {
+      "i": 40,
+      "start": 307.25,
+      "end": 317.61,
+      "en": "So sleep arises from a whole raft of different interactions within the brain, and essentially, sleep is turned on and off as a result of a range of interactions in here.",
+      "zh": "所以睡眠是从脑内不同部位的相互作用而产生的，根本上说，睡眠是在这里一系列互动活动的作用下产生和停止。",
+      "w": [307.25,308.25,308.25,308.67,308.67,309.54,309.54,309.72,309.72,309.84,309.84,310.05,310.05,310.38,310.38,310.86,310.86,311.25,311.25,311.85,311.85,312.06,312.06,312.24,312.24,312.45,312.45,312.69,312.69,313.59,313.59,314.25,314.25,314.46,314.46,314.73,314.73,314.91,314.91,315.06,315.06,315.15,315.15,315.42,315.42,315.48,315.45,315.81,315.81,315.96,315.96,316.05,316.05,316.47,316.47,316.62,316.62,317.16,317.16,317.34,317.34,317.61]
+    },
+    {
+      "i": 41,
+      "start": 317.61,
+      "end": 327.63,
+      "en": "OK. So where have we got to? We've said that sleep is complicated and it takes 32 years of our life.",
+      "zh": "好。我们讲到哪里了？我们已经说过睡眠是复杂的和它占据了我们生命的32 年时间。",
+      "w": [317.61,318.36,318.36,318.9,318.9,319.08,319.08,319.13,319.08,319.23,319.23,319.38,319.38,319.56,319.56,320.13,320.13,320.61,320.61,320.94,320.94,321.65,321.65,322.65,322.65,323.25,323.25,323.43,323.43,323.85,323.85,325.22,326.22,326.52,326.85,327.06,327.06,327.39,327.39,327.63]
+    },
+    {
+      "i": 42,
+      "start": 327.63,
+      "end": 330.72,
+      "en": "But what I haven't explained is what sleep is about.",
+      "zh": "但我还没解释什么是睡眠。",
+      "w": [327.63,328.29,328.29,328.44,328.44,328.5,328.47,328.8,328.8,329.19,329.19,329.37,329.37,330.03,330.03,330.33,330.33,330.48,330.48,330.72]
+    },
+    {
+      "i": 43,
+      "start": 330.72,
+      "end": 337.2,
+      "en": "So why do we sleep? And it won't surprise any of you that, of course, as scientists, we don't have a consensus.",
+      "zh": "那么我们为什么睡觉？它不会给你们任何一个人惊喜，当然，科学家们还没达成一致的观点。",
+      "w": [330.72,331.5,331.5,332.01,332.01,332.58,332.58,332.7,332.7,332.85,332.85,333.54,333.54,333.69,333.69,333.81,333.81,333.9,333.9,334.29,334.29,334.41,334.41,334.53,334.53,334.98,334.98,335.13,335.13,335.28,335.28,335.43,335.43,335.97,335.97,336.09,336.09,336.33,336.33,336.51,336.51,336.57,336.54,337.2]
+    },
+    {
+      "i": 44,
+      "start": 337.2,
+      "end": 342.71,
+      "en": "There are dozens of different ideas about why we sleep, and I'm going to outline three of those.",
+      "zh": "关于为什么我们睡觉，有几十个不同的说法，我从中提炼出三点原因。",
+      "w": [337.2,337.62,337.62,337.74,337.74,338.34,338.34,338.7,338.7,338.76,338.76,339.39,339.39,339.45,339.42,339.84,339.84,340.02,340.02,340.2,340.2,341.04,341.04,341.49,341.49,341.67,341.67,341.73,341.73,341.88,341.88,342.39,342.39,342.45,342.45,342.71]
+    },
+    {
+      "i": 45,
+      "start": 342.71,
+      "end": 347.66,
+      "en": "The first is sort of the restoration idea, and it's somewhat intuitive.",
+      "zh": "第一，是修复的观点这个观点有点直观假设。",
+      "w": [342.71,343.71,343.71,343.95,343.95,344.19,344.19,344.64,344.64,344.7,344.67,344.82,344.82,345.51,345.51,346.11,346.11,346.29,346.29,346.44,346.44,347.31,347.31,347.66]
+    },
+    {
+      "i": 46,
+      "start": 347.66,
+      "end": 353.76,
+      "en": "Essentially, all the stuff we've burned up during the day, we restore, we replace, we rebuild during the night.",
+      "zh": "基本上，在白天我们已经燃烧用尽了所有精力，我们需要在夜间得到修复，更换，和重新生成。",
+      "w": [347.66,348.66,348.66,348.93,348.93,349.14,349.14,349.38,349.38,349.59,349.59,349.86,349.86,350.1,350.1,350.31,350.31,350.49,350.49,350.67,350.67,351.03,351.03,351.6,351.6,351.87,351.87,352.29,352.29,352.59,352.59,353.07,353.07,353.49,353.49,353.58,353.58,353.76]
+    },
+    {
+      "i": 47,
+      "start": 353.76,
+      "end": 359.49,
+      "en": "And indeed, as an explanation, it goes back to Aristotle, so that's what -- 2,300 years ago.",
+      "zh": "的确，作为一种解释，这要追溯到亚里斯多德所以也就是要追溯到2300年前。",
+      "w": [353.76,354.06,354.06,354.75,354.75,354.93,354.93,355.2,355.2,355.98,355.98,356.07,356.07,356.43,356.43,356.73,356.73,356.94,356.94,357.06,357.06,357.78,357.78,357.96,357.96,358.11,359.04,359.16,359.16,359.49]
+    },
+    {
+      "i": 48,
+      "start": 359.49,
+      "end": 374.0,
+      "en": "It's gone in and out of fashion. It's fashionable at the moment because what's been shown is that within the brain, a whole raft of genes have been shown to be turned on only during sleep, and those genes are associated with restoration and metabolic pathways.",
+      "zh": "这个观点曾经流行过。当时流行的原因是人们发现只有在睡眠时,大脑内部的很多基因才会活动起来，而且这些基因与修复和新陈代谢的途径相关联。",
+      "w": [359.49,360.03,360.03,360.3,360.3,360.48,360.48,360.63,360.63,360.69,360.69,360.87,360.87,361.08,361.08,361.53,361.53,362.04,362.04,362.22,362.22,362.28,362.25,362.34,362.34,363.03,363.03,363.66,363.66,363.81,363.81,363.87,363.87,364.35,364.35,364.62,364.62,364.98,364.98,365.16,365.16,365.34,365.34,365.4,365.37,365.64,365.64,365.88,365.88,366.18,366.18,366.48,366.48,367.11,367.11,367.17,367.14,367.47,367.47,367.62,367.62,367.74,367.74,368.19,368.19,368.43,368.43,369.2,369.2,369.53,369.53,369.83,369.83,370.13,370.13,370.4,370.4,370.7,370.7,370.91,370.91,371.18,371.18,371.62,371.62,372.62,372.62,372.98,372.98,373.4,373.4,374.0]
+    },
+    {
+      "i": 49,
+      "start": 374.0,
+      "end": 377.72,
+      "en": "So there's good evidence for the whole restoration hypothesis.",
+      "zh": "所以这就为这整个修复的假设观点提供了证据。",
+      "w": [374.0,374.51,374.51,374.9,374.9,375.05,375.05,375.23,375.23,375.71,375.71,375.77,375.77,375.92,375.92,376.85,376.85,377.72]
+    },
+    {
+      "i": 50,
+      "start": 377.72,
+      "end": 382.9,
+      "en": "What about energy conservation? Again, perhaps intuitive.",
+      "zh": "关于节约能源的观点呢？这或许也是一种直观的假设。",
+      "w": [377.72,378.68,378.68,378.95,378.95,379.28,379.28,380.0,380.0,380.78,380.78,381.35,381.35,382.9]
+    },
+    {
+      "i": 51,
+      "start": 382.9,
+      "end": 389.63,
+      "en": "You essentially sleep to save calories. Now, when you do the sums, though, it doesn't really pan out.",
+      "zh": "基本上，当你睡觉时你是在保存热量。现在，当你算个总数的话，这个观点并没说服力。",
+      "w": [382.9,383.9,383.9,384.32,384.32,384.86,384.86,385.1,385.1,385.34,385.34,386.09,386.09,386.75,386.75,387.47,387.47,387.56,387.56,387.71,387.71,387.8,387.8,388.1,388.1,388.4,388.4,388.52,388.52,388.73,388.73,389.03,389.03,389.42,389.42,389.63]
+    },
+    {
+      "i": 52,
+      "start": 389.63,
+      "end": 401.96,
+      "en": "If you compare an individual who has slept at night, or stayed awake and hasn't moved very much, the energy saving of sleeping is about 110 calories a night.",
+      "zh": "如果你把一个晚上睡觉的与另一个熬夜的但没有做多少运动的人放一起比较，那么睡一晚上大约存了110 卡路里热量。",
+      "w": [389.63,390.08,390.08,390.26,390.26,390.62,390.62,390.71,390.71,391.19,391.19,391.4,391.4,392.32,392.32,393.32,393.32,393.65,393.65,393.95,393.95,394.42,394.42,395.42,395.42,395.69,395.69,396.02,396.02,396.62,396.62,396.77,396.77,397.01,397.01,397.21,397.21,398.21,398.21,398.93,398.21,398.93,398.93,399.38,399.38,399.83,399.83,399.95,399.95,400.43,401.15,401.48,401.48,401.69,401.69,401.96]
+    },
+    {
+      "i": 53,
+      "start": 401.96,
+      "end": 405.16,
+      "en": "Now, that's the equivalent of a hot dog bun.",
+      "zh": "这是相当于一个热狗面包。",
+      "w": [401.96,402.8,402.8,403.01,403.01,403.16,403.16,403.61,403.61,403.73,403.73,404.3,404.3,404.54,404.54,404.75,404.75,405.16]
+    },
+    {
+      "i": 54,
+      "start": 405.16,
+      "end": 414.02,
+      "en": "Now, I would say that a hot dog bun is kind of a meager return for such a complicated and demanding behavior as sleep.",
+      "zh": "我要说，对于睡眠，这样一个复杂和必须的行为来说，最后才换来一个热狗面包，实在是有点说不过去。",
+      "w": [405.16,406.16,406.16,406.43,406.43,407.03,407.03,407.27,407.27,407.71,407.71,407.76,407.71,408.71,408.71,408.95,408.95,409.22,409.22,409.64,409.64,410.06,410.06,410.15,410.15,410.21,410.21,410.45,410.45,410.96,410.96,411.5,411.5,411.65,411.65,411.71,411.68,412.13,412.13,412.61,412.61,413.24,413.24,413.66,413.66,413.78,413.78,414.02]
+    },
+    {
+      "i": 55,
+      "start": 414.02,
+      "end": 417.65,
+      "en": "So I'm less convinced by the energy conservation idea.",
+      "zh": "所以我不太相信这种能量保存的观点。",
+      "w": [414.02,414.59,414.59,414.71,414.71,415.04,415.04,415.49,415.49,415.67,415.73,416.33,416.33,416.66,416.66,416.99,416.99,417.65]
+    },
+    {
+      "i": 56,
+      "start": 417.65,
+      "end": 423.77,
+      "en": "But the third idea I'm quite attracted to, which is brain processing and memory consolidation.",
+      "zh": "但第三个观点很吸引我，就是大脑处理和记忆整合。",
+      "w": [417.65,418.58,418.58,418.67,418.67,418.88,418.88,419.3,419.3,419.54,419.54,419.81,419.81,420.29,420.29,420.44,420.44,420.83,420.83,421.04,421.04,421.73,421.73,422.51,422.51,422.72,422.72,423.35,423.35,423.77]
+    },
+    {
+      "i": 57,
+      "start": 423.77,
+      "end": 432.14,
+      "en": "What we know is that, if after you've tried to learn a task, and you sleep-deprive individuals, the ability to learn that task is smashed.",
+      "zh": "我们知道的是，如果你试图学习某项事物，如果你的睡眠被剥夺了的话，那么学习这项事物的能力就被破坏了。",
+      "w": [423.77,424.43,424.43,424.58,424.58,424.82,424.82,425.06,425.06,425.9,425.9,426.14,426.14,426.5,426.5,426.62,426.62,426.83,426.83,426.98,426.98,427.1,427.1,427.16,427.16,427.52,427.52,427.82,427.82,427.9,427.9,428.91,428.9,429.47,429.47,429.95,429.95,430.31,430.31,430.37,430.34,430.64,430.64,430.82,430.82,431.12,431.12,431.48,431.48,432.14]
+    },
+    {
+      "i": 58,
+      "start": 432.14,
+      "end": 438.35,
+      "en": "It's really hugely attenuated. So sleep and memory consolidation is also very important.",
+      "zh": "这真是巨大的退步。所以睡眠和记忆的巩固也是非常重要的。",
+      "w": [432.14,432.59,432.92,433.28,433.28,434.14,434.14,435.14,435.14,435.65,436.04,436.25,436.25,436.4,436.4,436.67,436.67,436.94,436.94,437.42,437.42,437.69,437.69,437.9,437.9,438.35]
+    },
+    {
+      "i": 59,
+      "start": 438.35,
+      "end": 442.13,
+      "en": "However, it's not just the laying down of memory and recalling it.",
+      "zh": "然而，我们不只是躺下来开始回顾。",
+      "w": [438.35,438.92,438.92,439.16,439.16,439.4,439.4,439.46,439.46,440.33,440.33,440.54,440.54,440.75,440.75,440.8,440.78,441.05,441.05,441.35,441.35,441.89,441.89,442.13]
+    },
+    {
+      "i": 60,
+      "start": 442.13,
+      "end": 451.94,
+      "en": "What's turned out to be really exciting is that our ability to come up with novel solutions to complex problems is hugely enhanced by a night of sleep.",
+      "zh": "真正让人兴奋的是我们用新颖的办法解决复杂问题的能力被一晚上的睡眠给大大加强了。",
+      "w": [442.13,442.94,442.94,443.39,443.39,443.54,443.54,443.69,443.69,443.81,443.81,444.14,444.14,444.77,444.77,444.95,444.95,445.01,445.01,445.52,445.52,445.61,445.61,445.97,445.97,446.18,446.18,446.24,446.24,446.54,446.54,447.23,447.23,447.49,447.49,448.49,448.49,449.0,449.0,449.15,449.15,449.78,449.78,450.2,450.2,450.89,450.89,451.28,451.28,451.33,451.28,451.55,451.55,451.73,451.73,451.94]
+    },
+    {
+      "i": 61,
+      "start": 451.94,
+      "end": 455.27,
+      "en": "In fact, it's been estimated to give us a threefold advantage.",
+      "zh": "事实上，这带给我们三倍的优势。",
+      "w": [451.94,452.15,452.15,452.36,452.36,452.51,452.51,452.66,452.66,452.9,452.9,453.47,453.47,453.65,453.65,453.77,453.77,453.86,453.86,454.58,454.58,455.27]
+    },
+    {
+      "i": 62,
+      "start": 455.27,
+      "end": 457.88,
+      "en": "Sleeping at night enhances our creativity.",
+      "zh": "晚上睡觉增强了我们的创造力。",
+      "w": [455.27,455.81,455.81,455.9,455.9,456.08,456.31,457.31,457.31,457.43,457.43,457.88]
+    },
+    {
+      "i": 63,
+      "start": 457.88,
+      "end": 471.65,
+      "en": "And what seems to be going on is that, in the brain, those neural connections that are important, those synaptic connections that are important, are linked and strengthened, while those that are less important tend to fade away and be less important.",
+      "zh": "在大脑中，那些重要的神经连接将继续工作，那些重要的突触连接会连接在一起并得到加强，而那些不重要的东西会被弱化，显得不重要了。",
+      "w": [457.88,458.15,458.15,458.33,458.33,458.57,458.57,458.63,458.63,458.81,458.81,458.9,458.9,459.2,459.2,459.47,459.47,459.95,459.95,460.22,460.22,460.37,460.37,460.61,460.61,461.21,461.21,461.6,461.6,462.29,462.29,462.92,462.92,463.04,463.04,463.55,463.55,463.79,463.79,464.27,464.27,464.84,464.84,464.9,464.9,465.02,465.02,465.5,465.5,465.68,465.68,466.34,466.34,466.46,466.46,467.15,467.15,467.45,467.45,467.66,467.66,467.87,467.87,467.96,467.96,468.14,468.14,468.65,468.65,469.16,469.16,469.31,469.85,470.12,470.12,470.39,470.39,470.6,470.6,470.96,470.96,471.11,471.11,471.65]
+    },
+    {
+      "i": 64,
+      "start": 471.65,
+      "end": 482.63,
+      "en": "OK. So we've had three explanations for why we might sleep, and I think the important thing to realize is that the details will vary, and it's probable we sleep for multiple different reasons.",
+      "zh": "好，这样我们有三种解释，为什么我们要睡觉，我认为我们需要意识到细节是多样的，我们可能是有很多不同的原因要睡觉。",
+      "w": [471.65,472.67,472.67,473.33,473.33,473.69,473.69,473.84,473.84,474.05,474.05,474.8,474.8,475.16,475.16,475.31,475.31,475.49,475.49,475.88,475.88,476.15,476.15,476.36,476.36,476.9,476.9,477.41,477.41,477.71,477.71,478.1,478.1,478.16,478.16,478.28,478.28,478.52,478.52,478.88,478.88,479.03,479.03,479.21,479.21,479.63,479.63,479.87,479.87,480.17,480.17,480.32,480.32,480.47,480.47,480.71,480.71,481.04,481.04,481.28,481.28,481.34,481.31,481.94,481.94,482.15,482.15,482.63]
+    },
+    {
+      "i": 65,
+      "start": 482.63,
+      "end": 490.82,
+      "en": "But sleep is not an indulgence. It's not some sort of thing that we can take on board rather casually.",
+      "zh": "但是，睡眠不是一种放纵。它不是某种我们可以随随便便看待的事情。",
+      "w": [482.63,483.44,483.44,483.8,483.8,484.51,484.51,485.51,485.51,485.72,485.72,486.32,486.32,486.65,486.65,487.04,487.04,487.4,487.4,487.7,487.7,487.85,487.85,488.15,488.15,488.36,488.36,488.51,488.51,488.78,488.78,489.5,489.5,489.71,489.71,489.89,489.89,490.22,490.22,490.82]
+    },
+    {
+      "i": 66,
+      "start": 490.82,
+      "end": 497.54,
+      "en": "I think that sleep was once likened to an upgrade from economy to business class, you know, the equivalent of.",
+      "zh": "我认为睡眠可以比喻为从经济舱升级到商务舱。",
+      "w": [490.82,491.54,491.54,491.84,491.84,492.01,492.01,492.18,492.18,492.35,492.35,492.7,492.7,493.7,493.7,493.76,493.73,494.09,494.09,494.81,494.81,495.02,495.02,495.65,495.65,495.8,495.8,496.13,496.13,496.46,496.46,496.79,496.79,496.91,496.91,497.03,497.03,497.24,497.24,497.54]
+    },
+    {
+      "i": 67,
+      "start": 497.99,
+      "end": 501.01,
+      "en": "It's not even an upgrade from economy to first class.",
+      "zh": "但它没到从经济舱升级到头等舱那个地步。",
+      "w": [497.99,498.38,498.38,498.53,498.53,498.77,498.77,499.22,499.22,499.64,499.64,499.79,499.79,500.27,500.27,500.5,500.5,500.71,500.71,501.01]
+    },
+    {
+      "i": 68,
+      "start": 501.01,
+      "end": 507.84,
+      "en": "The critical thing to realize is that if you don't sleep, you don't fly.",
+      "zh": "最关键的事是，如果你不睡觉，就好比你无法起飞。",
+      "w": [501.01,501.91,501.91,502.39,502.39,502.6,502.6,502.66,502.63,503.11,503.11,503.35,503.35,503.86,503.86,504.58,504.58,504.94,504.94,505.06,505.06,506.13,506.13,507.13,507.13,507.28,507.28,507.84]
+    },
+    {
+      "i": 69,
+      "start": 507.84,
+      "end": 516.43,
+      "en": "Essentially, you never get there. And what's extraordinary about much of our society these days is that we are desperately sleep-deprived.",
+      "zh": "从根本上讲，你也无法做成任何事情，如今，我们的社会却拼命绝望地剥夺我们的睡眠。",
+      "w": [507.84,508.84,508.84,509.02,509.02,509.26,509.26,509.47,509.47,509.74,509.74,509.95,509.95,510.85,510.85,511.15,511.15,511.78,511.78,512.02,512.02,512.2,512.2,512.29,512.29,512.8,512.8,512.98,512.98,513.04,513.04,513.43,513.43,513.73,513.73,514.09,514.09,514.27,514.27,515.43,515.43,516.43]
+    },
+    {
+      "i": 70,
+      "start": 516.43,
+      "end": 524.08,
+      "en": "So let's now look at sleep deprivation. Huge sectors of society are sleep-deprived, and let's look at our sleep-o-meter.",
+      "zh": "所以，我们现在看看睡眠的剥夺。社会中大部分人的睡眠都被剥夺了，让我们看看我们的睡眠计量表。",
+      "w": [516.43,516.76,516.76,516.94,516.94,517.06,517.06,517.12,517.09,517.33,517.33,517.54,517.54,518.58,518.58,519.58,519.58,520.0,520.0,520.09,520.09,520.24,520.24,520.99,520.99,521.59,521.59,521.83,521.83,522.46,522.46,522.97,522.97,523.12,523.12,523.21,523.21,524.08]
+    },
+    {
+      "i": 71,
+      "start": 524.08,
+      "end": 531.18,
+      "en": "So in the 1950s, good data suggests that most of us were getting around eight hours of sleep a night.",
+      "zh": "在 50 年代，良好的数据表明我们大多数人每晚约睡8 个小时。",
+      "w": [524.08,525.01,525.01,525.52,525.52,525.64,525.64,526.06,526.06,526.51,526.51,526.69,526.69,527.26,527.26,527.32,527.29,527.89,527.89,528.07,528.07,528.19,528.19,528.37,528.37,528.52,528.52,528.97,529.3,529.57,529.57,529.78,529.78,529.96,529.96,530.2,530.2,530.29,530.29,531.18]
+    },
+    {
+      "i": 72,
+      "start": 531.18,
+      "end": 538.95,
+      "en": "Nowadays, we sleep one and a half to two hours less every night, so we're in the six-and-a-half-hours every-night league.",
+      "zh": "如今，我们每晚少睡一个半到两个小时，所以，我们每晚只睡6个半小时。",
+      "w": [531.18,532.18,532.18,532.72,532.72,532.96,532.96,533.14,533.14,533.32,533.32,533.38,533.35,533.53,533.53,533.74,533.74,533.92,533.92,533.98,533.95,534.43,534.43,534.88,534.88,535.09,535.09,535.63,535.63,535.81,535.81,535.96,535.96,536.17,536.44,537.43,537.43,538.06,538.03,538.95]
+    },
+    {
+      "i": 73,
+      "start": 538.95,
+      "end": 548.89,
+      "en": "For teenagers, it's worse, much worse. They need nine hours for full brain performance, and many of them, on a school night, are only getting five hours of sleep.",
+      "zh": "对于青少年来说、 情况更加糟糕。为了大脑的充足表现，他们需要睡够9 个小时，但他们很多人，在上学的夜晚，只睡5个小时。",
+      "w": [538.95,539.95,539.95,540.46,540.76,541.24,541.24,541.54,541.54,541.99,541.99,542.05,542.05,542.86,542.86,543.22,543.22,543.82,543.82,544.06,544.06,544.45,544.45,544.63,544.63,544.84,544.84,545.32,545.32,545.62,545.62,546.1,546.1,546.25,546.25,546.37,546.37,546.55,546.55,546.61,546.58,546.91,546.91,547.03,547.03,547.45,547.45,547.66,547.66,547.84,547.84,548.35,548.35,548.65,548.65,548.77,548.77,548.89]
+    },
+    {
+      "i": 74,
+      "start": 548.89,
+      "end": 562.27,
+      "en": "It's simply not enough. If we think about other sectors of society -- the aged; if you are aged, then your ability to sleep in a single block is somewhat disrupted, and many sleep, again, less than five hours a night.",
+      "zh": "这是根本不够的。想想社会的其他人群，老年人，老年人的睡眠被打断成好几部分，加起来一晚上睡眠少于五个小时。",
+      "w": [548.89,549.49,549.49,549.91,549.91,549.97,549.94,550.09,550.09,551.02,551.02,551.14,551.14,551.41,551.41,551.59,551.59,551.77,551.77,552.22,552.22,552.28,552.25,552.49,552.49,553.27,553.27,553.47,553.47,554.47,554.47,554.98,554.98,555.25,555.25,555.7,555.7,556.33,556.33,556.51,556.51,556.69,556.69,557.05,557.05,557.26,557.26,557.53,557.53,557.83,557.83,558.19,558.19,558.43,558.43,558.61,558.61,558.97,558.97,559.54,559.54,559.75,559.75,560.02,560.02,560.38,560.38,560.92,560.92,561.4,561.4,561.64,561.64,561.82,561.82,562.03,562.03,562.21,562.21,562.27]
+    },
+    {
+      "i": 75,
+      "start": 562.24,
+      "end": 571.99,
+      "en": "Shift work. Shift work is extraordinary, perhaps 20 percent of the working population, and the body clock does not shift to the demands of working at night.",
+      "zh": "轮班工作的人大概占工作人口的20%，但人体生物钟不会随夜间工作的要求而调整。",
+      "w": [562.24,563.11,563.11,563.41,563.41,563.98,563.98,564.07,564.07,564.31,564.31,564.85,564.85,565.84,565.84,566.2,566.2,566.56,566.56,566.62,566.62,566.92,566.92,567.13,567.13,567.9,567.9,568.9,568.9,569.2,569.2,569.56,569.56,569.89,569.89,569.95,569.92,570.52,570.52,570.76,570.76,570.85,570.85,571.15,571.15,571.42,571.42,571.72,571.72,571.81,571.81,571.99]
+    },
+    {
+      "i": 76,
+      "start": 571.99,
+      "end": 575.08,
+      "en": "It's locked onto the same light-dark cycle as the rest of us.",
+      "zh": "它和我们其他人一样拥有相同的光暗周期。",
+      "w": [571.99,572.32,572.32,572.65,572.65,572.92,572.92,573.13,573.13,573.34,573.34,573.85,573.85,574.27,574.27,574.57,574.57,574.69,574.69,574.87,574.87,575.02,575.02,575.08]
+    },
+    {
+      "i": 77,
+      "start": 575.08,
+      "end": 582.73,
+      "en": "So when the poor old shift worker is going home to try and sleep during the day, desperately tired, the body clock is saying, \"Wake up. This is the time to be awake.\"",
+      "zh": "所以当可怜的轮班工人非常疲惫地回到家试着在白天睡觉，人体生物钟会说，\"醒醒。现在应该是醒着的时间\"。",
+      "w": [575.08,575.41,575.41,575.59,575.59,575.89,575.89,576.07,576.07,576.16,576.16,576.4,576.4,576.7,576.7,576.85,576.85,577.15,577.15,577.39,577.39,577.6,577.6,577.78,577.78,577.9,577.9,578.08,578.08,578.29,578.29,578.44,578.44,578.65,578.65,579.52,579.52,579.76,579.76,580.06,580.06,580.24,580.24,580.48,580.48,580.54,580.54,580.87,580.87,581.23,581.23,581.44,581.44,581.83,581.83,581.98,581.98,582.07,582.07,582.13,582.1,582.4,582.4,582.52,582.52,582.73]
+    },
+    {
+      "i": 78,
+      "start": 582.73,
+      "end": 589.15,
+      "en": "So the quality of sleep that you get as a night shift worker is usually very poor, again in that sort of five-hour region.",
+      "zh": "所以身为一名值夜班工作者的睡眠质量通常非常差，他们同样被划分为只睡5小时的人群里。",
+      "w": [582.73,583.24,583.24,583.36,583.36,583.6,583.6,583.96,583.96,584.8,584.8,585.04,585.04,585.13,585.13,585.31,585.31,585.43,585.43,585.49,585.49,585.67,585.67,585.85,585.85,586.03,586.03,586.24,586.24,586.39,586.39,586.75,586.75,586.96,586.96,587.35,587.35,587.5,587.5,587.65,587.65,587.92,587.92,587.98,587.95,588.49,588.49,589.15]
+    },
+    {
+      "i": 79,
+      "start": 589.15,
+      "end": 593.35,
+      "en": "And then, of course, tens of millions of people suffer from jet lag.",
+      "zh": "然后，数以千万的人们受时差影响。",
+      "w": [589.15,589.72,589.72,589.9,589.9,590.02,590.02,590.08,590.05,590.83,590.83,590.98,590.98,591.28,591.28,591.4,591.4,591.55,591.55,592.42,592.42,592.48,592.48,592.91,592.91,593.35]
+    },
+    {
+      "i": 80,
+      "start": 593.35,
+      "end": 597.81,
+      "en": "So who here has jet lag? Well, my goodness gracious.",
+      "zh": "那么，在座的有谁受时差影响？我的天啊。",
+      "w": [593.35,593.74,593.74,593.95,593.95,594.31,594.31,594.7,594.7,595.19,595.19,595.68,595.68,596.68,596.68,597.16,597.16,597.52,597.52,597.81]
+    },
+    {
+      "i": 81,
+      "start": 597.81,
+      "end": 603.55,
+      "en": "Well, thank you very much indeed for not falling asleep, because that's what your brain is craving.",
+      "zh": "好，非常感谢您现在没睡着，因为那是你大脑正在渴望的。",
+      "w": [597.81,598.81,598.81,598.99,598.99,599.11,599.11,599.17,599.14,599.59,599.59,599.8,599.8,599.98,599.98,600.25,600.25,600.58,600.58,600.67,600.67,601.36,601.36,601.84,601.84,602.05,602.05,602.2,602.2,602.59,602.59,602.65,602.65,603.55]
+    },
+    {
+      "i": 82,
+      "start": 603.55,
+      "end": 612.91,
+      "en": "One of the things that the brain does is indulge in micro-sleeps, this involuntary falling asleep, and you have essentially no control over it.",
+      "zh": "大脑还会做一件事它会沉溺于微睡眠，这是非自愿性的睡眠，你根本无法控制它。",
+      "w": [603.55,604.15,604.15,604.27,604.27,604.36,604.36,604.6,604.6,604.81,604.81,604.93,604.93,605.05,605.05,605.47,605.47,606.27,606.27,607.27,607.27,607.77,607.77,608.89,608.89,609.43,609.43,609.85,609.85,610.42,610.42,610.75,610.75,611.05,611.05,611.32,611.32,611.53,611.53,611.86,611.86,612.01,612.01,612.49,612.49,612.55,612.52,612.91]
+    },
+    {
+      "i": 83,
+      "start": 612.91,
+      "end": 617.38,
+      "en": "Now, micro-sleeps can be sort of somewhat embarrassing, but they can also be deadly.",
+      "zh": "微睡眠让人尴尬，但他们也可以致命。",
+      "w": [612.91,613.48,613.48,614.35,614.35,614.59,614.59,614.68,614.68,614.89,614.89,614.95,614.95,615.16,615.16,615.79,615.79,616.3,616.3,616.42,616.42,616.57,616.57,616.78,616.78,617.14,617.14,617.38]
+    },
+    {
+      "i": 84,
+      "start": 617.38,
+      "end": 633.01,
+      "en": "It's been estimated that 31 percent of drivers will fall asleep at the wheel at least once in their life, and in the US, the statistics are pretty good: 100,000 accidents on the freeway have been associated with tiredness,",
+      "zh": "据估计，31%的司机一生中至少有一次在开车时睡着了，在美国，统计数字显示惊人：在高速公路上发生的10万起交通事故与疲倦，放松警惕，",
+      "w": [617.38,618.22,618.22,618.49,618.49,618.64,618.64,619.36,619.36,620.35,620.35,620.83,620.83,621.31,621.31,621.85,621.85,622.21,622.21,622.86,622.86,623.86,623.86,624.13,624.13,624.19,624.16,624.73,624.73,624.94,624.94,625.18,625.18,625.39,625.39,625.54,625.54,625.72,625.72,626.02,626.02,626.5,626.5,626.59,626.59,626.92,626.92,627.22,627.22,627.76,627.76,627.85,627.85,627.91,627.88,628.27,629.47,630.04,630.04,630.25,630.25,630.58,630.58,630.91,630.91,631.36,631.36,631.51,631.51,631.93,631.93,632.32,632.32,633.01]
+    },
+    {
+      "i": 85,
+      "start": 633.01,
+      "end": 636.35,
+      "en": "loss of vigilance, and falling asleep -- a hundred thousand a year.",
+      "zh": "和打瞌睡有关。平均每年10 万起。这很惊人。",
+      "w": [633.01,633.37,633.37,633.91,633.91,634.36,634.36,634.54,634.54,634.81,634.81,634.99,634.99,635.04,634.99,635.65,635.65,635.88,635.88,636.11,636.11,636.35]
+    },
+    {
+      "i": 86,
+      "start": 636.35,
+      "end": 646.99,
+      "en": "It's extraordinary. At another level of terror, we dip into the tragic accidents at Chernobyl and indeed the space shuttle Challenger, which was so tragically lost.",
+      "zh": "另一种恐怖是我们看到切尔诺贝利的事故和挑战者航天飞机失事，都是损失惨重。",
+      "w": [636.35,636.58,636.58,637.36,637.36,637.9,637.9,638.32,638.32,638.62,638.62,638.83,638.83,639.1,639.1,640.09,640.09,640.54,640.54,640.75,640.75,641.47,641.47,641.98,641.98,642.55,642.55,642.67,642.67,643.18,643.18,643.42,643.42,644.02,644.02,644.17,644.17,644.41,644.41,645.16,645.16,645.22,645.19,645.82,645.82,646.12,646.12,646.3,646.3,646.81,646.81,646.99]
+    },
+    {
+      "i": 87,
+      "start": 646.99,
+      "end": 659.98,
+      "en": "And in the investigations that followed those disasters, poor judgment as a result of extended shift work and loss of vigilance and tiredness was attributed to a big chunk of those disasters.",
+      "zh": "随后的调查中发现由于轮班工作者延长的工作时间所造成的判断力差，丧失警惕和疲倦是导致悲剧的主因。",
+      "w": [646.99,647.49,647.49,648.49,648.49,648.67,648.67,649.3,649.3,649.48,649.48,649.84,649.84,650.05,650.05,650.71,650.71,651.31,651.31,651.91,651.91,652.09,652.09,652.27,652.27,652.69,652.69,652.78,652.78,653.32,653.32,653.56,653.56,653.77,653.77,654.04,654.04,654.49,654.49,654.67,654.67,655.06,655.06,655.36,655.36,655.87,655.87,656.47,656.47,657.16,657.16,657.22,657.19,657.37,657.37,658.06,658.06,658.3,658.3,658.51,659.08,659.35,659.35,659.98]
+    },
+    {
+      "i": 88,
+      "start": 661.62,
+      "end": 672.76,
+      "en": "When you're tired and you lack sleep, you have poor memory, you have poor creativity, you have increased impulsiveness, and you have overall poor judgment.",
+      "zh": "所以，当你累了，缺觉了，你的记忆力变差，你的创造力降低，你容易冲动，你的整体判断也会下降。",
+      "w": [661.62,662.62,662.62,662.77,662.77,663.04,663.04,663.43,663.43,663.7,663.7,663.94,663.94,664.18,664.18,664.66,664.66,664.84,664.84,665.05,665.05,665.41,665.41,665.92,665.92,666.16,666.16,666.82,666.82,667.54,667.54,668.44,668.44,668.74,668.74,669.16,669.16,669.7,669.7,670.03,670.03,670.69,670.69,671.01,671.01,672.01,672.01,672.28,672.28,672.76]
+    },
+    {
+      "i": 89,
+      "start": 672.76,
+      "end": 677.28,
+      "en": "But my friends, it's so much worse than that.",
+      "zh": "但我的朋友们，还有比这更糟的事呢。（笑声）",
+      "w": [672.76,673.12,673.12,673.24,673.24,673.66,673.66,674.32,674.32,674.65,674.65,674.86,674.86,675.13,675.13,675.4,675.4,677.28]
+    },
+    {
+      "i": 90,
+      "start": 677.28,
+      "end": 682.81,
+      "en": "(Laughter) If you are a tired brain, the brain is craving things to wake it up.",
+      "zh": "如果大脑累了，它渴望某种东西来唤醒它。",
+      "w": [677.28,677.33,677.28,678.28,678.28,678.61,678.61,678.76,678.76,678.82,678.79,679.24,679.24,679.66,679.66,680.29,680.29,680.47,680.47,680.62,680.62,681.49,681.49,682.09,682.09,682.36,682.36,682.54,682.54,682.66,682.66,682.81]
+    },
+    {
+      "i": 91,
+      "start": 682.81,
+      "end": 690.19,
+      "en": "So drugs, stimulants. Caffeine represents the stimulant of choice across much of the Western world.",
+      "zh": "所以，药品，兴奋剂，和咖啡因是大多数西方世界的选择。",
+      "w": [682.81,683.44,683.44,684.34,684.34,685.0,685.0,685.74,685.74,686.74,686.74,687.4,687.4,688.12,688.12,688.24,688.24,688.57,688.57,689.26,689.26,689.56,689.56,689.62,689.59,689.74,689.74,690.13,690.13,690.19]
+    },
+    {
+      "i": 92,
+      "start": 690.16,
+      "end": 695.29,
+      "en": "Much of the day is fueled by caffeine, and if you're a really naughty tired brain, nicotine.",
+      "zh": "大部分时间我们用咖啡因提神，如果大脑过度劳累，就会选择尼古丁。",
+      "w": [690.16,690.76,690.76,690.82,690.79,691.0,691.0,691.18,691.18,691.24,691.24,691.75,691.75,691.84,691.84,692.41,692.41,692.68,692.68,692.92,692.92,693.1,693.1,693.15,693.1,693.34,693.34,693.7,693.7,694.18,694.18,694.54,694.54,695.29]
+    },
+    {
+      "i": 93,
+      "start": 695.65,
+      "end": 704.65,
+      "en": "Of course, you're fueling the waking state with these stimulants, and then, of course, it gets to 11 o'clock at night, and the brain says to itself, \"Actually, I need to be asleep fairly shortly.",
+      "zh": "当然，你要保持清醒状态，就会用这些兴奋剂，然后，到了晚上11点时，大脑会说，\"啊，实际上，我需要小睡一会。",
+      "w": [695.65,695.92,695.92,696.07,696.07,696.19,696.19,696.64,696.64,696.76,696.76,697.06,697.06,697.33,697.33,697.51,697.51,697.74,697.74,698.74,698.74,698.89,698.89,699.31,699.31,699.43,699.43,699.61,699.61,699.7,699.7,699.76,699.76,700.21,700.21,700.42,700.42,700.54,700.54,700.69,700.69,700.9,700.9,701.14,701.14,701.32,701.32,701.56,701.56,701.71,701.71,701.83,702.64,702.82,702.82,703.09,703.09,703.48,703.48,703.6,703.6,703.72,703.72,703.99,703.99,704.35,704.35,704.65]
+    },
+    {
+      "i": 94,
+      "start": 704.65,
+      "end": 707.14,
+      "en": "What do we do about that when I'm feeling completely wired?\"",
+      "zh": "当我们特困的时候，我们该做点什么呢?\"",
+      "w": [704.65,705.13,705.13,705.28,705.28,705.37,705.37,705.49,705.49,705.64,705.64,705.76,705.76,706.21,706.21,706.3,706.3,706.57,706.57,706.69,706.69,707.14]
+    },
+    {
+      "i": 95,
+      "start": 707.14,
+      "end": 709.93,
+      "en": "Well, of course, you then resort to alcohol.",
+      "zh": "嗯，当然，你会求助于酒精。",
+      "w": [707.14,707.86,707.86,707.98,707.98,708.04,708.01,708.37,708.37,708.55,708.55,709.33,709.33,709.45,709.45,709.93]
+    },
+    {
+      "i": 96,
+      "start": 710.2,
+      "end": 716.8,
+      "en": "Now alcohol, short-term, you know, once or twice, to use to mildly sedate you, can be very useful.",
+      "zh": "酒精，短期内用一两次，可以让你轻度镇静，这非常有用。",
+      "w": [710.2,711.04,711.04,711.79,711.79,712.39,712.39,712.99,712.99,713.11,713.11,713.41,713.41,713.5,713.5,713.71,713.71,714.22,714.22,714.4,714.4,714.64,714.64,715.15,715.15,715.54,715.54,715.72,715.72,716.11,716.11,716.2,716.2,716.41,716.41,716.8]
+    },
+    {
+      "i": 97,
+      "start": 716.8,
+      "end": 719.68,
+      "en": "It can actually ease the sleep transition.",
+      "zh": "它实际上可以帮助睡眠的过渡。",
+      "w": [716.8,717.01,717.01,717.16,717.16,717.31,717.31,717.85,718.57,718.87,718.87,719.11,719.11,719.68]
+    },
+    {
+      "i": 98,
+      "start": 719.68,
+      "end": 724.78,
+      "en": "But what you must be so aware of is that alcohol doesn't provide sleep.",
+      "zh": "但你必须意识到酒精只会麻醉你，但它不能提供真正的睡眠，",
+      "w": [719.68,719.92,719.92,720.04,720.04,720.19,720.19,720.55,720.55,720.76,720.76,721.0,721.0,721.33,721.33,721.39,721.36,721.81,721.81,722.5,722.5,722.74,722.74,723.34,723.34,723.82,723.82,724.78]
+    },
+    {
+      "i": 99,
+      "start": 724.78,
+      "end": 727.39,
+      "en": "A biological mimic for sleep, it sedates you.",
+      "zh": "那只是一个生物模仿性的睡眠。",
+      "w": [724.78,725.05,725.05,725.74,725.74,726.04,726.04,726.22,726.22,726.4,726.4,726.61,726.61,727.12,727.12,727.39]
+    },
+    {
+      "i": 100,
+      "start": 727.39,
+      "end": 733.39,
+      "en": "So it actually harms some of the neural processing that's going on during memory consolidation and memory recall.",
+      "zh": "它实际上会危害神经活动过程，这包含记忆的强化和回忆。",
+      "w": [727.39,727.81,727.81,727.93,727.93,728.38,728.38,728.62,728.62,729.1,729.1,729.19,729.19,729.31,729.31,729.85,729.85,730.3,730.3,730.48,730.48,730.72,730.72,730.87,730.87,731.32,731.32,731.65,731.65,731.95,731.95,732.52,732.52,733.03,733.03,733.39]
+    },
+    {
+      "i": 101,
+      "start": 733.39,
+      "end": 741.45,
+      "en": "So it's a short-term acute measure, but for goodness sake, don't become addicted to alcohol as a way of getting to sleep every night.",
+      "zh": "所以它是一个短期急性措施，但看在上帝的份上，千万不要上瘾，不要每晚都得依靠酒精睡眠。",
+      "w": [733.39,733.9,733.9,734.5,734.5,734.62,734.62,735.22,735.22,735.64,735.64,735.94,735.94,736.39,736.39,736.6,736.6,736.9,736.9,737.11,737.11,737.53,737.53,737.95,737.95,738.64,738.64,738.7,738.67,739.12,739.12,739.6,739.6,739.66,739.63,739.75,739.75,739.96,739.96,740.08,740.08,740.26,740.26,740.44,740.44,740.8,740.8,741.45]
+    },
+    {
+      "i": 102,
+      "start": 741.45,
+      "end": 745.21,
+      "en": "Another connection between loss of sleep is weight gain.",
+      "zh": "另外，睡眠和体重增加有关联。",
+      "w": [741.45,742.45,742.45,742.9,742.9,743.2,743.2,743.56,743.8,744.01,744.01,744.19,744.19,744.43,744.43,744.85,744.85,745.21]
+    },
+    {
+      "i": 103,
+      "start": 745.21,
+      "end": 752.4,
+      "en": "If you sleep around about five hours or less every night, then you have a 50 percent likelihood of being obese.",
+      "zh": "如果你每晚只睡5个小时或更少，那么你有 50%超重的可能性。",
+      "w": [745.21,745.51,745.51,746.02,746.02,746.29,746.29,746.5,746.5,746.95,746.95,747.25,747.25,747.46,747.46,747.64,747.64,747.94,747.94,748.72,748.72,748.93,748.93,749.44,749.44,749.5,749.47,749.86,749.86,750.1,750.1,750.73,750.73,751.54,751.54,751.66,751.66,752.23,752.23,752.4]
+    },
+    {
+      "i": 104,
+      "start": 752.4,
+      "end": 759.82,
+      "en": "What's the connection here? Well, sleep loss seems to give rise to the release of the hormone ghrelin, the hunger hormone.",
+      "zh": "这两者之间的关联是什么？睡眠缺失看起来会释放更多的荷尔蒙生长激素（ghrelin），即饥饿激素。",
+      "w": [752.4,753.4,753.4,753.7,753.7,754.12,754.12,754.63,754.63,755.17,755.17,755.98,755.98,756.22,756.22,756.49,756.49,756.67,756.67,756.82,756.82,757.12,757.12,757.18,757.15,757.63,757.63,757.87,757.87,758.11,758.11,758.41,758.41,758.56,758.56,759.04,759.04,759.46,759.46,759.76,759.76,759.82]
+    },
+    {
+      "i": 105,
+      "start": 759.79,
+      "end": 762.97,
+      "en": "Ghrelin is released. It gets to the brain.",
+      "zh": "饥饿激素（ghrelin）一旦被释放，",
+      "w": [759.79,760.42,760.42,760.75,760.75,761.05,761.05,761.8,761.8,762.13,762.55,762.64,762.64,762.76,762.76,762.97]
+    },
+    {
+      "i": 106,
+      "start": 762.97,
+      "end": 769.21,
+      "en": "The brain says, \"I need carbohydrates,\" and what it does is seek out carbohydrates and particularly sugars.",
+      "zh": "它就到达大脑，大脑就会说\"我需要碳水化合物，\"它会寻找碳水化合物特别是糖。",
+      "w": [762.97,763.36,763.36,763.57,763.57,763.87,763.87,764.14,764.14,764.46,764.46,765.46,765.46,765.76,765.76,766.3,766.3,766.42,766.42,766.63,766.63,766.93,766.93,767.17,767.17,767.56,767.56,768.16,768.16,768.31,768.31,768.73,768.73,769.21]
+    },
+    {
+      "i": 107,
+      "start": 769.21,
+      "end": 775.39,
+      "en": "So there's a link between tiredness and the metabolic predisposition for weight gain: stress.",
+      "zh": "这就是疲倦和增重的代谢倾向两者之间的关联。",
+      "w": [769.21,769.69,769.69,769.9,769.9,770.11,770.11,770.5,770.5,770.82,770.82,771.82,771.82,772.18,772.18,772.63,772.63,772.9,772.9,773.83,773.83,773.89,773.86,774.25,774.25,774.39,774.39,775.39]
+    },
+    {
+      "i": 108,
+      "start": 775.39,
+      "end": 786.58,
+      "en": "Tired people are massively stressed. And one of the things of stress, of course, is loss of memory, which is what I sort of just then had a little lapse of.",
+      "zh": "压力。疲惫的人压力都很大。压力造成的后果之一是记忆丧失，这就是为什么刚刚我跳过一小段。",
+      "w": [775.39,776.11,776.11,776.53,776.53,776.74,776.74,777.64,777.64,779.22,779.22,780.22,780.22,780.37,780.37,780.43,780.43,780.49,780.49,780.64,780.64,780.73,780.73,780.94,780.94,781.0,780.97,781.18,781.18,781.36,781.36,781.51,781.51,781.6,781.6,781.78,781.78,782.41,782.41,782.47,782.44,783.19,783.37,783.43,783.43,783.71,783.71,784.0,784.0,784.21,784.21,784.3,784.3,784.51,784.51,784.57,784.54,784.75,784.75,785.66,785.66,786.58]
+    },
+    {
+      "i": 109,
+      "start": 786.58,
+      "end": 795.88,
+      "en": "But stress is so much more. So, if you're acutely stressed, not a great problem, but it's sustained stress associated with sleep loss that's the problem.",
+      "zh": "但压力影响更大。所以如果只是突然感受到压力，这不是一个很大的问题，但如果是一个与睡眠损失相关的持续的压力，这会是个问题。",
+      "w": [786.58,787.33,787.33,787.66,787.66,787.81,787.81,788.02,788.02,788.23,788.23,788.5,788.5,789.4,789.85,790.06,790.06,790.18,790.18,790.66,790.66,791.05,791.05,791.32,791.32,791.38,791.38,791.62,791.62,791.8,791.8,792.61,792.61,792.76,792.76,793.24,793.24,793.72,793.72,794.14,794.14,794.47,794.47,794.68,794.68,794.98,794.98,795.22,795.22,795.31,795.31,795.88]
+    },
+    {
+      "i": 110,
+      "start": 796.39,
+      "end": 799.84,
+      "en": "Sustained stress leads to suppressed immunity.",
+      "zh": "所以，持续的压力导致免疫功能被抑制，",
+      "w": [796.39,797.32,797.32,797.5,798.16,798.55,798.55,798.85,798.85,799.54,799.54,799.84]
+    },
+    {
+      "i": 111,
+      "start": 799.84,
+      "end": 808.83,
+      "en": "And so, tired people tend to have higher rates of overall infection, and there's some very good studies showing that shift workers, for example, have higher rates of cancer.",
+      "zh": "所以，疲惫的人更容易受到感染，有一些很好的研究显示轮班工作者，有较高的癌症患病率。",
+      "w": [799.84,800.23,800.23,800.65,800.65,801.28,801.28,801.49,801.49,801.82,801.82,801.88,801.85,802.09,802.09,802.33,802.33,802.39,802.36,802.72,802.72,803.14,803.14,803.71,803.71,803.89,803.89,804.16,804.16,804.31,804.31,804.37,804.34,804.61,804.61,804.97,804.97,805.36,805.36,805.6,805.6,806.08,806.08,806.44,806.44,806.56,806.56,806.98,806.98,807.16,807.16,807.37,807.37,807.61,807.61,807.73,807.73,808.83]
+    },
+    {
+      "i": 112,
+      "start": 808.83,
+      "end": 812.46,
+      "en": "Increased levels of stress throw glucose into the circulation.",
+      "zh": "压力会增加血液循环中的葡萄糖。",
+      "w": [808.83,809.83,809.83,810.13,810.13,810.22,810.22,810.52,810.52,810.97,810.97,811.42,811.42,811.69,811.69,811.78,811.78,812.46]
+    },
+    {
+      "i": 113,
+      "start": 812.46,
+      "end": 819.28,
+      "en": "Glucose becomes a dominant part of the vasculature and essentially you become glucose intolerant.",
+      "zh": "当葡萄糖成为血管中重要成分时，身体对葡萄糖的耐受性降低。",
+      "w": [812.46,813.46,813.46,814.12,814.12,814.56,814.56,815.56,815.56,815.71,815.71,815.86,815.86,815.92,815.92,816.4,816.4,816.96,816.96,817.96,817.96,818.01,817.96,818.08,818.08,818.62,818.62,819.28]
+    },
+    {
+      "i": 114,
+      "start": 819.28,
+      "end": 826.99,
+      "en": "Therefore, diabetes 2. Stress increases cardiovascular disease as a result of raising blood pressure.",
+      "zh": "因此，会患上2型糖尿病。压力会增加心血管疾病会升高血压。",
+      "w": [819.28,819.73,819.73,820.48,821.43,822.51,822.51,823.51,823.51,824.11,824.11,824.89,824.89,825.1,825.1,825.16,825.13,825.34,825.34,825.61,826.15,826.39,826.39,826.66,826.66,826.99]
+    },
+    {
+      "i": 115,
+      "start": 826.99,
+      "end": 837.01,
+      "en": "So there's a whole raft of things associated with sleep loss that are more than just a mildly impaired brain, which is where I think most people think that sleep loss resides.",
+      "zh": "所以，有很多与睡眠损失相关的事情并不仅仅像大多数人认为的睡眠不足只会引起大脑轻度受损。",
+      "w": [826.99,827.77,827.77,827.95,827.95,828.01,828.01,828.22,828.22,828.43,828.43,828.76,828.76,829.06,829.06,829.36,829.36,829.75,829.75,830.05,830.05,830.29,830.29,831.1,831.1,831.34,831.34,831.88,831.88,832.09,832.09,832.15,832.15,832.57,832.57,833.26,833.26,833.8,833.8,834.13,834.13,834.4,834.4,834.52,834.52,834.58,834.55,834.7,834.7,834.85,834.85,835.12,835.12,835.51,835.51,835.63,835.63,835.84,835.84,836.02,836.23,836.59,836.59,837.01]
+    },
+    {
+      "i": 116,
+      "start": 837.01,
+      "end": 843.76,
+      "en": "So at this point in the talk, this is a nice time to think, \"Well, do you think on the whole I'm getting enough sleep?\"",
+      "zh": "现在，这个演讲是个很好的机会让我们想想，你觉得整体上而言，你的睡眠充足吗？",
+      "w": [837.01,837.82,837.82,838.0,838.0,838.09,838.09,838.33,838.33,838.6,838.6,838.9,838.9,839.08,839.62,839.89,839.89,840.04,840.04,840.1,840.07,840.25,840.25,840.55,840.55,840.67,840.67,840.82,840.82,841.3,841.3,841.75,841.75,841.9,841.9,841.96,841.96,842.35,842.35,842.53,842.53,842.59,842.56,842.98,842.98,843.25,843.25,843.46,843.46,843.76]
+    },
+    {
+      "i": 117,
+      "start": 844.42,
+      "end": 848.35,
+      "en": "So a quick show of hands. Who feels that they're getting enough sleep here?",
+      "zh": "请举手让我们看看。这里谁觉得自己睡眠充足？",
+      "w": [844.42,844.93,844.93,844.98,844.93,845.14,845.14,845.44,845.44,845.56,845.56,845.8,845.8,846.19,846.19,846.52,846.52,846.73,846.94,847.24,847.24,847.51,847.51,847.69,847.69,847.84,847.84,848.35]
+    },
+    {
+      "i": 118,
+      "start": 848.35,
+      "end": 853.93,
+      "en": "Oh. Well, that's pretty impressive. Good. We'll talk more about that later, about what are your tips.",
+      "zh": "噢，非常好。很好。我们稍后会详细谈谈你们入睡的秘诀是什么。",
+      "w": [848.35,849.0,849.0,850.0,850.0,850.39,850.39,850.84,850.84,851.26,851.26,851.77,851.77,852.19,852.19,852.4,852.4,852.55,852.55,852.61,852.61,852.79,852.79,852.94,852.94,853.39,853.39,853.54,853.54,853.59,853.54,853.69,853.69,853.93]
+    },
+    {
+      "i": 119,
+      "start": 853.93,
+      "end": 858.61,
+      "en": "So most of us, of course, ask the question, \"How do I know whether I'm getting enough sleep?\"",
+      "zh": "大部分人都会问个问题，\"怎么知道我是否得到足够的睡眠?\"",
+      "w": [853.93,854.56,854.56,855.04,855.04,855.16,855.16,855.25,855.25,855.37,855.37,855.52,855.52,856.39,856.39,856.6,856.6,856.93,857.26,857.41,857.41,857.47,857.47,857.59,857.59,857.68,857.68,857.98,857.98,858.13,858.13,858.25,858.25,858.49,858.49,858.61]
+    },
+    {
+      "i": 120,
+      "start": 858.61,
+      "end": 872.98,
+      "en": "Well, it's not rocket science. If you need an alarm clock to get you out of bed in the morning, if you are taking a long time to get up, if you need lots of stimulants, if you're grumpy, if you're irritable, if you're told by your work colleagues that you're looking tired and irritable,",
+      "zh": "嗯，这不是深奥的科学。如果早上起床你需要一个闹钟，如果你花很长时间起床，如果你需要大量的兴奋剂，如果你脾气乖戾易怒，如果你的同事告诉你您看起来疲倦和易怒、",
+      "w": [858.61,859.12,859.12,859.36,859.36,859.69,859.69,860.05,860.05,860.53,860.53,860.59,860.59,860.86,860.86,861.04,861.04,861.19,861.19,861.55,861.55,861.7,861.7,861.88,861.88,862.06,862.06,862.18,862.18,862.3,862.3,862.36,862.33,862.48,862.48,862.72,862.72,862.81,862.81,863.11,863.11,863.92,863.92,864.31,864.31,864.61,864.61,865.15,865.15,865.21,865.18,865.33,865.33,865.51,865.51,865.57,865.57,865.81,865.81,865.93,865.93,866.11,866.11,866.29,866.29,866.47,866.47,866.74,866.74,866.86,866.86,867.37,867.37,867.46,867.46,867.67,867.67,867.94,867.94,868.33,868.33,868.48,868.48,868.9,868.9,869.23,869.23,869.74,869.74,870.04,870.04,870.31,870.31,870.46,870.46,870.7,870.7,871.12,871.12,871.72,871.72,871.87,871.87,872.17,872.17,872.41,872.41,872.74,872.74,872.98]
+    },
+    {
+      "i": 121,
+      "start": 872.98,
+      "end": 877.63,
+      "en": "chances are you are sleep-deprived. Listen to them. Listen to yourself.",
+      "zh": "你很可能就是睡眠不足。听听他们，听听你自己。",
+      "w": [872.98,873.82,873.82,873.97,873.97,874.36,874.36,874.54,874.54,875.47,875.47,876.22,876.22,876.37,876.37,876.52,876.52,876.88,876.88,876.94,876.91,877.63]
+    },
+    {
+      "i": 122,
+      "start": 877.63,
+      "end": 883.53,
+      "en": "What do you do? Well -- and this is slightly offensive -- sleep for dummies.",
+      "zh": "你该怎么办呢？这有点冒犯之意。白痴睡眠法：",
+      "w": [877.63,878.02,878.02,878.11,878.11,878.2,878.2,878.58,878.58,879.58,879.58,879.63,879.58,880.06,880.06,880.21,880.21,880.51,880.51,880.87,880.87,881.32,881.32,881.53,881.53,883.53]
+    },
+    {
+      "i": 123,
+      "start": 883.53,
+      "end": 887.01,
+      "en": "(Laughter) Make your bedroom a haven for sleep.",
+      "zh": "将你的卧室变成睡眠天堂。",
+      "w": [883.53,884.07,884.07,885.03,885.03,885.3,885.3,885.78,885.78,885.96,885.96,886.56,886.56,886.77,886.77,887.01]
+    },
+    {
+      "i": 124,
+      "start": 887.01,
+      "end": 892.47,
+      "en": "The first critical thing is make it as dark as you possibly can, and also make it slightly cool.",
+      "zh": "关键的第一步是让卧室尽可能的保持黑暗，并让室温稍微低一些。这非常重要。",
+      "w": [887.01,887.67,887.67,887.91,887.91,888.21,888.21,888.6,888.6,888.78,888.78,889.05,889.05,889.17,889.17,889.32,889.32,889.59,889.59,889.8,889.8,889.86,889.83,890.31,890.31,890.61,890.61,890.91,890.91,891.45,891.45,891.6,891.6,891.66,891.63,891.99,891.99,892.47]
+    },
+    {
+      "i": 125,
+      "start": 892.47,
+      "end": 899.01,
+      "en": "Very important. Actually, reduce your amount of light exposure at least half an hour before you go to bed.",
+      "zh": "实际上，至少在睡前半个小时就需要少接受光线的照射。",
+      "w": [892.47,893.16,893.16,893.73,893.73,894.62,894.62,895.62,895.62,895.8,895.8,896.04,896.04,896.16,896.16,896.37,896.37,896.85,896.85,897.06,897.06,897.3,897.3,897.6,897.6,897.72,897.72,897.87,897.87,898.11,898.11,898.5,898.5,898.56,898.53,898.74,898.74,899.01]
+    },
+    {
+      "i": 126,
+      "start": 899.01,
+      "end": 902.01,
+      "en": "Light increases levels of alertness and will delay sleep.",
+      "zh": "光线增加警醒度，并延迟睡眠。",
+      "w": [899.01,899.7,899.7,900.36,900.36,900.54,900.54,900.75,900.75,900.99,900.99,901.35,901.35,901.44,901.44,901.71,901.71,902.01]
+    },
+    {
+      "i": 127,
+      "start": 902.01,
+      "end": 904.32,
+      "en": "What's the last thing that most of us do before we go to bed?",
+      "zh": "我们大多数人睡前做的最后一件事是什么？",
+      "w": [902.01,902.34,902.34,902.49,902.49,902.67,902.67,902.82,902.82,903.0,903.0,903.18,903.18,903.3,903.3,903.36,903.36,903.54,903.54,903.87,903.87,903.96,903.96,904.05,904.05,904.11,904.11,904.32]
+    },
+    {
+      "i": 128,
+      "start": 904.32,
+      "end": 909.24,
+      "en": "We stand in a massively lit bathroom, looking into the mirror cleaning our teeth.",
+      "zh": "我们站在一个光线明亮的浴室对着镜子清洁牙齿。",
+      "w": [904.32,904.53,904.53,905.1,905.1,905.22,905.22,905.28,905.28,905.88,905.88,906.15,906.15,906.69,907.68,908.01,908.01,908.1,908.1,908.31,908.31,908.46,908.46,908.91,908.91,909.03,909.03,909.24]
+    },
+    {
+      "i": 129,
+      "start": 909.24,
+      "end": 912.6,
+      "en": "It's the worst thing we can possibly do before we go to sleep.",
+      "zh": "这是入睡前最不适合做的事。",
+      "w": [909.24,909.45,909.45,909.51,909.48,909.84,909.84,910.08,910.08,910.23,910.23,910.35,910.35,910.53,910.53,910.98,911.21,912.21,912.21,912.27,912.27,912.39,912.39,912.48,912.48,912.6]
+    },
+    {
+      "i": 130,
+      "start": 912.6,
+      "end": 915.57,
+      "en": "Turn off those mobile phones. Turn off those computers.",
+      "zh": "请关闭移动电话，计算机。",
+      "w": [912.6,913.38,913.38,913.53,913.53,913.71,913.71,914.1,914.1,914.16,914.13,914.7,914.7,914.85,914.85,915.0,915.0,915.57]
+    },
+    {
+      "i": 131,
+      "start": 915.57,
+      "end": 919.43,
+      "en": "Turn off all of those things that are also going to excite the brain.",
+      "zh": "关闭所有的那些会让大脑兴奋的东西。",
+      "w": [915.57,916.08,916.08,916.23,916.23,916.38,916.38,916.56,916.56,916.68,916.68,916.98,916.98,917.13,917.13,917.25,917.25,917.43,917.43,917.7,917.7,917.79,917.91,918.3,918.3,918.45,918.45,919.43]
+    },
+    {
+      "i": 132,
+      "start": 919.43,
+      "end": 924.98,
+      "en": "Try not to drink caffeine too late in the day, ideally not after lunch.",
+      "zh": "尽量不要在一天太晚的时间喝咖啡因最好午餐后就不要喝了。",
+      "w": [919.43,920.43,920.43,920.58,920.58,920.7,920.7,920.82,920.82,921.27,921.27,921.72,921.72,921.93,921.93,922.23,922.23,922.29,922.29,922.82,922.82,923.82,923.82,924.33,924.33,924.72,924.72,924.98]
+    },
+    {
+      "i": 133,
+      "start": 924.98,
+      "end": 934.26,
+      "en": "Now, we've set about reducing light exposure before you go to bed, but light exposure in the morning is very good at setting the biological clock to the light-dark cycle.",
+      "zh": "现在，我们降低睡前接受的光线，但早上接受的光线对调整生物钟的光暗周期非常有益。",
+      "w": [924.98,925.98,925.98,926.16,926.16,926.37,926.37,926.58,926.58,926.88,926.88,927.24,927.24,927.6,927.6,928.05,928.05,928.14,928.14,928.26,928.26,928.32,928.32,928.44,928.44,929.16,929.31,929.52,929.52,929.94,929.94,930.12,930.12,930.24,930.24,930.72,930.72,930.9,930.9,931.26,931.26,931.8,931.8,931.95,931.95,932.22,932.22,932.46,932.46,932.97,932.97,933.09,933.09,933.33,933.33,933.42,933.42,933.6,933.6,934.26]
+    },
+    {
+      "i": 134,
+      "start": 934.26,
+      "end": 937.86,
+      "en": "So seek out morning light. Basically, listen to yourself.",
+      "zh": "所以早上要迎接晨光。根本地说，你要听听你自己。",
+      "w": [934.26,934.56,934.56,934.83,934.83,934.98,934.98,935.4,935.4,935.58,935.58,936.24,936.24,936.9,936.9,937.08,937.08,937.86]
+    },
+    {
+      "i": 135,
+      "start": 937.86,
+      "end": 945.97,
+      "en": "Wind down. Do those sorts of things that you know are going to ease you off into the honey-heavy dew of slumber.",
+      "zh": "放轻松。做那些可以舒缓，让你平静的进入一个沉稳香甜的睡眠甘露的事情。",
+      "w": [937.86,938.85,938.85,939.18,939.18,939.57,939.57,939.78,939.78,940.14,940.14,940.23,940.23,940.5,940.5,940.71,940.71,940.95,940.95,941.19,941.19,941.58,941.58,941.88,941.88,942.0,942.0,942.21,942.21,942.42,942.42,942.48,942.45,943.17,943.17,943.29,943.77,944.7,944.7,945.03,945.03,945.09,945.09,945.97]
+    },
+    {
+      "i": 136,
+      "start": 945.97,
+      "end": 949.22,
+      "en": "OK. That's some facts. What about some myths?",
+      "zh": "好，这是一些事实。其他的误区是什么？",
+      "w": [945.97,946.86,946.86,947.49,947.49,947.7,947.7,948.15,948.15,948.36,948.36,948.57,948.57,948.81,948.81,949.22]
+    },
+    {
+      "i": 137,
+      "start": 949.22,
+      "end": 957.05,
+      "en": "Teenagers are lazy. No. Poor things. They have a biological predisposition to go to bed late and get up late, so give them a break.",
+      "zh": "青少年很懒惰，错了！可怜的孩子们。他们的生理倾向于晚睡晚起，所以饶了他们吧。",
+      "w": [949.22,950.22,950.22,950.37,950.37,950.55,950.55,951.39,951.39,952.17,952.17,952.5,952.5,952.89,952.89,953.22,953.22,953.28,953.25,953.97,953.97,954.69,954.69,954.81,954.81,954.93,954.93,954.99,954.99,955.17,955.17,955.38,955.38,955.53,955.53,955.68,955.68,955.74,955.71,956.04,956.04,956.28,956.28,956.49,956.49,956.61,956.61,956.67,956.67,957.05]
+    },
+    {
+      "i": 138,
+      "start": 957.05,
+      "end": 962.04,
+      "en": "We need eight hours of sleep a night. That's an average.",
+      "zh": "我们每晚需要8个小时的睡眠。",
+      "w": [957.05,958.05,958.05,958.32,958.32,958.65,958.65,958.71,958.71,959.19,959.19,959.46,959.46,959.67,959.67,960.71,960.71,961.71,961.71,961.89,961.89,962.04]
+    },
+    {
+      "i": 139,
+      "start": 962.04,
+      "end": 964.68,
+      "en": "Some people need more. Some people need less.",
+      "zh": "这是一个平均值。有些人需要更多，有些人需要较少。",
+      "w": [962.04,962.64,962.64,962.91,962.91,963.03,963.03,963.09,963.09,963.72,963.72,963.99,964.2,964.44,964.44,964.68]
+    },
+    {
+      "i": 140,
+      "start": 964.68,
+      "end": 967.05,
+      "en": "And what you need to do is listen to your body.",
+      "zh": "你需要做的就是听从你的身体。",
+      "w": [964.68,964.95,964.95,965.25,965.25,965.43,965.43,965.58,965.58,965.7,965.7,965.85,965.85,966.06,966.06,966.57,966.57,966.81,966.81,966.93,966.93,967.05]
+    },
+    {
+      "i": 141,
+      "start": 967.05,
+      "end": 969.15,
+      "en": "Do you need that much or do you need more?",
+      "zh": "睡那么多就够了或者你还需要更多吗？",
+      "w": [967.05,967.41,967.41,967.53,967.53,967.77,967.77,967.92,967.92,968.16,968.16,968.37,968.37,968.64,968.64,968.7,968.7,968.91,968.91,969.15]
+    },
+    {
+      "i": 142,
+      "start": 969.66,
+      "end": 972.72,
+      "en": "Simple as that. Old people need less sleep.",
+      "zh": "就这么简单。老年人需要较少的睡眠。不正确。",
+      "w": [969.66,970.08,970.08,970.14,970.14,970.32,970.32,971.04,971.04,971.46,971.46,972.0,972.0,972.48,972.48,972.72]
+    },
+    {
+      "i": 143,
+      "start": 972.72,
+      "end": 977.12,
+      "en": "Not true. The sleep demands of the aged do not go down.",
+      "zh": "老年人的睡眠不会随年纪增长而减少。",
+      "w": [972.72,973.35,973.35,973.94,973.94,974.94,974.94,975.24,975.24,975.54,975.54,975.72,975.72,975.78,975.78,976.08,976.08,976.35,976.35,976.59,976.59,976.83,976.83,977.12]
+    },
+    {
+      "i": 144,
+      "start": 977.12,
+      "end": 982.92,
+      "en": "Essentially, sleep fragments and becomes less robust, but sleep requirements do not go down.",
+      "zh": "从根本上讲，是睡眠变成片段式的，变得没那么沉稳了，但睡眠的需求不会减弱。",
+      "w": [977.12,978.12,978.12,978.39,978.39,979.05,979.05,979.29,979.29,979.59,979.59,979.8,979.8,980.49,980.49,981.09,981.09,981.48,981.48,982.11,982.11,982.26,982.26,982.32,982.29,982.71,982.71,982.92]
+    },
+    {
+      "i": 145,
+      "start": 982.92,
+      "end": 989.88,
+      "en": "And the fourth myth is early to bed, early to rise makes a man healthy, wealthy and wise.",
+      "zh": "第四个误区是，早睡早起使人拥有健康、 财富和智慧。",
+      "w": [982.92,983.82,983.82,983.97,983.97,984.27,984.27,985.08,985.08,985.38,985.38,985.86,985.86,985.98,985.98,986.16,986.16,986.43,986.43,986.88,986.88,987.0,987.0,987.78,987.78,987.96,987.96,988.02,987.99,988.2,988.2,988.98,988.98,989.64,989.64,989.88]
+    },
+    {
+      "i": 146,
+      "start": 989.88,
+      "end": 994.22,
+      "en": "Well, that's wrong at so many different levels.",
+      "zh": "在很多层面上，这个观点都是错的。（笑声）",
+      "w": [989.88,990.48,990.48,990.66,990.66,991.2,991.2,991.5,991.5,991.89,991.89,992.07,992.07,992.22,992.22,994.22]
+    },
+    {
+      "i": 147,
+      "start": 994.22,
+      "end": 1001.33,
+      "en": "(Laughter) There is no evidence that getting up early and going to bed early gives you more wealth at all.",
+      "zh": "没有证据表明早睡早起给你更多的财富。",
+      "w": [994.22,994.66,994.66,995.66,995.66,995.81,996.11,996.83,996.83,997.25,997.25,997.52,997.52,998.48,998.48,998.6,998.6,998.96,998.96,999.02,998.99,999.11,999.11,999.38,999.38,999.5,999.5,999.56,999.56,1000.25,1000.25,1000.4,1000.4,1000.55,1000.55,1000.88,1000.88,1001.18,1001.18,1001.33]
+    },
+    {
+      "i": 148,
+      "start": 1001.33,
+      "end": 1003.31,
+      "en": "There's no difference in socioeconomic status.",
+      "zh": "在社会经济地位上没有区别。",
+      "w": [1001.33,1001.63,1001.63,1001.75,1001.75,1002.05,1002.05,1002.14,1002.14,1002.59,1002.59,1003.31]
+    },
+    {
+      "i": 149,
+      "start": 1003.31,
+      "end": 1013.08,
+      "en": "In my experience, the only difference between morning people and evening people is that those people that get up in the morning early are just horribly smug.",
+      "zh": "以我的经验，早起和晚起的人的唯一区别在于只是那些清晨早起的人会沾沾自喜罢了。",
+      "w": [1003.31,1003.67,1003.67,1004.48,1004.48,1004.96,1004.96,1005.05,1005.05,1005.2,1005.2,1005.71,1005.71,1005.86,1005.86,1006.4,1006.4,1006.58,1006.58,1006.82,1006.82,1007.06,1007.06,1007.24,1007.24,1007.57,1007.57,1007.99,1007.99,1008.17,1008.17,1008.56,1008.56,1008.65,1008.65,1008.8,1008.8,1008.92,1008.92,1009.07,1009.07,1009.13,1009.13,1009.49,1009.49,1009.61,1009.61,1010.24,1010.24,1010.57,1010.57,1011.08,1011.08,1013.08]
+    },
+    {
+      "i": 150,
+      "start": 1013.08,
+      "end": 1024.61,
+      "en": "(Laughter) (Applause) OK. So for the last few minutes, what I want to do is change gears and talk about some really new, breaking areas of neuroscience,",
+      "zh": "（笑声）（掌声）所以，最后几分钟，我想换个话题和大家谈谈新的突破性的神经科学领域的发现，",
+      "w": [1013.08,1014.4,1014.4,1015.73,1015.73,1017.05,1017.05,1017.77,1017.77,1017.95,1018.49,1018.64,1018.64,1018.7,1018.67,1019.03,1019.03,1019.15,1019.15,1019.42,1019.42,1019.48,1019.45,1019.66,1019.66,1019.72,1019.72,1019.87,1019.87,1020.08,1020.08,1020.86,1020.86,1021.16,1021.16,1021.34,1021.34,1021.4,1021.4,1021.67,1021.67,1022.12,1022.12,1022.45,1022.45,1022.96,1023.17,1023.56,1023.56,1023.92,1023.92,1024.07,1024.07,1024.61]
+    },
+    {
+      "i": 151,
+      "start": 1024.61,
+      "end": 1029.83,
+      "en": "which is the association between mental health, mental illness and sleep disruption.",
+      "zh": "这些与心理健康，精神疾病和睡眠失调有关。",
+      "w": [1024.61,1025.21,1025.21,1025.36,1025.36,1025.51,1025.51,1026.14,1026.14,1026.52,1026.52,1027.52,1027.52,1027.58,1027.58,1028.12,1028.12,1028.63,1028.63,1028.9,1028.9,1029.29,1029.29,1029.83]
+    },
+    {
+      "i": 152,
+      "start": 1029.83,
+      "end": 1038.56,
+      "en": "We've known for 130 years that in severe mental illness, there is always, always sleep disruption, but it's been largely ignored.",
+      "zh": "130年来，我们都知道，重症精神疾病和失调有关但这一认识却被大家忽视了。",
+      "w": [1029.83,1030.4,1030.4,1030.67,1030.67,1031.21,1031.84,1032.17,1032.17,1032.41,1032.41,1032.53,1032.53,1033.01,1033.01,1033.25,1033.25,1033.7,1033.7,1034.57,1034.57,1034.87,1034.87,1035.59,1035.59,1035.92,1035.92,1036.55,1036.55,1037.18,1037.18,1037.84,1037.84,1037.96,1037.96,1038.11,1038.11,1038.29,1038.29,1038.56]
+    },
+    {
+      "i": 153,
+      "start": 1038.56,
+      "end": 1047.83,
+      "en": "In the 1970s, when people started to think about this again, they said, \"Yes, well, of course you have sleep disruption in schizophrenia, because they're on antipsychotics.",
+      "zh": "在20 世纪70年代，当人们重新开始想起这件事，他们说，\"是的，精神分裂症患者当然会受到睡眠干扰因为他们服用抗精神病药物。",
+      "w": [1038.56,1039.01,1039.01,1039.07,1039.07,1039.88,1039.88,1040.03,1040.03,1040.27,1040.27,1040.57,1040.57,1040.63,1040.63,1040.72,1040.72,1040.93,1040.93,1041.17,1041.17,1041.23,1041.23,1041.98,1041.98,1042.19,1042.19,1042.49,1042.49,1042.64,1042.64,1042.73,1042.73,1042.79,1042.76,1043.12,1043.12,1043.3,1043.3,1043.51,1043.51,1044.02,1044.02,1044.38,1044.38,1045.18,1045.18,1046.18,1046.18,1046.54,1046.54,1046.9,1046.9,1047.83]
+    },
+    {
+      "i": 154,
+      "start": 1047.83,
+      "end": 1057.46,
+      "en": "It's the antipsychotics causing the sleep problems,\" ignoring the fact that for a hundred years previously, sleep disruption had been reported before antipsychotics.",
+      "zh": "是这些药物导致了睡眠问题，\"这忽视了之前一百年来的事实，事实显示睡眠失调发生于用药之前。",
+      "w": [1047.83,1048.01,1048.01,1048.36,1048.36,1049.36,1049.36,1050.05,1050.05,1050.14,1050.14,1050.35,1050.35,1050.71,1050.71,1051.37,1051.37,1051.64,1051.64,1051.88,1051.88,1052.0,1052.0,1052.27,1052.27,1052.33,1052.3,1052.45,1052.45,1052.81,1052.81,1053.91,1053.91,1054.91,1054.91,1055.39,1055.39,1055.54,1055.54,1055.66,1055.66,1056.11,1056.11,1056.46,1056.46,1057.46]
+    },
+    {
+      "i": 155,
+      "start": 1057.46,
+      "end": 1068.47,
+      "en": "So what's going on? Several groups are studying conditions like depression, schizophrenia and bipolar and what's going on in terms of sleep disruption.",
+      "zh": "所以到底怎么回事？有很多团队和小组正在研究抑郁症、 精神分裂症和双重人格，和睡眠失调的原因。",
+      "w": [1057.46,1058.18,1058.18,1058.72,1058.72,1059.14,1059.14,1059.29,1060.34,1060.85,1060.85,1061.06,1061.06,1061.36,1061.36,1062.22,1062.22,1063.22,1063.22,1063.37,1063.37,1063.67,1063.67,1064.42,1064.42,1065.11,1065.11,1065.25,1065.25,1066.25,1066.25,1066.46,1066.46,1066.76,1066.76,1066.94,1066.94,1067.18,1067.18,1067.54,1067.54,1067.72,1067.72,1067.9,1067.9,1068.47]
+    },
+    {
+      "i": 156,
+      "start": 1068.47,
+      "end": 1075.49,
+      "en": "We have a big study which we published last year on schizophrenia, and the data were quite extraordinary.",
+      "zh": "去年我们针对精神分裂症患者发表了一项重大的研究，那些数据非同寻常。",
+      "w": [1068.47,1069.07,1069.07,1069.28,1069.28,1069.34,1069.31,1069.49,1069.49,1069.76,1069.76,1070.24,1070.24,1070.36,1070.36,1070.75,1070.75,1070.81,1070.81,1071.11,1071.11,1071.41,1071.41,1071.74,1071.74,1072.4,1072.4,1072.46,1072.43,1073.26,1073.26,1074.26,1074.26,1075.04,1075.04,1075.49]
+    },
+    {
+      "i": 157,
+      "start": 1075.49,
+      "end": 1084.52,
+      "en": "In those individuals with schizophrenia, much of the time, they were awake during the night phase and then they were asleep during the day.",
+      "zh": "那些患有精神分裂症的人，很多的时间，他们在晚上睡眠的时间却是醒着的然后他们白天睡着了。",
+      "w": [1075.49,1076.15,1076.15,1076.45,1076.45,1077.26,1077.26,1077.5,1077.5,1078.3,1078.3,1079.3,1079.3,1079.45,1079.45,1079.54,1079.54,1079.75,1079.75,1080.2,1080.2,1080.26,1080.26,1080.68,1080.68,1081.34,1081.34,1081.64,1081.64,1081.79,1081.79,1082.24,1082.24,1082.57,1082.57,1083.35,1083.35,1083.42,1083.42,1083.5,1083.5,1083.74,1083.74,1084.31,1084.31,1084.43,1084.43,1084.52]
+    },
+    {
+      "i": 158,
+      "start": 1084.52,
+      "end": 1089.47,
+      "en": "Other groups showed no 24-hour patterns whatsoever -- their sleep was absolutely smashed.",
+      "zh": "其他团队显示他们没有遵守24小时的生理周期。他们的睡眠完全被摧毁了。",
+      "w": [1084.52,1085.21,1085.21,1085.63,1085.63,1085.9,1085.9,1086.11,1086.11,1086.65,1086.65,1087.04,1087.04,1087.43,1087.43,1087.85,1087.85,1088.06,1088.06,1088.21,1088.21,1089.14,1089.14,1089.47]
+    },
+    {
+      "i": 159,
+      "start": 1089.47,
+      "end": 1093.76,
+      "en": "And some had no ability to regulate their sleep by the light-dark cycle.",
+      "zh": "有些人无法通过光暗周期来调节睡眠的能力。",
+      "w": [1089.47,1089.8,1089.8,1090.21,1090.21,1091.21,1091.21,1091.33,1091.33,1091.72,1091.72,1091.78,1091.75,1092.14,1092.14,1092.29,1092.29,1092.86,1092.86,1092.98,1092.98,1093.04,1093.01,1093.49,1093.49,1093.76]
+    },
+    {
+      "i": 160,
+      "start": 1093.76,
+      "end": 1096.82,
+      "en": "They were getting up later and later and later and later each night.",
+      "zh": "他们起的越来越晚睡的也越来越晚睡眠被摧毁了。",
+      "w": [1093.76,1093.91,1093.91,1094.0,1094.0,1094.21,1094.21,1094.27,1094.27,1094.54,1094.54,1094.78,1094.78,1094.96,1094.96,1095.23,1095.23,1095.44,1095.44,1095.62,1095.62,1095.8,1095.8,1096.43,1096.43,1096.82]
+    },
+    {
+      "i": 161,
+      "start": 1096.82,
+      "end": 1110.08,
+      "en": "It was smashed. So what's going on? And the really exciting news is that mental illness and sleep are not simply associated, but they are physically linked within the brain.",
+      "zh": "为什么会这样呢？让人兴奋的消息是，精神疾病和睡眠并不是简单的关联而是在脑部有生理上的连接。",
+      "w": [1096.82,1097.18,1097.18,1097.39,1097.39,1097.69,1097.69,1098.68,1098.68,1099.37,1099.37,1099.7,1099.7,1099.88,1099.88,1100.15,1100.15,1101.11,1101.11,1101.44,1101.44,1101.71,1101.71,1102.13,1102.13,1102.4,1102.4,1103.11,1103.11,1104.11,1104.11,1104.44,1104.44,1104.62,1104.62,1105.34,1105.34,1105.61,1105.61,1105.88,1105.88,1106.27,1106.27,1107.17,1107.17,1107.95,1107.95,1108.43,1108.43,1108.49,1108.49,1109.09,1109.09,1109.39,1109.39,1109.69,1109.69,1109.87,1109.87,1110.08]
+    },
+    {
+      "i": 162,
+      "start": 1110.08,
+      "end": 1117.51,
+      "en": "The neural networks that predispose you to normal sleep, give you normal sleep, and those that give you normal mental health, are overlapping.",
+      "zh": "神经网络的正常连接让你倾向于正常睡眠正常的睡眠与帮助你获得正常心理健康的物质重叠。",
+      "w": [1110.08,1110.62,1110.62,1110.98,1110.98,1111.4,1111.4,1111.67,1111.67,1112.27,1112.27,1112.48,1112.48,1112.66,1112.66,1113.08,1113.08,1113.35,1113.35,1113.65,1113.65,1113.74,1113.74,1114.13,1114.13,1114.37,1114.37,1114.61,1114.61,1115.06,1115.06,1115.27,1115.27,1115.39,1115.39,1115.48,1115.48,1115.87,1115.87,1116.17,1116.17,1116.38,1116.38,1116.62,1116.62,1117.51]
+    },
+    {
+      "i": 163,
+      "start": 1117.51,
+      "end": 1130.63,
+      "en": "And what's the evidence for that? Well, genes that have been shown to be very important in the generation of normal sleep, when mutated, when changed, also predispose individuals to mental health problems.",
+      "zh": "证据是什么？能令睡眠正常的那些非常重要的基因当它们变异和发生改变时，人的心理健康也会倾向产生问题。",
+      "w": [1117.51,1118.51,1118.51,1118.66,1118.66,1118.78,1118.78,1118.87,1118.87,1119.26,1119.26,1119.68,1119.68,1120.48,1120.48,1121.48,1121.48,1122.14,1122.14,1122.29,1122.29,1122.41,1122.41,1122.86,1122.86,1123.13,1123.13,1123.25,1123.25,1123.31,1123.28,1123.88,1123.88,1124.0,1124.0,1124.09,1124.09,1124.54,1124.54,1124.6,1124.6,1124.96,1124.96,1125.22,1125.22,1126.22,1126.22,1126.85,1126.85,1127.06,1127.06,1127.57,1127.57,1127.81,1127.81,1128.8,1128.8,1129.43,1129.43,1129.79,1129.79,1130.06,1130.06,1130.18,1130.18,1130.63]
+    },
+    {
+      "i": 164,
+      "start": 1130.63,
+      "end": 1139.51,
+      "en": "And last year, we published a study which showed that a gene that's been linked to schizophrenia, when mutated, also smashes the sleep.",
+      "zh": "过去一年，我们发表了一份研究报告表明与精神分裂症相连的基因，当它们变异时也会摧毁睡眠。",
+      "w": [1130.63,1130.9,1130.9,1131.5,1131.5,1131.8,1131.8,1131.98,1131.98,1132.22,1132.22,1132.55,1132.55,1132.79,1132.79,1133.24,1133.24,1133.54,1133.54,1133.78,1133.78,1133.99,1133.99,1134.29,1134.29,1134.35,1134.32,1134.65,1134.65,1134.89,1134.89,1134.95,1134.92,1135.63,1136.63,1136.84,1136.84,1137.08,1137.08,1138.01,1138.01,1138.85,1138.85,1139.21,1139.21,1139.51]
+    },
+    {
+      "i": 165,
+      "start": 1139.51,
+      "end": 1145.0,
+      "en": "So we have evidence of a genuine mechanistic overlap between these two important systems.",
+      "zh": "所以我们有证据显示两大系统有某种重要的巧妙的关联。",
+      "w": [1139.51,1140.05,1140.05,1140.17,1140.17,1140.44,1140.44,1140.95,1140.95,1141.28,1141.28,1141.4,1141.4,1141.76,1141.76,1142.57,1142.57,1143.05,1143.05,1143.2,1143.2,1143.53,1143.53,1143.74,1143.74,1144.55,1144.55,1145.0]
+    },
+    {
+      "i": 166,
+      "start": 1145.0,
+      "end": 1160.48,
+      "en": "Other work flowed from these studies. The first was that sleep disruption actually precedes certain types of mental illness, and we've shown that in those young individuals who are at high risk of developing bipolar disorder,",
+      "zh": "还有其他相关的研究。第一是，睡眠失调会发生在某些特定类型的精神病之前，我们已经证明，那些极容易患双重人格的年轻人，",
+      "w": [1145.0,1145.99,1145.99,1146.23,1146.23,1146.62,1146.62,1147.01,1147.01,1147.13,1147.13,1147.49,1147.49,1148.0,1148.0,1148.3,1148.3,1149.23,1149.23,1149.29,1149.26,1150.16,1150.16,1151.09,1151.09,1151.57,1151.57,1152.41,1152.41,1153.31,1153.31,1153.88,1153.88,1154.18,1154.18,1154.42,1154.42,1154.75,1154.75,1154.99,1154.99,1155.23,1155.23,1155.53,1155.53,1155.59,1155.59,1156.22,1156.22,1156.4,1156.4,1156.85,1156.85,1157.39,1157.39,1157.6,1157.6,1157.75,1157.75,1157.84,1157.84,1158.05,1158.05,1158.11,1158.08,1158.47,1158.47,1158.55,1158.55,1159.55,1159.55,1160.48]
+    },
+    {
+      "i": 167,
+      "start": 1160.48,
+      "end": 1166.59,
+      "en": "they already have a sleep abnormality prior to any clinical diagnosis of bipolar.",
+      "zh": "他们在诊断出双重人格之前已经有睡眠失常的表现。",
+      "w": [1160.48,1160.93,1160.93,1161.32,1161.32,1161.68,1161.68,1161.98,1161.98,1162.34,1162.34,1163.0,1163.0,1163.57,1163.57,1164.05,1164.05,1164.29,1164.29,1164.86,1164.86,1165.52,1165.52,1165.64,1165.64,1166.59]
+    },
+    {
+      "i": 168,
+      "start": 1166.59,
+      "end": 1177.25,
+      "en": "The other bit of data was that sleep disruption may actually exacerbate, make worse, the mental illness state.",
+      "zh": "其他关于睡眠失调的数据实际上可能会加剧精神疾病。",
+      "w": [1166.59,1167.59,1167.59,1167.77,1167.77,1168.4,1168.4,1168.46,1168.43,1168.73,1168.73,1169.36,1169.36,1170.1,1170.1,1171.1,1172.33,1172.96,1172.96,1173.44,1173.44,1173.86,1173.86,1174.64,1174.64,1174.91,1174.91,1175.21,1175.84,1176.41,1176.41,1176.68,1176.68,1176.98,1176.98,1177.25]
+    },
+    {
+      "i": 169,
+      "start": 1177.25,
+      "end": 1185.65,
+      "en": "My colleague Dan Freeman has used a range of agents which have stabilized sleep and reduced levels of paranoia in those individuals by 50 percent.",
+      "zh": "我的同事丹 · 弗里曼已使用一系列方法可以稳定偏执狂患者的睡眠减轻这些人50%的症状。",
+      "w": [1177.25,1177.61,1177.61,1178.06,1178.06,1178.24,1178.24,1178.78,1178.78,1178.93,1178.93,1179.11,1179.11,1179.23,1179.23,1179.44,1179.44,1179.59,1179.59,1179.92,1179.92,1180.28,1180.28,1180.43,1180.43,1181.0,1181.0,1181.3,1181.3,1181.57,1181.57,1182.41,1182.41,1183.1,1183.1,1183.16,1183.13,1183.61,1183.61,1183.76,1183.76,1184.03,1184.03,1184.57,1184.57,1184.96,1184.96,1185.65]
+    },
+    {
+      "i": 170,
+      "start": 1185.65,
+      "end": 1192.84,
+      "en": "So what have we got? We've got, in these connections, some really exciting things.",
+      "zh": "所以我们得到了什么？我们看到了这些令人兴奋的关联。",
+      "w": [1185.65,1186.46,1186.46,1186.85,1186.85,1186.94,1186.94,1187.0,1186.97,1187.06,1187.06,1188.05,1188.05,1188.25,1188.25,1189.57,1189.57,1190.57,1190.57,1191.35,1191.35,1191.98,1191.98,1192.28,1192.28,1192.58,1192.58,1192.84]
+    },
+    {
+      "i": 171,
+      "start": 1192.84,
+      "end": 1202.39,
+      "en": "In terms of the neuroscience, by understanding these two systems, we're really beginning to understand how both sleep and mental illness are generated and regulated within the brain.",
+      "zh": "在神经科学领域，通过了解这两大系统，我们真正开始理解睡眠和精神疾病是由脑部产生和调控的。",
+      "w": [1192.84,1193.84,1193.84,1194.14,1194.14,1194.26,1194.26,1194.32,1194.32,1194.59,1194.59,1194.98,1194.98,1196.12,1196.12,1196.24,1196.24,1196.42,1196.42,1196.72,1196.72,1196.96,1196.96,1197.32,1197.32,1197.71,1197.71,1197.8,1197.8,1198.25,1198.25,1198.43,1198.43,1198.64,1198.64,1198.91,1198.91,1199.15,1199.15,1199.54,1199.54,1199.81,1199.81,1200.02,1200.02,1200.53,1200.53,1200.88,1200.88,1201.88,1201.88,1202.09,1202.09,1202.18,1202.18,1202.39]
+    },
+    {
+      "i": 172,
+      "start": 1202.39,
+      "end": 1211.33,
+      "en": "The second area is that if we can use sleep and sleep disruption as an early warning signal, then we have the chance of going in.",
+      "zh": "第二是，如果我们可以使用睡眠并把睡眠失调作为一个早期的预警信号，那么我们就有机会介入。",
+      "w": [1202.39,1203.32,1203.32,1203.83,1203.83,1204.16,1204.16,1204.52,1204.52,1205.03,1205.03,1205.24,1205.24,1205.39,1205.39,1205.63,1205.63,1206.26,1206.26,1206.62,1206.62,1206.95,1206.95,1207.31,1207.31,1207.85,1207.85,1207.97,1207.97,1208.06,1208.06,1208.3,1208.3,1208.51,1208.51,1208.93,1208.93,1209.59,1209.59,1209.65,1209.62,1209.95,1209.95,1210.07,1210.07,1210.4,1210.4,1210.67,1210.67,1210.79,1210.79,1211.33]
+    },
+    {
+      "i": 173,
+      "start": 1211.33,
+      "end": 1216.46,
+      "en": "If we know these individuals are vulnerable, early intervention then becomes possible.",
+      "zh": "如果我们知道这些人是脆弱的早期的干预会成为可能。",
+      "w": [1211.33,1211.75,1211.75,1211.93,1211.93,1212.2,1212.5,1212.62,1212.62,1213.13,1213.13,1213.19,1213.19,1213.7,1213.7,1214.54,1214.54,1214.75,1214.75,1215.35,1215.35,1215.8,1215.8,1216.46]
+    },
+    {
+      "i": 174,
+      "start": 1216.46,
+      "end": 1223.21,
+      "en": "And the third, which I think is the most exciting, is that we can think of the sleep centers within the brain as a new therapeutic target.",
+      "zh": "第三，也是我认为最令人兴奋的是我们可以把脑部的睡眠中心作为一个新的治疗目标。",
+      "w": [1216.46,1216.64,1216.64,1216.97,1216.97,1217.27,1217.27,1217.57,1217.57,1217.66,1217.66,1217.84,1217.84,1217.93,1217.93,1218.05,1218.05,1218.23,1218.23,1218.47,1218.47,1219.07,1219.07,1219.58,1219.58,1219.7,1219.7,1219.85,1219.85,1219.91,1219.88,1220.24,1220.24,1220.39,1220.39,1220.63,1220.63,1220.99,1220.99,1221.14,1221.14,1221.29,1221.29,1221.5,1221.5,1221.71,1221.71,1221.89,1221.89,1222.13,1222.13,1222.58,1222.58,1223.21]
+    },
+    {
+      "i": 175,
+      "start": 1223.21,
+      "end": 1232.48,
+      "en": "Stabilize sleep in those individuals who are vulnerable, we can certainly make them healthier, but also alleviate some of the appalling symptoms of mental illness.",
+      "zh": "稳定那些脆弱人群的睡眠我们当然可以让他们更健康，也会缓解精神疾病带来的不适。",
+      "w": [1223.21,1223.99,1223.99,1224.41,1224.41,1224.56,1224.56,1224.71,1224.71,1225.25,1225.25,1225.37,1225.37,1225.46,1225.46,1225.94,1225.94,1226.48,1226.48,1226.78,1226.78,1227.32,1227.32,1227.5,1227.5,1227.68,1227.68,1228.1,1228.1,1228.55,1228.55,1228.73,1228.73,1229.63,1229.63,1229.99,1229.99,1230.05,1230.02,1230.17,1230.17,1230.83,1230.83,1231.46,1231.46,1231.64,1231.64,1232.3,1232.3,1232.48]
+    },
+    {
+      "i": 176,
+      "start": 1232.48,
+      "end": 1237.46,
+      "en": "So let me just finish. What I started by saying is: Take sleep seriously.",
+      "zh": "我来做个总结。我们需要认真对待睡眠。",
+      "w": [1232.48,1233.29,1233.29,1233.56,1233.56,1233.65,1233.65,1233.8,1233.8,1234.19,1234.19,1234.58,1234.58,1234.64,1234.61,1235.03,1235.03,1235.15,1235.15,1235.42,1235.42,1235.63,1235.63,1236.26,1236.26,1236.86,1236.86,1237.46]
+    },
+    {
+      "i": 177,
+      "start": 1237.46,
+      "end": 1243.67,
+      "en": "Our attitudes toward sleep are so very different from a pre-industrial age, when we were almost wrapped in a duvet.",
+      "zh": "从工业化时代前，我们对睡眠的态度是非常不同的，那时，我们热爱和留恋睡眠，",
+      "w": [1237.46,1237.85,1237.85,1238.39,1238.39,1238.81,1238.81,1239.02,1239.02,1239.2,1239.2,1239.5,1239.5,1239.83,1239.83,1240.37,1240.37,1240.49,1240.49,1240.64,1240.64,1241.09,1241.09,1241.39,1241.39,1241.87,1241.87,1241.99,1241.99,1242.08,1242.08,1242.26,1242.26,1243.1,1243.1,1243.31,1243.31,1243.43,1243.43,1243.67]
+    },
+    {
+      "i": 178,
+      "start": 1243.67,
+      "end": 1246.91,
+      "en": "We used to understand intuitively the importance of sleep.",
+      "zh": "我们过去是理解睡眠的重要性的。",
+      "w": [1243.67,1244.09,1244.09,1244.27,1244.27,1244.39,1244.39,1245.17,1245.17,1245.62,1245.62,1245.67,1245.62,1246.49,1246.49,1246.67,1246.67,1246.91]
+    },
+    {
+      "i": 179,
+      "start": 1246.91,
+      "end": 1250.42,
+      "en": "And this isn't some sort of crystal-waving nonsense.",
+      "zh": "这不是什么无稽之谈。",
+      "w": [1246.91,1247.45,1247.45,1247.6,1247.6,1247.81,1247.81,1248.65,1248.65,1248.98,1248.98,1249.07,1249.07,1249.91,1249.91,1250.42]
+    },
+    {
+      "i": 180,
+      "start": 1250.42,
+      "end": 1253.39,
+      "en": "This is a pragmatic response to good health.",
+      "zh": "这是对于良好的健康的正常的反应。",
+      "w": [1250.42,1251.11,1251.11,1251.23,1251.23,1251.29,1251.26,1251.7,1251.7,1252.7,1252.7,1252.94,1252.94,1253.09,1253.09,1253.39]
+    },
+    {
+      "i": 181,
+      "start": 1253.39,
+      "end": 1260.08,
+      "en": "If you have good sleep, it increases your concentration, attention, decision-making, creativity, social skills, health.",
+      "zh": "如果你有良好的睡眠，它能增加你的集中力，注意力、 决策力、 创造力、 社会技能、和 健康。",
+      "w": [1253.39,1253.69,1253.69,1253.75,1253.75,1254.17,1254.17,1254.47,1254.47,1254.68,1254.68,1255.01,1255.01,1255.55,1255.55,1255.61,1255.58,1256.05,1256.05,1257.05,1257.05,1257.89,1257.89,1258.64,1258.64,1259.39,1259.39,1259.72,1259.72,1260.08]
+    },
+    {
+      "i": 182,
+      "start": 1260.08,
+      "end": 1269.2,
+      "en": "If you get sleep, it reduces your mood changes, your stress, your levels of anger, your impulsivity, and your tendency to drink and take drugs.",
+      "zh": "如果你入睡了，它能减少你的情绪变化，你的压力，你的愤怒，你的冲动，也减少你喝酒和服用药物的倾向。",
+      "w": [1260.08,1260.35,1260.35,1260.8,1260.8,1261.25,1261.25,1261.88,1261.88,1261.94,1261.94,1262.51,1262.51,1262.78,1262.78,1263.17,1263.17,1263.23,1263.2,1263.83,1263.83,1264.22,1264.22,1264.91,1264.91,1265.27,1265.27,1265.36,1265.36,1265.69,1265.69,1266.05,1266.05,1266.5,1266.5,1266.98,1266.98,1267.31,1267.31,1267.79,1267.79,1268.27,1268.27,1268.6,1268.6,1268.84,1268.84,1269.14,1269.14,1269.2]
+    },
+    {
+      "i": 183,
+      "start": 1269.2,
+      "end": 1282.52,
+      "en": "And we finished by saying that an understanding of the neuroscience of sleep is really informing the way we think about some of the causes of mental illness, and indeed is providing us new ways",
+      "zh": "我们可以这样总结对睡眠的神经科学的理解正在改变我们对精神疾病成因的看法，也的确为这些极端状况的病情",
+      "w": [1269.2,1269.74,1269.74,1269.83,1269.83,1270.22,1270.22,1270.79,1270.79,1271.59,1271.59,1272.59,1272.59,1272.92,1272.92,1273.7,1273.7,1273.79,1273.79,1273.91,1273.91,1274.6,1274.6,1274.75,1274.75,1275.05,1275.05,1275.35,1275.35,1275.91,1275.91,1276.91,1276.91,1277.3,1277.3,1277.48,1277.48,1277.66,1277.66,1277.99,1277.99,1278.2,1278.2,1279.07,1279.07,1279.13,1279.1,1279.31,1279.31,1279.76,1279.76,1279.82,1279.79,1280.06,1280.06,1280.54,1280.54,1280.78,1280.78,1281.38,1281.38,1281.53,1281.53,1281.98,1281.98,1282.07,1282.07,1282.31,1282.31,1282.52]
+    },
+    {
+      "i": 184,
+      "start": 1282.52,
+      "end": 1286.89,
+      "en": "to treat these incredibly debilitating conditions.",
+      "zh": "提供了新的治疗方式。",
+      "w": [1282.52,1282.88,1282.88,1283.39,1283.39,1283.63,1283.63,1284.29,1284.29,1285.03,1285.03,1286.89]
+    },
+    {
+      "i": 185,
+      "start": 1286.89,
+      "end": 1292.93,
+      "en": "Jim Butcher, the fantasy writer, said, \"Sleep is God. Go worship.\"",
+      "zh": "幻想作家，吉姆·布契曾说，\"睡眠是上帝。去崇拜它吧\"。",
+      "w": [1286.89,1287.89,1287.89,1288.1,1288.1,1289.0,1289.0,1289.93,1289.93,1290.14,1290.14,1290.89,1290.89,1291.82,1291.82,1291.97,1291.97,1292.18,1292.18,1292.69,1292.69,1292.93]
+    },
+    {
+      "i": 186,
+      "start": 1292.93,
+      "end": 1295.54,
+      "en": "And I can only recommend that you do the same.",
+      "zh": "我会建议你们也这样做。",
+      "w": [1292.93,1293.35,1293.35,1293.95,1293.95,1294.16,1294.16,1294.28,1294.28,1294.64,1294.64,1295.03,1295.03,1295.15,1295.15,1295.27,1295.27,1295.36,1295.36,1295.54]
+    },
+    {
+      "i": 187,
+      "start": 1295.54,
+      "end": 1300.52,
+      "en": "Thank you for your attention. (Applause)",
+      "zh": "谢谢大家的关注。（掌声）",
+      "w": [1295.54,1295.93,1295.93,1295.99,1295.99,1296.17,1296.17,1296.22,1296.17,1298.17,1300.02,1300.52]
+    }
+  ],
+  "wSource": "yt"
+}

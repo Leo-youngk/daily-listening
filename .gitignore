@@ -23,8 +23,13 @@ scripts/corpus/fetch_state.json
 scripts/corpus/trans_cache.json
 scripts/corpus/*.log
 scripts/corpus/ted_main.csv
+scripts/corpus/align_words_report.json
 
 *.log
 *.tgz
 .DS_Store
 .wrangler/
+
+# 临时诊断输出
+tmpdiag/
+vibe_images/

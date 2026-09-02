@@ -1,1 +1,204 @@
-{"slug":"voa_7974949","title":"Thomas Edison: Inventor and Busy Team Leader","speaker":"VOA Learning English","category":"voa","school":null,"year":2025,"duration":183.68,"cover":"/covers/voa_7974949.jpg","views":null,"sourceUrl":"https://learningenglish.voanews.com/a/thomas-edison-inventor-and-busy-team-leader/7974949.html","audioUrls":{"standard":"https://daily-listening-media.if5v.workers.dev/v1/standard/voa_7974949.m4a","high":"https://daily-listening-media.if5v.workers.dev/v1/high/voa_7974949.m4a"},"zhSource":"mt","sentences":[{"i":0,"start":0.05,"end":9.01,"en":"The inventor Thomas Alva Edison had a major effect on the lives of people around the world.","zh":"发明家托马斯·阿尔瓦·爱迪生对全世界人民的生活产生了重大影响。"},{"i":1,"start":10.37,"end":19.15,"en":"Thomas Edison is remembered most for the electric light, his phonograph , and his work with motion pictures.","zh":"托马斯·爱迪生最记得的是电灯、他的录音机和电影作品。"},{"i":2,"start":20.49,"end":27.37,"en":"Edison was born on February 11, 1847, in Milan, Ohio.","zh":"爱迪生于1847年2月11日 俄亥俄州米兰"},{"i":3,"start":28.37,"end":35.65,"en":"He was mostly self-taught. His mother taught him reading, writing, and mathematics.","zh":"他大部分是自学的,他的母亲教他读书、写作和数学。"},{"i":4,"start":36.73,"end":39.87,"en":"He learned from books, and he experimented.","zh":"他从书中学习,并进行了实验。"},{"i":5,"start":40.99,"end":46.19,"en":"At the age of 10, he experimented with chemicals and electricity.","zh":"10岁时,他实验化学和电力。"},{"i":6,"start":47.33,"end":55.75,"en":"He built a telegraph machine and, at the age of 16, he went to work as a telegraph operator.","zh":"他造了一台电报机 16岁时,他去当电报接线员"},{"i":7,"start":56.75,"end":67.21,"en":"He continued his work with electricity, making improved telegraph machines, and he invented an electrical voting machine.","zh":"他继续用电 改进了电报机 发明了一台电子投票机"},{"i":8,"start":68.53,"end":76.97,"en":"Edison earned enough money from his early inventions to start his own company in 1871.","zh":"爱迪生从早期发明中赚到的钱 足以在1871年创办自己的公司"},{"i":9,"start":77.97,"end":87.39,"en":"Instead of working alone, he worked with a group of employees on many different projects at one time.","zh":"他一次不是单独工作,而是与一组雇员在很多不同项目上工作。"},{"i":10,"start":88.33,"end":98.79,"en":"They asked the United States government for patents to protect more than one hundred devices or inventions each year.","zh":"他们要求美国政府提供专利,以便每年保护100多个装置或发明。"},{"i":11,"start":99.69,"end":112.85,"en":"He was an extremely busy man. In 1913, a popular magazine at the time called Thomas Edison the most useful man in America.","zh":"1913年,一个叫托马斯·爱迪生的杂志 在美国最有用"},{"i":12,"start":114.01,"end":118.95,"en":"He almost never slept more than four or five hours a night.","zh":"他几乎每晚睡不着超过四、五个小时"},{"i":13,"start":120.05,"end":126.55,"en":"He usually worked 18 hours each day because he enjoyed what he was doing.","zh":"他通常每天工作18小时,因为他喜欢他的工作。"},{"i":14,"start":127.5,"end":136.19,"en":"A reporter asked Edison in 1917 which of his many inventions he enjoyed the most.","zh":"1917年,一位记者问爱迪生,他最欣赏的发明是什么。"},{"i":15,"start":137.07,"end":141.13,"en":"He answered, the phonograph was really the most interesting.","zh":"他回答说,录音机真的很有趣。"},{"i":16,"start":142.25,"end":147.33,"en":"The hardest invention to develop, he said, was the electric light.","zh":"他说,最难开发的发明是电灯。"},{"i":17,"start":148.43,"end":153.15,"en":"He said that it was the most difficult and the most important.","zh":"他说,这是最困难和最重要的。"},{"i":18,"start":153.81,"end":157.67,"en":"He also invented the modern motion picture film.","zh":"他还发明了现代电影电影"},{"i":19,"start":158.63,"end":166.49,"en":"In 1928, he received a special medal of honor from the Congress of the United States.","zh":"1928年,他获得美国国会特别荣誉奖章。"},{"i":20,"start":167.73,"end":180.43,"en":"Thomas Edison died on January 6, 1931. People worldwide have had easier and more enjoyable lives because of his inventions.","zh":"托马斯·爱迪生于1931年1月6日去世,全世界人民由于他的发明而过着更容易、更愉快的生活。"},{"i":21,"start":180.43,"end":183.08,"en":"I’m John Russell. Paul Thompson reported this story for VOA’s People in America program.","zh":"我是John Russell。Paul Thompson为美国人民之声的节目报导了这个故事。"},{"i":22,"start":183.08,"end":183.08,"en":"Jill Robbins adapted it for Learning English.","zh":"吉尔・罗宾斯改编了它 学习英语。"}]}
+{
+  "slug": "voa_7974949",
+  "title": "Thomas Edison: Inventor and Busy Team Leader",
+  "speaker": "VOA Learning English",
+  "category": "voa",
+  "school": null,
+  "year": 2025,
+  "duration": 183.68,
+  "cover": "/covers/voa_7974949.jpg",
+  "views": null,
+  "sourceUrl": "https://learningenglish.voanews.com/a/thomas-edison-inventor-and-busy-team-leader/7974949.html",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/voa_7974949.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/voa_7974949.m4a"
+  },
+  "zhSource": "mt",
+  "sentences": [
+    {
+      "i": 0,
+      "start": 0.05,
+      "end": 9.01,
+      "en": "The inventor Thomas Alva Edison had a major effect on the lives of people around the world.",
+      "zh": "发明家托马斯·阿尔瓦·爱迪生对全世界人民的生活产生了重大影响。",
+      "w": [0.05,0.65,0.65,1.29,1.29,2.05,2.05,2.63,2.63,3.07,3.07,4.11,4.11,4.45,4.45,4.81,4.81,5.45,5.45,6.05,6.05,6.29,6.29,6.65,6.65,7.07,7.07,7.51,7.51,8.21,8.21,8.61,8.61,9.01]
+    },
+    {
+      "i": 1,
+      "start": 10.37,
+      "end": 19.15,
+      "en": "Thomas Edison is remembered most for the electric light, his phonograph , and his work with motion pictures.",
+      "zh": "托马斯·爱迪生最记得的是电灯、他的录音机和电影作品。",
+      "w": [10.37,10.55,10.55,11.03,11.03,11.43,11.43,11.87,11.87,12.51,12.51,13.01,13.01,13.33,13.33,13.97,13.97,14.49,15.21,15.39,15.39,16.03,16.73,17.09,17.09,17.33,17.33,17.67,17.67,18.13,18.13,18.55,18.55,19.15]
+    },
+    {
+      "i": 2,
+      "start": 20.49,
+      "end": 27.37,
+      "en": "Edison was born on February 11, 1847, in Milan, Ohio.",
+      "zh": "爱迪生于1847年2月11日 俄亥俄州米兰",
+      "w": [20.49,20.77,20.77,21.17,21.17,21.53,21.53,22.09,22.09,22.49,25.93,26.17,26.17,26.59,26.89,27.37]
+    },
+    {
+      "i": 3,
+      "start": 28.37,
+      "end": 35.65,
+      "en": "He was mostly self-taught. His mother taught him reading, writing, and mathematics.",
+      "zh": "他大部分是自学的,他的母亲教他读书、写作和数学。",
+      "w": [28.37,28.83,28.83,29.07,29.07,29.79,29.79,30.69,31.81,32.03,32.03,32.37,32.37,32.75,32.75,33.09,33.09,33.47,33.89,34.25,34.69,35.03,35.03,35.65]
+    },
+    {
+      "i": 4,
+      "start": 36.73,
+      "end": 39.87,
+      "en": "He learned from books, and he experimented.",
+      "zh": "他从书中学习,并进行了实验。",
+      "w": [36.73,36.93,36.93,37.19,37.19,37.59,37.59,38.03,38.63,38.87,38.87,39.05,39.05,39.87]
+    },
+    {
+      "i": 5,
+      "start": 40.99,
+      "end": 46.19,
+      "en": "At the age of 10, he experimented with chemicals and electricity.",
+      "zh": "10岁时,他实验化学和电力。",
+      "w": [40.99,41.31,41.31,41.49,41.49,41.73,41.73,42.01,42.81,42.99,42.99,43.75,43.75,44.31,44.31,44.91,44.91,45.59,45.59,46.19]
+    },
+    {
+      "i": 6,
+      "start": 47.33,
+      "end": 55.75,
+      "en": "He built a telegraph machine and, at the age of 16, he went to work as a telegraph operator.",
+      "zh": "他造了一台电报机 16岁时,他去当电报接线员",
+      "w": [47.33,47.61,47.61,47.87,47.87,48.13,48.13,48.63,48.63,49.31,49.73,49.97,50.37,50.63,50.63,50.83,50.83,51.17,51.17,51.43,52.69,52.93,52.93,53.13,53.13,53.39,53.39,53.63,53.63,54.07,54.07,54.33,54.33,55.01,55.01,55.75]
+    },
+    {
+      "i": 7,
+      "start": 56.75,
+      "end": 67.21,
+      "en": "He continued his work with electricity, making improved telegraph machines, and he invented an electrical voting machine.",
+      "zh": "他继续用电 改进了电报机 发明了一台电子投票机",
+      "w": [56.75,57.47,57.47,58.07,58.07,58.39,58.39,58.67,58.67,58.95,58.95,59.81,60.37,60.73,60.73,61.63,61.63,62.31,62.31,62.95,63.83,64.11,64.11,64.29,64.29,64.69,64.69,65.19,65.19,65.77,65.77,66.53,66.53,67.21]
+    },
+    {
+      "i": 8,
+      "start": 68.53,
+      "end": 75.39,
+      "en": "Edison earned enough money from his early inventions to start his own company in 1871.",
+      "zh": "爱迪生从早期发明中赚到的钱 足以在1871年创办自己的公司",
+      "w": [68.53,68.65,68.65,69.13,69.13,69.63,69.63,70.05,70.05,70.45,70.45,70.93,70.93,71.53,71.53,72.25,72.25,73.09,73.09,73.43,73.43,73.73,73.73,74.07,74.07,74.65,74.65,75.39]
+    },
+    {
+      "i": 9,
+      "start": 77.97,
+      "end": 87.39,
+      "en": "Instead of working alone, he worked with a group of employees on many different projects at one time.",
+      "zh": "他一次不是单独工作,而是与一组雇员在很多不同项目上工作。",
+      "w": [77.97,78.57,78.57,79.17,79.17,79.57,79.57,80.13,80.85,81.05,81.05,81.33,81.33,81.67,81.67,82.11,82.11,82.35,82.35,82.77,82.77,83.39,83.39,84.21,84.21,84.59,84.59,85.09,85.09,85.97,85.97,86.49,86.49,86.87,86.87,87.39]
+    },
+    {
+      "i": 10,
+      "start": 88.33,
+      "end": 98.79,
+      "en": "They asked the United States government for patents to protect more than one hundred devices or inventions each year.",
+      "zh": "他们要求美国政府提供专利,以便每年保护100多个装置或发明。",
+      "w": [88.33,88.67,88.67,89.25,89.25,89.67,89.67,89.99,89.99,90.59,90.59,91.07,91.07,91.91,91.91,92.43,92.43,93.11,93.11,93.57,93.57,94.01,94.01,94.43,94.43,94.78,94.78,95.13,95.13,96.11,96.11,96.79,96.79,97.49,97.49,98.29,98.29,98.79]
+    },
+    {
+      "i": 11,
+      "start": 99.69,
+      "end": 112.85,
+      "en": "He was an extremely busy man. In 1913, a popular magazine at the time called Thomas Edison the most useful man in America.",
+      "zh": "1913年,一个叫托马斯·爱迪生的杂志 在美国最有用",
+      "w": [99.69,100.01,100.01,100.25,100.25,100.57,100.57,101.33,101.33,101.79,101.79,102.37,103.15,103.61,105.55,105.67,105.67,106.15,106.15,106.81,106.81,107.27,107.27,107.51,107.51,107.87,107.87,108.73,108.73,109.31,109.31,109.77,109.77,110.49,110.49,110.83,110.83,111.37,111.37,111.93,111.93,112.43,112.43,112.85]
+    },
+    {
+      "i": 12,
+      "start": 114.01,
+      "end": 118.95,
+      "en": "He almost never slept more than four or five hours a night.",
+      "zh": "他几乎每晚睡不着超过四、五个小时",
+      "w": [114.01,114.27,114.27,114.69,114.69,115.37,115.37,115.83,115.83,116.29,116.29,116.59,116.59,116.99,116.99,117.35,117.35,117.81,117.81,118.25,118.25,118.65,118.65,118.95]
+    },
+    {
+      "i": 13,
+      "start": 120.05,
+      "end": 126.55,
+      "en": "He usually worked 18 hours each day because he enjoyed what he was doing.",
+      "zh": "他通常每天工作18小时,因为他喜欢他的工作。",
+      "w": [120.05,120.31,120.31,120.75,120.75,121.35,122.01,122.51,122.51,122.93,122.93,123.45,123.45,124.31,124.31,124.59,124.59,125.07,125.07,125.63,125.63,125.87,125.87,126.11,126.11,126.55]
+    },
+    {
+      "i": 14,
+      "start": 127.5,
+      "end": 136.19,
+      "en": "A reporter asked Edison in 1917 which of his many inventions he enjoyed the most.",
+      "zh": "1917年,一位记者问爱迪生,他最欣赏的发明是什么。",
+      "w": [127.5,127.93,127.93,128.37,128.37,129.07,129.07,129.63,129.63,130.21,131.57,132.47,132.47,132.83,132.83,133.03,133.03,133.43,133.43,134.15,134.15,134.89,134.89,135.35,135.35,135.73,135.73,136.19]
+    },
+    {
+      "i": 15,
+      "start": 137.07,
+      "end": 141.13,
+      "en": "He answered, the phonograph was really the most interesting.",
+      "zh": "他回答说,录音机真的很有趣。",
+      "w": [137.07,137.13,137.13,137.63,138.25,138.35,138.35,138.91,138.91,139.33,139.33,139.75,139.75,140.07,140.07,140.39,140.39,141.13]
+    },
+    {
+      "i": 16,
+      "start": 142.25,
+      "end": 147.33,
+      "en": "The hardest invention to develop, he said, was the electric light.",
+      "zh": "他说,最难开发的发明是电灯。",
+      "w": [142.25,142.41,142.41,142.77,142.77,143.31,143.31,143.81,143.81,144.41,144.67,144.97,144.97,145.33,145.79,146.09,146.09,146.39,146.39,146.91,146.91,147.33]
+    },
+    {
+      "i": 17,
+      "start": 148.43,
+      "end": 153.15,
+      "en": "He said that it was the most difficult and the most important.",
+      "zh": "他说,这是最困难和最重要的。",
+      "w": [148.43,148.69,148.69,148.97,148.97,149.33,149.33,149.63,149.63,149.93,149.93,150.27,150.27,150.55,150.55,151.13,151.13,151.97,151.97,152.23,152.23,152.53,152.53,153.15]
+    },
+    {
+      "i": 18,
+      "start": 153.81,
+      "end": 157.67,
+      "en": "He also invented the modern motion picture film.",
+      "zh": "他还发明了现代电影电影",
+      "w": [153.81,154.31,154.31,154.61,154.61,155.33,155.33,155.81,155.81,156.19,156.19,156.61,156.61,157.11,157.11,157.67]
+    },
+    {
+      "i": 19,
+      "start": 158.63,
+      "end": 166.49,
+      "en": "In 1928, he received a special medal of honor from the Congress of the United States.",
+      "zh": "1928年,他获得美国国会特别荣誉奖章。",
+      "w": [158.63,158.77,160.85,160.9,160.89,161.47,161.47,161.97,161.97,162.35,162.35,162.65,162.65,163.07,163.07,163.39,163.39,163.81,163.81,164.07,164.07,164.49,164.49,165.21,165.21,165.47,165.47,165.79,165.79,166.49]
+    },
+    {
+      "i": 20,
+      "start": 167.73,
+      "end": 180.43,
+      "en": "Thomas Edison died on January 6, 1931. People worldwide have had easier and more enjoyable lives because of his inventions.",
+      "zh": "托马斯·爱迪生于1931年1月6日去世,全世界人民由于他的发明而过着更容易、更愉快的生活。",
+      "w": [167.73,167.99,167.99,168.37,168.37,168.87,168.87,169.35,169.35,169.79,173.37,173.59,173.59,174.33,174.33,175.05,175.05,175.35,175.35,175.87,175.87,176.55,176.55,176.89,176.89,177.55,177.55,178.31,178.31,179.13,179.13,179.51,179.51,179.75,179.75,180.43]
+    },
+    {
+      "i": 21,
+      "start": 180.43,
+      "end": 183.13,
+      "en": "I’m John Russell. Paul Thompson reported this story for VOA’s People in America program.",
+      "zh": "我是John Russell。Paul Thompson为美国人民之声的节目报导了这个故事。",
+      "w": [180.43,182.39,182.39,182.65,182.65,183.07,183.07,183.12,183.07,183.12,183.07,183.12,183.07,183.12,183.07,183.12,183.07,183.12,183.07,183.12,183.07,183.12,183.07,183.12,183.08,183.12,183.08,183.13]
+    },
+    {
+      "i": 22,
+      "start": 183.08,
+      "end": 183.13,
+      "en": "Jill Robbins adapted it for Learning English.",
+      "zh": "吉尔・罗宾斯改编了它 学习英语。",
+      "w": [183.08,183.13,183.08,183.13,183.08,183.13,183.08,183.13,183.08,183.13,183.08,183.13,183.08,183.13]
+    }
+  ],
+  "wSource": "asr"
+}

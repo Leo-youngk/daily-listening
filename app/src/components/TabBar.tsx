@@ -11,7 +11,7 @@ const tabs: { key: string; label: string; path: string; icon: LucideIcon }[] = [
 
 export default function TabBar({ page }: { page: string }) {
   return (
-    <nav className="glass safe-bottom border-t border-line">
+    <nav aria-label="主导航" className="glass safe-bottom border-t border-line">
       <div className="flex">
         {tabs.map(t => {
           const active = page === t.key
@@ -20,6 +20,7 @@ export default function TabBar({ page }: { page: string }) {
             <button
               key={t.key}
               onClick={() => navigate(t.path)}
+              aria-current={active ? 'page' : undefined}
               className="flex flex-1 flex-col items-center gap-0.5 py-2"
             >
               <Icon

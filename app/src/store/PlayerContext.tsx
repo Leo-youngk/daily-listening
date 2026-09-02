@@ -11,6 +11,8 @@ import type { ReactNode } from 'react'
 import type { AudioQuality, ManifestItem, TalkData } from '../lib/types'
 import { loadProgress, loadSettings, recordListen, saveProgress, saveSettings } from '../lib/storage'
 import { fetchJson } from '../lib/http'
+import { sentenceAt as findSentence } from '../lib/timeline'
+import { offlineSource } from '../lib/offline'
 
 export type LoopMode = 0 | 1 | 3 | 999
 
@@ -39,6 +41,10 @@ interface PlayerState {
   setLoop: (mode: LoopMode) => void
   setQuality: (quality: AudioQuality) => void
   sentenceAt: (time: number) => number
+  subtitleOffset: number
+  setSubtitleOffset: (seconds: number) => void
+  /** 已扣掉字幕偏移的播放位置，供词级高亮的 rAF 循环逐帧读取（不走 React state） */
+  getSubtitleTime: () => number
 }
 
 interface PlayerClockState {
@@ -122,6 +128,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const [rate, setRateState] = useState(() => loadSettings().rate)
   const [loop, setLoopState] = useState<LoopMode>(0)
   const [quality, setQualityState] = useState<AudioQuality>(() => loadSettings().audioQuality)
+  const [subtitleOffset, setSubtitleOffsetState] = useState(() => loadSettings().subtitleOffset)
+  const offsetRef = useRef(subtitleOffset)
 
   const talkRef = useRef<TalkData | null>(null)
   const slugRef = useRef<string | null>(null)
@@ -162,29 +170,21 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     [manifest],
   )
 
-  const sentenceAt = useCallback((time: number) => {
-    const sentences = talkRef.current?.sentences
-    if (!sentences?.length) return -1
-    let low = 0
-    let high = sentences.length - 1
-    let answer = 0
-    while (low <= high) {
-      const middle = (low + high) >> 1
-      if (sentences[middle].start <= time + 0.05) {
-        answer = middle
-        low = middle + 1
-      } else {
-        high = middle - 1
-      }
-    }
-    return answer
-  }, [])
+  const sentenceAt = useCallback(
+    (time: number) => findSentence(talkRef.current?.sentences, time),
+    [],
+  )
+
+  const getSubtitleTime = useCallback(
+    () => (Number.isFinite(audio.currentTime) ? audio.currentTime : 0) - offsetRef.current,
+    [audio],
+  )
 
   const updateClock = useCallback(() => {
     const time = Number.isFinite(audio.currentTime) ? audio.currentTime : 0
     const duration = Number.isFinite(audio.duration) ? audio.duration : 0
     setClock(previous => {
-      const currentIdx = sentenceAt(time)
+      const currentIdx = sentenceAt(time - offsetRef.current)
       if (
         Math.abs(previous.time - time) < 0.02
         && Math.abs(previous.duration - duration) < 0.02
@@ -249,7 +249,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
 
     audio.pause()
     audio.playbackRate = rate
-    audio.src = source
+    // 已下载的篇目直接放本地 blob，断网也能听
+    audio.src = offlineSource(source) ?? source
     startPlayback()
 
     fetchJson<TalkData>(`/data/${encodeURIComponent(target)}.json`, {
@@ -348,10 +349,10 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     const tick = (now: number) => {
       const sentences = talkRef.current?.sentences
       const loopSentence = sentences?.[loopSentenceRef.current]
-      if (loopRef.current !== 0 && loopSentence && audio.currentTime >= loopSentence.end - 0.05) {
+      if (loopRef.current !== 0 && loopSentence && getSubtitleTime() >= loopSentence.end) {
         if (loopRef.current === 999 || loopLeftRef.current > 0) {
           if (loopRef.current !== 999) loopLeftRef.current -= 1
-          audio.currentTime = loopSentence.start
+          audio.currentTime = loopSentence.start + offsetRef.current
         } else {
           loopRef.current = 0
           loopSentenceRef.current = -1
@@ -366,7 +367,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     }
     frame = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(frame)
-  }, [audio, playing, updateClock])
+  }, [audio, getSubtitleTime, playing, updateClock])
 
   useEffect(() => {
     if (!playing) return
@@ -393,7 +394,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     const safeTime = Math.max(0, Math.min(time, audio.duration || time))
     if (audio.readyState === HTMLMediaElement.HAVE_NOTHING) pendingSeekRef.current = safeTime
     else audio.currentTime = safeTime
-    setClock(previous => ({ ...previous, time: safeTime, currentIdx: sentenceAt(safeTime) }))
+    setClock(previous => ({ ...previous, time: safeTime, currentIdx: sentenceAt(safeTime - offsetRef.current) }))
   }, [audio, sentenceAt])
 
   const skip = useCallback((delta: number) => seek(audio.currentTime + delta), [audio, seek])
@@ -401,15 +402,22 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const stepSentence = useCallback((direction: 1 | -1) => {
     const sentences = talkRef.current?.sentences
     if (!sentences?.length) return
-    const current = sentenceAt(audio.currentTime)
+    const current = sentenceAt(getSubtitleTime())
     const target = Math.max(0, Math.min(sentences.length - 1, current + direction))
-    seek(sentences[target].start)
-  }, [audio, seek, sentenceAt])
+    seek(sentences[target].start + offsetRef.current)
+  }, [getSubtitleTime, seek, sentenceAt])
 
   const setRate = useCallback((nextRate: number) => {
     audio.playbackRate = nextRate
     setRateState(nextRate)
   }, [audio])
+
+  const setSubtitleOffset = useCallback((seconds: number) => {
+    offsetRef.current = seconds
+    setSubtitleOffsetState(seconds)
+    saveSettings({ subtitleOffset: seconds })
+    updateClock()
+  }, [updateClock])
 
   const setLoop = useCallback((mode: LoopMode) => {
     loopRef.current = mode
@@ -419,14 +427,14 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       loopSentenceRef.current = -1
       return
     }
-    const index = sentenceAt(audio.currentTime)
+    const index = sentenceAt(getSubtitleTime())
     const sentence = talkRef.current?.sentences[index]
     loopSentenceRef.current = index
     if (sentence) {
-      audio.currentTime = sentence.start
+      audio.currentTime = sentence.start + offsetRef.current
       updateClock()
     }
-  }, [audio, sentenceAt, updateClock])
+  }, [audio, getSubtitleTime, sentenceAt, updateClock])
 
   const cycleLoop = useCallback(() => {
     const order: LoopMode[] = [0, 1, 3, 999]
@@ -449,7 +457,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     const shouldResume = !audio.paused
     pendingSeekRef.current = position
     audio.pause()
-    audio.src = source
+    audio.src = offlineSource(source) ?? source
     if (shouldResume) startPlayback()
   }, [audio, manifestBySlug, quality, startPlayback])
 
@@ -462,10 +470,12 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
     buffering, error, rate, loop, quality, playTalk, retry, toggle, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
+    subtitleOffset, setSubtitleOffset, getSubtitleTime,
   }), [
     manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
     buffering, error, rate, loop, quality, playTalk, retry, toggle, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
+    subtitleOffset, setSubtitleOffset, getSubtitleTime,
   ])
   const actions = useMemo<PlayerActions>(() => ({ playTalk }), [playTalk])
   const catalog = useMemo<CatalogState>(() => ({

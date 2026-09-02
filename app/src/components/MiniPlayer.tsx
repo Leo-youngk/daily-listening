@@ -13,7 +13,19 @@ export default function MiniPlayer() {
 
   const pct = duration ? (time / duration) * 100 : 0
   return (
-    <div className="glass border-t border-line px-3 py-2" onClick={() => navigate(`/talk/${slug}`)}>
+    <div
+      role="button"
+      tabIndex={0}
+      aria-label={`打开播放页：${talk.title}`}
+      onClick={() => navigate(`/talk/${slug}`)}
+      onKeyDown={e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          navigate(`/talk/${slug}`)
+        }
+      }}
+      className="glass border-t border-line px-3 py-2"
+    >
       <div className="flex items-center gap-3">
         {talk.cover ? (
           <Cover src={talk.cover} className="h-10 w-10 rounded-lg object-cover" />

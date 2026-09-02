@@ -1,1 +1,388 @@
-{"slug":"voa_7965170","title":"Important Terms and Ideas for Describing Artificial Intelligence","speaker":"VOA Learning English","category":"voa","school":null,"year":2025,"duration":460.88,"cover":"/covers/voa_7965170.jpg","views":null,"sourceUrl":"https://learningenglish.voanews.com/a/important-terms-and-ideas-involved-in-describing-artificial-intelligence-/7965170.html","audioUrls":{"standard":"https://daily-listening-media.if5v.workers.dev/v1/standard/voa_7965170.m4a","high":"https://daily-listening-media.if5v.workers.dev/v1/high/voa_7965170.m4a"},"zhSource":"mt","sentences":[{"i":0,"start":0.75,"end":9.65,"en":"There are several terms experts use to describe computer systems in the field of artificial intelligence.","zh":"在人工智能领域,专家用几个术语来描述计算机系统。"},{"i":1,"start":11.09,"end":20.41,"en":"Recently, the French News Agency (AFP) defined some of the common terms and ideas used in that field.","zh":"最近,法国通讯社(AFP)界定了该领域使用的一些共同术语和想法。"},{"i":2,"start":21.57,"end":49.03,"en":"Here is a version for English learners: Artificial intelligence The first term is “artificial intelligence.” When asked what artificial intelligence is, the AI-powered ChatGPT system says that the term means “the simulation of human intelligence in machines that are programmed to think, learn and make decisions\".","zh":"这是英国学生的版本:人工智能。 第一个术语是“人工智能 ” 。 当被问及人工智能是什么时, AI-power ChatGPT 系统说,这个词的意思是“在设计成思考、学习和决定的机器中模拟人类智能 ” 。"},{"i":3,"start":50.03,"end":61.85,"en":"AI's main quality or characteristic is taking in large amounts of data and then processing it using methods from statistics .","zh":"AI的主要质量或特征是大量的数据,然后使用统计方法处理。"},{"i":4,"start":63.27,"end":73.61,"en":"AI involves using ideas from many fields including computing, mathematics, languages, psychology, and others.","zh":"AI涉及使用许多领域的想法,包括计算、数学、语言、心理学等。"},{"i":5,"start":73.61,"end":90.15,"en":"Currently, the technology is being used heavily for investigating health issues, translating human languages, and predicting problems in machine tools and self-driving cars.","zh":"目前,该技术正大量用于调查健康问题、翻译人文和预测机器工具和自行驾驶汽车方面的问题。"},{"i":6,"start":91.19,"end":95.77,"en":"But AI is affecting many fields of business and industry.","zh":"但大赦国际正在影响许多商业和工业领域。"},{"i":7,"start":95.77,"end":106.47,"en":"Algorithm A second important term is “algorithm.” An algorithm is important to all computer operations.","zh":"第二个重要术语是“algorithm ” 。 算法对所有计算机操作都很重要。"},{"i":8,"start":107.81,"end":114.77,"en":"It is a series of steps or instructions followed by a computer program to get a result.","zh":"这是一系列步骤或指示,然后是计算机程序,以取得结果。"},{"i":9,"start":115.95,"end":125.77,"en":"Algorithms can give rules for an AI's behavior, helping it to realize the objectives of computer program developers.","zh":"演算法可以为AI的行为提供规则, 帮助它实现计算机程序开发者的目标。"},{"i":10,"start":126.69,"end":136.01,"en":"Unlike a simple computer program, AI algorithms permit a computer system to “learn” for itself.","zh":"与简单的计算机程序不同,人工智能算法允许计算机系统自己“学习”。"},{"i":11,"start":136.01,"end":149.77,"en":"Machine learning A third important term is “machine learning.” Machine learning is one method that researchers have used in their efforts to produce artificial intelligence.","zh":"“机器学习”是第三个重要术语。 机器学习是研究人员在努力制造人工智能时使用的一种方法。"},{"i":12,"start":150.77,"end":159.55,"en":"Machine learning lets computers learn from data without being directly programmed on what results to produce.","zh":"机器学习使计算机能够从数据中学习,而不必直接编程了解产生什么结果。"},{"i":13,"start":160.57,"end":166.53,"en":"In recent years, the field of neural networks has given important results.","zh":"近年来,神经网络领域取得了重要成果。"},{"i":14,"start":167.61,"end":177.89,"en":"In a neural network, connections between some nodes are strengthened and others weakened as the system learns and makes changes.","zh":"在神经网络中,一些节点之间的联系得到加强,其他节点随着系统学习和变革而削弱。"},{"i":15,"start":178.89,"end":188.51,"en":"Learning can be \"supervised.\" This means the system learns to put new data into specific groups based on a model.","zh":"学习可以被“监督 ” 。 这意味着这个系统学习将新数据 输入到基于模型的特定群体中。"},{"i":16,"start":189.53,"end":197.55,"en":"For example, the system could learn to identify spam in an email or other messaging programs.","zh":"例如,该系统可以学会在电子邮件或其他信息程序中识别垃圾邮件。"},{"i":17,"start":198.75,"end":208.01,"en":"\"Unsupervised\" learning permits the system to independently discover new areas or ways of doing things.","zh":"“不受监督”的学习使系统能够独立地发现新的领域或做事方式。"},{"i":18,"start":209.03,"end":215.27,"en":"These discoveries in the available data might not have been immediately clear.","zh":"现有数据中的这些发现可能并不立即清楚。"},{"i":19,"start":216.17,"end":223.13,"en":"An example would be letting an online store identify buying trends in sales data.","zh":"一个例子就是让一家网上商店查明销售数据中的购买趋势。"},{"i":20,"start":224.13,"end":229.29,"en":"\"Reinforcement\" learning adds a process of repeated trial-and-error.","zh":"“加强”学习增加了反复审判的过程。"},{"i":21,"start":230.07,"end":238.25,"en":"In this process, the system is rewarded based on its outcomes, causing it to learn and improve.","zh":"在这一过程中,该制度因其成果而得到奖励,从而得以学习和改进。"},{"i":22,"start":239.45,"end":250.37,"en":"One example might be a self-driving vehicle whose objective is to reach its destination as quickly as possible but also safely.","zh":"一个例子可能是自驾车,其目的是尽快到达目的地,但也要安全。"},{"i":23,"start":251.32,"end":259.03,"en":"That requirement would lead it to learn to stop at red lights although it requires additional time.","zh":"这一要求将促使它学会在红色灯光下停下来,尽管它需要更多的时间。"},{"i":24,"start":260.85,"end":266.99,"en":"Deep learning Deep learning owes its name to its use of many layers of neural networks.","zh":"深层学习是因为它使用许多层次的神经网络。"},{"i":25,"start":268.37,"end":274.15,"en":"Raw data is examined by each layer in turn at growing levels of abstraction .","zh":"原始数据由每一层在不断增长的抽象水平上逐级审查。"},{"i":26,"start":274.15,"end":281.57,"en":"Geoffrey Hinton received the 2024 Nobel Prize in Physics.","zh":"Geoffrey Hinton获得2024年诺贝尔物理奖。"},{"i":27,"start":282.81,"end":286.45,"en":"Hinton is credited with developing deep learning.","zh":"辛顿在深层次的学习中功不可没"},{"i":28,"start":287.47,"end":294.83,"en":"Hinton received the prize along with 1980s neural-network developer John Hopfield.","zh":"Hinton和1980年代神经网络开发商John Hopfield一起获得奖项。"},{"i":29,"start":295.83,"end":318.87,"en":"Francis Bach, head of France's SIERRA statistical learning laboratory, said this about deep learning: \"The more layers you have, the more complex behavior can become, and the more complex the behavior can be, the easier it is to learn a desired behavior efficiently .\"","zh":"法国SIERRA统计学习实验室负责人Francis Bach说, “你越是深入学习, 行为就会越复杂, 行为也会越复杂,"},{"i":30,"start":319.81,"end":323.77,"en":"The method might help lead to scientific discoveries.","zh":"这一方法可能有助于产生科学发现。"},{"i":31,"start":323.77,"end":329.91,"en":"Language models We now turn to large language models (LLMs).","zh":"语言模式 我们现在转向大型语言模式(LLMs)。"},{"i":32,"start":331.05,"end":335.37,"en":"These might be the most popular example of generative AI.","zh":"这可能是最流行的人工智能例子。"},{"i":33,"start":336.65,"end":343.89,"en":"Large language models power tools like OpenAI’s ChatGPT or Google’s Gemini.","zh":"例如OpenAI的ChatGPT或Google的双子座。"},{"i":34,"start":344.86,"end":356.43,"en":"Such systems are able to write long papers, answer legal questions or even produce a cake recipe based on their statistical models.","zh":"这种系统能够撰写长篇论文,回答法律问题,甚至能够根据其统计模式制作蛋糕配方。"},{"i":35,"start":357.59,"end":369.27,"en":"But the technology is still new. LLM’s can suffer from \"hallucinations\"- the creation of content that is false or incorrect.","zh":"但技术还是很新奇的。 LLM可能受到“催化”的影响 — — 产生虚假或不正确的内容。"},{"i":36,"start":369.27,"end":381.69,"en":"Artificial general intelligence A final important term is artificial general intelligence (AGI) - one the big goals of the whole AI field.","zh":"最后一个重要的术语是人工一般情报(AGI),这是整个人工一般情报领域的一大目标。"},{"i":37,"start":382.85,"end":392.55,"en":"AGI suggests the unrealized dream of a machine able to reproduce all human processes of human thinking.","zh":"AGI提出一个未实现的梦想,即机器能够复制人类思想的所有过程。"},{"i":38,"start":393.33,"end":402.73,"en":"People who push the idea include OpenAI chief Sam Altman and his competitors at Anthropic.","zh":"提出这个想法的人包括OpenAI头目Sam Altman和他的人类学的竞争对手。"},{"i":39,"start":403.79,"end":407.13,"en":"They consider such a system to be within reach.","zh":"他们认为,这种制度是可以实现的。"},{"i":40,"start":408.19,"end":418.29,"en":"The goal is to use large amounts of data and processing power to train LLMs that are increasingly powerful.","zh":"目标是利用大量数据和加工能力来培训越来越强大的LLMs。"},{"i":41,"start":419.16,"end":428.49,"en":"But critics say that LLM technology has important limits, including its ability to reason.","zh":"但批评者说,LLM技术有重要的局限性,包括其理性能力。"},{"i":42,"start":428.49,"end":442.29,"en":"Maxime Amblard, computing professor at France's University of Lorraine, told AFP last year, \"LLMs do not work like human beings.\"","zh":"去年法国洛林大学计算学教授Maxime Amblard 告诉澳大利亚联邦统计局说,“LLMS不像人类一样工作。”"},{"i":43,"start":442.29,"end":455.13,"en":"Amblard added that humans, as flesh-and-blood -intelligent beings, are \"sense-making machines\" with different abilities from today's computer systems.","zh":"Amblard补充说,人类作为血肉之躯,是“智商制造机器”,其能力与当今的计算机系统不同。"},{"i":44,"start":455.13,"end":459.72,"en":"I’m Anna Matteo. And I’m John Russell. Pierre Celerier reported on this story for Agence France-Presse.","zh":"我是Anna Matteo。 我是John Russell。Pierre Celerier为法新社报导了这个故事。"},{"i":45,"start":459.72,"end":459.72,"en":"John Russell adapted it for VOA Learning","zh":"约翰・罗素改编了它 用于VOA学习"}]}
+{
+  "slug": "voa_7965170",
+  "title": "Important Terms and Ideas for Describing Artificial Intelligence",
+  "speaker": "VOA Learning English",
+  "category": "voa",
+  "school": null,
+  "year": 2025,
+  "duration": 460.88,
+  "cover": "/covers/voa_7965170.jpg",
+  "views": null,
+  "sourceUrl": "https://learningenglish.voanews.com/a/important-terms-and-ideas-involved-in-describing-artificial-intelligence-/7965170.html",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/voa_7965170.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/voa_7965170.m4a"
+  },
+  "zhSource": "mt",
+  "sentences": [
+    {
+      "i": 0,
+      "start": 0.75,
+      "end": 9.65,
+      "en": "There are several terms experts use to describe computer systems in the field of artificial intelligence.",
+      "zh": "在人工智能领域,专家用几个术语来描述计算机系统。",
+      "w": [0.75,1.33,1.33,1.55,1.55,1.99,1.99,2.61,2.61,3.43,3.43,4.01,4.01,4.39,4.39,5.11,5.11,5.69,5.69,6.35,6.35,7.07,7.07,7.21,7.21,7.65,7.65,8.05,8.05,8.61,8.61,9.65]
+    },
+    {
+      "i": 1,
+      "start": 11.09,
+      "end": 20.41,
+      "en": "Recently, the French News Agency (AFP) defined some of the common terms and ideas used in that field.",
+      "zh": "最近,法国通讯社(AFP)界定了该领域使用的一些共同术语和想法。",
+      "w": [11.09,11.59,12.03,12.17,12.17,12.45,12.45,12.95,12.95,13.73,14.39,14.73,15.53,15.95,15.95,16.49,16.49,16.77,16.77,16.95,16.95,17.29,17.29,17.75,17.75,18.19,18.19,18.71,18.71,19.49,19.49,19.81,19.81,19.99,19.99,20.41]
+    },
+    {
+      "i": 2,
+      "start": 21.57,
+      "end": 49.03,
+      "en": "Here is a version for English learners: Artificial intelligence The first term is “artificial intelligence.” When asked what artificial intelligence is, the AI-powered ChatGPT system says that the term means “the simulation of human intelligence in machines that are programmed to think, learn and make decisions\".",
+      "zh": "这是英国学生的版本:人工智能。 第一个术语是“人工智能 ” 。 当被问及人工智能是什么时, AI-power ChatGPT 系统说,这个词的意思是“在设计成思考、学习和决定的机器中模拟人类智能 ” 。",
+      "w": [21.57,21.83,21.83,22.07,22.07,22.27,22.27,22.55,22.55,22.97,22.97,23.53,23.53,24.09,24.09,24.81,24.81,25.53,25.53,26.09,26.09,26.47,26.47,27.01,27.01,27.51,27.51,28.13,28.13,29.09,29.09,30.65,30.65,31.07,31.07,31.65,31.65,32.23,32.23,33.03,33.03,33.71,34.33,34.38,34.35,35.41,35.41,36.75,36.75,37.47,37.47,38.25,38.25,38.71,38.71,38.97,38.97,39.27,39.27,39.89,39.89,40.47,40.47,41.09,41.09,41.75,41.75,42.21,42.21,43.05,43.05,43.61,43.61,44.27,44.27,44.85,44.85,45.03,45.03,45.55,45.55,46.17,46.17,46.51,46.89,47.09,47.67,47.83,47.83,48.19,48.19,49.03]
+    },
+    {
+      "i": 3,
+      "start": 50.03,
+      "end": 61.85,
+      "en": "AI's main quality or characteristic is taking in large amounts of data and then processing it using methods from statistics .",
+      "zh": "AI的主要质量或特征是大量的数据,然后使用统计方法处理。",
+      "w": [50.03,51.09,51.09,51.37,51.37,52.07,52.07,52.55,52.55,53.37,53.37,54.37,54.37,54.75,54.75,55.25,55.25,55.67,55.67,56.09,56.09,56.61,56.61,56.93,56.93,57.69,57.69,58.01,58.01,58.59,58.59,59.15,59.15,59.85,59.85,60.39,60.39,61.05,61.05,61.85]
+    },
+    {
+      "i": 4,
+      "start": 63.27,
+      "end": 73.61,
+      "en": "AI involves using ideas from many fields including computing, mathematics, languages, psychology, and others.",
+      "zh": "AI涉及使用许多领域的想法,包括计算、数学、语言、心理学等。",
+      "w": [63.27,63.59,63.59,64.21,64.21,64.77,64.77,65.33,65.33,65.79,65.79,66.17,66.17,66.81,67.31,67.77,67.77,68.47,69.27,69.71,70.61,71.07,72.07,72.23,72.91,73.13,73.13,73.61]
+    },
+    {
+      "i": 5,
+      "start": 73.61,
+      "end": 90.15,
+      "en": "Currently, the technology is being used heavily for investigating health issues, translating human languages, and predicting problems in machine tools and self-driving cars.",
+      "zh": "目前,该技术正大量用于调查健康问题、翻译人文和预测机器工具和自行驾驶汽车方面的问题。",
+      "w": [73.61,75.07,75.81,75.89,75.89,76.39,76.39,77.03,77.03,77.31,77.31,77.87,77.87,78.35,78.35,79.17,79.17,80.07,80.07,80.55,80.55,81.33,82.09,82.59,82.59,83.07,83.07,83.75,84.53,84.81,84.81,85.43,85.43,86.03,86.03,86.63,86.63,87.13,87.13,87.77,87.77,88.53,88.53,89.35,89.35,90.15]
+    },
+    {
+      "i": 6,
+      "start": 91.19,
+      "end": 95.77,
+      "en": "But AI is affecting many fields of business and industry.",
+      "zh": "但大赦国际正在影响许多商业和工业领域。",
+      "w": [91.19,91.33,91.33,91.67,91.67,91.99,91.99,92.47,92.47,92.87,92.87,93.43,93.43,93.99,93.99,94.43,94.43,95.11,95.11,95.77]
+    },
+    {
+      "i": 7,
+      "start": 95.77,
+      "end": 106.47,
+      "en": "Algorithm A second important term is “algorithm.” An algorithm is important to all computer operations.",
+      "zh": "第二个重要术语是“algorithm ” 。 算法对所有计算机操作都很重要。",
+      "w": [95.77,97.29,97.29,97.79,97.79,98.27,98.27,98.97,98.97,99.55,99.55,100.45,100.45,101.19,102.19,102.77,102.77,103.27,103.27,103.79,103.79,104.29,104.29,104.79,104.79,105.13,105.13,105.65,105.65,106.47]
+    },
+    {
+      "i": 8,
+      "start": 107.81,
+      "end": 114.77,
+      "en": "It is a series of steps or instructions followed by a computer program to get a result.",
+      "zh": "这是一系列步骤或指示,然后是计算机程序,以取得结果。",
+      "w": [107.81,107.89,107.89,108.05,108.05,108.33,108.33,108.51,108.51,108.91,108.91,109.41,109.41,109.75,109.75,110.41,110.41,111.25,111.25,111.61,111.61,111.83,111.83,112.23,112.23,112.87,112.87,113.67,113.67,113.95,113.95,114.25,114.25,114.77]
+    },
+    {
+      "i": 9,
+      "start": 115.95,
+      "end": 125.77,
+      "en": "Algorithms can give rules for an AI's behavior, helping it to realize the objectives of computer program developers.",
+      "zh": "演算法可以为AI的行为提供规则, 帮助它实现计算机程序开发者的目标。",
+      "w": [115.95,116.63,116.63,116.91,116.91,117.19,117.19,117.63,117.63,118.01,118.01,118.29,118.29,119.03,119.03,119.53,120.33,120.65,120.65,120.89,120.89,121.11,121.11,121.65,121.65,122.31,122.31,123.01,123.01,123.87,123.87,124.47,124.47,125.11,125.11,125.77]
+    },
+    {
+      "i": 10,
+      "start": 126.69,
+      "end": 136.01,
+      "en": "Unlike a simple computer program, AI algorithms permit a computer system to “learn” for itself.",
+      "zh": "与简单的计算机程序不同,人工智能算法允许计算机系统自己“学习”。",
+      "w": [126.69,127.25,127.25,127.89,127.89,128.23,128.23,128.79,128.79,129.43,130.23,130.59,130.59,131.41,131.41,132.07,132.07,132.45,132.45,132.87,132.87,133.55,133.55,134.27,134.27,134.83,134.83,135.45,135.45,136.01]
+    },
+    {
+      "i": 11,
+      "start": 136.01,
+      "end": 149.77,
+      "en": "Machine learning A third important term is “machine learning.” Machine learning is one method that researchers have used in their efforts to produce artificial intelligence.",
+      "zh": "“机器学习”是第三个重要术语。 机器学习是研究人员在努力制造人工智能时使用的一种方法。",
+      "w": [136.01,136.62,136.62,137.23,137.23,137.51,137.51,137.77,137.77,138.37,138.37,138.75,138.75,139.27,139.27,139.75,139.75,140.39,141.73,141.83,141.83,142.37,142.37,142.77,142.77,143.09,143.09,143.59,143.59,144.15,144.15,144.67,144.67,145.33,145.33,145.85,145.85,146.21,146.21,146.49,146.49,147.01,147.01,147.63,147.63,148.21,148.21,148.83,148.83,149.77]
+    },
+    {
+      "i": 12,
+      "start": 150.77,
+      "end": 159.55,
+      "en": "Machine learning lets computers learn from data without being directly programmed on what results to produce.",
+      "zh": "机器学习使计算机能够从数据中学习,而不必直接编程了解产生什么结果。",
+      "w": [150.77,151.33,151.33,151.79,151.79,152.21,152.21,152.83,152.83,153.47,153.47,153.87,153.87,154.29,154.29,155.11,155.11,155.55,155.55,156.21,156.21,156.93,156.93,157.63,157.63,157.89,157.89,158.45,158.45,158.99,158.99,159.55]
+    },
+    {
+      "i": 13,
+      "start": 160.57,
+      "end": 166.53,
+      "en": "In recent years, the field of neural networks has given important results.",
+      "zh": "近年来,神经网络领域取得了重要成果。",
+      "w": [160.57,160.75,160.75,161.11,161.11,161.61,162.21,162.35,162.35,162.71,162.71,162.97,162.97,163.35,163.35,163.97,163.97,164.57,164.57,164.93,164.93,165.67,165.67,166.53]
+    },
+    {
+      "i": 14,
+      "start": 167.61,
+      "end": 177.89,
+      "en": "In a neural network, connections between some nodes are strengthened and others weakened as the system learns and makes changes.",
+      "zh": "在神经网络中,一些节点之间的联系得到加强,其他节点随着系统学习和变革而削弱。",
+      "w": [167.61,167.79,167.79,167.97,167.97,168.27,168.27,168.93,169.57,169.91,169.91,170.57,170.57,171.11,171.11,171.65,171.65,172.03,172.03,172.61,172.61,173.41,173.41,173.77,173.77,174.25,174.25,174.97,174.97,175.25,175.25,175.69,175.69,176.15,176.15,176.89,176.89,177.27,177.27,177.89]
+    },
+    {
+      "i": 15,
+      "start": 178.89,
+      "end": 188.51,
+      "en": "Learning can be \"supervised.\" This means the system learns to put new data into specific groups based on a model.",
+      "zh": "学习可以被“监督 ” 。 这意味着这个系统学习将新数据 输入到基于模型的特定群体中。",
+      "w": [178.89,179.37,179.37,179.83,179.83,180.09,180.09,180.71,181.65,181.83,181.83,182.17,182.17,182.61,182.61,183.01,183.01,183.35,183.35,183.85,183.85,184.07,184.07,184.47,184.47,184.91,184.91,185.51,185.51,186.19,186.19,186.85,186.85,187.57,187.57,188.01,188.01,188.17,188.17,188.51]
+    },
+    {
+      "i": 16,
+      "start": 189.53,
+      "end": 197.55,
+      "en": "For example, the system could learn to identify spam in an email or other messaging programs.",
+      "zh": "例如,该系统可以学会在电子邮件或其他信息程序中识别垃圾邮件。",
+      "w": [189.53,189.77,189.77,190.19,190.83,191.01,191.01,191.43,191.43,191.79,191.79,192.11,192.11,192.55,192.55,193.37,193.37,193.87,193.87,194.35,194.35,194.61,194.61,195.03,195.03,195.73,195.73,196.15,196.15,196.79,196.79,197.55]
+    },
+    {
+      "i": 17,
+      "start": 198.75,
+      "end": 208.01,
+      "en": "\"Unsupervised\" learning permits the system to independently discover new areas or ways of doing things.",
+      "zh": "“不受监督”的学习使系统能够独立地发现新的领域或做事方式。",
+      "w": [198.75,199.87,199.87,200.47,200.47,201.09,201.09,201.47,201.47,201.95,201.95,202.37,202.37,203.25,203.25,204.29,204.29,204.79,204.79,205.53,205.53,206.15,206.15,206.55,206.55,206.95,206.95,207.25,207.25,208.01]
+    },
+    {
+      "i": 18,
+      "start": 209.03,
+      "end": 215.27,
+      "en": "These discoveries in the available data might not have been immediately clear.",
+      "zh": "现有数据中的这些发现可能并不立即清楚。",
+      "w": [209.03,209.25,209.25,209.89,209.89,210.45,210.45,210.73,210.73,211.33,211.33,211.91,211.91,212.61,212.61,212.97,212.97,213.31,213.31,213.77,213.77,214.37,214.37,215.27]
+    },
+    {
+      "i": 19,
+      "start": 216.17,
+      "end": 223.13,
+      "en": "An example would be letting an online store identify buying trends in sales data.",
+      "zh": "一个例子就是让一家网上商店查明销售数据中的购买趋势。",
+      "w": [216.17,216.47,216.47,216.93,216.93,217.33,217.33,217.65,217.65,217.99,217.99,218.45,218.45,218.99,218.99,219.55,219.55,220.33,220.33,221.03,221.03,221.71,221.71,222.15,222.15,222.53,222.53,223.13]
+    },
+    {
+      "i": 20,
+      "start": 224.13,
+      "end": 229.29,
+      "en": "\"Reinforcement\" learning adds a process of repeated trial-and-error.",
+      "zh": "“加强”学习增加了反复审判的过程。",
+      "w": [224.13,224.73,224.73,225.21,225.21,225.73,225.73,226.07,226.07,226.53,226.53,227.03,227.03,227.57,227.57,229.29]
+    },
+    {
+      "i": 21,
+      "start": 230.07,
+      "end": 238.25,
+      "en": "In this process, the system is rewarded based on its outcomes, causing it to learn and improve.",
+      "zh": "在这一过程中,该制度因其成果而得到奖励,从而得以学习和改进。",
+      "w": [230.07,230.29,230.29,230.55,230.55,231.09,231.61,231.83,231.83,232.27,232.27,232.61,232.61,233.21,233.21,233.79,233.79,234.23,234.23,234.63,234.63,235.29,235.87,236.11,236.11,236.51,236.51,236.81,236.81,237.13,237.13,237.67,237.67,238.25]
+    },
+    {
+      "i": 22,
+      "start": 239.45,
+      "end": 250.37,
+      "en": "One example might be a self-driving vehicle whose objective is to reach its destination as quickly as possible but also safely.",
+      "zh": "一个例子可能是自驾车,其目的是尽快到达目的地,但也要安全。",
+      "w": [239.45,239.71,239.71,240.25,240.25,240.59,240.59,240.99,240.99,241.27,241.27,242.07,242.07,242.71,242.71,243.51,243.51,244.11,244.11,244.71,244.71,244.97,244.97,245.27,245.27,245.75,245.75,246.41,246.41,247.29,247.29,247.55,247.55,248.03,248.03,248.63,249.13,249.35,249.35,249.77,249.77,250.37]
+    },
+    {
+      "i": 23,
+      "start": 251.32,
+      "end": 259.03,
+      "en": "That requirement would lead it to learn to stop at red lights although it requires additional time.",
+      "zh": "这一要求将促使它学会在红色灯光下停下来,尽管它需要更多的时间。",
+      "w": [251.32,251.75,251.75,252.43,252.43,252.87,252.87,253.13,253.13,253.41,253.41,253.67,253.67,253.95,253.95,254.31,254.31,254.67,254.67,254.97,254.97,255.27,255.27,255.79,256.33,256.67,256.67,256.99,256.99,257.61,257.61,258.35,258.35,259.03]
+    },
+    {
+      "i": 24,
+      "start": 260.85,
+      "end": 266.99,
+      "en": "Deep learning Deep learning owes its name to its use of many layers of neural networks.",
+      "zh": "深层学习是因为它使用许多层次的神经网络。",
+      "w": [260.85,261.25,261.25,261.93,261.93,261.98,261.94,261.98,261.94,262.45,262.45,262.71,262.71,263.05,263.05,263.37,263.37,263.55,263.55,263.95,263.95,264.33,264.33,264.71,264.71,265.29,265.29,265.73,265.73,266.17,266.17,266.99]
+    },
+    {
+      "i": 25,
+      "start": 268.37,
+      "end": 274.15,
+      "en": "Raw data is examined by each layer in turn at growing levels of abstraction .",
+      "zh": "原始数据由每一层在不断增长的抽象水平上逐级审查。",
+      "w": [268.37,268.42,268.37,268.69,268.69,269.03,269.03,269.51,269.51,269.89,269.89,270.23,270.23,270.75,270.75,271.03,271.03,271.45,271.45,272.07,272.07,272.53,272.53,273.05,273.05,273.51,273.51,274.15]
+    },
+    {
+      "i": 26,
+      "start": 274.15,
+      "end": 281.57,
+      "en": "Geoffrey Hinton received the 2024 Nobel Prize in Physics.",
+      "zh": "Geoffrey Hinton获得2024年诺贝尔物理奖。",
+      "w": [274.15,276.29,276.29,276.77,276.77,277.73,277.73,278.27,279.37,279.95,280.47,280.85,280.85,281.15,281.15,281.57]
+    },
+    {
+      "i": 27,
+      "start": 282.81,
+      "end": 286.45,
+      "en": "Hinton is credited with developing deep learning.",
+      "zh": "辛顿在深层次的学习中功不可没",
+      "w": [282.81,283.11,283.11,283.37,283.37,283.79,283.79,284.29,284.29,285.03,285.03,285.71,285.71,286.45]
+    },
+    {
+      "i": 28,
+      "start": 287.47,
+      "end": 294.83,
+      "en": "Hinton received the prize along with 1980s neural-network developer John Hopfield.",
+      "zh": "Hinton和1980年代神经网络开发商John Hopfield一起获得奖项。",
+      "w": [287.47,287.97,287.97,288.61,288.61,288.91,288.91,289.43,289.43,289.97,289.97,290.43,290.43,291.99,291.99,292.79,292.79,293.53,293.53,294.27,294.27,294.83]
+    },
+    {
+      "i": 29,
+      "start": 295.83,
+      "end": 318.87,
+      "en": "Francis Bach, head of France's SIERRA statistical learning laboratory, said this about deep learning: \"The more layers you have, the more complex behavior can become, and the more complex the behavior can be, the easier it is to learn a desired behavior efficiently .\"",
+      "zh": "法国SIERRA统计学习实验室负责人Francis Bach说, “你越是深入学习, 行为就会越复杂, 行为也会越复杂,",
+      "w": [295.83,296.45,296.45,296.83,297.51,297.81,297.81,298.07,298.07,298.71,298.71,299.29,299.29,300.01,300.01,300.57,300.57,301.25,301.33,302.45,302.45,303.15,303.15,303.79,303.79,304.21,304.21,304.89,305.73,305.89,305.89,306.13,306.13,306.51,306.51,306.75,306.75,307.19,307.69,307.83,307.83,308.07,308.07,308.73,308.73,309.21,309.21,309.59,309.59,310.03,310.93,311.35,311.35,311.65,311.65,311.95,311.95,312.57,312.57,312.81,312.81,313.25,313.25,313.61,313.61,314.03,314.43,314.77,314.77,315.17,315.17,315.53,315.53,315.87,315.87,316.17,316.17,316.57,316.57,316.89,316.89,317.41,317.41,318.13,318.13,318.87]
+    },
+    {
+      "i": 30,
+      "start": 319.81,
+      "end": 323.77,
+      "en": "The method might help lead to scientific discoveries.",
+      "zh": "这一方法可能有助于产生科学发现。",
+      "w": [319.81,320.37,320.37,320.71,320.71,320.99,320.99,321.37,321.37,321.85,321.85,322.23,322.23,322.89,322.89,323.77]
+    },
+    {
+      "i": 31,
+      "start": 323.77,
+      "end": 329.91,
+      "en": "Language models We now turn to large language models (LLMs).",
+      "zh": "语言模式 我们现在转向大型语言模式(LLMs)。",
+      "w": [323.77,324.56,324.56,325.35,325.35,325.4,325.37,325.61,325.61,325.91,325.91,326.37,326.37,326.87,326.87,327.49,327.49,328.17,329.03,329.91]
+    },
+    {
+      "i": 32,
+      "start": 331.05,
+      "end": 335.37,
+      "en": "These might be the most popular example of generative AI.",
+      "zh": "这可能是最流行的人工智能例子。",
+      "w": [331.05,331.31,331.31,331.57,331.57,331.89,331.89,332.07,332.07,332.35,332.35,332.91,332.91,333.55,333.55,334.05,334.05,334.79,334.79,335.37]
+    },
+    {
+      "i": 33,
+      "start": 336.65,
+      "end": 343.89,
+      "en": "Large language models power tools like OpenAI’s ChatGPT or Google’s Gemini.",
+      "zh": "例如OpenAI的ChatGPT或Google的双子座。",
+      "w": [336.65,336.89,336.89,337.37,337.37,338.01,338.01,338.63,338.63,339.19,339.19,339.63,339.63,341.15,341.15,342.05,342.05,342.87,342.87,343.55,343.55,343.89]
+    },
+    {
+      "i": 34,
+      "start": 344.86,
+      "end": 356.43,
+      "en": "Such systems are able to write long papers, answer legal questions or even produce a cake recipe based on their statistical models.",
+      "zh": "这种系统能够撰写长篇论文,回答法律问题,甚至能够根据其统计模式制作蛋糕配方。",
+      "w": [344.86,345.35,345.35,345.93,345.93,346.31,346.31,346.59,346.59,346.91,346.91,347.21,347.21,347.69,347.69,348.33,348.97,349.25,349.25,349.71,349.71,350.33,351.07,351.23,351.23,351.57,351.57,352.09,352.09,352.49,352.49,352.73,352.73,353.37,353.37,354.09,354.09,354.55,354.55,354.83,354.83,355.65,355.65,356.43]
+    },
+    {
+      "i": 35,
+      "start": 357.59,
+      "end": 369.27,
+      "en": "But the technology is still new. LLM’s can suffer from \"hallucinations\"- the creation of content that is false or incorrect.",
+      "zh": "但技术还是很新奇的。 LLM可能受到“催化”的影响 — — 产生虚假或不正确的内容。",
+      "w": [357.59,357.75,357.75,357.95,357.95,358.57,358.57,359.23,359.23,359.61,359.61,360.13,360.13,361.95,361.95,362.43,362.43,362.89,362.89,363.31,363.31,364.17,365.31,365.47,365.47,365.85,365.85,366.33,366.33,366.87,366.87,367.37,367.37,367.61,367.61,367.99,367.99,368.63,368.63,369.27]
+    },
+    {
+      "i": 36,
+      "start": 369.27,
+      "end": 381.69,
+      "en": "Artificial general intelligence A final important term is artificial general intelligence (AGI) - one the big goals of the whole AI field.",
+      "zh": "最后一个重要的术语是人工一般情报(AGI),这是整个人工一般情报领域的一大目标。",
+      "w": [369.27,369.6,369.6,369.94,369.94,370.27,370.27,371.05,371.05,371.41,371.41,371.95,371.95,372.49,372.49,373.25,373.25,373.87,373.87,374.63,374.63,375.57,376.53,377.19,378.13,378.43,378.65,378.81,378.81,379.01,379.01,379.37,379.37,379.85,379.85,380.01,380.01,380.41,380.41,381.11,381.11,381.69]
+    },
+    {
+      "i": 37,
+      "start": 382.85,
+      "end": 392.55,
+      "en": "AGI suggests the unrealized dream of a machine able to reproduce all human processes of human thinking.",
+      "zh": "AGI提出一个未实现的梦想,即机器能够复制人类思想的所有过程。",
+      "w": [382.85,383.51,383.51,384.05,384.05,384.77,384.77,385.79,385.79,386.23,386.23,386.67,386.67,386.81,386.81,387.27,387.27,388.01,388.01,388.35,388.35,389.01,389.01,389.79,389.79,390.17,390.17,390.81,390.81,391.61,391.61,391.99,391.99,392.55]
+    },
+    {
+      "i": 38,
+      "start": 393.33,
+      "end": 402.73,
+      "en": "People who push the idea include OpenAI chief Sam Altman and his competitors at Anthropic.",
+      "zh": "提出这个想法的人包括OpenAI头目Sam Altman和他的人类学的竞争对手。",
+      "w": [393.33,393.85,393.85,394.19,394.19,394.49,394.49,394.73,394.73,395.27,395.27,395.93,395.93,397.25,397.25,397.79,397.79,398.53,398.53,399.21,399.21,400.11,400.11,400.35,400.35,401.03,401.03,401.85,401.85,402.73]
+    },
+    {
+      "i": 39,
+      "start": 403.79,
+      "end": 407.13,
+      "en": "They consider such a system to be within reach.",
+      "zh": "他们认为,这种制度是可以实现的。",
+      "w": [403.79,403.95,403.95,404.41,404.41,404.79,404.79,405.07,405.07,405.51,405.51,405.87,405.87,406.21,406.21,406.67,406.67,407.13]
+    },
+    {
+      "i": 40,
+      "start": 408.19,
+      "end": 418.29,
+      "en": "The goal is to use large amounts of data and processing power to train LLMs that are increasingly powerful.",
+      "zh": "目标是利用大量数据和加工能力来培训越来越强大的LLMs。",
+      "w": [408.19,408.33,408.33,408.61,408.61,408.89,408.89,409.13,409.13,409.63,409.63,410.29,410.29,410.65,410.65,410.93,410.93,411.27,411.27,412.17,412.17,412.73,412.73,413.29,413.29,414.05,414.05,414.55,414.55,415.65,415.65,416.47,416.47,416.71,416.71,417.45,417.45,418.29]
+    },
+    {
+      "i": 41,
+      "start": 419.16,
+      "end": 428.49,
+      "en": "But critics say that LLM technology has important limits, including its ability to reason.",
+      "zh": "但批评者说,LLM技术有重要的局限性,包括其理性能力。",
+      "w": [419.16,419.71,419.71,420.25,420.25,420.77,420.77,421.27,421.27,422.27,422.27,422.99,422.99,424.03,424.03,424.71,424.71,425.47,426.25,426.79,426.79,427.23,427.23,427.55,427.55,428.01,428.01,428.49]
+    },
+    {
+      "i": 42,
+      "start": 428.49,
+      "end": 442.29,
+      "en": "Maxime Amblard, computing professor at France's University of Lorraine, told AFP last year, \"LLMs do not work like human beings.\"",
+      "zh": "去年法国洛林大学计算学教授Maxime Amblard 告诉澳大利亚联邦统计局说,“LLMS不像人类一样工作。”",
+      "w": [428.49,430.15,430.15,431.81,431.81,432.13,432.13,432.69,432.69,433.39,433.39,433.93,433.93,434.61,434.61,435.05,435.05,435.57,436.25,436.51,436.51,437.17,437.17,437.59,437.59,438.13,438.13,439.73,439.73,440.01,440.01,440.27,440.27,440.63,440.63,441.23,441.23,441.53,441.53,442.29]
+    },
+    {
+      "i": 43,
+      "start": 442.29,
+      "end": 455.13,
+      "en": "Amblard added that humans, as flesh-and-blood -intelligent beings, are \"sense-making machines\" with different abilities from today's computer systems.",
+      "zh": "Amblard补充说,人类作为血肉之躯,是“智商制造机器”,其能力与当今的计算机系统不同。",
+      "w": [442.29,443.65,443.65,444.03,444.03,444.43,444.43,444.87,445.49,445.75,445.75,446.75,446.75,447.39,447.39,448.05,448.65,448.91,448.91,449.67,449.67,450.45,450.45,451.29,451.29,451.75,451.75,452.45,452.45,453.07,453.07,453.83,453.83,454.27,454.27,455.13]
+    },
+    {
+      "i": 44,
+      "start": 456.31,
+      "end": 459.76,
+      "en": "I’m Anna Matteo. And I’m John Russell. Pierre Celerier reported on this story for Agence France-Presse.",
+      "zh": "我是Anna Matteo。 我是John Russell。Pierre Celerier为法新社报导了这个故事。",
+      "w": [456.31,456.77,456.77,457.6,457.6,458.43,458.43,458.75,458.75,459.07,459.07,459.35,459.35,459.71,459.71,459.76,459.71,459.76,459.71,459.76,459.71,459.76,459.71,459.76,459.71,459.76,459.71,459.76,459.71,459.76,459.71,459.76]
+    },
+    {
+      "i": 45,
+      "start": 459.72,
+      "end": 459.77,
+      "en": "John Russell adapted it for VOA Learning",
+      "zh": "约翰・罗素改编了它 用于VOA学习",
+      "w": [459.72,459.77,459.72,459.77,459.72,459.77,459.72,459.77,459.72,459.77,459.72,459.77,459.72,459.77]
+    }
+  ],
+  "wSource": "asr"
+}

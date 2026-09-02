@@ -35,6 +35,9 @@ jobs:
         working-directory: app
         run: npm run lint
 
+      - name: 校验语料数据
+        run: python scripts/validate_data.py
+
       - name: 类型检查（含 Pages Functions）
         working-directory: app
         run: npm run typecheck

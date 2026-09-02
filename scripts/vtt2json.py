@@ -6,6 +6,7 @@ import argparse, json, os, re, subprocess, tempfile
 
 import imageio_ffmpeg
 from offline_translate import OfflineTranslator, TranslationError
+from data_io import write_talk
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -228,8 +229,7 @@ def build_entry(resolved_map, slug, cache):
         "sentences": sentences,
     }
     out = os.path.join(DATA_DIR, slug + ".json")
-    with open(out, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
+    write_talk(out, data)
     return {k: data[k] for k in
             ("slug", "title", "speaker", "category", "school", "year", "duration", "cover", "views", "audioUrls", "zhSource")}
 

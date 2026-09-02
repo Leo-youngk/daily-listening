@@ -7,6 +7,10 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 CORPUS = os.path.join(HERE, "corpus")
 SUBS = os.path.join(ROOT, "public", "subs")
+# 归档到 oneoff/ 后仍要能 import 上层 scripts/ 里的模块
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
 from resolve import search, make_result, RESOLVED
 
 YT = [sys.executable, "-m", "yt_dlp", "--no-warnings"]

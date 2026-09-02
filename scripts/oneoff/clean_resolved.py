@@ -4,6 +4,10 @@ import json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+# 归档到 oneoff/ 后仍要能 import 上层 scripts/ 里的模块
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
 from resolve import search, make_result, load_existing, CORPUS, RESOLVED
 
 # 经审查确认的错误匹配 / 重复项

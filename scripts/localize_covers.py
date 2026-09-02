@@ -9,6 +9,7 @@ import os
 import re
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from data_io import write_talk
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -73,8 +74,7 @@ def main():
             if os.path.exists(dj):
                 d = json.load(open(dj, encoding="utf-8"))
                 d["cover"] = rel
-                with open(dj, "w", encoding="utf-8") as f:
-                    json.dump(d, f, ensure_ascii=False, separators=(",", ":"))
+                write_talk(dj, d)
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False)
 

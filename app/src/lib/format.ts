@@ -24,3 +24,10 @@ export function fmtViews(n?: number | null): string {
 export function fmtMinutes(sec: number): string {
   return (sec / 60).toFixed(0) + ' 分钟'
 }
+
+export function fmtBytes(n: number): string {
+  if (!isFinite(n) || n <= 0) return '0 MB'
+  if (n < 1024 * 1024) return `${Math.max(1, Math.round(n / 1024))} KB`
+  if (n < 1024 * 1024 * 1024) return `${(n / 1024 / 1024).toFixed(1)} MB`
+  return `${(n / 1024 / 1024 / 1024).toFixed(2)} GB`
+}
