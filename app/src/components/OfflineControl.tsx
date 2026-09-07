@@ -25,6 +25,7 @@ export default function OfflineControl({ slug, quality, url }: {
   const [received, setReceived] = useState<{ done: number; total: number } | null>(null)
   const [error, setError] = useState<string | null>(null)
   const abortRef = useRef<AbortController | null>(null)
+  const mountedRef = useRef(true)
   const entry: OfflineEntry | null = index[slug] ?? null
 
   useEffect(() => {
@@ -33,8 +34,19 @@ export default function OfflineControl({ slug, quality, url }: {
     return () => window.removeEventListener(OFFLINE_EVENT, sync)
   }, [])
 
-  // 切换篇目时中止上一篇没下完的请求
-  useEffect(() => () => abortRef.current?.abort(), [slug])
+  useEffect(() => () => {
+    mountedRef.current = false
+  }, [])
+
+  // 切换篇目时中止上一篇没下完的请求。关闭播放设置不会取消下载，
+  // 这样用户可以把下载放到后台继续，重新打开面板时从索引恢复状态。
+  const slugRef = useRef(slug)
+  useEffect(() => {
+    if (slugRef.current !== slug) {
+      abortRef.current?.abort()
+      slugRef.current = slug
+    }
+  }, [slug])
 
   const start = async () => {
     if (!url) return
@@ -43,14 +55,22 @@ export default function OfflineControl({ slug, quality, url }: {
     abortRef.current = controller
     setReceived({ done: 0, total: 0 })
     try {
-      await downloadTalk(slug, quality, url, (done, total) => setReceived({ done, total }), controller.signal)
+      await downloadTalk(
+        slug,
+        quality,
+        url,
+        (done, total) => {
+          if (mountedRef.current) setReceived({ done, total })
+        },
+        controller.signal,
+      )
     } catch (downloadError) {
-      if (!controller.signal.aborted) {
+      if (mountedRef.current && !controller.signal.aborted) {
         setError(downloadError instanceof Error ? downloadError.message : '下载失败')
       }
     } finally {
       if (abortRef.current === controller) abortRef.current = null
-      setReceived(null)
+      if (mountedRef.current) setReceived(null)
     }
   }
 
