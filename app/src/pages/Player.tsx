@@ -16,6 +16,7 @@ import { cn } from '@/lib/utils'
 import DictPanel from '../components/DictPanel'
 import type { DictTarget } from '../components/DictPanel'
 import { normalizeTerm, tokenizeSentence } from '../lib/lookup'
+import { prefetchLookup } from '../lib/dict'
 import { navigate } from '../hooks/useHashRoute'
 import { wordAt } from '../lib/timeline'
 import OfflineControl from '../components/OfflineControl'
@@ -41,10 +42,12 @@ function animateScroll(box: HTMLElement, to: number, duration = 380) {
  * 可点词的英文句子。词序与查词接口共用同一套分词，data-w 下标同时也是 Sentence.w 的下标。
  * 高亮态不在这里渲染——由 Player 的 rAF 直接改 class，避免每帧重渲染整个字幕流。
  */
-function TokenizedText({ text, scale, onWord }: {
+function TokenizedText({ text, scale, sentence, onWord, onPrefetch }: {
   text: string
   scale: number
-  onWord: (wordIndex: number) => void
+  sentence: Sentence
+  onWord: (wordIndex: number, sentence: Sentence) => void
+  onPrefetch: (wordIndex: number, sentence: Sentence) => void
 }) {
   const tokens = useMemo(() => tokenizeSentence(text), [text])
   const nodes: ReactNode[] = []
@@ -55,7 +58,11 @@ function TokenizedText({ text, scale, onWord }: {
       <span
         key={`w-${i}`}
         data-w={i}
-        onClick={e => { e.stopPropagation(); onWord(i) }}
+        onPointerDown={e => {
+          if (e.pointerType === 'mouse' && e.button !== 0) return
+          onPrefetch(i, sentence)
+        }}
+        onClick={e => { e.stopPropagation(); onWord(i, sentence) }}
         className="cursor-pointer rounded px-px transition-colors duration-150 active:bg-primary/25"
       >
         {token.text}
@@ -69,13 +76,14 @@ function TokenizedText({ text, scale, onWord }: {
   )
 }
 
-const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, onSeek, onWord }: {
+const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, onSeek, onWord, onPrefetch }: {
   s: Sentence
   active: boolean
   scale: number
   hideZh: boolean
   onSeek: (s: Sentence) => void
   onWord: (wordIndex: number, sentence: Sentence) => void
+  onPrefetch: (wordIndex: number, sentence: Sentence) => void
 }) {
   return (
     <div
@@ -95,7 +103,7 @@ const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, onSeek
         {fmtTime(s.start)}
       </button>
       <div className="min-w-0 flex-1">
-        <TokenizedText text={s.en} scale={scale} onWord={i => onWord(i, s)} />
+        <TokenizedText text={s.en} scale={scale} sentence={s} onWord={onWord} onPrefetch={onPrefetch} />
         {!hideZh && s.zh && (
           <p className="mt-1 text-muted-foreground" style={{ fontSize: `${14 * scale}px`, lineHeight: 1.5 }}>
             {s.zh}
@@ -107,13 +115,14 @@ const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, onSeek
 })
 
 /** 字幕流独立成 memo 组件：Player 每 100ms 因进度条重渲染，这里只在换句时才重建 */
-const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, hideZh, onSeek, onWord }: {
+const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, hideZh, onSeek, onWord, onPrefetch }: {
   sentences: Sentence[]
   currentIdx: number
   scale: number
   hideZh: boolean
   onSeek: (s: Sentence) => void
   onWord: (wordIndex: number, sentence: Sentence) => void
+  onPrefetch: (wordIndex: number, sentence: Sentence) => void
 }) {
   return (
     <div className="space-y-1 pb-6">
@@ -126,6 +135,7 @@ const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, 
             hideZh={hideZh}
             onSeek={onSeek}
             onWord={onWord}
+            onPrefetch={onPrefetch}
           />
         </div>
       ))}
@@ -248,6 +258,9 @@ export default function Player({ slug }: { slug: string }) {
       startTime: sen.start,
     })
   }, [slug])
+  const handlePrefetch = useCallback((wordIndex: number, sen: Sentence) => {
+    prefetchLookup(sen.en, wordIndex)
+  }, [])
 
   return (
     <div className="mx-auto flex h-full max-w-lg flex-col">
@@ -322,6 +335,7 @@ export default function Player({ slug }: { slug: string }) {
           hideZh={settings.hideZh}
           onSeek={handleSeek}
           onWord={handleWord}
+          onPrefetch={handlePrefetch}
         />
       </main>
 

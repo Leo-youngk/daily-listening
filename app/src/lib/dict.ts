@@ -47,11 +47,29 @@ export interface LocalLookup {
   candidates: string[]
 }
 
-export async function lookupLocal(sentence: string, wordIndex: number): Promise<LocalLookup> {
+/**
+ * 在用户抬手打开查词面板前先把相关分片放进内存 Promise 缓存。
+ * 移动端 pointerdown 通常早于 click，能把网络等待藏到点击动作里。
+ */
+export function prefetchLookup(sentence: string, wordIndex: number): void {
+  const tokens = tokenizeSentence(sentence).map(t => normalizeTerm(t.text))
+  void loadEntries(phraseCandidates(tokens, wordIndex))
+}
+
+export async function lookupLocal(
+  sentence: string,
+  wordIndex: number,
+  onPartial?: (result: Pick<LocalLookup, 'term' | 'entry'>) => void,
+): Promise<LocalLookup> {
   const tokens = tokenizeSentence(sentence).map(t => normalizeTerm(t.text))
   const candidates = phraseCandidates(tokens, wordIndex)
-  const entries = await loadEntries(candidates)
   const word = tokens[wordIndex] ?? ''
+  // 候选词组并行加载；单词所在分片先单独取结果，让 UI 先显示可用的基础释义。
+  const allEntriesPromise = loadEntries(candidates)
+  const wordEntries = await loadEntries(word ? [word] : [])
+  if (wordEntries.has(word)) onPartial?.({ term: word, entry: wordEntries.get(word) })
+
+  const entries = await allEntriesPromise
   const phrase = candidates.find(c => c !== word && entries.has(c))
   const term = phrase ?? word
   return { term, entry: entries.get(term) ?? entries.get(word), candidates }

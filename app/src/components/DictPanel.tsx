@@ -28,9 +28,17 @@ export default function DictPanel({ target, onClose }: { target: DictTarget; onC
     setSense(null)
     setAdded('idle')
 
-    void lookupLocal(sentence, wordIndex).then(result => {
+    void lookupLocal(sentence, wordIndex, result => {
+      if (!alive || !result.entry) return
+      setLocal({ term: result.term, entry: result.entry })
+      setLocalState('done')
+    }).then(result => {
       if (!alive) return
       setLocal({ term: result.term, entry: result.entry })
+      setLocalState('done')
+    }).catch(error => {
+      if (!alive) return
+      console.error('local dictionary lookup failed', error)
       setLocalState('done')
     })
 
