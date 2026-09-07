@@ -1,5 +1,11 @@
 import { beforeEach, describe, expect, it } from 'vitest'
-import { isDownloaded, loadOfflineIndex, offlineBytes, offlineSource } from '../src/lib/offline'
+import {
+  isDownloaded,
+  isPersistentCacheName,
+  loadOfflineIndex,
+  offlineBytes,
+  offlineSource,
+} from '../src/lib/offline'
 import { fmtBytes } from '../src/lib/format'
 import type { OfflineIndex } from '../src/lib/offline'
 
@@ -38,6 +44,14 @@ describe('离线索引', () => {
     seed({ a: { slug: 'a', quality: 'standard', url: 'https://x/a.m4a', bytes: 10, at: 1 } })
     // initOffline 没跑过（jsdom 里没有 Cache Storage），内存表是空的
     expect(offlineSource('https://x/a.m4a')).toBeNull()
+  })
+})
+
+describe('缓存清理白名单', () => {
+  it('保留应用壳和用户主动下载的音频', () => {
+    expect(isPersistentCacheName('workbox-precache-v2-https://example.test')).toBe(true)
+    expect(isPersistentCacheName('offline-audio-v1')).toBe(true)
+    expect(isPersistentCacheName('data-cache-v4')).toBe(false)
   })
 })
 

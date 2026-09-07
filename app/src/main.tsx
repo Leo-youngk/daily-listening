@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
 import ErrorBoundary from './components/ErrorBoundary'
-import { OFFLINE_CACHE_NAME, initOffline } from './lib/offline'
+import { initOffline, isPersistentCacheName, OFFLINE_CACHE_NAME } from './lib/offline'
 import { PlayerProvider } from './store/PlayerContext'
 
 // 运行时缓存名带版本号，改版后旧缓存不会被 Workbox 自动回收（cleanupOutdatedCaches
@@ -20,7 +20,7 @@ async function purgeStaleCaches() {
     if (!('caches' in window)) return
     const keys = await caches.keys()
     const stale = keys.filter(
-      key => !RUNTIME_CACHES.has(key) && !key.startsWith('workbox-precache'),
+      key => !RUNTIME_CACHES.has(key) && !isPersistentCacheName(key),
     )
     await Promise.all(stale.map(key => caches.delete(key)))
   } catch {

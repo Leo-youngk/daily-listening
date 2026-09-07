@@ -9,6 +9,7 @@ export default function UpdateBanner() {
   const [apply, setApply] = useState<(() => void) | null>(null)
 
   useEffect(() => {
+    let timer: number | null = null
     const updateSW = registerSW({
       onNeedRefresh() {
         setReady(true)
@@ -16,9 +17,16 @@ export default function UpdateBanner() {
       },
       onRegisteredSW(_url, registration) {
         if (!registration) return
-        setInterval(() => void registration.update(), CHECK_INTERVAL)
+        timer = window.setInterval(() => {
+          void registration.update().catch(() => {
+            // 网络暂不可用时保留当前版本，下一个周期再检查。
+          })
+        }, CHECK_INTERVAL)
       },
     })
+    return () => {
+      if (timer !== null) window.clearInterval(timer)
+    }
   }, [])
 
   if (!ready) return null

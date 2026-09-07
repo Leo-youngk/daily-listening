@@ -12,15 +12,18 @@ import { fmtTime } from '../lib/format'
 const PAGE_SIZE = 30
 
 function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void }) {
+  // 复习开始后固定本轮队列。父组件会响应 storage 事件刷新生词列表，
+  // 如果这里直接使用过滤后的 props，标记第一词后队列会缩短，idx 会跳过下一词。
+  const [queue] = useState(items)
   const [idx, setIdx] = useState(0)
   const [flipped, setFlipped] = useState(false)
-  const item = items[idx]
+  const item = queue[idx]
   if (!item) return null
 
   const next = (known: boolean) => {
     if (known) updateVocab(item.id, { mastered: true })
     setFlipped(false)
-    if (idx + 1 >= items.length) onExit()
+    if (idx + 1 >= queue.length) onExit()
     else setIdx(idx + 1)
   }
 
@@ -28,7 +31,7 @@ function ReviewMode({ items, onExit }: { items: VocabItem[]; onExit: () => void 
     <div className="flex h-full flex-col px-4 py-3">
       <div className="flex items-center justify-between">
         <button onClick={onExit} className="text-sm font-medium text-primary">‹ 退出复习</button>
-        <span className="text-xs tabular-nums text-muted-foreground">{idx + 1} / {items.length}</span>
+        <span className="text-xs tabular-nums text-muted-foreground">{idx + 1} / {queue.length}</span>
       </div>
       <div className="flex flex-1 flex-col items-center justify-center">
         <div

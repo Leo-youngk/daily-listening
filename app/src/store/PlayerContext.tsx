@@ -12,7 +12,7 @@ import type { AudioQuality, ManifestItem, TalkData } from '../lib/types'
 import { loadProgress, loadSettings, recordListen, saveProgress, saveSettings } from '../lib/storage'
 import { fetchJson } from '../lib/http'
 import { sentenceAt as findSentence } from '../lib/timeline'
-import { offlineSource } from '../lib/offline'
+import { offlineSourceForTalk } from '../lib/offline'
 
 export type LoopMode = 0 | 1 | 3 | 999
 
@@ -27,6 +27,7 @@ interface PlayerState {
   playing: boolean
   buffering: boolean
   error: string | null
+  notice: string | null
   rate: number
   loop: LoopMode
   quality: AudioQuality
@@ -124,6 +125,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const [playing, setPlaying] = useState(false)
   const [buffering, setBuffering] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [notice, setNotice] = useState<string | null>(null)
   const [clock, setClock] = useState<PlayerClockState>({ time: 0, duration: 0, currentIdx: -1 })
   const [rate, setRateState] = useState(() => loadSettings().rate)
   const [loop, setLoopState] = useState<LoopMode>(0)
@@ -138,6 +140,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const loopSentenceRef = useRef(-1)
   const pendingSeekRef = useRef<number | null>(null)
   const requestRef = useRef<{ id: number; controller: AbortController } | null>(null)
+  const listenPositionRef = useRef<number | null>(null)
+  const listenPendingRef = useRef(0)
 
   const reloadManifest = useCallback(() => setManifestReload(value => value + 1), [])
 
@@ -210,6 +214,32 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     void audio.play().catch(handlePlayFailure)
   }, [audio, handlePlayFailure])
 
+  /** 只累计真实播放推进，跳转和缓冲造成的大时间差不会算进学习时长。 */
+  const sampleListenProgress = useCallback((allowPaused = false) => {
+    const current = Number.isFinite(audio.currentTime) ? audio.currentTime : 0
+    const previous = listenPositionRef.current
+    if (
+      previous !== null
+      && (allowPaused || !audio.paused)
+      && audio.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA
+    ) {
+      const delta = current - previous
+      // timeupdate 在正常播放时频率较高；超过 2 秒视为缓冲或用户 seek。
+      if (delta >= 0 && delta <= 2) listenPendingRef.current += delta
+    }
+    listenPositionRef.current = current
+  }, [audio])
+
+  const flushListenProgress = useCallback(() => {
+    sampleListenProgress(true)
+    const wholeSeconds = Math.floor(listenPendingRef.current)
+    if (wholeSeconds > 0) {
+      recordListen(wholeSeconds)
+      listenPendingRef.current -= wholeSeconds
+    }
+    if (slugRef.current) saveProgress(slugRef.current, audio.currentTime, audio.duration || 0)
+  }, [audio, sampleListenProgress])
+
   const playTalk = useCallback((target: string, at?: number) => {
     const meta = manifestBySlug.get(target)
     if (!meta) {
@@ -231,9 +261,16 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
 
     const saved = loadProgress()[target]
     const knownDuration = meta.duration || saved?.duration || 0
-    const startAt = at ?? (
+    const requestedAt = at !== undefined && Number.isFinite(at) ? at : undefined
+    const startAt = requestedAt ?? (
       saved && saved.pos > 3 && saved.pos < knownDuration - 10 ? saved.pos : 0
     )
+
+    // 先结算并暂停上一篇，避免 pause 事件把旧进度写到新 slug。
+    flushListenProgress()
+    audio.pause()
+    listenPositionRef.current = null
+    listenPendingRef.current = 0
 
     slugRef.current = target
     talkRef.current = null
@@ -241,16 +278,20 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     setTalk(null)
     setLoading(true)
     setError(null)
+    setNotice(null)
     setLoopState(0)
     loopRef.current = 0
     loopSentenceRef.current = -1
     pendingSeekRef.current = startAt
     setClock({ time: startAt, duration: meta.duration || 0, currentIdx: -1 })
 
-    audio.pause()
     audio.playbackRate = rate
     // 已下载的篇目直接放本地 blob，断网也能听
-    audio.src = offlineSource(source) ?? source
+    const resolvedOffline = offlineSourceForTalk(target, source, quality)
+    audio.src = resolvedOffline?.source ?? source
+    if (resolvedOffline && resolvedOffline.quality !== quality) {
+      setNotice(`未找到${quality === 'high' ? '高' : '标准'}音质的离线文件，已使用${resolvedOffline.quality === 'high' ? '高' : '标准'}音质`)
+    }
     startPlayback()
 
     fetchJson<TalkData>(`/data/${encodeURIComponent(target)}.json`, {
@@ -276,7 +317,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       .finally(() => {
         if (requestRef.current?.id === request.id) setLoading(false)
       })
-  }, [audio, manifestBySlug, quality, rate, startPlayback, updateClock])
+  }, [audio, flushListenProgress, manifestBySlug, quality, rate, startPlayback, updateClock])
 
   useEffect(() => {
     const applyPendingSeek = () => {
@@ -290,22 +331,28 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       updateClock()
     }
     const onPlay = () => {
+      listenPositionRef.current = Number.isFinite(audio.currentTime) ? audio.currentTime : 0
       setPlaying(true)
       setBuffering(false)
       setError(null)
     }
     const onPause = () => {
+      flushListenProgress()
       setPlaying(false)
       setBuffering(false)
       updateClock()
-      if (slugRef.current) saveProgress(slugRef.current, audio.currentTime, audio.duration || 0)
     }
-    const onWaiting = () => setBuffering(true)
+    const onWaiting = () => {
+      sampleListenProgress(true)
+      setBuffering(true)
+    }
     const onCanPlay = () => {
+      listenPositionRef.current = Number.isFinite(audio.currentTime) ? audio.currentTime : 0
       setBuffering(false)
       applyPendingSeek()
     }
     const onError = () => {
+      flushListenProgress()
       setBuffering(false)
       setPlaying(false)
       setError(audioErrorMessage(audio))
@@ -314,11 +361,16 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       if (!audio.paused) setBuffering(true)
     }
     const onEnded = () => {
+      flushListenProgress()
       setPlaying(false)
       setBuffering(false)
       updateClock()
     }
-    audio.addEventListener('timeupdate', updateClock)
+    const onTimeUpdate = () => {
+      sampleListenProgress()
+      updateClock()
+    }
+    audio.addEventListener('timeupdate', onTimeUpdate)
     audio.addEventListener('loadedmetadata', onMetadata)
     audio.addEventListener('durationchange', updateClock)
     audio.addEventListener('play', onPlay)
@@ -329,7 +381,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     audio.addEventListener('stalled', onStalled)
     audio.addEventListener('ended', onEnded)
     return () => {
-      audio.removeEventListener('timeupdate', updateClock)
+      audio.removeEventListener('timeupdate', onTimeUpdate)
       audio.removeEventListener('loadedmetadata', onMetadata)
       audio.removeEventListener('durationchange', updateClock)
       audio.removeEventListener('play', onPlay)
@@ -340,7 +392,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       audio.removeEventListener('stalled', onStalled)
       audio.removeEventListener('ended', onEnded)
     }
-  }, [audio, updateClock])
+  }, [audio, flushListenProgress, sampleListenProgress, updateClock])
 
   useEffect(() => {
     if (!playing) return
@@ -372,18 +424,18 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!playing) return
     const timer = window.setInterval(() => {
-      recordListen(5)
-      if (slugRef.current) saveProgress(slugRef.current, audio.currentTime, audio.duration || 0)
-    }, 5000)
+      flushListenProgress()
+    }, 5_000)
     return () => window.clearInterval(timer)
-  }, [audio, playing])
+  }, [flushListenProgress, playing])
 
   useEffect(() => () => {
     requestRef.current?.controller.abort()
+    flushListenProgress()
     audio.pause()
     audio.removeAttribute('src')
     audio.load()
-  }, [audio])
+  }, [audio, flushListenProgress])
 
   const toggle = useCallback(() => {
     if (audio.paused) startPlayback()
@@ -391,10 +443,17 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, [audio, startPlayback])
 
   const seek = useCallback((time: number) => {
-    const safeTime = Math.max(0, Math.min(time, audio.duration || time))
+    const requestedTime = Number.isFinite(time) ? time : 0
+    const safeTime = Math.max(0, Math.min(requestedTime, audio.duration || requestedTime))
+    const targetSentence = sentenceAt(safeTime - offsetRef.current)
+    // 用户主动跳句/拖进度时，单句循环应跟随新的句子，不能下一帧跳回旧句。
+    if (loopRef.current !== 0 && targetSentence >= 0 && targetSentence !== loopSentenceRef.current) {
+      loopSentenceRef.current = targetSentence
+      loopLeftRef.current = loopRef.current === 999 ? 0 : loopRef.current
+    }
     if (audio.readyState === HTMLMediaElement.HAVE_NOTHING) pendingSeekRef.current = safeTime
     else audio.currentTime = safeTime
-    setClock(previous => ({ ...previous, time: safeTime, currentIdx: sentenceAt(safeTime - offsetRef.current) }))
+    setClock(previous => ({ ...previous, time: safeTime, currentIdx: targetSentence }))
   }, [audio, sentenceAt])
 
   const skip = useCallback((delta: number) => seek(audio.currentTime + delta), [audio, seek])
@@ -443,21 +502,31 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
 
   const setQuality = useCallback((nextQuality: AudioQuality) => {
     if (nextQuality === quality) return
-    setQualityState(nextQuality)
-    saveSettings({ audioQuality: nextQuality })
     const currentSlug = slugRef.current
-    if (!currentSlug) return
+    if (!currentSlug) {
+      setQualityState(nextQuality)
+      saveSettings({ audioQuality: nextQuality })
+      return
+    }
     const meta = manifestBySlug.get(currentSlug)
     const source = meta?.audioUrls?.[nextQuality]
     if (!source) {
       setError(`这篇演讲缺少${nextQuality === 'high' ? '高' : '标准'}音质地址`)
       return
     }
+    setQualityState(nextQuality)
+    saveSettings({ audioQuality: nextQuality })
     const position = audio.currentTime
     const shouldResume = !audio.paused
     pendingSeekRef.current = position
     audio.pause()
-    audio.src = offlineSource(source) ?? source
+    const resolvedOffline = offlineSourceForTalk(currentSlug, source, nextQuality)
+    audio.src = resolvedOffline?.source ?? source
+    if (resolvedOffline && resolvedOffline.quality !== nextQuality) {
+      setNotice(`未找到${nextQuality === 'high' ? '高' : '标准'}音质的离线文件，已使用${resolvedOffline.quality === 'high' ? '高' : '标准'}音质`)
+    } else {
+      setNotice(null)
+    }
     if (shouldResume) startPlayback()
   }, [audio, manifestBySlug, quality, startPlayback])
 
@@ -468,12 +537,12 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<PlayerState>(() => ({
     manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
-    buffering, error, rate, loop, quality, playTalk, retry, toggle, seek, skip,
+    buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
     subtitleOffset, setSubtitleOffset, getSubtitleTime,
   }), [
     manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
-    buffering, error, rate, loop, quality, playTalk, retry, toggle, seek, skip,
+    buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
     subtitleOffset, setSubtitleOffset, getSubtitleTime,
   ])

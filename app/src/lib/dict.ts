@@ -20,6 +20,11 @@ function loadShard(key: string): Promise<DictShard | null> {
     .then(res => (res.ok ? res.json() as Promise<DictShard> : null))
     .catch(() => null)
   shardPromises.set(key, task)
+  // 网络错误、损坏响应或临时 404 不能永久污染本次会话的内存缓存。
+  // 成功分片仍复用 Promise，失败后下一次查询会重新请求。
+  void task.then(result => {
+    if (result === null && shardPromises.get(key) === task) shardPromises.delete(key)
+  })
   return task
 }
 

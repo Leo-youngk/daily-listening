@@ -16,6 +16,11 @@ const INDEX_KEY = 'dtl.offline'
 
 export const OFFLINE_EVENT = 'dtl-offline'
 
+/** 应用壳与用户主动下载的音频必须跨“清除资源缓存”保留。 */
+export function isPersistentCacheName(name: string): boolean {
+  return name === CACHE_NAME || name.startsWith('workbox-precache')
+}
+
 export interface OfflineEntry {
   slug: string
   quality: AudioQuality
@@ -63,6 +68,25 @@ export function offlineBytes(): number {
 /** 同步查离线地址；没有就返回 null，调用方回落到网络地址 */
 export function offlineSource(url: string): string | null {
   return blobUrls.get(url) ?? null
+}
+
+export interface ResolvedOfflineSource {
+  source: string
+  quality: AudioQuality
+}
+
+/** 同步解析一篇演讲的离线音频，优先用户选择的音质，必要时回退到已有音质。 */
+export function offlineSourceForTalk(
+  slug: string,
+  preferredUrl: string,
+  preferredQuality: AudioQuality,
+): ResolvedOfflineSource | null {
+  const direct = offlineSource(preferredUrl)
+  if (direct) return { source: direct, quality: preferredQuality }
+  const entry = loadOfflineIndex()[slug]
+  if (!entry) return null
+  const fallback = offlineSource(entry.url)
+  return fallback ? { source: fallback, quality: entry.quality } : null
 }
 
 function supported(): boolean {
@@ -151,15 +175,30 @@ export async function downloadTalk(
   }
 
   const cache = await caches.open(CACHE_NAME)
+  const index = loadOfflineIndex()
+  const previous = index[slug]
+  // 同一篇切换音质时先清掉旧文件，否则 Cache Storage 会一直保留一份
+  // 用户无法通过“删除本篇”触达的孤儿音频。
+  if (previous && previous.url !== url) {
+    const previousObjectUrl = blobUrls.get(previous.url)
+    if (previousObjectUrl) {
+      URL.revokeObjectURL(previousObjectUrl)
+      blobUrls.delete(previous.url)
+    }
+    try {
+      await cache.delete(previous.url)
+    } catch (error) {
+      console.error('offline previous quality cleanup failed', slug, error)
+    }
+  }
   await cache.put(url, new Response(blob, {
     headers: { 'Content-Type': contentType, 'Content-Length': String(blob.size) },
   }))
 
-  const previous = blobUrls.get(url)
-  if (previous) URL.revokeObjectURL(previous)
+  const previousBlob = blobUrls.get(url)
+  if (previousBlob) URL.revokeObjectURL(previousBlob)
   blobUrls.set(url, URL.createObjectURL(blob))
 
-  const index = loadOfflineIndex()
   index[slug] = { slug, quality, url, bytes: blob.size, at: Date.now() }
   saveOfflineIndex(index)
 }

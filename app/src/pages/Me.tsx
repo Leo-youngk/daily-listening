@@ -7,8 +7,8 @@ import TalkCard from '../components/TalkCard'
 import type { Settings } from '../lib/types'
 import { fmtBytes, fmtDuration } from '../lib/format'
 import {
-  OFFLINE_CACHE_NAME,
   OFFLINE_EVENT,
+  isPersistentCacheName,
   loadOfflineIndex,
   offlineBytes,
   removeAll,
@@ -187,7 +187,7 @@ export default function Me() {
                     const keys = await caches.keys()
                     // 离线音频是用户主动下载的，不能被"清除缓存"顺手删掉
                     await Promise.all(
-                      keys.filter(key => key !== OFFLINE_CACHE_NAME).map(key => caches.delete(key)),
+                      keys.filter(key => !isPersistentCacheName(key)).map(key => caches.delete(key)),
                     )
                   }
                   setCacheStatus('done')

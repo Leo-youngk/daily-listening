@@ -16,11 +16,20 @@ interface FetchJsonOptions {
 
 function wait(ms: number, signal?: AbortSignal) {
   return new Promise<void>((resolve, reject) => {
-    const timer = window.setTimeout(resolve, ms)
-    const abort = () => {
+    let timer = 0
+    const cleanup = () => {
       window.clearTimeout(timer)
+      signal?.removeEventListener('abort', abort)
+    }
+    const finish = () => {
+      cleanup()
+      resolve()
+    }
+    const abort = () => {
+      cleanup()
       reject(new DOMException('Aborted', 'AbortError'))
     }
+    timer = window.setTimeout(finish, ms)
     if (signal?.aborted) abort()
     else signal?.addEventListener('abort', abort, { once: true })
   })
@@ -34,9 +43,13 @@ export async function fetchJson<T>(url: string, options: FetchJsonOptions = {}):
 
   for (let attempt = 0; attempt <= retries; attempt += 1) {
     const controller = new AbortController()
+    let timedOut = false
     const relayAbort = () => controller.abort(signal?.reason)
     signal?.addEventListener('abort', relayAbort, { once: true })
-    const timer = window.setTimeout(() => controller.abort(TIMEOUT_REASON), timeoutMs)
+    const timer = window.setTimeout(() => {
+      timedOut = true
+      controller.abort(TIMEOUT_REASON)
+    }, timeoutMs)
     try {
       const response = await fetch(url, {
         signal: controller.signal,
@@ -48,7 +61,7 @@ export async function fetchJson<T>(url: string, options: FetchJsonOptions = {}):
       return await response.json() as T
     } catch (error) {
       if (signal?.aborted) throw new DOMException('Aborted', 'AbortError')
-      lastError = error
+      lastError = timedOut ? new HttpError('请求超时，请检查网络后重试') : error
       const status = error instanceof HttpError ? error.status : 0
       const retryable = status === 0 || status === 408 || status === 429 || status >= 500
       if (!retryable || attempt >= retries) break
@@ -60,10 +73,6 @@ export async function fetchJson<T>(url: string, options: FetchJsonOptions = {}):
   }
 
   if (lastError instanceof DOMException && lastError.name === 'AbortError') {
-    const reason = (lastError as DOMException & { reason?: unknown }).reason
-    if (reason === TIMEOUT_REASON) {
-      throw new HttpError('请求超时，请检查网络后重试')
-    }
     throw lastError
   }
   if (lastError instanceof Error) throw lastError

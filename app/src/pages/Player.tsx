@@ -281,6 +281,15 @@ export default function Player({ slug }: { slug: string }) {
         onTouchMove={() => { userScrollUntil.current = Date.now() + 2500 }}
         className="min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll px-3 py-3"
       >
+        {!p.manifestReady && !p.manifestError && (
+          <p role="status" className="py-10 text-center text-sm text-muted-foreground">正在加载语料清单…</p>
+        )}
+        {p.manifestError && (
+          <div role="alert" className="mb-3 rounded-xl bg-destructive/10 px-3 py-3 text-center text-sm text-destructive">
+            <p>{p.manifestError}</p>
+            <Button variant="secondary" size="sm" className="mt-2 rounded-full" onClick={p.reloadManifest}>重新加载语料</Button>
+          </div>
+        )}
         {p.loading && (
           <p role="status" className="py-10 text-center text-sm text-muted-foreground">正在加载音频与字幕…</p>
         )}
@@ -289,6 +298,11 @@ export default function Player({ slug }: { slug: string }) {
             <p>{p.error}</p>
             <Button variant="secondary" size="sm" className="mt-2 rounded-full" onClick={p.retry}>重新加载</Button>
           </div>
+        )}
+        {p.notice && !p.error && (
+          <p role="status" className="mb-2 rounded-lg bg-primary/8 px-3 py-1.5 text-[11px] text-primary">
+            {p.notice}
+          </p>
         )}
         {p.buffering && !p.loading && (
           <div role="status" className="mb-2 flex items-center justify-center gap-2 rounded-lg bg-primary/8 px-3 py-1.5 text-[11px] text-primary">
