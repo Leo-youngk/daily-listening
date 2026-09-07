@@ -6,7 +6,13 @@
  * 模型失败时降级为纯词典义项，并在 source 字段明确标出，不伪装成上下文翻译。
  */
 import type { DictEntry, DictShard, LookupRequest, LookupResult } from '../../src/lib/lookup'
-import { normalizeTerm, phraseCandidates, shardKey, tokenizeSentence } from '../../src/lib/lookup'
+import {
+  LOOKUP_CACHE_VERSION,
+  normalizeTerm,
+  phraseCandidates,
+  shardKey,
+  tokenizeSentence,
+} from '../../src/lib/lookup'
 
 interface Env {
   /** wrangler.jsonc 的 ai.binding；类型来自 @cloudflare/workers-types */
@@ -16,8 +22,6 @@ interface Env {
 }
 
 const MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast'
-/** 上下文缓存键的一部分：改提示词或换模型时必须递增，避免复用旧结果 */
-const MODEL_VERSION = 'v1'
 const RATE_LIMIT = 30
 const RATE_WINDOW_SECONDS = 60
 const CACHE_TTL_SECONDS = 60 * 60 * 24 * 30
@@ -91,12 +95,29 @@ function pickDictEntry(entries: Map<string, DictEntry>, term: string): DictEntry
   return entries.get(normalizeTerm(term)) ?? entries.get(term.toLowerCase())
 }
 
-function toOtherMeanings(entry: DictEntry | undefined, contextMeaning: string) {
-  if (!entry) return []
-  return entry.senses
-    .filter(s => s.zh && s.zh !== contextMeaning)
-    .slice(0, 6)
-    .map(s => ({ partOfSpeech: s.pos.replace(/\.$/, ''), zh: s.zh }))
+function compactMeaning(value: string): string {
+  return value.trim().replace(/[，,；;、\s]+/g, '')
+}
+
+function toOtherMeanings(contextMeaning: string, ...entries: (DictEntry | undefined)[]) {
+  const context = compactMeaning(contextMeaning)
+  const seen = new Set<string>()
+  const meanings: { partOfSpeech: string; zh: string }[] = []
+
+  for (const entry of entries) {
+    for (const sense of entry?.senses ?? []) {
+      const zh = sense.zh.trim()
+      const compact = compactMeaning(zh)
+      if (!compact || (context && (context.includes(compact) || compact.includes(context)))) continue
+      const partOfSpeech = sense.pos.replace(/\.$/, '')
+      const key = `${partOfSpeech}|${compact}`
+      if (seen.has(key)) continue
+      seen.add(key)
+      meanings.push({ partOfSpeech, zh })
+      if (meanings.length >= 6) return meanings
+    }
+  }
+  return meanings
 }
 
 function dictionaryFallback(word: string, entries: Map<string, DictEntry>): LookupResult {
@@ -108,7 +129,7 @@ function dictionaryFallback(word: string, entries: Map<string, DictEntry>): Look
     partOfSpeech: entry?.senses[0]?.pos.replace(/\.$/, '') ?? '',
     contextMeaning: '',
     explanation: '',
-    otherMeanings: toOtherMeanings(entry, ''),
+    otherMeanings: toOtherMeanings('', entry),
     source: 'dictionary',
   }
 }
@@ -139,7 +160,8 @@ export const onRequestPost: (context: {
   request: Request
   env: Env
   waitUntil: (promise: Promise<unknown>) => void
-}) => Promise<Response> = async ({ request, env, waitUntil }) => {
+}) => Promise<Response> = async context => {
+  const { request, env } = context
   let body: LookupRequest
   try {
     body = await request.json() as LookupRequest
@@ -164,7 +186,7 @@ export const onRequestPost: (context: {
   if (!known.includes(word) && entries.has(word)) known.push(word)
 
   const cacheKey = new Request(
-    `${origin}/__lookup/${MODEL_VERSION}/${encodeURIComponent(word)}/${wordIndex}/${encodeURIComponent(sentence)}`,
+    `${origin}/__lookup/${LOOKUP_CACHE_VERSION}/${encodeURIComponent(word)}/${wordIndex}/${encodeURIComponent(sentence)}`,
   )
   const cache = caches.default
   const cached = await cache.match(cacheKey)
@@ -209,6 +231,7 @@ export const onRequestPost: (context: {
   }
 
   const entry = pickDictEntry(entries, term)
+  const wordEntry = pickDictEntry(entries, word)
   const result: LookupResult = {
     term,
     lemma: normalizeTerm(parsed.lemma || entry?.lemma || term),
@@ -216,11 +239,13 @@ export const onRequestPost: (context: {
     partOfSpeech: parsed.partOfSpeech ?? '',
     contextMeaning: parsed.contextMeaning,
     explanation: parsed.explanation ?? '',
-    otherMeanings: toOtherMeanings(entry, parsed.contextMeaning),
+    // 词组只有一个义项时，继续补充被点击单词的常见义项，避免面板只剩一条结果。
+    otherMeanings: toOtherMeanings(parsed.contextMeaning, entry, wordEntry),
     source: 'ai',
   }
 
   const response = json(result, 200, CACHE_TTL_SECONDS)
-  waitUntil(cache.put(cacheKey, response.clone()))
+  // waitUntil 是平台方法，必须保留 context 作为调用者，否则可能丢失 this 绑定。
+  context.waitUntil(cache.put(cacheKey, response.clone()))
   return response
 }

@@ -3,6 +3,9 @@
  * 前端（Player / DictPanel）与 Pages Function 共用同一份，保证两端切词结果一致。
  */
 
+/** 提示词或返回结构变化时递增，同时失效浏览器缓存与边缘缓存。 */
+export const LOOKUP_CACHE_VERSION = 'v2'
+
 export interface DictSense {
   pos: string
   zh: string

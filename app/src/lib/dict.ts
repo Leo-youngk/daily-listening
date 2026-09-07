@@ -5,7 +5,14 @@
  * 失败结果一律不写长期缓存。
  */
 import type { DictEntry, DictShard, LookupRequest, LookupResult } from './lookup'
-import { contextCacheKey, normalizeTerm, phraseCandidates, shardKey, tokenizeSentence } from './lookup'
+import {
+  contextCacheKey,
+  LOOKUP_CACHE_VERSION,
+  normalizeTerm,
+  phraseCandidates,
+  shardKey,
+  tokenizeSentence,
+} from './lookup'
 
 const CONTEXT_CACHE_KEY = 'dtl.sensecache'
 const CONTEXT_CACHE_LIMIT = 400
@@ -110,10 +117,8 @@ function writeCachedSense(key: string, result: LookupResult) {
   }
 }
 
-export const SENSE_CACHE_VERSION = 'v1'
-
 export function senseCacheKeyOf(req: LookupRequest): string {
-  return contextCacheKey(normalizeTerm(req.word), req.wordIndex, req.sentence, SENSE_CACHE_VERSION)
+  return contextCacheKey(normalizeTerm(req.word), req.wordIndex, req.sentence, LOOKUP_CACHE_VERSION)
 }
 
 export async function lookupContext(req: LookupRequest, signal: AbortSignal): Promise<LookupResult> {

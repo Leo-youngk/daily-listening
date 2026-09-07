@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { lookupContext, readCachedSense, senseCacheKeyOf } from '../src/lib/dict'
+import { LOOKUP_CACHE_VERSION } from '../src/lib/lookup'
 import type { LookupRequest, LookupResult } from '../src/lib/lookup'
 
 const PLAY_OUT: LookupRequest = {
@@ -49,6 +50,11 @@ beforeEach(() => localStorage.clear())
 afterEach(() => vi.unstubAllGlobals())
 
 describe('上下文判义缓存', () => {
+  it('客户端缓存使用当前共享版本，旧释义不会继续命中', () => {
+    expect(LOOKUP_CACHE_VERSION).toBe('v2')
+    expect(senseCacheKeyOf(PLAY_OUT)).toMatch(/^v2\|/)
+  })
+
   it('成功结果立刻落缓存，同句同位置不再发请求', async () => {
     const fetchMock = mockFetch(AI_RESULT)
     const first = await lookupContext(PLAY_OUT, new AbortController().signal)
