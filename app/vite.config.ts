@@ -23,9 +23,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      // 不用 autoUpdate：静默换版本会让用户看不出自己在用新版还是旧版，
-      // 改成下载完成后显式提示，由用户点一下激活
-      registerType: 'prompt',
+      // 旧版页面没有可靠的更新提示，prompt 模式会让新 SW 永久停在 waiting，
+      // 最终继续运行已经移除的第三方词典代码。自动接管后由注册器刷新到同一套资源。
+      registerType: 'autoUpdate',
       injectRegister: null,
       manifest: {
         name: '每日听力 · TED 版',

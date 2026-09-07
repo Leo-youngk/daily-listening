@@ -121,6 +121,8 @@ def verify_build(base: str) -> None:
         check("dict-ecdict-1-0-28-r1" in sw, "词典缓存名带版本号")
         check("cover-cache-v3" in sw, "封面缓存版本为 v3")
         check("mymemory" not in sw.lower(), "sw 不再缓存 MyMemory")
+        check("clientsClaim" in sw, "新 sw 安装后立即接管页面")
+        check("SKIP_WAITING" not in sw, "新 sw 不再停留在 waiting 状态")
         check("cleanupOutdatedCaches" in sw or "outdated" in sw.lower(), "清理过期预缓存")
 
 

@@ -1,22 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { registerSW } from 'virtual:pwa-register'
-import { Button } from '@/components/ui/button'
 
 const CHECK_INTERVAL = 1000 * 60 * 60
 
 export default function UpdateBanner() {
-  const [ready, setReady] = useState(false)
-  const [apply, setApply] = useState<(() => void) | null>(null)
-
   useEffect(() => {
     let timer: number | null = null
-    const updateSW = registerSW({
-      onNeedRefresh() {
-        setReady(true)
-        setApply(() => () => void updateSW(true))
-      },
+    registerSW({
+      immediate: true,
       onRegisteredSW(_url, registration) {
         if (!registration) return
+        // 注册动作本身会检查一次；长时间保持打开时每小时再检查一次。
         timer = window.setInterval(() => {
           void registration.update().catch(() => {
             // 网络暂不可用时保留当前版本，下一个周期再检查。
@@ -29,24 +23,5 @@ export default function UpdateBanner() {
     }
   }, [])
 
-  if (!ready) return null
-
-  return (
-    <div className="safe-top pointer-events-auto fixed inset-x-0 top-0 z-50 mx-auto flex max-w-lg items-center gap-3 px-3 pb-2">
-      <div className="glass flex w-full items-center gap-3 rounded-xl px-3 py-2 shadow-lg ring-1 ring-foreground/10">
-        <p className="flex-1 text-[13px] leading-snug">新版本已就绪</p>
-        <Button size="sm" className="rounded-full px-3" onClick={() => apply?.()}>
-          立即更新
-        </Button>
-        <Button
-          variant="secondary"
-          size="sm"
-          className="rounded-full px-3 text-muted-foreground"
-          onClick={() => setReady(false)}
-        >
-          稍后
-        </Button>
-      </div>
-    </div>
-  )
+  return null
 }
