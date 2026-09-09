@@ -11,8 +11,8 @@ const tabs: { key: string; label: string; path: string; icon: LucideIcon }[] = [
 
 export default function TabBar({ page }: { page: string }) {
   return (
-    <nav aria-label="主导航" className="glass safe-bottom border-t border-line">
-      <div className="flex">
+    <nav aria-label="主导航" className="app-tab-bar safe-bottom">
+      <div className="app-tab-bar-inner">
         {tabs.map(t => {
           const active = page === t.key
           const Icon = t.icon
@@ -21,15 +21,13 @@ export default function TabBar({ page }: { page: string }) {
               key={t.key}
               onClick={() => navigate(t.path)}
               aria-current={active ? 'page' : undefined}
-              className="flex flex-1 flex-col items-center gap-0.5 py-2"
+              className={`app-tab ${active ? 'is-active' : ''}`}
             >
               <Icon
                 strokeWidth={active ? 2.2 : 1.8}
-                className={`size-6 ${active ? 'text-primary' : 'text-muted-foreground'}`}
+                className="app-tab-icon"
               />
-              <span className={`text-[10px] ${active ? 'font-semibold text-primary' : 'text-muted-foreground'}`}>
-                {t.label}
-              </span>
+              <span>{t.label}</span>
             </button>
           )
         })}

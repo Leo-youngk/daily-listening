@@ -1,6 +1,6 @@
 import type { ManifestItem } from '../lib/types'
 import { loadProgress, loadFavorites } from '../lib/storage'
-import { fmtViews } from '../lib/format'
+import { fmtDuration, fmtViews } from '../lib/format'
 import { navigate } from '../hooks/useHashRoute'
 import { HeartIcon } from 'lucide-react'
 import { Progress } from '@/components/ui/progress'
@@ -10,9 +10,10 @@ import { usePlayerActions } from '../store/PlayerContext'
 interface Props {
   item: ManifestItem
   showProgress?: boolean
+  variant?: 'list' | 'grid'
 }
 
-export default function TalkCard({ item, showProgress = true }: Props) {
+export default function TalkCard({ item, showProgress = true, variant = 'list' }: Props) {
   const { playTalk } = usePlayerActions()
   const progress = loadProgress()[item.slug]
   const fav = loadFavorites().includes(item.slug)
@@ -23,28 +24,40 @@ export default function TalkCard({ item, showProgress = true }: Props) {
       ? `${item.speaker}${item.year ? ' · ' + item.year : ''}`
       : `${item.speaker} · ${fmtViews(item.views)}`
 
+  const fallback = item.category === 'ted' ? 'TED' : item.category === 'bbc' ? 'BBC' : item.category === 'voa' ? 'VOA' : '毕业'
+  const open = () => {
+    playTalk(item.slug)
+    navigate(`/talk/${item.slug}`)
+  }
+
+  if (variant === 'grid') {
+    return (
+      <button onClick={open} className="talk-grid-card">
+        <div className="talk-grid-cover">
+          {item.cover ? <Cover src={item.cover} className="size-full object-cover" alt={item.title} /> : <span>{fallback}</span>}
+          {fav && <HeartIcon className="talk-grid-favorite" aria-label="已收藏" />}
+          {showProgress && pct > 0 && <Progress value={pct} className="talk-grid-progress" />}
+        </div>
+        <div className="talk-grid-body">
+          <p className="talk-grid-title">{item.title}</p>
+          <p className="talk-grid-meta">{item.speaker} · {fmtDuration(item.duration)}</p>
+        </div>
+      </button>
+    )
+  }
+
   return (
-    <button
-      onClick={() => {
-        playTalk(item.slug)
-        navigate(`/talk/${item.slug}`)
-      }}
-      className="flex w-full items-center gap-3 rounded-xl bg-card p-3 text-left shadow-xs ring-1 ring-foreground/5 transition active:scale-[0.99]"
-    >
-      {item.cover ? (
-        <Cover src={item.cover} className="h-14 w-14 shrink-0 rounded-lg object-cover" />
-      ) : (
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-bold text-primary">
-          {item.category === 'ted' ? 'TED' : item.category === 'bbc' ? 'BBC' : item.category === 'voa' ? 'VOA' : '🎓'}
+    <button onClick={open} className="talk-list-card">
+      <div className="talk-list-cover">
+        {item.cover ? <Cover src={item.cover} className="size-full object-cover" alt={item.title} /> : <span>{fallback}</span>}
+      </div>
+      <div className="talk-list-body">
+        <div className="talk-list-title-row">
+          <p className="talk-list-title">{item.title}</p>
+          {fav && <HeartIcon className="talk-list-favorite" aria-label="已收藏" />}
         </div>
-      )}
-      <div className="min-w-0 flex-1">
-        <div className="flex items-start gap-1">
-          <p className="line-clamp-2 flex-1 text-[14px] font-medium leading-snug">{item.title}</p>
-          {fav && <HeartIcon className="mt-0.5 size-3.5 shrink-0 fill-brand text-brand" />}
-        </div>
-        <p className="mt-0.5 truncate text-[12px] text-muted-foreground">{sub}</p>
-        {showProgress && pct > 0 && <Progress value={pct} className="mt-1.5 h-1" />}
+        <p className="talk-list-meta">{sub} · {fmtDuration(item.duration)}</p>
+        {showProgress && pct > 0 && <Progress value={pct} className="talk-list-progress" />}
       </div>
     </button>
   )

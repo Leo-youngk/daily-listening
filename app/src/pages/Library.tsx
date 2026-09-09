@@ -1,11 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useCatalog } from '../store/PlayerContext'
 import { loadProgress } from '../lib/storage'
-import { SearchIcon } from 'lucide-react'
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { ArrowDownUpIcon, SearchIcon } from 'lucide-react'
 import { Input } from '@/components/ui/input'
-import { Badge } from '@/components/ui/badge'
-import { cn } from '@/lib/utils'
 import TalkCard from '../components/TalkCard'
 
 type Tab = 'ted' | 'commencement' | 'bbc' | 'voa'
@@ -26,19 +23,6 @@ function syncLibraryUrl(tab: string, sort: string, filter: string) {
   if (location.hash.slice(1) !== newHash) {
     history.replaceState(null, '', `#${newHash}`)
   }
-}
-
-/** 可点击的筛选胶囊 */
-function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: string }) {
-  return (
-    <Badge
-      asChild
-      variant={active ? 'default' : 'secondary'}
-      className={cn('h-7 cursor-pointer rounded-full px-3 text-xs', !active && 'text-muted-foreground')}
-    >
-      <button onClick={onClick}>{children}</button>
-    </Badge>
-  )
 }
 
 export default function Library({ query }: { query?: URLSearchParams }) {
@@ -100,49 +84,64 @@ export default function Library({ query }: { query?: URLSearchParams }) {
     )
   }
 
+  const tabs: [Tab, string][] = [['ted', 'TED'], ['commencement', '毕业演讲'], ['bbc', 'BBC'], ['voa', 'VOA']]
+  const sortLabel = tab === 'ted' ? '最热' : tab === 'commencement' ? '经典排序' : '最新'
+  const nextFilter: Filter = filter === 'all' ? 'unlistened' : filter === 'unlistened' ? 'listened' : 'all'
+
   return (
-    <div className="px-3 pb-4">
-      <h1 className="safe-top pb-2 pt-3 text-xl font-bold">听力库</h1>
+    <div className="library-page">
+      <header className="library-header safe-top">
+        <div>
+          <p className="library-kicker">探索你的下一场听力</p>
+          <h1>听力库</h1>
+        </div>
+        <span className="library-count">{manifest.length} 篇</span>
+      </header>
 
-      {/* 分类 */}
-      <Tabs value={tab} onValueChange={v => updateTab(v as Tab)} className="gap-0">
-        <TabsList className="grid h-10 w-full grid-cols-4 rounded-xl">
-          <TabsTrigger value="ted" className="rounded-lg">TED 演讲</TabsTrigger>
-          <TabsTrigger value="commencement" className="rounded-lg">毕业演讲</TabsTrigger>
-          <TabsTrigger value="bbc" className="rounded-lg">BBC</TabsTrigger>
-          <TabsTrigger value="voa" className="rounded-lg">VOA</TabsTrigger>
-        </TabsList>
-      </Tabs>
-
-      {/* 搜索 */}
-      <div className="relative mt-3">
-        <SearchIcon className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-muted-foreground" />
+      <div className="library-search">
+        <SearchIcon />
         <Input
           id="library-search"
           name="library-search"
           value={q}
           onChange={e => setQ(e.target.value)}
-          placeholder="搜索标题 / 讲者 / 学校"
-          className="h-10 rounded-xl border-transparent bg-card pl-10 shadow-xs ring-1 ring-foreground/5"
+          placeholder="搜索标题、讲者或学校"
         />
       </div>
 
-      {/* 排序与筛选 */}
-      <div className="mt-2.5 flex gap-2 overflow-x-auto no-scrollbar horizontal-scroll">
-        {([['hot', tab === 'ted' ? '最热' : tab === 'commencement' ? '经典排序' : '最新'], ['duration', '按时长']] as [Sort, string][]).map(([k, label]) => (
-          <Chip key={k} active={sort === k} onClick={() => updateSort(k)}>{label}</Chip>
-        ))}
-        <span className="w-1 shrink-0" />
-        {([['all', '全部'], ['unlistened', '未听过'], ['listened', '听过']] as [Filter, string][]).map(([k, label]) => (
-          <Chip key={k} active={filter === k} onClick={() => updateFilter(k)}>{label}</Chip>
+      <div className="library-tabs overflow-x-auto horizontal-scroll" role="tablist" aria-label="内容来源">
+        {tabs.map(([key, label]) => (
+          <button
+            key={key}
+            role="tab"
+            aria-selected={tab === key}
+            className={tab === key ? 'is-active' : ''}
+            onClick={() => updateTab(key)}
+          >
+            {label}
+          </button>
         ))}
       </div>
 
-      <p className="mt-3 mb-2 text-xs text-muted-foreground">{list.length} 篇</p>
-      <div className="space-y-2">
-        {list.map(item => <TalkCard key={item.slug} item={item} />)}
-        {list.length === 0 && <p className="py-10 text-center text-sm text-muted-foreground">没有匹配的演讲</p>}
+      <div className="library-toolbar">
+        <div>
+          <span className="library-result-count">{list.length} 篇内容</span>
+          {filter !== 'all' && <span className="library-filter-note"> · {filter === 'listened' ? '已听过' : '未听过'}</span>}
+        </div>
+        <div className="library-control-group">
+          <button className={sort === 'duration' ? 'is-active' : ''} onClick={() => updateSort(sort === 'duration' ? 'hot' : 'duration')} aria-pressed={sort === 'duration'}>
+            <ArrowDownUpIcon /> {sort === 'duration' ? '时长' : sortLabel}
+          </button>
+          <button className={filter !== 'all' ? 'is-active' : ''} onClick={() => updateFilter(nextFilter)} aria-pressed={filter !== 'all'}>
+            {filter === 'all' ? '筛选' : filter === 'unlistened' ? '未听' : '已听'}
+          </button>
+        </div>
       </div>
+
+      <div className="library-grid">
+        {list.map(item => <TalkCard key={item.slug} item={item} variant="grid" />)}
+      </div>
+      {list.length === 0 && <p className="library-empty">没有匹配的演讲</p>}
     </div>
   )
 }

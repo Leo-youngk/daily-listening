@@ -3,8 +3,9 @@ import { useCatalog, usePlayerActions } from '../store/PlayerContext'
 import { loadProgress } from '../lib/storage'
 import { navigate } from '../hooks/useHashRoute'
 import { fmtTime } from '../lib/format'
-import { ChevronRightIcon, PlayIcon, SparklesIcon } from 'lucide-react'
+import { ChevronRightIcon, PlayIcon, SearchIcon, Settings2Icon, SparklesIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Progress } from '@/components/ui/progress'
 import TalkCard from '../components/TalkCard'
 import Cover from '../components/Cover'
 import { localDateKey } from '../lib/date'
@@ -74,6 +75,10 @@ export default function Discover() {
     return pickRandom(unlistened.length > 0 ? unlistened : manifest, 6, seed)
   }, [manifest])
 
+  const featured = lastPlayed?.meta ?? recs[0] ?? manifest[0] ?? null
+  const featuredPosition = lastPlayed?.pos ?? 0
+  const nextUp = recs.filter(item => item.slug !== featured?.slug).slice(0, 6)
+
   // 加载每日一句（懒加载该篇字幕，随机挑一句有中文的）
   useEffect(() => {
     if (!daily) return
@@ -119,100 +124,84 @@ export default function Discover() {
   }
 
   return (
-    <div className="px-3 pb-4">
-      <header className="safe-top pt-4 pb-3">
-        <p className="text-[13px] text-muted-foreground">{dateStr}</p>
-        <h1 className="text-xl font-bold">今天也要磨耳朵</h1>
+    <div className="discover-page">
+      <header className="discover-header safe-top">
+        <div>
+          <p className="discover-date">{dateStr} · 每日听力</p>
+          <h1>现在就听</h1>
+        </div>
+        <div className="discover-actions">
+          <button aria-label="搜索" onClick={() => navigate('/library')}><SearchIcon /></button>
+          <button aria-label="设置" onClick={() => navigate('/me')}><Settings2Icon /></button>
+        </div>
       </header>
 
-      {/* 每日一句 */}
-      <section
-        className="relative overflow-hidden rounded-xl bg-card p-4 shadow-xs ring-1 ring-foreground/5"
-        onClick={() => {
-          if (!quote) return
-          playTalk(quote.slug, quote.at)
-          navigate(`/talk/${quote.slug}`)
-        }}
-      >
-        <div className="absolute -right-4 -top-6 text-[72px] leading-none text-primary/10 select-none">"</div>
-        <p className="flex items-center gap-1 text-xs font-semibold text-primary">
-          <SparklesIcon className="size-3.5" />每日一句
-        </p>
-        {quoteLoading && <p className="mt-3 text-sm text-muted-foreground">正在挑选今日金句…</p>}
-        {quoteError && !quoteLoading && <p className="mt-3 text-sm text-destructive">{quoteError}</p>}
-        {quote && (
-          <div className="mt-2 block text-left">
-            <p className="text-[15px] font-medium leading-relaxed">{quote.en}</p>
-            <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">{quote.zh}</p>
-            <p className="mt-2 text-[11px] text-primary">—— {quote.title} · 点击听这句</p>
+      {featured && (
+        <section className="discover-feature">
+          <div className="discover-feature-cover">
+            {featured.cover ? <Cover src={featured.cover} className="size-full object-cover" alt={featured.title} /> : <span>{featured.category.toUpperCase()}</span>}
+            <div className="discover-feature-badge">{lastPlayed ? '继续学习' : '今日推荐'}</div>
           </div>
-        )}
-      </section>
-
-      {/* 继续学习 */}
-      {lastPlayed && (
-        <section
-          className="mt-3 flex items-center gap-3 rounded-xl bg-card p-3 shadow-xs ring-1 ring-foreground/5"
-          onClick={() => {
-            playTalk(lastPlayed.meta.slug, lastPlayed.pos)
-            navigate(`/talk/${lastPlayed.meta.slug}`)
-          }}
-        >
-          {lastPlayed.meta.cover ? (
-            <Cover src={lastPlayed.meta.cover} className="h-12 w-12 rounded-lg object-cover" />
-          ) : (
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">♪</div>
-          )}
-          <div className="min-w-0 flex-1">
-            <p className="text-xs font-semibold text-primary">继续学习</p>
-            <p className="truncate text-sm font-medium">{lastPlayed.meta.title}</p>
-            <p className="text-[11px] text-muted-foreground">上次听到 {fmtTime(lastPlayed.pos)}</p>
+          <div className="discover-feature-copy">
+            <p className="discover-eyebrow">{featured.category === 'ted' ? 'TED 演讲' : featured.category === 'commencement' ? '毕业演讲' : featured.category.toUpperCase()}</p>
+            <h2>{featured.title}</h2>
+            <p className="discover-feature-meta">{featured.speaker} · {Math.round(featured.duration / 60)} 分钟</p>
+            {lastPlayed && <Progress value={Math.min(100, (featuredPosition / featured.duration) * 100)} className="discover-feature-progress" />}
+            <div className="discover-feature-footer">
+              <span>{lastPlayed ? `上次听到 ${fmtTime(featuredPosition)}` : '从头开始'}</span>
+              <Button
+                size="sm"
+                className="discover-play-button"
+                onClick={() => { playTalk(featured.slug, featuredPosition); navigate(`/talk/${featured.slug}`) }}
+              >
+                <PlayIcon className="size-4 fill-current" />
+                {lastPlayed ? '继续播放' : '开始收听'}
+              </Button>
+            </div>
           </div>
-          <Button size="icon" className="size-9 shrink-0 rounded-full">
-            <PlayIcon className="fill-current" />
-          </Button>
         </section>
       )}
 
-      {/* 精选推荐 */}
-      <section className="mt-4">
-        <div className="mb-2 flex items-baseline justify-between">
-          <h2 className="text-[15px] font-bold">精选推荐</h2>
-          <button onClick={() => navigate('/library')} className="flex items-center text-xs font-medium text-primary">
-            全部<ChevronRightIcon className="size-3.5" />
-          </button>
+      <section className="discover-section">
+        <div className="discover-section-head">
+          <div><p className="discover-eyebrow">下一篇</p><h2>接下来听</h2></div>
+          <button onClick={() => navigate('/library')} className="discover-more">全部 <ChevronRightIcon /></button>
         </div>
-        <div className="flex gap-3 overflow-x-auto no-scrollbar horizontal-scroll pb-1">
-          {recs.map(m => (
-            <button
-              key={m.slug}
-              onClick={() => {
-                playTalk(m.slug)
-                navigate(`/talk/${m.slug}`)
-              }}
-              className="w-36 shrink-0 overflow-hidden rounded-xl bg-card text-left shadow-xs ring-1 ring-foreground/5 transition active:scale-[0.98]"
-            >
-              {m.cover ? (
-                <Cover src={m.cover} className="h-20 w-full object-cover" />
-              ) : (
-                <div className="flex h-20 w-full items-center justify-center bg-primary/10 text-sm font-bold text-primary">TED</div>
-              )}
-              <div className="p-2.5">
-                <p className="line-clamp-2 text-[12px] font-medium leading-snug">{m.title}</p>
-                <p className="mt-1 truncate text-[10px] text-muted-foreground">{m.speaker}</p>
+        <div className="discover-rail overflow-x-auto horizontal-scroll">
+          {nextUp.map(item => (
+            <button key={item.slug} className="discover-rail-card" onClick={() => { playTalk(item.slug); navigate(`/talk/${item.slug}`) }}>
+              <div className="discover-rail-cover">
+                {item.cover ? <Cover src={item.cover} className="size-full object-cover" alt={item.title} /> : <span>{item.category.toUpperCase()}</span>}
               </div>
+              <p>{item.title}</p>
+              <small>{item.speaker}</small>
             </button>
           ))}
         </div>
       </section>
 
-      {/* 最新入库 */}
-      <section className="mt-4">
-        <h2 className="mb-2 text-[15px] font-bold">毕业演讲精选</h2>
-        <div className="space-y-2">
-          {manifest.filter(m => m.category === 'commencement').slice(0, 5).map(item => (
-            <TalkCard key={item.slug} item={item} showProgress={false} />
-          ))}
+      <section className="discover-section discover-quote-section">
+        <div className="discover-section-head">
+          <div><p className="discover-eyebrow"><SparklesIcon /> 今日摘句</p><h2>一句话，听懂一场演讲</h2></div>
+        </div>
+        {quoteLoading && <p className="discover-quote-placeholder">正在挑选今天的句子…</p>}
+        {quoteError && !quoteLoading && <p className="discover-quote-placeholder">{quoteError}</p>}
+        {quote && (
+          <button className="discover-quote" onClick={() => { playTalk(quote.slug, quote.at); navigate(`/talk/${quote.slug}`) }}>
+            <p className="discover-quote-en">“{quote.en}”</p>
+            <p className="discover-quote-zh">{quote.zh}</p>
+            <span>{quote.title} · 从这里开始听 <ChevronRightIcon /></span>
+          </button>
+        )}
+      </section>
+
+      <section className="discover-section discover-commencement">
+        <div className="discover-section-head">
+          <div><p className="discover-eyebrow">精选合集</p><h2>毕业演讲</h2></div>
+          <button onClick={() => navigate('/library?tab=commencement')} className="discover-more">更多 <ChevronRightIcon /></button>
+        </div>
+        <div className="discover-list">
+          {manifest.filter(m => m.category === 'commencement').slice(0, 3).map(item => <TalkCard key={item.slug} item={item} showProgress={false} />)}
         </div>
       </section>
     </div>

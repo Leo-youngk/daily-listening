@@ -34,8 +34,8 @@ export default function App() {
       {page === 'talk' ? (
         <Player slug={param} />
       ) : (
-        <div className="mx-auto flex h-full max-w-lg flex-col">
-          <main className="min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll">
+        <div className="app-shell">
+          <main className="app-main min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll">
             {page === 'library' && <Library query={query} />}
             {page === 'vocab' && <Vocab />}
             {page === 'me' && <Me />}

@@ -31,8 +31,8 @@ export default defineConfig({
         name: '每日听力 · TED 版',
         short_name: '每日听力',
         description: 'TED 演讲与名校毕业演讲精听工具',
-        theme_color: '#2F8FE0',
-        background_color: '#F6F7F9',
+        theme_color: '#4D5BD5',
+        background_color: '#F7F7F4',
         display: 'standalone',
         start_url: '.',
         icons: [

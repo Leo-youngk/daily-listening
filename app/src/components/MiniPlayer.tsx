@@ -24,28 +24,28 @@ export default function MiniPlayer() {
           navigate(`/talk/${slug}`)
         }
       }}
-      className="glass border-t border-line px-3 py-2"
+      className="mini-player"
     >
-      <div className="flex items-center gap-3">
+      <div className="mini-player-row">
         {talk.cover ? (
-          <Cover src={talk.cover} className="h-10 w-10 rounded-lg object-cover" />
+          <Cover src={talk.cover} className="mini-player-cover" alt={talk.title} />
         ) : (
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">♪</div>
+          <div className="mini-player-cover mini-player-fallback">♪</div>
         )}
-        <div className="min-w-0 flex-1">
-          <p className="truncate text-[13px] font-medium">{talk.title}</p>
-          <p className="truncate text-[11px] text-muted-foreground">{talk.speaker} · {fmtTime(time)}</p>
+        <div className="mini-player-copy">
+          <p>{talk.title}</p>
+          <small>{talk.speaker} · {fmtTime(time)}</small>
         </div>
         <Button
           size="icon"
-          className="size-9 rounded-full shadow-sm"
+          className="mini-player-button"
           onClick={e => { e.stopPropagation(); toggle() }}
           aria-label={playing ? '暂停' : '播放'}
         >
           {playing ? <PauseIcon className="fill-current" /> : <PlayIcon className="fill-current" />}
         </Button>
       </div>
-      <Progress value={pct} className="mt-1.5 h-0.5 rounded-none" />
+      <Progress value={pct} className="mini-player-progress" />
     </div>
   )
 }
