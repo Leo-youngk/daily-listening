@@ -158,6 +158,64 @@ body {
   overscroll-behavior-x: none;
 }
 
+/* 演讲正文：固定字重与行高，播放状态仅改变颜色，不改变文字几何尺寸。 */
+.subtitle-scroll {
+  padding: 12px 24px 24px;
+  overflow-x: hidden;
+  overflow-anchor: none;
+  --subtitle-context: #656d78;
+  --subtitle-secondary: #727984;
+  --subtitle-focus: #1768ad;
+}
+.subtitle-list { padding-bottom: 35vh; }
+.subtitle-sentence { padding: 10px 0 16px; }
+.subtitle-timestamp {
+  display: block;
+  min-height: 28px;
+  min-width: 44px;
+  margin-bottom: 3px;
+  text-align: left;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--subtitle-secondary);
+}
+.subtitle-english {
+  color: var(--subtitle-context);
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  transition: color 220ms ease;
+}
+.subtitle-sentence[aria-current] .subtitle-english { color: var(--foreground); }
+.subtitle-word {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: color 120ms ease, background-color 120ms ease;
+}
+.subtitle-word.is-spoken { color: var(--subtitle-focus); }
+.subtitle-word:active { background: color-mix(in srgb, var(--primary) 16%, transparent); }
+.subtitle-translation {
+  margin-top: 8px;
+  line-height: 1.65;
+  color: var(--subtitle-secondary);
+  overflow-wrap: anywhere;
+}
+:root[data-theme="dark"] .subtitle-scroll {
+  --subtitle-context: #a0a7b1;
+  --subtitle-secondary: #969eaa;
+  --subtitle-focus: #73baff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .subtitle-scroll {
+    --subtitle-context: #a0a7b1;
+    --subtitle-secondary: #969eaa;
+    --subtitle-focus: #73baff;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .subtitle-english, .subtitle-word { transition: none; }
+}
+
 @theme inline {
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);

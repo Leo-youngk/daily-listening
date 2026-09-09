@@ -27,6 +27,10 @@ function animateScroll(box: HTMLElement, to: number, duration = 380) {
   const target = Math.max(0, Math.min(to, box.scrollHeight - box.clientHeight))
   const delta = target - from
   if (Math.abs(delta) < 2) return () => {}
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    box.scrollTop = target
+    return () => {}
+  }
   let frame = 0
   const started = performance.now()
   const step = (now: number) => {
@@ -63,7 +67,7 @@ function TokenizedText({ text, scale, sentence, onWord, onPrefetch }: {
           onPrefetch(i, sentence)
         }}
         onClick={e => { e.stopPropagation(); onWord(i, sentence) }}
-        className="cursor-pointer rounded px-px transition-colors duration-150 active:bg-primary/25"
+        className="subtitle-word"
       >
         {token.text}
       </span>,
@@ -72,7 +76,7 @@ function TokenizedText({ text, scale, sentence, onWord, onPrefetch }: {
   })
   if (cursor < text.length) nodes.push(<span key="tail">{text.slice(cursor)}</span>)
   return (
-    <p className="leading-relaxed" style={{ fontSize: `${17 * scale}px` }}>{nodes}</p>
+    <p lang="en" className="subtitle-english" style={{ fontSize: `${20 * scale}px` }}>{nodes}</p>
   )
 }
 
@@ -89,23 +93,20 @@ const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, onSeek
     <div
       onClick={() => onSeek(s)}
       aria-current={active ? 'true' : undefined}
-      className={cn(
-        'flex gap-2.5 rounded-xl px-3 py-2.5 transition-colors',
-        active ? 'bg-primary/8' : 'active:bg-muted/60',
-      )}
+      className="subtitle-sentence"
     >
       {/* 时间戳当键盘入口：整行不能做成 button，否则读屏会把一整句当成一个标签吹掉，逐词查词就没了 */}
       <button
         onClick={e => { e.stopPropagation(); onSeek(s) }}
         aria-label={`跳到 ${fmtTime(s.start)}`}
-        className={cn('mt-0.5 shrink-0 text-[11px] tabular-nums', active ? 'text-primary' : 'text-muted-foreground/70')}
+        className="subtitle-timestamp"
       >
         {fmtTime(s.start)}
       </button>
       <div className="min-w-0 flex-1">
         <TokenizedText text={s.en} scale={scale} sentence={s} onWord={onWord} onPrefetch={onPrefetch} />
         {!hideZh && s.zh && (
-          <p className="mt-1 text-muted-foreground" style={{ fontSize: `${14 * scale}px`, lineHeight: 1.5 }}>
+          <p lang="zh-CN" className="subtitle-translation" style={{ fontSize: `${14.5 * scale}px` }}>
             {s.zh}
           </p>
         )}
@@ -125,7 +126,7 @@ const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, 
   onPrefetch: (wordIndex: number, sentence: Sentence) => void
 }) {
   return (
-    <div className="space-y-1 pb-6">
+    <div className="subtitle-list">
       {sentences.map((s, i) => (
         <div key={s.i} data-row={i}>
           <SentenceRow
@@ -154,9 +155,24 @@ export default function Player({ slug }: { slug: string }) {
   const [, force] = useState(0)
   const scrollBoxRef = useRef<HTMLElement>(null)
   const userScrollUntil = useRef(0)
+  const touching = useRef(false)
+  const cancelScroll = useRef<() => void>(() => {})
+  const scrollRunningUntil = useRef(0)
+  const panelWasOpen = useRef(false)
+  const follow = useRef({ playing: p.playing, enabled: settings.autoScroll, blocked: false })
+  follow.current = { playing: p.playing, enabled: settings.autoScroll, blocked: !!dict || showSettings }
+  const followPosition = useRef({ idx: -1, line: -1, suspended: false })
+
   const painted = useRef<{ row: HTMLElement | null; spans: HTMLElement[]; idx: number; word: number }>(
     { row: null, spans: [], idx: -1, word: -1 },
   )
+  const interruptFollow = useCallback(() => {
+    userScrollUntil.current = Date.now() + 6000
+    followPosition.current.idx = painted.current.idx
+    followPosition.current.suspended = true
+    cancelScroll.current()
+    scrollRunningUntil.current = 0
+  }, [])
 
   const fav = isFavorite(slug)
   const talk = p.talk
@@ -186,7 +202,7 @@ export default function Player({ slug }: { slug: string }) {
 
     if (idx !== state.idx || !state.row?.isConnected) {
       if (state.row?.isConnected) {
-        for (const span of state.spans) span.classList.remove('text-primary', 'font-semibold')
+        for (const span of state.spans) span.classList.remove('is-spoken')
       }
       const row = idx < 0 ? null : box.querySelector<HTMLElement>(`[data-row="${idx}"]`)
       state.row = row
@@ -198,16 +214,41 @@ export default function Player({ slug }: { slug: string }) {
 
     // 没有词级时间轴的篇目只做整句高亮，不用句内比例伪造词级进度
     const word = wordAt(sentencesRef.current[idx]?.w, time)
-    if (word === state.word) return
-    state.word = word
-    for (let i = 0; i < state.spans.length; i += 1) {
-      state.spans[i].classList.toggle('text-primary', i <= word)
-      state.spans[i].classList.toggle('font-semibold', i === word)
+    if (word !== state.word) {
+      state.spans[state.word]?.classList.remove('is-spoken')
+      state.spans[word]?.classList.add('is-spoken')
+      state.word = word
     }
+
+    const position = followPosition.current
+    if (!follow.current.playing || !follow.current.enabled || follow.current.blocked
+      || touching.current || Date.now() < userScrollUntil.current) {
+      if (position.suspended) position.idx = idx
+      return
+    }
+    // 手动回看后等到下一句恢复；词典关闭不会在句子中间突然拉回。
+    if (position.suspended && position.idx === idx) return
+    position.suspended = false
+    const anchor = state.spans[word] ?? state.spans[0]
+    const line = anchor.offsetTop
+    if (position.idx === idx && position.line === line) return
+    if (performance.now() < scrollRunningUntil.current) return
+    position.idx = idx
+    position.line = line
+    const rect = box.getBoundingClientRect()
+    const top = anchor.getBoundingClientRect().top - rect.top
+    // 朗读行落在舒适区域时保持页面不动，越界才移至 40% 高度。
+    if (top >= box.clientHeight * 0.28 && top <= box.clientHeight * 0.54) return
+    cancelScroll.current()
+    scrollRunningUntil.current = performance.now() + 400
+    cancelScroll.current = animateScroll(box, box.scrollTop + top - box.clientHeight * 0.4, 400)
   }, [p])
 
   useEffect(() => {
     painted.current = { row: null, spans: [], idx: -1, word: -1 }
+    followPosition.current = { idx: -1, line: -1, suspended: false }
+    userScrollUntil.current = 0
+    cancelScroll.current()
   }, [talk])
 
   // 播放中按帧跟；暂停、拖进度条时靠每次渲染后补一次（syncWords 无变化即刻返回，开销可忽略）
@@ -222,18 +263,42 @@ export default function Player({ slug }: { slug: string }) {
 
   useEffect(() => { syncWords() })
 
-  // 自动滚动：容器内缓动，用户手动滚动后让路 2.5 秒
+  // 暂停、弹层、改变排版时终止旧动画；恢复播放后重新测量实际文字行。
   useEffect(() => {
-    if (!settings.autoScroll || clock.currentIdx < 0) return
-    if (Date.now() < userScrollUntil.current) return
+    cancelScroll.current()
+    scrollRunningUntil.current = 0
+    followPosition.current.line = -1
+    const panelOpen = !!dict || showSettings
+    if (panelOpen || panelWasOpen.current) interruptFollow()
+    panelWasOpen.current = panelOpen
+    return () => cancelScroll.current()
+  }, [p.playing, settings.autoScroll, settings.fontScale, settings.hideZh, dict, showSettings, interruptFollow])
+
+  useEffect(() => {
     const box = scrollBoxRef.current
-    const row = box?.querySelector<HTMLElement>(`[data-row="${clock.currentIdx}"]`)
-    if (!box || !row) return
-    const boxRect = box.getBoundingClientRect()
-    const rowRect = row.getBoundingClientRect()
-    const target = box.scrollTop + (rowRect.top - boxRect.top) - (box.clientHeight - rowRect.height) / 2
-    return animateScroll(box, target)
-  }, [clock.currentIdx, settings.autoScroll])
+    if (!box) return
+    const observer = new ResizeObserver(() => { followPosition.current.line = -1 })
+    observer.observe(box)
+    // 旧版 iOS 不支持 overscroll-behavior，边界手势显式拦截，正文内部仍用原生滚动。
+    let lastY = 0
+    const start = (event: TouchEvent) => { lastY = event.touches[0]?.clientY ?? 0 }
+    const move = (event: TouchEvent) => {
+      const y = event.touches[0]?.clientY ?? lastY
+      const delta = y - lastY
+      lastY = y
+      if (event.touches.length > 1 || (delta > 0 && box.scrollTop <= 0)
+        || (delta < 0 && box.scrollTop + box.clientHeight >= box.scrollHeight - 1)) {
+        if (event.cancelable) event.preventDefault()
+      }
+    }
+    box.addEventListener('touchstart', start, { passive: true })
+    box.addEventListener('touchmove', move, { passive: false })
+    return () => {
+      observer.disconnect()
+      box.removeEventListener('touchstart', start)
+      box.removeEventListener('touchmove', move)
+    }
+  }, [])
 
   const updateSettings = (patch: Partial<Settings>) => {
     setSettings(s => {
@@ -263,7 +328,7 @@ export default function Player({ slug }: { slug: string }) {
   }, [])
 
   return (
-    <div className="mx-auto flex h-full max-w-lg flex-col">
+    <div className="relative mx-auto flex h-full max-w-lg flex-col">
       {/* 顶栏 */}
       <header className="glass safe-top z-10 flex items-center gap-1 border-b border-line px-2 py-2">
         <Button variant="ghost" size="icon" onClick={() => {
@@ -290,9 +355,19 @@ export default function Player({ slug }: { slug: string }) {
       <main
         ref={scrollBoxRef}
         aria-label="双语字幕"
-        onWheel={() => { userScrollUntil.current = Date.now() + 2500 }}
-        onTouchMove={() => { userScrollUntil.current = Date.now() + 2500 }}
-        className="min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll px-3 py-3"
+        onWheel={interruptFollow}
+        onScroll={() => {
+          if (followPosition.current.suspended) {
+            userScrollUntil.current = Date.now() + 6000
+            followPosition.current.idx = painted.current.idx
+          }
+        }}
+        onTouchStart={() => { touching.current = true; interruptFollow() }}
+        onTouchMove={interruptFollow}
+        onTouchEnd={() => { touching.current = false; interruptFollow() }}
+        onTouchCancel={() => { touching.current = false; interruptFollow() }}
+        onKeyDown={e => { if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.key)) interruptFollow() }}
+        className="subtitle-scroll min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll"
       >
         {!p.manifestReady && !p.manifestError && (
           <p role="status" className="py-10 text-center text-sm text-muted-foreground">正在加载语料清单…</p>
@@ -318,7 +393,7 @@ export default function Player({ slug }: { slug: string }) {
           </p>
         )}
         {p.buffering && !p.loading && (
-          <div role="status" className="mb-2 flex items-center justify-center gap-2 rounded-lg bg-primary/8 px-3 py-1.5 text-[11px] text-primary">
+          <div role="status" className="pointer-events-none absolute right-4 bottom-32 z-10 flex items-center justify-center gap-2 rounded-lg bg-background/95 px-3 py-1.5 text-[11px] text-primary">
             <div className="size-3 animate-spin rounded-full border-2 border-primary/30 border-t-primary" />
             缓冲中…
           </div>
