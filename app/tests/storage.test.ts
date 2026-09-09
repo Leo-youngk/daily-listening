@@ -2,8 +2,10 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   STORAGE_ERROR_EVENT,
   addVocab,
+  loadHomeRotation,
   loadVocab,
   removeVocab,
+  saveHomeRotation,
   saveProgress,
   saveSettings,
   updateVocab,
@@ -119,5 +121,24 @@ describe('写入失败不静默', () => {
     expect(saveSettings({ theme: 'dark' })).toBe(false)
     expect(messages).toHaveLength(2)
     expect(messages[0]).toContain('无痕')
+  })
+})
+
+describe('首页轮换状态', () => {
+  it('保存后可以恢复同一批首页内容', () => {
+    const rotation = {
+      date: '2026-09-10',
+      cycle: 2,
+      recommendations: ['talk-a', 'talk-b'],
+      commencement: ['talk-c'],
+      recent: ['talk-a', 'talk-b', 'talk-c'],
+    }
+    expect(saveHomeRotation(rotation)).toBe(true)
+    expect(loadHomeRotation()).toEqual(rotation)
+  })
+
+  it('损坏的轮换数据会被丢弃', () => {
+    localStorage.setItem('dtl.homeRotation', JSON.stringify({ date: '2026-09-10', cycle: -1 }))
+    expect(loadHomeRotation()).toBeNull()
   })
 })

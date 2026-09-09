@@ -448,6 +448,7 @@ body {
   margin-bottom: 13px;
 }
 .discover-section-head h2 { margin-top: 4px; font-size: 20px; letter-spacing: -.035em; }
+.discover-section-actions { display: flex; align-items: center; gap: 10px; }
 .discover-more {
   display: inline-flex;
   align-items: center;
@@ -458,6 +459,22 @@ body {
   font-weight: 650;
 }
 .discover-more svg { width: 14px; height: 14px; }
+.discover-refresh {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 28px;
+  padding: 0 8px;
+  border: 1px solid color-mix(in srgb, var(--primary) 28%, var(--border));
+  border-radius: 999px;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 7%, transparent);
+  font-size: 11px;
+  font-weight: 650;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+.discover-refresh:active { transform: scale(.96); background: color-mix(in srgb, var(--primary) 14%, transparent); }
+.discover-refresh svg { width: 13px; height: 13px; }
 .discover-rail {
   display: flex;
   gap: 13px;

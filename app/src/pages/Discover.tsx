@@ -1,26 +1,40 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useCatalog, usePlayerActions } from '../store/PlayerContext'
-import { loadProgress } from '../lib/storage'
+import { loadHomeRotation, loadProgress, saveHomeRotation } from '../lib/storage'
 import { navigate } from '../hooks/useHashRoute'
 import { fmtTime } from '../lib/format'
-import { ChevronRightIcon, PlayIcon, SearchIcon, Settings2Icon, SparklesIcon } from 'lucide-react'
+import { ChevronRightIcon, PlayIcon, RefreshCwIcon, SearchIcon, Settings2Icon, SparklesIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
 import TalkCard from '../components/TalkCard'
 import Cover from '../components/Cover'
 import { localDateKey } from '../lib/date'
 import { fetchJson } from '../lib/http'
-import type { TalkData } from '../lib/types'
+import type { HomeRotation } from '../lib/storage'
+import type { ManifestItem, ProgressMap, TalkData } from '../lib/types'
 
 /** 每日一句：按日期固定取一句，避免刷新后变化 */
-function useDailyQuote(manifest: { slug: string }[]) {
+function useDailyQuote(manifest: { slug: string }[], dayKey: string) {
   return useMemo(() => {
     if (manifest.length === 0) return null
-    const dayKey = localDateKey()
     let seed = 0
     for (const c of dayKey) seed = (seed * 31 + c.charCodeAt(0)) >>> 0
     return { talkIdx: seed % manifest.length, seed }
-  }, [manifest])
+  }, [dayKey, manifest])
+}
+
+function useLocalDayKey() {
+  const [dayKey, setDayKey] = useState(localDateKey)
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      const next = localDateKey()
+      setDayKey(previous => previous === next ? previous : next)
+    }, 60_000)
+    return () => window.clearInterval(timer)
+  }, [])
+
+  return dayKey
 }
 
 function mulberry32(seed: number) {
@@ -42,42 +56,184 @@ function pickRandom<T>(arr: T[], count: number, seed: number): T[] {
   return pool.slice(0, count)
 }
 
+const RECOMMENDATION_COUNT = 7
+const COMMENCEMENT_COUNT = 3
+const RECENT_HISTORY_SIZE = 18
+
+function seedFor(...parts: string[]) {
+  let seed = 2166136261
+  for (const part of parts) {
+    for (const char of part) {
+      seed = Math.imul(seed ^ char.charCodeAt(0), 16777619)
+    }
+  }
+  return seed >>> 0
+}
+
+function progressRank(item: ManifestItem, progress: ProgressMap) {
+  const saved = progress[item.slug]
+  if (!saved || saved.pos <= 3) return 0
+  const duration = saved.duration || item.duration
+  return saved.pos < Math.max(0, duration - 15) ? 1 : 2
+}
+
+/** 在未听、进行中、已完成三个层级里轮换，避免首页只按清单顺序取内容。 */
+function pickForHome(
+  pool: ManifestItem[],
+  count: number,
+  seed: number,
+  progress: ProgressMap,
+  recent: string[],
+  excluded: string[] = [],
+) {
+  const hardBlocked = new Set(excluded.filter(Boolean))
+  const recentSet = new Set(recent)
+  const buckets = [0, 1, 2].map(rank => pool.filter(item => progressRank(item, progress) === rank))
+  const fresh = buckets.flatMap((bucket, index) =>
+    pickRandom(bucket, bucket.length, seed + (index + 1) * 0x9E3779B9)
+      .filter(item => !hardBlocked.has(item.slug) && !recentSet.has(item.slug)),
+  )
+  const fallback = buckets.flatMap((bucket, index) =>
+    pickRandom(bucket, bucket.length, seed + (index + 4) * 0x9E3779B9)
+      .filter(item => !hardBlocked.has(item.slug)),
+  )
+  const unique = new Map<string, ManifestItem>()
+  for (const item of [...fresh, ...fallback]) unique.set(item.slug, item)
+  return [...unique.values()].slice(0, count)
+}
+
+function buildHomeRotation(
+  manifest: ManifestItem[],
+  progress: ProgressMap,
+  date: string,
+  cycle: number,
+  recent: string[],
+  featuredSlug?: string,
+): HomeRotation {
+  const recommendations = pickForHome(
+    manifest,
+    RECOMMENDATION_COUNT,
+    seedFor(date, String(cycle), 'recommendations'),
+    progress,
+    recent,
+    featuredSlug ? [featuredSlug] : [],
+  )
+  const recommendationSlugs = recommendations.map(item => item.slug)
+  const commencement = pickForHome(
+    manifest.filter(item => item.category === 'commencement'),
+    COMMENCEMENT_COUNT,
+    seedFor(date, String(cycle), 'commencement'),
+    progress,
+    [...recent, ...recommendationSlugs],
+    [featuredSlug, ...recommendationSlugs].filter((slug): slug is string => Boolean(slug)),
+  )
+  const selected = [...recommendationSlugs, ...commencement.map(item => item.slug)]
+  return {
+    date,
+    cycle,
+    recommendations: recommendationSlugs,
+    commencement: commencement.map(item => item.slug),
+    recent: [...new Set([...recent, ...selected])].slice(-RECENT_HISTORY_SIZE),
+  }
+}
+
+function isUsableRotation(
+  rotation: HomeRotation | null,
+  manifest: ManifestItem[],
+  date: string,
+  progress: ProgressMap,
+  featuredSlug?: string,
+) {
+  if (!rotation || rotation.date !== date || rotation.cycle < 0) return false
+  const available = new Set(manifest.map(item => item.slug))
+  const validIds = (ids: string[]) => ids.length > 0 && new Set(ids).size === ids.length && ids.every(id => available.has(id))
+  if (!validIds(rotation.recommendations) || !validIds(rotation.commencement)) return false
+  if (featuredSlug && (rotation.recommendations.includes(featuredSlug) || rotation.commencement.includes(featuredSlug))) return false
+  const selected = new Set([...rotation.recommendations, ...rotation.commencement])
+  const hasFreshAlternative = manifest.some(item => !selected.has(item.slug) && progressRank(item, progress) < 2)
+  const hasCompletedSelection = [...selected].some(slug => {
+    const item = manifest.find(candidate => candidate.slug === slug)
+    return item ? progressRank(item, progress) === 2 : false
+  })
+  if (hasFreshAlternative && hasCompletedSelection) return false
+  return true
+}
+
 export default function Discover() {
   const { manifest, manifestReady, manifestError, reloadManifest } = useCatalog()
   const { playTalk } = usePlayerActions()
   const [quote, setQuote] = useState<{ en: string; zh: string; title: string; slug: string; at: number } | null>(null)
   const [quoteLoading, setQuoteLoading] = useState(false)
   const [quoteError, setQuoteError] = useState<string | null>(null)
-  const daily = useDailyQuote(manifest)
+  const [rotationState, setRotationState] = useState<HomeRotation | null>(() => loadHomeRotation())
+  const dayKey = useLocalDayKey()
+  const daily = useDailyQuote(manifest, dayKey)
+  const [progress] = useState(() => loadProgress())
 
   const dateStr = useMemo(() => {
-    const d = new Date()
-    return `${d.getMonth() + 1}月${d.getDate()}日`
-  }, [])
+    const [, month, day] = dayKey.split('-')
+    return `${Number(month)}月${Number(day)}日`
+  }, [dayKey])
 
   // 继续学习
   const lastPlayed = useMemo(() => {
-    const prog = loadProgress()
-    const entries = Object.entries(prog).filter(([, v]) => v.pos > 3 && v.pos < v.duration - 15)
+    const entries = Object.entries(progress).filter(([, v]) => v.pos > 3 && v.pos < v.duration - 15)
     if (!entries.length) return null
     entries.sort((a, b) => b[1].updatedAt - a[1].updatedAt)
     const [slug, v] = entries[0]
     const meta = manifest.find(m => m.slug === slug)
     return meta ? { meta, pos: v.pos } : null
-  }, [manifest])
+  }, [manifest, progress])
 
-  // 精选推荐：随机展示未听过的内容，全部听过则从全量里随机选
-  const recs = useMemo(() => {
-    const prog = loadProgress()
-    const unlistened = manifest.filter(m => !prog[m.slug])
-    let seed = 0
-    for (const c of localDateKey()) seed = (seed * 31 + c.charCodeAt(0)) >>> 0
-    return pickRandom(unlistened.length > 0 ? unlistened : manifest, 6, seed)
-  }, [manifest])
+  const featuredSlug = lastPlayed?.meta.slug
+  const homeRotation = useMemo(() => {
+    if (!manifest.length) return null
+    if (isUsableRotation(rotationState, manifest, dayKey, progress, featuredSlug)) return rotationState
+    return buildHomeRotation(
+      manifest,
+      progress,
+      dayKey,
+      rotationState?.date === dayKey ? rotationState.cycle : 0,
+      rotationState?.recent ?? [],
+      featuredSlug,
+    )
+  }, [dayKey, featuredSlug, manifest, progress, rotationState])
+
+  useEffect(() => {
+    if (homeRotation && homeRotation !== rotationState) saveHomeRotation(homeRotation)
+  }, [homeRotation, rotationState])
+
+  const recs = useMemo(
+    () => homeRotation?.recommendations
+      .map(slug => manifest.find(item => item.slug === slug))
+      .filter((item): item is ManifestItem => Boolean(item)) ?? [],
+    [homeRotation, manifest],
+  )
 
   const featured = lastPlayed?.meta ?? recs[0] ?? manifest[0] ?? null
   const featuredPosition = lastPlayed?.pos ?? 0
   const nextUp = recs.filter(item => item.slug !== featured?.slug).slice(0, 6)
+  const commencement = useMemo(
+    () => homeRotation?.commencement
+      .map(slug => manifest.find(item => item.slug === slug))
+      .filter((item): item is ManifestItem => Boolean(item)) ?? [],
+    [homeRotation, manifest],
+  )
+
+  const rotateHome = () => {
+    if (!manifest.length) return
+    const current = homeRotation ?? buildHomeRotation(manifest, progress, dayKey, 0, [], featuredSlug)
+    const next = buildHomeRotation(
+      manifest,
+      progress,
+      dayKey,
+      current.cycle + 1,
+      current.recent,
+      featuredSlug,
+    )
+    setRotationState(next)
+    saveHomeRotation(next)
+  }
 
   // 加载每日一句（懒加载该篇字幕，随机挑一句有中文的）
   useEffect(() => {
@@ -198,10 +354,16 @@ export default function Discover() {
       <section className="discover-section discover-commencement">
         <div className="discover-section-head">
           <div><p className="discover-eyebrow">精选合集</p><h2>毕业演讲</h2></div>
-          <button onClick={() => navigate('/library?tab=commencement')} className="discover-more">更多 <ChevronRightIcon /></button>
+          <div className="discover-section-actions">
+            <button onClick={rotateHome} className="discover-refresh" aria-label="换一批首页推荐">
+              <RefreshCwIcon />
+              换一批
+            </button>
+            <button onClick={() => navigate('/library?tab=commencement')} className="discover-more">更多 <ChevronRightIcon /></button>
+          </div>
         </div>
         <div className="discover-list">
-          {manifest.filter(m => m.category === 'commencement').slice(0, 3).map(item => <TalkCard key={item.slug} item={item} showProgress={false} />)}
+          {commencement.map(item => <TalkCard key={item.slug} item={item} showProgress={false} />)}
         </div>
       </section>
     </div>

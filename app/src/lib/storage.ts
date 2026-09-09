@@ -9,6 +9,7 @@ const K = {
   vocab: 'dtl.vocab',
   stats: 'dtl.stats',
   settings: 'dtl.settings',
+  homeRotation: 'dtl.homeRotation',
 }
 
 export const STORAGE_ERROR_EVENT = 'dtl-storage-error'
@@ -50,6 +51,44 @@ export function saveProgress(slug: string, pos: number, duration: number): boole
   const all = loadProgress()
   all[slug] = { pos, duration, updatedAt: Date.now() }
   return write(K.progress, all)
+}
+
+export interface HomeRotation {
+  date: string
+  cycle: number
+  recommendations: string[]
+  commencement: string[]
+  recent: string[]
+}
+
+function stringArray(value: unknown): value is string[] {
+  return Array.isArray(value) && value.every(item => typeof item === 'string')
+}
+
+export function loadHomeRotation(): HomeRotation | null {
+  const value = read<unknown>(K.homeRotation, null)
+  if (!value || typeof value !== 'object') return null
+  const raw = value as Partial<HomeRotation>
+  if (
+    typeof raw.date !== 'string'
+    || typeof raw.cycle !== 'number'
+    || !Number.isInteger(raw.cycle)
+    || raw.cycle < 0
+    || !stringArray(raw.recommendations)
+    || !stringArray(raw.commencement)
+    || !stringArray(raw.recent)
+  ) return null
+  return {
+    date: raw.date,
+    cycle: raw.cycle,
+    recommendations: raw.recommendations,
+    commencement: raw.commencement,
+    recent: raw.recent,
+  }
+}
+
+export function saveHomeRotation(rotation: HomeRotation): boolean {
+  return write(K.homeRotation, rotation)
 }
 
 export function loadFavorites(): string[] {
