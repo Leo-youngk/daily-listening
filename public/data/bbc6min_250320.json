@@ -521,6 +521,7 @@
       "w": [350.66,350.88]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "advice": "advice",
@@ -599,6 +600,5 @@
     "waste": "waste",
     "wasting": "waste",
     "worst": "worst"
-  },
-  "wSource": "asr"
+  }
 }

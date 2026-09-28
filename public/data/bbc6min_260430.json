@@ -481,6 +481,7 @@
       "w": [365.8,366.06]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "advise": "advise",
     "advises": "advise",
@@ -542,6 +543,5 @@
     "vocabulary": "vocabulary",
     "voyages": "voyage",
     "whereas": "whereas"
-  },
-  "wSource": "asr"
+  }
 }

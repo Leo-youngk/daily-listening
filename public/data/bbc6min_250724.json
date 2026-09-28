@@ -545,6 +545,7 @@
       "w": [384.14,384.3,384.3,384.44,384.44,384.62,384.84,385.1]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "achieved": "achieve",
@@ -633,6 +634,5 @@
     "weekday": "weekday",
     "wondering": "wonder",
     "worst": "worst"
-  },
-  "wSource": "asr"
+  }
 }

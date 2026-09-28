@@ -1933,6 +1933,7 @@
       "w": [1567.94,1568.22,1568.22,1568.34,1568.34,1568.66,1568.66,1569.38,1569.38,1569.9,1569.9,1570.54,1570.54,1570.66,1570.66,1570.8,1570.8,1571.06,1571.06,1571.38,1571.38,1571.84]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "absolute": "absolute",
     "accomplishments": "accomplishment",
@@ -2158,6 +2159,5 @@
     "worse": "worse",
     "worthwhile": "worthwhile",
     "writing": "writing"
-  },
-  "wSource": "asr"
+  }
 }

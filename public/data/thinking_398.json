@@ -1949,6 +1949,7 @@
       "w": [1884.62,1884.78,1884.78,1884.88,1884.88,1885.02,1885.02,1885.24,1885.24,1885.98,1885.98,1886.68,1886.68,1887.3]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "abandon": "abandon",
     "abuses": "abuse",
@@ -2341,6 +2342,5 @@
     "whereas": "whereas",
     "within": "within",
     "wooden": "wooden"
-  },
-  "wSource": "asr"
+  }
 }

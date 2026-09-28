@@ -521,6 +521,7 @@
       "w": [366.68,367.02]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "common": "common",
@@ -595,6 +596,5 @@
     "verb": "verb",
     "visual": "visual",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

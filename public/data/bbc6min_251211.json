@@ -449,6 +449,7 @@
       "w": [363.69,364.11]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "affects": "affect",
@@ -538,6 +539,5 @@
     "vision": "vision",
     "vocabulary": "vocabulary",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

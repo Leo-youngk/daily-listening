@@ -501,6 +501,7 @@
       "w": [366.65,366.95]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "alter": "alter",
@@ -584,6 +585,5 @@
     "vocabulary": "vocabulary",
     "wheat": "wheat",
     "wonderful": "wonderful"
-  },
-  "wSource": "asr"
+  }
 }

@@ -489,6 +489,7 @@
       "w": [366.49,366.54]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "authority": "authority",
@@ -586,6 +587,5 @@
     "whole": "whole",
     "zebra": "zebra",
     "zebras": "zebra"
-  },
-  "wSource": "asr"
+  }
 }

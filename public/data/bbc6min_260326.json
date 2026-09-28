@@ -505,6 +505,7 @@
       "w": [365.82,366.28,366.28,366.38,366.38,366.52,366.52,366.9,367.14,367.5]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "available": "available",
@@ -610,6 +611,5 @@
     "vocabulary": "vocabulary",
     "warns": "warn",
     "whispering": "whisper"
-  },
-  "wSource": "asr"
+  }
 }

@@ -545,6 +545,7 @@
       "w": [363.0,363.28,363.28,364.8,364.8,365.72]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -637,6 +638,5 @@
     "vocabulary": "vocabulary",
     "weaker": "weak",
     "wood": "wood"
-  },
-  "wSource": "asr"
+  }
 }

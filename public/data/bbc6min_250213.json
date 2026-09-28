@@ -393,6 +393,7 @@
       "w": [365.62,366.08]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "advertising": "advertise",
     "amplify": "amplify",
@@ -493,6 +494,5 @@
     "whereas": "whereas",
     "wondering": "wonder",
     "worse": "worse"
-  },
-  "wSource": "asr"
+  }
 }

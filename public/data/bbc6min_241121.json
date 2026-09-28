@@ -377,6 +377,7 @@
       "w": [364.4,364.6,364.6,364.68,364.68,364.92,365.18,365.6]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accompanying": "accompany",
     "actually": "actually",
@@ -467,6 +468,5 @@
     "wonderful": "wonderful",
     "wrinkles": "wrinkle",
     "youthful": "youthful"
-  },
-  "wSource": "asr"
+  }
 }

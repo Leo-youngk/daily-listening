@@ -473,6 +473,7 @@
       "w": [365.14,365.19]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "action": "action",
     "actions": "action",
@@ -555,6 +556,5 @@
     "weigh": "weigh",
     "whatever": "whatever",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

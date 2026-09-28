@@ -433,6 +433,7 @@
       "w": [364.54,364.66,364.66,364.84,364.84,365.04,365.3,365.66]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "adapt": "adapt",
     "adapted": "adapt",
@@ -528,6 +529,5 @@
     "vocabulary": "vocabulary",
     "war": "war",
     "zone": "zone"
-  },
-  "wSource": "asr"
+  }
 }

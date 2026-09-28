@@ -497,6 +497,7 @@
       "w": [364.62,364.92]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "affect": "affect",
@@ -590,6 +591,5 @@
     "vocabulary": "vocabulary",
     "whale": "whale",
     "worse": "worse"
-  },
-  "wSource": "asr"
+  }
 }

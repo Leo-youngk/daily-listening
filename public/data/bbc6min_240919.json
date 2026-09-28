@@ -417,6 +417,7 @@
       "w": [364.11,364.29,364.29,364.45,364.45,364.63,364.81,365.09]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "achieve": "achieve",
@@ -526,6 +527,5 @@
     "within": "within",
     "wondering": "wonder",
     "worst": "worst"
-  },
-  "wSource": "asr"
+  }
 }

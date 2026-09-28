@@ -545,6 +545,7 @@
       "w": [366.66,366.71,366.7,366.86,366.86,367.08,367.22,367.46]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -618,6 +619,5 @@
     "useful": "useful",
     "various": "various",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

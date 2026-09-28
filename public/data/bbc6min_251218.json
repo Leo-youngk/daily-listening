@@ -449,6 +449,7 @@
       "w": [364.78,364.92,364.92,365.02,365.02,365.26,365.26,365.64,366.02,366.08,366.08,366.22,366.22,366.48,366.86,367.12]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "cap": "cap",
@@ -529,6 +530,5 @@
     "vocabulary": "vocabulary",
     "wild": "wild",
     "wondering": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

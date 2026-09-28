@@ -537,6 +537,7 @@
       "w": [362.2,362.58]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "benefit": "benefit",
     "benefits": "benefit",
@@ -612,6 +613,5 @@
     "whereas": "whereas",
     "wonderful": "wonderful",
     "wooden": "wooden"
-  },
-  "wSource": "asr"
+  }
 }

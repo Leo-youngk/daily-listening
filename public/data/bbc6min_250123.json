@@ -433,6 +433,7 @@
       "w": [364.38,364.56,364.56,364.64,364.64,364.78,364.78,365.1,365.5,365.92]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "achieve": "achieve",
     "action": "action",
@@ -529,6 +530,5 @@
     "vocabulary": "vocabulary",
     "war": "war",
     "whatever": "whatever"
-  },
-  "wSource": "asr"
+  }
 }

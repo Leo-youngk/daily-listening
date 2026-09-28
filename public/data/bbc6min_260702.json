@@ -417,6 +417,7 @@
       "w": [364.58,364.66,364.66,364.96,365.34,365.5,365.5,365.82,366.36,366.54]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "anonymous": "anonymous",
@@ -490,6 +491,5 @@
     "vocabulary": "vocabulary",
     "withdrawing": "withdraw",
     "writing": "writing"
-  },
-  "wSource": "asr"
+  }
 }

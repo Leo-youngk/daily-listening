@@ -441,6 +441,7 @@
       "w": [365.42,365.54,365.54,365.72,365.72,365.94,365.94,365.99]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "advice": "advice",
     "aimed": "aim",
@@ -503,6 +504,5 @@
     "used": "used",
     "useful": "useful",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

@@ -449,6 +449,7 @@
       "w": [366.24,366.46,366.46,366.6,366.6,366.82,367.08,367.38]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -563,6 +564,5 @@
     "vocabulary": "vocabulary",
     "wars": "war",
     "worst": "worst"
-  },
-  "wSource": "asr"
+  }
 }

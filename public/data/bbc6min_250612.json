@@ -473,6 +473,7 @@
       "w": [364.98,365.22]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -553,6 +554,5 @@
     "volunteer": "volunteer",
     "volunteers": "volunteer",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

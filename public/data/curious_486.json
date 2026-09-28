@@ -952,6 +952,7 @@
       "w": [1252.49,1252.54,1252.49,1252.54,1252.5,1252.55]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "according": "accord",
@@ -1211,6 +1212,5 @@
     "won": "win",
     "wonderful": "wonderful",
     "worse": "worse"
-  },
-  "wSource": "asr"
+  }
 }

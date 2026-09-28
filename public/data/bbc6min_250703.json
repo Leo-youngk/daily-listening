@@ -425,6 +425,7 @@
       "w": [364.06,364.2,364.2,364.32,364.32,364.54,364.54,364.59]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "addressed": "address",
     "bow": "bow",
@@ -504,6 +505,5 @@
     "useful": "useful",
     "varies": "vary",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

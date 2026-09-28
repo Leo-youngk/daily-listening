@@ -529,6 +529,7 @@
       "w": [363.31,363.49,363.49,363.65,363.65,363.83,364.11,364.39]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accomplishments": "accomplishment",
     "achievements": "achievement",
@@ -621,6 +622,5 @@
     "wins": "win",
     "wisdom": "wisdom",
     "wonder": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

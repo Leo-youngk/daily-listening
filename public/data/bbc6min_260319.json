@@ -481,6 +481,7 @@
       "w": [366.32,367.0]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "advises": "advise",
@@ -570,6 +571,5 @@
     "vocabulary": "vocabulary",
     "within": "within",
     "wrapped": "wrap"
-  },
-  "wSource": "asr"
+  }
 }

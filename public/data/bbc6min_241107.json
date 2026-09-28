@@ -401,6 +401,7 @@
       "w": [362.85,362.99,362.99,363.19,363.19,363.45,363.71,364.17]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "affect": "affect",
@@ -496,6 +497,5 @@
     "vocabulary": "vocabulary",
     "vulnerable": "vulnerable",
     "whatever": "whatever"
-  },
-  "wSource": "asr"
+  }
 }

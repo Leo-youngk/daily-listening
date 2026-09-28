@@ -433,6 +433,7 @@
       "w": [363.28,363.33]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "achieve": "achieve",
     "actually": "actually",
@@ -529,6 +530,5 @@
     "voices": "voice",
     "wired": "wire",
     "writing": "writing"
-  },
-  "wSource": "asr"
+  }
 }

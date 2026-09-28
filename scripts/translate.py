@@ -65,9 +65,9 @@ class _CountMismatch(Exception):
     """模型对长列表反复漏句/并句：交给调用方拆小块再翻。"""
 
 
-# 同一块连续这么多次数量不符，就拆成两半重翻；块小于 MIN_SPLIT 句不再拆
+# 同一块连续这么多次数量不符，就拆成两半重翻；可以一直拆到单句（访谈转写里大量 "Yeah." "Right." 这种短句，小模型爱并句）
 MAX_MISMATCH = 2
-MIN_SPLIT = 12
+MIN_SPLIT = 2
 
 
 def _key():

@@ -505,6 +505,7 @@
       "w": [365.31,365.61]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "advice": "advice",
@@ -592,6 +593,5 @@
     "vocabulary": "vocabulary",
     "war": "war",
     "wonder": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

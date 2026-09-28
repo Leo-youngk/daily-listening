@@ -481,6 +481,7 @@
       "w": [354.95,355.17,355.17,355.29,355.29,355.41,355.41,355.65,355.65,355.95,355.95,356.29,356.29,356.53,356.83,357.17]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "choices": "choice",
@@ -538,6 +539,5 @@
     "videos": "video",
     "vocabulary": "vocabulary",
     "wondered": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

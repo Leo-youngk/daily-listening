@@ -481,6 +481,7 @@
       "w": [365.9,366.04,366.04,366.18,366.18,366.4,366.64,367.02]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "absorbed": "absorb",
     "absorbs": "absorb",
@@ -540,6 +541,5 @@
     "university": "university",
     "vocabulary": "vocabulary",
     "weapon": "weapon"
-  },
-  "wSource": "asr"
+  }
 }

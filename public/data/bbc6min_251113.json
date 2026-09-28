@@ -481,6 +481,7 @@
       "w": [366.26,366.72]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -577,6 +578,5 @@
     "wires": "wire",
     "wood": "wood",
     "wooden": "wooden"
-  },
-  "wSource": "asr"
+  }
 }

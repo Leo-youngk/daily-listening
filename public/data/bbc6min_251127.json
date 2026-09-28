@@ -465,6 +465,7 @@
       "w": [367.18,367.23]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "allegations": "allegation",
     "available": "available",
@@ -536,6 +537,5 @@
     "verb": "verb",
     "vocabulary": "vocabulary",
     "win": "win"
-  },
-  "wSource": "asr"
+  }
 }

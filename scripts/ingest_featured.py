@@ -28,7 +28,9 @@ from bs4 import BeautifulSoup
 from align import align_to_file, chunk_bounds, enable_cuda, norm_words, SAMPLE_RATE
 from ingest import (AUDIO_DIR, COVERS_DIR, EPISODES, FFMPEG, STATE, SUBS_DIR, TRANSCRIPTS, load_json,
                     probe_duration, save_json)
-from sources.common import fetch_bytes, fetch_text, item_image, rss_items
+import xml.etree.ElementTree as ET
+
+from sources.common import ITUNES, fetch_bytes, fetch_text, item_image, rss_items
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -177,6 +179,10 @@ def fetch_cover(ep, dest):
         src = os.path.join(WORK, f"yt_{ep['audio'][1]}.jpg")
     else:
         url = ep.get("cover") or (item_image(rss_item(ep["audio"][1], ep["audio"][2])) if kind == "rss" else None)
+        if not url and kind == "rss":
+            # 单期没配图（Hidden Brain、EconTalk 常见）就用节目的频道封面
+            channel = ET.fromstring(fetch_bytes(FEEDS[ep["audio"][1]])).find("./channel/itunes:image", ITUNES)
+            url = channel.get("href") if channel is not None else None
         if not url:
             return
         src = os.path.join(WORK, ep["slug"] + ".img")

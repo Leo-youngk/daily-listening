@@ -425,6 +425,7 @@
       "w": [365.65,365.81,365.81,366.09,366.09,366.33,366.59,366.91]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -498,6 +499,5 @@
     "widespread": "widespread",
     "wild": "wild",
     "wings": "wing"
-  },
-  "wSource": "asr"
+  }
 }

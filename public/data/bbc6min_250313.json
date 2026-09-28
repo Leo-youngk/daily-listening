@@ -417,6 +417,7 @@
       "w": [363.84,364.04,364.04,364.24,364.24,364.52,364.96,365.34]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "action": "action",
     "adapt": "adapt",
@@ -510,6 +511,5 @@
     "varieties": "variety",
     "vocabulary": "vocabulary",
     "yielded": "yield"
-  },
-  "wSource": "asr"
+  }
 }

@@ -393,6 +393,7 @@
       "w": [364.76,365.32]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "affected": "affect",
@@ -482,6 +483,5 @@
     "vocabulary": "vocabulary",
     "whereas": "whereas",
     "wonder": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

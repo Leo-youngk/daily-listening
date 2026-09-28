@@ -441,6 +441,7 @@
       "w": [361.55,361.77,361.77,361.83,361.83,361.99,361.99,362.29,362.49,362.85]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "affected": "affect",
@@ -530,6 +531,5 @@
     "vocal": "vocal",
     "waste": "waste",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

@@ -497,6 +497,7 @@
       "w": [362.8,363.0,363.0,363.16,363.16,363.42,363.66,363.86,363.86,364.04,364.04,364.26,364.62,364.98]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "alien": "alien",
@@ -585,6 +586,5 @@
     "vocabulary": "vocabulary",
     "zone": "zone",
     "zones": "zone"
-  },
-  "wSource": "asr"
+  }
 }

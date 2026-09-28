@@ -473,6 +473,7 @@
       "w": [366.71,367.01]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "causing": "cause",
@@ -573,6 +574,5 @@
     "whatever": "whatever",
     "wire": "wire",
     "writer": "writer"
-  },
-  "wSource": "asr"
+  }
 }

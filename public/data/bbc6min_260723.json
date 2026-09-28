@@ -449,6 +449,7 @@
       "w": [384.4,384.45,384.4,384.64,384.64,384.82,385.28,385.36]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "affected": "affect",
     "affects": "affect",
@@ -547,6 +548,5 @@
     "vocabulary": "vocabulary",
     "war": "war",
     "zones": "zone"
-  },
-  "wSource": "asr"
+  }
 }

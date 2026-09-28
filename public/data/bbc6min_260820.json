@@ -513,6 +513,7 @@
       "w": [366.88,367.36]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "advanced": "advance",
     "alert": "alert",
@@ -596,6 +597,5 @@
     "wave": "wave",
     "waving": "wave",
     "whereas": "whereas"
-  },
-  "wSource": "asr"
+  }
 }

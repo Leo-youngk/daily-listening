@@ -441,6 +441,7 @@
       "w": [364.31,364.47,364.47,364.69,364.69,364.91,365.23,365.59]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "associated": "associate",
@@ -543,6 +544,5 @@
     "vocabulary": "vocabulary",
     "volcano": "volcano",
     "waves": "wave"
-  },
-  "wSource": "asr"
+  }
 }

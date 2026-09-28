@@ -465,6 +465,7 @@
       "w": [366.52,366.86]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "abnormal": "abnormal",
     "actually": "actually",
@@ -575,6 +576,5 @@
     "willing": "willing",
     "worse": "worse",
     "zebras": "zebra"
-  },
-  "wSource": "asr"
+  }
 }

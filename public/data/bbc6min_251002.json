@@ -433,6 +433,7 @@
       "w": [366.78,367.1]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "amazing": "amaze",
@@ -530,6 +531,5 @@
     "whaling": "whale",
     "wild": "wild",
     "wooden": "wooden"
-  },
-  "wSource": "asr"
+  }
 }

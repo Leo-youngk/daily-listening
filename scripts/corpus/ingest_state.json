@@ -1143,5 +1143,55 @@
   "series": "thinking",
   "ok": true,
   "ts": 1790591750
+ },
+ "featured_hb_feelings": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790621273
+ },
+ "featured_hb_tunnel": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790621394
+ },
+ "featured_fk_quitting": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790621589
+ },
+ "featured_ec_phone": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790621797
+ },
+ "featured_tal_355": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790622020
+ },
+ "featured_tal_624": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790622182
+ },
+ "featured_naval_44": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790623076
+ },
+ "featured_hormozi_ruthless": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790623767
+ },
+ "featured_senra_rubin": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790624068
+ },
+ "featured_doac_noah": {
+  "series": "featured",
+  "ok": true,
+  "ts": 1790624395
  }
 }

@@ -465,6 +465,7 @@
       "w": [366.57,366.62,366.57,366.62]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accompanying": "accompany",
     "acquire": "acquire",
@@ -566,6 +567,5 @@
     "useful": "useful",
     "valley": "valley",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

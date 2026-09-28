@@ -497,6 +497,7 @@
       "w": [373.74,373.96,374.34,374.62]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "achieve": "achieve",
     "actually": "actually",
@@ -588,6 +589,5 @@
     "visual": "visual",
     "vocabulary": "vocabulary",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

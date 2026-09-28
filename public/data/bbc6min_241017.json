@@ -385,6 +385,7 @@
       "w": [364.3,364.42,364.42,364.72,364.72,364.94,365.14,365.48]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "advances": "advance",
@@ -476,6 +477,5 @@
     "vocabulary": "vocabulary",
     "wheels": "wheel",
     "wound": "wound"
-  },
-  "wSource": "asr"
+  }
 }

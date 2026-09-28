@@ -505,6 +505,7 @@
       "w": [364.24,364.4,364.4,364.62,364.62,364.82,365.0,365.34]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "achieve": "achieve",
     "affects": "affect",
@@ -620,6 +621,5 @@
     "weaker": "weak",
     "whilst": "whilst",
     "worse": "worse"
-  },
-  "wSource": "asr"
+  }
 }

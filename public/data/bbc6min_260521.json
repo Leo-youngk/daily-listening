@@ -505,6 +505,7 @@
       "w": [366.75,366.8]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "aeroplanes": "aeroplane",
@@ -598,6 +599,5 @@
     "waves": "wave",
     "whisper": "whisper",
     "whispered": "whisper"
-  },
-  "wSource": "asr"
+  }
 }

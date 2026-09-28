@@ -433,6 +433,7 @@
       "w": [365.9,366.08]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "artistic": "artistic",
@@ -519,6 +520,5 @@
     "videos": "video",
     "vocabulary": "vocabulary",
     "won": "win"
-  },
-  "wSource": "asr"
+  }
 }

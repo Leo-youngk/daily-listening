@@ -489,6 +489,7 @@
       "w": [366.12,366.32,366.32,366.54,366.54,366.82,367.22,367.52]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "acceptance": "acceptance",
     "according": "accord",
@@ -577,6 +578,5 @@
     "vote": "vote",
     "willing": "willing",
     "within": "within"
-  },
-  "wSource": "asr"
+  }
 }

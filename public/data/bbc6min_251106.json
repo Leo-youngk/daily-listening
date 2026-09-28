@@ -473,6 +473,7 @@
       "w": [366.72,367.1]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "aggression": "aggression",
@@ -554,6 +555,5 @@
     "verb": "verb",
     "versatile": "versatile",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

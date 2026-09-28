@@ -481,6 +481,7 @@
       "w": [364.81,365.19]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "alternative": "alternative",
@@ -563,6 +564,5 @@
     "usual": "usual",
     "vocabulary": "vocabulary",
     "welfare": "welfare"
-  },
-  "wSource": "asr"
+  }
 }

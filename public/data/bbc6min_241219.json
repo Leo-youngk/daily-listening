@@ -449,6 +449,7 @@
       "w": [365.3,365.7]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "aggravated": "aggravate",
     "approximately": "approximately",
@@ -528,6 +529,5 @@
     "whenever": "whenever",
     "within": "within",
     "yelling": "yell"
-  },
-  "wSource": "asr"
+  }
 }

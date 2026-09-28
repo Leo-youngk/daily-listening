@@ -537,6 +537,7 @@
       "w": [367.1,367.46]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "appetite": "appetite",
@@ -618,6 +619,5 @@
     "winning": "win",
     "worst": "worst",
     "writer": "writer"
-  },
-  "wSource": "asr"
+  }
 }

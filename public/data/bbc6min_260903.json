@@ -521,6 +521,7 @@
       "w": [363.44,364.04,364.04,364.16,364.16,364.32,364.32,364.48,364.48,364.72,364.82,364.88,365.14,365.5]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "affecting": "affect",
@@ -609,6 +610,5 @@
     "videos": "video",
     "vocabulary": "vocabulary",
     "widespread": "widespread"
-  },
-  "wSource": "asr"
+  }
 }

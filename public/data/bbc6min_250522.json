@@ -473,6 +473,7 @@
       "w": [365.34,365.4,365.4,365.52,365.52,365.68,365.68,365.9,366.08,366.36,366.36,366.41]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -558,6 +559,5 @@
     "useful": "useful",
     "vocabulary": "vocabulary",
     "wonder": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

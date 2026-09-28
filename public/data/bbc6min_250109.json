@@ -385,6 +385,7 @@
       "w": [364.25,364.39,364.39,364.67,364.67,364.89,365.23,365.51]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "afford": "afford",
     "beginning": "beginning",
@@ -452,6 +453,5 @@
     "vocabulary": "vocabulary",
     "wood": "wood",
     "writer": "writer"
-  },
-  "wSource": "asr"
+  }
 }

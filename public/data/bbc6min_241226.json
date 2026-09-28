@@ -401,6 +401,7 @@
       "w": [364.8,365.02,365.02,365.14,365.14,365.38,365.82,366.24]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accessing": "access",
     "according": "accord",
@@ -508,6 +509,5 @@
     "voice": "voice",
     "waved": "wave",
     "writing": "writing"
-  },
-  "wSource": "asr"
+  }
 }

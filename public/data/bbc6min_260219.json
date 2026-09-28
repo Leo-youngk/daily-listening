@@ -473,6 +473,7 @@
       "w": [366.78,367.26]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accelerated": "accelerate",
     "achievements": "achievement",
@@ -558,6 +559,5 @@
     "wins": "win",
     "won": "win",
     "worst": "worst"
-  },
-  "wSource": "asr"
+  }
 }

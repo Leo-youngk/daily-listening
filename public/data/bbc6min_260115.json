@@ -497,6 +497,7 @@
       "w": [367.39,367.44]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "absolute": "absolute",
     "actions": "action",
@@ -565,6 +566,5 @@
     "valued": "value",
     "vocabulary": "vocabulary",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

@@ -449,6 +449,7 @@
       "w": [366.73,366.78]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "abundance": "abundance",
     "advertised": "advertise",
@@ -549,6 +550,5 @@
     "vocabulary": "vocabulary",
     "wheat": "wheat",
     "winner": "winner"
-  },
-  "wSource": "asr"
+  }
 }

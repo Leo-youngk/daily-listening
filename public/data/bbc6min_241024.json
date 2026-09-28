@@ -425,6 +425,7 @@
       "w": [364.18,364.36,364.36,364.58,364.58,364.8,365.28,365.52]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "action": "action",
     "arguing": "argue",
@@ -521,6 +522,5 @@
     "used": "used",
     "useful": "useful",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

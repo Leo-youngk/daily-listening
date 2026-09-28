@@ -473,6 +473,7 @@
       "w": [364.64,364.8,364.8,365.0,365.0,365.28,365.28,365.33]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "alongside": "alongside",
@@ -552,6 +553,5 @@
     "vocabulary": "vocabulary",
     "wealthy": "wealthy",
     "workshops": "workshop"
-  },
-  "wSource": "asr"
+  }
 }

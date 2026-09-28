@@ -401,6 +401,7 @@
       "w": [367.02,367.3]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "action": "action",
@@ -482,6 +483,5 @@
     "wars": "war",
     "whatever": "whatever",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

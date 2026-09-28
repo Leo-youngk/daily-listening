@@ -505,6 +505,7 @@
       "w": [366.26,366.31]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "action": "action",
     "ancestors": "ancestor",
@@ -598,6 +599,5 @@
     "vocabulary": "vocabulary",
     "wrinkle": "wrinkle",
     "writing": "writing"
-  },
-  "wSource": "asr"
+  }
 }

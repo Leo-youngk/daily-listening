@@ -481,6 +481,7 @@
       "w": [366.3,366.48,366.48,366.64,366.64,366.94,367.14,367.4]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "achieve": "achieve",
     "actually": "actually",
@@ -570,6 +571,5 @@
     "usual": "usual",
     "vocabulary": "vocabulary",
     "writing": "writing"
-  },
-  "wSource": "asr"
+  }
 }

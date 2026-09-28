@@ -417,6 +417,7 @@
       "w": [364.41,364.59,364.59,364.67,364.67,364.81,364.81,365.19,365.51,365.93]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -508,6 +509,5 @@
     "vocabulary": "vocabulary",
     "weekly": "weekly",
     "whatever": "whatever"
-  },
-  "wSource": "asr"
+  }
 }

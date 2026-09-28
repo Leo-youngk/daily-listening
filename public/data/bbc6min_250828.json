@@ -489,6 +489,7 @@
       "w": [365.59,365.93]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "adopted": "adopt",
@@ -572,6 +573,5 @@
     "useful": "useful",
     "versus": "versus",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

@@ -1341,6 +1341,7 @@
       "w": [1165.19,1165.37,1165.37,1165.83,1165.83,1166.23,1166.23,1166.35,1166.35,1166.49,1166.49,1166.77,1166.77,1167.19,1167.19,1167.67]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "absent": "absent",
     "academic": "academic",
@@ -1528,6 +1529,5 @@
     "vocabulary": "vocabulary",
     "vowel": "vowel",
     "writing": "writing"
-  },
-  "wSource": "asr"
+  }
 }

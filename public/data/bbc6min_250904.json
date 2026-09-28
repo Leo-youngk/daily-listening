@@ -417,6 +417,7 @@
       "w": [365.29,365.39,365.39,365.63,365.63,365.91,366.23,366.61]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "abbreviation": "abbreviation",
     "according": "accord",
@@ -480,6 +481,5 @@
     "waste": "waste",
     "whiskers": "whisker",
     "writing": "writing"
-  },
-  "wSource": "asr"
+  }
 }

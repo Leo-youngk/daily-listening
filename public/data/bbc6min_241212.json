@@ -465,6 +465,7 @@
       "w": [363.79,363.97,363.97,364.13,364.13,364.33,364.33,364.69,364.85,365.07,365.07,365.27,365.27,365.45,365.59,365.95]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "additional": "additional",
@@ -518,6 +519,5 @@
     "used": "used",
     "useful": "useful",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

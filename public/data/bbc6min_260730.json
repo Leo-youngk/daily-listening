@@ -473,6 +473,7 @@
       "w": [366.57,366.89]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "aim": "aim",
@@ -571,6 +572,5 @@
     "vocabulary": "vocabulary",
     "win": "win",
     "won": "win"
-  },
-  "wSource": "asr"
+  }
 }

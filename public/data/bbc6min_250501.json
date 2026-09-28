@@ -497,6 +497,7 @@
       "w": [365.33,365.49,366.01,366.29,366.29,366.45,366.45,366.71]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accompanying": "accompany",
     "according": "accord",
@@ -581,6 +582,5 @@
     "vocabulary": "vocabulary",
     "wandering": "wander",
     "wild": "wild"
-  },
-  "wSource": "asr"
+  }
 }

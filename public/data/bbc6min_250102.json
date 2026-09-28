@@ -441,6 +441,7 @@
       "w": [363.46,363.64,363.64,363.76,363.76,363.9,363.9,364.28,364.88,365.44]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accurate": "accurate",
     "actually": "actually",
@@ -497,6 +498,5 @@
     "useful": "useful",
     "vocabulary": "vocabulary",
     "weak": "weak"
-  },
-  "wSource": "asr"
+  }
 }

@@ -545,6 +545,7 @@
       "w": [374.95,375.25,375.25,375.41,375.41,375.53,375.53,375.79,375.79,376.09,376.35,376.43,376.43,376.73,377.05,377.19]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "achieve": "achieve",
     "actually": "actually",
@@ -618,6 +619,5 @@
     "wheel": "wheel",
     "wonder": "wonder",
     "wondering": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

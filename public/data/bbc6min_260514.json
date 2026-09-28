@@ -505,6 +505,7 @@
       "w": [362.86,363.08,363.08,363.22,363.22,363.44,363.44,363.84,364.24,364.29,364.68,365.0]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "affect": "affect",
     "affected": "affect",
@@ -587,6 +588,5 @@
     "whole": "whole",
     "widely": "widely",
     "wolf": "wolf"
-  },
-  "wSource": "asr"
+  }
 }

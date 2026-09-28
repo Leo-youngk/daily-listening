@@ -553,6 +553,7 @@
       "w": [365.7,365.75]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "absolute": "absolute",
     "advice": "advice",
@@ -620,6 +621,5 @@
     "vitamins": "vitamin",
     "vocabulary": "vocabulary",
     "wonder": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

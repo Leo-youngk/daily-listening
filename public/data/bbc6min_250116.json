@@ -433,6 +433,7 @@
       "w": [364.27,364.39,364.39,364.65,364.65,364.87,365.21,365.49]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "advanced": "advance",
     "argue": "argue",
@@ -503,6 +504,5 @@
     "useful": "useful",
     "vocabulary": "vocabulary",
     "whatever": "whatever"
-  },
-  "wSource": "asr"
+  }
 }

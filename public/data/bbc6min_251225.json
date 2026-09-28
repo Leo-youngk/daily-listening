@@ -553,6 +553,7 @@
       "w": [376.76,376.84,376.84,376.98,376.98,377.22,377.66,377.76]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "accuracy": "accuracy",
@@ -622,6 +623,5 @@
     "verb": "verb",
     "vocabulary": "vocabulary",
     "wonder": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

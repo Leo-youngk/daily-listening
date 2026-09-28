@@ -425,6 +425,7 @@
       "w": [364.04,364.24,364.24,364.36,364.36,364.54,364.54,364.86,365.08,365.42]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "alerting": "alert",
@@ -512,6 +513,5 @@
     "view": "view",
     "vocabulary": "vocabulary",
     "writer": "writer"
-  },
-  "wSource": "asr"
+  }
 }

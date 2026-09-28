@@ -417,6 +417,7 @@
       "w": [363.03,363.08,363.05,363.17,363.17,363.31,363.31,363.61,363.89,364.15,364.41,364.81]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "ancient": "ancient",
@@ -515,6 +516,5 @@
     "weakening": "weaken",
     "whole": "whole",
     "worthy": "worthy"
-  },
-  "wSource": "asr"
+  }
 }

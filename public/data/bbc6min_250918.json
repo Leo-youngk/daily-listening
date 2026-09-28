@@ -433,6 +433,7 @@
       "w": [366.82,367.18]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "advances": "advance",
     "behave": "behave",
@@ -510,6 +511,5 @@
     "visitors": "visitor",
     "vocabulary": "vocabulary",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

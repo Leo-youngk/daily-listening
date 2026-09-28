@@ -417,6 +417,7 @@
       "w": [363.92,364.14,364.14,364.24,364.24,364.38,364.38,364.72,365.18,365.64]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accurate": "accurate",
     "actually": "actually",
@@ -503,6 +504,5 @@
     "vocabulary": "vocabulary",
     "wondered": "wonder",
     "wondering": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

@@ -489,6 +489,7 @@
       "w": [365.0,365.05,365.04,365.18,365.18,365.42,365.7,365.98]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accessible": "accessible",
     "alternative": "alternative",
@@ -584,6 +585,5 @@
     "visitors": "visitor",
     "vocabulary": "vocabulary",
     "within": "within"
-  },
-  "wSource": "asr"
+  }
 }

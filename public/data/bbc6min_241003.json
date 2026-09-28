@@ -425,6 +425,7 @@
       "w": [364.71,365.11]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "appreciate": "appreciate",
@@ -524,6 +525,5 @@
     "whatever": "whatever",
     "wine": "wine",
     "wonder": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

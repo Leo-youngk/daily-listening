@@ -457,6 +457,7 @@
       "w": [364.52,364.94,365.28,365.54]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "ambiguous": "ambiguous",
@@ -524,6 +525,5 @@
     "usual": "usual",
     "view": "view",
     "vocabulary": "vocabulary"
-  },
-  "wSource": "asr"
+  }
 }

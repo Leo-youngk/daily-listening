@@ -473,6 +473,7 @@
       "w": [361.45,361.73,361.73,361.83,361.83,362.01,362.01,362.33,362.59,362.97,363.39,363.83]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -554,6 +555,5 @@
     "vocabulary": "vocabulary",
     "whereas": "whereas",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

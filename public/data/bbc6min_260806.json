@@ -481,6 +481,7 @@
       "w": [366.16,366.32,366.32,366.48,366.48,366.72,367.02,367.44]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "accurate": "accurate",
     "adapt": "adapt",
@@ -570,6 +571,5 @@
     "vocabulary": "vocabulary",
     "warnings": "warning",
     "watts": "watt"
-  },
-  "wSource": "asr"
+  }
 }

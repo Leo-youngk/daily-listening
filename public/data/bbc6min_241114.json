@@ -489,6 +489,7 @@
       "w": [362.72,362.82,362.82,362.96,362.96,363.26,363.58,363.86]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "applying": "apply",
@@ -558,6 +559,5 @@
     "vocabulary": "vocabulary",
     "whatever": "whatever",
     "wondering": "wonder"
-  },
-  "wSource": "asr"
+  }
 }

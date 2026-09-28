@@ -833,6 +833,7 @@
       "w": [1000.57,1000.85,1000.85,1001.03,1001.03,1001.23,1001.23,1001.51]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "according": "accord",
@@ -1039,6 +1040,5 @@
     "weakened": "weaken",
     "wealth": "wealth",
     "wealthy": "wealthy"
-  },
-  "wSource": "asr"
+  }
 }

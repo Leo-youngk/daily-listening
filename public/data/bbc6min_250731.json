@@ -393,6 +393,7 @@
       "w": [365.77,365.91,365.91,366.13,366.13,366.37,366.59,366.97]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "adhere": "adhere",
@@ -487,6 +488,5 @@
     "vulnerable": "vulnerable",
     "wealth": "wealth",
     "whole": "whole"
-  },
-  "wSource": "asr"
+  }
 }

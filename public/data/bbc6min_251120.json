@@ -449,6 +449,7 @@
       "w": [364.92,365.28]
     }
   ],
+  "wSource": "asr",
   "lemmas": {
     "appreciation": "appreciation",
     "behave": "behave",
@@ -522,6 +523,5 @@
     "varies": "vary",
     "vocabulary": "vocabulary",
     "worst": "worst"
-  },
-  "wSource": "asr"
+  }
 }
