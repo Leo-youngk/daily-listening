@@ -27,7 +27,6 @@
 │       ├── lib/srs.ts    # FSRS 调度（ts-fsrs）
 │       ├── lib/db.ts     # 卡片与复习日志（IndexedDB / Dexie）
 │       └── pages/        # 今日 / 节目 / 单词 / 复习 / 播放 / 我的
-├── media-worker/         # R2 音频网关：整集音频 + 切句原声
 ├── scripts/              # 数据管线（Python），见 scripts/README.md
 └── public/
     ├── data/             # manifest.json + 每集逐句双语 JSON（含词级时间轴）
@@ -37,7 +36,7 @@
     └── covers/           # 封面
 ```
 
-音频（`public/audio`）与切句原声不进仓库，存 Cloudflare R2，经 `media-worker` 提供。
+音频（`public/audio`）与切句原声不进仓库，存 Cloudflare R2，经 Pages Functions 的 `/audio/*`（`app/functions/audio`）同源提供；本地 `npm run dev` 由 `vite.config.ts` 映射到本机文件。
 
 ## 开发
 
@@ -50,7 +49,7 @@ npm test           # 含 FSRS / IndexedDB（fake-indexeddb）测试
 ## 部署
 
 推到 `main` 由 GitHub Actions 校验数据、类型检查、测试、构建并部署到 Cloudflare Pages，之后跑线上验收
-（`scripts/verify_deploy.py`）。媒体网关单独部署：`cd media-worker; wrangler deploy`。
+（`scripts/verify_deploy.py`，会先等生产域名切到本次提交再验）。音频由 `scripts/deploy_audio_r2.py` 上传 R2，不需要单独部署。
 
 ## 数据安全
 

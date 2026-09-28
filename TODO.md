@@ -20,7 +20,7 @@
    - 音频同源（`app/functions/audio` 读 R2），不再单独握手；
    - 标准音质改 MP3，没有 moov 索引；
    - 启动时预挂上次没听完的那集 / 今日主推（`primeTalk`），点播放时开头已经下好。
-   待 iPhone 真机实测。旧的 `media-worker`（workers.dev）已不再被前端使用，R2 里的 `v1/standard/*.m4a` 也成了孤儿，删除前要先问用户。
+   待 iPhone 真机实测。旧的 workers.dev 音频网关和 R2 里旧的标准音质 m4a 已经用户同意删除（2026-09-29）。
 3. iPhone 真机验收：safe-area、橡皮筋、横滑、双指缩放（见 `CLAUDE.md` 的 iOS PWA 清单）。
 
 ## 已知坑（接手前先看）

@@ -8,15 +8,20 @@
 """
 import argparse
 import json
+import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 
 DEFAULT_BASE = "https://daily-listening-e7k.pages.dev"
 HEADERS = {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)"}
 EXPECTED_SERIES = {"bbc": 100, "curious": 50, "thinking": 50}
-DICT_VERSION = "ecdict-1.0.28-r2"
+# 与 build_dict.py / app/src/lib/dict.ts / vite.config.ts 的缓存名同步升级
+DICT_VERSION = "ecdict-1.0.28-r3"
+DICT_CACHE = "dict-ecdict-1-0-28-r3"
+VOCAB_CACHE = "vocab-cache-v2"
 
 failures: list[str] = []
 checks = 0
@@ -137,6 +142,32 @@ def verify_vocab(base: str) -> None:
         check(False, f"切句原声可播放（{term}）", f"HTTP {e.code} {clip}")
 
 
+def deployed_sha(base: str) -> str | None:
+    """线上主 JS 里内联的构建版本号。"""
+    status, idx = fetch(base, "/")
+    m = re.search(r'src="(/assets/index-[^"]+\.js)"', idx) if status == 200 else None
+    if not m:
+        return None
+    status, js = fetch(base, m.group(1))
+    sha = re.search(r'版本 [`\'",\s]{0,6}([0-9a-f]{7}|nogit)', js) if status == 200 else None
+    return sha.group(1) if sha else None
+
+
+def wait_for_deploy(base: str, sha: str, timeout: int = 300) -> None:
+    """Pages 部署完成后生产域名要过一会儿才切到新版，先等线上版本号变成本次提交再验收。"""
+    deadline = time.time() + timeout
+    while True:
+        live = deployed_sha(base)
+        if live == sha:
+            print(f"线上已是 {sha}\n")
+            return
+        if time.time() > deadline:
+            print(f"等了 {timeout} 秒线上仍是 {live}，按现状验收\n")
+            return
+        print(f"线上还是 {live}，等新版 {sha} 生效…")
+        time.sleep(15)
+
+
 def verify_build(base: str) -> None:
     status, idx = fetch(base, "/")
     if not check(status == 200, "首页可访问", f"HTTP {status}"):
@@ -155,8 +186,8 @@ def verify_build(base: str) -> None:
     status, sw = fetch(base, "/sw.js")
     if check(status == 200, "sw.js 可访问", f"HTTP {status}"):
         check("data-cache-v5" in sw, "数据缓存版本为 v5")
-        check("dict-ecdict-1-0-28-r2" in sw, "词典缓存名带版本号")
-        check("vocab-cache-v1" in sw, "词表与例句走独立缓存")
+        check(DICT_CACHE in sw, "词典缓存名带版本号", DICT_CACHE)
+        check(VOCAB_CACHE in sw, "词表与例句走独立缓存", VOCAB_CACHE)
         check("cover-cache-v3" in sw, "封面缓存版本为 v3")
         check("mymemory" not in sw.lower(), "sw 不再缓存 MyMemory")
         check("clientsClaim" in sw, "新 sw 安装后立即接管页面")
@@ -223,6 +254,9 @@ def main() -> int:
     base = args.base.rstrip("/")
 
     print(f"验收目标: {base}\n")
+    # CI 里带着本次提交号：等生产域名切到这一版再验，避免验到上一版
+    if os.environ.get("GITHUB_SHA"):
+        wait_for_deploy(base, os.environ["GITHUB_SHA"][:7])
     verify_manifest(base)
     verify_dict(base)
     verify_vocab(base)
