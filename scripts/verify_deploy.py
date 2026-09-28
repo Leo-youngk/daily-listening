@@ -153,19 +153,23 @@ def deployed_sha(base: str) -> str | None:
     return sha.group(1) if sha else None
 
 
-def wait_for_deploy(base: str, sha: str, timeout: int = 300) -> None:
-    """Pages 部署完成后生产域名要过一会儿才切到新版，先等线上版本号变成本次提交再验收。"""
+def wait_for_deploy(base: str, sha: str, timeout: int = 300, stable: int = 3) -> None:
+    """Pages 部署完成后生产域名要过一会儿才切到新版，切换的几十秒里边缘节点会新旧混着返回
+    （拿到旧首页、引用的 JS 在新部署里已 404）。连续 stable 次都是本次提交才开始验收。"""
     deadline = time.time() + timeout
+    streak = 0
     while True:
         live = deployed_sha(base)
-        if live == sha:
-            print(f"线上已是 {sha}\n")
+        streak = streak + 1 if live == sha else 0
+        if streak >= stable:
+            print(f"线上已稳定是 {sha}\n")
             return
         if time.time() > deadline:
-            print(f"等了 {timeout} 秒线上仍是 {live}，按现状验收\n")
+            print(f"等了 {timeout} 秒线上仍不稳定（最近一次 {live}），按现状验收\n")
             return
-        print(f"线上还是 {live}，等新版 {sha} 生效…")
-        time.sleep(15)
+        if streak == 0:
+            print(f"线上还是 {live}，等新版 {sha} 生效…")
+        time.sleep(10)
 
 
 def verify_build(base: str) -> None:
