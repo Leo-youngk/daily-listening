@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_362.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/11/17/362-what-is-the-2025-word-of-the-year-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_362.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_362.m4a"
+    "standard": "/audio/v1/standard/thinking_362.mp3",
+    "high": "/audio/v1/high/thinking_362.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1280,7 +1280,6 @@
       "w": [1313.05,1313.69,1313.69,1314.33,1314.33,1314.83,1314.83,1315.21,1315.21,1315.55,1315.55,1315.85,1315.85,1316.19,1316.97,1317.13,1317.13,1317.79,1317.79,1318.55,1318.55,1318.99,1318.99,1319.39,1319.39,1319.77,1319.77,1320.19]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abbreviation": "abbreviation",
     "access": "access",
@@ -1568,5 +1567,6 @@
     "wield": "wield",
     "worse": "worse",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

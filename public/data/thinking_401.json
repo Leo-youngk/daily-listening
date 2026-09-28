@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_401.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/08/17/401-english-tests-do-they-improve-education-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_401.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_401.m4a"
+    "standard": "/audio/v1/standard/thinking_401.mp3",
+    "high": "/audio/v1/high/thinking_401.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1429,7 +1429,6 @@
       "w": [1451.54,1451.68,1451.68,1452.1,1452.1,1452.52,1452.52,1453.0,1453.0,1453.28,1453.28,1453.42,1453.42,1453.7,1453.94,1454.06,1454.06,1454.24,1454.24,1454.74,1454.74,1455.18,1455.18,1455.72,1455.72,1456.34,1456.34,1456.64,1456.64,1456.78,1456.78,1457.14,1457.14,1457.68,1457.68,1458.04,1458.04,1458.38,1458.38,1458.9]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "achieved": "achieve",
     "actually": "actually",
@@ -1696,5 +1695,6 @@
     "weekly": "weekly",
     "widely": "widely",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

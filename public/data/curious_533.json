@@ -8,8 +8,8 @@
   "cover": "/covers/curious_533.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/science-leap-years",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_533.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_533.m4a"
+    "standard": "/audio/v1/standard/curious_533.mp3",
+    "high": "/audio/v1/high/curious_533.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1024,7 +1024,6 @@
       "w": [1320.15,1320.37,1320.37,1320.83,1320.83,1321.21,1321.63,1321.71,1321.71,1321.95,1321.95,1322.37,1322.79,1323.01,1323.01,1323.19,1323.19,1323.39,1323.39,1323.77,1323.77,1324.27,1324.27,1324.39,1324.39,1324.65,1324.65,1325.05]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "adapt": "adapt",
@@ -1296,5 +1295,6 @@
     "wonderful": "wonderful",
     "worse": "worse",
     "wrap": "wrap"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_399.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/08/03/399-what-is-the-resource-curse-why-some-of-the-worlds-richest-countries-stay-poor-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_399.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_399.m4a"
+    "standard": "/audio/v1/standard/thinking_399.mp3",
+    "high": "/audio/v1/high/thinking_399.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1581,7 +1581,6 @@
       "w": [1622.1,1622.26,1622.26,1622.38,1622.38,1622.52,1622.52,1622.72,1622.72,1622.9,1622.9,1623.02,1623.02,1623.46,1623.46,1624.08,1624.08,1624.42,1624.42,1625.02,1625.02,1625.35,1625.35,1625.57,1625.57,1625.91]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "actually": "actually",
@@ -1928,5 +1927,6 @@
     "weapons": "weapon",
     "widespread": "widespread",
     "worse": "worse"
-  }
+  },
+  "wSource": "asr"
 }

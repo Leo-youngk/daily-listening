@@ -8,8 +8,8 @@
   "cover": "/covers/curious_590.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/unabomber",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_590.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_590.m4a"
+    "standard": "/audio/v1/standard/curious_590.mp3",
+    "high": "/audio/v1/high/curious_590.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1256,7 +1256,6 @@
       "w": [1639.4,1639.54,1639.54,1639.98,1639.98,1640.36,1640.72,1640.8,1640.8,1641.08,1641.08,1641.46,1641.46,1641.94,1641.94,1642.12,1642.12,1642.32,1642.32,1642.68,1642.68,1643.14,1643.14,1643.24,1643.24,1643.46,1643.46,1643.78]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "academic": "academic",
     "accessible": "accessible",
@@ -1681,5 +1680,6 @@
     "woods": "wood",
     "worst": "worst",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

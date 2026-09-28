@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_391.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/06/08/391-why-is-the-uae-leaving-opec-and-what-is-opec-anyway-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_391.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_391.m4a"
+    "standard": "/audio/v1/standard/thinking_391.mp3",
+    "high": "/audio/v1/high/thinking_391.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1101,7 +1101,6 @@
       "w": [1097.32,1097.56,1097.56,1097.7,1097.7,1097.88,1097.88,1098.38,1098.38,1099.14,1099.14,1099.72,1099.72,1100.26,1100.26,1100.8,1100.8,1100.96,1100.96,1101.18,1101.18,1101.48,1101.48,1101.76,1101.76,1102.14,1102.14,1103.1]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "affect": "affect",
@@ -1293,5 +1292,6 @@
     "vocabulary": "vocabulary",
     "wars": "war",
     "wealthy": "wealthy"
-  }
+  },
+  "wSource": "asr"
 }

@@ -6,5 +6,9 @@
   // functions/api/lookup.ts 用原生绑定调 Workers AI，浏览器和源码里都不出现 API Token
   "ai": {
     "binding": "AI"
-  }
+  },
+  // functions/audio 同源读整集音频与切句原声（scripts/deploy_audio_r2.py、cut_clips.py 上传到这个桶）
+  "r2_buckets": [
+    { "binding": "AUDIO", "bucket_name": "daily-listening-audio" }
+  ]
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_387.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/05/11/387-why-are-some-people-always-late-the-cultural-meaning-of-time-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_387.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_387.m4a"
+    "standard": "/audio/v1/standard/thinking_387.mp3",
+    "high": "/audio/v1/high/thinking_387.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1397,7 +1397,6 @@
       "w": [1299.85,1299.99,1299.99,1300.21,1300.21,1300.35,1300.35,1300.51,1300.51,1300.75,1300.75,1301.09,1301.09,1301.37,1301.37,1301.79,1301.79,1302.19,1302.19,1302.71]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "achieve": "achieve",
@@ -1596,5 +1595,6 @@
     "vocabulary": "vocabulary",
     "waste": "waste",
     "wasting": "waste"
-  }
+  },
+  "wSource": "asr"
 }

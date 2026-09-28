@@ -16,11 +16,11 @@
 
 1. **用好模型重翻 flash-lite 的期**：删掉对应的 `scripts/corpus/zh/<slug>.json` 缓存，在额度充足的时段（太平洋时间 0 点后）跑
    `python build_talks.py --translate-only --workers 2`，再依次跑 `build_talks.py` → `align_words.py` → `build_vocab.py`，改动的句子起点不变，不用重切原声。
-2. **首播速度**（2026-09-28 实测，本机走代理且后台在上传：BBC 约 4.5 秒，Curious 约 19 秒）。拆开看：
-   - 到 `workers.dev` 的 TLS 握手 0.7~3.8 秒（已加 `<link rel="preconnect">` 提前握手）；
-   - 长节目 `moov` 索引 244~304KB（BBC 63KB），要整块下完才能出声；
-   - media-worker 没有边缘缓存，每次读 R2，服务端 0.3~0.6 秒。
-   方案顺序：先看预连接后的 iPhone 实测 → 仍慢就给音频换自定义域名 + worker 加 Cache API → 最后才考虑标准音质改 24kHz 重编码（索引减半，要重传 200 期）。
+2. **首播速度**：改版前本机实测 BBC 约 4.5 秒、Curious 约 19 秒（到 workers.dev 的 TLS 握手 0.7~3.8 秒 + 长节目 moov 索引 244~304KB）。已做三件事：
+   - 音频同源（`app/functions/audio` 读 R2），不再单独握手；
+   - 标准音质改 MP3，没有 moov 索引；
+   - 启动时预挂上次没听完的那集 / 今日主推（`primeTalk`），点播放时开头已经下好。
+   待 iPhone 真机实测。旧的 `media-worker`（workers.dev）已不再被前端使用，R2 里的 `v1/standard/*.m4a` 也成了孤儿，删除前要先问用户。
 3. iPhone 真机验收：safe-area、橡皮筋、横滑、双指缩放（见 `CLAUDE.md` 的 iOS PWA 清单）。
 
 ## 已知坑（接手前先看）

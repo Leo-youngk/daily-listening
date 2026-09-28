@@ -8,8 +8,8 @@
   "cover": "/covers/curious_540.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/mustafa-kemal-ataturk",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_540.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_540.m4a"
+    "standard": "/audio/v1/standard/curious_540.mp3",
+    "high": "/audio/v1/high/curious_540.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1488,7 +1488,6 @@
       "w": [1691.03,1691.27,1691.27,1691.73,1691.73,1692.09,1692.53,1692.61,1692.61,1692.85,1692.85,1693.25,1693.55,1693.75,1693.75,1693.95,1693.95,1694.13,1694.13,1694.55,1694.55,1695.01,1695.01,1695.15,1695.15,1695.41,1695.41,1695.81]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abolished": "abolish",
     "accessible": "accessible",
@@ -1881,5 +1880,6 @@
     "wonder": "wonder",
     "wonderful": "wonderful",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

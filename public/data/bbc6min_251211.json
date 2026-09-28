@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_251211.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-251211",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_251211.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_251211.m4a"
+    "standard": "/audio/v1/standard/bbc6min_251211.mp3",
+    "high": "/audio/v1/high/bbc6min_251211.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -449,7 +449,6 @@
       "w": [363.69,364.11]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "affects": "affect",
@@ -539,5 +538,6 @@
     "vision": "vision",
     "vocabulary": "vocabulary",
     "whole": "whole"
-  }
+  },
+  "wSource": "asr"
 }

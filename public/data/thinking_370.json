@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_370.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/01/12/370-what-is-the-worlds-oldest-civilisation-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_370.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_370.m4a"
+    "standard": "/audio/v1/standard/thinking_370.mp3",
+    "high": "/audio/v1/high/thinking_370.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1613,7 +1613,6 @@
       "w": [1652.39,1652.67,1652.67,1652.99,1652.99,1653.19,1653.19,1653.61,1653.61,1654.23,1654.85,1655.19,1655.19,1655.37,1655.37,1655.83,1655.83,1656.37,1656.37,1656.73,1656.73,1657.07,1657.07,1657.53]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -1949,5 +1948,6 @@
     "wheel": "wheel",
     "worship": "worship",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

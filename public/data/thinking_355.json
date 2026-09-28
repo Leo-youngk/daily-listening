@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_355.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/09/29/355-my-greatest-language-challenge-learning-to-drive-in-another-language-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_355.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_355.m4a"
+    "standard": "/audio/v1/standard/thinking_355.mp3",
+    "high": "/audio/v1/high/thinking_355.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1389,7 +1389,6 @@
       "w": [1334.57,1334.79,1334.79,1334.93,1334.93,1335.11,1335.11,1335.39,1335.39,1335.59,1335.59,1335.87,1335.87,1336.39,1336.39,1336.93,1336.93,1337.07,1337.07,1337.35,1337.35,1337.89]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absorb": "absorb",
     "abstract": "abstract",
@@ -1630,5 +1629,6 @@
     "wheel": "wheel",
     "whenever": "whenever",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

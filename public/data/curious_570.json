@@ -8,8 +8,8 @@
   "cover": "/covers/curious_570.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/doge-elon-musk",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_570.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_570.m4a"
+    "standard": "/audio/v1/standard/curious_570.mp3",
+    "high": "/audio/v1/high/curious_570.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1216,7 +1216,6 @@
       "w": [1709.03,1709.19,1709.19,1709.69,1709.69,1710.07,1710.47,1710.57,1710.57,1710.87,1710.87,1711.31,1711.59,1711.79,1711.79,1711.97,1711.97,1712.17,1712.17,1712.57,1712.57,1713.13,1713.13,1713.25,1713.25,1713.53,1713.53,1713.85]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absolute": "absolute",
     "access": "access",
@@ -1628,5 +1627,6 @@
     "won": "win",
     "wonderful": "wonderful",
     "wondering": "wonder"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/curious_558.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/hannibal",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_558.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_558.m4a"
+    "standard": "/audio/v1/standard/curious_558.mp3",
+    "high": "/audio/v1/high/curious_558.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1528,7 +1528,6 @@
       "w": [1654.53,1654.77,1654.77,1655.37,1655.37,1655.97,1656.03,1656.11,1656.11,1656.35,1656.35,1656.77,1656.95,1657.23,1657.23,1657.45,1657.45,1657.63,1657.63,1658.01,1658.01,1658.49,1658.49,1658.63,1658.63,1658.95,1658.95,1659.39]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absorbed": "absorb",
     "according": "accord",
@@ -1935,5 +1934,6 @@
     "wood": "wood",
     "worst": "worst",
     "youth": "youth"
-  }
+  },
+  "wSource": "asr"
 }

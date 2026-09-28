@@ -76,9 +76,10 @@ def check_meta(slug, talk, rep):
     if not isinstance(urls, dict):
         rep.error(where, "audioUrls 不是对象")
     else:
-        for quality in ("standard", "high"):
+        # 同源 /audio/v1/<音质>/<slug>.<后缀>：标准音质是 MP3（起播不用等 moov 索引），高音质是原始 m4a
+        for quality, ext in (("standard", "mp3"), ("high", "m4a")):
             value = urls.get(quality)
-            if not isinstance(value, str) or not value.startswith("http"):
+            if value != "/audio/v1/%s/%s.%s" % (quality, talk.get("slug"), ext):
                 rep.error(where, "audioUrls.%s 非法：%r" % (quality, value))
 
     cover = talk.get("cover")
@@ -190,8 +191,9 @@ def check_sentences(slug, talk, rep):
             rep.warn(tag, "w 超出句界：[%.2f,%.2f] vs [%.2f,%.2f]"
                      % (words[0], words[-1], start, end))
 
-    if 0 < stat["with_w"] < stat["n"]:
-        rep.warn(where, "词级时间轴只覆盖 %d/%d 句" % (stat["with_w"], stat["n"]))
+    # 逐词高亮与跟读同步线全靠 w；build_talks 会整篇重写数据，忘了接着跑 align_words 时 w 会整批丢掉
+    if stat["with_w"] < stat["n"]:
+        rep.error(where, "词级时间轴只覆盖 %d/%d 句（build_talks 之后要重跑 align_words）" % (stat["with_w"], stat["n"]))
     if stat["with_w"] and "wSource" not in talk:
         rep.error(where, "有词级时间轴却没有 wSource")
     if talk.get("wSource") and not stat["with_w"]:

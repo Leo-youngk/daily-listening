@@ -8,8 +8,8 @@
   "cover": "/covers/curious_567.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/silk-road",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_567.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_567.m4a"
+    "standard": "/audio/v1/standard/curious_567.mp3",
+    "high": "/audio/v1/high/curious_567.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash",
@@ -1032,7 +1032,6 @@
       "w": [1380.88,1381.16,1381.16,1381.62,1381.62,1381.96,1382.36,1382.46,1382.46,1382.74,1382.74,1383.16,1383.42,1383.66,1383.66,1383.86,1383.86,1384.06,1384.06,1384.44,1384.44,1384.92,1384.92,1385.06,1385.06,1385.34,1385.34,1385.74]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abolish": "abolish",
     "access": "access",
@@ -1362,5 +1361,6 @@
     "whatever": "whatever",
     "wonderful": "wonderful",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

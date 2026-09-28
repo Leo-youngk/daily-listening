@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_390.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/06/01/390-what-are-the-new-seven-wonders-of-the-world-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_390.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_390.m4a"
+    "standard": "/audio/v1/standard/thinking_390.mp3",
+    "high": "/audio/v1/high/thinking_390.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1813,7 +1813,6 @@
       "w": [1735.12,1735.22,1735.22,1735.34,1735.34,1735.54,1735.54,1735.94,1735.94,1736.16,1736.16,1736.34,1736.34,1736.54,1736.54,1736.94,1737.18,1737.56,1737.56,1737.7,1737.7,1737.9,1737.9,1738.48]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abandoned": "abandon",
     "access": "access",
@@ -2207,5 +2206,6 @@
     "wonders": "wonder",
     "writing": "writing",
     "writings": "writing"
-  }
+  },
+  "wSource": "asr"
 }

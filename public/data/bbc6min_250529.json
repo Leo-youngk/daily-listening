@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250529.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250529",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250529.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250529.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250529.mp3",
+    "high": "/audio/v1/high/bbc6min_250529.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -501,7 +501,6 @@
       "w": [366.65,366.95]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "alter": "alter",
@@ -585,5 +584,6 @@
     "vocabulary": "vocabulary",
     "wheat": "wheat",
     "wonderful": "wonderful"
-  }
+  },
+  "wSource": "asr"
 }

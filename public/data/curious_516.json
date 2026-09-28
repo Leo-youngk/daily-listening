@@ -8,8 +8,8 @@
   "cover": "/covers/curious_516.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/underwater-exploration",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_516.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_516.m4a"
+    "standard": "/audio/v1/standard/curious_516.mp3",
+    "high": "/audio/v1/high/curious_516.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -864,7 +864,6 @@
       "w": [1351.31,1351.65,1351.65,1351.77,1351.77,1352.11,1352.11,1352.35,1352.35,1352.75,1352.75,1353.07,1353.07,1353.37,1353.37,1353.79,1353.79,1354.41,1354.41,1354.79,1354.79,1355.09,1355.09,1355.51]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abundance": "abundance",
     "achieve": "achieve",
@@ -1167,5 +1166,6 @@
     "wood": "wood",
     "wooden": "wooden",
     "writer": "writer"
-  }
+  },
+  "wSource": "asr"
 }

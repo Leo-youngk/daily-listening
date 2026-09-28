@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_350.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/08/25/350-the-ship-of-theseus-what-makes-something-truly-the-same-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_350.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_350.m4a"
+    "standard": "/audio/v1/standard/thinking_350.mp3",
+    "high": "/audio/v1/high/thinking_350.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -969,7 +969,6 @@
       "w": [938.45,938.61,938.61,938.75,938.75,939.03,939.03,939.24,939.24,939.44,939.44,939.65,939.65,939.87,960.92,961.02,961.02,961.62,961.62,962.22,962.22,962.82]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "amazing": "amaze",
@@ -1137,5 +1136,6 @@
     "worthy": "worthy",
     "writer": "writer",
     "youth": "youth"
-  }
+  },
+  "wSource": "asr"
 }

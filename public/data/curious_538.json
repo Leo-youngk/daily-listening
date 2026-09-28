@@ -8,8 +8,8 @@
   "cover": "/covers/curious_538.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/percy-fawcett",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_538.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_538.m4a"
+    "standard": "/audio/v1/standard/curious_538.mp3",
+    "high": "/audio/v1/high/curious_538.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1088,7 +1088,6 @@
       "w": [1408.71,1408.95,1408.95,1409.55,1409.55,1410.15,1410.21,1410.41,1410.41,1410.73,1410.73,1411.17,1411.51,1411.77,1411.77,1411.97,1411.97,1412.19,1412.19,1412.61,1412.61,1413.09,1413.09,1413.23,1413.23,1413.53,1413.53,1413.97]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "academy": "academy",
     "advanced": "advance",
@@ -1474,5 +1473,6 @@
     "wonderful": "wonderful",
     "worms": "worm",
     "zone": "zone"
-  }
+  },
+  "wSource": "asr"
 }

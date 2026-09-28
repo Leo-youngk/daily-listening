@@ -8,8 +8,8 @@
   "cover": "/covers/curious_545.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/lawrence-arabia",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_545.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_545.m4a"
+    "standard": "/audio/v1/standard/curious_545.mp3",
+    "high": "/audio/v1/high/curious_545.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -1248,7 +1248,6 @@
       "w": [1473.58,1473.8,1473.8,1474.26,1474.26,1474.62,1475.08,1475.16,1475.16,1475.44,1475.44,1475.88,1476.18,1476.36,1476.36,1476.56,1476.56,1476.74,1476.74,1477.14,1477.14,1477.6,1477.6,1477.74,1477.74,1478.04,1478.04,1478.48]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abandoned": "abandon",
     "absolute": "absolute",
@@ -1625,5 +1624,6 @@
     "win": "win",
     "withdrew": "withdraw",
     "wonderful": "wonderful"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_372.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/01/26/372-does-history-repeat-itself-prepositions-of-time-english-grammar-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_372.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_372.m4a"
+    "standard": "/audio/v1/standard/thinking_372.mp3",
+    "high": "/audio/v1/high/thinking_372.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -936,7 +936,6 @@
       "w": [956.32,956.48,956.48,956.92,956.92,957.5,957.5,957.88,957.88,958.22,958.22,958.7,959.32,959.6,959.6,959.76,959.76,959.98,959.98,960.22,960.22,960.48,960.48,960.86,960.86,961.52,961.52,961.72,961.72,962.02]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "advanced": "advance",
@@ -1140,5 +1139,6 @@
     "wars": "war",
     "widespread": "widespread",
     "within": "within"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_361.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/11/10/361-what-are-idioms-euphemisms-and-slang-and-should-you-learn-them-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_361.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_361.m4a"
+    "standard": "/audio/v1/standard/thinking_361.mp3",
+    "high": "/audio/v1/high/thinking_361.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1293,7 +1293,6 @@
       "w": [1392.04,1392.58,1392.58,1392.86,1392.86,1393.12,1393.12,1393.82,1393.82,1394.16,1394.16,1394.7,1394.7,1395.26,1395.26,1395.84,1395.84,1396.0,1396.0,1396.54,1396.54,1396.96,1396.96,1397.2,1397.2,1397.56,1397.7,1397.82,1397.82,1398.08,1398.08,1398.54]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "academic": "academic",
     "actually": "actually",
@@ -1525,5 +1524,6 @@
     "videos": "video",
     "vocabulary": "vocabulary",
     "widely": "widely"
-  }
+  },
+  "wSource": "asr"
 }

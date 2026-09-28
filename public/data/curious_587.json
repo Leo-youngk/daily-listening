@@ -8,8 +8,8 @@
   "cover": "/covers/curious_587.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/2025-words-of-the-year",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_587.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_587.m4a"
+    "standard": "/audio/v1/standard/curious_587.mp3",
+    "high": "/audio/v1/high/curious_587.m4a"
   },
   "zhSource": "mt",
   "zhModel": "claude-sonnet-5",
@@ -1040,7 +1040,6 @@
       "w": [1237.1,1237.28,1237.28,1237.62,1237.62,1238.02,1238.46,1238.54,1238.54,1238.88,1238.88,1239.32,1239.72,1239.92,1239.92,1240.08,1240.08,1240.26,1240.26,1240.62,1240.62,1241.12,1241.12,1241.26,1241.26,1241.54,1241.54,1241.98]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -1293,5 +1292,6 @@
     "winner": "winner",
     "wonderful": "wonderful",
     "wondering": "wonder"
-  }
+  },
+  "wSource": "asr"
 }

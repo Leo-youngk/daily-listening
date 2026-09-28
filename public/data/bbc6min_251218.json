@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_251218.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-251218",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_251218.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_251218.m4a"
+    "standard": "/audio/v1/standard/bbc6min_251218.mp3",
+    "high": "/audio/v1/high/bbc6min_251218.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -449,7 +449,6 @@
       "w": [364.78,364.92,364.92,365.02,365.02,365.26,365.26,365.64,366.02,366.08,366.08,366.22,366.22,366.48,366.86,367.12]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "cap": "cap",
@@ -530,5 +529,6 @@
     "vocabulary": "vocabulary",
     "wild": "wild",
     "wondering": "wonder"
-  }
+  },
+  "wSource": "asr"
 }

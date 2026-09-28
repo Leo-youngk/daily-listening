@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_388.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/05/18/388-is-the-american-dream-dead-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_388.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_388.m4a"
+    "standard": "/audio/v1/standard/thinking_388.mp3",
+    "high": "/audio/v1/high/thinking_388.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1317,7 +1317,6 @@
       "w": [1392.19,1392.51,1392.51,1392.73,1392.73,1393.19,1393.19,1393.71,1393.71,1394.31,1394.31,1394.45,1394.45,1394.67,1394.67,1395.19,1395.19,1395.61,1395.61,1395.87,1395.87,1396.35,1396.35,1396.75]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "academics": "academic",
     "accessible": "accessible",
@@ -1551,5 +1550,6 @@
     "wealthier": "wealthy",
     "wealthy": "wealthy",
     "wherever": "wherever"
-  }
+  },
+  "wSource": "asr"
 }

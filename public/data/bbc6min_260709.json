@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260709.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260709",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260709.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260709.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260709.mp3",
+    "high": "/audio/v1/high/bbc6min_260709.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-flash-lite-latest",
@@ -489,7 +489,6 @@
       "w": [365.0,365.05,365.04,365.18,365.18,365.42,365.7,365.98]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accessible": "accessible",
     "alternative": "alternative",
@@ -585,5 +584,6 @@
     "visitors": "visitor",
     "vocabulary": "vocabulary",
     "within": "within"
-  }
+  },
+  "wSource": "asr"
 }

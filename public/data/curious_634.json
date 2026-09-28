@@ -8,8 +8,8 @@
   "cover": "/covers/curious_634.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/nuclear-comeback",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_634.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_634.m4a"
+    "standard": "/audio/v1/standard/curious_634.mp3",
+    "high": "/audio/v1/high/curious_634.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash",
@@ -1144,7 +1144,6 @@
       "w": [1398.55,1398.73,1398.73,1399.13,1399.13,1399.47,1399.87,1399.97,1399.97,1400.33,1400.33,1400.75,1401.03,1401.41,1401.41,1401.71,1401.71,1401.91,1401.91,1402.27,1402.27,1402.83,1402.83,1403.05,1403.05,1403.31,1403.31,1403.67]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "alternative": "alternative",
@@ -1429,5 +1428,6 @@
     "wonderful": "wonderful",
     "worse": "worse",
     "wrap": "wrap"
-  }
+  },
+  "wSource": "asr"
 }

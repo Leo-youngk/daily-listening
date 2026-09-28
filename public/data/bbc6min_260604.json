@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260604.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260604",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260604.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260604.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260604.mp3",
+    "high": "/audio/v1/high/bbc6min_260604.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-flash-lite-latest",
@@ -497,7 +497,6 @@
       "w": [364.62,364.92]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "affect": "affect",
@@ -591,5 +590,6 @@
     "vocabulary": "vocabulary",
     "whale": "whale",
     "worse": "worse"
-  }
+  },
+  "wSource": "asr"
 }

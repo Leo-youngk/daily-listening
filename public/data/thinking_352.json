@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_352.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/09/08/352-what-is-the-united-nations-security-council-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_352.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_352.m4a"
+    "standard": "/audio/v1/standard/thinking_352.mp3",
+    "high": "/audio/v1/high/thinking_352.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -689,7 +689,6 @@
       "w": [1041.36,1041.48,1041.48,1041.62,1041.62,1041.86,1041.86,1042.18,1042.18,1043.16,1043.16,1043.42,1043.42,1043.8,1043.8,1044.36,1044.36,1045.34,1045.34,1045.7,1045.7,1045.86,1045.86,1046.02,1046.02,1046.34,1046.34,1046.64,1046.64,1047.1,1047.1,1047.38,1048.08,1048.44,1048.44,1049.04,1049.04,1049.14,1049.14,1049.48,1049.48,1049.88,1049.88,1050.26,1050.26,1050.74,1050.74,1050.86,1050.86,1051.26]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accused": "accuse",
     "achieve": "achieve",
@@ -880,5 +879,6 @@
     "weapons": "weapon",
     "whole": "whole",
     "winning": "win"
-  }
+  },
+  "wSource": "asr"
 }

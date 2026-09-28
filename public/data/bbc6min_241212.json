@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_241212.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-241212",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_241212.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_241212.m4a"
+    "standard": "/audio/v1/standard/bbc6min_241212.mp3",
+    "high": "/audio/v1/high/bbc6min_241212.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -465,7 +465,6 @@
       "w": [363.79,363.97,363.97,364.13,364.13,364.33,364.33,364.69,364.85,365.07,365.07,365.27,365.27,365.45,365.59,365.95]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "additional": "additional",
@@ -519,5 +518,6 @@
     "used": "used",
     "useful": "useful",
     "vocabulary": "vocabulary"
-  }
+  },
+  "wSource": "asr"
 }

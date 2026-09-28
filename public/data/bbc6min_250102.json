@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250102.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250102",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250102.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250102.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250102.mp3",
+    "high": "/audio/v1/high/bbc6min_250102.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -441,7 +441,6 @@
       "w": [363.46,363.64,363.64,363.76,363.76,363.9,363.9,364.28,364.88,365.44]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accurate": "accurate",
     "actually": "actually",
@@ -498,5 +497,6 @@
     "useful": "useful",
     "vocabulary": "vocabulary",
     "weak": "weak"
-  }
+  },
+  "wSource": "asr"
 }

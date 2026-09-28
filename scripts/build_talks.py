@@ -29,7 +29,8 @@ SUBS_DIR = os.path.join(ROOT, "public", "subs")
 AUDIO_DIR = os.path.join(ROOT, "public", "audio")
 COVERS_DIR = os.path.join(ROOT, "public", "covers")
 EPISODES = os.path.join(HERE, "corpus", "episodes.json")
-MEDIA_BASE_URL = os.environ.get("MEDIA_BASE_URL", "https://daily-listening-media.if5v.workers.dev").rstrip("/")
+# 音频与页面同源：Pages Functions 的 /audio/* 直接读 R2（app/functions/audio），省掉单独一个域名的 TLS 握手
+MEDIA_BASE = "/audio"
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 DURATION_RE = re.compile(r"Duration:\s*(\d+):(\d+):(\d+(?:\.\d+)?)")
 
@@ -116,8 +117,8 @@ def build(ep):
         "cover": cover,
         "sourceUrl": ep.get("sourceUrl"),
         "audioUrls": {
-            "standard": f"{MEDIA_BASE_URL}/v1/standard/{slug}.m4a",
-            "high": f"{MEDIA_BASE_URL}/v1/high/{slug}.m4a",
+            "standard": f"{MEDIA_BASE}/v1/standard/{slug}.mp3",
+            "high": f"{MEDIA_BASE}/v1/high/{slug}.m4a",
         },
         "zhSource": "mt",
         "zhModel": model,

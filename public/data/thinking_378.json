@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_378.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/03/09/378-moving-to-the-uk-uks-new-immigration-policies-explained-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_378.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_378.m4a"
+    "standard": "/audio/v1/standard/thinking_378.mp3",
+    "high": "/audio/v1/high/thinking_378.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1461,7 +1461,6 @@
       "w": [1478.12,1478.22,1478.22,1478.46,1478.46,1478.92,1478.92,1480.0,1480.0,1480.52,1480.52,1481.4,1481.4,1481.78,1481.78,1482.24,1482.24,1482.86,1482.86,1483.46,1483.46,1483.74,1483.74,1484.1]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "achieve": "achieve",
     "actually": "actually",
@@ -1759,5 +1758,6 @@
     "weaker": "weak",
     "widely": "widely",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

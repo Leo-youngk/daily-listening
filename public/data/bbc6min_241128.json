@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_241128.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-241128",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_241128.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_241128.m4a"
+    "standard": "/audio/v1/standard/bbc6min_241128.mp3",
+    "high": "/audio/v1/high/bbc6min_241128.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -457,7 +457,6 @@
       "w": [364.52,364.94,365.28,365.54]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "ambiguous": "ambiguous",
@@ -525,5 +524,6 @@
     "usual": "usual",
     "view": "view",
     "vocabulary": "vocabulary"
-  }
+  },
+  "wSource": "asr"
 }

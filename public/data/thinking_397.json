@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_397.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/07/20/397-who-will-be-the-next-prime-minister-of-the-uk-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_397.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_397.m4a"
+    "standard": "/audio/v1/standard/thinking_397.mp3",
+    "high": "/audio/v1/high/thinking_397.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1725,7 +1725,6 @@
       "w": [1739.53,1739.85,1739.85,1740.29,1740.29,1740.71,1740.71,1741.07,1741.07,1741.49,1741.49,1741.67,1741.67,1742.17]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abandon": "abandon",
     "abused": "abuse",
@@ -2045,5 +2044,6 @@
     "won": "win",
     "worse": "worse",
     "worst": "worst"
-  }
+  },
+  "wSource": "asr"
 }

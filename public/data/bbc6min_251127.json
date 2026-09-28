@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_251127.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-251127",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_251127.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_251127.m4a"
+    "standard": "/audio/v1/standard/bbc6min_251127.mp3",
+    "high": "/audio/v1/high/bbc6min_251127.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -465,7 +465,6 @@
       "w": [367.18,367.23]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "allegations": "allegation",
     "available": "available",
@@ -537,5 +536,6 @@
     "verb": "verb",
     "vocabulary": "vocabulary",
     "win": "win"
-  }
+  },
+  "wSource": "asr"
 }

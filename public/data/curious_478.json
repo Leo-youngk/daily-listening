@@ -8,8 +8,8 @@
   "cover": "/covers/curious_478.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/uk-general-election",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_478.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_478.m4a"
+    "standard": "/audio/v1/standard/curious_478.mp3",
+    "high": "/audio/v1/high/curious_478.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -808,7 +808,6 @@
       "w": [1206.18,1206.4,1206.4,1206.84,1206.84,1207.23,1207.23,1207.61,1207.61,1208.0,1208.0,1208.4,1208.74,1208.94,1208.94,1209.12,1209.12,1209.32,1209.32,1209.78,1209.78,1210.32,1210.32,1210.46,1210.46,1210.84,1210.84,1211.3]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "affected": "affect",
@@ -1017,5 +1016,6 @@
     "won": "win",
     "wonderful": "wonderful",
     "worse": "worse"
-  }
+  },
+  "wSource": "asr"
 }

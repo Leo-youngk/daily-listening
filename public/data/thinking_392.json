@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_392.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/06/15/392-history-of-warsaw-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_392.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_392.m4a"
+    "standard": "/audio/v1/standard/thinking_392.mp3",
+    "high": "/audio/v1/high/thinking_392.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1453,7 +1453,6 @@
       "w": [1464.06,1464.36,1464.36,1464.56,1464.56,1464.96,1464.96,1465.26,1465.26,1465.38,1465.38,1465.58,1465.58,1465.94,1465.94,1466.28,1466.28,1466.5,1466.5,1466.94]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absolute": "absolute",
     "according": "accord",
@@ -1792,5 +1791,6 @@
     "within": "within",
     "wood": "wood",
     "worst": "worst"
-  }
+  },
+  "wSource": "asr"
 }

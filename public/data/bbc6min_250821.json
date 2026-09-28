@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250821.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250821",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250821.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250821.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250821.mp3",
+    "high": "/audio/v1/high/bbc6min_250821.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -417,7 +417,6 @@
       "w": [364.41,364.59,364.59,364.67,364.67,364.81,364.81,365.19,365.51,365.93]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -509,5 +508,6 @@
     "vocabulary": "vocabulary",
     "weekly": "weekly",
     "whatever": "whatever"
-  }
+  },
+  "wSource": "asr"
 }

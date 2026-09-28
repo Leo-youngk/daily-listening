@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250327.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250327",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250327.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250327.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250327.mp3",
+    "high": "/audio/v1/high/bbc6min_250327.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -545,7 +545,6 @@
       "w": [363.0,363.28,363.28,364.8,364.8,365.72]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -638,5 +637,6 @@
     "vocabulary": "vocabulary",
     "weaker": "weak",
     "wood": "wood"
-  }
+  },
+  "wSource": "asr"
 }

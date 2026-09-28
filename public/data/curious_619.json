@@ -8,8 +8,8 @@
   "cover": "/covers/curious_619.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/wyatt-earp",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_619.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_619.m4a"
+    "standard": "/audio/v1/standard/curious_619.mp3",
+    "high": "/audio/v1/high/curious_619.m4a"
   },
   "zhSource": "mt",
   "zhModel": "claude-sonnet-5",
@@ -1240,7 +1240,6 @@
       "w": [1378.25,1378.45,1378.45,1379.05,1379.05,1379.65,1379.67,1379.73,1379.73,1380.07,1380.07,1380.51,1380.93,1381.03,1381.03,1381.21,1381.21,1381.43,1381.43,1381.85,1381.85,1382.33,1382.33,1382.45,1382.45,1382.67,1382.67,1383.05]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absence": "absence",
     "absorbing": "absorb",
@@ -1557,5 +1556,6 @@
     "wounded": "wound",
     "wrap": "wrap",
     "writer": "writer"
-  }
+  },
+  "wSource": "asr"
 }

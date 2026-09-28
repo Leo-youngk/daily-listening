@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_381.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/03/30/381-easter-island-mystery-moai-and-the-edge-of-the-world-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_381.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_381.m4a"
+    "standard": "/audio/v1/standard/thinking_381.mp3",
+    "high": "/audio/v1/high/thinking_381.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1301,7 +1301,6 @@
       "w": [1212.67,1212.87,1212.87,1212.97,1212.97,1213.13,1213.13,1213.43,1213.43,1214.11,1214.11,1214.59,1214.59,1215.53,1215.53,1216.33,1216.33,1216.87,1216.87,1217.51,1217.51,1218.17,1218.17,1218.75,1218.75,1219.41]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accidental": "accidental",
     "according": "accord",
@@ -1596,5 +1595,6 @@
     "wheels": "wheel",
     "wooden": "wooden",
     "worse": "worse"
-  }
+  },
+  "wSource": "asr"
 }

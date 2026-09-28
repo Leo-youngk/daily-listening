@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_367.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/12/22/367-the-strange-story-of-christmas-island-exploitation-occupation-and-refugees-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_367.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_367.m4a"
+    "standard": "/audio/v1/standard/thinking_367.mp3",
+    "high": "/audio/v1/high/thinking_367.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -841,7 +841,6 @@
       "w": [1009.65,1010.55,1010.55,1011.09,1011.09,1011.33,1011.33,1012.05,1012.05,1012.65,1012.65,1013.11,1013.11,1013.65,1013.65,1014.05,1014.05,1014.45,1014.45,1014.61,1014.61,1014.93,1014.93,1015.47]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accommodate": "accommodate",
     "accommodation": "accommodation",
@@ -1055,5 +1054,6 @@
     "vocabulary": "vocabulary",
     "war": "war",
     "wound": "wound"
-  }
+  },
+  "wSource": "asr"
 }

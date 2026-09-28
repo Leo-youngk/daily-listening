@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import type { Plugin } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 import { execSync } from 'node:child_process'
 import react from '@vitejs/plugin-react'
@@ -14,12 +15,36 @@ function buildSha(): string {
   }
 }
 
+/**
+ * 本地开发没有 Pages Functions（线上 /audio/* 由 functions/audio 读 R2）。
+ * 这里把 /audio/v1/... 映射到本机的真实文件：整集音频用 public/audio 的源文件
+ * （本地没有转码后的标准音质 MP3，两档都用同一集的 m4a 源文件），切句原声用 media-build/clips。
+ * 只在 vite dev 生效，不进构建产物。
+ */
+function localAudio(): Plugin {
+  const root = fileURLToPath(new URL('..', import.meta.url)).replace(/\\/g, '/')
+  return {
+    name: 'local-audio',
+    apply: 'serve',
+    configureServer(server) {
+      server.middlewares.use((req, _res, next) => {
+        const episode = req.url?.match(/^\/audio\/v1\/(?:standard|high)\/([a-z0-9_-]+)\.(?:mp3|m4a)$/)
+        if (episode) req.url = `/audio/${episode[1]}.m4a`
+        const clip = req.url?.match(/^\/audio\/v1\/clips\/([a-z0-9_-]+\/\d+-\d+\.m4a)$/)
+        if (clip) req.url = `/@fs/${root}media-build/clips/${clip[1]}`
+        next()
+      })
+    },
+  }
+}
+
 export default defineConfig({
   define: {
     __BUILD_SHA__: JSON.stringify(buildSha()),
     __BUILD_TIME__: JSON.stringify(new Date().toISOString().slice(0, 16).replace('T', ' ')),
   },
   plugins: [
+    localAudio(),
     react(),
     tailwindcss(),
     VitePWA({
@@ -49,7 +74,7 @@ export default defineConfig({
         cleanupOutdatedCaches: true,
         navigateFallback: 'index.html',
         // 缺失的数据/词典要真的 404，不能回落成 index.html
-        navigateFallbackDenylist: [/^\/api\//, /^\/data\//, /^\/dict\//, /^\/wordbook\//, /^\/examples\//],
+        navigateFallbackDenylist: [/^\/api\//, /^\/audio\//, /^\/data\//, /^\/dict\//, /^\/wordbook\//, /^\/examples\//],
         runtimeCaching: [
           {
             urlPattern: /\/data\/.*\.json$/,

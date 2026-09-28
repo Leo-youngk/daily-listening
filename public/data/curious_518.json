@@ -8,8 +8,8 @@
   "cover": "/covers/curious_518.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/early-nuclear",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_518.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_518.m4a"
+    "standard": "/audio/v1/standard/curious_518.mp3",
+    "high": "/audio/v1/high/curious_518.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -832,7 +832,6 @@
       "w": [1138.25,1138.45,1138.45,1138.93,1138.93,1139.29,1139.77,1139.85,1139.85,1140.11,1140.11,1140.51,1140.83,1141.09,1141.09,1141.25,1141.25,1141.45,1141.45,1141.85,1141.85,1142.37,1142.37,1142.49,1142.49,1142.77,1142.77,1143.17]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "allies": "ally",
     "alternative": "alternative",
@@ -1135,5 +1134,6 @@
     "wisdom": "wisdom",
     "wonderful": "wonderful",
     "worst": "worst"
-  }
+  },
+  "wSource": "asr"
 }

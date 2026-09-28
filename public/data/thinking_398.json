@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_398.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/07/27/398-why-does-canada-speak-french-and-english-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_398.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_398.m4a"
+    "standard": "/audio/v1/standard/thinking_398.mp3",
+    "high": "/audio/v1/high/thinking_398.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1949,7 +1949,6 @@
       "w": [1884.62,1884.78,1884.78,1884.88,1884.88,1885.02,1885.02,1885.24,1885.24,1885.98,1885.98,1886.68,1886.68,1887.3]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abandon": "abandon",
     "abuses": "abuse",
@@ -2342,5 +2341,6 @@
     "whereas": "whereas",
     "within": "within",
     "wooden": "wooden"
-  }
+  },
+  "wSource": "asr"
 }

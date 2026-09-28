@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_400.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/08/10/400-history-of-rio-de-janeiro-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_400.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_400.m4a"
+    "standard": "/audio/v1/standard/thinking_400.mp3",
+    "high": "/audio/v1/high/thinking_400.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1341,7 +1341,6 @@
       "w": [1305.75,1306.03,1306.03,1306.59,1306.59,1306.97,1306.97,1307.27,1307.27,1307.39,1307.39,1307.51,1307.51,1307.69,1307.69,1308.13,1308.13,1308.47,1308.47,1308.69,1308.69,1309.17]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abandon": "abandon",
     "abolish": "abolish",
@@ -1650,5 +1649,6 @@
     "won": "win",
     "wonder": "wonder",
     "wonders": "wonder"
-  }
+  },
+  "wSource": "asr"
 }

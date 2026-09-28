@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_386.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/05/04/386-who-was-leonardo-da-vinci-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_386.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_386.m4a"
+    "standard": "/audio/v1/standard/thinking_386.mp3",
+    "high": "/audio/v1/high/thinking_386.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1165,7 +1165,6 @@
       "w": [1086.0,1086.26,1086.26,1086.44,1086.44,1086.72,1086.72,1087.08,1087.08,1087.52,1087.52,1087.86,1087.86,1088.46,1088.46,1089.06,1089.06,1089.66,1089.66,1090.26,1091.68,1091.74,1091.74,1092.34]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "academics": "academic",
     "accurate": "accurate",
@@ -1417,5 +1416,6 @@
     "workshop": "workshop",
     "workshops": "workshop",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

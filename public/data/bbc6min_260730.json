@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260730.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260730",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260730.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260730.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260730.mp3",
+    "high": "/audio/v1/high/bbc6min_260730.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-flash-lite-latest",
@@ -473,7 +473,6 @@
       "w": [366.57,366.89]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "aim": "aim",
@@ -572,5 +571,6 @@
     "vocabulary": "vocabulary",
     "win": "win",
     "won": "win"
-  }
+  },
+  "wSource": "asr"
 }

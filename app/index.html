@@ -10,10 +10,6 @@
     <meta name="apple-mobile-web-app-title" content="每日听力" />
     <link rel="icon" href="/icons/icon-192.png" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />
-    <!-- 音频源站提前握手：首播前的 TLS 握手实测 0.7~3.8 秒。
-         <audio> 走非 CORS 连接、原声切片的 fetch 走 CORS 连接，两个连接池分开，所以各预连一次 -->
-    <link rel="preconnect" href="https://daily-listening-media.if5v.workers.dev" />
-    <link rel="preconnect" href="https://daily-listening-media.if5v.workers.dev" crossorigin />
     <title>每日听力</title>
   </head>
   <body>

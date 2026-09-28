@@ -8,8 +8,8 @@
   "cover": "/covers/curious_585.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/ai-vs-planet",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_585.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_585.m4a"
+    "standard": "/audio/v1/standard/curious_585.mp3",
+    "high": "/audio/v1/high/curious_585.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -832,7 +832,6 @@
       "w": [1247.01,1247.21,1247.21,1247.57,1247.57,1247.91,1248.33,1248.39,1248.39,1248.63,1248.63,1249.01,1249.31,1249.53,1249.53,1249.69,1249.69,1249.89,1249.89,1250.23,1250.23,1250.81,1250.81,1250.91,1250.91,1251.15,1251.15,1251.49]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -1076,5 +1075,6 @@
     "wondering": "wonder",
     "worst": "worst",
     "wrap": "wrap"
-  }
+  },
+  "wSource": "asr"
 }

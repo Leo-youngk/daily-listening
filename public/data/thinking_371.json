@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_371.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/01/19/371-charles-darwin-greatest-scientist-of-all-time-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_371.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_371.m4a"
+    "standard": "/audio/v1/standard/thinking_371.mp3",
+    "high": "/audio/v1/high/thinking_371.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1237,7 +1237,6 @@
       "w": [1233.83,1234.07,1234.07,1234.27,1234.27,1234.41,1234.41,1234.63,1234.63,1235.01,1235.01,1235.37,1235.37,1235.57,1235.57,1236.01]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "adapt": "adapt",
     "adapts": "adapt",
@@ -1557,5 +1556,6 @@
     "wealthy": "wealthy",
     "witnessed": "witness",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

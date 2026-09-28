@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250227.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250227",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250227.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250227.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250227.mp3",
+    "high": "/audio/v1/high/bbc6min_250227.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -393,7 +393,6 @@
       "w": [364.76,365.32]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "affected": "affect",
@@ -483,5 +482,6 @@
     "vocabulary": "vocabulary",
     "whereas": "whereas",
     "wonder": "wonder"
-  }
+  },
+  "wSource": "asr"
 }

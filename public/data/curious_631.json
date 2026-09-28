@@ -8,8 +8,8 @@
   "cover": "/covers/curious_631.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/milgram-experiment",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_631.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_631.m4a"
+    "standard": "/audio/v1/standard/curious_631.mp3",
+    "high": "/audio/v1/high/curious_631.m4a"
   },
   "zhSource": "mt",
   "zhModel": "claude-sonnet-5",
@@ -1432,7 +1432,6 @@
       "w": [1590.47,1591.37,1591.37,1591.81,1591.81,1592.17,1592.67,1592.77,1592.77,1593.07,1593.07,1593.51,1593.83,1594.13,1594.13,1594.51,1594.51,1594.73,1594.73,1595.15,1595.15,1595.69,1595.69,1595.97,1595.97,1596.23,1596.23,1596.61]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "addressed": "address",
@@ -1802,5 +1801,6 @@
     "wondered": "wonder",
     "wonderful": "wonderful",
     "wrist": "wrist"
-  }
+  },
+  "wSource": "asr"
 }

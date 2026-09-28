@@ -82,13 +82,17 @@ def verify_manifest(base: str) -> None:
         )
         check(all("w" in s for s in sentences), "每句都有词级时间轴")
         check(bool(talk.get("lemmas")), "带六级词标注（lemmas）")
-        audio = talk["audioUrls"]["standard"]
-        req = urllib.request.Request(audio, headers={**HEADERS, "Range": "bytes=0-1"})
-        try:
-            with urllib.request.urlopen(req, timeout=60) as res:
-                check(res.status in (200, 206), "整集音频可访问", audio)
-        except urllib.error.HTTPError as e:
-            check(False, "整集音频可访问", f"HTTP {e.code} {audio}")
+        # 音频与页面同源（functions/audio 读 R2）；标准音质是 MP3，起播不用等 moov 索引
+        for quality, mime in (("standard", "audio/mpeg"), ("high", "audio/mp4")):
+            audio = base + talk["audioUrls"][quality]
+            req = urllib.request.Request(audio, headers={**HEADERS, "Range": "bytes=0-1"})
+            try:
+                with urllib.request.urlopen(req, timeout=60) as res:
+                    check(res.status == 206 and res.headers.get("Content-Type", "").startswith(mime),
+                          f"整集音频可访问（{quality}，{mime}，支持 Range）",
+                          f"HTTP {res.status} {res.headers.get('Content-Type')} {audio}")
+            except urllib.error.HTTPError as e:
+                check(False, f"整集音频可访问（{quality}）", f"HTTP {e.code} {audio}")
 
 
 def verify_dict(base: str) -> None:
@@ -124,7 +128,7 @@ def verify_vocab(base: str) -> None:
         return
     term, examples = next(iter(json.loads(text)["entries"].items()))
     ex = examples[0]
-    clip = f"{index['clipBase']}/{ex['s']}/{ex['i']}-{round(ex['a'] * 100)}.m4a"
+    clip = f"{base}{index['clipBase']}/{ex['s']}/{ex['i']}-{round(ex['a'] * 100)}.m4a"
     try:
         with urllib.request.urlopen(urllib.request.Request(clip, headers=HEADERS), timeout=60) as res:
             body = res.read()

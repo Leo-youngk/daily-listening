@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250619.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250619",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250619.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250619.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250619.mp3",
+    "high": "/audio/v1/high/bbc6min_250619.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -441,7 +441,6 @@
       "w": [365.42,365.54,365.54,365.72,365.72,365.94,365.94,365.99]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "advice": "advice",
     "aimed": "aim",
@@ -504,5 +503,6 @@
     "used": "used",
     "useful": "useful",
     "vocabulary": "vocabulary"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_251030.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-251030",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_251030.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_251030.m4a"
+    "standard": "/audio/v1/standard/bbc6min_251030.mp3",
+    "high": "/audio/v1/high/bbc6min_251030.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -473,7 +473,6 @@
       "w": [361.45,361.73,361.73,361.83,361.83,362.01,362.01,362.33,362.59,362.97,363.39,363.83]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -555,5 +554,6 @@
     "vocabulary": "vocabulary",
     "whereas": "whereas",
     "whole": "whole"
-  }
+  },
+  "wSource": "asr"
 }

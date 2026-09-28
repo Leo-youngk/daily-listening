@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_379.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/03/16/379-do-you-know-how-to-ask-great-questions/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_379.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_379.m4a"
+    "standard": "/audio/v1/standard/thinking_379.mp3",
+    "high": "/audio/v1/high/thinking_379.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1600,7 +1600,6 @@
       "w": [1359.35,1359.49,1359.49,1359.65,1359.65,1359.83,1359.83,1360.21,1360.99,1361.19,1361.19,1361.37,1361.37,1361.65,1361.65,1361.99,1361.99,1362.35,1362.35,1362.57,1362.57,1362.73,1362.73,1363.05,1363.05,1363.47,1363.47,1363.93,1363.93,1364.21,1364.21,1364.67,1364.67,1365.33]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "academic": "academic",
     "accuracy": "accuracy",
@@ -1853,5 +1852,6 @@
     "whatever": "whatever",
     "willing": "willing",
     "worse": "worse"
-  }
+  },
+  "wSource": "asr"
 }

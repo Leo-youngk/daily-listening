@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_251225.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-251225",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_251225.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_251225.m4a"
+    "standard": "/audio/v1/standard/bbc6min_251225.mp3",
+    "high": "/audio/v1/high/bbc6min_251225.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -553,7 +553,6 @@
       "w": [376.76,376.84,376.84,376.98,376.98,377.22,377.66,377.76]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "accuracy": "accuracy",
@@ -623,5 +622,6 @@
     "verb": "verb",
     "vocabulary": "vocabulary",
     "wonder": "wonder"
-  }
+  },
+  "wSource": "asr"
 }

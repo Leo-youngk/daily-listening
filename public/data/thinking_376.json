@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_376.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/02/23/376-who-was-alan-turing-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_376.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_376.m4a"
+    "standard": "/audio/v1/standard/thinking_376.mp3",
+    "high": "/audio/v1/high/thinking_376.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1149,7 +1149,6 @@
       "w": [1257.53,1257.79,1257.79,1258.03,1258.49,1258.75,1258.75,1258.93,1258.93,1259.03,1259.03,1259.21,1259.21,1259.57,1259.57,1259.85,1259.85,1260.05,1260.05,1260.45]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accurate": "accurate",
     "achievements": "achievement",
@@ -1466,5 +1465,6 @@
     "widely": "widely",
     "withdraw": "withdraw",
     "worse": "worse"
-  }
+  },
+  "wSource": "asr"
 }

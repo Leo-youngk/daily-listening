@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260409.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260409",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260409.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260409.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260409.mp3",
+    "high": "/audio/v1/high/bbc6min_260409.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash",
@@ -449,7 +449,6 @@
       "w": [366.24,366.46,366.46,366.6,366.6,366.82,367.08,367.38]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -564,5 +563,6 @@
     "vocabulary": "vocabulary",
     "wars": "war",
     "worst": "worst"
-  }
+  },
+  "wSource": "asr"
 }

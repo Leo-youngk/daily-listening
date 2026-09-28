@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_377.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/03/02/377-history-of-berlin-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_377.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_377.m4a"
+    "standard": "/audio/v1/standard/thinking_377.mp3",
+    "high": "/audio/v1/high/thinking_377.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1493,7 +1493,6 @@
       "w": [1579.48,1579.84,1579.84,1580.14,1580.14,1580.4,1580.4,1580.66,1580.66,1581.16,1581.16,1581.78,1581.78,1582.02,1582.02,1582.36,1582.36,1582.86,1582.86,1583.22,1583.22,1583.58,1583.58,1584.04,1584.04,1584.26,1584.26,1584.68]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "adjusted": "adjust",
@@ -1894,5 +1893,6 @@
     "wire": "wire",
     "worthless": "worthless",
     "zones": "zone"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_368.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/12/29/368-how-to-make-resolutions-for-2026-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_368.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_368.m4a"
+    "standard": "/audio/v1/standard/thinking_368.mp3",
+    "high": "/audio/v1/high/thinking_368.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1341,7 +1341,6 @@
       "w": [1165.19,1165.37,1165.37,1165.83,1165.83,1166.23,1166.23,1166.35,1166.35,1166.49,1166.49,1166.77,1166.77,1167.19,1167.19,1167.67]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absent": "absent",
     "academic": "academic",
@@ -1529,5 +1528,6 @@
     "vocabulary": "vocabulary",
     "vowel": "vowel",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

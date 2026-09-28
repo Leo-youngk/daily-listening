@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_351.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/09/01/351-history-of-istanbul-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_351.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_351.m4a"
+    "standard": "/audio/v1/standard/thinking_351.mp3",
+    "high": "/audio/v1/high/thinking_351.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -833,7 +833,6 @@
       "w": [1000.57,1000.85,1000.85,1001.03,1001.03,1001.23,1001.23,1001.51]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "according": "accord",
@@ -1040,5 +1039,6 @@
     "weakened": "weaken",
     "wealth": "wealth",
     "wealthy": "wealthy"
-  }
+  },
+  "wSource": "asr"
 }

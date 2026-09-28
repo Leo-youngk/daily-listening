@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260129.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260129",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260129.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260129.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260129.mp3",
+    "high": "/audio/v1/high/bbc6min_260129.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -521,7 +521,6 @@
       "w": [380.43,380.63,380.63,380.81,380.81,381.05,381.53,381.97,382.49,382.61,382.61,382.73,382.73,382.87,382.87,383.01,383.01,383.31,383.65,383.81,383.81,384.11]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "causes": "cause",
@@ -583,5 +582,6 @@
     "unexpected": "unexpected",
     "wherever": "wherever",
     "within": "within"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/curious_555.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/mobutu-sese-seko",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_555.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_555.m4a"
+    "standard": "/audio/v1/standard/curious_555.mp3",
+    "high": "/audio/v1/high/curious_555.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1288,7 +1288,6 @@
       "w": [1555.16,1555.36,1555.36,1555.91,1555.91,1556.46,1556.46,1556.64,1556.64,1556.88,1556.88,1557.28,1557.48,1557.76,1557.76,1557.94,1557.94,1558.16,1558.16,1558.56,1558.56,1559.04,1559.04,1559.18,1559.18,1559.44,1559.44,1559.84]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "admiration": "admiration",
@@ -1704,5 +1703,6 @@
     "won": "win",
     "wonderful": "wonderful",
     "worse": "worse"
-  }
+  },
+  "wSource": "asr"
 }

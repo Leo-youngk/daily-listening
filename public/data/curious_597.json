@@ -8,8 +8,8 @@
   "cover": "/covers/curious_597.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/global-housing-crisis",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_597.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_597.m4a"
+    "standard": "/audio/v1/standard/curious_597.mp3",
+    "high": "/audio/v1/high/curious_597.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1512,7 +1512,6 @@
       "w": [1709.26,1709.5,1709.5,1709.94,1709.94,1710.3,1710.56,1710.76,1710.76,1711.02,1711.02,1711.44,1711.64,1711.9,1711.9,1712.04,1712.04,1712.26,1712.26,1712.64,1712.64,1713.1,1713.1,1713.22,1713.22,1713.44,1713.44,1713.78]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abstract": "abstract",
     "access": "access",
@@ -1890,5 +1889,6 @@
     "worse": "worse",
     "worst": "worst",
     "yard": "yard"
-  }
+  },
+  "wSource": "asr"
 }

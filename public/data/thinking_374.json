@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_374.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/02/09/374-is-there-an-ai-bubble-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_374.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_374.m4a"
+    "standard": "/audio/v1/standard/thinking_374.mp3",
+    "high": "/audio/v1/high/thinking_374.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1309,7 +1309,6 @@
       "w": [1283.11,1283.31,1283.31,1283.55,1283.55,1283.75,1283.75,1283.95,1283.95,1284.27,1285.01,1285.31,1285.31,1285.93,1285.93,1286.55,1286.55,1286.71,1287.41,1287.67,1287.67,1287.85,1287.85,1288.09,1288.09,1288.47,1288.47,1288.91,1288.91,1289.39]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "addresses": "address",
@@ -1554,5 +1553,6 @@
     "vocabulary": "vocabulary",
     "wealthy": "wealthy",
     "widely": "widely"
-  }
+  },
+  "wSource": "asr"
 }

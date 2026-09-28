@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_404.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/09/07/404-what-is-corruption-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_404.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_404.m4a"
+    "standard": "/audio/v1/standard/thinking_404.mp3",
+    "high": "/audio/v1/high/thinking_404.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1589,7 +1589,6 @@
       "w": [1672.74,1672.88,1672.88,1673.06,1673.06,1673.36,1673.36,1673.7,1673.7,1673.82,1673.82,1673.96,1673.96,1674.1,1674.1,1674.48,1674.48,1674.98,1674.98,1675.38]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abstract": "abstract",
     "abuse": "abuse",
@@ -1899,5 +1898,6 @@
     "win": "win",
     "within": "within",
     "wolf": "wolf"
-  }
+  },
+  "wSource": "asr"
 }

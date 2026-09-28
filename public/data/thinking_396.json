@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_396.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/07/13/396-10-years-language-learning-lessons-id-give-my-younger-self-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_396.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_396.m4a"
+    "standard": "/audio/v1/standard/thinking_396.mp3",
+    "high": "/audio/v1/high/thinking_396.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1933,7 +1933,6 @@
       "w": [1567.94,1568.22,1568.22,1568.34,1568.34,1568.66,1568.66,1569.38,1569.38,1569.9,1569.9,1570.54,1570.54,1570.66,1570.66,1570.8,1570.8,1571.06,1571.06,1571.38,1571.38,1571.84]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absolute": "absolute",
     "accomplishments": "accomplishment",
@@ -2159,5 +2158,6 @@
     "worse": "worse",
     "worthwhile": "worthwhile",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

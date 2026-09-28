@@ -8,8 +8,8 @@
   "cover": "/covers/curious_624.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/george-iii",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_624.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_624.m4a"
+    "standard": "/audio/v1/standard/curious_624.mp3",
+    "high": "/audio/v1/high/curious_624.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1464,7 +1464,6 @@
       "w": [1521.11,1521.31,1521.31,1521.71,1521.71,1522.09,1522.49,1522.57,1522.57,1522.83,1522.83,1523.21,1523.45,1523.79,1523.79,1523.97,1523.97,1524.17,1524.17,1524.57,1524.57,1525.09,1525.09,1525.25,1525.25,1525.51,1525.51,1525.89]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absolute": "absolute",
     "accurate": "accurate",
@@ -1845,5 +1844,6 @@
     "worse": "worse",
     "wound": "wound",
     "wrap": "wrap"
-  }
+  },
+  "wSource": "asr"
 }

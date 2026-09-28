@@ -8,8 +8,8 @@
   "cover": "/covers/curious_599.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/dogs",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_599.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_599.m4a"
+    "standard": "/audio/v1/standard/curious_599.mp3",
+    "high": "/audio/v1/high/curious_599.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1280,7 +1280,6 @@
       "w": [1433.64,1433.86,1433.86,1434.28,1434.28,1434.64,1435.02,1435.08,1435.08,1435.34,1435.34,1435.76,1435.76,1436.26,1436.26,1436.44,1436.44,1436.62,1436.62,1437.02,1437.02,1437.5,1437.5,1437.64,1437.64,1437.86,1437.86,1438.24]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absence": "absence",
     "accelerated": "accelerate",
@@ -1624,5 +1623,6 @@
     "wolves": "wolf",
     "wonderful": "wonderful",
     "wondering": "wonder"
-  }
+  },
+  "wSource": "asr"
 }

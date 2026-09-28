@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260312.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260312",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260312.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260312.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260312.mp3",
+    "high": "/audio/v1/high/bbc6min_260312.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash",
@@ -481,7 +481,6 @@
       "w": [347.83,347.88,348.11,348.23,348.23,348.33,348.33,348.49,348.49,348.83,348.83,348.88]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "beans": "bean",
@@ -545,5 +544,6 @@
     "vocabulary": "vocabulary",
     "waste": "waste",
     "whilst": "whilst"
-  }
+  },
+  "wSource": "asr"
 }

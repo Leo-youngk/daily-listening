@@ -8,8 +8,8 @@
   "cover": "/covers/curious_602.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/ai-learning-english",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_602.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_602.m4a"
+    "standard": "/audio/v1/standard/curious_602.mp3",
+    "high": "/audio/v1/high/curious_602.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1376,7 +1376,6 @@
       "w": [1576.49,1576.75,1576.75,1577.15,1577.15,1577.75,1577.77,1577.99,1577.99,1578.27,1578.27,1578.73,1578.73,1579.15,1579.15,1579.35,1579.35,1579.53,1579.53,1579.93,1579.93,1580.41,1580.41,1580.55,1580.55,1580.83,1580.83,1581.27]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "acquired": "acquire",
@@ -1657,5 +1656,6 @@
     "won": "win",
     "wonderful": "wonderful",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

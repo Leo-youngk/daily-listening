@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_241114.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-241114",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_241114.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_241114.m4a"
+    "standard": "/audio/v1/standard/bbc6min_241114.mp3",
+    "high": "/audio/v1/high/bbc6min_241114.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -489,7 +489,6 @@
       "w": [362.72,362.82,362.82,362.96,362.96,363.26,363.58,363.86]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "applying": "apply",
@@ -559,5 +558,6 @@
     "vocabulary": "vocabulary",
     "whatever": "whatever",
     "wondering": "wonder"
-  }
+  },
+  "wSource": "asr"
 }

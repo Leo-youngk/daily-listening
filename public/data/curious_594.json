@@ -8,8 +8,8 @@
   "cover": "/covers/curious_594.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/mohammed-bin-salman",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_594.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_594.m4a"
+    "standard": "/audio/v1/standard/curious_594.mp3",
+    "high": "/audio/v1/high/curious_594.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1440,7 +1440,6 @@
       "w": [1788.54,1788.84,1788.84,1789.26,1789.26,1789.64,1790.04,1790.12,1790.12,1790.38,1790.38,1790.8,1790.98,1791.28,1791.28,1791.48,1791.48,1791.68,1791.68,1792.08,1792.08,1792.62,1792.62,1792.78,1792.78,1793.08,1793.08,1793.5]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absolute": "absolute",
     "accelerated": "accelerate",
@@ -1854,5 +1853,6 @@
     "witnessed": "witness",
     "wonderful": "wonderful",
     "youth": "youth"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_407.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/09/28/407-is-british-food-really-bad-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_407.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_407.m4a"
+    "standard": "/audio/v1/standard/thinking_407.mp3",
+    "high": "/audio/v1/high/thinking_407.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash",
@@ -1949,7 +1949,6 @@
       "w": [1689.55,1689.61,1689.61,1689.73,1689.73,1689.89,1689.89,1690.17,1690.33,1690.38,1690.37,1690.49,1690.49,1690.65,1690.65,1690.89,1690.89,1691.15]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "actually": "actually",
@@ -2260,5 +2259,6 @@
     "wealthy": "wealthy",
     "widely": "widely",
     "writers": "writer"
-  }
+  },
+  "wSource": "asr"
 }

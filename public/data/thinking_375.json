@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_375.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/02/16/375-do-we-live-in-a-surveillance-society-prepositions-of-place-english-grammar-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_375.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_375.m4a"
+    "standard": "/audio/v1/standard/thinking_375.mp3",
+    "high": "/audio/v1/high/thinking_375.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1120,7 +1120,6 @@
       "w": [1198.03,1198.29,1198.29,1198.41,1198.41,1198.55,1198.55,1198.79,1198.79,1199.11,1199.11,1199.77,1199.77,1200.33,1200.33,1200.75,1200.75,1201.13]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actions": "action",
     "actually": "actually",
@@ -1345,5 +1344,6 @@
     "whole": "whole",
     "widespread": "widespread",
     "within": "within"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_395.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/07/06/395-what-was-the-usa-like-in-1776-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_395.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_395.m4a"
+    "standard": "/audio/v1/standard/thinking_395.mp3",
+    "high": "/audio/v1/high/thinking_395.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1637,7 +1637,6 @@
       "w": [1580.02,1580.2,1580.2,1580.34,1580.34,1580.54,1580.54,1580.88,1580.88,1581.26,1581.26,1581.46,1582.0,1582.1,1582.1,1582.22,1582.22,1582.38,1582.38,1582.58,1582.58,1582.74]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "achieved": "achieve",
@@ -1976,5 +1975,6 @@
     "win": "win",
     "winning": "win",
     "won": "win"
-  }
+  },
+  "wSource": "asr"
 }

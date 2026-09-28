@@ -8,8 +8,8 @@
   "cover": "/covers/curious_550.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/egyptian-revolution",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_550.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_550.m4a"
+    "standard": "/audio/v1/standard/curious_550.mp3",
+    "high": "/audio/v1/high/curious_550.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1344,7 +1344,6 @@
       "w": [1668.23,1668.47,1668.47,1668.91,1668.91,1669.29,1669.73,1669.85,1669.85,1670.09,1670.09,1670.53,1670.77,1671.07,1671.07,1671.27,1671.27,1671.47,1671.47,1671.89,1671.89,1672.39,1672.39,1672.57,1672.57,1672.89,1672.89,1673.29]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "aid": "aid",
@@ -1736,5 +1735,6 @@
     "worse": "worse",
     "wrestling": "wrestle",
     "youth": "youth"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/curious_548.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/salem-witch-trials",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_548.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_548.m4a"
+    "standard": "/audio/v1/standard/curious_548.mp3",
+    "high": "/audio/v1/high/curious_548.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1136,7 +1136,6 @@
       "w": [1290.13,1290.31,1290.31,1290.75,1290.75,1291.13,1291.61,1291.73,1291.73,1291.99,1291.99,1292.45,1292.79,1292.99,1292.99,1293.17,1293.17,1293.39,1293.39,1293.81,1293.81,1294.31,1294.31,1294.45,1294.45,1294.81,1294.81,1295.29]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accuse": "accuse",
     "accused": "accuse",
@@ -1468,5 +1467,6 @@
     "worst": "worst",
     "wrap": "wrap",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

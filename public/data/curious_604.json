@@ -8,8 +8,8 @@
   "cover": "/covers/curious_604.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/otto-warmbier",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_604.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_604.m4a"
+    "standard": "/audio/v1/standard/curious_604.mp3",
+    "high": "/audio/v1/high/curious_604.m4a"
   },
   "zhSource": "mt",
   "zhModel": "claude-sonnet-5",
@@ -1184,7 +1184,6 @@
       "w": [1544.99,1545.91,1545.91,1546.37,1546.37,1546.97,1547.15,1547.23,1547.23,1547.57,1547.57,1548.01,1548.29,1548.47,1548.47,1548.65,1548.65,1548.85,1548.85,1549.21,1549.21,1549.71,1549.71,1549.85,1549.85,1550.15,1550.15,1550.59]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abstract": "abstract",
     "access": "access",
@@ -1541,5 +1540,6 @@
     "wonderful": "wonderful",
     "worst": "worst",
     "wrist": "wrist"
-  }
+  },
+  "wSource": "asr"
 }

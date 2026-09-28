@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250116.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250116",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250116.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250116.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250116.mp3",
+    "high": "/audio/v1/high/bbc6min_250116.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -433,7 +433,6 @@
       "w": [364.27,364.39,364.39,364.65,364.65,364.87,365.21,365.49]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "advanced": "advance",
     "argue": "argue",
@@ -504,5 +503,6 @@
     "useful": "useful",
     "vocabulary": "vocabulary",
     "whatever": "whatever"
-  }
+  },
+  "wSource": "asr"
 }

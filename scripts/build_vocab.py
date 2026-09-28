@@ -26,7 +26,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "public" / "data"
 WORDBOOK_DIR = ROOT / "public" / "wordbook"
 EXAMPLES_DIR = ROOT / "public" / "examples"
-MEDIA_BASE_URL = "https://daily-listening-media.if5v.workers.dev"
+# 切句原声与页面同源，见 build_talks.MEDIA_BASE
+MEDIA_BASE = "/audio"
 VERSION = "cet6-r1"
 
 # 必须与 app/src/lib/lookup.ts 的 WORD_RE 一致：例句里的词下标直接对应字幕的 data-w
@@ -196,7 +197,7 @@ def main():
                                                    encoding="utf-8")
     (EXAMPLES_DIR / "index.json").write_text(json.dumps({
         "v": VERSION,
-        "clipBase": f"{MEDIA_BASE_URL}/v1/clips",
+        "clipBase": f"{MEDIA_BASE}/v1/clips",
         "words": covered,
         "shards": sorted(shards),
     }, **compact) + "\n", encoding="utf-8")

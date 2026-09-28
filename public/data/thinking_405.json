@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_405.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/09/14/405-history-of-singapore-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_405.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_405.m4a"
+    "standard": "/audio/v1/standard/thinking_405.mp3",
+    "high": "/audio/v1/high/thinking_405.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1621,7 +1621,6 @@
       "w": [1477.8,1478.12,1478.12,1478.3,1478.3,1478.46,1478.46,1478.7,1478.7,1479.46,1479.46,1479.78,1479.78,1480.18,1480.18,1480.44,1480.44,1480.84,1480.84,1481.24,1481.24,1481.76,1481.76,1482.34,1482.34,1482.64,1482.64,1482.96,1482.96,1483.42,1483.42,1484.0]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "achieved": "achieve",
@@ -1981,5 +1980,6 @@
     "wealthy": "wealthy",
     "willing": "willing",
     "won": "win"
-  }
+  },
+  "wSource": "asr"
 }

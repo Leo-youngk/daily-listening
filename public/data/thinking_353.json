@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_353.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/09/15/353-marie-curie-the-greatest-scientist-of-all-time-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_353.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_353.m4a"
+    "standard": "/audio/v1/standard/thinking_353.mp3",
+    "high": "/audio/v1/high/thinking_353.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -757,7 +757,6 @@
       "w": [902.41,902.83,902.83,903.47,903.47,903.61,903.61,903.75,903.75,903.99,904.63,904.95,904.95,905.15,905.15,905.39,905.39,905.85,905.85,906.43,906.43,906.59,906.59,907.37,907.37,907.42,907.37,908.23,908.23,908.77,908.77,909.11,909.11,909.53]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "achievements": "achievement",
     "actually": "actually",
@@ -964,5 +963,6 @@
     "war": "war",
     "win": "win",
     "wounded": "wound"
-  }
+  },
+  "wSource": "asr"
 }

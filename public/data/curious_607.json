@@ -8,8 +8,8 @@
   "cover": "/covers/curious_607.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/jd-vance",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_607.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_607.m4a"
+    "standard": "/audio/v1/standard/curious_607.mp3",
+    "high": "/audio/v1/high/curious_607.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1216,7 +1216,6 @@
       "w": [1573.02,1573.22,1573.22,1573.6,1573.6,1573.92,1574.32,1574.4,1574.4,1574.66,1574.66,1575.06,1575.26,1575.5,1575.5,1575.66,1575.66,1575.88,1575.88,1576.28,1576.28,1576.84,1576.84,1577.0,1577.0,1577.28,1577.28,1577.68]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accumulated": "accumulate",
     "actually": "actually",
@@ -1588,5 +1587,6 @@
     "within": "within",
     "won": "win",
     "wonderful": "wonderful"
-  }
+  },
+  "wSource": "asr"
 }

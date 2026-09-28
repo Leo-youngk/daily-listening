@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250612.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250612",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250612.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250612.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250612.mp3",
+    "high": "/audio/v1/high/bbc6min_250612.m4a"
   },
   "zhSource": "mt",
   "zhModel": "claude-sonnet-5",
@@ -473,7 +473,6 @@
       "w": [364.98,365.22]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -554,5 +553,6 @@
     "volunteer": "volunteer",
     "volunteers": "volunteer",
     "whole": "whole"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_251002.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-251002",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_251002.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_251002.m4a"
+    "standard": "/audio/v1/standard/bbc6min_251002.mp3",
+    "high": "/audio/v1/high/bbc6min_251002.m4a"
   },
   "zhSource": "mt",
   "zhModel": "claude-sonnet-5",
@@ -433,7 +433,6 @@
       "w": [366.78,367.1]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "amazing": "amaze",
@@ -531,5 +530,6 @@
     "whaling": "whale",
     "wild": "wild",
     "wooden": "wooden"
-  }
+  },
+  "wSource": "asr"
 }

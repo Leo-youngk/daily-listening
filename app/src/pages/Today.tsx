@@ -55,7 +55,7 @@ function pickToday(manifest: ManifestItem[], progress: ProgressMap, hits: Record
 
 export default function Today() {
   const { manifest, manifestReady, manifestError, reloadManifest } = useCatalog()
-  const { playTalk } = usePlayerActions()
+  const { playTalk, primeTalk } = usePlayerActions()
   const { cards, ready } = useCards()
   const [vocab, setVocab] = useState<{ words: BookWord[]; episodes: Record<string, number[]> } | null>(null)
 
@@ -90,6 +90,10 @@ export default function Today() {
   }
 
   const hero = picks?.hero
+  // 主推最可能被点：播放器空着时先预挂上，点下去几乎立刻出声
+  useEffect(() => {
+    if (hero) primeTalk(hero.slug)
+  }, [hero, primeTalk])
   const heroEntry = hero ? progress[hero.slug] : undefined
   const heroPct = hero && heroEntry && hero.duration ? Math.min(100, (heroEntry.pos / hero.duration) * 100) : 0
 

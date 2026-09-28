@@ -9,7 +9,7 @@ import {
 } from 'react'
 import type { ReactNode } from 'react'
 import type { AudioQuality, ManifestItem, TalkData } from '../lib/types'
-import { loadProgress, loadSettings, recordListen, saveProgress, saveSettings } from '../lib/storage'
+import { isFinished, loadProgress, loadSettings, recordListen, saveProgress, saveSettings } from '../lib/storage'
 import { fetchJson } from '../lib/http'
 import { sentenceAt as findSentence } from '../lib/timeline'
 import { offlineSourceForTalk } from '../lib/offline'
@@ -24,6 +24,8 @@ interface PlayerState {
   slug: string | null
   talk: TalkData | null
   loading: boolean
+  /** 启动时预挂上的一集：这次打开 App 还没点过播放 */
+  armed: boolean
   playing: boolean
   buffering: boolean
   error: string | null
@@ -57,6 +59,8 @@ interface PlayerClockState {
 
 interface PlayerActions {
   playTalk: (slug: string, at?: number) => void
+  /** 预挂一集但不播，让浏览器先把开头和索引下好；播放器里已经有一集时什么也不做 */
+  primeTalk: (slug: string) => void
 }
 
 interface CatalogState {
@@ -123,6 +127,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const [slug, setSlug] = useState<string | null>(null)
   const [talk, setTalk] = useState<TalkData | null>(null)
   const [loading, setLoading] = useState(false)
+  const [armed, setArmed] = useState(false)
   const [playing, setPlaying] = useState(false)
   const [buffering, setBuffering] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -210,6 +215,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const startPlayback = useCallback(() => {
+    setArmed(false)
     setError(null)
     setBuffering(true)
     void audio.play().catch(handlePlayFailure)
@@ -242,7 +248,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, [audio, sampleListenProgress])
 
   /** 重新加载一集（换集、出错重试、换音质时用）：停掉当前音频，从头拉音频和字幕 */
-  const loadTalk = useCallback((target: string, at?: number) => {
+  const loadTalk = useCallback((target: string, at?: number, autoplay = true) => {
     const meta = manifestBySlug.get(target)
     if (!meta) {
       setError('未找到这一集，请返回节目列表重试')
@@ -294,7 +300,9 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     if (resolvedOffline && resolvedOffline.quality !== quality) {
       setNotice(`未找到${quality === 'high' ? '高' : '标准'}音质的离线文件，已使用${resolvedOffline.quality === 'high' ? '高' : '标准'}音质`)
     }
-    startPlayback()
+    // 预挂时不播：preload=metadata 只让浏览器先拉索引和开头，点播放时几乎立刻出声
+    if (autoplay) startPlayback()
+    else setArmed(true)
 
     fetchJson<TalkData>(`/data/${encodeURIComponent(target)}.json`, {
       signal: request.controller.signal,
@@ -475,6 +483,20 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     loadTalk(target, at)
   }, [audio, loadTalk, seek, startPlayback])
 
+  const primeTalk = useCallback((target: string) => {
+    if (slugRef.current) return
+    loadTalk(target, undefined, false)
+  }, [loadTalk])
+
+  // 重开 App 时把上次没听完的那集挂回来（暂停在原进度），迷你播放条随之恢复
+  useEffect(() => {
+    if (!manifestReady || slugRef.current) return
+    const last = Object.entries(loadProgress())
+      .filter(([key, entry]) => manifestBySlug.has(key) && entry.pos > 3 && !isFinished(entry))
+      .sort((a, b) => b[1].updatedAt - a[1].updatedAt)[0]
+    if (last) primeTalk(last[0])
+  }, [manifestReady, manifestBySlug, primeTalk])
+
   const stepSentence = useCallback((direction: 1 | -1) => {
     const sentences = talkRef.current?.sentences
     if (!sentences?.length) return
@@ -553,17 +575,17 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, [audio, loadTalk])
 
   const value = useMemo<PlayerState>(() => ({
-    manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
+    manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, armed, playing,
     buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, pause, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
     subtitleOffset, setSubtitleOffset, getSubtitleTime,
   }), [
-    manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
+    manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, armed, playing,
     buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, pause, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
     subtitleOffset, setSubtitleOffset, getSubtitleTime,
   ])
-  const actions = useMemo<PlayerActions>(() => ({ playTalk }), [playTalk])
+  const actions = useMemo<PlayerActions>(() => ({ playTalk, primeTalk }), [playTalk, primeTalk])
   const catalog = useMemo<CatalogState>(() => ({
     manifest, manifestReady, manifestError, reloadManifest,
   }), [manifest, manifestReady, manifestError, reloadManifest])

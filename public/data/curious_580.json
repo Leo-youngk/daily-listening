@@ -8,8 +8,8 @@
   "cover": "/covers/curious_580.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/operation-valkyrie",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_580.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_580.m4a"
+    "standard": "/audio/v1/standard/curious_580.mp3",
+    "high": "/audio/v1/high/curious_580.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1024,7 +1024,6 @@
       "w": [1304.0,1304.24,1304.24,1304.68,1304.68,1305.04,1305.44,1305.5,1305.5,1305.78,1305.78,1306.22,1306.38,1306.66,1306.66,1306.84,1306.84,1307.04,1307.04,1307.42,1307.42,1307.92,1307.92,1308.04,1308.04,1308.28,1308.28,1308.56]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "acceptance": "acceptance",
     "action": "action",
@@ -1326,5 +1325,6 @@
     "wooden": "wooden",
     "worse": "worse",
     "wrapped": "wrap"
-  }
+  },
+  "wSource": "asr"
 }

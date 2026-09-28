@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_241031.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-241031",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_241031.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_241031.m4a"
+    "standard": "/audio/v1/standard/bbc6min_241031.mp3",
+    "high": "/audio/v1/high/bbc6min_241031.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -409,7 +409,6 @@
       "w": [333.14,333.36,333.36,333.58,333.58,333.82,334.04,334.42]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absence": "absence",
     "actually": "actually",
@@ -479,5 +478,6 @@
     "vulnerable": "vulnerable",
     "weakened": "weaken",
     "winks": "wink"
-  }
+  },
+  "wSource": "asr"
 }

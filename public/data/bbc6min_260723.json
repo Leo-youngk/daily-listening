@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260723.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260723",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260723.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260723.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260723.mp3",
+    "high": "/audio/v1/high/bbc6min_260723.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-flash-lite-latest",
@@ -449,7 +449,6 @@
       "w": [384.4,384.45,384.4,384.64,384.64,384.82,385.28,385.36]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "affected": "affect",
     "affects": "affect",
@@ -548,5 +547,6 @@
     "vocabulary": "vocabulary",
     "war": "war",
     "zones": "zone"
-  }
+  },
+  "wSource": "asr"
 }

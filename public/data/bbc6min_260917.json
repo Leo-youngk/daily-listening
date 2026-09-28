@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260917.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260917",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260917.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260917.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260917.mp3",
+    "high": "/audio/v1/high/bbc6min_260917.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-flash-latest",
@@ -545,7 +545,6 @@
       "w": [374.95,375.25,375.25,375.41,375.41,375.53,375.53,375.79,375.79,376.09,376.35,376.43,376.43,376.73,377.05,377.19]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "achieve": "achieve",
     "actually": "actually",
@@ -619,5 +618,6 @@
     "wheel": "wheel",
     "wonder": "wonder",
     "wondering": "wonder"
-  }
+  },
+  "wSource": "asr"
 }

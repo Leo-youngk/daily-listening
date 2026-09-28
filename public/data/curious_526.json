@@ -8,8 +8,8 @@
   "cover": "/covers/curious_526.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/space-mining",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_526.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_526.m4a"
+    "standard": "/audio/v1/standard/curious_526.mp3",
+    "high": "/audio/v1/high/curious_526.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1112,7 +1112,6 @@
       "w": [1477.32,1477.5,1477.5,1477.94,1477.94,1478.32,1478.74,1478.82,1478.82,1479.06,1479.06,1479.46,1479.46,1479.98,1479.98,1480.14,1480.14,1480.34,1480.34,1480.74,1480.74,1481.2,1481.2,1481.3,1481.3,1481.56,1481.56,1481.96]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accessible": "accessible",
     "according": "accord",
@@ -1447,5 +1446,6 @@
     "wiped": "wipe",
     "within": "within",
     "wonderful": "wonderful"
-  }
+  },
+  "wSource": "asr"
 }

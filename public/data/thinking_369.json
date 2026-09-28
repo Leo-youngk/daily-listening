@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_369.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/01/05/369-history-of-australia-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_369.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_369.m4a"
+    "standard": "/audio/v1/standard/thinking_369.mp3",
+    "high": "/audio/v1/high/thinking_369.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1213,7 +1213,6 @@
       "w": [1238.85,1239.05,1239.05,1239.27,1239.27,1239.59,1239.59,1239.99,1239.99,1240.49,1241.03,1241.23,1241.23,1241.33,1241.33,1241.71,1241.71,1242.01,1242.01,1242.15,1242.15,1242.45,1242.45,1242.71,1242.71,1242.91]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abandon": "abandon",
     "actually": "actually",
@@ -1497,5 +1496,6 @@
     "widespread": "widespread",
     "worst": "worst",
     "zones": "zone"
-  }
+  },
+  "wSource": "asr"
 }

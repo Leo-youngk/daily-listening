@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_363.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/11/24/363-history-of-mexico-city-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_363.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_363.m4a"
+    "standard": "/audio/v1/standard/thinking_363.mp3",
+    "high": "/audio/v1/high/thinking_363.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1173,7 +1173,6 @@
       "w": [1252.22,1252.42,1252.42,1252.64,1252.64,1252.9,1252.9,1253.18,1253.18,1253.48,1253.48,1254.1,1254.1,1254.5,1255.2,1255.52,1255.52,1255.76,1255.76,1256.2,1256.2,1256.42,1256.42,1256.58,1256.58,1257.0,1257.0,1257.56,1257.56,1258.1,1258.1,1258.32,1258.32,1258.76]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "achieved": "achieve",
@@ -1461,5 +1460,6 @@
     "wealth": "wealth",
     "worse": "worse",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

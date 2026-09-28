@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_406.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/09/21/406-where-is-the-best-place-to-study-english-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_406.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_406.m4a"
+    "standard": "/audio/v1/standard/thinking_406.mp3",
+    "high": "/audio/v1/high/thinking_406.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1501,7 +1501,6 @@
       "w": [1571.71,1571.83,1571.83,1572.01,1572.01,1572.21,1572.21,1572.51,1572.51,1573.03,1573.03,1573.33,1573.33,1573.45,1573.45,1573.75,1573.75,1574.15,1574.15,1574.35,1574.35,1574.49,1574.49,1574.87,1574.87,1575.09,1575.09,1575.49,1575.69,1576.01,1576.01,1576.17,1576.17,1576.37,1576.37,1576.63,1576.63,1577.31,1577.31,1577.69]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "academic": "academic",
     "access": "access",
@@ -1746,5 +1745,6 @@
     "within": "within",
     "worse": "worse",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

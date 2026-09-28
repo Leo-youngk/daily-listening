@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_251120.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-251120",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_251120.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_251120.m4a"
+    "standard": "/audio/v1/standard/bbc6min_251120.mp3",
+    "high": "/audio/v1/high/bbc6min_251120.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -449,7 +449,6 @@
       "w": [364.92,365.28]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "appreciation": "appreciation",
     "behave": "behave",
@@ -523,5 +522,6 @@
     "varies": "vary",
     "vocabulary": "vocabulary",
     "worst": "worst"
-  }
+  },
+  "wSource": "asr"
 }

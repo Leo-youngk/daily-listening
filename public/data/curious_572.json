@@ -8,8 +8,8 @@
   "cover": "/covers/curious_572.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/caligula",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_572.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_572.m4a"
+    "standard": "/audio/v1/standard/curious_572.mp3",
+    "high": "/audio/v1/high/curious_572.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1112,7 +1112,6 @@
       "w": [1375.34,1375.58,1375.58,1376.04,1376.04,1376.42,1376.78,1376.88,1376.88,1377.16,1377.16,1377.56,1377.84,1378.08,1378.08,1378.3,1378.3,1378.5,1378.5,1378.92,1378.92,1379.38,1379.38,1379.54,1379.54,1379.86,1379.86,1380.3]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absent": "absent",
     "absolute": "absolute",
@@ -1475,5 +1474,6 @@
     "wonderful": "wonderful",
     "worship": "worship",
     "wrap": "wrap"
-  }
+  },
+  "wSource": "asr"
 }

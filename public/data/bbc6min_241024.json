@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_241024.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-241024",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_241024.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_241024.m4a"
+    "standard": "/audio/v1/standard/bbc6min_241024.mp3",
+    "high": "/audio/v1/high/bbc6min_241024.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -425,7 +425,6 @@
       "w": [364.18,364.36,364.36,364.58,364.58,364.8,365.28,365.52]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "action": "action",
     "arguing": "argue",
@@ -522,5 +521,6 @@
     "used": "used",
     "useful": "useful",
     "vocabulary": "vocabulary"
-  }
+  },
+  "wSource": "asr"
 }

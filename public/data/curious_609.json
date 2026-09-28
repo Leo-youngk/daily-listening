@@ -8,8 +8,8 @@
   "cover": "/covers/curious_609.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/blasphemy-britain",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_609.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_609.m4a"
+    "standard": "/audio/v1/standard/curious_609.mp3",
+    "high": "/audio/v1/high/curious_609.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1208,7 +1208,6 @@
       "w": [1294.04,1294.26,1294.26,1294.72,1294.72,1295.08,1295.46,1295.56,1295.56,1295.8,1295.8,1296.18,1296.44,1296.7,1296.7,1296.88,1296.88,1297.08,1297.08,1297.48,1297.48,1297.96,1297.96,1298.08,1298.08,1298.3,1298.3,1298.66]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abolished": "abolish",
     "abolishing": "abolish",
@@ -1517,5 +1516,6 @@
     "wonderful": "wonderful",
     "wrap": "wrap",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

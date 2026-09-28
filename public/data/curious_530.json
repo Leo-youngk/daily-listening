@@ -8,8 +8,8 @@
   "cover": "/covers/curious_530.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/putin-modern-tsar",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_530.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_530.m4a"
+    "standard": "/audio/v1/standard/curious_530.mp3",
+    "high": "/audio/v1/high/curious_530.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1248,7 +1248,6 @@
       "w": [1556.68,1557.66,1557.66,1558.26,1558.26,1558.86,1558.96,1559.06,1559.06,1559.3,1559.3,1559.74,1560.08,1560.24,1560.24,1560.44,1560.44,1560.64,1560.64,1561.06,1561.06,1561.6,1561.6,1561.7,1561.7,1562.02,1562.02,1562.48]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "access": "access",
     "according": "accord",
@@ -1667,5 +1666,6 @@
     "wonderful": "wonderful",
     "worse": "worse",
     "wrap": "wrap"
-  }
+  },
+  "wSource": "asr"
 }

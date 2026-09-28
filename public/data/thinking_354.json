@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_354.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/09/22/354-what-is-gerrymandering-and-other-useful-political-terms-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_354.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_354.m4a"
+    "standard": "/audio/v1/standard/thinking_354.mp3",
+    "high": "/audio/v1/high/thinking_354.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -881,7 +881,6 @@
       "w": [1079.56,1079.84,1079.84,1080.12,1080.12,1080.32,1080.32,1080.54,1080.54,1080.94,1080.94,1081.46,1081.46,1081.64,1081.64,1081.78,1081.78,1082.12,1082.12,1082.58,1082.58,1083.1,1083.1,1083.26,1083.26,1083.5,1083.5,1083.66,1083.66,1083.86,1083.86,1084.6,1084.6,1084.92,1084.92,1085.4]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "actually": "actually",
@@ -1080,5 +1079,6 @@
     "whips": "whip",
     "win": "win",
     "won": "win"
-  }
+  },
+  "wSource": "asr"
 }

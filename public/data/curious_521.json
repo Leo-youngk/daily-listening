@@ -8,8 +8,8 @@
   "cover": "/covers/curious_521.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/us-vice-presidents",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_521.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_521.m4a"
+    "standard": "/audio/v1/standard/curious_521.mp3",
+    "high": "/audio/v1/high/curious_521.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -928,7 +928,6 @@
       "w": [1261.99,1262.17,1262.17,1262.65,1262.65,1263.01,1263.43,1263.53,1263.53,1263.79,1263.79,1264.19,1264.19,1264.73,1264.73,1264.91,1264.91,1265.09,1265.09,1265.49,1265.49,1265.95,1265.95,1266.07,1266.07,1266.33,1266.33,1266.73]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abuse": "abuse",
     "achieve": "achieve",
@@ -1201,5 +1200,6 @@
     "wonderful": "wonderful",
     "worse": "worse",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

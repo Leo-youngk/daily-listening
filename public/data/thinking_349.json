@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_349.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/08/18/349-how-to-become-an-expert-in-english-or-anything-else-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_349.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_349.m4a"
+    "standard": "/audio/v1/standard/thinking_349.mp3",
+    "high": "/audio/v1/high/thinking_349.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1165,7 +1165,6 @@
       "w": [1181.77,1181.93,1181.93,1182.51,1183.51,1184.13,1184.13,1184.25,1184.25,1184.37,1184.37,1184.61,1185.23,1185.43,1185.43,1185.61,1185.61,1185.87,1185.87,1186.11,1186.11,1186.27,1186.27,1186.59,1186.59,1186.85,1186.85,1187.39,1187.39,1187.99,1188.35,1188.73]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "academic": "academic",
     "according": "accord",
@@ -1388,5 +1387,6 @@
     "worse": "worse",
     "writing": "writing",
     "zone": "zone"
-  }
+  },
+  "wSource": "asr"
 }

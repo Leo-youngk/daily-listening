@@ -8,8 +8,8 @@
   "cover": "/covers/curious_565.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/how-i-make-podcast-episodes",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_565.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_565.m4a"
+    "standard": "/audio/v1/standard/curious_565.mp3",
+    "high": "/audio/v1/high/curious_565.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -984,7 +984,6 @@
       "w": [1406.04,1407.04,1407.04,1407.54,1407.54,1407.9,1408.32,1408.42,1408.42,1408.68,1408.68,1409.12,1409.42,1409.6,1409.6,1409.76,1409.76,1409.98,1409.98,1410.4,1410.4,1410.88,1410.88,1411.02,1411.02,1411.34,1411.34,1411.76]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "accompanying": "accompany",
     "actually": "actually",
@@ -1219,5 +1218,6 @@
     "worthy": "worthy",
     "writer's": "writer",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

@@ -21,7 +21,8 @@
 4. `build_vocab.py` — 六级词表、每个词最多 5 条原声例句、每集六级词索引，并把 `lemmas`（字幕上色用）写回每集数据。
 5. `build_dict.py` — 只覆盖本语料的精简离线词典分片（点词查词用）。
 6. `cut_clips.py` — 每句切成独立小音频上传 R2（`v1/clips/<slug>/<句子下标>-<起点厘秒>.m4a`）。
-7. `deploy_audio_r2.py` — 整集音频上传 R2（高音质原文件 + 72k 单声道标准音质）。
+7. `deploy_audio_r2.py` — 整集音频上传 R2：高音质是原始 m4a，标准音质转成 64kbps 单声道 CBR MP3（m4a 起播前要先下完 moov 索引，长节目有 240~300KB；MP3 没有这张表，下到几 KB 就能出声）。
+   前端经 Pages Functions 的 `/audio/*`（`app/functions/audio`）同源读 R2，不再单独握手一个音频域名；本地 `vite dev` 由 `vite.config.ts` 的 `localAudio` 映射到本机文件。
 
 节目源适配器在 `sources/`：`bbc6min.py`、`curious.py`、`thinking.py`，网络请求统一走 `sources/common.py`（带退避重试）。
 

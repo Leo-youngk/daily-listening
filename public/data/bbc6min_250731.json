@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250731.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250731",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250731.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250731.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250731.mp3",
+    "high": "/audio/v1/high/bbc6min_250731.m4a"
   },
   "zhSource": "mt",
   "zhModel": "claude-sonnet-5",
@@ -393,7 +393,6 @@
       "w": [365.77,365.91,365.91,366.13,366.13,366.37,366.59,366.97]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "adhere": "adhere",
@@ -488,5 +487,6 @@
     "vulnerable": "vulnerable",
     "wealth": "wealth",
     "whole": "whole"
-  }
+  },
+  "wSource": "asr"
 }

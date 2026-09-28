@@ -8,8 +8,8 @@
   "cover": "/covers/curious_614.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/conquest-of-ireland",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_614.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_614.m4a"
+    "standard": "/audio/v1/standard/curious_614.mp3",
+    "high": "/audio/v1/high/curious_614.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3-flash-preview",
@@ -1648,7 +1648,6 @@
       "w": [1882.1,1882.3,1882.3,1882.87,1882.87,1883.44,1883.44,1883.52,1883.52,1883.76,1883.76,1884.12,1884.12,1884.56,1884.56,1884.72,1884.72,1884.9,1884.9,1885.26,1885.26,1885.72,1885.72,1885.82,1885.82,1886.06,1886.06,1886.46]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absolute": "absolute",
     "absorbed": "absorb",
@@ -2052,5 +2051,6 @@
     "won": "win",
     "wonderful": "wonderful",
     "worshipped": "worship"
-  }
+  },
+  "wSource": "asr"
 }

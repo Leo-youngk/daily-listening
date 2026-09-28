@@ -8,8 +8,8 @@
   "cover": "/covers/curious_543.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/perfume",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_543.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_543.m4a"
+    "standard": "/audio/v1/standard/curious_543.mp3",
+    "high": "/audio/v1/high/curious_543.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1040,7 +1040,6 @@
       "w": [1334.5,1334.74,1334.74,1335.34,1335.34,1335.94,1336.06,1336.14,1336.14,1336.38,1336.38,1336.82,1337.0,1337.42,1337.42,1337.6,1337.6,1337.8,1337.8,1338.18,1338.18,1338.72,1338.72,1338.86,1338.86,1339.18,1339.18,1339.6]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "adapting": "adapt",
     "advertising": "advertise",
@@ -1343,5 +1342,6 @@
     "wealthy": "wealthy",
     "wonderful": "wonderful",
     "woods": "wood"
-  }
+  },
+  "wSource": "asr"
 }

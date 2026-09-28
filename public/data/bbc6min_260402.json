@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260402.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260402",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260402.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260402.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260402.mp3",
+    "high": "/audio/v1/high/bbc6min_260402.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash",
@@ -537,7 +537,6 @@
       "w": [362.2,362.58]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "benefit": "benefit",
     "benefits": "benefit",
@@ -613,5 +612,6 @@
     "whereas": "whereas",
     "wonderful": "wonderful",
     "wooden": "wooden"
-  }
+  },
+  "wSource": "asr"
 }

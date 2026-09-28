@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_394.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/06/29/394-how-to-become-a-confident-english-speaker-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_394.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_394.m4a"
+    "standard": "/audio/v1/standard/thinking_394.mp3",
+    "high": "/audio/v1/high/thinking_394.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1829,7 +1829,6 @@
       "w": [1631.28,1631.4,1631.4,1631.52,1631.52,1631.62,1631.62,1631.74,1631.74,1631.98,1632.5,1632.6,1632.6,1632.8,1632.8,1633.02,1633.02,1633.34,1633.34,1633.76,1633.76,1634.18]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "academic": "academic",
     "according": "accord",
@@ -2098,5 +2097,6 @@
     "within": "within",
     "writing": "writing",
     "zone": "zone"
-  }
+  },
+  "wSource": "asr"
 }

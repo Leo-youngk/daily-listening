@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_250724.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-250724",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_250724.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_250724.m4a"
+    "standard": "/audio/v1/standard/bbc6min_250724.mp3",
+    "high": "/audio/v1/high/bbc6min_250724.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -545,7 +545,6 @@
       "w": [384.14,384.3,384.3,384.44,384.44,384.62,384.84,385.1]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "according": "accord",
     "achieved": "achieve",
@@ -634,5 +633,6 @@
     "weekday": "weekday",
     "wondering": "wonder",
     "worst": "worst"
-  }
+  },
+  "wSource": "asr"
 }

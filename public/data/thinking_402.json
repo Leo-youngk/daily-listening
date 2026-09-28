@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_402.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2026/08/24/402-france-is-bigger-than-you-think-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_402.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_402.m4a"
+    "standard": "/audio/v1/standard/thinking_402.mp3",
+    "high": "/audio/v1/high/thinking_402.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -2005,7 +2005,6 @@
       "w": [1864.05,1864.11,1864.11,1864.23,1864.23,1864.35,1864.35,1864.49,1864.49,1864.73,1865.19,1865.29,1865.29,1865.43,1865.43,1865.61,1865.61,1865.83,1865.83,1866.03,1866.03,1866.31,1866.31,1866.49,1866.49,1866.79,1866.79,1867.15,1867.15,1867.45,1867.45,1867.81,1867.81,1868.17]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "affairs": "affair",
@@ -2283,5 +2282,6 @@
     "within": "within",
     "zone": "zone",
     "zones": "zone"
-  }
+  },
+  "wSource": "asr"
 }

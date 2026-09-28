@@ -8,8 +8,8 @@
   "cover": "/covers/curious_536.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/mercenaries",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_536.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_536.m4a"
+    "standard": "/audio/v1/standard/curious_536.mp3",
+    "high": "/audio/v1/high/curious_536.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1176,7 +1176,6 @@
       "w": [1478.08,1478.3,1478.3,1478.78,1478.78,1479.16,1479.54,1479.64,1479.64,1479.88,1479.88,1480.3,1480.58,1480.84,1480.84,1481.04,1481.04,1481.22,1481.22,1481.62,1481.62,1482.08,1482.08,1482.22,1482.22,1482.48,1482.48,1482.84]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abandon": "abandon",
     "abstract": "abstract",
@@ -1552,5 +1551,6 @@
     "worse": "worse",
     "wrap": "wrap",
     "zone": "zone"
-  }
+  },
+  "wSource": "asr"
 }

@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_241017.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-241017",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_241017.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_241017.m4a"
+    "standard": "/audio/v1/standard/bbc6min_241017.mp3",
+    "high": "/audio/v1/high/bbc6min_241017.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -385,7 +385,6 @@
       "w": [364.3,364.42,364.42,364.72,364.72,364.94,365.14,365.48]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "advances": "advance",
@@ -477,5 +476,6 @@
     "vocabulary": "vocabulary",
     "wheels": "wheel",
     "wound": "wound"
-  }
+  },
+  "wSource": "asr"
 }

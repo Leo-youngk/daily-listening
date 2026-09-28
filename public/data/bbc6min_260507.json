@@ -8,8 +8,8 @@
   "cover": "/covers/bbc6min_260507.jpg",
   "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260507",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260507.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260507.m4a"
+    "standard": "/audio/v1/standard/bbc6min_260507.mp3",
+    "high": "/audio/v1/high/bbc6min_260507.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-flash-lite-latest",
@@ -497,7 +497,6 @@
       "w": [362.8,363.0,363.0,363.16,363.16,363.42,363.66,363.86,363.86,364.04,364.04,364.26,364.62,364.98]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "actually": "actually",
     "alien": "alien",
@@ -586,5 +585,6 @@
     "vocabulary": "vocabulary",
     "zone": "zone",
     "zones": "zone"
-  }
+  },
+  "wSource": "asr"
 }

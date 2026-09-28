@@ -8,8 +8,8 @@
   "cover": "/covers/thinking_365.jpg",
   "sourceUrl": "https://thinkinginenglish.blog/2025/12/08/365-who-was-ramanujan-the-greatest-mathematician-of-all-time-english-vocabulary-lesson/",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/thinking_365.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/thinking_365.m4a"
+    "standard": "/audio/v1/standard/thinking_365.mp3",
+    "high": "/audio/v1/high/thinking_365.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1005,7 +1005,6 @@
       "w": [1074.17,1074.41,1074.41,1075.13,1075.13,1075.37,1075.37,1075.95,1075.95,1076.0,1075.95,1076.67,1076.67,1077.29,1077.29,1077.63,1077.63,1078.39,1078.39,1078.85,1078.85,1079.41,1079.41,1079.65,1079.65,1080.09]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "abstract": "abstract",
     "academic": "academic",
@@ -1272,5 +1271,6 @@
     "wave": "wave",
     "wealthy": "wealthy",
     "writing": "writing"
-  }
+  },
+  "wSource": "asr"
 }

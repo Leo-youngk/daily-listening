@@ -8,8 +8,8 @@
   "cover": "/covers/curious_622.jpg",
   "sourceUrl": "https://www.leonardoenglish.com/podcasts/history-of-fire",
   "audioUrls": {
-    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/curious_622.m4a",
-    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/curious_622.m4a"
+    "standard": "/audio/v1/standard/curious_622.mp3",
+    "high": "/audio/v1/high/curious_622.m4a"
   },
   "zhSource": "mt",
   "zhModel": "gemini-3.5-flash-lite",
@@ -1312,7 +1312,6 @@
       "w": [1468.8,1469.74,1469.74,1470.34,1470.34,1470.94,1471.04,1471.12,1471.12,1471.44,1471.44,1471.9,1471.9,1472.38,1472.38,1472.58,1472.58,1472.8,1472.8,1473.18,1473.18,1473.68,1473.68,1473.8,1473.8,1474.02,1474.02,1474.36]
     }
   ],
-  "wSource": "asr",
   "lemmas": {
     "absorb": "absorb",
     "aeroplanes": "aeroplane",
@@ -1638,5 +1637,6 @@
     "wonderful": "wonderful",
     "wood": "wood",
     "wooden": "wooden"
-  }
+  },
+  "wSource": "asr"
 }
