@@ -255,6 +255,8 @@ body {
   background: var(--color-bg);
 }
 .app-main { background: var(--color-bg); }
+/* 全屏页（播放、复习、单词详情、搜索）盖在 Tab 页上面，下面的列表不卸载、位置不丢 */
+.app-overlay { position: fixed; z-index: 30; inset: 0; overflow: hidden; background: var(--color-bg); }
 .page { padding: 0 20px 28px; }
 /* 没有大标题的 Tab 页：内容直接从状态栏下方开始 */
 .tab-top { padding-top: calc(max(env(safe-area-inset-top, 0px), 8px) + 12px); }
