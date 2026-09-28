@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""线上部署验收：素材完整性、缓存版本、404 行为、查词接口。
+"""线上部署验收：节目与字幕、词表与例句、切句原声、整集音频、缓存版本、404 行为、查词接口。
 
 用法：
     python scripts/verify_deploy.py                 # 只做不花钱的静态校验
@@ -15,8 +15,8 @@ import urllib.request
 
 DEFAULT_BASE = "https://daily-listening-e7k.pages.dev"
 HEADERS = {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)"}
-EXPECTED_TALKS = 309
-DICT_VERSION = "ecdict-1.0.28-r1"
+EXPECTED_SERIES = {"bbc": 100, "curious": 50, "thinking": 50}
+DICT_VERSION = "ecdict-1.0.28-r2"
 
 failures: list[str] = []
 checks = 0
@@ -50,12 +50,10 @@ def verify_manifest(base: str) -> None:
     if not check(status == 200, "manifest.json 可访问", f"HTTP {status}"):
         return
     items = json.loads(text)
-    check(len(items) == EXPECTED_TALKS, "素材数量", f"{len(items)} 篇（期望 {EXPECTED_TALKS}）")
-
     categories: dict[str, int] = {}
     for item in items:
         categories[item.get("category", "?")] = categories.get(item.get("category", "?"), 0) + 1
-    print("        分类分布:", ", ".join(f"{k}={v}" for k, v in sorted(categories.items())))
+    check(categories == EXPECTED_SERIES, "各档节目期数", ", ".join(f"{k}={v}" for k, v in sorted(categories.items())))
 
     external = [i["slug"] for i in items if str(i.get("cover", "")).startswith("http")]
     check(not external, "封面全部同源", f"外链 {len(external)} 个: {external[:3]}")
@@ -82,6 +80,15 @@ def verify_manifest(base: str) -> None:
             "末句不超出音频时长",
             f"末句 {last_end:.1f}s / 时长 {duration:.1f}s",
         )
+        check(all("w" in s for s in sentences), "每句都有词级时间轴")
+        check(bool(talk.get("lemmas")), "带六级词标注（lemmas）")
+        audio = talk["audioUrls"]["standard"]
+        req = urllib.request.Request(audio, headers={**HEADERS, "Range": "bytes=0-1"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as res:
+                check(res.status in (200, 206), "整集音频可访问", audio)
+        except urllib.error.HTTPError as e:
+            check(False, "整集音频可访问", f"HTTP {e.code} {audio}")
 
 
 def verify_dict(base: str) -> None:
@@ -93,11 +100,37 @@ def verify_dict(base: str) -> None:
     check("MIT" in index.get("source", ""), "保留 ECDICT 署名", index.get("source", ""))
     check(len(index.get("shards", {})) > 300, "分片数量", str(len(index.get("shards", {}))))
 
-    status, text = fetch(base, "/dict/pl.json")
-    if check(status == 200, "词典分片可访问 (pl)", f"HTTP {status}"):
+    status, text = fetch(base, "/dict/ta.json")
+    if check(status == 200, "词典分片可访问 (ta)", f"HTTP {status}"):
         entries = json.loads(text)["entries"]
-        check("play out" in entries, "词组 play out 已收录")
-        check(len(entries.get("play", {}).get("senses", [])) > 1, "play 收录多个义项")
+        check(len(entries.get("take", {}).get("senses", [])) > 1, "take 收录多个义项")
+
+
+def verify_vocab(base: str) -> None:
+    status, text = fetch(base, "/wordbook/cet6.json")
+    if check(status == 200, "六级词表可访问", f"HTTP {status}"):
+        words = json.loads(text)["words"]
+        check(len(words) > 5000, "六级词表词数", str(len(words)))
+    status, text = fetch(base, "/wordbook/episodes.json")
+    if check(status == 200, "每集词汇索引可访问", f"HTTP {status}"):
+        check(len(json.loads(text)["episodes"]) == sum(EXPECTED_SERIES.values()), "每集词汇索引覆盖全部节目")
+    status, text = fetch(base, "/examples/index.json")
+    if not check(status == 200, "例句索引可访问", f"HTTP {status}"):
+        return
+    index = json.loads(text)
+    shard = index["shards"][len(index["shards"]) // 2]
+    status, text = fetch(base, f"/examples/{shard}.json")
+    if not check(status == 200, f"例句分片可访问 ({shard})", f"HTTP {status}"):
+        return
+    term, examples = next(iter(json.loads(text)["entries"].items()))
+    ex = examples[0]
+    clip = f"{index['clipBase']}/{ex['s']}/{ex['i']}-{round(ex['a'] * 100)}.m4a"
+    try:
+        with urllib.request.urlopen(urllib.request.Request(clip, headers=HEADERS), timeout=60) as res:
+            body = res.read()
+            check(res.status == 200 and len(body) > 1000, f"切句原声可播放（{term}）", f"{len(body)} 字节")
+    except urllib.error.HTTPError as e:
+        check(False, f"切句原声可播放（{term}）", f"HTTP {e.code} {clip}")
 
 
 def verify_build(base: str) -> None:
@@ -117,8 +150,9 @@ def verify_build(base: str) -> None:
 
     status, sw = fetch(base, "/sw.js")
     if check(status == 200, "sw.js 可访问", f"HTTP {status}"):
-        check("data-cache-v4" in sw, "数据缓存版本为 v4")
-        check("dict-ecdict-1-0-28-r1" in sw, "词典缓存名带版本号")
+        check("data-cache-v5" in sw, "数据缓存版本为 v5")
+        check("dict-ecdict-1-0-28-r2" in sw, "词典缓存名带版本号")
+        check("vocab-cache-v1" in sw, "词表与例句走独立缓存")
         check("cover-cache-v3" in sw, "封面缓存版本为 v3")
         check("mymemory" not in sw.lower(), "sw 不再缓存 MyMemory")
         check("clientsClaim" in sw, "新 sw 安装后立即接管页面")
@@ -187,6 +221,7 @@ def main() -> int:
     print(f"验收目标: {base}\n")
     verify_manifest(base)
     verify_dict(base)
+    verify_vocab(base)
     verify_build(base)
     verify_404(base)
     if args.with_lookup:

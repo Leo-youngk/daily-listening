@@ -75,7 +75,7 @@ export interface ResolvedOfflineSource {
   quality: AudioQuality
 }
 
-/** 同步解析一篇演讲的离线音频，优先用户选择的音质，必要时回退到已有音质。 */
+/** 同步解析一集节目的离线音频，优先用户选择的音质，必要时回退到已有音质。 */
 export function offlineSourceForTalk(
   slug: string,
   preferredUrl: string,

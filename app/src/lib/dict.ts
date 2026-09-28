@@ -1,6 +1,7 @@
 /**
  * 查词的两层缓存：
- *   1. 基础词典 —— /dict/<分片>.json，内容随 ECDICT 版本整体更换，Service Worker 长期缓存。
+ *   1. 基础词典 —— /dict/<分片>.json?v=<版本>，只覆盖本语料，节目换代或 ECDICT 升级时整体更换。
+ *      Pages 上 /dict/* 是一年 immutable，地址必须带版本号，否则老用户会一直拿到旧分片。
  *   2. 上下文判义 —— 按 词条 + 词序 + 整句哈希 + 模型版本 缓存，同一个词在不同句子里互不复用。
  * 失败结果一律不写长期缓存。
  */
@@ -14,6 +15,9 @@ import {
   tokenizeSentence,
 } from './lookup'
 
+/** 必须与 scripts/build_dict.py 的 DICT_VERSION 一致（tests/dict-data.test.ts 会核对） */
+export const DICT_VERSION = 'ecdict-1.0.28-r2'
+
 const CONTEXT_CACHE_KEY = 'dtl.sensecache'
 const CONTEXT_CACHE_LIMIT = 400
 const CONTEXT_CACHE_TTL = 1000 * 60 * 60 * 24 * 30
@@ -23,7 +27,7 @@ const shardPromises = new Map<string, Promise<DictShard | null>>()
 function loadShard(key: string): Promise<DictShard | null> {
   const cached = shardPromises.get(key)
   if (cached) return cached
-  const task = fetch(`/dict/${key}.json`)
+  const task = fetch(`/dict/${key}.json?v=${DICT_VERSION}`)
     .then(res => (res.ok ? res.json() as Promise<DictShard> : null))
     .catch(() => null)
   shardPromises.set(key, task)

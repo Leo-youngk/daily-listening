@@ -81,13 +81,19 @@ def upload(client, path: str, key: str) -> None:
 
 
 def main() -> None:
-    limit = int(sys.argv[1]) if len(sys.argv) > 1 else None
+    import argparse, json
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--ready", action="store_true",
+                    help="只传 ingest 已完成的期数（corpus/episodes.json），可以和 ingest.py 同时跑，不会传到写了一半的文件")
+    args = ap.parse_args()
     env = load_env(ENV_FILE)
     client = make_client(env)
 
     files = sorted(f for f in os.listdir(AUDIO_DIR) if f.endswith(".m4a"))
-    if limit:
-        files = files[:limit]
+    if args.ready:
+        with open(os.path.join(HERE, "corpus", "episodes.json"), encoding="utf-8") as fh:
+            ready = set(json.load(fh))
+        files = [f for f in files if f[:-4] in ready]
 
     total = len(files)
     ok_high = ok_std = skip_high = skip_std = fail = 0

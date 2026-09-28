@@ -34,6 +34,7 @@ interface PlayerState {
   playTalk: (slug: string, at?: number) => void
   retry: () => void
   toggle: () => void
+  pause: () => void
   seek: (time: number) => void
   skip: (delta: number) => void
   stepSentence: (direction: 1 | -1) => void
@@ -243,12 +244,12 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const playTalk = useCallback((target: string, at?: number) => {
     const meta = manifestBySlug.get(target)
     if (!meta) {
-      setError('未找到这篇演讲，请返回语料库重试')
+      setError('未找到这一集，请返回节目列表重试')
       return
     }
     const source = meta.audioUrls?.[quality]
     if (!source) {
-      setError(`这篇演讲缺少${quality === 'high' ? '高' : '标准'}音质地址`)
+      setError(`这一集缺少${quality === 'high' ? '高' : '标准'}音质地址`)
       return
     }
 
@@ -442,6 +443,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     else audio.pause()
   }, [audio, startPlayback])
 
+  const pause = useCallback(() => audio.pause(), [audio])
+
   const seek = useCallback((time: number) => {
     const requestedTime = Number.isFinite(time) ? time : 0
     const safeTime = Math.max(0, Math.min(requestedTime, audio.duration || requestedTime))
@@ -511,7 +514,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     const meta = manifestBySlug.get(currentSlug)
     const source = meta?.audioUrls?.[nextQuality]
     if (!source) {
-      setError(`这篇演讲缺少${nextQuality === 'high' ? '高' : '标准'}音质地址`)
+      setError(`这一集缺少${nextQuality === 'high' ? '高' : '标准'}音质地址`)
       return
     }
     setQualityState(nextQuality)
@@ -537,12 +540,12 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<PlayerState>(() => ({
     manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
-    buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, seek, skip,
+    buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, pause, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
     subtitleOffset, setSubtitleOffset, getSubtitleTime,
   }), [
     manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
-    buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, seek, skip,
+    buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, pause, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
     subtitleOffset, setSubtitleOffset, getSubtitleTime,
   ])

@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import { Button } from '@/components/ui/button'
 import { fmtBytes } from '../lib/format'
 import {
   OFFLINE_EVENT,
@@ -82,11 +81,11 @@ export default function OfflineControl({ slug, quality, url }: {
     : null
 
   return (
-    <div>
-      <div className="flex items-center justify-between">
+    <div className="w-full">
+      <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
-          <p className="text-sm text-muted-foreground">离线下载</p>
-          <p className="mt-0.5 text-[11px] text-muted-foreground/80">
+          <p className="group-row-label">离线下载</p>
+          <p className="group-row-sub">
             {entry
               ? `已存本地 · ${fmtBytes(entry.bytes)} · ${entry.quality === 'high' ? '高音质' : '标准音质'}`
               : downloading
@@ -95,28 +94,11 @@ export default function OfflineControl({ slug, quality, url }: {
           </p>
         </div>
         {entry ? (
-          <Button
-            variant="secondary"
-            size="xs"
-            className="rounded-full px-3 text-muted-foreground"
-            onClick={() => { void removeTalk(slug) }}
-          >
-            删除
-          </Button>
+          <button className="row-button" onClick={() => { void removeTalk(slug) }}>删除</button>
         ) : downloading ? (
-          <Button variant="secondary" size="xs" className="rounded-full px-3 text-muted-foreground" onClick={cancel}>
-            取消
-          </Button>
+          <button className="row-button" onClick={cancel}>取消</button>
         ) : (
-          <Button
-            variant="secondary"
-            size="xs"
-            className="rounded-full px-3"
-            disabled={!url}
-            onClick={() => { void start() }}
-          >
-            下载
-          </Button>
+          <button className="row-button is-accent" disabled={!url} onClick={() => { void start() }}>下载</button>
         )}
       </div>
 

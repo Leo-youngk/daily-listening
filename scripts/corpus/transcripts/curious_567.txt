@@ -1,0 +1,123 @@
+Hello, hello, hello, and welcome to English Learning for Curious Minds, by Leonardo English, the show where you can listen to fascinating stories and learn weird and wonderful things about the world at the same time as improving your English.
+I'm Alastair Budge, and today is the start of another three-part mini-series, this time on the theme of “Young American Outlaws ”.
+In this series, we’ll explore the lives of young Americans whose crimes–or perhaps simply actions–have become deeply politicised .
+First up, in today’s episode, we’ll talk about Ross Ulbricht, the founder of the world’s biggest drug marketplace, The Silk Road.
+Next up, we’ll talk about Aaron Swartz, the teen prodigy and internet freedom activist who got on the wrong side of the FBI.
+And then in part three, the final part, we will talk about the ongoing case of Luigi Mangione, the man accused of murdering the CEO of United Healthcare, one of the largest health insurance providers in the United States.
+OK then, let’s not waste another minute and get into the amazing story of Ross Ulbricht.
+The professional network LinkedIn is not typically a place for provocative political statements.
+If you look at someone’s LinkedIn page, they might describe themselves as “a passionate sales leader with 10+ years of experience in the pharmaceutical industry”, or “operations manager with team leadership experience”, or all manner of other, corporate-style sentences.
+In the case of one man, his LinkedIn page read slightly differently.
+When FBI officers stumbled across the LinkedIn page for one Ross Ulbricht, they found it to read, “I want to use economic theory as a means to abolish the use of coercion and aggression amongst mankind,” followed by. “ To that end , I am creating an economic simulation to give people a first-hand experience of what it would be like to live in a world without the systemic use of force.”
+It was an important clue as to the identity of the person behind what was at the time the world’s largest illegal online marketplace for drugs, weapons, pornography, and, in fact, practically anything: The Silk Road.
+Ulbricht first had the idea for such a marketplace shortly after finishing university at Penn State.
+He had always been a smart student and managed to get excellent grades without doing too much work. But after graduating, he found real life to be not quite as easy.
+He tried day trading , buying and selling stocks, as well as starting a video game company, but neither of those ideas had worked out .
+He then set up an online second-hand bookstore with a friend, based in Austin, Texas. They would buy second-hand books en masse, and sell them on other marketplaces.
+It was a moderate success.
+It never made much money, but it did teach the then 26-year-old some boring but important skills: things like inventory management, pricing, customer service, and the basics of running an online business.
+And it was while working on this project that Ulbricht had another idea.
+It was for a marketplace that would provide complete anonymity , allowing buyers and sellers to transact anonymously, without the website or any snooping authorities being able to identify anyone involved.
+And this wasn’t just a business idea; it was strongly aligned with Ulbricht’s political beliefs.
+He was a libertarian and a strong admirer of the Austrian philosopher and economist Ludwig von Mises.
+The Austrian School of economics argues, essentially, that the most effective economic system is one based on free markets and voluntary exchange, with minimal government interference .
+It holds that individuals act rationally to pursue their goals, and that central planning or state intervention distorts prices and leads to inefficiency.
+In other words, the most efficient system is one where individuals are left to do what they want, without any state interference .
+Ulbricht’s idea of a website that allowed users complete anonymity fitted right in with this political philosophy.
+Now, it wasn’t, and still isn’t, particularly difficult to access the internet anonymously - there are plenty of ways of hiding your IP address and so on, so it’s fairly trivial to access a website anonymously.
+The problem was related to payments.
+There was no reliable way for one stranger to pay another.
+Card transactions could be traced , as they were linked to your identity.
+Sending cash through the mail was inherently risky, as the recipient could claim they didn’t receive it, or the sender might claim it was sent when it never was.
+And saying “meet me behind this petrol station at 10 pm and I’ll hand over the cash” wasn’t exactly ideal either.
+But Ulbricht had discovered something that solved this problem: Bitcoin.
+Bitcoin, as you probably know, is a cryptocurrency that can be sent digitally from one address to another without either party’s true identity being revealed.
+It was perfect. Every transaction was public, so nobody could say, “I didn’t get it”, and it was also practically anonymous, meaning nobody–not the seller, not the buyer, not the authorities–nobody would be able to see the true identity of the individuals involved in the transaction .
+Ulbricht got to work building the first version of the website.
+He built it on the Tor network, which is essentially an encrypted layer of the internet that makes it impossible to trace individual users.
+It took him several months, and he did it in complete secrecy, telling only his girlfriend at the time.
+He had a vision for this big marketplace where anyone could buy anything, but he knew he needed to start with one product.
+Any online marketplace has this chicken-and-egg problem: if a buyer comes to it and sees there’s nothing for sale, they’ll leave, and if there are no buyers, then no sellers will bother listing anything for sale.
+So, Ulbricht started with something he knew there would be demand for: drugs, and in particular, magic mushrooms.
+He grew the first mushrooms himself, then listed them for sale on his website.
+Given that he was going to be selling drugs, he couldn’t exactly do advertising or market his website in any way, so he had to get creative.
+He posted on a bunch of internet forums related to drug use, purporting to be just a user, with posts like “has anyone used this website Silk Road? Looks interesting.”.
+The website went live in February of 2011, and soon enough, the orders came rolling in. And he was fulfilling them all himself.
+Just like he had done with the second-hand books, he would take the order, package it up, print off the address and pop it in the post.
+It started relatively slowly, but sure enough, sellers started listing their own products for sale: cannabis, MDMA, cocaine, heroin, as well as all sorts of prescription drugs, available without a doctor’s prescription, of course.
+The website was structured in a very similar way to a site like eBay or Amazon.
+Sellers could upload pictures of their goods, a description of what was for sale, and the price, payable in Bitcoin.
+As for buyers, they could scroll through the website, perusing different drugs, reading reviews and ratings, before deciding which one to go for.
+They would make their purchase, in Bitcoin of course, then a few days or weeks later, they would receive a package through the mail which would contain the drugs they had ordered.
+They would take the drugs, and then, being good internet citizens, they would leave a review: “really good batch”, or “the pink ones aren’t as strong as the blue ones”, or simply, “great communication, A+ seller, will buy again!”.
+Now, before we get into any discussion of the morality of this, it was clearly a very good business: in the United States alone, there are 37 million active illegal drug users. And the nature of drug use and drug addiction is that it is, almost by definition, a repeat purchase.
+Buy, use, buy, use, buy, use.
+The Silk Road facilitated this transaction , making ordering whatever drug you wanted as easy as clicking a few buttons on your computer.
+The website took a fee, of course, which ranged from 8 to 15% of the transaction value, but for sellers, this was a small price to pay for the convenience.
+Later that year, in 2011, the website caught the eye of an eager journalist at the now-defunct blog Gawker.
+He published an article titled, “The Underground Website Where You Can Buy Any Drug Imaginable”.
+It led to a flood of interest in the site, and other journalists started writing up their own articles too.
+All this time, Ulbricht was managing the site himself, doing everything from fixing bugs to negotiating with hackers to providing customer service. It was consuming his life, and his long-time girlfriend decided enough was enough.
+She gave him an ultimatum : it’s me or the website.
+Ulbricht chose the website.
+By this time, the Silk Road had become more than just a place to buy drugs. There was a real sense of community, of users being part of something that was bigger than a place to buy marijuana.
+This was a true libertarian paradise, a place where people were allowed to make their own choices about what to buy and what to put into their bodies without the government poking its nose in .
+Ulbricht was completely happy for people to use the website to buy drugs; he had smoked a lot of pot as a teenager; that was his decision, and he felt no responsibility to stop people from buying or selling any kind of drug.
+However, as the website got more and more popular, he started to see things for sale that he found more problematic.
+Guns with scratched-off serial numbers, for example, weapons that were clearly intended to be used for murder.
+He justified this in the name of freedom of choice, of the free market, but then things got darker.
+People started to list things like child pornography and individuals to be sold as sex slaves–things that even the most devoted of libertarians knew were a step too far.
+These listings would be removed, but it wasn’t always particularly easy to do.
+In these cases, sellers would typically disguise what was really for sale: there would be no direct mention of pornography, but instead normal pictures, cryptic code, codewords , so it was identifiable to a buyer who knew what they were looking for, but harder for anyone else to know what was going on.
+And, as you might expect, the site had garnered the attention of the authorities: the FBI, the DEA, and the IRS, who were crawling all over it.
+The problem was that it seemed unbreakable.
+It was anonymous, you never knew who the sellers were, and even if a buyer's home address was identified, they could simply say they didn’t know anything about the package, and it must have been a mistake.
+Being sent drugs in the post, if there is no way of proving that you bought them, would not stand up in a court of law.
+But while this anonymity made prosecutions difficult, it also gave federal agents an opening.
+They could pose as Silk Road customers, or even sellers, blending into the marketplace like anyone else. And in so doing, they discovered that the person pulling the strings behind it all went by the name Dread Pirate Roberts.
+Now, Dread Pirate Roberts isn’t a name that came from nowhere; it comes from the novel The Princess Bride, and is the title that is passed down from one person to another.
+It seemed like it was a clever choice of pseudonym , meaning that if the user acting as Dread Pirate Roberts was ever caught, he or she could claim that they weren’t the person really behind it; they had merely assumed the role.
+Dread Pirate Roberts wasn’t a person; it was a title.
+And by the start of 2013, so two years into The Silk Road, there were federal agents all over the website. Some had even gained administrative privileges and were helping with customer support, while others were simply sitting there, watching what was going on.
+But the true identity of Dread Pirate Roberts was still a mystery.
+There were a few clues: one agent went back to those first posts about the Silk Road from 2011, and saw that some had come from the username “altoid”.
+Further digging found posts on different forums from a user with this username, and then one in which he asked a programming question about Tor using his own name–Ross Ulbricht–before quickly changing it to “Frosty”.
+By mid-2013, the authorities were certain that Ross Ulbricht was Dread Pirate Roberts, but they couldn’t exactly knock on his door and ask him politely if he was indeed the man behind The Silk Road.
+Yes, he had made some slipups , but they knew that he took security extremely seriously.
+He would have all sorts of safeguards in place so that any evidence linking him to The Silk Road would be heavily encrypted , and he would probably have “kill buttons” on his laptop to delete any evidence if he sensed that law enforcement authorities were closing in .
+They knew they had to catch him in the act, with his laptop open and unlocked.
+In the authorities' favour was that he tended to work from public places, as using a public WiFi network gave him greater deniability .
+Although he had spent much of the time he operated the Silk Road on the road, travelling in places like Southeast Asia, they had tracked him down to San Francisco.
+And on 1 October 2013, they pounced .
+He was working on his laptop in a quiet area of a public library in a residential area of San Francisco.
+He heard people arguing behind him, almost like a fight was about to break out .
+He turned around to see what was going on, and before he knew it, he had been bustled to the ground, his laptop snatched away before he had time to close the screen or press the keyboard shortcut to delete everything.
+It had all been a setup; the arguing pair were federal agents.
+He was arrested and charged with all manner of crimes.
+The trial started in January of 2015, and he stood accused of all sorts of things that were more than merely running a libertarian marketplace.
+These included money laundering , as well as ordering the contract killings of five people who had threatened Silk Road. Now, I should add that these killings didn’t take place; it seemed that he'd been scammed , but the prosecution alleged that the intent was there.
+He had paid for people to be killed.
+In May of that year, May of 2015, he was formally sentenced to double life imprisonment without the possibility of parole, plus he had to pay back just under $200 million from his illicit gains .
+He was only 30 years old.
+Now, when this sentence was announced, it was greeted with a mixture of horror and praise.
+To his libertarian supporters, he was a scapegoat ; he had created an online, safer version of what people do in the real world, and were doing in the street outside the San Francisco library where he had been arrested.
+He hadn’t forced anyone to buy or sell drugs, weapons, or anything. And as to the accusations of the contract killings, they said these had been invented by the authorities.
+But to anti-drug campaigners and many politicians, this was a great victory. He had made hundreds of millions of dollars from drug addiction, violence, and by creating a website that enabled some of the most vile behaviours imaginable.
+Yes, he was guilty, yes, he knew the risks, and yes, he deserved to spend the rest of his life behind bars .
+And he would most likely have spent the rest of his life in prison had he not found an unlikely ally .
+On January 21st, 2025, on his second day back in office, Donald Trump gave Ross Ulbricht a full and unconditional pardon .
+On the campaign trail , he had promised Libertarian voters that he would free Ulbricht, and on the day he announced it, he posted that, “the scum that worked to convict him were some of the same lunatics who were involved in the modern-day weaponisation of government against me”
+So, today, after 11 years behind bars, Ross Ulbricht is a free man.
+His case, and the debate about his sentence, became about more than him as an individual; it became about the role of government, the individual’s right to choose, and the society we want to live in.
+Where do we draw the line between personal freedom to choose and the government’s obligation to protect?
+Should someone be punished for building the tool, or only for how others use it?
+Was Ulbricht sentenced for what he did, or for what he represented?
+In the end, was he a dangerous criminal, a victim of the system, or its most dangerous critic?
+OK then, that is it for today's episode on Ross Ulbricht and The Silk Road.
+As always, I would love to know your thoughts. Do you think he deserved to walk free, or do you think he should still be behind bars?
+Just head to community.leonardoenglish.com and get chatting away with other curious minds.
+And as a final quick reminder, this was part one of the mini-series on “young American outlaws”.
+Next up, we’ll be talking about Aaron Swartz, the boy genius and co-founder of Reddit, whose crusade for internet freedom brought him up against the FBI, and cost him his life.
+And then in part three, we will be talking about the current case of Luigi Mangione, the young man who stands accused of murdering the CEO of one of America’s largest healthcare insurance companies.
+You've been listening to English Learning for Curious Minds by Leonardo English.
+I'm Alastair Budge, you stay safe, and I'll catch you in the next episode.

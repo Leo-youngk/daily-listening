@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "app" / "dist"
 PUB = ROOT / "public"
 
-DIRS = ["data", "icons", "covers", "dict"]
+DIRS = ["data", "icons", "covers", "dict", "wordbook", "examples"]
 FILES = ["_headers", "404.html"]
 
 

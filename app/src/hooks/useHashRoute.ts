@@ -27,7 +27,7 @@ export function parseRoute(hash: string): { page: string; param: string; query: 
   const [pathname, search] = hash.split('?')
   const parts = pathname.split('/').filter(Boolean)
   return {
-    page: parts[0] || 'discover',
+    page: parts[0] || 'today',
     param: parts.slice(1).join('/'),
     query: new URLSearchParams(search || ''),
   }

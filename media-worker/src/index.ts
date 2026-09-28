@@ -1,4 +1,14 @@
+// 整集音频：/v1/standard|high/<slug>.m4a；切句原声：/v1/clips/<slug>/<句子下标>-<起点厘秒>.m4a
 const MEDIA_PATH = /^\/v1\/(standard|high)\/([a-z0-9_-]+\.m4a)$/
+const CLIP_PATH = /^\/v1\/clips\/([a-z0-9_-]+)\/(\d+-\d+\.m4a)$/
+
+function objectKey(pathname: string): string | null {
+  const media = pathname.match(MEDIA_PATH)
+  if (media) return `v1/${media[1]}/${media[2]}`
+  const clip = pathname.match(CLIP_PATH)
+  if (clip) return `v1/clips/${clip[1]}/${clip[2]}`
+  return null
+}
 
 function corsHeaders() {
   return {
@@ -45,9 +55,8 @@ export default {
     if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: corsHeaders() })
     if (request.method !== 'GET' && request.method !== 'HEAD') return plain('Method Not Allowed', 405)
 
-    const match = new URL(request.url).pathname.match(MEDIA_PATH)
-    if (!match) return plain('Not Found', 404)
-    const key = `v1/${match[1]}/${match[2]}`
+    const key = objectKey(new URL(request.url).pathname)
+    if (!key) return plain('Not Found', 404)
 
     try {
       if (request.method === 'HEAD') {

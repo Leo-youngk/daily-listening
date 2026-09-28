@@ -1,0 +1,91 @@
+Hello, hello, hello, and welcome to English Learning for Curious Minds, by Leonardo English, the show where you can listen to fascinating stories and learn weird and wonderful things about the world at the same time as improving your English.
+I'm Alastair Budge, and today we are going to be talking about Artificial Intelligence and the environment.
+It has been billed as a disaster in plain sight , technology pointlessly destroying the planet, but is there actually any substance behind it?
+Why are some environmental activists highly critical of things like ChatGPT? Are they right to be critical, and what does this all mean for you?
+OK then, let's not waste a minute and get right into it.
+There was a report from BBC Scotland a few weeks ago with the title “Scottish data centres powering AI already using enough water to fill 27 million bottles a year”.
+The headline was deliberately provocative . 27 million bottles sounds like…a lot.
+And if AI is responsible for using all of this, does this mean 27 million fewer bottles of water for the good people of Scotland?
+For the story, the reporter had taken to the streets to ask people whether they used tools like ChatGPT, and whether they knew “it could be bad for the environment”, using that exact phrasing of the sentence.
+A loaded question , as we say in English.
+Of course, most said they were not, and agreed that people should be more aware of it.
+And the general reaction is probably best summed up by the end of the clip, where an elderly gentleman commented, “one day you’re waking up and you cannae have a shower because there’s no water because it’s cooling down some computer somewhere”.
+So, is this actually true?
+Are the good people of Scotland in danger of having to go without a shower because the water has all been used for your and my ChatGPT queries?
+In a word, no, especially not in Scotland.
+As one user on Facebook humorously put it, “I live in Scotland. I often think “if only we had more water, I mean if just for once it could fall out of the sky or something. I’m burning up here””.
+To be fair, if you clicked into the BBC article and didn’t just watch the video, the article did admit that water use for data centres had increased significantly, but was still only responsible for 0.005% of the water supply in Scotland.
+And anyone who lives in Scotland or who has visited Scotland will probably be able to tell you, without reaching for any official dataset or doing complicated calculations on Excel, that Scotland has many problems, but water does not seem to be one of them; if Scotland were an independent country, it would be the second wettest country in Europe.
+So, as far as Scotland is concerned, they could build 100 times as many data centres, and it would still only use 0.5% of the Scottish water supply, and that’s assuming there are no improvements in efficiency in how this water is used.
+Now, before we get into some of the details of the other environmental concerns around AI, it’s first worth spending a few minutes clarifying exactly what we’re talking about, how AI uses energy, and why this is different from previous technologies.
+For starters, using any kind of technology uses energy.
+When you send an email, search for something on Google, listen to this podcast, or do almost anything that connects to the Internet, information is being transferred between your computer and somewhere else.
+That “somewhere else” isn’t a mysterious cloud floating above your head.
+In most cases, it's a physical location called a data centre.
+A data centre is, essentially, a giant warehouse full of computers, tens of thousands of them, all stacked up in metal racks , blinking away, processing and storing data. They don’t look very exciting, but they are the backbone of the modern digital world.
+Every photo you upload, every YouTube video you watch, every Spotify song you play, this is all being sent to and from one of these data centres somewhere in the world.
+And all of this takes energy.
+Your computer or mobile phone needs energy to make the request, so you charge it up at home.
+And the computers in the data centre, of course, also need energy; they need electricity.
+But, like any computer, they can also get very hot, which means they need to be cooled; sometimes this is by enormous air-conditioning systems, or in some cases, by water that flows through pipes to remove heat.
+So, whether it’s these air-conditioning systems or cold water, these data centres require large amounts of electricity to keep everything running, and more importantly, to keep everything cool.
+So, even before we get to the question of AI, every time you open a web page, watch a YouTube video, and yes, even listen to a podcast, a little bit of energy is being used somewhere in the world to make that happen.
+Now, with Artificial Intelligence, things are a bit different.
+When you ask ChatGPT a question, or generate an image, or use an AI assistant on your phone, it isn’t just retrieving some information from somewhere. It's computing it, creating something new in real time.
+This means much more powerful computers are involved, the kind that can do billions or even trillions of calculations per second. These chips, or Graphics Processing Units, GPUs for short, they use far more energy than the servers that store your emails or photos.
+And because AI systems are so large, with billions of parameters or virtual “connections” between artificial neurons , they need vast amounts of energy both to train them and to run them.
+So while a Google search might use enough energy to power a light bulb for a few seconds, generating a single AI image or a long ChatGPT reply, early critics pointed out , might use ten, twenty, or even fifty times more.
+That is why environmental campaigners have started to pay attention, because AI use is exploding at breakneck speed, and AI is much more energy-intensive than almost every other consumer technology; each request requires far more computing power, therefore more energy.
+But, you are probably wondering, how much energy is this?
+Well, when ChatGPT was first released, there were all sorts of articles suggesting that it was 22 times more energy-intensive than using Google and that it was a giant menace to the environment.
+22 times more emissions sounds bad, but firstly, that number has proved not to be correct, and secondly, it’s important to see it in perspective.
+On the first point, according to a recent study, a single Google Gemini text query, so a single use of Google’s AI, uses 0.24 Wh of electricity, emits 0.03 grams of CO2, and consumes 0.26 millilitres of water.
+Now, to put that in perspective, the energy use is like one second of using a microwave, or 6 seconds of having your fridge on.
+0.03 grams of CO2 is practically nothing, and 0.26 millilitres is five drops of water.
+Now, some AI uses are more intensive, like generating an image or video, and not all AI models are the same; OpenAI, which is the company behind ChatGPT, hasn’t released a similar study, and it’s believed it’s not yet as energy efficient as Google.
+I’ll use them semi-interchangeably here. If ChatGPT isn’t yet as efficient as Google Gemini, it will most likely get there shortly, and both will continue to become more, not less, energy-efficient. So, you’ll excuse me if I flit between the terms.
+Now, in the interests of balance, there have been some criticisms of this Google study, with commentators pointing out that it doesn’t take into account factors like the training of the AI model or the carbon cost of the AI chips themselves.
+But even taking these into account, the effect is still negligible .
+To put it in perspective again, taking everything into account, a single AI query, based on recent estimates, is like uploading 9 photos to social media, leaving a digital alarm clock on for 50 minutes, or streaming Netflix for 30 seconds.
+These are things most of us don’t think twice about, yet it is AI that has come under the spotlight .
+The news is full of articles with headlines like “training an AI model is like 550 return flights from New York to San Francisco”, or that “ChatGPT emits as much CO2 as 20,000 American households”.
+Or, of course, even by the BBC, which should know better, “AI uses 27 million bottles of water in Scotland”.
+Yes, the total energy impact of AI has grown incredibly quickly, but it started from zero.
+ChatGPT went from zero to 100 million users in under a year.
+By July 2025, it had 700 million users, 10% of the world’s adult population, sending 18 billion messages every week.
+Now, those numbers will be higher, and it looks like they will continue to trend up.
+Using a tiny amount of energy 18 billion times a week, well, it does add up , and this is part of where the concern comes from.
+But, even when all global AI use is added together, it still doesn’t even add up to a fraction of a per cent.
+And to think, this is a technology that is being used by 1 in every 10 adults, voluntarily , I should add.
+Sure, ChatGPT or other AI models aren’t perfect, and you might not use them yourself.
+But they can be incredibly helpful, saving you time, making you more productive, and assisting you in a myriad of ways.
+When you think about it, technology is incredibly efficient in its energy use.
+Every data centre in the world, so that’s the computers powering the entire internet, not just AI, uses 1.5% of the world’s electricity and 0.23% of the world’s energy.
+And to think, the average person spends six and a half hours per day online, interacting with data centres. In many ways, it's a miracle that something that’s now so fundamental to our lives has such a tiny environmental impact.
+And of course, if we are to compare any of these technological uses to “offline” energy uses, the difference is even more pronounced .
+Producing one burger requires around 2,000 litres of water, enough to run almost 10 million Google Gemini queries, nearly 300 a day, for 100 years.
+Now, this is not for me to say you should stop eating burgers or never take an aeroplane again; that’s not my point.
+Rather, it’s that to think that you should restrict your personal use of ChatGPT, but still go to McDonald’s is like deciding you’re going to cycle to take a private plane; it is wildly misunderstanding the impact of the two activities.
+But there is one point that’s worth pointing out, and that is relating to the type of energy that’s used in these data centres.
+When you use ChatGPT or any other model, your query is typically routed to the nearest data centre to you.
+The environmental impact of each request is largely dependent on the type of energy used to power that data centre. And given the heavy electricity requirements, these data centres are often powered by dirtier energy sources such as coal or oil.
+This is part of the reason technology companies are busy pledging to switch to cleaner energy sources —not necessarily because they have some inherent love for the environment, but because the cleaner the energy used in their data centres, the less ammunition environmental critics have against them.
+And there’s more. Water use might be a non-issue in the wet and rainy country of Scotland, but in countries less blessed by constant showers and flowing rivers, it is. Whether that’s in the Middle East or in Arizona, every litre of water that goes to a data centre is a litre of water that isn’t available for something else.
+And the sheer scale of the growth in AI, and the data centres required for this, is mindboggling . By some estimates, the energy demand from data centres is set to double by 2030, with half of this growth driven by AI.
+And “personal” AI use is just a slice of this. By personal AI use, I mean an individual, you or me, or any of the other hundreds of millions of people using ChatGPT or other AI tools, and going into the interface and asking a question.
+There is also all of the behind-the-scenes use of AI by companies, whether that’s companies using AI models for their internal business processes or it’s the AI companies themselves.
+So even if you never choose to use AI tools personally, every time you interact with a technology company, you will most probably be using some form of AI, whether you like it or not.
+So, to wrap things up , global AI use is probably at the lowest it will ever be in your or my lifetime. New models are coming out almost every week, adoption is increasing fast, and AI is being deployed into everything we do.
+Yes, it might use significantly more energy than things like traditional Google searches, but it is far from the worst thing you can do with a computer, and its environmental impact pales in comparison with most things you do in the real world.
+And the good news is that AI is getting much more energy-efficient, with that Google study reporting that energy use for each query is now 3% of what it was a year ago, a 33-fold reduction.
+Yes, AI does have an impact on the environment, but on an individual level, it offers a miraculous reward for a minuscule environmental cost.
+When it comes to reducing your personal carbon footprint, there are dozens of lifestyle changes, such as flying less and taking public transport, that would have a vastly greater impact than your personal use of AI.
+So, it's up to you, but if you ask me whether I’d prefer to skip one burger, or not use AI again for the rest of my life, I think you can guess what I would say.
+OK, then, that is it for today's episode on the environmental impact on AI.
+I hope it's been an interesting one and that you've learnt something new.
+As always, I would love to know what you thought of this episode.
+What had you heard about the environmental impact of AI? Had you changed your behaviour, or will you change your behaviour after listening to this?
+I would love to know.
+Let me know in the comments below if you're listening to this somewhere where you can comment, and for the members among you, you can head right into our community forum, which is at community.leonardoenglish.com and get chatting away to other curious minds.
+You've been listening to English Learning for Curious Minds by Leonardo English.
+I'm Alastair Budge, you stay safe, and I'll catch you in the next episode.

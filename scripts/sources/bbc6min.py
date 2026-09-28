@@ -1,15 +1,21 @@
 # -*- coding: utf-8 -*-
 """BBC Learning English · 6 Minute English 抓取适配器。
 
-列表页一次性返回全部期数（约 494 期，最新在前），每期页面内嵌音频下载直链
-与逐字稿（官方声明"非逐字"但足够准，用于强制对齐）。
+列表页一次性返回全部期数（约 494 期，最新在前）。每期页面内嵌音频下载直链、
+官方重点词表（Vocabulary，约 6 条，带英文释义）与逐字稿（官方声明"非逐字"但足够准，
+用于强制对齐）。
+
+注意：页面结构 2022 年前后改过，本解析器只认得近年的格式（实测最近 173 期），
+更早的期数会解析不出正文——只取最近 N 期时不受影响。
 """
 import re
-import time
-import urllib.request
+from html import unescape
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString, Tag
 
+from .common import fetch_text
+
+SERIES = "bbc"
 LIST_URL = "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english"
 EP_LINK_RE = re.compile(r'href="(/learningenglish/english/features/6-minute-english[^"]*?/ep-(\d{6}))"')
 SPEAKER_RE = re.compile(
@@ -21,18 +27,11 @@ DIVIDER_RE = re.compile(r"^_{5,}$")
 FOOTNOTE_RE = re.compile(r"\s\*{1,2}\s.*$")
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 OG_IMAGE_RE = re.compile(r'<meta[^>]+property="og:image"[^>]+content="([^"]+)"|<meta[^>]+content="([^"]+)"[^>]+property="og:image"')
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 
 
-def _get(url, timeout=30):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", errors="replace")
-
-
-def list_episodes(limit=110):
+def list_episodes(limit=100):
     """返回 [{"url":..., "code": "260827"}]，最新在前，按 code 去重。"""
-    html = _get(LIST_URL)
+    html = fetch_text(LIST_URL)
     seen = {}
     for m in EP_LINK_RE.finditer(html):
         path, code = m.group(1), m.group(2)
@@ -92,8 +91,43 @@ def extract_transcript(html):
     return "\n".join(lines)
 
 
+def extract_vocabulary(html):
+    """官方重点词表：<h3>Vocabulary</h3> 之后的段落里，<strong> 是词条，其后的文本是英文释义。"""
+    soup = BeautifulSoup(html, "lxml")
+    heading = next((h for h in soup.find_all(["h3", "h2"]) if h.get_text(strip=True).lower() == "vocabulary"), None)
+    if heading is None:
+        return []
+    items = []
+    term, definition = None, []
+
+    def flush():
+        if term and definition:
+            text = re.sub(r"\s+", " ", " ".join(definition)).strip()
+            if text:
+                items.append({"term": term, "def": text})
+
+    for block in heading.find_next_siblings():
+        if block.name in ("h2", "h3") or "TRANSCRIPT" in block.get_text():
+            break
+        if block.name != "p":
+            continue
+        for node in block.children:
+            if isinstance(node, Tag) and node.name == "strong":
+                label = node.get_text(" ", strip=True).replace("\xa0", " ").strip()
+                if not label:
+                    continue
+                flush()
+                term, definition = label, []
+            elif isinstance(node, NavigableString):
+                text = str(node).replace("\xa0", " ").strip()
+                if text and term:
+                    definition.append(text)
+    flush()
+    return items
+
+
 def fetch_episode(url, code):
-    html = _get(url)
+    html = fetch_text(url)
     m = TITLE_RE.search(html)
     title = m.group(1) if m else ""
     if " / " in title:
@@ -106,40 +140,15 @@ def fetch_episode(url, code):
         return None
     date = f"20{code[0:2]}-{code[2:4]}-{code[4:6]}"
     og_m = OG_IMAGE_RE.search(html)
-    cover = (og_m.group(1) or og_m.group(2)) if og_m else None
+    cover = unescape(og_m.group(1) or og_m.group(2)) if og_m else None
     return {
         "slug": f"bbc6min_{code}",
+        "series": SERIES,
         "title": title or f"6 Minute English {date}",
         "transcript": transcript,
         "mp3_url": mp3_m.group(0),
         "date": date,
         "cover": cover,
         "source_url": url,
+        "keywords": extract_vocabulary(html),
     }
-
-
-def main():
-    import argparse, json
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--limit", type=int, default=5)
-    ap.add_argument("--out", default="")
-    args = ap.parse_args()
-    eps = list_episodes(args.limit)
-    results = []
-    for e in eps:
-        print(e["url"], flush=True)
-        data = fetch_episode(e["url"], e["code"])
-        if data:
-            print(f"  OK title={data['title']!r} chars={len(data['transcript'])}", flush=True)
-            results.append(data)
-        else:
-            print("  SKIP (no transcript/mp3)", flush=True)
-        time.sleep(1)
-    if args.out:
-        with open(args.out, "w", encoding="utf-8") as f:
-            json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"\n{len(results)}/{len(eps)} ok")
-
-
-if __name__ == "__main__":
-    main()

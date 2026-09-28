@@ -1,51 +1,44 @@
+import { PauseIcon, PlayIcon } from 'lucide-react'
 import { usePlayer, usePlayerClock } from '../store/PlayerContext'
 import { navigate } from '../hooks/useHashRoute'
-import { fmtTime } from '../lib/format'
-import { PauseIcon, PlayIcon } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Progress } from '@/components/ui/progress'
 import Cover from './Cover'
 
+/** 底部迷你播放条：封面 · 标题 + 进度 · 播放/暂停 */
 export default function MiniPlayer() {
   const { slug, talk, playing, toggle } = usePlayer()
   const { time, duration } = usePlayerClock()
   if (!slug || !talk) return null
 
-  const pct = duration ? (time / duration) * 100 : 0
+  const pct = duration ? Math.min(100, (time / duration) * 100) : 0
+  const open = () => navigate(`/talk/${slug}`)
   return (
     <div
       role="button"
       tabIndex={0}
       aria-label={`打开播放页：${talk.title}`}
-      onClick={() => navigate(`/talk/${slug}`)}
+      onClick={open}
       onKeyDown={e => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault()
-          navigate(`/talk/${slug}`)
+          open()
         }
       }}
       className="mini-player"
     >
-      <div className="mini-player-row">
-        {talk.cover ? (
-          <Cover src={talk.cover} className="mini-player-cover" alt={talk.title} />
-        ) : (
-          <div className="mini-player-cover mini-player-fallback">♪</div>
-        )}
-        <div className="mini-player-copy">
-          <p>{talk.title}</p>
-          <small>{talk.speaker} · {fmtTime(time)}</small>
-        </div>
-        <Button
-          size="icon"
-          className="mini-player-button"
-          onClick={e => { e.stopPropagation(); toggle() }}
-          aria-label={playing ? '暂停' : '播放'}
-        >
-          {playing ? <PauseIcon className="fill-current" /> : <PlayIcon className="fill-current" />}
-        </Button>
-      </div>
-      <Progress value={pct} className="mini-player-progress" />
+      <span className="mini-player-art">
+        <Cover src={talk.cover} className="mini-player-cover" alt="" />
+      </span>
+      <span className="mini-player-copy">
+        <span className="mini-player-title">{talk.title}</span>
+        <span className="mini-player-bar" aria-hidden><span style={{ width: `${pct}%` }} /></span>
+      </span>
+      <button
+        className="mini-player-toggle"
+        onClick={e => { e.stopPropagation(); toggle() }}
+        aria-label={playing ? '暂停' : '播放'}
+      >
+        {playing ? <PauseIcon /> : <PlayIcon />}
+      </button>
     </div>
   )
 }

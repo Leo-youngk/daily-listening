@@ -1,0 +1,917 @@
+{
+ "bbc6min_260924": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790571617
+ },
+ "bbc6min_260917": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790571617
+ },
+ "curious_634": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790571625
+ },
+ "thinking_407": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790571632
+ },
+ "bbc6min_260910": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572227
+ },
+ "bbc6min_260903": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572266
+ },
+ "bbc6min_260827": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572305
+ },
+ "bbc6min_260820": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572331
+ },
+ "bbc6min_260813": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572357
+ },
+ "bbc6min_260806": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572384
+ },
+ "bbc6min_260730": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572418
+ },
+ "bbc6min_260723": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572459
+ },
+ "bbc6min_260716": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572490
+ },
+ "bbc6min_260709": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572519
+ },
+ "bbc6min_260702": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572546
+ },
+ "bbc6min_260625": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572575
+ },
+ "bbc6min_260618": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572606
+ },
+ "bbc6min_260611": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572637
+ },
+ "bbc6min_260604": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572665
+ },
+ "bbc6min_260528": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572696
+ },
+ "bbc6min_260521": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572727
+ },
+ "bbc6min_260514": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572750
+ },
+ "bbc6min_260507": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572777
+ },
+ "bbc6min_260430": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572800
+ },
+ "bbc6min_260423": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572827
+ },
+ "bbc6min_260416": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572859
+ },
+ "bbc6min_260409": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572889
+ },
+ "bbc6min_260402": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572919
+ },
+ "bbc6min_260326": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572955
+ },
+ "bbc6min_260319": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790572982
+ },
+ "bbc6min_260312": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573012
+ },
+ "bbc6min_260305": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573040
+ },
+ "bbc6min_260226": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573072
+ },
+ "bbc6min_260219": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573101
+ },
+ "bbc6min_260212": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573125
+ },
+ "bbc6min_260205": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573150
+ },
+ "bbc6min_260129": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573184
+ },
+ "bbc6min_260115": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573211
+ },
+ "bbc6min_260108": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573242
+ },
+ "bbc6min_260101": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573280
+ },
+ "bbc6min_251225": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573311
+ },
+ "bbc6min_251218": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573346
+ },
+ "bbc6min_251211": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573378
+ },
+ "bbc6min_251204": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573405
+ },
+ "bbc6min_251127": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573430
+ },
+ "bbc6min_251120": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573466
+ },
+ "bbc6min_251113": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573501
+ },
+ "bbc6min_251106": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573532
+ },
+ "bbc6min_251030": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573562
+ },
+ "bbc6min_251023": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573590
+ },
+ "bbc6min_251016": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573619
+ },
+ "bbc6min_251009": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573647
+ },
+ "bbc6min_251002": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573675
+ },
+ "bbc6min_250925": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573707
+ },
+ "bbc6min_250918": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573739
+ },
+ "bbc6min_250911": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573780
+ },
+ "bbc6min_250904": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573826
+ },
+ "bbc6min_250828": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573861
+ },
+ "bbc6min_250821": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573893
+ },
+ "bbc6min_250814": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573919
+ },
+ "bbc6min_250807": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573948
+ },
+ "bbc6min_250731": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790573975
+ },
+ "bbc6min_250724": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574006
+ },
+ "bbc6min_250717": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574033
+ },
+ "bbc6min_250710": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574070
+ },
+ "bbc6min_250703": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574110
+ },
+ "bbc6min_250626": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574151
+ },
+ "bbc6min_250619": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574200
+ },
+ "bbc6min_250612": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574246
+ },
+ "bbc6min_250605": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574283
+ },
+ "bbc6min_250529": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574315
+ },
+ "bbc6min_250522": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574344
+ },
+ "bbc6min_250515": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574370
+ },
+ "bbc6min_250508": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574405
+ },
+ "bbc6min_250501": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574438
+ },
+ "bbc6min_250424": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574472
+ },
+ "bbc6min_250327": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574507
+ },
+ "bbc6min_250320": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574541
+ },
+ "bbc6min_250313": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574581
+ },
+ "bbc6min_250227": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574633
+ },
+ "bbc6min_250220": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574671
+ },
+ "bbc6min_250213": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574710
+ },
+ "bbc6min_250206": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574764
+ },
+ "bbc6min_250123": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574801
+ },
+ "bbc6min_250116": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574840
+ },
+ "bbc6min_250109": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574876
+ },
+ "bbc6min_250102": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574916
+ },
+ "bbc6min_241226": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574960
+ },
+ "bbc6min_241219": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790574993
+ },
+ "bbc6min_241212": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575033
+ },
+ "bbc6min_241205": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575067
+ },
+ "bbc6min_241128": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575114
+ },
+ "bbc6min_241121": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575159
+ },
+ "bbc6min_241114": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575207
+ },
+ "bbc6min_241107": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575248
+ },
+ "bbc6min_241031": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575289
+ },
+ "bbc6min_241024": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575325
+ },
+ "bbc6min_241017": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575362
+ },
+ "bbc6min_241010": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575395
+ },
+ "bbc6min_241003": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575427
+ },
+ "bbc6min_240926": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575485
+ },
+ "bbc6min_240919": {
+  "series": "bbc",
+  "ok": true,
+  "ts": 1790575536
+ },
+ "curious_631": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790575676
+ },
+ "curious_629": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790575773
+ },
+ "curious_626": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790575919
+ },
+ "curious_624": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790576060
+ },
+ "curious_622": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790576174
+ },
+ "curious_619": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790576278
+ },
+ "curious_617": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790576370
+ },
+ "curious_614": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790576503
+ },
+ "curious_612": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790576605
+ },
+ "curious_609": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790576700
+ },
+ "curious_607": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790576840
+ },
+ "curious_604": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790576944
+ },
+ "curious_602": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790577058
+ },
+ "curious_599": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790577152
+ },
+ "curious_597": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790577269
+ },
+ "curious_594": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790577400
+ },
+ "curious_592": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790577584
+ },
+ "curious_590": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790577741
+ },
+ "curious_587": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790577839
+ },
+ "curious_585": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790577943
+ },
+ "curious_582": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 72.3 MiB for an array with shape (1, 23587, 201) and data type complex128"
+ },
+ "curious_580": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790578052
+ },
+ "curious_577": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790578141
+ },
+ "curious_575": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790578254
+ },
+ "curious_572": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790578345
+ },
+ "curious_570": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790582779
+ },
+ "curious_567": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790578473
+ },
+ "curious_565": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790578595
+ },
+ "curious_563": {
+  "series": "curious",
+  "ok": false,
+  "why": "align 0.000"
+ },
+ "curious_560": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790582864
+ },
+ "curious_558": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790582957
+ },
+ "curious_555": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583064
+ },
+ "curious_553": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790580958
+ },
+ "curious_550": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583153
+ },
+ "curious_548": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583239
+ },
+ "curious_545": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583338
+ },
+ "curious_543": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583402
+ },
+ "curious_540": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583496
+ },
+ "curious_538": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583587
+ },
+ "curious_536": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583665
+ },
+ "curious_533": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583747
+ },
+ "curious_530": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583881
+ },
+ "curious_528": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790583963
+ },
+ "curious_526": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790584061
+ },
+ "curious_523": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790584138
+ },
+ "curious_521": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790584210
+ },
+ "curious_518": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790584273
+ },
+ "curious_516": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790584361
+ },
+ "curious_513": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 207. MiB for an array with shape (1, 134990, 201) and data type complex64"
+ },
+ "curious_511": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 344. MiB for an array with shape (1, 112571, 400) and data type float64"
+ },
+ "curious_508": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 238. MiB for an array with shape (1, 154901, 201) and data type complex64"
+ },
+ "curious_506": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Non-zero status code returned while running LSTM node. Name:'/decoder/rnn/LSTM' Status Message: bad allocation"
+ },
+ "curious_504": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 457. MiB for an array with shape (1, 149618, 400) and data type float64"
+ },
+ "curious_501": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 391. MiB for an array with shape (1, 127605, 201) and data type complex128"
+ },
+ "curious_500": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 308. MiB for an array with shape (1, 101045, 400) and data type float64"
+ },
+ "curious_498": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 309. MiB for an array with shape (1, 101403, 400) and data type float64"
+ },
+ "curious_496": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 367. MiB for an array with shape (1, 120376, 400) and data type float64"
+ },
+ "curious_494": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 337. MiB for an array with shape (1, 221061, 400) and data type float32"
+ },
+ "curious_492": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 320. MiB for an array with shape (1, 104997, 400) and data type float64"
+ },
+ "curious_490": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 346. MiB for an array with shape (1, 113387, 400) and data type float64"
+ },
+ "curious_488": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790579937
+ },
+ "curious_486": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790580075
+ },
+ "curious_484": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 371. MiB for an array with shape (1, 121618, 400) and data type float64"
+ },
+ "curious_482": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 368. MiB for an array with shape (1, 120139, 201) and data type complex128"
+ },
+ "curious_480": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 316. MiB for an array with shape (1, 102923, 201) and data type complex128"
+ },
+ "curious_478": {
+  "series": "curious",
+  "ok": true,
+  "ts": 1790581549
+ },
+ "curious_476": {
+  "series": "curious",
+  "ok": false,
+  "why": "对齐异常 Unable to allocate 417. MiB for an array with shape (1, 135835, 201) and data type complex128"
+ },
+ "curious_474": {
+  "series": "curious",
+  "ok": false,
+  "why": "取正文失败: https://www.leonardoenglish.com/podcasts/amanda-knox-trial: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+ },
+ "curious_472": {
+  "series": "curious",
+  "ok": false,
+  "why": "取正文失败: https://www.leonardoenglish.com/podcasts/nayib-bukele: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+ },
+ "thinking_406": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790584486
+ },
+ "thinking_405": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790584590
+ },
+ "thinking_404": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790584700
+ },
+ "thinking_403": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790584783
+ },
+ "thinking_402": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790584894
+ },
+ "thinking_401": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790584973
+ },
+ "thinking_400": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790585678
+ },
+ "thinking_399": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790585078
+ },
+ "thinking_398": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790585204
+ },
+ "thinking_397": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790585316
+ },
+ "thinking_396": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790585797
+ },
+ "thinking_395": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790585900
+ }
+}

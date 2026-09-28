@@ -1,0 +1,122 @@
+Hello, hello hello, and welcome to English Learning for Curious Minds, by Leonardo English.
+The show where you can listen to fascinating stories and learn weird and wonderful things about the world at the same time as improving your English.
+I'm Alastair Budge, and today is the start of another three-part mini-series, this time on the broad theme of important scientific discovery.
+In part one, today’s episode, which is going to be appropriately released on February 28th, we are going to talk about the science of leap years.
+In part two, we will talk about the discovery of the blueprint of life: DNA.
+And in part three we will talk about the way in which mathematics changed the world.
+OK then, let’s get right into it, and talk about leap years.
+Sometimes, it seems that the natural world has been created in complete harmony with mathematic principles .
+The Fibonacci sequence, for example, is a sequence of numbers where each new number is the sum of the previous two.
+0,1,1,2,3,5,8,13, and so on.
+As any mathematician knows, the Fibonacci Sequence crops up throughout the discipline of mathematics, but it can also be found in nature, in sunflowers, pinecones , pineapples, and so on.
+Then there’s the so-called “Golden Ratio ”, a number approximately equal to 1.618, which has been called the “perfect proportion ” and has often been claimed to show up in everything from the spiral of a shell to the proportions of the human body.
+But it’s not just in living things.
+Hurricane spirals , galaxies , and even the structure of DNA reflect this ratio, almost as if the universe itself is built on a foundation of mathematical elegance .
+But, there are some exceptions to this natural elegance .
+One example is the Earth’s orbit around the sun.
+It takes, as we both know, 24 hours for the Earth to rotate on its axis .
+This is a “solar day”, the time it takes for the Sun to return to the same position in the sky, as seen from Earth.
+That’s simple enough, but there is a much larger problem with the Earth’s orbit , and that’s related to how long the Earth takes to go all the way around the sun.
+Or to put it another way, the length of “a year”.
+As we know, a year is 365 days.
+Apart from it isn’t exactly 365 days, it's a little bit longer than that.
+To be precise, it takes more like 365.2421988 days for the Earth to complete one full orbit around the sun. Or to put it in easier terms to understand, it takes 365 days and just under 6 hours.
+This imprecision is the reason humans created today’s topic: the leap year.
+It is a neat and tidy solution to the problem of Earth’s inexact orbit , and although on the face of it , it might seem like there’s nothing more to it than adding an extra day to February every four years, it is actually a little bit more complicated than that.
+So, to start off this exploration of the science of leap years, we need to go back to the start.
+For prehistoric humans who cared little about the details of the calendar, the fact that a year wasn’t exactly 365 days was of little importance.
+The sun rose in the morning and set in the evening, the moon waxed and waned , and the stars moved across the sky.
+Those further away from the Equator had warmer seasons and colder seasons when they got more or less daylight, given the fact that the Earth is on a slight tilt .
+Prehistoric man’s life was marked by these seasons, which would come and go on a predictable schedule - what we now call spring, summer, autumn and winter.
+As humans became more settled, and civilisation started to develop, they started paying closer attention to the passage of time.
+Early civilisations began to notice and document patterns.
+The Nile would flood at the same time every year, animals would migrate on a predictable schedule, and the stars would appear in the same positions at certain times.
+It didn’t take long for people to realise that the cycle of the seasons repeated approximately every 365 days.
+And with this, the first calendars were born.
+Many of these early calendars were, in fact, based on the moon rather than the sun.
+A lunar cycle – the time it takes for the moon to go from one full moon to the next – is about 29.5 days.
+Twelve of these lunar months make up roughly 354 days, so 11 days less than a solar year, but it was near enough.
+And this was fine for a while.
+Many ancient civilisations, including the Babylonians and early Greeks, used lunar calendars and simply adjusted them as needed, often by adding extra months to catch up .
+After all, yes there was some external trade, but so long as everyone within a particular settlement or area knew what the date was, it was relatively easy to adjust it without too much complication.
+But as societies grew more complex, so did their need for a more precise calendar, a calendar that accurately aligned with the Earth’s orbit around the sun.
+That calendar was, of course, the solar calendar.
+And it was the Egyptians who were among the first to adopt it.
+By observing the annual flooding of the Nile and tracking the movements of the star Sirius, they estimated a year to be about 365.25 days— remarkably close to the actual solar year.
+Now was the question of how to divide up those days into sensible chunks .
+Their calendar had 12 months of 30 days, with 5 extra days tacked on at the end of the year as a sort of annual festival.
+This was a big improvement–after all, it is very similar to what we have today–but it wasn’t perfect.
+Over time, the slight discrepancy between 365 days and the true length of the solar year added up, causing the calendar to drift out of sync with the seasons.
+Fast forward to ancient Rome, the calendar was even more of a mess .
+The original Roman calendar had only 10 months, starting in March and ending in December.
+The names of our modern months still reflect this: “September” comes from the Latin word for “seven” but is our 9th month of the year, “October” comes from the Latin word for “eight” but is our tenth month of the year, and it’s a similar story with “November,” and “December”, which come from the Latin words for nine, and ten.
+At the time, winter was not assigned official months—the period roughly covering what we now call January and February was simply considered a dead time, an unstructured gap in the calendar.
+In practice, this meant that the Roman calendar was an administrative nightmare , and there were long gaps where the calendar didn’t align with the seasons at all.
+Farmers would be planting crops at the wrong times, festivals would drift across the seasons, and even military campaigns could be thrown into disarray because the calendar no longer aligned with the natural world.
+To make matters worse, powerful officials exploited this confusion for their own benefit.
+If extending a year or shortening it could help them stay in power or delay an opponent’s election, they would simply adjust the calendar to suit their needs.
+It was eventually expanded to 12 months, with January and February added at the start of the year.
+But it was still pretty chaotic .
+By the time Julius Caesar came to power, the Roman calendar had drifted so far out of sync with the solar year that seasons were arriving three months earlier than they should.
+Spring festivals were being celebrated in the middle of winter, and the practical workings of Roman society were falling apart.
+Caesar, a man who prided himself on his organisational ability, decided this couldn’t continue.
+In 46 BCE, with the help of Greek astronomers, he reformed the calendar entirely.
+The Julian calendar, as it came to be known, was based on the solar year, with a length of 365.25 days.
+To account for that extra 0.25 days each year, Caesar introduced the leap year, adding an extra day to February every four years.
+It was a simple and elegant solution, and it brought order back to the Roman world.
+No longer would festivals and planting seasons drift aimlessly through the year. The calendar was now tied to the cycles of the Sun.
+But there was a small problem with Caesar’s calculations. The solar year isn’t actually 365.25 days long—it’s 365.2421988 days.
+That difference of about 11 minutes per year might seem tiny, but over time, it added up.
+By the 16th century, the calendar had drifted out of alignment with the seasons once again.
+This time, it was Pope Gregory XIII who decided to fix the problem.
+In 1582, Pope Gregory introduced a new calendar, which we now call the Gregorian calendar.
+To correct the drift , 10 days were skipped that year.
+People in Catholic countries went to bed on the 4th of October and woke up on the 15th of October. If you search for great events that happened in France, Italy, or Spain on the 5th or the 6th or the 7th of October, 1582, there were none because those days didn’t happen.
+Gregory also introduced a new rule to refine leap years.
+Under the Gregorian system, a year would only be a leap year if it was divisible by 4, but century years, like 1800 or 1900, wouldn’t be leap years unless they were also divisible by 400.
+That’s why the year 2000, as you may remember, and the year 1600, which you will not remember, were leap years; they can be divided by 400.
+And the year 2096 will be a leap year, but the year 2100 will not be a leap year because you can’t divide 2100 by 400.
+Anyway, this refinement brought the calendar back in line with the solar year and solved the 11-minute-per-year drift problem for good—or at least, for the foreseeable future .
+Even so, adopting the Gregorian calendar wasn’t a smooth process.
+Protestant countries were suspicious of this decidedly Catholic reform and refused to adopt it at first.
+England and its colonies didn’t make the switch until 1752.
+By then, the Julian calendar was 11 days out of sync with the Gregorian calendar, so those 11 days had to be skipped .
+Just as people in Catholic countries did in October 1582, in 1752, anyone living in the British Empire went to bed on September the 2nd and woke up on September the 14th.
+It caused confusion, frustration, and even protests, but eventually, the Gregorian calendar became the global standard. Although other calendars are used, often for cultural or religious purposes, the Gregorian calendar is the most widely used civil calendar across the world today.
+But it’s perhaps worth asking: is the Gregorian calendar the final word on how we measure time?
+Could there be better ways to organise our year, and solve the problem of leap years for good?
+Calendar reform is not just a historical curiosity—it’s a topic that continues to fascinate astronomers, mathematicians, and even policymakers.
+So, before we go, let’s talk briefly about some of these ideas.
+One of the more radical ideas is the concept of a perpetual calendar, where every year would follow exactly the same pattern.
+In such a system, each date would always fall on the same day of the week, making planning simpler.
+For example, 1 January would always be a Monday.
+One version of this is something called The International Fixed Calendar, which was proposed in the early 20th century.
+Under this system, the year would be divided into 13 months of exactly 28 days each, with one or two extra days outside the calendar entirely—holidays that wouldn’t belong to any month or week.
+While such a system would perhaps streamline record-keeping, you’d still need a mechanism for those extra ~0.24 days a year, and this solution isn’t really any neater than the current leap year system.
+Another intriguing idea is the World Calendar, which divides the year into 12 months, but the focus is on quarters–blocks of three months–rather than individual months.
+Each quarter would contain three months: two months with 30 days and one with 31 days.
+This consistent quarterly structure would make the calendar predictable, and an extra day—a year-end holiday outside the regular calendar—would be added to balance the total.
+Leap years would include one more extra day, often called a “leap day,” similarly placed outside the calendar structure. This system would retain the 12-month format we’re familiar with but introduce regularity and symmetry within the year.
+Now, while both of these are perhaps interesting ideas, they have never gained serious traction . You still have the problem of a year not being exactly 365 days, so some sort of extra days need to be added somewhere.
+And then there’s the most ambitious idea of all: changing the speed of the Earth’s orbit around the sun.
+If the Earth’s orbit around the Sun could be adjusted so that it took exactly 365 days, rather than just over 365 days, we wouldn’t need leap years at all, and we could keep the same calendar system.
+Unfortunately, this is impossible, with today’s technology at least.
+The Earth’s orbit is governed by the gravitational pull of the Sun and the balance between that pull and the planet’s velocity .
+To change the speed of the Earth’s orbit , we would need to either increase or decrease its velocity significantly. This would require an unimaginable amount of energy—far beyond what humanity could ever generate.
+And even if it were possible, the unintended consequences could be catastrophic .
+Changing the speed of the Earth’s orbit would affect the gravitational balance of the entire solar system, potentially destabilising the orbits of other planets and moons. It could even disrupt the delicate conditions that make life on Earth possible, such as our climate and the length of the seasons.
+It’s an interesting thought experiment but not one that’s grounded in reality.
+What’s more, it’s not really necessary. Leap years aren’t so bad at all, and the Gregorian calendar and its cunning system of calculating which years to add extra days to, while imperfect, is a pretty clever solution.
+Could it be improved?
+Perhaps. But there really is very little need to do so. Sometimes, the systems we inherit endure not because they are perfect but because they work well enough.
+So, to wrap things up, today, we hardly need to think about leap years.
+They’re a part of life, quietly keeping our calendars in sync with the seasons.
+But when you stop to consider them, they’re an incredible testament to human ingenuity .
+They show how, even thousands of years ago, we were observing, calculating, and innovating to make sense of the universe.
+And they remind us that while the natural world may not be perfectly elegant , our ability to adapt and find solutions is something truly remarkable.
+OK then, that is it for today's episode on the science of leap years.
+I hope it's been an interesting one, and that you've learnt something new.
+As always, I would love to know what you thought about this episode.
+You can head right into our community forum, which is at community.leonardoenglish.com and get chatting away to other curious minds.
+You've been listening to English Learning for Curious Minds by Leonardo English.
+I'm Alastair Budge, you stay safe, and I'll catch you in the next episode.

@@ -3,6 +3,7 @@ import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import type { DictShard } from '../src/lib/lookup'
 import { normalizeTerm, phraseCandidates, shardKey, tokenizeSentence } from '../src/lib/lookup'
+import { DICT_VERSION } from '../src/lib/dict'
 
 // jsdom 环境下 import.meta.url 不是 file: 协议，只能从 vitest 的工作目录（app/）推路径
 const DICT_DIR = resolve(process.cwd(), '../public/dict')
@@ -33,6 +34,8 @@ describe('词典分片索引', () => {
       shards: Record<string, number>
     }
     expect(index.v).toMatch(/^ecdict-/)
+    // 前端按这个版本号拼分片地址；对不上就会拿到浏览器里一年期缓存的旧分片
+    expect(index.v).toBe(DICT_VERSION)
     expect(index.source).toContain('MIT')
     expect(Object.keys(index.shards).length).toBeGreaterThan(300)
   })

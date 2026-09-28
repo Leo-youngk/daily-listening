@@ -25,11 +25,12 @@ DATA = ROOT / "public" / "data"
 # 必须与 app/src/lib/lookup.ts 的 WORD_RE 逐字一致
 WORD_RE = re.compile("[A-Za-z][A-Za-z'’-]*")
 
-CATEGORIES = {"ted", "commencement", "voa", "bbc"}
-ZH_SOURCES = {"official", "mt", "mixed"}
-W_SOURCES = {"yt", "asr"}
-REQUIRED = ("slug", "title", "speaker", "category", "duration", "cover",
-            "audioUrls", "zhSource", "sentences")
+CATEGORIES = {"bbc", "curious", "thinking"}
+ZH_SOURCES = {"mt"}
+W_SOURCES = {"asr"}
+REQUIRED = ("slug", "title", "speaker", "category", "date", "duration", "cover",
+            "audioUrls", "zhSource", "keywords", "sentences")
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 # 时间轴容差：对齐脚本按毫秒取整，允许句界外溢一点
 TIME_EPS = 0.05
@@ -83,6 +84,19 @@ def check_meta(slug, talk, rep):
     cover = talk.get("cover")
     if not isinstance(cover, str) or not cover.startswith("/covers/"):
         rep.error(where, "cover 非法：%r" % (cover,))
+    elif not (ROOT / "public" / cover.lstrip("/")).is_file():
+        rep.error(where, "封面文件不存在：%s" % (cover,))
+
+    if not isinstance(talk.get("date"), str) or not DATE_RE.match(talk.get("date") or ""):
+        rep.error(where, "date 非法：%r" % (talk.get("date"),))
+
+    keywords = talk.get("keywords")
+    if not isinstance(keywords, list):
+        rep.error(where, "keywords 不是数组")
+    else:
+        for k, item in enumerate(keywords):
+            if not isinstance(item, dict) or not str(item.get("term", "")).strip() or not str(item.get("def", "")).strip():
+                rep.error(where, "keywords[%d] 缺 term/def：%r" % (k, item))
 
 
 def check_sentences(slug, talk, rep):
@@ -225,13 +239,59 @@ def check_manifest(talks, rep):
         talk = talks.get(slug)
         if not talk:
             continue
-        for key in ("title", "speaker", "category", "zhSource"):
+        for key in ("title", "speaker", "category", "zhSource", "date", "cover"):
             if item.get(key) != talk.get(key):
                 rep.error("manifest.json", "%s 的 %s 与正文不一致：%r vs %r"
                           % (slug, key, item.get(key), talk.get(key)))
         if abs((item.get("duration") or 0) - (talk.get("duration") or 0)) > 1.0:
             rep.error("manifest.json", "%s 的 duration 与正文不一致：%s vs %s"
                       % (slug, item.get("duration"), talk.get("duration")))
+
+
+def check_vocab(talks, rep):
+    """背词数据（build_vocab.py 产物）与语料一致：例句必须指向真实存在的句子，
+    起点必须与句子一致——切句原声按"句子下标-起点厘秒"命名，对不上就是 404。"""
+    book_path = ROOT / "public" / "wordbook" / "cet6.json"
+    if not book_path.is_file():
+        rep.error("wordbook", "缺少 public/wordbook/cet6.json（运行 build_vocab.py）")
+        return
+    words = json.loads(book_path.read_text(encoding="utf-8"))["words"]
+    if len(words) < 5000:
+        rep.error("wordbook", "六级词表只有 %d 词" % len(words))
+    for row in words:
+        if len(row) != 5 or row[4] not in (4, 6) or not row[0]:
+            rep.error("wordbook", "词条格式非法：%r" % (row,))
+            break
+
+    episodes = json.loads((ROOT / "public" / "wordbook" / "episodes.json").read_text(encoding="utf-8"))["episodes"]
+    if set(episodes) != set(talks):
+        rep.error("wordbook", "episodes.json 与语料不一致：多 %s 少 %s"
+                  % (sorted(set(episodes) - set(talks))[:3], sorted(set(talks) - set(episodes))[:3]))
+    if any(k < 0 or k >= len(words) for idx in episodes.values() for k in idx):
+        rep.error("wordbook", "episodes.json 里有越界的词表下标")
+
+    examples_dir = ROOT / "public" / "examples"
+    checked = 0
+    for shard in sorted(examples_dir.glob("*.json")):
+        if shard.name == "index.json":
+            continue
+        for term, items in json.loads(shard.read_text(encoding="utf-8"))["entries"].items():
+            for ex in items:
+                checked += 1
+                where = "examples/%s:%s" % (shard.stem, term)
+                talk = talks.get(ex["s"])
+                if not talk or ex["i"] >= len(talk["sentences"]):
+                    rep.error(where, "指向不存在的句子 %s#%s" % (ex["s"], ex["i"]))
+                    continue
+                sentence = talk["sentences"][ex["i"]]
+                if sentence["en"] != ex["en"]:
+                    rep.error(where, "例句文本与语料不一致（重跑 build_vocab.py）")
+                if abs(sentence["start"] - ex["a"]) > 0.005:
+                    rep.error(where, "例句起点与语料不一致，切句原声会 404（重跑 build_vocab.py 与 cut_clips.py）")
+                if ex["w"] >= token_count(ex["en"]):
+                    rep.error(where, "目标词下标越界：%s" % ex["w"])
+    if not checked:
+        rep.error("examples", "没有任何原声例句")
 
 
 def main():
@@ -268,6 +328,7 @@ def main():
             totals["full_w_talks"] += 1
 
     check_manifest(talks, rep)
+    check_vocab(talks, rep)
 
     for line in rep.warnings:
         print("[WARN ] " + line)

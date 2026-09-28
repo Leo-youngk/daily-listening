@@ -1,17 +1,17 @@
-import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import type { ReactNode } from 'react'
+import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import type { CSSProperties, ReactNode } from 'react'
 import { usePlayer, usePlayerClock } from '../store/PlayerContext'
+import type { LoopMode } from '../store/PlayerContext'
 import { loadSettings, saveSettings, toggleFavorite, isFavorite } from '../lib/storage'
 import type { Sentence, Settings } from '../lib/types'
 import { fmtTime } from '../lib/format'
 import {
-  ChevronLeftIcon, HeartIcon, PauseIcon, PlayIcon, SettingsIcon,
-  SkipBackIcon, SkipForwardIcon, RotateCcwIcon, FastForwardIcon,
+  ChevronDownIcon, EllipsisIcon, ExternalLinkIcon, HeartIcon, MinusIcon, PauseIcon, PlayIcon, PlusIcon, RepeatIcon,
+  SkipBackIcon, SkipForwardIcon,
 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'
 import { Switch } from '@/components/ui/switch'
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'
+import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
 import DictPanel from '../components/DictPanel'
 import type { DictTarget } from '../components/DictPanel'
@@ -20,6 +20,27 @@ import { prefetchLookup } from '../lib/dict'
 import { navigate } from '../hooks/useHashRoute'
 import { wordAt } from '../lib/timeline'
 import OfflineControl from '../components/OfflineControl'
+import Cover from '../components/Cover'
+import EpisodeWords from '../components/EpisodeWords'
+import Segmented from '../components/Segmented'
+import { NotesIcon } from '../components/Icons'
+import { useCards } from '../hooks/useCards'
+import { useCoverTint } from '../hooks/useCoverTint'
+import { isMastered } from '../lib/srs'
+import { loadWordbookMap } from '../lib/wordbook'
+import type { BookWord } from '../lib/wordbook'
+import { seriesInfo } from '../lib/types'
+
+/** 字幕标注：在学的词铺底色，没学过的六级词加虚下划线；键是 normalizeTerm 后的表面形式 */
+type WordMarks = Map<string, 'learning' | 'new'>
+type View = Settings['playerView']
+
+const VIEWS = [['play', '播放'], ['text', '文稿']] as const
+const RATES = [0.5, 0.6, 0.7, 0.8, 1, 1.2, 1.5, 2]
+/** 倍速胶囊点一下轮换的档位；更多档位在"···"里 */
+const QUICK_RATES = [0.8, 1, 1.2, 1.5]
+const LOOPS = [['0', '关'], ['1', '1 次'], ['3', '3 次'], ['999', '无限']] as const
+const fmtRate = (r: number) => `${r.toFixed(1)}×`
 
 /** 容器内缓动滚动。iOS Safari 的 scrollIntoView({behavior:'smooth'}) 连续调用会互相打断 */
 function animateScroll(box: HTMLElement, to: number, duration = 380) {
@@ -46,10 +67,11 @@ function animateScroll(box: HTMLElement, to: number, duration = 380) {
  * 可点词的英文句子。词序与查词接口共用同一套分词，data-w 下标同时也是 Sentence.w 的下标。
  * 高亮态不在这里渲染——由 Player 的 rAF 直接改 class，避免每帧重渲染整个字幕流。
  */
-function TokenizedText({ text, scale, sentence, onWord, onPrefetch }: {
+function TokenizedText({ text, scale, sentence, marks, onWord, onPrefetch }: {
   text: string
   scale: number
   sentence: Sentence
+  marks: WordMarks
   onWord: (wordIndex: number, sentence: Sentence) => void
   onPrefetch: (wordIndex: number, sentence: Sentence) => void
 }) {
@@ -67,7 +89,7 @@ function TokenizedText({ text, scale, sentence, onWord, onPrefetch }: {
           onPrefetch(i, sentence)
         }}
         onClick={e => { e.stopPropagation(); onWord(i, sentence) }}
-        className="subtitle-word"
+        className={marks.size ? `subtitle-word${markClass(marks.get(normalizeTerm(token.text)))}` : 'subtitle-word'}
       >
         {token.text}
       </span>,
@@ -76,15 +98,20 @@ function TokenizedText({ text, scale, sentence, onWord, onPrefetch }: {
   })
   if (cursor < text.length) nodes.push(<span key="tail">{text.slice(cursor)}</span>)
   return (
-    <p lang="en" className="subtitle-english" style={{ fontSize: `${20 * scale}px` }}>{nodes}</p>
+    <p lang="en" className="subtitle-english" style={{ fontSize: `${18 * scale}px` }}>{nodes}</p>
   )
 }
 
-const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, onSeek, onWord, onPrefetch }: {
+function markClass(mark?: 'learning' | 'new') {
+  return mark ? ` is-${mark}` : ''
+}
+
+const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, marks, onSeek, onWord, onPrefetch }: {
   s: Sentence
   active: boolean
   scale: number
   hideZh: boolean
+  marks: WordMarks
   onSeek: (s: Sentence) => void
   onWord: (wordIndex: number, sentence: Sentence) => void
   onPrefetch: (wordIndex: number, sentence: Sentence) => void
@@ -95,7 +122,7 @@ const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, onSeek
       aria-current={active ? 'true' : undefined}
       className="subtitle-sentence"
     >
-      {/* 时间戳当键盘入口：整行不能做成 button，否则读屏会把一整句当成一个标签吹掉，逐词查词就没了 */}
+      {/* 时间戳当键盘入口（视觉隐藏）：整行不能做成 button，否则读屏会把一整句当成一个标签吹掉，逐词查词就没了 */}
       <button
         onClick={e => { e.stopPropagation(); onSeek(s) }}
         aria-label={`跳到 ${fmtTime(s.start)}`}
@@ -103,24 +130,23 @@ const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, onSeek
       >
         {fmtTime(s.start)}
       </button>
-      <div className="min-w-0 flex-1">
-        <TokenizedText text={s.en} scale={scale} sentence={s} onWord={onWord} onPrefetch={onPrefetch} />
-        {!hideZh && s.zh && (
-          <p lang="zh-CN" className="subtitle-translation" style={{ fontSize: `${14.5 * scale}px` }}>
-            {s.zh}
-          </p>
-        )}
-      </div>
+      <TokenizedText text={s.en} scale={scale} sentence={s} marks={marks} onWord={onWord} onPrefetch={onPrefetch} />
+      {!hideZh && s.zh && (
+        <p lang="zh-CN" className="subtitle-translation" style={{ fontSize: `${15 * scale}px` }}>
+          {s.zh}
+        </p>
+      )}
     </div>
   )
 })
 
 /** 字幕流独立成 memo 组件：Player 每 100ms 因进度条重渲染，这里只在换句时才重建 */
-const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, hideZh, onSeek, onWord, onPrefetch }: {
+const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, hideZh, marks, onSeek, onWord, onPrefetch }: {
   sentences: Sentence[]
   currentIdx: number
   scale: number
   hideZh: boolean
+  marks: WordMarks
   onSeek: (s: Sentence) => void
   onWord: (wordIndex: number, sentence: Sentence) => void
   onPrefetch: (wordIndex: number, sentence: Sentence) => void
@@ -134,6 +160,7 @@ const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, 
             active={i === currentIdx}
             scale={scale}
             hideZh={hideZh}
+            marks={marks}
             onSeek={onSeek}
             onWord={onWord}
             onPrefetch={onPrefetch}
@@ -144,7 +171,18 @@ const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, 
   )
 })
 
-const RATES = [0.5, 0.6, 0.7, 0.8, 1, 1.2, 1.5, 2]
+/** 设置面板里的一行：左标题（可带说明），右控件 */
+function SettingRow({ label, note, children }: { label: string; note?: string; children: ReactNode }) {
+  return (
+    <div className="group-row">
+      <div className="min-w-0">
+        <p className="group-row-label">{label}</p>
+        {note && <p className="group-row-sub">{note}</p>}
+      </div>
+      {children}
+    </div>
+  )
+}
 
 export default function Player({ slug }: { slug: string }) {
   const p = usePlayer()
@@ -152,7 +190,14 @@ export default function Player({ slug }: { slug: string }) {
   const [settings, setSettings] = useState(loadSettings)
   const [dict, setDict] = useState<DictTarget | null>(null)
   const [showSettings, setShowSettings] = useState(false)
+  const [showWords, setShowWords] = useState(false)
+  const { cards } = useCards()
+  const [book, setBook] = useState<Map<string, BookWord> | null>(null)
+  useEffect(() => {
+    loadWordbookMap().then(setBook).catch(() => setBook(null))
+  }, [])
   const [, force] = useState(0)
+  const view: View = settings.playerView
   const scrollBoxRef = useRef<HTMLElement>(null)
   const userScrollUntil = useRef(0)
   const touching = useRef(false)
@@ -160,7 +205,11 @@ export default function Player({ slug }: { slug: string }) {
   const scrollRunningUntil = useRef(0)
   const panelWasOpen = useRef(false)
   const follow = useRef({ playing: p.playing, enabled: settings.autoScroll, blocked: false })
-  follow.current = { playing: p.playing, enabled: settings.autoScroll, blocked: !!dict || showSettings }
+  follow.current = {
+    playing: p.playing,
+    enabled: settings.autoScroll,
+    blocked: !!dict || showSettings || showWords || view !== 'text',
+  }
   const followPosition = useRef({ idx: -1, line: -1, suspended: false })
 
   const painted = useRef<{ row: HTMLElement | null; spans: HTMLElement[]; idx: number; word: number }>(
@@ -177,6 +226,20 @@ export default function Player({ slug }: { slug: string }) {
   const fav = isFavorite(slug)
   const talk = p.talk
   const sentences = talk?.sentences ?? []
+  const tint = useCoverTint(talk?.cover)
+
+  // 虚线只标六级新增词：四级基础词大多已经会了，全标出来满屏都是线
+  const marks = useMemo<WordMarks>(() => {
+    const out: WordMarks = new Map()
+    if (!talk || !settings.markWords) return out
+    for (const [surface, lemma] of Object.entries(talk.lemmas ?? {})) {
+      const card = cards.get(lemma)
+      if (!card) {
+        if (book?.get(lemma)?.tier === 6) out.set(surface, 'new')
+      } else if (card.status === 'learning' && !isMastered(card)) out.set(surface, 'learning')
+    }
+    return out
+  }, [talk, cards, book, settings.markWords])
   const sentencesRef = useRef<Sentence[]>(sentences)
   sentencesRef.current = sentences
 
@@ -251,6 +314,18 @@ export default function Player({ slug }: { slug: string }) {
     cancelScroll.current()
   }, [talk])
 
+  // 切到"文稿"时直接定位到正在读的句子，不从顶部滚一路动画
+  useLayoutEffect(() => {
+    const box = scrollBoxRef.current
+    if (view !== 'text' || !box) return
+    const idx = p.sentenceAt(p.getSubtitleTime())
+    const row = idx < 0 ? null : box.querySelector<HTMLElement>(`[data-row="${idx}"]`)
+    if (row) box.scrollTop += row.getBoundingClientRect().top - box.getBoundingClientRect().top - box.clientHeight * 0.35
+    followPosition.current = { idx, line: -1, suspended: false }
+    userScrollUntil.current = 0
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [view, talk])
+
   // 播放中按帧跟；暂停、拖进度条时靠每次渲染后补一次（syncWords 无变化即刻返回，开销可忽略）
   useEffect(() => {
     if (!p.playing) return
@@ -268,11 +343,11 @@ export default function Player({ slug }: { slug: string }) {
     cancelScroll.current()
     scrollRunningUntil.current = 0
     followPosition.current.line = -1
-    const panelOpen = !!dict || showSettings
+    const panelOpen = !!dict || showSettings || showWords
     if (panelOpen || panelWasOpen.current) interruptFollow()
     panelWasOpen.current = panelOpen
     return () => cancelScroll.current()
-  }, [p.playing, settings.autoScroll, settings.fontScale, settings.hideZh, dict, showSettings, interruptFollow])
+  }, [p.playing, settings.autoScroll, settings.fontScale, settings.hideZh, dict, showSettings, showWords, interruptFollow])
 
   useEffect(() => {
     const box = scrollBoxRef.current
@@ -321,39 +396,148 @@ export default function Player({ slug }: { slug: string }) {
       slug,
       sentenceIdx: sen.i,
       startTime: sen.start,
+      endTime: sen.end,
     })
   }, [slug])
   const handlePrefetch = useCallback((wordIndex: number, sen: Sentence) => {
     prefetchLookup(sen.en, wordIndex)
   }, [])
 
-  return (
-    <div className="relative mx-auto flex h-full max-w-lg flex-col">
-      {/* 顶栏 */}
-      <header className="glass safe-top z-10 flex items-center gap-1 border-b border-line px-2 py-2">
-        <Button variant="ghost" size="icon" onClick={() => {
-          if (history.length > 1) history.back()
-          else navigate('/library')
-        }} aria-label="返回">
-          <ChevronLeftIcon className="size-5" />
-        </Button>
-        <div className="min-w-0 flex-1">
-          <p className="truncate text-sm font-semibold">{talk?.title ?? '加载中…'}</p>
-          {talk && <p className="truncate text-[11px] text-muted-foreground">{talk.speaker}{talk.category === 'commencement' && talk.school ? ` · ${talk.school}` : ''}</p>}
+  const cycleRate = () => {
+    const next = QUICK_RATES[(QUICK_RATES.indexOf(settings.rate) + 1) % QUICK_RATES.length] ?? 1
+    updateSettings({ rate: next })
+  }
+  const close = () => {
+    if (history.length > 1) history.back()
+    else navigate('/programs')
+  }
+  const finished = !!talk && !p.playing && clock.duration > 0 && clock.time >= clock.duration - 1
+  const buffering = p.buffering && !p.loading
+
+  const status = (
+    <>
+      {!p.manifestReady && !p.manifestError && <p role="status" className="player-status">正在加载节目清单…</p>}
+      {p.manifestError && (
+        <div role="alert" className="player-status is-error">
+          <p>{p.manifestError}</p>
+          <button className="pill-button is-soft is-small" onClick={p.reloadManifest}>重新加载</button>
         </div>
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => { toggleFavorite(slug); force(x => x + 1) }}
-          aria-label="收藏"
-        >
-          <HeartIcon className={cn('size-5', fav && 'fill-primary text-primary')} />
-        </Button>
+      )}
+      {p.loading && <p role="status" className="player-status">正在加载音频与字幕…</p>}
+      {p.error && (
+        <div role="alert" className="player-status is-error">
+          <p>{p.error}</p>
+          <button className="pill-button is-soft is-small" onClick={p.retry}>重新加载</button>
+        </div>
+      )}
+      {p.notice && !p.error && <p role="status" className="player-notice">{p.notice}</p>}
+    </>
+  )
+
+  const scrubber = (
+    <div className="player-scrubber">
+      <Slider
+        className="player-scrub"
+        min={0}
+        max={clock.duration || 100}
+        step={0.5}
+        value={[clock.time]}
+        onValueChange={v => p.seek(v[0])}
+        aria-label="播放进度"
+      />
+      <div className="player-times">
+        <span>{fmtTime(clock.time)}</span>
+        {p.loop !== 0 && (
+          <button className="player-loop-tag" onClick={() => setShowSettings(true)}>
+            <RepeatIcon />单句循环{p.loop === 999 ? '' : ` ×${p.loop}`}
+          </button>
+        )}
+        <span>{fmtTime(clock.duration)}</span>
+      </div>
+    </div>
+  )
+
+  const toggleButton = (
+    <button className="player-toggle" onClick={p.toggle} aria-label={p.playing ? '暂停' : '播放'} aria-busy={buffering || undefined}>
+      {buffering ? <span className="player-spinner" /> : p.playing ? <PauseIcon /> : <PlayIcon />}
+    </button>
+  )
+  const rateButton = (
+    <button className="player-pill" onClick={cycleRate} aria-label={`播放速度 ${settings.rate} 倍，点击切换`}>
+      {fmtRate(settings.rate)}
+    </button>
+  )
+  const wordsButton = (
+    <button className="player-pill" onClick={() => setShowWords(true)} disabled={!talk} aria-label="本集词汇">
+      <NotesIcon />词汇
+    </button>
+  )
+
+  const pageStyle = (tint ? { '--tint': tint } : undefined) as CSSProperties | undefined
+
+  return (
+    <div className={cn('player-page', view === 'play' ? 'is-play' : 'is-text')} style={pageStyle}>
+      <header className="player-top safe-top">
+        <button className="player-icon" onClick={close} aria-label="收起">
+          <ChevronDownIcon />
+        </button>
+        <Segmented
+          className="player-switch"
+          value={view}
+          options={VIEWS}
+          label="播放页视图"
+          onChange={v => updateSettings({ playerView: v })}
+        />
+        <button className="player-icon" onClick={() => setShowSettings(true)} aria-label="播放设置">
+          <EllipsisIcon />
+        </button>
       </header>
 
-      {/* 字幕流 */}
+      {/* 播放：封面 · 标题 · 大按钮 */}
+      <section className="player-now overflow-y-auto no-scrollbar vertical-scroll" hidden={view !== 'play'} aria-label="正在播放">
+        <div className="player-now-art">
+          <Cover src={talk?.cover} className="player-now-cover" alt="" />
+        </div>
+        <div className="player-now-head">
+          <div className="min-w-0 flex-1">
+            <h1 className="player-now-title">{talk ? talk.title : '加载中…'}</h1>
+            {talk && <p className="player-now-series">{seriesInfo(talk.category).name}</p>}
+          </div>
+          <button
+            className={cn('player-heart', fav && 'is-on')}
+            onClick={() => { toggleFavorite(slug); force(x => x + 1) }}
+            aria-label={fav ? '取消收藏' : '收藏'}
+            aria-pressed={fav}
+          >
+            <HeartIcon />
+          </button>
+        </div>
+        {status}
+        {finished && (
+          <button className="player-finish-inline" onClick={() => setShowWords(true)}>听完了 · 清点本集生词</button>
+        )}
+        <div className="player-now-controls">
+          {scrubber}
+          <div className="player-now-transport">
+            <button className="player-step" onClick={() => p.stepSentence(-1)}>
+              <SkipBackIcon /><span>上一句</span>
+            </button>
+            {toggleButton}
+            <button className="player-step" onClick={() => p.stepSentence(1)}>
+              <SkipForwardIcon /><span>下一句</span>
+            </button>
+          </div>
+          <div className="player-now-pills">
+            {rateButton}
+            {wordsButton}
+          </div>
+        </div>
+      </section>
+
+      {/* 文稿：双语字幕 + 底部控制卡 */}
       <main
         ref={scrollBoxRef}
+        hidden={view !== 'text'}
         aria-label="双语字幕"
         onWheel={interruptFollow}
         onScroll={() => {
@@ -369,213 +553,117 @@ export default function Player({ slug }: { slug: string }) {
         onKeyDown={e => { if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.key)) interruptFollow() }}
         className="subtitle-scroll min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll"
       >
-        {!p.manifestReady && !p.manifestError && (
-          <p role="status" className="py-10 text-center text-sm text-muted-foreground">正在加载语料清单…</p>
-        )}
-        {p.manifestError && (
-          <div role="alert" className="mb-3 rounded-xl bg-destructive/10 px-3 py-3 text-center text-sm text-destructive">
-            <p>{p.manifestError}</p>
-            <Button variant="secondary" size="sm" className="mt-2 rounded-full" onClick={p.reloadManifest}>重新加载语料</Button>
-          </div>
-        )}
-        {p.loading && (
-          <p role="status" className="py-10 text-center text-sm text-muted-foreground">正在加载音频与字幕…</p>
-        )}
-        {p.error && (
-          <div role="alert" className="mb-3 rounded-xl bg-destructive/10 px-3 py-3 text-center text-sm text-destructive">
-            <p>{p.error}</p>
-            <Button variant="secondary" size="sm" className="mt-2 rounded-full" onClick={p.retry}>重新加载</Button>
-          </div>
-        )}
-        {p.notice && !p.error && (
-          <p role="status" className="mb-2 rounded-lg bg-primary/8 px-3 py-1.5 text-[11px] text-primary">
-            {p.notice}
-          </p>
-        )}
-        {p.buffering && !p.loading && (
-          <div role="status" className="pointer-events-none absolute right-4 bottom-32 z-10 flex items-center justify-center gap-2 rounded-lg bg-background/95 px-3 py-1.5 text-[11px] text-primary">
-            <div className="size-3 animate-spin rounded-full border-2 border-primary/30 border-t-primary" />
-            缓冲中…
-          </div>
-        )}
-        {!p.loading && talk && talk.zhSource !== 'official' && (
-          <p className="mb-2 rounded-lg bg-primary/8 px-3 py-1.5 text-[11px] text-muted-foreground">
-            {talk.zhSource === 'mixed' ? '本篇包含官方中文与机器补译，仅供参考' : '本篇中文为机器翻译，仅供参考'}
-          </p>
-        )}
+        {status}
         <SubtitleList
           sentences={sentences}
           currentIdx={clock.currentIdx}
           scale={settings.fontScale}
           hideZh={settings.hideZh}
+          marks={marks}
           onSeek={handleSeek}
           onWord={handleWord}
           onPrefetch={handlePrefetch}
         />
       </main>
-
-      {/* 播放条 */}
-      <div className="glass safe-bottom border-t border-line px-4 pt-3">
-        <div className="flex items-center gap-2.5 text-[11px] text-muted-foreground tabular-nums">
-          <span className="w-8 text-right">{fmtTime(clock.time)}</span>
-          <Slider
-            className="flex-1"
-            min={0}
-            max={clock.duration || 100}
-            step={0.5}
-            value={[clock.time]}
-            onValueChange={v => p.seek(v[0])}
-            aria-label="播放进度"
-          />
-          <span className="w-8">{fmtTime(clock.duration)}</span>
-        </div>
-        <div className="flex items-center justify-between py-2">
-          <Button
-            variant="ghost"
-            onClick={p.cycleLoop}
-            className={cn('h-8 min-w-14 rounded-full px-2 text-xs font-semibold', p.loop !== 0 && 'bg-primary/10 text-primary')}
-            aria-label="单句循环"
-          >
-            {p.loop === 0 ? '循环' : p.loop === 999 ? '∞' : `×${p.loop}`}
-          </Button>
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" onClick={() => p.skip(-5)} aria-label="后退 5 秒">
-              <RotateCcwIcon className="size-4.5" />
-            </Button>
-            <Button variant="ghost" size="icon" onClick={() => p.stepSentence(-1)} aria-label="上一句">
-              <SkipBackIcon className="size-5 fill-current" />
-            </Button>
-            <Button
-              onClick={p.toggle}
-              size="icon"
-              className="size-12 rounded-full shadow-md"
-              aria-label={p.playing ? '暂停' : '播放'}
-            >
-              {p.buffering ? (
-                <div className="size-5 animate-spin rounded-full border-2 border-white/30 border-t-white" />
-              ) : p.playing ? (
-                <PauseIcon className="size-6 fill-current" />
-              ) : (
-                <PlayIcon className="size-6 fill-current" />
-              )}
-            </Button>
-            <Button variant="ghost" size="icon" onClick={() => p.stepSentence(1)} aria-label="下一句">
-              <SkipForwardIcon className="size-5 fill-current" />
-            </Button>
-            <Button variant="ghost" size="icon" onClick={() => p.skip(5)} aria-label="前进 5 秒">
-              <FastForwardIcon className="size-4.5" />
-            </Button>
-          </div>
-          <Button variant="ghost" size="icon" onClick={() => setShowSettings(true)} aria-label="设置" className="min-w-14">
-            <SettingsIcon className="size-5" />
-          </Button>
+      <div className="player-dock safe-bottom" hidden={view !== 'text'}>
+        {finished && (
+          <button className="player-finish" onClick={() => setShowWords(true)}>听完了 · 清点本集生词</button>
+        )}
+        {scrubber}
+        <div className="player-dock-row">
+          {rateButton}
+          <button className="player-step" onClick={() => p.stepSentence(-1)} aria-label="上一句"><SkipBackIcon /></button>
+          {toggleButton}
+          <button className="player-step" onClick={() => p.stepSentence(1)} aria-label="下一句"><SkipForwardIcon /></button>
+          {wordsButton}
         </div>
       </div>
 
       {/* 播放设置 */}
       <Sheet open={showSettings} onOpenChange={o => setShowSettings(o)}>
-        <SheetContent side="bottom" className="mx-auto w-full max-w-lg rounded-t-2xl px-4 pt-2 pb-6">
-          <SheetHeader className="p-0 pt-2 pb-1 text-center">
-            <SheetTitle className="text-sm font-semibold">播放设置</SheetTitle>
-          </SheetHeader>
-          <div className="space-y-4 px-1 pt-2">
-            <div>
-              <p className="mb-2 text-sm text-muted-foreground">播放速度</p>
-              <div className="grid grid-cols-4 gap-2">
-                {RATES.map(r => (
-                  <Button
-                    key={r}
-                    variant={settings.rate === r ? 'default' : 'secondary'}
-                    onClick={() => updateSettings({ rate: r })}
-                    className="h-9 rounded-lg"
-                  >
-                    {r}x
-                  </Button>
-                ))}
+        <SheetContent side="bottom" className="app-sheet">
+          <SheetTitle className="app-sheet-title">播放设置</SheetTitle>
+          <div className="app-sheet-body no-scrollbar vertical-scroll">
+            <div className="group">
+              <SettingRow label="单句循环">
+                <Segmented kind="choice" size="sm" label="单句循环" value={String(p.loop)} options={LOOPS}
+                  onChange={v => p.setLoop(Number(v) as LoopMode)} />
+              </SettingRow>
+              <div className="group-row is-stacked">
+                <p className="group-row-label">播放速度</p>
+                <Segmented kind="choice" size="sm" label="播放速度" className="is-wide" value={String(settings.rate)}
+                  options={RATES.map(r => [String(r), r.toFixed(1)] as const)}
+                  onChange={v => updateSettings({ rate: Number(v) })} />
               </div>
             </div>
-            <div>
-              <p className="mb-2 text-sm text-muted-foreground">音频质量</p>
-              <div className="grid grid-cols-2 gap-2">
-                <Button
-                  variant={p.quality === 'standard' ? 'default' : 'secondary'}
-                  onClick={() => {
-                    updateSettings({ audioQuality: 'standard' })
-                    p.setQuality('standard')
-                  }}
-                  className="h-auto rounded-xl py-2"
-                >
-                  <span className="flex flex-col">
-                    <span>标准音质</span>
-                    <span className="text-[10px] opacity-75">72 kbps · 起播更快</span>
-                  </span>
-                </Button>
-                <Button
-                  variant={p.quality === 'high' ? 'default' : 'secondary'}
-                  onClick={() => {
-                    updateSettings({ audioQuality: 'high' })
-                    p.setQuality('high')
-                  }}
-                  className="h-auto rounded-xl py-2"
-                >
-                  <span className="flex flex-col">
-                    <span>高音质</span>
-                    <span className="text-[10px] opacity-75">128 kbps · 更清晰</span>
-                  </span>
-                </Button>
-              </div>
-            </div>
-            <OfflineControl slug={slug} quality={p.quality} url={talk?.audioUrls?.[p.quality]} />
 
-            <div className="flex items-center justify-between">
-              <p className="text-sm text-muted-foreground">字幕字号</p>
-              <div className="flex items-center gap-3">
-                <Button variant="secondary" size="icon" className="rounded-full"
-                  onClick={() => updateSettings({ fontScale: Math.max(0.8, +(settings.fontScale - 0.1).toFixed(1)) })}>
-                  －
-                </Button>
-                <span className="w-10 text-center text-sm tabular-nums">{Math.round(settings.fontScale * 100)}%</span>
-                <Button variant="secondary" size="icon" className="rounded-full"
-                  onClick={() => updateSettings({ fontScale: Math.min(1.4, +(settings.fontScale + 0.1).toFixed(1)) })}>
-                  ＋
-                </Button>
+            <h3 className="group-title">字幕</h3>
+            <div className="group">
+              <SettingRow label="显示中文译文" note="中文为 Gemini 机器翻译">
+                <Switch checked={!settings.hideZh} onCheckedChange={v => updateSettings({ hideZh: !v })} />
+              </SettingRow>
+              <SettingRow label="标出六级词" note="粉底是在学的词，虚线是没学过的六级新词">
+                <Switch checked={settings.markWords} onCheckedChange={v => updateSettings({ markWords: v })} />
+              </SettingRow>
+              <SettingRow label="跟随朗读滚动">
+                <Switch checked={settings.autoScroll} onCheckedChange={v => updateSettings({ autoScroll: v })} />
+              </SettingRow>
+              <SettingRow label="字号">
+                <div className="stepper">
+                  <button aria-label="缩小字号"
+                    onClick={() => updateSettings({ fontScale: Math.max(0.8, +(settings.fontScale - 0.1).toFixed(1)) })}>
+                    <MinusIcon />
+                  </button>
+                  <span>{Math.round(settings.fontScale * 100)}%</span>
+                  <button aria-label="放大字号"
+                    onClick={() => updateSettings({ fontScale: Math.min(1.4, +(settings.fontScale + 0.1).toFixed(1)) })}>
+                    <PlusIcon />
+                  </button>
+                </div>
+              </SettingRow>
+              <div className="group-row is-stacked">
+                <div className="flex w-full items-center justify-between">
+                  <p className="group-row-label">字幕偏移</p>
+                  <button className="row-button" onClick={() => p.setSubtitleOffset(0)} aria-label="字幕偏移归零">
+                    {p.subtitleOffset > 0 ? '+' : ''}{p.subtitleOffset.toFixed(2)}s
+                  </button>
+                </div>
+                <Slider
+                  className="player-offset"
+                  min={-0.5}
+                  max={0.5}
+                  step={0.05}
+                  value={[p.subtitleOffset]}
+                  onValueChange={v => p.setSubtitleOffset(+v[0].toFixed(2))}
+                  aria-label="字幕偏移"
+                />
+                <p className="group-row-sub">蓝牙耳机有 0.1~0.3 秒输出延迟。觉得字幕比声音快就往右调，点数值归零</p>
               </div>
             </div>
-            <div>
-              <div className="mb-2 flex items-center justify-between">
-                <p className="text-sm text-muted-foreground">字幕偏移</p>
-                <button
-                  className="text-sm tabular-nums text-primary"
-                  onClick={() => p.setSubtitleOffset(0)}
-                >
-                  {p.subtitleOffset > 0 ? '+' : ''}{p.subtitleOffset.toFixed(2)}s
-                </button>
+
+            <h3 className="group-title">音频</h3>
+            <div className="group">
+              <SettingRow label="音质" note={p.quality === 'high' ? '128 kbps · 更清晰' : '72 kbps · 起播更快'}>
+                <Segmented kind="choice" size="sm" label="音质" value={p.quality}
+                  options={[['standard', '标准'], ['high', '高']] as const}
+                  onChange={v => { updateSettings({ audioQuality: v }); p.setQuality(v) }} />
+              </SettingRow>
+              <div className="group-row is-stacked">
+                <OfflineControl slug={slug} quality={p.quality} url={talk?.audioUrls?.[p.quality]} />
               </div>
-              <Slider
-                min={-0.5}
-                max={0.5}
-                step={0.05}
-                value={[p.subtitleOffset]}
-                onValueChange={v => p.setSubtitleOffset(+v[0].toFixed(2))}
-                aria-label="字幕偏移"
-              />
-              <p className="mt-1.5 text-[11px] text-muted-foreground">
-                蓝牙耳机有 0.1~0.3 秒输出延迟。觉得字幕比声音快就往右调，点数值归零
-              </p>
             </div>
-            <div className="flex items-center justify-between">
-              <p className="text-sm text-muted-foreground">隐藏中文译文</p>
-              <Switch checked={settings.hideZh} onCheckedChange={v => updateSettings({ hideZh: v })} />
-            </div>
-            <div className="flex items-center justify-between">
-              <p className="text-sm text-muted-foreground">字幕自动滚动</p>
-              <Switch checked={settings.autoScroll} onCheckedChange={v => updateSettings({ autoScroll: v })} />
-            </div>
+
+            {talk?.sourceUrl && (
+              <a className="app-sheet-link" href={talk.sourceUrl} target="_blank" rel="noreferrer">
+                查看节目原文 <ExternalLinkIcon />
+              </a>
+            )}
           </div>
         </SheetContent>
       </Sheet>
 
       {dict && <DictPanel target={dict} onClose={() => setDict(null)} />}
+      {showWords && talk && <EpisodeWords talk={talk} onClose={() => setShowWords(false)} />}
     </div>
   )
 }

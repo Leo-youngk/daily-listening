@@ -1,13 +1,29 @@
 # -*- coding: utf-8 -*-
-"""VOA / BBC 6 Minute English 统一抓取驱动：下载音频 -> 转码 m4a -> 强制对齐出 json3 字幕
--> 写入 resolved.json / fetch_state.json，供 vtt2json.py 原样复用生成 data/manifest。
+"""节目抓取驱动：列表 -> 正文/音频 -> 转码 m4a -> 强制对齐（json3 + ASR 词序列）-> 封面。
 
-用法:
-  python ingest.py --source bbc --limit 10          # 冒烟：BBC 前 10 期
-  python ingest.py --source voa --voa-limit 5        # 冒烟：VOA 每栏目 5 篇
-  python ingest.py --source all                       # 全量（按默认上限）
+三档节目，各取最新的 N 期（某期对齐失败就顺延取下一期，直到凑满 N 期）：
+    bbc       BBC 6 Minute English                       默认 100
+    curious   English Learning for Curious Minds          默认 50
+    thinking  Thinking in English                         默认 50
+
+下载/转码走线程池（纯 I/O），对齐在主线程串行跑（GPU 只有一块）。
+断点续抓：corpus/ingest_state.json 记录每期进度，重跑只补缺的。
+
+用法：
+    python ingest.py                         # 三档按默认数量
+    python ingest.py --bbc 2 --curious 1 --thinking 1   # 冒烟
+    python build_talks.py                    # 下一步：切句、翻译、写 data
 """
-import argparse, json, os, re, subprocess, sys, tempfile, time, urllib.request
+import argparse
+import json
+import os
+import re
+import subprocess
+import sys
+import tempfile
+import time
+from collections import deque
+from concurrent.futures import ThreadPoolExecutor
 
 import imageio_ffmpeg
 
@@ -15,229 +31,237 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
-from align import align_to_file
-from sources import bbc6min, voa
+from align import align_to_file  # noqa: E402
+from sources import bbc6min, curious, thinking  # noqa: E402
+from sources.common import fetch_bytes  # noqa: E402
 
 CORPUS = os.path.join(HERE, "corpus")
 AUDIO_DIR = os.path.join(ROOT, "public", "audio")
 SUBS_DIR = os.path.join(ROOT, "public", "subs")
 COVERS_DIR = os.path.join(ROOT, "public", "covers")
-RESOLVED = os.path.join(CORPUS, "resolved.json")
-STATE = os.path.join(CORPUS, "fetch_state.json")
+EPISODES = os.path.join(CORPUS, "episodes.json")
+STATE = os.path.join(CORPUS, "ingest_state.json")
+# 抓到的官方文稿原样留底：改进对齐算法后可以 --realign 重跑，不必再联网
+TRANSCRIPTS = os.path.join(CORPUS, "transcripts")
 
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 DURATION_RE = re.compile(r"Duration:\s*(\d+):(\d+):(\d+(?:\.\d+)?)")
-MAX_DURATION = 20 * 60
+MAX_DURATION = 45 * 60
 MIN_MATCH_RATIO = 0.85
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-
-CHANNEL_NAME = {"voa": "VOA Learning English", "bbc": "BBC Learning English"}
+# 候选比目标多取一些，给对齐失败的期数留顺延余量
+CANDIDATE_SLACK = 20
 
 
 def load_json(path, default):
     return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else default
 
 
-def save_json(path, data, indent=2):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=indent)
-
-
-def download(url, dest, timeout=60):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=timeout) as r, open(dest, "wb") as f:
-        f.write(r.read())
-
-
-def retry_call(fn, *args, attempts=3, **kwargs):
-    for attempt in range(attempts):
-        try:
-            return fn(*args, **kwargs)
-        except Exception as ex:
-            print(f"    !! {fn.__module__}.{fn.__name__} 异常（第{attempt + 1}次）: {ex}", flush=True)
-            if attempt == attempts - 1:
-                raise
-            time.sleep(3)
+def save_json(path, data):
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+    os.replace(tmp, path)
 
 
 def probe_duration(path):
-    result = subprocess.run([FFMPEG, "-hide_banner", "-i", path], capture_output=True, text=True,
-                             encoding="utf-8", errors="replace", timeout=30)
-    m = DURATION_RE.search(result.stderr)
+    r = subprocess.run([FFMPEG, "-hide_banner", "-i", path], capture_output=True, text=True,
+                       encoding="utf-8", errors="replace", timeout=60)
+    m = DURATION_RE.search(r.stderr)
     if not m:
         return None
     h, mi, s = m.groups()
     return round(int(h) * 3600 + int(mi) * 60 + float(s), 2)
 
 
-def to_m4a(src_path, dest_path):
-    cmd = [FFMPEG, "-y", "-i", src_path, "-vn", "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
-           "-movflags", "+faststart", dest_path]
-    r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+def ffmpeg(args):
+    r = subprocess.run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", *args],
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     if r.returncode != 0:
-        print(f"    ffmpeg: {(r.stderr or '')[-300:]}", flush=True)
-    return r.returncode == 0 and os.path.exists(dest_path) and os.path.getsize(dest_path) > 0
+        raise RuntimeError((r.stderr or "ffmpeg failed")[-300:])
 
 
-def process_item(item, category, resolved_map, state):
-    slug = item["slug"]
-    channel = CHANNEL_NAME[category]
-    audio_out = os.path.join(AUDIO_DIR, f"{slug}.m4a")
-    subs_out = os.path.join(SUBS_DIR, f"{slug}.en.json3")
-    info_out = os.path.join(SUBS_DIR, f"{slug}.info.json")
-    cover_out = os.path.join(COVERS_DIR, f"{slug}.jpg")
+def download_audio(url, dest):
+    """mp3 -> AAC 128k m4a（faststart，seek 友好）。deploy_audio_r2.py 会再转一份 72k 单声道标准音质。"""
+    fd, tmp = tempfile.mkstemp(suffix=".mp3")
+    os.close(fd)
+    try:
+        with open(tmp, "wb") as f:
+            f.write(fetch_bytes(url, timeout=180))
+        # 先转到 .part 再改名：中途断电/被杀不会留下半截文件被下次当成已下载
+        part = dest + ".part.m4a"
+        ffmpeg(["-i", tmp, "-vn", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-movflags", "+faststart", part])
+        os.replace(part, dest)
+    finally:
+        os.unlink(tmp)
 
-    if not (os.path.exists(audio_out) and os.path.getsize(audio_out) > 50_000):
-        tmp_mp3 = None
+
+def download_cover(url, dest):
+    """封面统一转成 640 宽的 JPEG，控制仓库体积。"""
+    fd, tmp = tempfile.mkstemp(suffix=".img")
+    os.close(fd)
+    try:
+        with open(tmp, "wb") as f:
+            f.write(fetch_bytes(url))
+        part = dest + ".part.jpg"
+        ffmpeg(["-i", tmp, "-vf", "scale='min(640,iw)':-2", "-q:v", "4", "-frames:v", "1", part])
+        os.replace(part, dest)
+    finally:
+        os.unlink(tmp)
+
+
+def candidates(series, target):
+    """返回待抓取的 (slug, 取正文函数) 列表，最新在前。"""
+    n = target + CANDIDATE_SLACK
+    if series == "bbc":
+        return [(f"bbc6min_{e['code']}", lambda e=e: bbc6min.fetch_episode(e["url"], e["code"]))
+                for e in bbc6min.list_episodes(n)]
+    module = {"curious": curious, "thinking": thinking}[series]
+    return [(f"{series}_{e['code']}", lambda e=e, m=module: m.fetch_episode(e)) for e in module.list_episodes(n)]
+
+
+def prepare(slug, fetch):
+    """I/O 阶段：取正文、下载转码音频、封面。返回 (slug, 元信息 或 None, 说明)。"""
+    try:
+        meta = fetch()
+    except Exception as exc:
+        return slug, None, f"取正文失败: {exc}"
+    if not meta:
+        return slug, None, "页面没有正文或音频"
+    audio = os.path.join(AUDIO_DIR, slug + ".m4a")
+    try:
+        if not (os.path.exists(audio) and os.path.getsize(audio) > 50_000):
+            download_audio(meta["mp3_url"], audio)
+    except Exception as exc:
+        return slug, None, f"音频失败: {exc}"
+    cover = os.path.join(COVERS_DIR, slug + ".jpg")
+    if meta.get("cover") and not os.path.exists(cover):
         try:
-            fd, tmp_mp3 = tempfile.mkstemp(suffix=".mp3")
-            os.close(fd)
-            download(item["mp3_url"], tmp_mp3)
-            if not to_m4a(tmp_mp3, audio_out):
-                print("    !! 转码失败", flush=True)
-                return "fail"
-        finally:
-            if tmp_mp3 and os.path.exists(tmp_mp3):
-                os.unlink(tmp_mp3)
+            download_cover(meta["cover"], cover)
+        except Exception as exc:
+            print(f"    !! {slug} 封面失败（列表会显示占位色块）: {exc}", flush=True)
+    return slug, meta, "ok"
 
-    duration = probe_duration(audio_out)
-    if duration and duration > MAX_DURATION:
-        print(f"    !! 超过20分钟上限 ({duration/60:.1f}min)，跳过", flush=True)
-        os.unlink(audio_out)
-        return "skip_long"
 
-    if not os.path.exists(subs_out):
-        ok, ratio = align_to_file(audio_out, item["transcript"], subs_out, min_match_ratio=MIN_MATCH_RATIO)
+def run_series(series, target, episodes, state):
+    done = [s for s, v in state.items() if v.get("series") == series and v.get("ok")]
+    if len(done) >= target:
+        print(f"== {series}: 已有 {len(done)} 期，跳过", flush=True)
+        return
+    # 对齐不达标、时长异常、页面无正文都是确定性失败，重跑也一样，不再重试；网络类失败会重试
+    deterministic = ("align", "duration", "页面")
+    todo = [(slug, fetch) for slug, fetch in candidates(series, target)
+            if not state.get(slug, {}).get("ok")
+            and not str(state.get(slug, {}).get("why", "")).startswith(deterministic)]
+    need = target - len(done)
+    print(f"== {series}: 已有 {len(done)} 期，还需 {need} 期，候选 {len(todo)} 期", flush=True)
+    ok = 0
+    with ThreadPoolExecutor(3) as pool:
+        # 下载最多领先对齐 3 期，凑满目标后不再多下
+        pending = iter(todo)
+        window = deque()
+
+        def refill():
+            while len(window) < 3:
+                nxt = next(pending, None)
+                if nxt is None:
+                    return
+                window.append(pool.submit(prepare, *nxt))
+
+        refill()
+        while window and ok < need:
+            fut = window.popleft()
+            refill()
+            slug, meta, why = fut.result()
+            if not meta:
+                print(f"  [skip] {slug}: {why}", flush=True)
+                state[slug] = {"series": series, "ok": False, "why": why}
+                save_json(STATE, state)
+                continue
+            audio = os.path.join(AUDIO_DIR, slug + ".m4a")
+            duration = probe_duration(audio)
+            if not duration or duration > MAX_DURATION:
+                print(f"  [skip] {slug}: 时长异常 {duration}", flush=True)
+                state[slug] = {"series": series, "ok": False, "why": f"duration {duration}"}
+                save_json(STATE, state)
+                continue
+            with open(os.path.join(TRANSCRIPTS, slug + ".txt"), "w", encoding="utf-8", newline="\n") as f:
+                f.write(meta["transcript"] + "\n")
+            started = time.time()
+            json3 = os.path.join(SUBS_DIR, slug + ".en.json3")
+            words = os.path.join(SUBS_DIR, slug + ".words.json")
+            try:
+                aligned, ratio = align_to_file(audio, meta["transcript"], json3, words, min_match_ratio=MIN_MATCH_RATIO)
+            except Exception as exc:
+                # 内存不足、显卡异常这类是临时故障，不记成确定性失败，下次重跑会再试
+                print(f"  [skip] {slug}: 对齐异常 {exc}", flush=True)
+                state[slug] = {"series": series, "ok": False, "why": f"对齐异常 {exc}"}
+                save_json(STATE, state)
+                continue
+            if not aligned:
+                print(f"  [skip] {slug}: 对齐匹配率不足 {ratio:.3f}", flush=True)
+                state[slug] = {"series": series, "ok": False, "why": f"align {ratio:.3f}"}
+                save_json(STATE, state)
+                continue
+            episodes[slug] = {
+                "slug": slug,
+                "series": series,
+                "title": meta["title"],
+                "date": meta.get("date"),
+                "sourceUrl": meta["source_url"],
+                "coverUrl": meta.get("cover"),
+                "keywords": meta.get("keywords") or [],
+                "duration": duration,
+                "matchScore": round(ratio, 3),
+            }
+            state[slug] = {"series": series, "ok": True, "ts": int(time.time())}
+            save_json(EPISODES, episodes)
+            save_json(STATE, state)
+            ok += 1
+            print(f"  [ok {len(done) + ok}/{target}] {slug} {meta['title'][:50]} "
+                  f"match={ratio:.3f} {duration / 60:.1f}min 对齐 {time.time() - started:.0f}s", flush=True)
+        for fut in window:
+            fut.cancel()
+    print(f"== {series}: 本轮新增 {ok} 期", flush=True)
+
+
+def realign(episodes):
+    """用留底的文稿和缓存的 ASR 词序列重跑对齐（不联网、不再识别）。"""
+    for slug, ep in episodes.items():
+        text = open(os.path.join(TRANSCRIPTS, slug + ".txt"), encoding="utf-8").read()
+        ok, ratio = align_to_file(os.path.join(AUDIO_DIR, slug + ".m4a"), text,
+                                  os.path.join(SUBS_DIR, slug + ".en.json3"),
+                                  os.path.join(SUBS_DIR, slug + ".words.json"), min_match_ratio=MIN_MATCH_RATIO)
         if not ok:
-            print(f"    !! 对齐匹配率不足 ratio={ratio:.3f}", flush=True)
-            if os.path.exists(subs_out):
-                os.unlink(subs_out)
-            return "fail_align"
-    else:
-        ratio = resolved_map.get(slug, {}).get("match_score", 1.0)
-
-    if not os.path.exists(info_out):
-        save_json(info_out, {"title": item["title"], "thumbnail": item.get("cover") or ""})
-
-    if item.get("cover") and not os.path.exists(cover_out):
-        try:
-            download(item["cover"], cover_out)
-        except Exception as e:
-            print(f"    封面下载失败（不影响主流程）: {e}", flush=True)
-
-    resolved_map[slug] = {
-        "slug": slug,
-        "category": category,
-        "title": item["title"],
-        "speaker": channel,
-        "school": None,
-        "year": int(item["date"][:4]) if item.get("date") else None,
-        "views": None,
-        "url": item["source_url"],
-        "video_title": item["title"],
-        "channel": channel,
-        "duration": duration,
-        "match_score": round(ratio, 3),
-    }
-    state[slug] = {"audio": True, "subs": True, "ts": int(time.time())}
-    return "ok"
-
-
-def run_source(category, items, resolved_map, state, resolved_path, state_path):
-    counts = {}
-    total = len(items)
-    for i, item in enumerate(items, 1):
-        slug = item["slug"]
-        if state.get(slug, {}).get("audio") and state.get(slug, {}).get("subs"):
-            counts["skip_done"] = counts.get("skip_done", 0) + 1
-            continue
-        print(f"[{category} {i}/{total}] {slug} - {item['title']}", flush=True)
-        try:
-            result = process_item(item, category, resolved_map, state)
-        except Exception as ex:
-            print(f"    !! 处理异常: {ex}", flush=True)
-            result = "fail_exception"
-        counts[result] = counts.get(result, 0) + 1
-        save_json(resolved_path, list(resolved_map.values()))
-        save_json(state_path, state)
-        time.sleep(1)
-    return counts
+            raise SystemExit(f"{slug} 重新对齐失败：{ratio:.3f}")
+        ep["matchScore"] = round(ratio, 3)
+        print(f"  [realign] {slug} match={ratio:.3f}", flush=True)
+    save_json(EPISODES, episodes)
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--source", choices=["voa", "bbc", "all"], default="all")
-    ap.add_argument("--limit", type=int, default=110, help="BBC 期数上限")
-    ap.add_argument("--voa-limit", type=int, default=25, help="VOA 每个栏目篇数上限")
-    ap.add_argument("--voa-section", choices=list(voa.SECTIONS), default=None, help="只跑 VOA 单个栏目（用于并行）")
-    ap.add_argument("--resolved-out", default=None, help="resolved.json 输出路径覆盖（用于并行隔离）")
-    ap.add_argument("--state-out", default=None, help="fetch_state.json 输出路径覆盖（用于并行隔离）")
+    ap.add_argument("--bbc", type=int, default=100)
+    ap.add_argument("--curious", type=int, default=50)
+    ap.add_argument("--thinking", type=int, default=50)
+    ap.add_argument("--realign", action="store_true", help="只用留底文稿重跑已入库各期的对齐")
     args = ap.parse_args()
 
-    resolved_path = args.resolved_out or RESOLVED
-    state_path = args.state_out or STATE
-
-    os.makedirs(AUDIO_DIR, exist_ok=True)
-    os.makedirs(SUBS_DIR, exist_ok=True)
-    os.makedirs(COVERS_DIR, exist_ok=True)
-
-    resolved = load_json(resolved_path, [])
-    resolved_map = {e["slug"]: e for e in resolved}
-    state = load_json(state_path, {})
-
-    if args.source in ("bbc", "all"):
-        print("== 抓取 BBC 6 Minute English 列表 ==", flush=True)
-        eps = retry_call(bbc6min.list_episodes, args.limit)
-        items = []
-        for e in eps:
-            slug = f"bbc6min_{e['code']}"
-            if state.get(slug, {}).get("audio") and state.get(slug, {}).get("subs"):
-                items.append({"slug": slug})  # 占位，process 前会被跳过
-                continue
-            data = None
-            for attempt in range(2):
-                try:
-                    data = bbc6min.fetch_episode(e["url"], e["code"])
-                    break
-                except Exception as ex:
-                    print(f"    !! 抓取异常（第{attempt + 1}次）: {e['url']} - {ex}", flush=True)
-                    time.sleep(3)
-            if data:
-                items.append(data)
-            else:
-                print(f"    !! 抓取失败（无字幕/音频）: {e['url']}", flush=True)
-            time.sleep(1)
-        counts = run_source("bbc", items, resolved_map, state, resolved_path, state_path)
-        print(f"BBC 完成: {counts}", flush=True)
-
-    if args.source in ("voa", "all"):
-        sections = [args.voa_section] if args.voa_section else list(voa.SECTIONS)
-        for section in sections:
-            print(f"== 抓取 VOA {section} 列表 ==", flush=True)
-            arts = retry_call(voa.list_articles, section, args.voa_limit)
-            items = []
-            for a in arts:
-                slug = f"voa_{a['id']}"
-                if state.get(slug, {}).get("audio") and state.get(slug, {}).get("subs"):
-                    items.append({"slug": slug})
-                    continue
-                data = None
-                for attempt in range(2):
-                    try:
-                        data = voa.fetch_article(a["url"], a["id"])
-                        break
-                    except Exception as ex:
-                        print(f"    !! 抓取异常（第{attempt + 1}次）: {a['url']} - {ex}", flush=True)
-                        time.sleep(3)
-                if data:
-                    items.append(data)
-                else:
-                    print(f"    !! 抓取失败（无正文/音频）: {a['url']}", flush=True)
-                time.sleep(1)
-            counts = run_source("voa", items, resolved_map, state, resolved_path, state_path)
-            print(f"VOA {section} 完成: {counts}", flush=True)
-
-    print("\n全部完成，运行 `python vtt2json.py` 生成 data/manifest。", flush=True)
+    for d in (CORPUS, AUDIO_DIR, SUBS_DIR, COVERS_DIR, TRANSCRIPTS):
+        os.makedirs(d, exist_ok=True)
+    # 上次中途被杀留下的半截转码文件
+    for d in (AUDIO_DIR, COVERS_DIR):
+        for name in os.listdir(d):
+            if ".part." in name:
+                os.remove(os.path.join(d, name))
+    episodes = load_json(EPISODES, {})
+    state = load_json(STATE, {})
+    if args.realign:
+        realign(episodes)
+        return
+    for series, target in (("bbc", args.bbc), ("curious", args.curious), ("thinking", args.thinking)):
+        if target > 0:
+            run_series(series, target, episodes, state)
+    print("\n全部完成，下一步：python build_talks.py", flush=True)
 
 
 if __name__ == "__main__":

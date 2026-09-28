@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs'
+import { readdirSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 
@@ -29,14 +29,19 @@ describe('触摸方向', () => {
 })
 
 describe('滚动容器都带方向类', () => {
-  it('横向素材列表用 horizontal-scroll', () => {
-    expect(classesOf('pages/Discover.tsx')).toMatch(/overflow-x-auto[^"]*horizontal-scroll/)
-    expect(classesOf('pages/Library.tsx')).toMatch(/overflow-x-auto[^"]*horizontal-scroll/)
+  it('任何横向滚动容器都同时声明 horizontal-scroll', () => {
+    for (const file of readdirSync(resolve(SRC, 'pages')).map(f => `pages/${f}`)
+      .concat(readdirSync(resolve(SRC, 'components')).filter(f => f.endsWith('.tsx')).map(f => `components/${f}`))) {
+      for (const m of classesOf(file).matchAll(/className="([^"]*overflow-x-auto[^"]*)"/g)) {
+        expect(m[1], file).toContain('horizontal-scroll')
+      }
+    }
   })
 
-  it('纵向页面和字幕区用 vertical-scroll', () => {
+  it('纵向页面、字幕区、背词卡与单词详情用 vertical-scroll', () => {
     expect(classesOf('App.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)
     expect(classesOf('pages/Player.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)
-    expect(classesOf('pages/Vocab.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)
+    expect(classesOf('pages/Review.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)
+    expect(classesOf('pages/WordDetail.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)
   })
 })

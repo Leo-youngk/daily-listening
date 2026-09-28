@@ -1,0 +1,111 @@
+Hello, hello hello, and welcome to English Learning for Curious Minds, by Leonardo English.
+The show where you can listen to fascinating stories, and learn weird and wonderful things about the world at the same time as improving your English.
+I'm Alastair Budge, and today we are going to be talking about economics, colonialism, development, and one of the most sought-after prizes in academia: the Nobel Prize.
+In October this year, three economists won the top prize in economics for groundbreaking work into the root cause of a country’s prosperity , or lack of it.
+Their theories are fascinating, so in the next 20 minutes or so we’ll talk about what they are, what they mean, and hear about some thought-provoking examples.
+OK then, let’s get started.
+What makes one country rich and another one poor?
+Is it geography, such as having the right climate, not too hot, not too cold, the right amount of coastline and navigable rivers?
+Is it to do with the countries around them?
+Is it to do with the cultural history of a country?
+Does language play a part?
+It is a hugely important question to which economists have been proposing theories for decades, each new theory supported by compelling evidence and examples.
+One thing that almost all economists agree on is that strong institutions and a strong rule of law are fundamental to a country’s prosperity.
+In other words, citizens have to trust that they will be treated fairly and that the state exists to support them, not hinder them or extract value from them.
+It sounds obvious on one level.
+If there is one country controlled by warlords and gangs, where the police are corrupt and the state cannot be trusted, and another with regular free elections, a trustworthy legal system, and a functioning bureaucracy and government, it would be difficult to find an economist who would argue that the former would be the more prosperous .
+Take practically any rich country and it has strong institutions.
+Sure, they might not be perfect, but if you were to plot a graph with the wealth of a country on one axis and the strength of its institutions on the other, you would find a strong correlation between the two.
+Wealthier countries have stronger institutions, poorer countries have weaker institutions.
+But, and here is an important question, is a country’s prosperity created by its strong institutions, or are strong institutions created by a country’s prosperity ?
+You could find many other characteristics that are shared by rich countries, such as high life expectancy or even the abundance of golf courses, but these are things that are a result of prosperity and economic development rather than causes of it.
+So, the question is, when it comes to strong institutions and the rule of law, do these facilitate a country’s prosperity , or do they naturally come with increased levels of prosperity ?
+Do they cause them or are they correlated with them?
+To try to answer this question, in the context of the broader and more important question of why some countries are rich and others are poor, three prominent economists started research into the topic.
+They were Daron Acemoglu, a Turkish economist working at MIT, the Massachusetts Institute of Technology, Simon Johnson, a British economist also working at MIT, and James Robinson, an American economist from the University of Chicago.
+Over two decades ago, these economists focussed their research on trying to understand why some countries have weak institutions and others have strong institutions, and what this tells us [if anything] about their economic development.
+Fast forward to today, or rather to the 14th of October, 2024, and they were rewarded with the Sveriges Riksbank Prize in Economic Sciences.
+You might not know that name, but you will probably know what it is more commonly called: The Nobel Prize for Economics.
+So, what did they find, and why was it considered worthy of the highest accolade in academia ?
+Well, they looked at the problem and came up with a novel way of approaching it.
+Instead of just looking at a bunch of countries today and measuring their economic successes and cross-referencing that with the strength of their institutions, they believed it would be more revealing to look at how different countries developed economically after different institutional systems were implemented.
+To do this, they used the example of countries that were colonised in some shape or form , almost exclusively by Europeans.
+This formed a “natural experiment”, which allowed them to examine how different colonisation strategies—such as extractive vs. inclusive institutions—impacted economic development.
+Being economists, they made no moral or ethical judgments; they simply looked at what the colonisers did from a practical point of view and measured the results in terms of economic output.
+And what they found was, well, it was deemed worthy of a Nobel prize.
+They saw that the richest countries before colonisation were among the poorest post colonisation, and that the poorest before colonisation were the richest post colonisation.
+In other words, colonisation made rich countries poor and poor countries rich.
+One of the examples they gave was of a city called Nogales, on the U.S.-Mexico border.
+It is one city, but split down the middle between two countries.
+As with many towns and cities that are divided between the US and Mexico, it is a tale of two cities .
+As you might imagine, the American side is much richer.
+Disposable incomes are higher, life expectancy is higher, houses are bigger, schools are better, it is more economically developed than the Mexican side.
+The economists explain that the reason for this prosperity comes from the fact that the residents of the American side of the city benefit from America’s strong and inclusive institutions, its economy and its political system.
+It might seem obvious, on one level, but it is a useful example to demonstrate their theories.
+Other theories about the key drivers of economic prosperity , as we heard at the start of the episode, tend to centre around geography or culture or history.
+But Nogales does not fit this model.
+The city residents on the American side and the Mexican side have the same geography and culture, most will speak the same language, watch the same movies, eat the same food, and have the same shared culture.
+Yet the ones on the American side will live a much more economically prosperous life.
+A key reason for this, the economists put forward, is to do with institutions.
+For all of its faults, the US has strong property rights, strong rule of law, a system that its citizens broadly trust to look out for them. They can take risks by starting businesses or taking on loans , they can invest in themselves and their families, they can do all of the things that create economic growth.
+These institutions are inclusive ; they exist for the benefit of the citizens.
+On the Mexican side, however, the institutions are weaker.
+Citizens have less confidence in the fairness of the legal system, there is the problem of organised criminals, the rule of law and of institutions are weaker. To any wonderful people listening to this in Mexico, this, nor the words of the three economists are intended as any kind of judgement, but rather a presentation of facts.
+The result is that the US’s GDP per capita is almost six times that of Mexico. Or to put it another way, the average person in the USA creates almost six times more economic value than the average person in Mexico.
+But, and it is here that we get to the most interesting part of the research, if we were to go back 500 years, the reverse was true.
+The part of the world now called Mexico was much richer than the part of the world now called the United States of America. Both areas were colonised, but with dramatically different results.
+And the economists showed that this North American example was no exception.
+Countries that were rich before colonisation tended to be poorer today.
+Countries that were poorer and less developed before colonisation tended to be richer today.
+Why, asked the economists?
+What is it about colonisation that makes rich countries poor and poor countries rich?
+What the economists proposed was as follows.
+In the case of formerly rich countries, they typically had high population densities; there were lots of people living there who could be exploited for financial gain .
+In some cases, they were already being exploited by a local elite , and in this case the colonisers overpowered the local elite and took over existing institutions that had been designed for the purpose of extracting wealth and resources from the local population.
+And if these extractive institutions and systems didn’t already exist, the colonisers would create systems and institutions based on the exploitation of the colonised population.
+The entire colony would be set up so that a relatively small number of settlers would be able to extract as much value as possible from the large local population.
+In the case of the formerly poor colonies, however, their situation was the opposite.
+They typically had lower population densities, meaning that there was more space to live and less threat of being attacked by the locals, which meant that more settlers moved there.
+The systems and institutions that the colonisers set up there were not primarily based on the exploitation of the local people, but on the long-term prosperity of the new local colonisers.
+They were inclusive , not extractive .
+In the example of the United States versus Mexico, the part of the world we now call the US was very sparsely populated when the first Europeans arrived, and the settlers created institutions that benefitted the increasingly large settler population.
+While in Mexico, a relatively small number of Spanish settlers took over and created systems that focussed on the extraction of wealth, with no attention paid to creating long-term systems that would benefit the local population.
+Now, you don’t win a Nobel Prize for looking at a few historical examples and saying “ ta-da , well that’s that proven then!”
+There was a vast amount of empirical data collected, which often hadn’t been previously analysed in detail.
+They looked at mortality rates of colonisers, they looked at economic prosperity in countries that had never been colonised, they looked at periods before and after colonisation.
+The mortality rate data–the data on the proportion of settlers who died–was particularly interesting, although perhaps not so surprising.
+What they found was that colonies with high settler mortality rates tended to have worse economies today.
+And these two data points were not random, the economists proposed, the high mortality rates resulted in poorer economies today.
+Why? Well here’s what the economists suggested.
+In countries with high settler mortality rates, for example countries with high prevalence of tropical diseases, many settlers died, which in turn discouraged more settlers from moving there.
+As a result of both the settlers who did go dying in high numbers and those who would have gone being discouraged from going, there were fewer settlers , which meant that there was less of an incentive to create inclusive institutions and systems that benefited the local population.
+And, on the flip side , low mortality rates meant settlers were likely to stay, encouraging colonial powers to set up systems that supported long-term prosperity for a growing settler community.
+If that all sounds theoretical , think about the examples of USA, Canada, Australia and New Zealand. These are all areas with comparatively few deadly diseases, they had large settler populations, and now tend to have strong institutions and high-performing economies.
+And then contrast that with, well, almost any former colony close to the Equator, whether that’s somewhere in sub-Saharan Africa or India. These are places with higher levels of tropical diseases, places which had higher levels of settler mortality , and now tend to have weaker institutions and poorer-performing economies.
+This led to what the economists call a “reversal of fortune.”
+Regions that were highly populated and wealthy before colonisation, like parts of Latin America and India, became poorer over time, while sparsely populated areas, like North America, saw significantly more economic prosperity .
+And in countries that were not colonised, there was no reversal of fortune; richer countries broadly stayed rich, and poorer countries broadly stayed poor.
+And as for the question of why countries with weaker institutions and rules of law don’t simply create them, if they are so key to economic development, the economists developed a series of complicated theories and frameworks , but to cut a long story short, the main issue, they argued, is one of self-interest.
+In a country with weak and extractive institutions, a local elite will typically hold all the power, and there simply isn’t a great enough incentive for them to implement reforms. Sometimes they are forced to, and this is where democracy is introduced and a country does turn a corner , but this is an exception , not the norm .
+Now, as with anything in the field of economics, even this Nobel Prize winning work was not without its critics.
+It was labelled as confusing correlation with causation, with overrepresenting the importance of institutions, and of reducing colonialism to a question of economics, completely removing its human and cultural impact.
+There are also, as its critics were happy to point out, many examples that don’t support this theory.
+Countries like South Korea and Botswana were both victims of extractive colonisers, but they have managed impressive economic development that other often neighbouring countries have not.
+China also bucks the trend ; it is not a democracy with personal freedoms enjoyed elsewhere, yet it has enjoyed spectacular economic growth over the past 40 years.
+So, what does this all mean?
+Well, the work of Daron Acemoglu, Simon Johnson, and James Robinson has certainly provided a new perspective to think about global prosperity . Their focus on institutions has reshaped how many economists think about development, and helped explain the crucial role institutions play in determining a country’s economic fate.
+As with any economic theory, as you heard, not everyone agrees with their conclusions.
+You might even be listening to this and thinking, hmm, that doesn’t sound quite right.
+Or perhaps you’ve been nodding your head, thinking, “ahh, well that explains it”.
+The fun or frustrating thing about economics is that it’s not a science, it's about looking at the world, and trying to make sense of it, two people can look at exactly the same thing and come to two completely different conclusions, but both be completely sure that they are right and the other one is wrong.
+There’s an old joke that you might have heard before. “If you put two economists in a room, you’ll get three opinions.”
+It’s a fun one, poking fun at a discipline that looks at the world and tries to overlay a theory to explain it, but where the same person might even disagree with themselves.
+These three economists certainly haven’t definitively answered the question of what makes one country rich and another poor, but they have certainly provided an interesting lens through which to think about this trillion dollar question.
+OK then, that is it for today's episode on colonial institutions, the nobel prize for economics, and what makes a country rich or poor.
+I hope it's been an interesting one, and that you've learnt something new.
+As always, I would love to know what you thought about this episode.
+What do you think about the decision to award the Nobel Prize to these three economists? What do you think we can learn from their work, and how should it affect our decisions today?
+I would love to know, so let’s get this discussion started.
+You can head right into our community forum, which is at community.leonardoenglish.com and get chatting away to other curious minds.
+You've been listening to English Learning for Curious Minds, by Leonardo English.
+I'm Alastair Budge, you stay safe, and I'll catch you in the next episode.

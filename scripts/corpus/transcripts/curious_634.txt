@@ -1,0 +1,95 @@
+Hello, hello, hello, and welcome to English Learning for Curious Minds, by Leonardo English, the show where you can listen to fascinating stories and learn weird and wonderful things about the world at the same time as improving your English.
+I'm Alastair Budge, and today we are going to be talking about the unexpected return of nuclear power.
+It's a story about technology, energy, politics, and the question of how to power the future.
+OK then, let's not waste a minute and get right into it.
+Politicians don't tend to be particularly good at admitting they were wrong.
+When your career depends on voters believing that you are the best person to lead the country, saying that you should have done something differently is hard. It's uncomfortable.
+Sometimes, though, it happens.
+In January of this year, January of 2026, the German Chancellor, Friedrich Merz, stood in front of the Chamber of Industry and Commerce in Dessau and admitted, in no uncertain terms , that his country, Germany, had made a mistake.
+To quote him exactly, "It was a serious strategic mistake to exit nuclear energy… we simply don’t have enough energy generation capacity ."
+As you may know, Germany now has no active nuclear power plants.
+In the 1990s, around 30% of Germany's electricity came from nuclear sources. Today, that number is zero.
+And many countries, especially in Europe, have gone a similar route: initial excitement in the post-war period about this "new" and revolutionary technology, and then a turn towards protest and opposition.
+In many ways, it was hardly surprising.
+There were question marks over what to do with nuclear waste .
+In 1986, there was Chernobyl.
+And twenty-five years later, in 2011, came Fukushima. Nuclear power was for many people simply too dangerous. A risk not worth taking.
+But then, in the past couple of years, something has changed.
+People have started talking about a new nuclear age, a nuclear renaissance , where nuclear energy is treated not as "the answer" to how we power the planet, but as "part of the answer".
+And in some cases, this has resulted in some spectacular U-turns .
+Belgium is one example.
+In 2003, Belgium passed a law committing itself to shutting down every nuclear reactor in the country. It was broadly the same story as Germany: public fear after Chernobyl, a strong Green movement, and a political consensus that nuclear power belonged to the past.
+By last year, Belgium was most of the way there. Plants had been scheduled for closure. Engineers had already begun the paperwork for decommissioning , which is the long, careful process of shutting a reactor down for good and making it safe.
+And then, in May 2025, the Belgian parliament did something people weren't expecting. It repealed the law completely, cancelling it as if it had never existed.
+And the government didn't just decide to keep the remaining reactors running. It announced it wanted to extend the lifespans of the ones that had already been prepared for shutdown, and it started looking at building new ones.
+In other words, a full reversal: from "we're shutting it all down" to "we're not doing that AND we're building new ones".
+Belgium wasn't even the most extreme example.
+Italy banned nuclear power after Chernobyl, and confirmed that ban again after Fukushima, when 94% of voters rejected building new reactors . Its last two reactors had already closed, back in 1990.
+But in October of last year, October 2025, Italy's government approved a new bill to bring nuclear power back: small modular reactors , new-generation designs, and even fusion. The whole shebang .
+And it's a similar change of mood in the US, in Japan, the world over.
+Even in countries that haven't reversed course entirely, the tone has changed. In many countries, nuclear power has become a non-partisan issue: something those on the right and the left agree on, and even something that some Green parties have started to come round to as an important tool in the fight against climate change.
+So what changed? Well, first, there's the question of energy security . After the Russian invasion of Ukraine, it became clear that relying on cheap Russian gas hadn't been the smartest move. Or in fact relying on anyone else for that matter . To maintain acceptable prices and reliable supply, countries started to admit that being able to produce your own energy was extremely important.
+Second, there's the climate question. For a long time, the assumption was that renewables like wind and solar could be enough. Enough wind turbines and solar panels could deliver all the energy a country needed. It's a nice idea, but for most countries, it doesn't quite work.
+Wind and solar are cheap, and they are quick and easy to build, relative to nuclear at least. But the sun doesn't always shine, and the wind doesn't always blow. Solar might be able to power the entire grid in the middle of the day, but not at night or on a dark winter's day. And while batteries are getting cheaper every year, storing enough electricity to keep a country running for days at a time is still a long way off .
+Nuclear power, on the other hand, doesn't care whether the sun is shining or the wind is blowing.
+Grid engineers call this baseload power : a steady, reliable supply that is always there, whatever the weather. And increasingly, governments have concluded that nuclear and renewables need to work together, with nuclear providing the steady backbone that a renewable -heavy grid needs to actually function.
+And after it's up and running , nuclear power produces almost no carbon emissions .
+Now, not all Green parties agree with nuclear yet, but it's starting to change. In Finland, the Green party voted back in 2022 to formally support nuclear power as part of its climate strategy, and the tone has started to change in several other countries too.
+So you have the energy security question and the environmental one, but there's another factor: demand for electricity is booming , and this is largely coming from the technology sitting in your pocket.
+Data centres in the United States now use more than 4% of the country's entire electricity supply.
+A data centre is a huge building full of computer servers, the machines that store and process information for the internet. They've been around for decades, and despite what the fear mongering might have you believe, most of what they do has nothing to do with artificial intelligence. They're where your Netflix movies are stored, your Spotify playlists are saved, and where the tens of billions of hours of YouTube videos are held. And yes, this episode and my voice today are brought to you courtesy of your local data centre.
+They are what companies talk about when they say "the cloud". It's not a cloud, it's a huge warehouse in Arizona or somewhere like that.
+And for most of the last twenty years, these buildings have been growing steadily but predictably.
+Then came generative AI which, as I'm sure you know, or might remember from episode 585, has much more intensive energy requirements. And with billions of people using AI, well, you get a level of electricity demand that didn't really exist five years ago.
+To put it in real terms, Goldman Sachs now projects that electricity demand from data centres will grow by 160% by 2030, driven largely by AI. It means that within a few years, the amount of power these buildings need could be more than double what it is today, on top of everything else the grid has to supply.
+These data centres need reliable, 24/7 energy. Technology companies have actually been some of the world's biggest buyers of wind and solar power for years, but renewables alone cannot promise power at every hour of every day.
+And, one more thing. Even once a data centre is built and ready to be turned on, you don't just plug it into the grid . There are long waiting lists to ensure that a new customer won't overload the local network, and in some parts of the United States, these waiting lists stretch to eight years, which is eight years too long if you're a technology company racing to build the next generation of AI.
+So the world's biggest technology companies did something unexpected, or I guess rather obvious when you understand that electricity is their biggest constraint . They decided to become energy companies themselves.
+And here, enter stage right , nuclear power.
+Microsoft, for example, signed a deal back in 2024 to bring one of the two reactors at Three Mile Island, in Pennsylvania, back to life.
+As you may remember, Three Mile Island was the site of a famous partial meltdown back in 1979, but that happened in the other reactor . This one ran safely for decades, and only closed in 2019, for ordinary financial reasons.
+The plant's owner, an energy company called Constellation, is spending $1.6 billion to refurbish it,
+and Microsoft has agreed to buy 100% of the electricity the plant produces for the next twenty years. In other words, it effectively gets its own nuclear reactor , and all of the energy it produces is earmarked for data centres.
+And it's a similar thing with Meta, Amazon, Google, all the big tech companies.
+Some are restarting old plants, others are buying capacity from existing plants, others are investing in companies building small modular reactors , which are, as the name suggests, smaller reactors that are built off-site and then assembled, a bit like IKEA furniture, but with, I trust, slightly more helpful instructions.
+Add it all together, and the nuclear capacity now committed to data centres by these companies is up to 13 gigawatts , and that is just in the United States. To put it in context, this is more electricity than the entire Netherlands uses in a year.
+I'm not sure if that sounds like a lot or not. It's a lot when you think that it's like the electricity used by 18 million people, but if you think that this is powering products used by a large proportion of the world's population, perhaps it seems more reasonable.
+In any case, never before has so much private money been committed to nuclear energy, and we are only six years into the decade.
+For decades, nuclear power depended almost entirely on governments: government funding, government regulation, government risk-taking, because private investors found it too expensive and too slow.
+Now it's Microsoft, Meta, Amazon, and Google that are bankrolling reactors , providing the money that governments once did. These are companies whose main business has nothing to do with electricity. But the alternative is running out of power to sell their own products.
+Of course, not everyone is comfortable with that shift. Critics point out that decisions made about something as safety-critical as nuclear power are increasingly being made by companies whose main interest is keeping their data centres running, not public accountability .
+Now, there are a few more things to talk about.
+Firstly, the financing of nuclear plants. One of the big criticisms of nuclear power, historically at least, is that it is expensive. Sure, once you get a plant up and running, it's cheap to run, but the build of it is incredibly expensive, and costs almost always overrun , or perhaps spiral out of control would be a better way of putting it.
+That is still true, but there are a few things worth mentioning. A large cost of building a full-scale nuclear plant is the cost of financing it, the cost of capital . If banks and investors provide you with €1 billion in financing at a 10% interest rate , let's say, that's €100 million in interest payments every year. Let's say, for the sake of example, a nuclear power plant takes 10 years to build, you will pay €1 billion in interest payments on a €1 billion loan.
+And the numbers are often much worse than that.
+In 2016, the UK approved a nuclear power station called Hinkley Point C, in the south-west of England. Now, plans had actually started for this plant as early as 1981, but that's another issue.
+Anyway, its initial projected cost was £18 billion, and it was expected to come online in 2025.
+As of today, mid-2026, its projected cost is £48 billion in inflation-adjusted terms, and it's not scheduled to come online before 2030.
+There are a few things to talk about here then. The first is that big technology companies are still investing in nuclear energy despite these frequent cost overruns , which gives you some idea of just how desperate they are for power.
+And the second is that governments are now stepping in to help the financing of new nuclear power stations, guaranteeing the price for a set period, or offering a more manageable interest rate .
+And small modular reactors , which I mentioned a few minutes ago, are another way to fight the issues that have plagued the construction of these large nuclear power plants.
+The fact that they are smaller means they are cheaper to build, faster to put up, and easier to place close to where the electricity is actually needed, like right next to a data centre.
+At least, that's the idea. This is still new technology, largely a technology of blueprints and prototypes rather than working power stations.
+But 2026 has been the year SMRs, the small modular reactors , they started to look real. There's an SMR in China which is scheduled to start commercial operation in the next 12 months, and others being built in Canada and America.
+Still, we'have heard this kind of story before. Nuclear power has a long history of projects that were promised on time and on budget, and then arrived years late and billions over. Sceptics point out that SMRs are, so far, mostly a story told in press releases and government funding announcements, not in electricity actually flowing onto the grid .
+And there's also the question that has haunted nuclear power for seventy years: nuclear waste .
+Anyone who grew up watching The Simpsons probably remembers Homer walking into his job at a nuclear power plant, and there being big drums of fluorescent green slime that gives fish three eyes.
+Of course, spent nuclear fuel is dangerous, and it remains radioactive for thousands of years. But there has been significant investment and progress in solving this issue.
+Recently, Finland has shown that the problem can be solved. It is in the final stages of opening a nuclear storage site deep underground that will be able to safely store nuclear waste for 100,000 years.
+And there is also the promise, or at least the allure , of nuclear fusion, the other kind of nuclear power, the one that works by fusing atoms together rather than splitting them apart.
+Fusion has been "twenty years away" for about seventy years, and 2026 hasn't quite broken that pattern.
+But something has changed here too. More than fourteen billion dollars in investment has gone into fusion companies, and almost a third of that arrived in the past year alone. Microsoft has signed a deal to buy fusion electricity from a company called Helion by 2028. And regulators in the US have started treating fusion as a properly separate category from traditional nuclear power, with lighter rules, because a fusion reactor can't melt down the way a fission reactor can.
+If nuclear fusion can work, and clearly there is a lot of smart money betting that it can, the economics of nuclear power change significantly.
+In a traditional nuclear power station, the fuel keeps producing heat even after the reactor has been switched off, and it has to be kept cool at all times. At Fukushima, the reactors had already shut themselves down, but the cooling failed, and the fuel melted. This is why fission plants need so many layers of safety systems, and those layers are a big part of what makes them so expensive to build.
+A fusion reaction has the opposite problem: it is incredibly difficult to keep going. It only happens under extreme conditions, and there is only ever a tiny amount of fuel in the machine. If anything goes wrong, the conditions collapse and the reaction simply stops. There is nothing that can melt down .
+That's a large part of why people are so excited about fusion: in theory, it offers something close to nuclear power's upside, of abundant , low-carbon electricity, without its biggest danger.
+So, to wrap things up, even a couple of years ago, nuclear power was a story about a fight between the past and the future: old reactors closing in Europe while new ones opened in Asia.
+Today, it's a story about the environment and about energy sovereignty , not just for governments but for big tech too.
+The promise is alluring : cheap, clean, abundant electricity for everyone.
+Whether that can really be delivered, well, that is the trillion-dollar question.
+OK, then, that is it for today's episode on the unexpected return of nuclear power.
+I hope it's been an interesting one and that you've learnt something new.
+As always, I would love to know what you thought of this episode.
+Let me know in the comments below, if you're listening to this somewhere where you can comment, and for the members among you, you can head right into our community forum, which is at community.leonardoenglish.com and get chatting away to other curious minds.
+You've been listening to English Learning for Curious Minds by Leonardo English.
+I'm Alastair Budge, you stay safe, and I'll catch you in the next episode.

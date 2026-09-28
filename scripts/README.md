@@ -1,66 +1,57 @@
 # scripts 说明
 
-这里是语料管线。**下次数据出问题，先跑 `validate_data.py` 定位，再回到对应环节。**
-
-历史上的一次性救火脚本（针对某几篇的补抓、补译、换音源）已经归档到 `oneoff/`，
-它们只对当时那批具体条目有意义，不要拿来处理新问题。
+数据管线。**数据出问题先跑 `validate_data.py` 定位，再回到对应环节。**
 
 ## 常用入口
 
 | 命令 | 用途 |
 | --- | --- |
-| `python scripts/validate_data.py` | 校验 `public/data` 的全部结构不变量。CI 闸门，改完数据必跑 |
+| `python scripts/validate_data.py` | 校验 `public/data`、词表、例句索引的全部不变量。CI 闸门，改完数据必跑 |
 | `python scripts/sync_dist.py` | 构建后把素材同步进 `app/dist`（vite 的 `copyPublicDir` 已关） |
-| `python scripts/verify_deploy.py` | 线上验收：素材完整性、缓存版本、404 行为、查词接口 |
+| `python scripts/verify_deploy.py` | 线上验收：节目、字幕、词表、切句原声、整集音频、缓存版本、404、查词接口 |
 
-## 语料管线
+## 管线（按顺序）
 
-按顺序，从选题到上线：
+1. `ingest.py` — 三档节目各取最新 N 期：正文 + 音频（转 m4a）+ 强制对齐 + 封面。
+   对齐失败的期数自动顺延取下一期，直到凑满。断点续抓（`corpus/ingest_state.json`）。
+   官方文稿原样留底在 `corpus/transcripts/`，改进对齐算法后 `--realign` 重跑不用联网。
+2. `build_talks.py` — 对齐结果切成逐句数据，Gemini 整集翻译，写 `public/data/<slug>.json` 与 manifest；
+   不在本批节目里的旧数据会被清掉。`--translate-only` 只填翻译缓存，可以和 ingest 同时跑。
+3. `align_words.py` — 每句补词级时间轴 `w[]`（复用 ingest 存下的 ASR 词序列，不再识别第二遍）。
+4. `build_vocab.py` — 六级词表、每个词最多 5 条原声例句、每集六级词索引，并把 `lemmas`（字幕上色用）写回每集数据。
+5. `build_dict.py` — 只覆盖本语料的精简离线词典分片（点词查词用）。
+6. `cut_clips.py` — 每句切成独立小音频上传 R2（`v1/clips/<slug>/<句子下标>-<起点厘秒>.m4a`）。
+7. `deploy_audio_r2.py` — 整集音频上传 R2（高音质原文件 + 72k 单声道标准音质）。
 
-1. `build_ted_corpus.py` — 从 Kaggle `ted_main.csv` 按播放量取 TOP 100
-2. `resolve.py` — 把清单解析成实际 YouTube 视频（频道 / 时长 / 标题三重校验）→ `resolved.json`
-3. `fetch.py` — 按 `resolved.json` 下载音频 + json3 字幕 + 元信息，支持断点续抓
-4. `ingest.py` — VOA / BBC 6 Minute English 的统一抓取驱动（下载 → 转码 m4a → 强制对齐）
-5. `align.py` — 无时间轴的官方文字稿强制对齐到音频，产出与 json3 同构的文件
-6. `vtt2json.py` — json3 转逐句双语 JSON，缺中文的用机译补齐，并生成 manifest
-7. `align_words.py` — 给每句补词级时间轴 `w[]`，并用真实首尾词时间修正 `start` / `end`
-8. `fetch_ted_zh_subs.py` — 用 TED 官网的人工翻译替换机器翻译（含逐篇时间轴定标）
-9. `fill_covers.py` → `localize_covers.py` — 补封面，再把图从 YouTube 图床搬到本地
-10. `deploy_audio_r2.py` → `update_media_manifest.py` — 音频转码上传 R2，回写真实时长与版本化 URL
-11. `rebuild_manifest.py` — 清理孤儿数据文件并重建 manifest
+节目源适配器在 `sources/`：`bbc6min.py`、`curious.py`、`thinking.py`，网络请求统一走 `sources/common.py`（带退避重试）。
 
-## 词典
+## 翻译（Gemini 免费层）
 
-- `fetch_ecdict.py` — 下载 ECDICT 词库到 `scripts/.vendor`（已 gitignore）
-- `build_dict.py` — 生成"只覆盖本语料"的精简离线词典分片
+key 放仓库根目录 `.env.google.local`（`GOOGLE_API_KEY=...`，已 gitignore）。
+免费层按模型限每天请求数（flash 约 20 次/天），`translate.py` 按质量排了一串 Gemini 3.x 模型轮流用，
+某个模型当天额度用完自动换下一个并打印提示；每集用的模型记在数据的 `zhModel` 字段。
+全部模型当天都用完时构建会停下，已翻完的都在 `corpus/zh/` 缓存里，第二天接着跑。
 
-## 翻译
+## GPU 对齐
 
-- `prepare_translation_model.py` — 下载并转换离线英译中模型（OPUS-MT + CTranslate2）
-- `offline_translate.py` — 离线翻译运行时
-- `repair_translations.py` — 只回填空中文，不覆盖任何有效译文
+faster-whisper 在本机 RTX 3050 上约 13 倍实时，CPU 只有约 1 倍。CUDA 运行库（cuBLAS、cuDNN）用 pip 装在
+`scripts/.vendor/cuda`（已 gitignore）：
 
-## 其它
+```powershell
+python -m pip install --target scripts/.vendor/cuda nvidia-cublas-cu12 "nvidia-cudnn-cu12==9.*"
+```
 
-- `make_icons.py` — 生成 PWA 图标
-- `import_cloudflare_env.ps1` — 从本地配置导入 Cloudflare 环境变量
+`align.py` 启动时会把这两个目录加进 DLL 搜索路径；找不到时退回 CPU 并打印提示。
 
 ## 写数据的唯一入口
 
 **所有写 `public/data/<slug>.json` 的脚本都必须走 `data_io.write_talk`**，不要自己 `json.dump`。
-
-格式约定：单篇用 `indent=2` 展开到句级（改一句话的 diff 就只有几行，出问题能用 git 直接定位），
-但词级时间轴 `w` 压回一行——它是一串纯数字，展开会把单篇从 250 行撑到 1300 行，反而更难读。
-`manifest.json` 整体紧凑，它是列表页一次性拉取的，没人读它的 diff。
-
-`validate_data.py` 会检查这套格式，写歪了 CI 会拦下来。
+单篇 `indent=2` 展开到句级，词级时间轴 `w` 压成一行；`manifest.json` 整体紧凑。`validate_data.py` 会检查格式。
 
 ## 已知约束
 
-- **不要并发写 `public/data/*.json`。** `align_words.py` 会"读入整篇 → 跑几分钟 ASR → 整篇写回"，
-  这期间别的脚本对同一批文件的修改会被覆盖。曾经因此丢过一轮中文字幕修复，
-  也撞出过 `OSError: [Errno 22]`。要串行跑。
-- `align_words.py` 的并发度受内存限制：每个 worker 常驻一份 whisper，16 GB 机器上 `--jobs 5`
-  会在后半程集体 `mkl_malloc` 失败，`--jobs 2` 稳定。
-- `Sentence.w[]` 的下标必须与前端 `tokenizeSentence`（`app/src/lib/lookup.ts` 的 `WORD_RE`）
-  分出的词一一对应。改任何一端都要同步改另一端，`validate_data.py` 会卡住不一致的情况。
+- **不要并发写 `public/data/*.json`**：`build_talks.py`、`align_words.py`、`build_vocab.py` 都是整篇读写，要串行跑。
+- `Sentence.w[]` 的下标必须与前端 `tokenizeSentence`（`app/src/lib/lookup.ts` 的 `WORD_RE`）一一对应，
+  改任何一端都要同步改另一端，`validate_data.py` 会卡住不一致。
+- 例句索引里的句子起点必须与数据一致（切句原声按起点命名）；改了数据要依次重跑 `build_vocab.py`、`cut_clips.py`。
+- BBC 列表页的老期数（约 2022 年以前）页面结构不同，`bbc6min.py` 解析不出正文；只取最近 N 期时不受影响。

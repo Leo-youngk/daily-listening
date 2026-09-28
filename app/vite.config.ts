@@ -28,11 +28,11 @@ export default defineConfig({
       registerType: 'autoUpdate',
       injectRegister: null,
       manifest: {
-        name: '每日听力 · TED 版',
+        name: '每日听力',
         short_name: '每日听力',
-        description: 'TED 演讲与名校毕业演讲精听工具',
-        theme_color: '#4D5BD5',
-        background_color: '#F7F7F4',
+        description: '英语学习播客精听 + 六级背词：每个单词都用节目里的真人原声来背',
+        theme_color: '#FFFFFF',
+        background_color: '#FFFFFF',
         display: 'standalone',
         start_url: '.',
         icons: [
@@ -49,13 +49,13 @@ export default defineConfig({
         cleanupOutdatedCaches: true,
         navigateFallback: 'index.html',
         // 缺失的数据/词典要真的 404，不能回落成 index.html
-        navigateFallbackDenylist: [/^\/api\//, /^\/data\//, /^\/dict\//],
+        navigateFallbackDenylist: [/^\/api\//, /^\/data\//, /^\/dict\//, /^\/wordbook\//, /^\/examples\//],
         runtimeCaching: [
           {
             urlPattern: /\/data\/.*\.json$/,
             handler: 'NetworkFirst',
             options: {
-              cacheName: 'data-cache-v4',
+              cacheName: 'data-cache-v5',
               networkTimeoutSeconds: 5,
               cacheableResponse: { statuses: [200] },
               expiration: { maxEntries: 320, maxAgeSeconds: 60 * 60 * 24 * 14 },
@@ -63,12 +63,22 @@ export default defineConfig({
           },
           {
             // 词典分片内容随 ECDICT 版本整体更换，缓存名带版本号即可长期缓存
-            urlPattern: /\/dict\/.*\.json$/,
+            urlPattern: /\/dict\/.*\.json(\?.*)?$/,
             handler: 'CacheFirst',
             options: {
-              cacheName: 'dict-ecdict-1-0-28-r1',
+              cacheName: 'dict-ecdict-1-0-28-r2',
               cacheableResponse: { statuses: [200] },
               expiration: { maxEntries: 450, maxAgeSeconds: 60 * 60 * 24 * 180 },
+            },
+          },
+          {
+            // 词表与例句索引随节目增量更新：先用缓存秒开，后台拿新版
+            urlPattern: /\/(wordbook|examples)\/.*\.json$/,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'vocab-cache-v1',
+              cacheableResponse: { statuses: [200] },
+              expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 60 },
             },
           },
           {

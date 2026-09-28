@@ -1,15 +1,16 @@
-import type { ProgressMap, Settings, VocabItem } from './types'
+/**
+ * localStorage 里只放小而有界的数据：收听进度、收藏、打卡、设置。
+ * 背词卡片与复习日志在 IndexedDB（lib/db.ts）。
+ */
+import type { ProgressMap, Settings } from './types'
 import { DEFAULT_SETTINGS } from './types'
 import { localDateKey } from './date'
-import { senseId } from './lookup'
 
 const K = {
   progress: 'dtl.progress',
   favorites: 'dtl.favorites',
-  vocab: 'dtl.vocab',
   stats: 'dtl.stats',
   settings: 'dtl.settings',
-  homeRotation: 'dtl.homeRotation',
 }
 
 export const STORAGE_ERROR_EVENT = 'dtl-storage-error'
@@ -52,43 +53,9 @@ export function saveProgress(slug: string, pos: number, duration: number): boole
   all[slug] = { pos, duration, updatedAt: Date.now() }
   return write(K.progress, all)
 }
-
-export interface HomeRotation {
-  date: string
-  cycle: number
-  recommendations: string[]
-  commencement: string[]
-  recent: string[]
-}
-
-function stringArray(value: unknown): value is string[] {
-  return Array.isArray(value) && value.every(item => typeof item === 'string')
-}
-
-export function loadHomeRotation(): HomeRotation | null {
-  const value = read<unknown>(K.homeRotation, null)
-  if (!value || typeof value !== 'object') return null
-  const raw = value as Partial<HomeRotation>
-  if (
-    typeof raw.date !== 'string'
-    || typeof raw.cycle !== 'number'
-    || !Number.isInteger(raw.cycle)
-    || raw.cycle < 0
-    || !stringArray(raw.recommendations)
-    || !stringArray(raw.commencement)
-    || !stringArray(raw.recent)
-  ) return null
-  return {
-    date: raw.date,
-    cycle: raw.cycle,
-    recommendations: raw.recommendations,
-    commencement: raw.commencement,
-    recent: raw.recent,
-  }
-}
-
-export function saveHomeRotation(rotation: HomeRotation): boolean {
-  return write(K.homeRotation, rotation)
+/** 听到离结尾不足 30 秒算听完 */
+export function isFinished(entry?: { pos: number; duration: number }): boolean {
+  return !!entry && entry.duration > 0 && entry.pos > entry.duration - 30
 }
 
 export function loadFavorites(): string[] {
@@ -106,54 +73,14 @@ export function isFavorite(slug: string) {
   return loadFavorites().includes(slug)
 }
 
-/** 旧版按 word 存的生词补齐新字段，避免升级后丢失用户已收藏的词 */
-function normalizeVocab(raw: Partial<VocabItem> & { meaning?: string; source?: string }): VocabItem | null {
-  const term = raw.term ?? raw.word
-  if (!term) return null
-  const contextMeaning = raw.contextMeaning ?? raw.meaning ?? ''
-  const lemma = raw.lemma ?? term
-  return {
-    id: raw.id ?? senseId(term, lemma, contextMeaning),
-    term,
-    word: raw.word ?? term,
-    lemma,
-    phonetic: raw.phonetic,
-    partOfSpeech: raw.partOfSpeech,
-    contextMeaning,
-    explanation: raw.explanation,
-    otherMeanings: raw.otherMeanings ?? [],
-    sentenceEn: raw.sentenceEn ?? raw.source ?? '',
-    sentenceZh: raw.sentenceZh,
-    slug: raw.slug,
-    sentenceIdx: raw.sentenceIdx,
-    startTime: raw.startTime,
-    addedAt: raw.addedAt ?? Date.now(),
-    mastered: raw.mastered ?? false,
-  }
-}
-
-export function loadVocab(): VocabItem[] {
-  return read<VocabItem[]>(K.vocab, [])
-    .map(normalizeVocab)
-    .filter((v): v is VocabItem => v !== null)
-}
-
-export type AddVocabResult = 'added' | 'exists' | 'failed'
-
-export function addVocab(item: Omit<VocabItem, 'id' | 'addedAt' | 'mastered'>): AddVocabResult {
-  const all = loadVocab()
-  const id = senseId(item.term, item.lemma, item.contextMeaning)
-  if (all.some(v => v.id === id)) return 'exists'
-  all.unshift({ ...item, id, addedAt: Date.now(), mastered: false })
-  return write(K.vocab, all) ? 'added' : 'failed'
-}
-
-export function updateVocab(id: string, patch: Partial<VocabItem>): boolean {
-  return write(K.vocab, loadVocab().map(v => (v.id === id ? { ...v, ...patch } : v)))
-}
-
-export function removeVocab(id: string): boolean {
-  return write(K.vocab, loadVocab().filter(v => v.id !== id))
+/** 节目换代后清掉已下架节目的进度与收藏，否则"听完篇数"会把旧节目算进去 */
+export function pruneEpisodes(available: Set<string>) {
+  const progress = loadProgress()
+  const keptProgress = Object.fromEntries(Object.entries(progress).filter(([slug]) => available.has(slug)))
+  if (Object.keys(keptProgress).length !== Object.keys(progress).length) write(K.progress, keptProgress)
+  const favorites = loadFavorites()
+  const keptFavorites = favorites.filter(slug => available.has(slug))
+  if (keptFavorites.length !== favorites.length) write(K.favorites, keptFavorites)
 }
 
 export interface Stats {
@@ -163,12 +90,22 @@ export interface Stats {
 export function loadStats(): Stats {
   return read<Stats>(K.stats, { days: [], seconds: 0 })
 }
+function checkIn(stats: Stats) {
+  const today = localDateKey()
+  if (!stats.days.includes(today)) stats.days.push(today)
+}
 export function recordListen(seconds: number) {
   const s = loadStats()
   s.seconds += seconds
-  const today = localDateKey()
-  if (!s.days.includes(today)) s.days.push(today)
+  checkIn(s)
   write(K.stats, s)
+}
+/** 背词也算打卡：复习或学新词后调用 */
+export function recordStudy() {
+  const s = loadStats()
+  const before = s.days.length
+  checkIn(s)
+  if (s.days.length !== before) write(K.stats, s)
 }
 /** 连续打卡天数（含今天，若今天已打卡） */
 export function streakDays(): number {
@@ -176,8 +113,8 @@ export function streakDays(): number {
   const set = new Set(days)
   let streak = 0
   const now = new Date()
-  let y = now.getFullYear()
-  let m = now.getMonth()
+  const y = now.getFullYear()
+  const m = now.getMonth()
   let d = now.getDate()
   if (!set.has(localDateKey(now))) {
     d -= 1

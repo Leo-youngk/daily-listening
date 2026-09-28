@@ -4,14 +4,18 @@ import './index.css'
 import App from './App'
 import ErrorBoundary from './components/ErrorBoundary'
 import { initOffline, isPersistentCacheName, OFFLINE_CACHE_NAME } from './lib/offline'
+import { CLIP_CACHE_NAME } from './lib/clips'
 import { PlayerProvider } from './store/PlayerContext'
 
 // 运行时缓存名带版本号，改版后旧缓存不会被 Workbox 自动回收（cleanupOutdatedCaches
 // 只管预缓存）。按白名单清理，换版本号即可让旧数据整体失效。
 const RUNTIME_CACHES = new Set([
-  'data-cache-v4',
-  'dict-ecdict-1-0-28-r1',
+  'data-cache-v5',
+  'dict-ecdict-1-0-28-r2',
   'cover-cache-v3',
+  'vocab-cache-v1',
+  // 背词原声：复习前预取的切句音频
+  CLIP_CACHE_NAME,
   // 用户主动下载的离线音频，永远不能被白名单清理扫到
   OFFLINE_CACHE_NAME,
 ])

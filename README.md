@@ -1,60 +1,59 @@
-# 每日听力 · TED 版（每日英语听力复刻）
+# 每日听力
 
-面向 iOS 的 PWA 英语精听应用，复刻「每日英语听力」的核心体验：
-**逐句双语字幕同步滚动、词级高亮跟随、单句循环、点词查词、生词本、收藏与打卡进度**。
+面向 iPhone 的 PWA：**听英语学习播客 + 背六级单词**，两件事做成一个循环：
 
-素材：100 篇最著名 TED 演讲（按播放量选取）+ 100 篇名校毕业演讲。
-音频来自 YouTube（TED 官方频道优先），英文字幕为官方/自动生成字幕，
-中文优先用官方中文字幕，缺失时用机器翻译（界面会标注「机译」）。
+- **背的时候在听**：每个六级词都用节目里的一句真人原声来背（FSRS 间隔重复，Anki 同款算法）。
+- **听的时候在背**：字幕里高亮你正在学的词、虚线标出没学过的六级新词；点词看本句义，一键加入复习。
+- **听完的时候在背**：「本集词汇」列出节目官方重点词和本集的六级词，一次勾完"认识/不认识"。
+
+## 节目
+
+按大众口碑与六级适配度挑的三档，均有免费官方全文稿：
+
+| 节目 | 期数 | 单集 | 语速 | 特点 |
+|---|---|---|---|---|
+| BBC 6 Minute English | 100 | 6 分钟 | ~151 wpm（六级听力 140–160） | 双人对话，每期官方重点词 6 个 |
+| English Learning for Curious Minds | 50 | ~22 分钟 | ~125 wpm | 历史、科学、人物故事 |
+| Thinking in English | 50 | ~25 分钟 | ~125 wpm | 时事、社会、文化；每期官方词表 |
+
+中文字幕为 Gemini 机器翻译（界面有标注）。素材仅用于个人学习。
 
 ## 目录结构
 
 ```
-├── app/                  # 前端（Vite + React + TS + Tailwind + PWA）
-├── scripts/              # 抓取管线（Python）
-│   ├── corpus/           # 语料清单、匹配结果、抓取状态、翻译缓存
-│   ├── resolve.py        # 把清单匹配成 YouTube 视频
-│   ├── audit_duration.py # 音源/文字稿匹配审计（时长校验、排除 TED-Ed 摘要版）
-│   ├── fetch.py          # 下载音频 + json3 字幕（断点续抓）
-│   ├── vtt2json.py       # 字幕转逐句双语 JSON + 机译 + 生成 manifest（内置时长一致性校验）
-│   ├── fill_covers.py    # 补齐封面缩略图
-│   └── sync_dist.py      # 构建后把素材同步到 dist
+├── app/                  # 前端（Vite + React + TS + Tailwind + PWA），Cloudflare Pages
+│   ├── functions/api/    # 点词查本句义（Workers AI）
+│   └── src/
+│       ├── lib/srs.ts    # FSRS 调度（ts-fsrs）
+│       ├── lib/db.ts     # 卡片与复习日志（IndexedDB / Dexie）
+│       └── pages/        # 今日 / 节目 / 单词 / 复习 / 播放 / 我的
+├── media-worker/         # R2 音频网关：整集音频 + 切句原声
+├── scripts/              # 数据管线（Python），见 scripts/README.md
 └── public/
-    ├── audio/            # m4a 音频
-    ├── data/             # manifest.json + 每篇逐句双语 JSON
-    └── icons/            # PWA 图标
+    ├── data/             # manifest.json + 每集逐句双语 JSON（含词级时间轴）
+    ├── wordbook/         # 六级词表、每集六级词索引
+    ├── examples/         # 每个六级词的原声例句索引
+    ├── dict/             # 本语料精简离线词典（ECDICT）
+    └── covers/           # 封面
 ```
 
-## 日常使用
+音频（`public/audio`）与切句原声不进仓库，存 Cloudflare R2，经 `media-worker` 提供。
+
+## 开发
 
 ```powershell
 cd app
-npm run dev        # 开发模式，素材直接从 ../public 提供
+npm run dev        # 素材直接从 ../public 提供
+npm test           # 含 FSRS / IndexedDB（fake-indexeddb）测试
 ```
 
-iPhone 使用：把站点部署（或局域网开放）后，用 Safari 打开 →
-「分享 → 添加到主屏幕」，即可像原生 App 一样全屏使用，听过的内容会离线缓存。
+## 部署
 
-## 生产构建
+推到 `main` 由 GitHub Actions 校验数据、类型检查、测试、构建并部署到 Cloudflare Pages，之后跑线上验收
+（`scripts/verify_deploy.py`）。媒体网关单独部署：`cd media-worker; wrangler deploy`。
 
-```powershell
-cd app; npm run build          # 产物在 app/dist（不含素材）
-python ../scripts/sync_dist.py # 把 data/icons/covers/dict 同步进 dist
-```
+## 数据安全
 
-## 素材管线（一次性，已全部跑完；增量补抓时参考）
+学习记录（单词卡片、复习日志）只存在本机 IndexedDB。换手机或删除主屏 App 前，在「我的 → 学习记录」导出备份。
 
-```powershell
-cd scripts
-python resolve.py              # 清单 → YouTube 视频匹配（输出 corpus/resolved.json）
-python audit_duration.py       # 时长审计：防止音源与文字稿错配（TED-Ed 摘要版会被替换）
-python fetch.py                # 下载音频+字幕，断点续抓；--category ted|commencement，--limit N
-python vtt2json.py             # 生成逐句双语 JSON 与 manifest（内置音源/字幕一致性校验，错配自动跳过）
-python fill_covers.py          # 补封面
-```
-
-## 已知限制
-
-- iOS Safari 锁屏后台播放支持有限（系统限制）；应用内切页不影响播放。
-- 毕业演讲的中文为机器翻译，仅供理解参考。
-- 素材仅用于个人学习。
+词典与六级词表基于 ECDICT（MIT License）。

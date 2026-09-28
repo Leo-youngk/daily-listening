@@ -1,64 +1,49 @@
 import type { ManifestItem } from '../lib/types'
-import { loadProgress, loadFavorites } from '../lib/storage'
-import { fmtDuration, fmtViews } from '../lib/format'
+import { isFinished, loadFavorites, loadProgress } from '../lib/storage'
+import { fmtDay } from '../lib/format'
 import { navigate } from '../hooks/useHashRoute'
-import { HeartIcon } from 'lucide-react'
-import { Progress } from '@/components/ui/progress'
+import { CheckIcon, HeartIcon } from 'lucide-react'
 import Cover from './Cover'
 import { usePlayerActions } from '../store/PlayerContext'
 
 interface Props {
   item: ManifestItem
-  showProgress?: boolean
-  variant?: 'list' | 'grid'
+  /** 本集里你在学的词数（节目页算好传进来） */
+  learningHits?: number
 }
 
-export default function TalkCard({ item, showProgress = true, variant = 'list' }: Props) {
+/** 单集行：16:9 缩略图（底边是收听进度）· 日期与时长 · 标题 · 六级词 */
+export default function TalkCard({ item, learningHits }: Props) {
   const { playTalk } = usePlayerActions()
   const progress = loadProgress()[item.slug]
+  const finished = isFinished(progress)
   const fav = loadFavorites().includes(item.slug)
-  const pct = progress && item.duration ? Math.min(100, (progress.pos / item.duration) * 100) : 0
-  const sub = item.category === 'commencement'
-    ? `${item.speaker} · ${item.school || ''}${item.year ? ' ' + item.year : ''}`
-    : item.category === 'voa' || item.category === 'bbc'
-      ? `${item.speaker}${item.year ? ' · ' + item.year : ''}`
-      : `${item.speaker} · ${fmtViews(item.views)}`
-
-  const fallback = item.category === 'ted' ? 'TED' : item.category === 'bbc' ? 'BBC' : item.category === 'voa' ? 'VOA' : '毕业'
+  const started = !!progress && progress.pos > 3 && !finished
+  const minutes = Math.max(1, Math.round((item.duration || 0) / 60))
+  const left = started ? Math.max(1, Math.round((item.duration - progress.pos) / 60)) : minutes
+  const pct = started && item.duration ? Math.min(100, (progress.pos / item.duration) * 100) : 0
   const open = () => {
     playTalk(item.slug)
     navigate(`/talk/${item.slug}`)
   }
 
-  if (variant === 'grid') {
-    return (
-      <button onClick={open} className="talk-grid-card">
-        <div className="talk-grid-cover">
-          {item.cover ? <Cover src={item.cover} className="size-full object-cover" alt={item.title} /> : <span>{fallback}</span>}
-          {fav && <HeartIcon className="talk-grid-favorite" aria-label="已收藏" />}
-          {showProgress && pct > 0 && <Progress value={pct} className="talk-grid-progress" />}
-        </div>
-        <div className="talk-grid-body">
-          <p className="talk-grid-title">{item.title}</p>
-          <p className="talk-grid-meta">{item.speaker} · {fmtDuration(item.duration)}</p>
-        </div>
-      </button>
-    )
-  }
-
   return (
-    <button onClick={open} className="talk-list-card">
-      <div className="talk-list-cover">
-        {item.cover ? <Cover src={item.cover} className="size-full object-cover" alt={item.title} /> : <span>{fallback}</span>}
-      </div>
-      <div className="talk-list-body">
-        <div className="talk-list-title-row">
-          <p className="talk-list-title">{item.title}</p>
-          {fav && <HeartIcon className="talk-list-favorite" aria-label="已收藏" />}
-        </div>
-        <p className="talk-list-meta">{sub} · {fmtDuration(item.duration)}</p>
-        {showProgress && pct > 0 && <Progress value={pct} className="talk-list-progress" />}
-      </div>
+    <button onClick={open} className="episode-row">
+      <span className="episode-row-thumb">
+        <Cover src={item.cover} className="episode-row-img" alt="" />
+        {pct > 0 && <i style={{ width: `${pct}%` }} />}
+      </span>
+      <span className="episode-row-body">
+        <span className="episode-row-kicker">
+          {fmtDay(item.date)} · {finished ? <><CheckIcon className="episode-row-check" />已听完</> : started ? `剩 ${left} 分钟` : `${minutes} 分钟`}
+          {fav && <HeartIcon className="episode-row-fav" aria-label="已收藏" />}
+        </span>
+        <span className="episode-row-title">{item.title}</span>
+        <span className="episode-row-meta">
+          六级词 {item.cet6}
+          {learningHits ? <b> · 在学 {learningHits}</b> : null}
+        </span>
+      </span>
     </button>
   )
 }

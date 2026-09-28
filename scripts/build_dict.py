@@ -24,7 +24,7 @@ OUT_DIR = ROOT / "public" / "dict"
 ECDICT_CSV = ROOT / "scripts" / ".vendor" / "ecdict.csv"
 LEMMA_TXT = ROOT / "scripts" / ".vendor" / "lemma.en.txt"
 
-DICT_VERSION = "ecdict-1.0.28-r1"
+DICT_VERSION = "ecdict-1.0.28-r2"
 
 WORD_RE = re.compile(r"[A-Za-z][A-Za-z'’\-]*")
 POS_LINE_RE = re.compile(r"^([a-z]+\.(?:\s*&\s*[a-z]+\.)*)\s*(.+)$")

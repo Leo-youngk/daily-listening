@@ -1,0 +1,125 @@
+Hello, hello, hello, and welcome to English Learning for Curious Minds, by Leonardo English, the show where you can listen to fascinating stories and learn weird and wonderful things about the world at the same time as improving your English.
+I'm Alastair Budge, and today we are going to be talking about AI and learning English.
+Now, we’ve talked about this before, back in 2022, but that seems like centuries ago in the era of AI.
+So in today’s episode we are going to talk about what has changed, what hasn’t changed, and how AI can and can’t help you improve your English in 2026.
+OK then, let's not waste a minute and get right into it.
+I want you to cast your mind back to late 2022. The world was watching anxiously as the Russian invasion of Ukraine looked to be ratcheting up a notch .
+Inflation looked like it might be spiralling out of control.
+In the UK, a tabloid newspaper set up a livestream of an iceberg lettuce and a picture of the then Prime Minister, Liz Truss, asking its viewers which would last longer, the lettuce or the PM. By the way, the lettuce won.
+And then in late November, quietly at first, a company called OpenAI launched a chatbot called ChatGPT.
+Within five days, a million people had used it. I was one of them, and perhaps you were too.
+It seemed like magic. You could type in a question, any question, and you would get an answer back. Help me write this email. What’s the capital of Uzbekistan? Why is grass green?
+Now, the answers weren't always right. Sometimes they were plain wrong.
+But it was a window into the future, a future in which knowledge, intelligence, was available to anyone, anywhere, in a way that it never had been before.
+And it didn’t take long for people to start thinking about how this new technology could be applied to the world of language learning.
+Indeed, just a couple of weeks after the release of ChatGPT we made an episode on exactly this, imaginatively called “Artificial Intelligence & Language Learning”.
+That was three and a half years ago, and things have moved on a lot since then.
+The technology has improved significantly, there are many things that are possible now that weren’t even a few months ago.
+But with these improvements come pitfalls , traps I have seen plenty of people fall into, so we will talk about those too.
+Now, a quick administrative note before we get too far into it. I’m not going to talk too much about specific AI tools, ChatGPT vs. Gemini or Claude, or any of the speaking apps, because they all do pretty similar things, and the best one right now might not be the best one by the time you listen to this, so what I’m about to say should apply to whatever AI tool you are using.
+I’m also going to be talking relatively generally, rather than going into specific prompts and exercises. If you’d like specific tips and tricks, then there are a bunch of tutorials over on our YouTube channel - I’ll put a link to that in the description for this episode.
+OK, with those disclaimers out of the way, let’s start by going through it semi-systematically.
+The way that many people think about language competency is through the four pillars of reading, writing, listening and speaking.
+This is a helpful framing , but I think it’s even more helpful to split it into just two: input and output, with reading and listening in the input category, and writing and speaking in the output category.
+I think this is a useful framework for thinking about where AI can fit in, especially as almost everyone finds output harder than input; it’s easier to understand English than it is to produce it.
+So, let’s start with input: reading first, and then listening.
+Back in 2022, AI was already quite good at dealing with text. You could paste in an article and ask for a summary. You could ask it to explain a difficult word. You could even ask it to simplify something into B1-level English.
+Super helpful, and that hasn’t changed.
+What has changed is the scale , the speed, and the integration .
+In 2026, almost every website, every app, every browser, has some form of AI built in. You can highlight a paragraph and get an explanation instantly. You can generate a vocabulary list in seconds. You can ask follow-up questions and have a conversation about what you’ve just read.
+From a purely technical perspective, this is extraordinary.
+But here is the first important point: AI makes it very easy to consume content without it actually sticking , without you actually learning from it.
+You might understand something in the moment, perhaps you feel like you've learned it, but then, surprise surprise , you forget it. It's gone.
+So if you're using AI to help you read and understand English, make sure you're doing something with what you are taught. That might be writing the phrase down, using it in a sentence, making sure you come back to it a few days later. Doing everything you can to use it actively, the same as in the pre-AI era.
+And in fact, there’s one more thing, something you should do before you even think about using AI to explain something: force yourself to guess first, to really think about what the answer could be.
+If you come across a difficult expression, try to work out the meaning from the context before asking AI.
+If it’s a tricky grammar point, try to really THINK about what the rule is, then ask AI to check if you're right.
+This transforms AI from an answer machine into a tutor. You're thinking actively, not just consuming passively, so you are much more likely to retain the information, you’re much more likely to actually learn.
+It’s a similar story with listening, although there are some additional complications and opportunities.
+The main thing to say is that text to speech technology, which is the technology that takes text and converts it to spoken language, this has improved dramatically since 2022.
+Back then, AI voices sounded robotic. Obvious. It was quite painful to listen to.
+Today, synthetic speech is almost indistinguishable from a real human voice. You can slow it down naturally. You can change accents. You can even interrupt it mid-sentence and ask it for clarification.
+This can be incredibly useful, especially for people at lower levels, let’s say anyone up to B1 or so.
+Most of the AI tools, from ChatGPT to Gemini, they have a voice mode, where you can have a conversation about whatever you want. We’ll talk about this more in a few minutes, when we talk about speaking, but for the purposes of listening, these models have come on leaps and bounds since 2022.
+The accents are better, it sounds more natural, and most importantly, it gives you 24/7 access to an endlessly patient and friendly source of English input.
+But if you are listening to this show, AI-generated English might be a little frustrating. You are at a level where you can understand a lot of native-level content, and sometimes AI-generated content is painfully obvious.
+If you’ve ever been confronted with these AI-generated podcasts on YouTube, you’ll know exactly what I mean.
+And here’s the danger.
+If you spend too much time listening to simplified AI-generated English, your brain will adapt to simplified English. Or English that sounds like someone is reading out what is meant to be a written article.
+AI generated audio will undoubtedly improve in the future, but at the moment it’s great for single words or single sentences, but anything longer than that is usually pretty easy to recognise.
+It’s not the English that you’ll find in the real world, English that’s full of ums and ahs, people changing what they want to say mid-sentence, mumbling , being interrupted , real, raw , native English.
+So here’s how I think about it.
+The best way to improve your listening skills remains to listen to real, human, raw English, whether that’s podcasts, YouTube, audiobooks, TV, or whatever else. But to use AI as a way to scaffold , to build on this, and support your listening.
+Let me give you a concrete example of how this can work with podcasts, because I think this is one of the most powerful uses of AI, and clearly it’s relevant to you, because you are listening to one right now.
+So, first, listen to the episode normally. Don't look at the transcript yet.
+Then, before looking at the transcript, open up ChatGPT and try to summarise what you heard.
+THEN paste in the full transcript and ask it to find 10 natural expressions that native speakers use; not just vocabulary words, but actual phrases.
+For each expression, get AI to explain what it means and show you how to use it in a different context.
+Then, create a fill-in-the-blank exercise where you practise using those expressions.
+Finally, get AI to give you a discussion question about the episode topic, and practise answering it.
+This can turn 20 or 30 minutes of passive listening into an hour plus of active learning. And you can do this with literally any podcast or video that has a transcript.
+And by the way, you can find lots of demos and tutorials of how to do this on our YouTube channel. There’s a link in the description to that.
+Now let's turn to output, writing and speaking, and let’s start with writing.
+Writing is where AI has perhaps made the biggest leap forward for English learners, and where I think the benefits are most clear-cut .
+But again, there are some pretty obvious pitfalls .
+So, the old way of improving your English writing was essentially to learn grammar and vocabulary, through textbooks and reading widely.
+And to turn that acquired knowledge, those building blocks of language, into written text.
+You’d write something. But you wouldn’t be sure if it was right. Maybe you weren’t sure you’d used the right tense , or whether this was how a native speaker would have written it.
+Perhaps you’d ask a friend, someone who was better at English than you, or even a native speaker if you were lucky.
+Maybe you were doing an English course, and you could ask your teacher.
+Or failing that, you might post it in a forum somewhere and wait, hoping for a kind soul to put you out of your misery . You might be lucky enough to get a response, but often the feedback wouldn’t be very helpful. Even a native speaker might not be able to tell you why something was wrong, it just was.
+Now, AI tools have made this significantly easier. You write something. You paste it into an AI tool, and the AI will give you a perfect, natural version.
+Amazing, right? But the problem with this is that I see so many non-native English speakers starting to rely on AI tools to do the writing for them.
+As you might imagine, I get tonnes of emails, mostly from non-native speakers. It is immediately obvious to me who has used an AI to write the email for them and who hasn’t.
+And I have to admit that I am infinitely more impressed with those people who haven’t, the people who have forced themselves to produce English, even when there is the tempting option of getting an AI tool to write it for you.
+Now, you might argue that people will just have to get used to this, and in a world where AI agents outnumber human employees, and AI-generated English continues to improve, nobody will need to actually write; an AI will do it for them.
+Even if that will some day be true, there is still an important reason to work on your writing, as a non-native speaker.
+And that’s that improving your writing skills is a brilliant way of not just improving your all-round productive skills but helping you collect and distill your thoughts.
+Unlike speaking, writing is an activity you can do without anyone seeing your mistakes, it’s an activity that helps build your productive muscles, and all in a safe space, because if you change what you want to say or you realise you’ve made a mistake, you can just go back and write it again.
+And there are some great ways in which you can use AI to help you improve your writing. Note, help you improve, not write for you.
+If you use a tool like ChatGPT, you can share your writing and ask not just for a perfect version, but for explanations of the mistakes.
+You might already use the tool that we’ve been building, FixMyEnglish.ai, which does a similar thing, but recreates the experience you might have had with a brilliant teacher, where they cross out all of your mistakes in red pen and write extensive explanations, so that you learn from every mistake.
+By the way, if you haven’t checked that out yet, you can go to FixMyEnglish.ai. I’ll put a link in the show description too.
+If you’d prefer to use ChatGPT or Gemini, or whatever AI tool you prefer, here’s how to do it.
+First, write it yourself - mistakes and all.
+Then, instead of asking AI to rewrite it perfectly, ask it to tell you HOW MANY mistakes you made and what TYPES of errors they are, but don't ask it to fix them just yet. Then, try to find and correct the mistakes based on those hints .
+THEN get AI to show you the perfect version and explain what you missed.
+This way, you are doing the learning, not the AI. You are building the skill, not outsourcing it.
+It takes a bit longer, of course, but that's the point - the struggle is where the learning happens.
+Now, final point, let’s move on to talk about speaking.
+We touched on this a little bit in the listening section, but let's go a bit deeper, because speaking is almost always the skill most people want to improve and most struggle with.
+It’s also the scariest.
+Speaking to a real human, a native English speaker, can be really daunting , and practising with an AI can be a very helpful stepping stone , not because AI conversation is perfect, but because the judgment is removed.
+So it’s hardly surprising that this, that speaking, this is the skill that so many companies are focusing on.
+And if you are anything like me, you are probably bombarded with adverts for AI-tutors with all sorts of promises, from boasts about how many billions of downloads they have to promises to make you fluent in 90 days. Perhaps you’ve tried a few of them yourself.
+The dream that these apps are selling is this: you'll be able to have a real spoken conversation with an AI, it will understand your accent, respond naturally, correct your mistakes gently, and you'll emerge more fluent.
+And to be fair, the dream is closer to reality than it was in 2022. All of these tools have improved significantly. The voices sound more natural. The speech recognition is much better.
+But here is what they won't tell you in the marketing materials, and what you’ve probably found out yourself if you’ve used them.
+AI conversation practice and real conversation practice are still very far from the same thing.
+When you talk to an AI, it is infinitely patient . It never misunderstands you in the way a real person does. It doesn't have an agenda , it's not distracted , it doesn't use slang you've never heard, it doesn't speak faster when it gets excited.
+It will wait, calmly, for as long as you need.
+That sounds like a good thing. And in many ways it is. But it also means that you're practising a version of conversation that doesn't quite exist in the real world.
+Now, none of this means these tools are useless.
+Far from it . If you genuinely use a speaking tool every day, you will get more comfortable speaking English. That has real value, especially if you don't have many opportunities to practise with real people.
+But go in with realistic expectations, and don't let it replace real conversation.
+The way I suggest thinking about it is like a rehearsal space. Actors don't rehearse in front of an audience. They rehearse in an empty room, repeatedly, until the words feel natural. Then they go on stage . AI conversation can be your empty room — the place where you practise until it stops feeling frightening.
+But, remember, the point of learning English is to use it in the real world, and even though an AI tutor might feel comfortable, reassuring , and familiar, its only value is in helping you prepare for the real world, real conversation. And the longer you postpone that, the more scary it will be, no matter what your “pronunciation score” is on your favourite app.
+And, by the way, you don’t have to use any kind of third-party app to “chat with AI”. Most of the big AI companies will have a “voice mode”, so just open that up and start talking. You don’t need to pay for anything else unless you really want to.
+And a quick practical tip here is to set it up properly before you go into voice mode, so type out whatever you want to practise first, and any prompt instructions, then switch to voice.
+Now, I know we’ve talked about quite a lot here.
+It can sound overwhelming , so many different potential tools, chatbots, AI-tutors, vocabulary apps, apps that promise to personalise your English learning.
+The truth is that there is still one thing that matters more than all of this: consistency . Actually consuming and then producing English regularly, daily if possible.
+Someone who listens to podcasts, BBC News, and reads an English-language newspaper every day without ever touching AI will make far faster progress than someone who spends weeks researching which AI-tutor to subscribe to, then downloads five and waits for the perfect moment to start.
+And let me end this by talking about my own personal experience here, as I am actively learning Swedish.
+As you might imagine, I have all sorts of AI companies contacting me and offering me things to promote their app, so I have loads of free accounts. And the truth is that I barely use them.
+I listen to Swedish podcasts, I try to read real Swedish, I go to Swedish class. I use AI to get feedback on my writing, to explain grammar points to me, and I sometimes talk to ChatGPT in Swedish.
+Perhaps this makes me old-fashioned, but I know firsthand that actually doing the work is far more important than how you do the work.
+Learning English, like any language, is about consistency , attitude , and materials that interest you.
+AI won’t make you fluent. But it can make consistent learners even more effective.
+OK, then, that is it for today's episode on AI & Learning English in 2026.
+I hope it's been an interesting one and that you've learnt something new.
+As always, I would love to know what you thought of this episode.
+How, if at all, do you use AI to improve your English? What are your tools of choice? Plain old ChatGPT, or something else?
+You can head right into our community forum, which is at community.leonardoenglish.com and get chatting away to other curious minds.
+You've been listening to English Learning for Curious Minds by Leonardo English.
+I'm Alastair Budge, you stay safe, and I'll catch you in the next episode.
