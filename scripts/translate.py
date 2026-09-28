@@ -38,7 +38,7 @@ MODELS = [
 CHUNK = 320
 CONTEXT = 3
 SERIES_NAME = {"bbc": "BBC 6 Minute English", "curious": "English Learning for Curious Minds",
-               "thinking": "Thinking in English"}
+               "thinking": "Thinking in English", "featured": "精选长播客"}
 
 _exhausted = set()
 _overloaded = {}  # 模型 -> 连续过载次数

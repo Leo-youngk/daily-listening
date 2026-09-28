@@ -34,9 +34,11 @@ MEDIA_BASE = "/audio"
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 DURATION_RE = re.compile(r"Duration:\s*(\d+):(\d+):(\d+(?:\.\d+)?)")
 
-SERIES_ORDER = ("bbc", "curious", "thinking")
+# featured = 「精选」频道：用户点名的长播客（ingest_featured.py），每期来自不同节目，主讲人和节目名写在 episodes.json 里
+SERIES_ORDER = ("bbc", "curious", "thinking", "featured")
 SPEAKER = {"bbc": "BBC Learning English", "curious": "Alastair Budge", "thinking": "Tom Wilkinson"}
-MANIFEST_FIELDS = ("slug", "title", "speaker", "category", "date", "duration", "cover", "audioUrls", "zhSource")
+# show 只有精选各期有（原节目名），其余节目没有这个键
+MANIFEST_FIELDS = ("slug", "title", "speaker", "show", "category", "date", "duration", "cover", "audioUrls", "zhSource")
 SENT_END = re.compile(r"[.!?]\s*[\"'”’)\]]*\s*$")
 
 
@@ -110,7 +112,7 @@ def build(ep):
     talk = {
         "slug": slug,
         "title": ep["title"],
-        "speaker": SPEAKER[series],
+        "speaker": ep.get("speaker") or SPEAKER[series],
         "category": series,
         "date": ep.get("date"),
         "duration": duration,
@@ -126,8 +128,10 @@ def build(ep):
         "sentences": [{"i": i, "start": s["start"], "end": s["end"], "en": s["text"], "zh": zh[i]}
                       for i, s in enumerate(sents)],
     }
+    if ep.get("show"):
+        talk["show"] = ep["show"]
     write_talk(os.path.join(DATA_DIR, slug + ".json"), talk)
-    return {k: talk[k] for k in MANIFEST_FIELDS}
+    return {k: talk[k] for k in MANIFEST_FIELDS if k in talk}
 
 
 def translate_only(episodes, workers):
@@ -185,7 +189,7 @@ def main():
             print(f"    清理旧数据：{slug}", flush=True)
             continue
         talk = json.load(open(os.path.join(DATA_DIR, name), encoding="utf-8"))
-        manifest.append({k: talk.get(k) for k in MANIFEST_FIELDS})
+        manifest.append({k: talk[k] for k in MANIFEST_FIELDS if k in talk})
     manifest.sort(key=lambda e: (SERIES_ORDER.index(e["category"]), -int((e.get("date") or "0").replace("-", "") or 0)))
     write_manifest(os.path.join(DATA_DIR, "manifest.json"), manifest)
     counts = {s: sum(1 for e in manifest if e["category"] == s) for s in SERIES_ORDER}

@@ -11,7 +11,7 @@ import { isFinished, loadProgress } from '../lib/storage'
 import type { ProgressMap } from '../lib/types'
 import { loadEpisodeWords, loadWordbook } from '../lib/wordbook'
 import type { BookWord } from '../lib/wordbook'
-import { seriesInfo } from '../lib/types'
+import { showName } from '../lib/types'
 import type { ManifestItem } from '../lib/types'
 
 interface Picks {
@@ -130,7 +130,7 @@ export default function Today() {
             <span className="today-hero-meta">
               <span className="today-hero-copy">
                 <span className="today-hero-title">{hero.title}</span>
-                <span className="today-hero-series">{seriesInfo(hero.category).name}</span>
+                <span className="today-hero-series">{showName(hero)}</span>
               </span>
               <ChevronRightIcon aria-hidden />
             </span>

@@ -1,5 +1,5 @@
 import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
-import type { CSSProperties, ReactNode, Ref } from 'react'
+import type { CSSProperties, ReactNode, Ref, RefObject } from 'react'
 import { usePlayer, usePlayerClock } from '../store/PlayerContext'
 import type { LoopMode } from '../store/PlayerContext'
 import { loadSettings, saveSettings, toggleFavorite, isFavorite } from '../lib/storage'
@@ -29,7 +29,7 @@ import { useCoverTint } from '../hooks/useCoverTint'
 import { isMastered } from '../lib/srs'
 import { loadWordbookMap } from '../lib/wordbook'
 import type { BookWord } from '../lib/wordbook'
-import { seriesInfo } from '../lib/types'
+import { showName } from '../lib/types'
 
 /** 字幕标注：在学的词铺底色，没学过的六级词加虚下划线；键是 normalizeTerm 后的表面形式 */
 type WordMarks = Map<string, 'learning' | 'new'>
@@ -106,9 +106,11 @@ function markClass(mark?: 'learning' | 'new') {
   return mark ? ` is-${mark}` : ''
 }
 
-const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, marks, onSeek, onWord, onPrefetch }: {
+const SentenceRow = memo(function SentenceRow({ s, active, rich, scale, hideZh, marks, onSeek, onWord, onPrefetch }: {
   s: Sentence
   active: boolean
+  /** 拆成逐词 span（可点词、可高亮）；离屏幕远的句子只渲染纯文本，排版一模一样 */
+  rich: boolean
   scale: number
   hideZh: boolean
   marks: WordMarks
@@ -130,7 +132,11 @@ const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, marks,
       >
         {fmtTime(s.start)}
       </button>
-      <TokenizedText text={s.en} scale={scale} sentence={s} marks={marks} onWord={onWord} onPrefetch={onPrefetch} />
+      {rich ? (
+        <TokenizedText text={s.en} scale={scale} sentence={s} marks={marks} onWord={onWord} onPrefetch={onPrefetch} />
+      ) : (
+        <p lang="en" className="subtitle-english" style={{ fontSize: `${18 * scale}px` }}>{s.en}</p>
+      )}
       {!hideZh && s.zh && (
         <p lang="zh-CN" className="subtitle-translation" style={{ fontSize: `${15 * scale}px` }}>
           {s.zh}
@@ -140,8 +146,16 @@ const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, marks,
   )
 })
 
-/** 字幕流独立成 memo 组件：Player 每 100ms 因进度条重渲染，这里只在换句时才重建 */
-const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, hideZh, marks, onSeek, onWord, onPrefetch }: {
+/** 屏幕上下各预留这么多距离的句子提前拆成逐词，滚到眼前时已经可以点词 */
+const RICH_MARGIN = '150% 0px'
+
+/**
+ * 字幕流独立成 memo 组件：Player 每 100ms 因进度条重渲染，这里只在换句时才重建。
+ * 长节目（3 小时约 3500 句）全部拆成逐词 span 会有十几万个节点，iPhone 上打开要卡好几秒：
+ * 只有屏幕附近的句子和正在读的句子拆词，其余渲染纯文本。
+ */
+const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, hideZh, marks, onSeek, onWord, onPrefetch, rootRef }: {
+  rootRef: RefObject<HTMLElement | null>
   sentences: Sentence[]
   currentIdx: number
   scale: number
@@ -151,13 +165,34 @@ const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, 
   onWord: (wordIndex: number, sentence: Sentence) => void
   onPrefetch: (wordIndex: number, sentence: Sentence) => void
 }) {
+  const listRef = useRef<HTMLDivElement>(null)
+  const [near, setNear] = useState<ReadonlySet<number>>(() => new Set())
+  useEffect(() => {
+    const list = listRef.current
+    if (!list) return
+    const observer = new IntersectionObserver(entries => {
+      setNear(previous => {
+        const next = new Set(previous)
+        for (const entry of entries) {
+          const row = Number((entry.target as HTMLElement).dataset.row)
+          if (entry.isIntersecting) next.add(row)
+          else next.delete(row)
+        }
+        return next
+      })
+    }, { root: rootRef.current, rootMargin: RICH_MARGIN })
+    list.querySelectorAll('[data-row]').forEach(row => observer.observe(row))
+    return () => observer.disconnect()
+  }, [sentences, rootRef])
+
   return (
-    <div className="subtitle-list">
+    <div className="subtitle-list" ref={listRef}>
       {sentences.map((s, i) => (
         <div key={s.i} data-row={i}>
           <SentenceRow
             s={s}
             active={i === currentIdx}
+            rich={i === currentIdx || near.has(i)}
             scale={scale}
             hideZh={hideZh}
             marks={marks}
@@ -299,7 +334,7 @@ export default function Player({ slug }: { slug: string }) {
     const idx = p.sentenceAt(time)
     const state = painted.current
 
-    if (idx !== state.idx || !state.row?.isConnected) {
+    if (idx !== state.idx || !state.row?.isConnected || !state.spans.length) {
       if (state.row?.isConnected) {
         for (const span of state.spans) span.classList.remove('is-spoken')
       }
@@ -567,7 +602,7 @@ export default function Player({ slug }: { slug: string }) {
         <div className="player-now-head">
           <div className="min-w-0 flex-1">
             <h1 className="player-now-title">{talk ? talk.title : '加载中…'}</h1>
-            {talk && <p className="player-now-series">{seriesInfo(talk.category).name}</p>}
+            {talk && <p className="player-now-series">{showName(talk)}</p>}
           </div>
           <button
             className={cn('player-heart', fav && 'is-on')}
@@ -626,6 +661,7 @@ export default function Player({ slug }: { slug: string }) {
       >
         {status}
         <SubtitleList
+          rootRef={scrollBoxRef}
           sentences={sentences}
           currentIdx={clock.currentIdx}
           scale={settings.fontScale}

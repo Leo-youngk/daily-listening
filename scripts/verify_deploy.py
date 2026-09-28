@@ -17,7 +17,7 @@ import urllib.request
 
 DEFAULT_BASE = "https://daily-listening-e7k.pages.dev"
 HEADERS = {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)"}
-EXPECTED_SERIES = {"bbc": 100, "curious": 50, "thinking": 50}
+EXPECTED_SERIES = {"bbc": 100, "curious": 50, "thinking": 50, "featured": 10}
 # 与 build_dict.py / app/src/lib/dict.ts / vite.config.ts 的缓存名同步升级
 DICT_VERSION = "ecdict-1.0.28-r3"
 DICT_CACHE = "dict-ecdict-1-0-28-r3"

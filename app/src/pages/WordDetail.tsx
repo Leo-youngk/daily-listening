@@ -7,7 +7,7 @@ import { addToReview, formatInterval, isMastered, markKnown, relearn, removeCard
 import { clipUrl, examplesFor, loadWordbookMap } from '../lib/wordbook'
 import type { BookWord, CardExample } from '../lib/wordbook'
 import { playClip, prefetchClip, speakWord, stopClip } from '../lib/clips'
-import { seriesInfo } from '../lib/types'
+import { showName } from '../lib/types'
 import { HighlightedSentence } from '../components/ExampleSentence'
 
 export default function WordDetail({ term }: { term: string }) {
@@ -98,7 +98,7 @@ export default function WordDetail({ term }: { term: string }) {
                   {ex.zh && <p className="word-example-zh">{ex.zh}</p>}
                   {meta && (
                     <button className="word-source" onClick={() => { playTalk(ex.slug, ex.start); navigate(`/talk/${ex.slug}`) }}>
-                      {ex.own ? '我遇到的 · ' : ''}{seriesInfo(meta.category).name} · {meta.title}
+                      {ex.own ? '我遇到的 · ' : ''}{showName(meta)} · {meta.title}
                     </button>
                   )}
                 </div>

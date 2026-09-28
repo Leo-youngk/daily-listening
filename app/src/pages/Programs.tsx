@@ -11,7 +11,7 @@ import type { Series } from '../lib/types'
 
 type Channel = 'all' | Series
 type Filter = 'all' | 'unlistened' | 'finished'
-const CHANNELS: [Channel, string][] = [['all', '全部'], ['bbc', 'BBC'], ['curious', 'Curious'], ['thinking', 'Thinking']]
+const CHANNELS: [Channel, string][] = [['all', '全部'], ['bbc', 'BBC'], ['curious', 'Curious'], ['thinking', 'Thinking'], ['featured', '精选']]
 const FILTERS: [Filter, string][] = [['all', '全部'], ['unlistened', '未听'], ['finished', '已听完']]
 const PAGE = 40
 
@@ -135,7 +135,7 @@ export default function Programs({ query }: { query?: URLSearchParams }) {
                 key={item.slug}
                 item={item}
                 learningHits={hits[item.slug]}
-                showSeries={channel === 'all'}
+                showSeries={channel === 'all' || channel === 'featured'}
                 nowPlaying={player.slug === item.slug ? (player.playing ? 'playing' : 'paused') : undefined}
               />
             ))}

@@ -15,6 +15,7 @@
 1. `ingest.py` — 三档节目各取最新 N 期：正文 + 音频（转 m4a）+ 强制对齐 + 封面。
    对齐失败的期数自动顺延取下一期，直到凑满。断点续抓（`corpus/ingest_state.json`）。
    官方文稿原样留底在 `corpus/transcripts/`，改进对齐算法后 `--realign` 重跑不用联网。
+   「精选」频道（用户点名的 10 期长播客）走单独的 `ingest_featured.py`，清单写死在脚本里：有官方逐字稿的（newsdaily 抓的、This American Life 官网）直接对齐，音频里的广告会被跳过；没有的（YouTube 访谈）先按 SponsorBlock 剪掉赞助段，再用 Whisper large-v3-turbo 转写出带标点的文字稿。
 2. `build_talks.py` — 对齐结果切成逐句数据，Gemini 整集翻译，写 `public/data/<slug>.json` 与 manifest；
    不在本批节目里的旧数据会被清掉。`--translate-only` 只填翻译缓存，可以和 ingest 同时跑。
 3. `align_words.py` — 每句补词级时间轴 `w[]`（复用 ingest 存下的 ASR 词序列，不再识别第二遍）。

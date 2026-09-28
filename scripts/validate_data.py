@@ -25,7 +25,7 @@ DATA = ROOT / "public" / "data"
 # 必须与 app/src/lib/lookup.ts 的 WORD_RE 逐字一致
 WORD_RE = re.compile("[A-Za-z][A-Za-z'’-]*")
 
-CATEGORIES = {"bbc", "curious", "thinking"}
+CATEGORIES = {"bbc", "curious", "thinking", "featured"}
 ZH_SOURCES = {"mt"}
 W_SOURCES = {"asr"}
 REQUIRED = ("slug", "title", "speaker", "category", "date", "duration", "cover",

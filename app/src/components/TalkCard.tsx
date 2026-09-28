@@ -1,7 +1,7 @@
 import type { ManifestItem } from '../lib/types'
-import { seriesInfo } from '../lib/types'
+import { showName } from '../lib/types'
 import { isFinished, loadFavorites, loadProgress } from '../lib/storage'
-import { fmtDay } from '../lib/format'
+import { fmtDay, fmtMinutes } from '../lib/format'
 import { navigate } from '../hooks/useHashRoute'
 import { CheckIcon, HeartIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -47,12 +47,12 @@ export default function TalkCard({ item, learningHits, showSeries = false, nowPl
             </span>
           )}
           {fmtDay(item.date)}
-          {showSeries && ` · ${seriesInfo(item.category).name}`}
+          {showSeries && ` · ${showName(item)}`}
           {fav && <HeartIcon className="episode-row-fav" aria-label="已收藏" />}
         </span>
         <span className="episode-row-title">{item.title}</span>
         <span className="episode-row-meta">
-          {finished ? <><CheckIcon className="episode-row-check" />已听完</> : started ? `剩 ${left} 分钟` : `${minutes} 分钟`}
+          {finished ? <><CheckIcon className="episode-row-check" />已听完</> : started ? `剩 ${fmtMinutes(left)}` : fmtMinutes(minutes)}
           {' · '}六级词 {item.cet6}
           {learningHits ? <b> · 在学 {learningHits}</b> : null}
         </span>
