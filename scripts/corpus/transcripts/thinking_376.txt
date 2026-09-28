@@ -1,0 +1,74 @@
+Every time you type a message, unlock your phone, or trust a computer to make a decision, you’re relying on the ideas of someone you may never have heard of and probably never learned about at school.
+That person is Alan Turing. He was a British mathematician, logician, and wartime codebreaker, and one of the most important figures in modern science and technology.
+Turing helped lay the foundations of modern computing. He played a crucial role in breaking Nazi codes during the Second World War. And he asked questions about machines that still shape how we think about artificial intelligence today. His influence is everywhere, from the security that protects your data to the algorithms behind AI.
+In this episode, I want to explore Alan Turing’s life, his scientific achievements, and the legacy he left behind, before connecting his story to my Greatest Scientist of All Time series.
+Alan Turing was born in 1912 in London.
+From a young age, he showed exceptional talent for mathematics and science. He was fascinated by numbers, patterns, and by how the natural world worked.
+However, he often struggled socially . He found it difficult to fit in at school and was known for his unconventional , maybe strange, way of thinking. He preferred logic and problem solving to small talk and social rules.
+Turing went on to study mathematics at King’s College Cambridge , where his abilities quickly became clear. He produced original research while still a student and was elected a fellow of the college at a very young age.
+Later, he continued his studies in the United States at Princeton University focusing on mathematical logic and advanced theories of computation.
+Even in these early years, there were clear signs that Turing thought differently from those around him. He questioned basic assumptions , approached problems from unusual angles , and imagined possibilities that others had not yet considered.
+Before the Second World War, Alan Turing produced a piece of work that quietly transformed how humans understand thinking, logic and machines.
+In 1936, he published a paper with a long and technical title: “ On Computable Numbers, with an Application to the Entscheidungsproblem. “ I’m not sure if I pronounced that correctly.
+This was a very complicated paper, but it was basically Turing’s attempt to answer the question, “Are there limits to what can be calculated?”
+To explore this, he invented an imaginary device, we now call the Turing Machine. The Turing machine was not a real machine. It existed only as an idea.
+Turing imagined a very long strip of paper, like an infinite roll of tape, that was divided into squares. Each square would have a symbol inside, like 0 , 1 , or blank . There would be a “ reading head “, that reads or looks at the symbol, one square at a time. And this head could move left or right.
+And also there would be a very simple set of rules for the machine to follow. For example, if you see the number 0 , write the number 1 .
+At each step, the machine would read a symbol, follow the correct instruction, write a new symbol, and move on. These instructions are what we now call algorithms . They are clear step by step rules for solving a problem.
+Through this model, Turing defined computation as the act of carrying out logical steps mechanically. There was no creativity or understanding needed. It was possible simply by following rules.
+Even though the machine is incredibly simple, Alan Turing showed that it can do anything a real computer can do, given enough time .
+This means that your laptop or your phone, the internet, AI systems like ChatGPT, are all in theory doing something that a Turing machine could also do.
+Turing’s most powerful insight was the idea of a universal machine. Instead of building a different machine for every single task you want to do, he proposed a single machine that could imitate any other machine as long as it was given the correct instructions.
+This became the theoretical foundation of the general purpose computer . Which is the type of computer we all use today. You are using right now to listen to this episode.
+At the time, this work was revolutionary. No electronic computers existed and many mathematicians believed calculation was something only humans could really do.
+Turing proved that logic could be mechanized , could be automated. His ideas influenced the first real computers built in the 1940s and 50s, and actually still continue to influence computer science today.
+When the Second World War began, Alan Turing’s ideas suddenly became very important for the British War effort.
+Nazi Germany relied on a complex encryption system called the Enigma Code to send military messages. Encryption is the process of changing information into a secret code , so that only people who know the code can read it.
+And Enigma was one of the most complicated encryption systems at the time. Enigma changed its settings every single day, creating billions of possible combinations.
+It seemed completely unbreakable to the Germans. If the Allies , including Britain, couldn’t read the German messages, they would be fighting the war without knowing what Germany was planning.
+Alan Turing was recruited to Bletchley Park, Britain’s top secret code breaking center , to “break” the code. When he arrived at Bletchley Park, he faced a monumental task.
+The German Enigma Machine used a series of rotating wheels to scramble messages into billions of possible combinations. To make matters worse , the Germans changed the settings every single night at midnight.
+While Polish mathematicians had pioneered the first breakthroughs in understanding Enigma, the sheer volume , the amount, of messages being sent during the war was just too much for human minds to process.
+Turing realized that to defeat a machine like Enigma, he had to build a better one.
+Turing’s masterpiece was the “ Bombe “, an electromechanical machine designed to hunt for the daily Enigma key. This was inspired by an earlier Polish “Bomba” machine, but was far more advanced. It used logical elimination , rather than just guessing codes.
+Turing’s team designed the machine to copy the settings of many Enigma Machines, and then to test them rapidly. It could work out contradictions . These were settings that were mathematically impossible. And it could do it in just a few seconds and then discard them.
+And the team realized that by looking for predictable German phrases, like the daily weather report the Germans sent, they could give the machine a starting point every day.
+The impact was enormous. By decrypting Enigma messages, the Allies gained crucial information about German boat movements, troop positions, and military plans. Many historians believe this work, Turing’s work, shortened the war by 2 to 4 years, saving millions of lives in the process.
+Yet for decades, this work was almost completely unknown. No one knew about Alan Turing’s work in the war or the existence of his team of codebreakers .
+Turing’s work at Bletchley Park was classified under the British Official Secrets Act until the 1990s. He could not speak about it, even to his friends and his family.
+As a result, one of the greatest wartime achievements in history remained hidden for around 50 years.
+After the war, Alan Turing turned his attention to a new question. “ Can machines think?”
+This probably sounds quite relevant today when we talk about artificial intelligence , but Alan Turing was considering this question 70 years ago.
+Turing worked on some of Britain’s earliest electronic computers, including the Manchester Mark 1. This was one of the first machines capable of storing things in its memory. Unlike earlier calculating machines, this computer could be reprogrammed to do different tasks.
+During this period, Turing began developing his ideas about machine intelligence . In 1950, Turing introduced what is now called the “ Turing Test” .
+In this test, a human judge has a written conversation with both a human and a machine without knowing which is which . If the judge cannot reliably tell the machine from the human, then the machine is said to demonstrate intelligent behavior.
+The Turing Test is still discussed today, because it raises questions about intelligence, language, and understanding. While many experts now criticize it as an incomplete or outdated measure of intelligence, it still remains very influential because it was one of the first serious attempts to define machine intelligence in human terms.
+In the age of AI and large language models like ChatGPT, I think Turing’s ideas definitely feel more relevant than ever .
+ChatGPT and Google Gemini and Grok and Claude a nd whatever other AI system, can all generate text, answer questions, and hold conversations. These are exactly the kinds of behaviors Turing imagined in the 1950s.
+We’ve talked so far about the genius of Alan Turing. He made breakthroughs in the early stages of computers and machine intelligence. And he was a national war hero, perhaps doing more than any other individual to defeat Nazi Germany.
+But Alan Turing’s life was marked with injustice and cruelty. In my personal opinion, Turing’s story, the way he was treated, is one of the most shameful stories in British history.
+Alan Turing was a gay man in 1950s Britain. This was a time when homosexuality was still illegal in the UK.
+In 1952, he was arrested and convicted for having a relationship with another man. Turing was given a choice: imprisonment, so being sent to prison, o r chemical castration, which was a medical treatment designed to stop his feelings of attraction to men.
+He chose the treatment, which involved regular hormone injections and had severe physical and psychological side effects .
+As a result of his conviction, Turing lost his security clearance , meaning he was no longer allowed to work on government projects. He became professionally isolated . He was excluded from the institutions that had once depended on his genius.
+For a man whose life revolved around new ideas and discovery, this isolation was devastating and no one knew about his work during the war. It was not public knowledge. Even many people in government and in the military had no idea about the codebreakers at Bletchley Park.
+Alan Turing died in 1954 at just 41 years old. His death is widely believed to have been suicide, though some details remain debated.
+Turing’s story is a reminder that brilliance does not protect someone from discrimination.
+Alan Turing’s influence did not end with his death.
+His long-term impact can be seen across computer science, artificial intelligence, and cryptography . The basic principles he worked on, like algorithms, computation, programmable machines, are a part of every modern computer. His ideas about machine intelligence continue to influence AI research. And his wartime code breaking helped establish modern approaches to information security.
+For many years, however, Turing received little public recognition , largely because his wartime work remained secret.
+This began to change in the late 20th century, 50 years after World War II, as government files were slowly declassified , made public, and the scale, the size, of Bletchley Park’s achievements became public knowledge .
+In 2009, the British government issued an official apology for the way he had been treated. And in 2013, he was granted a royal pardon , formally overturning his conviction.
+In 2017, the UK introduced a law that pardoned, or forgave men, who had been punished for offenses related to homosexuality in the past. And this law is commonly referred to as the “Alan Turing Law”.
+One of the most prestigious awards in computing, the Turing Award, is named in his honor . It is often described as the Nobel Prize of computing, and recognizes individuals who have made lasting contributions to computer science.
+Across the UK, there are now many things named in his honor. There is the Alan Turing Building at the University of Manchester. And the Alan Turing Institute in London, which is the UK’s National Institute for Data Science and AI.
+There are also many different mathematical and computational concepts sharing his name: Turing Completeness, Turing Computability, Turing degree , just to name a few.
+If you visit the UK and you withdraw a £50 bank note, you will notice Alan Turing’s portrait on one side. And in 2019, Turing was voted as the greatest scientist of the 20th century in a BBC poll.
+Turing’s story has also reached a global audience through popular culture.
+The film Imitation Game focuses on his time at Bletchley Park and the race to break the Enigma Code. While not perfectly accurate, this film played an important role in renewing public interest and helping people understand just how long Turing’s work remained hidden.
+When I think about the greatest scientists of all time, Alan Turing is impossible to ignore. He was brilliant in multiple fields.
+His work influenced mathematics, computer science, cryptography, and artificial intelligence. Few scientists can claim to have changed both how wars were fought and how the modern world thinks. His ideas were original and decades ahead of their time.
+Compared to the other scientists I’ve talked about in this series, I think Turing stands out for the depth of his impact.
+Some scientists explain the world better. Other scientists invent tools that change the world. Turing did both. He imagined machines that didn’t exist yet and then helped to build the foundations that made them possible. And he did all of this while also shortening World War II, the most devastating conflict in history, by multiple years.
+Turing’s work saved millions and millions of lives and ended suffering for millions of people. And despite this, he was persecuted. He was persecuted for being a gay man in 1950s Britain. And his impact went unrecognized for years.
+But what do you think? Was Alan Turing the greatest scientist of all time? If not, who should I cover next in this series?

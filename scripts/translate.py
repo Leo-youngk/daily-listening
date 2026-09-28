@@ -31,6 +31,9 @@ MODELS = [
     "gemini-3-flash-preview",
     "gemini-3.5-flash-lite",
     "gemini-3.1-flash-lite",
+    # 别名模型单独计额度：前面的都用完时兜底（它们也会照抄英文，由 _is_chinese 拦下）
+    "gemini-flash-latest",
+    "gemini-flash-lite-latest",
 ]
 CHUNK = 320
 CONTEXT = 3
@@ -46,6 +49,25 @@ MAX_OVERLOAD = 3
 
 class TranslationError(RuntimeError):
     pass
+
+
+_echoed = {}  # 模型 -> 原样照抄英文的次数
+MAX_ECHO = 2
+_CJK = re.compile(r"[一-鿿]")
+
+
+def _is_chinese(out):
+    """至少九成句子含汉字才算翻译了（纯人名、"OK." 这类短句允许保留英文）。"""
+    return sum(1 for z in out if _CJK.search(z)) >= 0.9 * len(out)
+
+
+class _CountMismatch(Exception):
+    """模型对长列表反复漏句/并句：交给调用方拆小块再翻。"""
+
+
+# 同一块连续这么多次数量不符，就拆成两半重翻；块小于 MIN_SPLIT 句不再拆
+MAX_MISMATCH = 2
+MIN_SPLIT = 12
 
 
 def _key():
@@ -113,6 +135,7 @@ def _exhaust(model, why):
 def _translate_chunk(series, title, context, sentences, key):
     prompt = _prompt(series, title, context, sentences)
     delay = 10.0
+    mismatches = 0
     for _attempt in range(12):
         model = _next_model()
         try:
@@ -148,9 +171,36 @@ def _translate_chunk(series, title, context, sentences, key):
             _overloaded[model] = 0
         if (isinstance(out, list) and len(out) == len(sentences)
                 and all(isinstance(z, str) and z.strip() for z in out)):
-            return [z.strip() for z in out], model
+            if _is_chinese(out):
+                return [z.strip() for z in out], model
+            # 小模型偶尔把英文原样吐回来：句数对得上但没翻，同一模型连续两次就换下一个
+            with _lock:
+                _echoed[model] = _echoed.get(model, 0) + 1
+                streak = _echoed[model]
+            print(f"    .. {model} 返回的不是中文（原样照抄英文），重试", flush=True)
+            if streak >= MAX_ECHO:
+                _exhaust(model, f"连续 {streak} 次没翻译")
+            continue
         print(f"    .. {model} 译文数量/内容不合规（{len(out) if isinstance(out, list) else '?'} vs {len(sentences)}），重试", flush=True)
+        mismatches += 1
+        if mismatches >= MAX_MISMATCH and len(sentences) >= MIN_SPLIT:
+            raise _CountMismatch()
     raise TranslationError("Gemini 多次重试仍未返回合规译文")
+
+
+def _translate_span(series, title, sentences, start, end, key):
+    """翻 sentences[start:end]；模型反复对不上句数时对半拆开递归翻，块首带前文做上下文。"""
+    chunk = sentences[start:end]
+    context = sentences[max(0, start - CONTEXT):start]
+    try:
+        zh, model = _translate_chunk(series, title, context, chunk, key)
+        return zh, {model}
+    except _CountMismatch:
+        mid = (start + end) // 2
+        print(f"    .. 第 {start}-{end} 句拆成两半重翻", flush=True)
+        a, ma = _translate_span(series, title, sentences, start, mid, key)
+        b, mb = _translate_span(series, title, sentences, mid, end, key)
+        return a + b, ma | mb
 
 
 def translate_episode(slug, series, title, sentences):
@@ -160,16 +210,16 @@ def translate_episode(slug, series, title, sentences):
     cache_path = os.path.join(CACHE_DIR, slug + ".json")
     if os.path.exists(cache_path):
         cached = json.load(open(cache_path, encoding="utf-8"))
-        if cached.get("hash") == digest and len(cached.get("zh", [])) == len(sentences):
+        # 早期缓存里有整集照抄英文的"译文"，不算数，重翻
+        if (cached.get("hash") == digest and len(cached.get("zh", [])) == len(sentences)
+                and _is_chinese(cached["zh"])):
             return cached["zh"], cached.get("model", MODELS[0])
     key = _key()
     out, models = [], set()
     for start in range(0, len(sentences), CHUNK):
-        chunk = sentences[start:start + CHUNK]
-        context = sentences[max(0, start - CONTEXT):start]
-        zh, model = _translate_chunk(series, title, context, chunk, key)
+        zh, used = _translate_span(series, title, sentences, start, min(start + CHUNK, len(sentences)), key)
         out.extend(zh)
-        models.add(model)
+        models |= used
     # 一集分块翻译时可能跨了模型，记质量最低的那个
     model = max(models, key=MODELS.index)
     tmp = cache_path + ".tmp"

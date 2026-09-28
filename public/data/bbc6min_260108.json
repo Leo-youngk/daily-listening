@@ -1,0 +1,578 @@
+{
+  "slug": "bbc6min_260108",
+  "title": "Is social media dead?",
+  "speaker": "BBC Learning English",
+  "category": "bbc",
+  "date": "2026-01-08",
+  "duration": 375.23,
+  "cover": "/covers/bbc6min_260108.jpg",
+  "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260108",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260108.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260108.m4a"
+  },
+  "zhSource": "mt",
+  "zhModel": "gemini-3-flash-preview",
+  "keywords": [
+    {
+      "term": "oh man!",
+      "def": "(informal) spoken exclamation used to show excitement or enthusiasm"
+    },
+    {
+      "term": "shatter an illusion",
+      "def": "destroy someone's false belief or misconception, causing them to realise the unpleasant truth"
+    },
+    {
+      "term": "cultural happening",
+      "def": "event that embodies the interests and values of a particular cultural group at a particular time in history"
+    },
+    {
+      "term": "behemoth",
+      "def": "extremely large and powerful company or organisation"
+    },
+    {
+      "term": "novelty",
+      "def": "something which is new and unusual and therefore exciting"
+    },
+    {
+      "term": "gravitate towards (something or someone)",
+      "def": "be naturally drawn or attracted to something or someone"
+    }
+  ],
+  "sentences": [
+    {
+      "i": 0,
+      "start": 4.62,
+      "end": 11.03,
+      "en": "Hello, this is 6 Minute English from BBC Learning English.",
+      "zh": "大家好，这里是 BBC Learning English 的 6 Minute English。",
+      "w": [4.62,5.18,8.29,8.41,8.41,8.59,8.85,9.03,9.03,9.43,9.43,9.75,9.75,10.11,10.11,10.63,10.63,11.03]
+    },
+    {
+      "i": 1,
+      "start": 11.21,
+      "end": 18.53,
+      "en": "I'm Neil. And I'm Pippa. Whatever you think of social media, in less than a generation it has changed the internet.",
+      "zh": "我是 Neil。我是 Pippa。无论你对社交媒体怎么看，在不到一代人的时间里，它已经改变了互联网。",
+      "w": [11.21,11.45,11.45,11.65,11.93,12.13,12.13,12.49,12.49,12.87,13.37,13.67,13.67,13.95,13.95,14.19,14.19,14.41,14.41,14.73,14.73,15.21,15.57,15.69,15.69,15.95,15.95,16.19,16.19,16.31,16.31,16.73,16.73,17.13,17.13,17.33,17.33,17.81,17.81,18.13,18.13,18.53]
+    },
+    {
+      "i": 2,
+      "start": 19.17,
+      "end": 28.37,
+      "en": "Facebook, Twitter, now known as X, and in the early days MySpace used to be places to post messages to friends or share photos of your breakfast.",
+      "zh": "Facebook、现在被称为 X 的 Twitter，以及早期的 MySpace，曾经都是给朋友发消息或分享早餐照片的地方。",
+      "w": [19.17,19.61,20.01,20.27,20.59,20.75,20.75,20.95,20.95,21.13,21.13,21.39,21.53,21.73,21.73,21.85,21.85,21.97,21.97,22.21,22.21,22.61,22.89,23.37,23.37,24.09,24.09,24.29,24.29,24.45,24.45,24.77,24.77,25.05,25.05,25.27,25.27,25.67,25.67,25.99,25.99,26.31,26.31,26.69,26.69,26.91,26.91,27.31,27.31,27.61,27.61,27.77,27.77,28.37]
+    },
+    {
+      "i": 3,
+      "start": 28.73,
+      "end": 40.41,
+      "en": "But with the rise of AI, the fun of connecting with friends changed into something much stranger, as Tristan and Asma, presenters of BBC World Service programme The Global Story, found out.",
+      "zh": "但随着人工智能的兴起，与朋友联系的乐趣变成了一些更奇怪的东西，正如 BBC World Service 节目 The Global Story 的主持人 Tristan 和 Asma 所发现的那样。",
+      "w": [28.73,29.11,29.11,29.27,29.27,29.41,29.41,29.67,29.67,29.87,29.87,30.07,30.07,30.55,30.55,30.93,30.93,31.19,31.19,31.55,31.55,31.85,31.85,32.19,32.19,32.61,32.61,33.03,33.03,33.31,33.31,33.63,33.63,34.33,34.71,34.95,34.95,35.33,35.33,35.65,35.65,36.07,36.37,36.75,36.75,36.93,36.93,37.25,37.25,37.57,37.57,37.95,37.95,38.33,38.55,38.65,38.65,38.93,38.93,39.31,39.45,39.69,39.69,40.41]
+    },
+    {
+      "i": 4,
+      "start": 40.57,
+      "end": 45.51,
+      "en": "Oh... What is this? I think it's a man who's supposed to look like Jesus...",
+      "zh": "噢……这是什么？我觉得这像是一个长得像耶稣的人……",
+      "w": [40.57,41.09,41.31,41.69,41.69,41.87,41.87,42.15,42.69,42.79,42.79,42.97,42.97,43.31,43.31,43.59,43.59,43.89,43.89,44.19,44.19,44.45,44.45,44.69,44.69,44.87,44.87,45.07,45.07,45.51]
+    },
+    {
+      "i": 5,
+      "start": 46.17,
+      "end": 48.67,
+      "en": "It's a man who looks a bit like... ...who also looks like his dog.",
+      "zh": "这个人看起来有点像……看起来也像他的狗。",
+      "w": [46.17,46.43,46.43,46.55,46.55,46.83,46.83,47.11,47.11,47.33,47.33,47.38,47.33,47.38,47.33,47.38,47.33,47.43,47.43,47.75,47.75,47.87,47.87,48.15,48.15,48.33,48.33,48.67]
+    },
+    {
+      "i": 6,
+      "start": 49.43,
+      "end": 52.39,
+      "en": "He's been AI-ed, right? Has to be AI-ed.",
+      "zh": "他被 AI 处理过了，对吧？肯定是被 AI 处理过了。",
+      "w": [49.43,49.75,49.75,49.95,49.95,50.61,50.61,50.81,51.05,51.39,51.39,51.57,51.57,51.67,51.67,52.39]
+    },
+    {
+      "i": 7,
+      "start": 52.39,
+      "end": 56.89,
+      "en": "He's holding his dog and his face looks like his dog, so he's half Jesus, half dog.",
+      "zh": "他抱着他的狗，他的脸看起来像他的狗，所以他是半个耶稣，半条狗。",
+      "w": [52.39,52.67,52.67,52.89,52.89,53.13,53.13,53.35,53.35,53.57,53.57,53.73,53.73,54.01,54.01,54.33,54.33,54.77,54.77,55.09,55.09,55.41,55.53,55.65,55.65,56.05,56.05,56.1,56.05,56.33,56.43,56.59,56.59,56.89]
+    },
+    {
+      "i": 8,
+      "start": 57.45,
+      "end": 62.69,
+      "en": "A half-dog, half-Jesus photo is generated by AI and posted online.",
+      "zh": "一张半狗半耶稣的照片由 AI 生成并发布在网上。",
+      "w": [57.45,57.69,57.69,58.47,58.55,59.29,59.29,59.71,59.71,60.07,60.07,60.53,60.53,60.89,60.89,61.29,61.29,61.69,61.69,62.13,62.13,62.69]
+    },
+    {
+      "i": 9,
+      "start": 63.25,
+      "end": 71.61,
+      "en": "It's an example of how the use of AI in social media has evolved so much that today it's hard to know what's created by humans and what's not.",
+      "zh": "这是一个例子，说明 AI 在社交媒体中的应用已经进化到了如此地步，以至于今天很难分辨什么是人类创作的，什么不是。",
+      "w": [63.25,63.45,63.45,63.55,63.55,63.89,63.89,64.15,64.15,64.39,64.39,64.59,64.59,64.81,64.81,65.03,65.03,65.43,65.43,65.73,65.73,66.07,66.07,66.45,66.45,66.69,66.69,67.03,67.03,67.41,67.41,67.69,67.69,67.93,67.93,68.37,68.37,68.95,68.95,69.09,69.09,69.27,69.27,69.41,69.41,69.87,69.87,70.11,70.11,70.41,70.41,70.79,70.79,71.05,71.05,71.29,71.29,71.61]
+    },
+    {
+      "i": 10,
+      "start": 72.01,
+      "end": 80.85,
+      "en": "In this episode, we'll discuss how social media is changing in the age of AI and, as usual, we'll learn some useful new words and phrases.",
+      "zh": "在本期节目中，我们将讨论在 AI 时代社交媒体是如何变化的，并且像往常一样，我们将学习一些有用的新单词和短语。",
+      "w": [72.01,72.17,72.17,72.39,72.39,72.91,73.19,73.37,73.37,73.75,73.75,74.09,74.09,74.49,74.49,74.87,74.87,75.17,75.17,75.57,75.57,75.95,75.95,76.09,76.09,76.39,76.39,76.65,76.65,77.11,77.11,77.73,77.83,78.05,78.05,78.41,78.63,78.83,78.83,79.05,79.05,79.25,79.25,79.57,79.57,79.91,79.91,80.21,80.21,80.49,80.49,80.85]
+    },
+    {
+      "i": 11,
+      "start": 81.43,
+      "end": 87.91,
+      "en": "And remember, you'll find all the vocabulary along with a transcript on our website bbclearningenglish.com.",
+      "zh": "记住，你可以在我们的网站 bbclearningenglish.com 上找到所有的词汇以及文字稿。",
+      "w": [81.43,81.61,81.61,81.87,82.09,82.35,82.35,82.53,82.53,82.81,82.81,82.93,82.93,83.43,83.43,83.95,83.95,84.17,84.17,84.31,84.31,84.75,84.75,85.11,85.11,85.25,85.25,85.71,86.71,87.31,87.31,87.91]
+    },
+    {
+      "i": 12,
+      "start": 87.91,
+      "end": 90.39,
+      "en": "But first, I have a question for you, Pippa.",
+      "zh": "但首先，我有一个问题要问你，Pippa。",
+      "w": [87.91,88.45,88.45,88.73,88.93,88.98,88.95,89.09,89.09,89.21,89.21,89.43,89.43,89.83,89.83,90.05,90.15,90.39]
+    },
+    {
+      "i": 13,
+      "start": 90.71,
+      "end": 106.53,
+      "en": "You mentioned MySpace as one of the earliest social media platforms, but the first electronic message was actually sent much earlier, in 1844, using a series of dots and dashes tapped out by hand on a telegraph wire.",
+      "zh": "你提到 MySpace 是最早的社交媒体平台之一，但第一条电子信息实际上发送得要早得多，是在 1844 年，通过在电报线上手工敲出一系列点和划来发送的。",
+      "w": [90.71,90.89,90.89,91.43,91.43,92.13,92.13,92.67,92.67,92.95,92.95,93.09,93.09,93.27,93.27,93.73,93.73,94.05,94.05,94.45,94.45,95.11,95.13,95.65,95.65,95.79,95.79,96.09,96.09,96.75,96.75,97.27,97.27,97.49,97.49,97.95,97.95,98.27,98.27,98.69,98.69,99.31,99.75,99.85,101.81,102.09,102.09,102.31,102.31,102.51,102.51,102.79,102.79,103.07,103.07,103.41,103.41,103.83,103.83,104.19,104.19,104.45,104.45,104.67,104.67,105.07,105.07,105.49,105.49,105.65,105.65,106.05,106.05,106.53]
+    },
+    {
+      "i": 14,
+      "start": 107.09,
+      "end": 110.39,
+      "en": "So, what was this new form of communication called?",
+      "zh": "那么，这种新的通信形式叫什么呢？",
+      "w": [107.09,107.43,107.51,107.77,107.77,107.97,107.97,108.21,108.21,108.71,108.71,109.05,109.05,109.25,109.25,109.73,109.73,110.39]
+    },
+    {
+      "i": 15,
+      "start": 110.91,
+      "end": 116.31,
+      "en": "Was it: a) semaphore, b) dial-up, or c) Morse code?",
+      "zh": "是：a) 旗语，b) 拨号上网，还是 c) 摩尔斯电码？",
+      "w": [110.91,111.01,111.01,111.19,111.19,111.55,112.07,112.73,112.73,113.49,114.03,114.43,114.43,114.93,114.93,115.35,115.89,115.94,115.91,116.31]
+    },
+    {
+      "i": 16,
+      "start": 116.85,
+      "end": 121.41,
+      "en": "I think Morse code. OK. We'll find out the answer later.",
+      "zh": "我觉得是摩尔斯电码。好的。我们稍后会揭晓答案。",
+      "w": [116.85,117.19,117.19,117.57,117.57,118.21,118.21,118.57,119.33,119.69,119.75,120.07,120.07,120.27,120.27,120.49,120.49,120.65,120.65,120.95,120.95,121.41]
+    },
+    {
+      "i": 17,
+      "start": 122.31,
+      "end": 126.73,
+      "en": "The introduction of AI has turned some users away from social media.",
+      "zh": "AI 的引入让一些用户远离了社交媒体。",
+      "w": [122.31,122.77,122.77,123.15,123.15,123.41,123.41,123.81,123.81,124.23,124.23,124.53,124.53,124.85,124.85,125.29,125.29,125.77,125.77,126.03,126.03,126.31,126.31,126.73]
+    },
+    {
+      "i": 18,
+      "start": 127.07,
+      "end": 134.65,
+      "en": "Indeed, a recent report found that social media activity peaked in 2022 and has been going down ever since.",
+      "zh": "的确，最近的一份报告发现，社交媒体的活跃度在 2022 年达到顶峰，此后一直在下降。",
+      "w": [127.07,127.37,127.71,127.85,127.85,128.19,128.19,128.63,128.63,129.01,129.01,129.19,129.19,129.47,129.47,129.85,129.85,130.45,130.45,130.91,130.91,131.27,132.05,132.75,132.75,132.95,132.95,133.13,133.13,133.41,133.41,133.83,133.83,134.17,134.17,134.65]
+    },
+    {
+      "i": 19,
+      "start": 135.47,
+      "end": 140.23,
+      "en": "Millennial and digital native Kyle Chayka is a writer specialising in social media.",
+      "zh": "千禧一代和数字原住民 Kyle Chayka 是一位专门研究社交媒体的作家。",
+      "w": [135.47,135.81,135.81,136.09,136.09,136.39,136.39,136.97,136.97,137.29,137.29,137.73,137.73,138.09,138.09,138.27,138.27,138.51,138.51,139.35,139.35,139.51,139.51,139.81,139.81,140.23]
+    },
+    {
+      "i": 20,
+      "start": 140.59,
+      "end": 145.55,
+      "en": "He spoke about the problem to Tristan Redmond for BBC World Service programme The Global Story.",
+      "zh": "他在 BBC World Service 节目 The Global Story 中与 Tristan Redmond 谈到了这个问题。",
+      "w": [140.59,140.71,140.71,140.93,140.93,141.17,141.17,141.33,141.33,141.57,141.57,141.83,141.83,142.29,142.29,142.63,142.63,142.97,142.97,143.23,143.23,143.61,143.61,143.99,143.99,144.45,144.45,144.89,144.89,145.19,145.19,145.55]
+    },
+    {
+      "i": 21,
+      "start": 146.31,
+      "end": 153.37,
+      "en": "OK. Kyle, was there a moment for you when you felt like social media changed?",
+      "zh": "好的。Kyle，对你来说，有没有哪一个时刻让你觉得社交媒体变了？",
+      "w": [146.31,146.61,146.79,146.91,147.41,147.57,147.57,147.79,147.79,148.01,148.01,148.45,148.45,149.15,149.15,149.63,149.63,150.25,150.25,150.39,150.39,150.81,150.81,151.13,151.13,151.59,151.59,152.21,152.21,153.37]
+    },
+    {
+      "i": 22,
+      "start": 153.93,
+      "end": 178.65,
+      "en": "Oh man! I mean... In 2015/2016, I think, in the United States, when Twitter became the hub of election discourse, it kind of shattered the illusion that the internet was a space you could go to, just like, have fun and express yourself and find cool friends and discuss the latest cultural happenings.",
+      "zh": "噢，天哪！我是说……我想是在 2015/2016 年的美国，当 Twitter 成为选举讨论的中心时，它在某种程度上打破了那种幻觉，即互联网是一个你可以去玩耍、表达自我、结交酷朋友并讨论最新文化事件的地方。",
+      "w": [153.93,154.17,154.17,154.47,154.83,154.89,154.89,155.17,156.07,156.23,157.57,157.97,157.97,158.25,158.25,158.97,158.97,159.13,159.13,159.41,159.41,159.79,160.45,160.79,160.79,161.55,161.55,162.01,162.01,162.23,162.23,162.57,162.57,163.33,163.33,164.39,164.39,165.01,165.67,165.85,165.85,166.03,166.03,166.17,166.17,166.47,166.47,166.69,166.69,167.11,167.11,167.77,167.77,168.37,168.37,168.69,168.69,168.91,168.91,169.05,169.05,169.27,169.27,169.47,169.47,169.61,169.61,169.81,169.81,169.97,169.97,170.13,170.13,170.39,170.39,171.01,171.01,171.31,171.31,171.47,171.47,171.85,171.85,172.43,172.43,172.87,172.87,174.17,174.17,174.83,174.83,175.33,175.33,175.67,175.67,176.19,176.61,176.97,176.97,177.29,177.29,177.89,177.89,178.65]
+    },
+    {
+      "i": 23,
+      "start": 179.43,
+      "end": 182.03,
+      "en": "Kyle uses the informal expression, \" Oh man!",
+      "zh": "Kyle 使用了非正式表达方式“Oh man!",
+      "w": [179.43,179.57,179.57,180.03,180.03,180.25,180.25,180.61,180.61,181.19,181.19,181.63,181.75,182.03]
+    },
+    {
+      "i": 24,
+      "start": 182.37,
+      "end": 185.01,
+      "en": "\"– an exclamation showing excitement or enthusiasm.",
+      "zh": "”——这是一个表示兴奋或热情的感叹词。",
+      "w": [182.37,182.55,182.55,183.11,183.11,183.65,183.65,184.19,184.19,184.45,184.45,185.01]
+    },
+    {
+      "i": 25,
+      "start": 185.69,
+      "end": 191.71,
+      "en": "He remembers the internet in 2016, when Twitter was full of angry political debate about the US elections.",
+      "zh": "他记得 2016 年的互联网，当时 Twitter 上充斥着关于美国大选的愤怒政治辩论。",
+      "w": [185.69,185.85,185.85,186.21,186.21,186.45,186.45,186.73,186.73,186.99,187.65,188.11,188.11,188.45,188.45,188.81,188.81,188.97,188.97,189.13,189.13,189.51,189.51,189.97,189.97,190.41,190.41,190.81,190.81,190.97,190.97,191.19,191.19,191.71]
+    },
+    {
+      "i": 26,
+      "start": 192.27,
+      "end": 195.83,
+      "en": "For Kyle, this shattered the illusion that the internet was fun.",
+      "zh": "对 Kyle 来说，这打破了互联网很有趣的幻觉。",
+      "w": [192.27,192.43,192.43,192.85,193.03,193.23,193.23,193.79,193.79,194.01,194.01,194.47,194.47,194.79,194.79,194.93,194.93,195.21,195.21,195.47,195.47,195.83]
+    },
+    {
+      "i": 27,
+      "start": 196.39,
+      "end": 203.15,
+      "en": "If something shatters your illusions, it destroys a false belief you hold, making you realise an unpleasant truth.",
+      "zh": "如果某事打破了你的幻觉，它就摧毁了你持有的一种错误信念，让你意识到一个令人不快的事实。",
+      "w": [196.39,196.59,196.59,196.95,196.95,197.55,197.55,197.77,197.77,198.25,198.41,198.61,198.61,199.11,199.11,199.47,199.47,199.71,199.71,200.05,200.05,200.29,200.29,200.55,200.55,200.91,200.91,201.19,201.19,201.67,201.67,201.99,201.99,202.55,202.55,203.15]
+    },
+    {
+      "i": 28,
+      "start": 203.73,
+      "end": 211.75,
+      "en": "Kyle thinks social media was friendlier before – an online space to make friends, have fun and discuss the latest cultural happenings.",
+      "zh": "Kyle 认为以前的社交媒体更友好——一个交友、玩乐和讨论最新文化事件的在线空间。",
+      "w": [203.73,203.78,203.73,204.13,204.13,204.55,204.55,205.09,205.09,205.37,205.37,206.01,206.01,206.43,206.95,207.05,207.05,207.41,207.41,207.75,207.75,208.01,208.01,208.21,208.21,208.73,208.81,208.97,208.97,209.33,209.33,209.67,209.67,210.07,210.07,210.31,210.31,210.63,210.63,211.11,211.11,211.75]
+    },
+    {
+      "i": 29,
+      "start": 212.35,
+      "end": 218.75,
+      "en": "A cultural happening is an event that embodies the values and interests of a particular group at a particular time in history.",
+      "zh": "文化事件（cultural happening）是指在历史上特定时期体现特定群体价值观和利益的事件。",
+      "w": [212.35,212.45,212.45,212.71,212.71,213.33,213.33,213.71,213.71,213.81,213.81,214.07,214.07,214.27,214.27,214.65,214.65,214.91,214.91,215.29,215.29,215.53,215.53,215.91,215.91,216.19,216.19,216.29,216.29,216.67,216.67,217.03,217.03,217.31,217.31,217.43,217.43,217.75,217.75,218.19,218.19,218.41,218.41,218.75]
+    },
+    {
+      "i": 30,
+      "start": 219.33,
+      "end": 224.81,
+      "en": "For example, the hit television show Game of Thrones was a cultural happening for millennials in the 2010s.",
+      "zh": "例如，热门电视剧《权力的游戏》是 2010 年代千禧一代的一个文化事件。",
+      "w": [219.33,219.49,219.49,219.79,220.13,220.18,220.15,220.33,220.33,220.65,220.65,221.11,221.11,221.37,221.37,221.57,221.57,221.83,221.83,222.11,222.11,222.29,222.29,222.59,222.59,223.07,223.07,223.41,223.41,223.71,223.71,224.11,224.11,224.21,224.21,224.81]
+    },
+    {
+      "i": 31,
+      "start": 225.29,
+      "end": 231.59,
+      "en": "So, what's the future of social media? Will the amount of AI-generated content continue to grow?",
+      "zh": "那么，社交媒体的未来会怎样？AI 生成的内容量会继续增长吗？",
+      "w": [225.29,225.69,225.87,226.19,226.19,226.35,226.35,226.67,226.67,226.97,226.97,227.29,227.29,227.67,228.11,228.43,228.43,228.71,228.71,228.99,228.99,229.25,229.25,230.09,230.09,230.63,230.63,231.13,231.13,231.35,231.35,231.59]
+    },
+    {
+      "i": 32,
+      "start": 232.19,
+      "end": 246.31,
+      "en": "Here's Kyle Chayka again, sharing his thoughts with BBC World Service's The Global Story: We see the large social networks and the tech behemoths leaning into generated content, and I think users don't actually want that.",
+      "zh": "下面是 Kyle Chayka 再次在 BBC World Service 的 The Global Story 中分享他的想法：我们看到大型社交网络和科技巨头都在倾向于生成式内容，而我认为用户实际上并不想要那些。",
+      "w": [232.19,232.63,232.63,232.85,232.85,233.45,233.55,233.63,233.77,233.99,233.99,234.25,234.25,234.51,234.51,234.83,234.83,235.17,235.17,235.49,235.49,236.21,236.21,236.43,236.43,236.77,236.77,237.19,237.57,238.01,238.01,238.23,238.23,238.41,238.41,238.71,238.71,239.11,239.11,239.55,239.55,240.01,240.01,240.19,240.19,240.57,240.57,241.75,241.75,242.05,242.05,242.61,242.61,243.13,243.13,243.69,244.27,244.47,244.47,244.57,244.57,244.73,244.73,245.11,245.11,245.49,245.49,245.87,245.87,246.11,246.11,246.31]
+    },
+    {
+      "i": 33,
+      "start": 246.45,
+      "end": 250.77,
+      "en": "I think it's a novelty for now and people will drift away from it.",
+      "zh": "我认为这目前只是一种新鲜感，人们会逐渐远离它。",
+      "w": [246.45,246.5,246.49,246.63,246.63,246.81,246.81,246.93,246.93,247.37,247.37,248.11,248.11,248.45,248.83,249.29,249.29,249.69,249.69,249.83,249.83,250.03,250.03,250.29,250.29,250.51,250.51,250.77]
+    },
+    {
+      "i": 34,
+      "start": 251.29,
+      "end": 264.57,
+      "en": "So instead, I see people gravitating towards smaller online spaces, connecting more closely with individual voices, like creator types, and just posting less in general.",
+      "zh": "所以相反，我看到人们正向更小的在线空间靠拢，与创作者等个人声音建立更紧密的联系，而且总的来说发帖更少了。",
+      "w": [251.29,251.51,251.51,252.07,252.31,252.53,252.53,252.77,252.77,253.03,253.03,253.61,253.61,254.09,254.09,254.75,254.75,255.11,255.11,255.81,256.51,256.89,256.89,257.33,257.33,257.77,257.77,258.09,258.09,258.73,258.73,259.33,259.89,259.94,259.89,260.69,260.69,261.29,261.83,262.35,262.35,262.49,262.49,263.23,263.23,263.55,263.55,264.13,264.13,264.57]
+    },
+    {
+      "i": 35,
+      "start": 265.65,
+      "end": 271.37,
+      "en": "Kyle thinks the tech behemoths, meaning large and powerful companies, will continue pushing AI.",
+      "zh": "Kyle 认为科技巨头（tech behemoths），即庞大且有实力的公司，将继续推动 AI。",
+      "w": [265.65,265.7,265.67,266.03,266.03,266.25,266.25,266.53,266.53,267.25,267.49,267.73,267.73,268.27,268.27,268.49,268.49,268.87,268.87,269.37,269.65,269.87,269.87,270.29,270.29,270.87,270.87,271.37]
+    },
+    {
+      "i": 36,
+      "start": 271.99,
+      "end": 276.09,
+      "en": "However, many people want content which is more personal and meaningful.",
+      "zh": "然而，许多人想要更具个性化和更有意义的内容。",
+      "w": [271.99,272.35,272.89,273.01,273.01,273.39,273.39,273.71,273.71,274.15,274.15,274.37,274.37,274.53,274.53,274.79,274.79,275.29,275.29,275.59,275.59,276.09]
+    },
+    {
+      "i": 37,
+      "start": 276.83,
+      "end": 283.81,
+      "en": "They think AI is a novelty – something which is new and unusual and therefore exciting, but which probably won't last.",
+      "zh": "他们认为 AI 是一种新鲜事物（novelty）——某种新颖、不寻常并因此令人兴奋，但可能不会持久的东西。",
+      "w": [276.83,277.05,277.05,277.29,277.29,277.69,277.69,277.95,277.95,278.11,278.11,278.53,279.01,279.29,279.29,279.49,279.49,279.67,279.67,279.97,279.97,280.23,280.23,280.67,281.09,281.23,281.23,281.53,281.53,282.07,282.37,282.51,282.51,282.71,282.71,283.05,283.05,283.49,283.49,283.81]
+    },
+    {
+      "i": 38,
+      "start": 283.81,
+      "end": 289.07,
+      "en": "Instead, Kyle thinks people will gravitate towards smaller online communities.",
+      "zh": "相反，Kyle 认为人们会向更小的在线社区靠拢。",
+      "w": [283.81,284.79,285.13,285.19,285.19,285.55,285.55,285.85,285.85,286.13,286.13,286.81,286.81,287.31,287.31,288.05,288.05,288.53,288.53,289.07]
+    },
+    {
+      "i": 39,
+      "start": 289.57,
+      "end": 293.97,
+      "en": "If you gravitate towards something, you are naturally drawn or attracted to it.",
+      "zh": "如果你向某事靠拢（gravitate towards something），你就会自然而然地被它吸引。",
+      "w": [289.57,289.75,289.75,289.95,289.95,290.55,290.55,290.87,290.87,291.35,291.59,291.77,291.77,291.91,291.91,292.35,292.35,292.77,292.77,293.01,293.01,293.43,293.43,293.71,293.71,293.97]
+    },
+    {
+      "i": 40,
+      "start": 294.31,
+      "end": 297.77,
+      "en": "Social media has changed fast and is still in motion.",
+      "zh": "社交媒体变化很快，而且仍在变动中。",
+      "w": [294.31,294.47,294.47,294.93,294.93,295.21,295.21,295.65,295.65,296.11,296.11,296.57,296.57,296.73,296.73,297.07,297.07,297.41,297.41,297.77]
+    },
+    {
+      "i": 41,
+      "start": 298.31,
+      "end": 304.14,
+      "en": "It's come a long way from the first electronic messages of 1844 which you mentioned in your question, Neil.",
+      "zh": "从你在问题中提到的 1844 年的第一条电子信息到现在，它已经走过了很长一段路，Neil。",
+      "w": [298.31,298.59,298.59,298.77,298.77,298.97,298.97,299.21,299.21,299.53,299.53,299.77,299.77,299.91,299.91,300.21,300.21,300.73,300.73,301.15,301.15,301.45,302.69,302.81,302.81,302.95,302.95,303.19,303.19,303.41,303.41,303.53,303.53,303.89,304.09,304.14]
+    },
+    {
+      "i": 42,
+      "start": 304.55,
+      "end": 313.05,
+      "en": "So, did I get the correct answer? I asked what this new form of communication was, and you said that it was c) Morse code.",
+      "zh": "那么，我答对了吗？我问这种新的通信形式是什么，你说是 c) 摩尔斯电码。",
+      "w": [304.55,304.77,305.05,305.21,305.21,305.35,305.35,305.45,305.45,305.57,305.57,305.81,305.81,306.19,306.71,307.01,307.01,307.35,307.35,307.59,307.59,307.93,307.93,308.53,308.53,308.97,308.97,309.17,309.17,309.65,309.65,310.21,310.23,311.03,311.03,311.33,311.33,311.67,311.67,311.95,311.95,312.05,312.05,312.25,312.25,312.52,312.52,312.78,312.78,313.05]
+    },
+    {
+      "i": 43,
+      "start": 313.05,
+      "end": 316.85,
+      "en": "And that, Pippa, is the correct answer. OK.",
+      "zh": "Pippa，那是正确答案。好的。",
+      "w": [313.05,313.57,313.57,314.19,314.47,314.93,315.03,315.19,315.19,315.31,315.31,315.57,315.57,315.97,316.61,316.85]
+    },
+    {
+      "i": 44,
+      "start": 316.99,
+      "end": 321.53,
+      "en": "Let's recap the vocabulary we've learned, starting with the exclamation, \" Oh man!",
+      "zh": "让我们回顾一下学过的词汇，从感叹词“Oh man!",
+      "w": [316.99,317.25,317.25,317.61,317.61,317.87,317.87,318.39,318.39,318.87,318.87,319.09,319.39,319.51,319.51,319.89,319.89,319.99,319.99,320.71,320.71,321.17,321.17,321.53]
+    },
+    {
+      "i": 45,
+      "start": 321.89,
+      "end": 324.05,
+      "en": "\" used to show excitement or enthusiasm.",
+      "zh": "”开始，用于表示兴奋或热情。",
+      "w": [321.89,322.15,322.15,322.33,322.33,322.53,322.53,323.13,323.13,323.45,323.45,324.05]
+    },
+    {
+      "i": 46,
+      "start": 324.59,
+      "end": 331.49,
+      "en": "To shatter an illusion is to destroy someone's misconceptions, causing them to realise an unpleasant reality.",
+      "zh": "打破幻觉（To shatter an illusion）是指摧毁某人的错误观念，使他们意识到一个令人不快的现实。",
+      "w": [324.59,324.75,324.75,325.33,325.33,325.57,325.57,325.99,325.99,326.35,326.35,326.53,326.53,327.05,327.05,327.77,327.77,328.37,328.93,329.21,329.21,329.45,329.45,329.63,329.63,329.95,329.95,330.25,330.25,330.73,330.73,331.49]
+    },
+    {
+      "i": 47,
+      "start": 332.13,
+      "end": 339.11,
+      "en": "A cultural happening is an event that embodies the values and interests of a particular social group at a particular time.",
+      "zh": "文化事件（A cultural happening）是指在特定时间体现特定社会群体价值观和利益的事件。",
+      "w": [332.13,332.27,332.27,332.57,332.57,333.25,333.25,333.51,333.51,333.65,333.65,333.91,333.91,334.21,334.21,334.75,334.75,335.07,335.07,335.47,335.47,335.73,335.73,336.19,336.19,336.45,336.45,336.55,336.55,336.95,336.95,337.33,337.33,337.73,337.73,338.21,338.21,338.39,338.39,338.61,338.61,339.11]
+    },
+    {
+      "i": 48,
+      "start": 339.51,
+      "end": 343.69,
+      "en": "A behemoth is an extremely large and powerful company or organisation.",
+      "zh": "巨头（A behemoth）是指极其庞大且有实力的公司或组织。",
+      "w": [339.51,339.69,339.69,340.17,340.17,340.59,340.59,340.73,340.73,341.15,341.15,341.61,341.61,341.81,341.81,342.17,342.17,342.67,342.67,342.97,342.97,343.69]
+    },
+    {
+      "i": 49,
+      "start": 343.99,
+      "end": 348.17,
+      "en": "A novelty is something which is new and unusual and therefore exciting.",
+      "zh": "新鲜事物（A novelty）是指新颖、不寻常并因此令人兴奋的东西。",
+      "w": [343.99,344.29,344.29,344.63,344.63,345.03,345.03,345.41,345.41,345.61,345.61,345.79,345.79,346.13,346.13,346.33,346.33,346.83,347.05,347.19,347.19,347.61,347.61,348.17]
+    },
+    {
+      "i": 50,
+      "start": 348.51,
+      "end": 353.31,
+      "en": "And finally, if you gravitate towards something, you are naturally attracted to it.",
+      "zh": "最后，如果你向某事靠拢（gravitate towards something），你就会自然而然地被它吸引。",
+      "w": [348.51,348.89,348.89,349.19,349.45,349.73,349.73,349.89,349.89,350.49,350.49,350.85,350.85,351.33,351.55,351.79,351.79,351.91,351.91,352.31,352.31,352.79,352.79,353.09,353.09,353.31]
+    },
+    {
+      "i": 51,
+      "start": 353.65,
+      "end": 363.59,
+      "en": "Once again, our six minutes are up, but if you're still using the internet, head over to our website, bbclearningenglish.com, where you'll find a worksheet and quiz for this episode.",
+      "zh": "我们的六分钟时间又到了，但如果你还在上网，请前往我们的网站 bbclearningenglish.com，在那里你可以找到本期节目的练习题和测验。",
+      "w": [353.65,353.97,353.97,354.27,354.37,354.59,354.59,354.85,354.85,355.11,355.11,355.29,355.29,355.49,355.65,355.93,355.93,356.19,356.19,356.45,356.45,356.73,356.73,357.05,357.05,357.21,357.21,357.55,357.79,357.89,357.89,358.13,358.13,358.29,358.29,358.47,358.47,358.91,359.93,360.45,360.45,360.97,361.07,361.39,361.39,361.59,361.59,361.77,361.77,361.93,361.93,362.33,362.33,362.59,362.59,362.79,362.79,362.99,362.99,363.15,363.15,363.59]
+    },
+    {
+      "i": 52,
+      "start": 364.09,
+      "end": 366.47,
+      "en": "See you again soon but, for now, it's goodbye!",
+      "zh": "很快会再见，但现在，该说再见了！",
+      "w": [364.09,364.27,364.27,364.39,364.39,364.59,364.59,364.93,365.17,365.41,365.41,365.53,365.53,365.77,365.89,366.11,366.11,366.47]
+    },
+    {
+      "i": 53,
+      "start": 366.71,
+      "end": 367.01,
+      "en": "Goodbye!",
+      "zh": "再见！",
+      "w": [366.71,367.01]
+    }
+  ],
+  "wSource": "asr",
+  "lemmas": {
+    "actually": "actually",
+    "causing": "cause",
+    "communication": "communication",
+    "communities": "community",
+    "connecting": "connect",
+    "content": "content",
+    "continue": "continue",
+    "created": "create",
+    "dashes": "dash",
+    "debate": "debate",
+    "destroy": "destroy",
+    "destroys": "destroy",
+    "digital": "digital",
+    "discourse": "discourse",
+    "drift": "drift",
+    "election": "election",
+    "elections": "election",
+    "electronic": "electronic",
+    "embodies": "embody",
+    "enthusiasm": "enthusiasm",
+    "episode": "episode",
+    "evolved": "evolve",
+    "exciting": "exciting",
+    "exclamation": "exclamation",
+    "express": "express",
+    "expression": "expression",
+    "extremely": "extremely",
+    "false": "false",
+    "found": "found",
+    "general": "general",
+    "generated": "generate",
+    "generation": "generation",
+    "global": "global",
+    "history": "history",
+    "hit": "hit",
+    "illusion": "illusion",
+    "illusions": "illusion",
+    "indeed": "indeed",
+    "individual": "individual",
+    "interests": "interest",
+    "introduction": "introduction",
+    "later": "later",
+    "leaning": "lean",
+    "learned": "learned",
+    "learning": "learning",
+    "meaningful": "meaningful",
+    "media": "media",
+    "message": "message",
+    "messages": "message",
+    "motion": "motion",
+    "native": "native",
+    "naturally": "naturally",
+    "networks": "network",
+    "novelty": "novelty",
+    "particular": "particular",
+    "peaked": "peak",
+    "personal": "personal",
+    "phrases": "phrase",
+    "platforms": "platform",
+    "political": "political",
+    "powerful": "powerful",
+    "probably": "probably",
+    "quiz": "quiz",
+    "reality": "reality",
+    "recent": "recent",
+    "rise": "rise",
+    "series": "series",
+    "share": "share",
+    "sharing": "share",
+    "shatter": "shatter",
+    "shattered": "shatter",
+    "shatters": "shatter",
+    "social": "social",
+    "space": "space",
+    "spaces": "space",
+    "states": "state",
+    "stranger": "stranger",
+    "supposed": "suppose",
+    "tapped": "tap",
+    "telegraph": "telegraph",
+    "therefore": "therefore",
+    "thoughts": "thought",
+    "thrones": "throne",
+    "towards": "towards",
+    "truth": "truth",
+    "types": "type",
+    "united": "unite",
+    "unpleasant": "unpleasant",
+    "unusual": "unusual",
+    "used": "used",
+    "useful": "useful",
+    "users": "user",
+    "usual": "usual",
+    "values": "value",
+    "vocabulary": "vocabulary",
+    "voices": "voice",
+    "whatever": "whatever",
+    "wire": "wire",
+    "writer": "writer"
+  }
+}

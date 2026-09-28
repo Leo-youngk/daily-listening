@@ -31,6 +31,8 @@ key 放仓库根目录 `.env.google.local`（`GOOGLE_API_KEY=...`，已 gitignor
 免费层按模型限每天请求数（flash 约 20 次/天），`translate.py` 按质量排了一串 Gemini 3.x 模型轮流用，
 某个模型当天额度用完自动换下一个并打印提示；每集用的模型记在数据的 `zhModel` 字段。
 全部模型当天都用完时构建会停下，已翻完的都在 `corpus/zh/` 缓存里，第二天接着跑。
+小模型偶尔把英文原样吐回来（句数照样对得上）：译文九成句子要含汉字才算数，同一模型连续两次照抄就换下一个；`validate_data.py` 也会拦下没翻译的期。
+flash-lite 这类小模型对长列表常漏句/并句：同一块连续 2 次句数对不上，就对半拆开递归重翻（块首带前文做上下文），不会卡死在重试上。
 
 ## GPU 对齐
 
@@ -42,6 +44,7 @@ python -m pip install --target scripts/.vendor/cuda nvidia-cublas-cu12 "nvidia-c
 ```
 
 `align.py` 启动时会把这两个目录加进 DLL 搜索路径；找不到时退回 CPU 并打印提示。
+参考文本已知，ASR 只取词时间，所以用贪心解码（`beam_size=1`）：比默认 beam 5 快一个数量级（一集 25 分钟约 30 秒），匹配率仍在 0.95 以上。
 
 ## 写数据的唯一入口
 

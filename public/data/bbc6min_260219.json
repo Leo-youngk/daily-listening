@@ -1,0 +1,563 @@
+{
+  "slug": "bbc6min_260219",
+  "title": "Dreaming of being a chef",
+  "speaker": "BBC Learning English",
+  "category": "bbc",
+  "date": "2026-02-19",
+  "duration": 375.55,
+  "cover": "/covers/bbc6min_260219.jpg",
+  "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260219",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260219.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260219.m4a"
+  },
+  "zhSource": "mt",
+  "zhModel": "gemini-3.5-flash",
+  "keywords": [
+    {
+      "term": "CV/curriculum vitae",
+      "def": "document listing someone's education, qualifications and work experience, which is written when looking for a job"
+    },
+    {
+      "term": "aim high",
+      "def": "be ambitious"
+    },
+    {
+      "term": "the worst they can do is say no",
+      "def": "phrase meaning 'don't be afraid of trying to do something for fear of rejection'"
+    },
+    {
+      "term": "catapult",
+      "def": "suddenly accelerate or launch forward"
+    },
+    {
+      "term": "signature",
+      "def": "something typical or associated with a particular person or place; something a person or place is known for"
+    },
+    {
+      "term": "stand out",
+      "def": "be very noticeable or better compared to other similar things"
+    }
+  ],
+  "sentences": [
+    {
+      "i": 0,
+      "start": 4.6,
+      "end": 11.28,
+      "en": "Hello, this is 6 Minute English from BBC Learning English.",
+      "zh": "你好，这里是 BBC Learning English 的 6 Minute English。",
+      "w": [4.6,5.16,8.22,8.32,8.32,8.48,8.78,8.98,8.98,9.42,9.42,9.88,9.88,10.3,10.3,10.84,10.84,11.28]
+    },
+    {
+      "i": 1,
+      "start": 11.5,
+      "end": 14.92,
+      "en": "I'm Neil. And I'm Becca. Do you enjoy cooking Neil?",
+      "zh": "我是 Neil。我是 Becca。Neil，你喜欢做饭吗？",
+      "w": [11.5,11.74,11.74,11.88,12.1,12.34,12.34,12.64,12.64,12.9,13.64,13.78,13.78,13.92,13.92,14.24,14.24,14.64,14.78,14.92]
+    },
+    {
+      "i": 2,
+      "start": 15.18,
+      "end": 21.3,
+      "en": "Yes, I do enjoy cooking. I think it's quite relaxing, especially after a busy day.",
+      "zh": "是的，我确实喜欢做饭。我觉得这挺让人放松的，尤其是在忙碌了一天之后。",
+      "w": [15.18,15.58,15.78,16.0,16.0,16.3,16.3,16.74,16.74,17.18,17.34,17.58,17.58,17.76,17.76,18.2,18.2,18.56,18.56,19.18,19.24,19.64,19.64,20.32,20.32,20.64,20.64,20.88,20.88,21.3]
+    },
+    {
+      "i": 3,
+      "start": 21.7,
+      "end": 29.9,
+      "en": "How about you, Becca? I enjoy cooking when I'm feeding other people, but usually after a busy day at work, I don't enjoy cooking for myself.",
+      "zh": "你呢，Becca？如果是做给别人吃，我挺喜欢做饭的，但通常在忙碌的工作日结束后，我不太喜欢给自己做饭。",
+      "w": [21.7,21.92,21.92,22.14,22.14,22.32,22.34,22.6,23.08,23.3,23.3,23.58,23.58,23.98,23.98,24.16,24.16,24.32,24.32,24.54,24.54,24.84,24.84,25.3,25.62,26.16,26.16,26.6,26.6,27.0,27.0,27.28,27.28,27.5,27.5,27.74,27.74,27.9,27.9,28.16,28.16,28.46,28.46,28.7,28.7,29.0,29.0,29.3,29.3,29.52,29.52,29.9]
+    },
+    {
+      "i": 4,
+      "start": 30.7,
+      "end": 40.58,
+      "en": "Well, we're talking about cooking today, and most of us can at least boil an egg, but not everyone could make it as a professional chef in a world-famous restaurant.",
+      "zh": "好吧，我们今天聊聊做饭，虽然我们大多数人至少都会煮个蛋，但并不是每个人都能在世界知名的餐厅里成为一名职业厨师。",
+      "w": [30.7,31.0,31.3,31.5,31.5,31.76,31.76,32.04,32.04,32.36,32.36,32.9,33.3,33.74,33.74,34.08,34.08,34.28,34.28,34.44,34.44,34.66,34.66,34.78,34.78,35.06,35.06,35.42,35.42,35.7,35.7,35.94,36.08,36.18,36.18,36.44,36.44,37.02,37.02,37.52,37.52,37.72,37.72,37.92,37.92,38.1,38.1,38.24,38.24,38.66,38.66,39.06,39.06,39.36,39.36,39.5,39.5,40.0,40.0,40.58]
+    },
+    {
+      "i": 5,
+      "start": 41.34,
+      "end": 45.64,
+      "en": "Mmm. Being a top chef requires passion, dedication, and hard work.",
+      "zh": "嗯。成为一名顶级厨师需要热情、奉献和艰苦的努力。",
+      "w": [41.34,41.39,41.82,42.0,42.0,42.2,42.2,42.36,42.36,42.62,42.62,43.0,43.0,43.6,43.94,44.38,44.38,44.92,44.92,45.2,45.2,45.64]
+    },
+    {
+      "i": 6,
+      "start": 46.28,
+      "end": 53.84,
+      "en": "Many chefs work 15 hours a day, six days a week, and busy kitchens cooking expensive food are very stressful places to work.",
+      "zh": "许多厨师每天工作15个小时，每周工作六天，而在忙碌、烹饪昂贵食物的厨房里工作，压力是非常大的。",
+      "w": [46.28,46.52,46.52,46.82,46.82,47.1,47.72,48.1,48.1,48.34,48.34,48.54,48.54,48.84,48.84,49.08,49.08,49.26,49.26,49.5,49.7,49.9,49.9,50.26,50.26,50.78,50.78,51.04,51.04,51.58,51.58,51.92,51.92,52.14,52.14,52.52,52.52,52.86,52.86,53.26,53.26,53.54,53.54,53.84]
+    },
+    {
+      "i": 7,
+      "start": 54.1,
+      "end": 65.24,
+      "en": "So, why do they do it? In this episode, we'll hear from one South African chef who started her own award-winning restaurant in the country known as the home of fine dining – France.",
+      "zh": "那么，他们为什么要这么做呢？在本期节目中，我们将听到一位南非厨师的故事，她在被称为高级餐饮之乡的国家——法国，开办了自己屡获殊荣的餐厅。",
+      "w": [54.1,54.58,54.58,55.2,55.2,55.44,55.44,55.6,55.6,55.8,55.8,56.02,56.44,56.72,56.72,56.9,56.9,57.38,57.38,57.68,57.68,57.86,57.86,58.06,58.06,58.3,58.3,58.56,58.56,58.96,58.96,59.3,59.3,59.6,59.6,59.94,59.94,60.24,60.24,60.48,60.48,61.24,61.24,61.76,61.76,62.1,62.1,62.24,62.24,62.5,62.5,62.84,62.84,63.14,63.14,63.26,63.26,63.56,63.56,63.76,63.76,64.04,64.04,64.46,64.8,65.24]
+    },
+    {
+      "i": 8,
+      "start": 65.98,
+      "end": 69.08,
+      "en": "As usual, we'll be learning some useful new words and phrases.",
+      "zh": "和往常一样，我们将学习一些实用的新单词和短语。",
+      "w": [65.98,66.26,66.26,66.64,66.72,66.94,66.94,67.06,67.06,67.3,67.3,67.56,67.56,67.94,67.94,68.24,68.24,68.5,68.5,68.68,68.68,69.08]
+    },
+    {
+      "i": 9,
+      "start": 69.4,
+      "end": 77.1,
+      "en": "And remember, you'll find all this episode's vocabulary, along with a transcript, on our website, bbclearningenglish.com.",
+      "zh": "记住，你可以在我们的网站 bbclearningenglish.com 上找到本期节目的所有词汇以及文本。",
+      "w": [69.4,69.66,69.66,69.96,70.18,70.36,70.36,70.64,70.64,71.0,71.0,71.26,71.26,72.46,72.46,72.51,72.76,73.02,73.02,73.18,73.18,73.3,73.3,73.74,73.98,74.22,74.22,74.36,74.36,74.86,75.98,76.54,76.54,77.1]
+    },
+    {
+      "i": 10,
+      "start": 77.26,
+      "end": 79.46,
+      "en": "But first, I have a question for you, Neil.",
+      "zh": "不过首先，我有一个问题要问你，Neil。",
+      "w": [77.26,77.46,77.46,77.84,78.16,78.26,78.26,78.36,78.36,78.5,78.5,78.74,78.74,79.08,79.08,79.24,79.36,79.46]
+    },
+    {
+      "i": 11,
+      "start": 79.76,
+      "end": 86.56,
+      "en": "The top prizes for any professional chef are Michelin stars, awards given to restaurants offering outstanding cooking.",
+      "zh": "对任何职业厨师来说，最高荣誉就是米其林星级，这是颁发给提供杰出烹饪的餐厅的奖项。",
+      "w": [79.76,79.86,79.86,80.1,80.1,80.4,80.4,80.64,80.64,80.88,80.88,81.38,81.38,81.72,81.72,82.04,82.04,82.46,82.46,82.8,83.6,83.76,83.76,84.02,84.02,84.28,84.28,84.72,84.72,85.16,85.16,85.92,85.92,86.56]
+    },
+    {
+      "i": 12,
+      "start": 86.92,
+      "end": 90.1,
+      "en": "But who is the winner of the most Michelin stars ever?",
+      "zh": "但是，有史以来获得米其林星级最多的人是谁？",
+      "w": [86.92,87.16,87.16,87.36,87.36,87.56,87.56,87.72,87.72,87.92,87.92,88.14,88.14,88.3,88.3,88.58,88.58,89.16,89.16,89.48,89.48,90.1]
+    },
+    {
+      "i": 13,
+      "start": 90.58,
+      "end": 99.64,
+      "en": "Is it: a) Italian chef Enrico Bartolini, b) French chef Joël Robuchon, or c) British chef Gordon Ramsay?",
+      "zh": "是：a) 意大利厨师 Enrico Bartolini，b) 法国厨师 Joël Robuchon，还是 c) 英国厨师 Gordon Ramsay？",
+      "w": [90.58,90.68,90.68,91.58,91.58,91.63,91.72,92.38,92.38,92.74,92.74,93.4,93.4,93.92,93.92,94.78,94.92,95.24,95.24,95.84,95.84,96.14,96.14,96.55,96.55,96.96,96.96,97.42,97.42,97.78,98.12,98.26,98.26,98.76,98.76,99.12,99.12,99.64]
+    },
+    {
+      "i": 14,
+      "start": 100.58,
+      "end": 107.7,
+      "en": "I'm going to say a) the Italian chef Enrico Bartolini, because I went to Italy recently and the food was amazing!",
+      "zh": "我选 a) 意大利厨师 Enrico Bartolini，因为我最近去了趟意大利，那里的食物太棒了！",
+      "w": [100.58,101.02,101.02,101.14,101.14,101.32,101.32,101.58,101.58,102.02,102.34,102.48,102.48,102.88,102.88,103.24,103.24,103.86,103.86,104.48,104.48,104.9,104.9,105.02,105.02,105.16,105.16,105.32,105.32,105.6,105.6,105.96,105.96,106.44,106.44,106.58,106.58,107.0,107.0,107.2,107.2,107.7]
+    },
+    {
+      "i": 15,
+      "start": 107.7,
+      "end": 111.66,
+      "en": "Mmm! OK. We'll find out the answer later in this episode.",
+      "zh": "嗯！好的。我们稍后将在本期节目中找出答案。",
+      "w": [107.7,108.3,108.3,108.78,109.12,109.36,109.36,109.56,109.56,109.76,109.76,109.9,109.9,110.26,110.26,110.62,110.62,110.9,110.9,111.08,111.08,111.66]
+    },
+    {
+      "i": 16,
+      "start": 112.9,
+      "end": 121.82,
+      "en": "Born in South Africa, chef Chantel Dartnall started her culinary career at a three-Michelin-star restaurant in the exclusive Mayfair area of London.",
+      "zh": "厨师 Chantel Dartnall 出生于南非，她的烹饪生涯始于伦敦高档的 Mayfair 地区的一家米其林三星级餐厅。",
+      "w": [112.9,112.96,112.96,113.16,113.16,113.36,113.36,113.86,114.38,114.5,114.5,115.09,115.09,115.68,115.68,116.44,116.44,116.78,116.78,117.16,117.16,117.5,117.5,117.88,117.88,118.06,118.06,118.96,118.96,119.4,119.4,119.62,119.62,119.8,119.8,120.42,120.42,120.92,120.92,121.3,121.3,121.46,121.46,121.82]
+    },
+    {
+      "i": 17,
+      "start": 122.48,
+      "end": 141.34,
+      "en": "Here, she tells Ruth Alexander, presenter of BBC World Service programme The Food Chain, how it all got started: What happened is I had graduated from the Prue Leith College of Food and Wine and decided to send my CV to all the three-Michelin-star restaurants that I could find at that moment in the Michelin Guide.",
+      "zh": "在这里，她向 BBC World Service 节目 The Food Chain 的主持人 Ruth Alexander 讲述了这一切是如何开始的：“当时的情况是，我刚从 Prue Leith College of Food and Wine 毕业，决定把我的 CV 寄给当时我在《米其林指南》中能找到的所有米其林三星级餐厅。”",
+      "w": [122.48,122.9,123.18,123.24,123.24,123.54,123.54,123.82,123.82,124.42,125.02,125.28,125.28,125.58,125.58,126.0,126.0,126.36,126.36,126.74,126.74,127.14,127.14,127.42,127.42,127.64,127.64,127.9,128.16,128.44,128.44,128.54,128.54,128.78,128.78,128.96,128.96,129.52,129.94,130.16,130.16,130.44,130.44,130.72,130.72,130.88,130.88,131.16,131.16,131.66,131.66,132.14,132.14,132.36,132.36,132.51,132.51,132.66,132.66,132.92,132.92,133.16,133.16,133.34,133.34,133.48,133.48,133.66,134.28,134.66,134.66,135.18,135.18,135.52,135.52,135.72,135.72,135.92,135.92,136.22,136.22,136.58,136.58,136.74,136.74,136.84,136.84,137.6,137.6,138.2,138.2,138.86,138.86,139.0,139.0,139.24,139.24,139.78,139.78,140.02,140.02,140.16,140.16,140.46,140.46,140.7,140.7,140.8,140.8,141.08,141.08,141.34]
+    },
+    {
+      "i": 18,
+      "start": 141.56,
+      "end": 144.48,
+      "en": "So, you aimed high from the off. I aimed high.",
+      "zh": "“所以，你从一开始就目标高远。”“我确实目标高远。”",
+      "w": [141.56,141.66,141.66,141.88,141.88,142.18,142.18,142.48,142.48,143.08,143.08,143.28,143.28,143.48,143.76,143.86,143.86,144.17,144.17,144.48]
+    },
+    {
+      "i": 19,
+      "start": 144.48,
+      "end": 147.46,
+      "en": "The only thing that they could say was no, and what would I lose?",
+      "zh": "“他们唯一能做的就是拒绝，而我又会损失什么呢？”",
+      "w": [144.48,144.6,144.6,144.8,144.8,145.06,145.06,145.2,145.2,145.36,145.36,145.44,145.44,145.76,145.76,146.02,146.02,146.38,146.64,146.72,146.72,146.9,146.9,147.04,147.04,147.2,147.2,147.46]
+    },
+    {
+      "i": 20,
+      "start": 147.88,
+      "end": 152.04,
+      "en": "I received a call from chef Paul Rhodes to say, \"When can you start?\"",
+      "zh": "“我接到了厨师 Paul Rhodes 的电话，他说：'你什么时候能开始上班？'”",
+      "w": [147.88,147.96,147.96,148.24,148.24,148.42,148.42,148.6,148.6,149.02,149.02,149.24,149.24,149.58,149.58,149.98,149.98,150.66,150.66,150.94,151.2,151.25,151.24,151.46,151.46,151.66,151.66,152.04]
+    },
+    {
+      "i": 21,
+      "start": 152.32,
+      "end": 156.04,
+      "en": "Wow. And this, sort of, just catapulted my career.",
+      "zh": "“哇。这在某种程度上，直接让我的职业生涯飞速发展。”",
+      "w": [152.32,152.62,153.38,153.56,153.56,153.88,153.88,154.16,154.16,154.3,154.3,154.5,154.5,155.16,155.16,155.5,155.5,156.04]
+    },
+    {
+      "i": 22,
+      "start": 156.3,
+      "end": 159.18,
+      "en": "Chantel sent her CV to the world's top restaurants.",
+      "zh": "Chantel 把她的 CV 寄给了世界顶级的餐厅。",
+      "w": [156.3,156.9,156.9,157.1,157.1,157.36,157.36,157.6,157.6,157.96,157.96,158.08,158.08,158.46,158.46,158.62,158.62,159.18]
+    },
+    {
+      "i": 23,
+      "start": 160.14,
+      "end": 169.1,
+      "en": "CV is short for curriculum vitae, a document listing someone's education, qualifications and work experience, which they write when looking for a job.",
+      "zh": "CV 是 curriculum vitae 的缩写，即个人简历，是一份列出某人教育背景、资历和工作经验的文件，在找工作时撰写。",
+      "w": [160.14,160.26,160.26,160.6,160.6,160.86,160.86,161.16,161.16,161.56,161.56,162.08,162.38,162.64,162.64,163.0,163.0,163.38,163.38,163.88,163.88,164.62,164.98,165.62,165.62,166.16,166.16,166.4,166.4,166.96,166.96,167.68,167.68,167.86,167.86,168.06,168.06,168.24,168.24,168.48,168.48,168.7,168.7,168.84,168.84,169.1]
+    },
+    {
+      "i": 24,
+      "start": 169.74,
+      "end": 172.42,
+      "en": "In American English, it's called a résumé.",
+      "zh": "在美式英语中，它被称为 résumé。",
+      "w": [169.74,169.9,169.9,170.34,170.34,170.8,170.8,171.24,171.24,171.42,171.42,171.54,171.54,171.98,171.98,172.42]
+    },
+    {
+      "i": 25,
+      "start": 172.42,
+      "end": 175.94,
+      "en": "Chantel applied to only Michelin-star-winning restaurants.",
+      "zh": "Chantel 只申请了获得米其林星级的餐厅。",
+      "w": [172.42,172.86,172.86,173.26,173.26,173.54,173.54,174.06,174.06,175.24,175.24,175.94]
+    },
+    {
+      "i": 26,
+      "start": 176.52,
+      "end": 179.0,
+      "en": "She aimed high, meaning she was ambitious.",
+      "zh": "她 aimed high，意思是她很有抱复。",
+      "w": [176.52,176.57,176.52,176.96,176.96,177.44,177.76,177.94,177.94,178.22,178.22,178.4,178.4,179.0]
+    },
+    {
+      "i": 27,
+      "start": 179.42,
+      "end": 188.98,
+      "en": "Chantel says, \" The worst they could do is say no,\" a phrase which means you shouldn't be afraid of trying to do something because the worst outcome is being rejected.",
+      "zh": "Chantel 说：'The worst they could do is say no（他们最坏也就是拒绝）'，这个短语的意思是你不应该害怕尝试去做某事，因为最坏的结果也不过是被拒绝。",
+      "w": [179.42,180.02,180.02,180.32,180.32,180.7,180.7,181.08,181.08,181.34,181.34,181.56,181.56,181.9,181.9,182.12,182.12,182.34,182.34,182.72,183.08,183.22,183.22,183.5,183.5,183.72,183.72,184.08,184.08,184.3,184.3,184.58,184.58,184.8,184.8,185.1,185.1,185.3,185.3,185.68,185.68,185.88,185.88,186.12,186.12,186.52,186.52,187.0,187.0,187.18,187.18,187.46,187.46,187.9,187.9,188.1,188.1,188.38,188.38,188.98]
+    },
+    {
+      "i": 28,
+      "start": 189.52,
+      "end": 197.98,
+      "en": "Luckily for Chantel, the answer was yes, and learning her trade in a top London restaurant catapulted, meaning accelerated, her career.",
+      "zh": "对 Chantel 来说幸运的是，答案是肯定的，在伦敦一家顶级餐厅学习手艺 catapulted（意思是加速了）她的职业生涯。",
+      "w": [189.52,189.96,189.96,190.26,190.26,190.86,191.06,191.18,191.18,191.46,191.46,191.68,191.68,192.1,192.68,192.92,192.92,193.2,193.2,193.42,193.42,193.72,193.72,193.9,193.9,194.04,194.04,194.22,194.22,194.5,194.5,195.06,195.06,196.06,196.24,196.44,196.44,197.16,197.16,197.62,197.62,197.98]
+    },
+    {
+      "i": 29,
+      "start": 198.46,
+      "end": 206.24,
+      "en": "At the age of 26, Chantel left London and returned home to open her own restaurant, Mosaic, near Pretoria in South Africa.",
+      "zh": "26岁时，Chantel 离开伦敦回到家乡，在南非 Pretoria 附近开办了自己的餐厅 Mosaic。",
+      "w": [198.46,198.72,198.72,198.84,198.84,198.98,198.98,199.12,199.12,199.72,200.36,200.62,200.62,201.02,201.02,201.3,201.3,201.64,201.64,202.0,202.0,202.24,202.24,202.56,202.56,202.78,202.78,202.98,202.98,203.48,203.48,204.18,204.5,204.72,204.72,205.22,205.22,205.56,205.56,205.78,205.78,206.24]
+    },
+    {
+      "i": 30,
+      "start": 207.0,
+      "end": 213.64,
+      "en": "She'd been inspired by botanical cuisine, the use of edible flowers and herbs to decorate and flavour food.",
+      "zh": "她受到了植物料理（botanical cuisine）的启发，即使用食用花卉和草药来装饰食物并为其调味。",
+      "w": [207.0,207.3,207.3,207.4,207.4,207.94,207.94,208.28,208.28,209.0,209.0,209.48,209.9,210.02,210.02,210.22,210.22,210.4,210.4,210.9,210.9,211.4,211.4,211.62,211.62,211.94,211.94,212.2,212.2,212.78,212.78,212.94,212.94,213.2,213.2,213.64]
+    },
+    {
+      "i": 31,
+      "start": 214.3,
+      "end": 227.02,
+      "en": "Here, Chantel tells more to BBC World Service programme The Food Chain: When I opened Mosaic in South Africa, I knew I wanted something entirely different and something which diners had not seen.",
+      "zh": "在这里，Chantel 向 BBC World Service 节目 The Food Chain 透露了更多细节：“当我在南非开办 Mosaic 时，我知道我想要一些完全不同的、食客们从未见过的东西。”",
+      "w": [214.3,214.6,214.6,215.16,215.16,215.5,215.5,215.84,215.84,216.08,216.08,216.38,216.38,216.82,216.82,217.2,217.2,217.66,217.66,218.08,218.08,218.3,218.3,218.56,218.98,219.42,219.42,219.72,219.72,220.04,220.04,220.42,220.42,220.62,220.62,220.82,220.82,221.18,221.7,221.86,221.86,222.14,222.14,222.7,222.7,222.94,222.94,223.4,223.4,224.24,224.24,224.66,224.66,224.86,224.86,225.16,225.16,225.62,225.62,226.26,226.26,226.44,226.44,226.62,226.62,227.02]
+    },
+    {
+      "i": 32,
+      "start": 227.22,
+      "end": 236.9,
+      "en": "I wanted to have my own signature and to stand out, and I think especially for botanical cuisine in South Africa, it was very much unknown.",
+      "zh": "“我想要有自己的 signature（招牌/特色）并脱颖而出，而且我认为，尤其是在南非，植物料理在当时还非常不为人知。”",
+      "w": [227.22,227.32,227.32,227.52,227.52,227.78,227.78,227.98,227.98,228.24,228.24,228.5,228.5,228.98,228.98,229.34,229.34,230.04,230.04,230.42,230.42,230.82,231.06,231.11,231.08,231.22,231.22,231.38,231.38,232.04,232.04,232.84,232.84,233.32,233.32,233.68,233.68,233.88,233.88,234.04,234.04,234.38,234.66,234.86,234.86,235.12,235.12,235.7,235.7,236.04,236.04,236.9]
+    },
+    {
+      "i": 33,
+      "start": 237.52,
+      "end": 246.98,
+      "en": "Chantel developed her own signature. A signature item is something that is typical of, or strongly associated with, a particular person or place.",
+      "zh": "Chantel 发展出了她自己的 signature。Signature item（招牌产品）是指代表某个人或地方，或与其有强烈关联的事物。",
+      "w": [237.52,238.12,238.12,238.58,238.58,238.84,238.84,239.12,239.12,239.86,240.22,240.56,240.56,241.1,241.1,241.56,241.56,241.88,241.88,242.14,242.14,242.38,242.38,242.48,242.48,242.88,242.88,243.26,243.26,243.58,243.58,244.12,244.12,244.76,244.76,245.14,245.14,245.4,245.4,245.78,245.78,246.36,246.36,246.66,246.66,246.98]
+    },
+    {
+      "i": 34,
+      "start": 247.9,
+      "end": 250.98,
+      "en": "For example, whisky is Scotland's signature drink.",
+      "zh": "例如，威士忌是苏格兰的招牌饮料。",
+      "w": [247.9,248.04,248.04,248.38,248.38,248.98,249.08,249.58,249.58,250.18,250.18,250.54,250.54,250.98]
+    },
+    {
+      "i": 35,
+      "start": 251.68,
+      "end": 254.54,
+      "en": "Chantel's signature is cooking botanical food.",
+      "zh": "Chantel 的招牌是烹饪植物料理。",
+      "w": [251.68,252.28,252.28,252.66,252.66,253.16,253.16,253.48,253.48,254.06,254.06,254.54]
+    },
+    {
+      "i": 36,
+      "start": 255.2,
+      "end": 263.66,
+      "en": "Chantel's Mosaic restaurant is currently at the Château des Tesnières in northern France, where it's listed among the top 200 restaurants in the world.",
+      "zh": "Chantel 的 Mosaic 餐厅目前位于法国北部的 Château des Tesnières，在那里它被列为世界前200家餐厅之一。",
+      "w": [255.2,255.8,255.8,256.28,256.28,256.58,256.58,257.0,257.0,257.34,257.34,257.64,257.64,257.82,257.82,258.03,258.03,258.24,258.24,258.46,258.46,258.67,258.67,258.88,258.88,259.14,259.14,259.4,259.4,259.98,260.22,260.56,260.56,260.78,260.78,261.06,261.06,261.4,261.4,261.64,261.64,261.84,262.4,262.94,262.94,263.16,263.16,263.3,263.3,263.66]
+    },
+    {
+      "i": 37,
+      "start": 264.34,
+      "end": 269.32,
+      "en": "And in 2017 she won the title Best Female Chef in the World.",
+      "zh": "在2017年，她赢得了“世界最佳女厨师”的称号。",
+      "w": [264.34,264.5,264.5,264.66,266.22,266.27,266.24,266.44,266.44,266.62,266.62,267.04,267.04,267.76,267.76,268.14,268.14,268.48,268.48,268.88,268.88,269.04,269.04,269.32]
+    },
+    {
+      "i": 38,
+      "start": 269.9,
+      "end": 275.88,
+      "en": "These achievements have helped Chantel stand out – to be more noticeable and better than other chefs.",
+      "zh": "这些成就帮助 Chantel stand out——也就是比其他厨师更引人注目、更优秀。",
+      "w": [269.9,270.16,270.16,270.66,270.66,271.04,271.04,271.42,271.42,271.88,271.88,272.18,272.18,272.56,272.56,273.2,273.2,273.36,273.36,273.56,273.56,274.1,274.1,274.76,274.76,275.0,275.0,275.24,275.24,275.54,275.54,275.88]
+    },
+    {
+      "i": 39,
+      "start": 276.3,
+      "end": 283.22,
+      "en": "Chantel is still waiting, but surely it's only a matter of time until she wins those coveted Michelin stars.",
+      "zh": "Chantel 仍在等待，但她获得那些梦寐以求的米其林星级肯定只是时间问题。",
+      "w": [276.3,276.9,276.9,277.08,277.08,277.26,277.26,277.7,278.16,278.32,278.32,278.78,278.78,279.2,279.2,279.4,279.4,279.58,279.58,279.72,279.72,279.98,279.98,280.34,280.34,280.82,280.82,281.14,281.14,281.46,281.46,281.74,281.74,282.3,282.3,282.92,282.92,283.22]
+    },
+    {
+      "i": 40,
+      "start": 283.82,
+      "end": 286.8,
+      "en": "Speaking of which, what was the answer to your question, Becca?",
+      "zh": "说到这个，Becca，你那个问题的答案是什么？",
+      "w": [283.82,284.22,284.22,284.46,284.46,284.7,284.92,285.04,285.04,285.22,285.22,285.38,285.38,285.62,285.62,285.8,285.8,285.98,285.98,286.42,286.62,286.8]
+    },
+    {
+      "i": 41,
+      "start": 287.48,
+      "end": 292.44,
+      "en": "Ah yes, I asked you earlier, \"Who is the winner of the most Michelin stars ever?\"",
+      "zh": "啊是的，我之前问过你：'有史以来获得米其林星级最多的人是谁？'",
+      "w": [287.48,287.72,287.72,287.94,288.18,288.44,288.44,288.72,288.72,288.96,288.96,289.26,289.52,289.62,289.62,289.82,289.82,290.0,290.0,290.16,290.16,290.44,290.44,290.6,290.6,290.82,290.82,291.42,291.42,291.9,291.9,292.44]
+    },
+    {
+      "i": 42,
+      "start": 292.44,
+      "end": 297.02,
+      "en": "I said that it was the Italian chef Enrico Bartolini...",
+      "zh": "我说是意大利厨师 Enrico Bartolini……",
+      "w": [292.44,293.06,293.06,293.52,293.52,293.84,293.84,293.98,293.98,294.26,294.26,294.38,294.38,294.8,294.8,295.22,295.82,296.42,296.42,297.02]
+    },
+    {
+      "i": 43,
+      "start": 297.54,
+      "end": 301.14,
+      "en": "...but unfortunately, it was incorrect. Oh no!",
+      "zh": "……但很遗憾，答错了。哦，不！",
+      "w": [297.54,297.68,297.68,298.28,298.78,298.88,298.88,299.3,299.3,299.9,299.9,300.5,300.72,301.14]
+    },
+    {
+      "i": 44,
+      "start": 301.42,
+      "end": 309.52,
+      "en": "The right answer is b) Joël Robuchon, our French chef with 31 stars – the most decorated chef in history.",
+      "zh": "正确答案是 b) Joël Robuchon，这位法国厨师拥有31颗星——是历史上获得荣誉最多的厨师。",
+      "w": [301.42,301.54,301.54,301.82,301.82,302.24,302.24,302.54,302.54,302.92,303.44,303.62,303.62,303.8,303.8,304.4,304.76,304.88,304.88,305.22,305.22,305.6,305.6,305.92,306.5,307.02,307.54,307.66,307.66,307.98,307.98,308.52,308.52,308.86,308.86,309.08,309.08,309.52]
+    },
+    {
+      "i": 45,
+      "start": 310.46,
+      "end": 326.34,
+      "en": "OK. Let's recap the vocabulary we've learned, starting with curriculum vitae, CV, or résumé in American English – a document outlining someone's education, qualifications and work experience, which they prepare when looking for a job.",
+      "zh": "好了。让我们复习一下学过的词汇，首先是 curriculum vitae，简称 CV，在美式英语中是 résumé——即个人简历，是一份概述某人教育背景、资历和工作经验的文件，在找工作时准备。",
+      "w": [310.46,310.78,311.12,311.58,311.58,311.88,311.88,312.1,312.1,312.6,312.6,313.12,313.12,313.72,313.76,314.12,314.12,314.56,314.56,315.16,315.16,315.64,316.28,316.58,316.86,317.0,317.0,317.16,317.16,317.32,317.32,317.66,317.66,318.02,318.02,318.52,319.24,319.5,319.5,319.86,319.86,320.46,320.46,321.04,321.04,321.68,321.68,322.3,322.3,323.02,323.02,323.24,323.24,323.86,324.52,324.62,324.62,324.82,324.82,325.18,325.18,325.42,325.42,325.68,325.68,325.9,325.9,326.04,326.04,326.34]
+    },
+    {
+      "i": 46,
+      "start": 327.04,
+      "end": 330.42,
+      "en": "To aim high means to be ambitious and set high goals.",
+      "zh": "To aim high 意思是很有抱负并设定高目标。",
+      "w": [327.04,327.09,327.04,327.36,327.36,327.74,327.74,328.06,328.06,328.32,328.32,328.48,328.48,329.0,329.0,329.38,329.38,329.66,329.66,329.96,329.96,330.42]
+    },
+    {
+      "i": 47,
+      "start": 331.08,
+      "end": 337.84,
+      "en": "The phrase the worst they can do is say no means 'don't be afraid of trying to do something for the fear of rejection'.",
+      "zh": "短语 the worst they can do is say no 意思是“不要因为害怕被拒绝而不敢尝试去做某事”。",
+      "w": [331.08,331.16,331.16,331.5,331.8,331.88,331.88,332.1,332.1,332.3,332.3,332.46,332.46,332.64,332.64,332.82,332.82,332.96,332.96,333.28,333.86,334.2,334.2,334.8,334.8,334.96,334.96,335.26,335.26,335.44,335.44,335.74,335.74,335.94,335.94,336.1,336.1,336.52,336.52,336.76,336.76,336.88,336.88,337.08,337.08,337.24,337.24,337.84]
+    },
+    {
+      "i": 48,
+      "start": 338.22,
+      "end": 342.4,
+      "en": "If something is catapulted, it's suddenly accelerated or launched forward.",
+      "zh": "如果某事被 catapulted，意思就是它突然被加速或向前推进。",
+      "w": [338.22,338.36,338.36,338.66,338.66,338.9,338.9,339.68,339.8,340.0,340.0,340.26,340.26,340.98,340.98,341.4,341.4,341.88,341.88,342.4]
+    },
+    {
+      "i": 49,
+      "start": 342.84,
+      "end": 346.76,
+      "en": "A signature item is something that a person or place is known for.",
+      "zh": "A signature item 是指某人或某地因其而闻名的事物。",
+      "w": [342.84,342.94,342.94,343.34,343.34,343.86,343.86,344.14,344.14,344.42,344.42,344.74,344.74,344.84,344.84,345.26,345.26,345.52,345.52,345.78,345.78,346.06,346.06,346.34,346.34,346.76]
+    },
+    {
+      "i": 50,
+      "start": 347.12,
+      "end": 352.32,
+      "en": "And finally, to stand out means to be more noticeable or better than other similar things.",
+      "zh": "最后，to stand out 意思是比其他类似的事物更引人注目或更好。",
+      "w": [347.12,347.28,347.28,347.58,347.8,347.86,347.86,348.2,348.2,348.5,348.5,348.78,348.78,349.0,349.0,349.16,349.16,349.44,349.44,349.9,349.9,350.24,350.24,350.62,350.62,351.2,351.2,351.46,351.46,351.82,351.82,352.32]
+    },
+    {
+      "i": 51,
+      "start": 353.36,
+      "end": 363.52,
+      "en": "Once again, our six minutes are up. If you enjoyed this episode, you'll find a quiz and worksheet to practise the vocabulary we've learnt on our website, bbclearningenglish.com.",
+      "zh": "我们的六分钟时间又到了。如果你喜欢本期节目，可以在我们的网站 bbclearningenglish.com 上找到测试和工作单，来练习我们学过的词汇。",
+      "w": [353.36,353.58,353.58,353.88,354.0,354.16,354.16,354.48,354.48,354.78,354.78,354.96,354.96,355.18,355.44,355.64,355.64,355.84,355.84,356.26,356.26,356.48,356.48,356.88,357.0,357.18,357.18,357.36,357.36,357.52,357.52,357.76,357.76,358.04,358.04,358.54,358.54,358.74,358.74,358.98,358.98,359.26,359.26,359.74,359.74,360.2,360.2,360.38,360.38,360.62,360.62,360.76,360.76,361.22,361.7,362.78,362.78,363.52]
+    },
+    {
+      "i": 52,
+      "start": 363.9,
+      "end": 366.26,
+      "en": "See you again soon. But for now, it's goodbye.",
+      "zh": "我们很快会再见。不过现在，要说再见了。",
+      "w": [363.9,364.1,364.1,364.24,364.24,364.42,364.42,364.8,365.18,365.38,365.38,365.52,365.52,365.74,365.84,366.08,366.08,366.26]
+    },
+    {
+      "i": 53,
+      "start": 366.78,
+      "end": 367.26,
+      "en": "Goodbye!",
+      "zh": "再见！",
+      "w": [366.78,367.26]
+    }
+  ],
+  "wSource": "asr",
+  "lemmas": {
+    "accelerated": "accelerate",
+    "achievements": "achievement",
+    "aim": "aim",
+    "aimed": "aim",
+    "amazing": "amaze",
+    "ambitious": "ambitious",
+    "applied": "apply",
+    "associated": "associate",
+    "awards": "award",
+    "chain": "chain",
+    "currently": "currently",
+    "curriculum": "curriculum",
+    "decorate": "decorate",
+    "decorated": "decorate",
+    "dining": "dine",
+    "document": "document",
+    "edible": "edible",
+    "episode": "episode",
+    "episode's": "episode",
+    "especially": "especially",
+    "exclusive": "exclusive",
+    "experience": "experience",
+    "fear": "fear",
+    "feeding": "feed",
+    "female": "female",
+    "flavour": "flavour",
+    "goals": "goal",
+    "graduated": "graduate",
+    "guide": "guide",
+    "herbs": "herb",
+    "history": "history",
+    "incorrect": "incorrect",
+    "inspired": "inspire",
+    "later": "later",
+    "launched": "launch",
+    "learned": "learned",
+    "learning": "learning",
+    "least": "least",
+    "listed": "list",
+    "listing": "list",
+    "lose": "lose",
+    "means": "means",
+    "northern": "northern",
+    "noticeable": "noticeable",
+    "offering": "offer",
+    "outcome": "outcome",
+    "outlining": "outline",
+    "outstanding": "outstanding",
+    "particular": "particular",
+    "passion": "passion",
+    "phrase": "phrase",
+    "phrases": "phrase",
+    "practise": "practise",
+    "prepare": "prepare",
+    "prizes": "prize",
+    "professional": "professional",
+    "qualifications": "qualification",
+    "quiz": "quiz",
+    "recently": "recently",
+    "rejected": "reject",
+    "rejection": "rejection",
+    "relaxing": "relax",
+    "requires": "require",
+    "signature": "signature",
+    "sort": "sort",
+    "strongly": "strongly",
+    "suddenly": "suddenly",
+    "sum": "sum",
+    "surely": "surely",
+    "title": "title",
+    "top": "top",
+    "trade": "trade",
+    "typical": "typical",
+    "unfortunately": "unfortunately",
+    "unknown": "unknown",
+    "useful": "useful",
+    "usual": "usual",
+    "vocabulary": "vocabulary",
+    "whisky": "whisky",
+    "wine": "wine",
+    "winner": "winner",
+    "wins": "win",
+    "won": "win",
+    "worst": "worst"
+  }
+}

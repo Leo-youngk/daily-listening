@@ -29,7 +29,7 @@ export interface ManifestItem {
   duration: number
   cover: string
   audioUrls: Record<AudioQuality, string>
-  /** 中文一律是机器翻译（Gemini），界面需如实标注 */
+  /** 中文一律是机器翻译（Gemini，少数几期由 Claude 补翻，每期用的模型记在数据的 zhModel 字段），界面需如实标注 */
   zhSource: 'mt'
   /** 本集出现的六级词（去重）数 */
   cet6: number

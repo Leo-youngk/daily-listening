@@ -1,0 +1,568 @@
+{
+  "slug": "bbc6min_260409",
+  "title": "The future of food",
+  "speaker": "BBC Learning English",
+  "category": "bbc",
+  "date": "2026-04-09",
+  "duration": 375.42,
+  "cover": "/covers/bbc6min_260409.jpg",
+  "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260409",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260409.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260409.m4a"
+  },
+  "zhSource": "mt",
+  "zhModel": "gemini-3.5-flash",
+  "keywords": [
+    {
+      "term": "food security",
+      "def": "situation where a country has a reliable enough supply of food to feed its population"
+    },
+    {
+      "term": "worst-case scenario",
+      "def": "the worst possible thing that could happen in a particular situation"
+    },
+    {
+      "term": "stark",
+      "def": "obvious, severe, harsh"
+    },
+    {
+      "term": "livestock",
+      "def": "animals and birds that are kept on a farm, such as cows, sheep or chicken"
+    },
+    {
+      "term": "piece of the puzzle",
+      "def": "part of the solution to a question or problem"
+    },
+    {
+      "term": "part of the solution, not the problem",
+      "def": "(idiom) if you are not actively trying to fix a problem, you are helping it continue"
+    }
+  ],
+  "sentences": [
+    {
+      "i": 0,
+      "start": 7.48,
+      "end": 11.14,
+      "en": "Hello, this is 6 Minute English from BBC Learning English.",
+      "zh": "你好，这里是 BBC Learning English 的 6 Minute English。",
+      "w": [7.48,7.98,8.2,8.3,8.3,8.48,8.74,8.94,8.94,9.38,9.38,9.8,9.8,10.2,10.2,10.7,10.7,11.14]
+    },
+    {
+      "i": 1,
+      "start": 11.36,
+      "end": 17.64,
+      "en": "I'm Neil. And I'm Pippa. Many of us don't think twice about where the food in our kitchen comes from.",
+      "zh": "我是 Neil。我是 Pippa。我们很多人都不会去多想厨房里的食物是从哪里来的。",
+      "w": [11.36,11.58,11.58,11.74,12.0,12.24,12.24,12.58,12.58,12.96,13.46,13.64,13.64,13.86,13.86,14.06,14.06,14.38,14.38,14.68,14.68,15.04,15.04,15.46,15.46,15.8,15.8,15.98,15.98,16.22,16.22,16.44,16.44,16.62,16.62,16.94,16.94,17.32,17.32,17.64]
+    },
+    {
+      "i": 2,
+      "start": 18.08,
+      "end": 26.86,
+      "en": "One trip to the supermarket and we can buy anything we want, whether that's fruit grown in South America, tomatoes from Spain or rice flown in from Asia.",
+      "zh": "去一趟超市，我们就能买到任何想要的东西，无论是南美种植的水果、西班牙的西红柿，还是从亚洲空运来的大米。",
+      "w": [18.08,18.32,18.32,18.54,18.54,18.72,18.72,18.84,18.84,19.34,19.34,19.72,19.72,19.86,19.86,20.0,20.0,20.18,20.18,20.58,20.58,20.84,20.84,21.12,21.3,21.48,21.48,21.84,21.84,22.1,22.1,22.36,22.36,22.56,22.56,22.74,22.74,23.26,23.72,24.04,24.04,24.36,24.36,24.78,24.98,25.36,25.36,25.78,25.78,26.1,26.1,26.36,26.36,26.52,26.52,26.86]
+    },
+    {
+      "i": 3,
+      "start": 27.5,
+      "end": 30.04,
+      "en": "Do you know where the food you buy comes from, Neil?",
+      "zh": "Neil，你知道你买的食物是从哪里来的吗？",
+      "w": [27.5,27.74,27.74,27.92,27.92,28.16,28.16,28.36,28.36,28.54,28.54,28.76,28.76,28.98,28.98,29.2,29.2,29.52,29.52,29.82,29.94,30.04]
+    },
+    {
+      "i": 4,
+      "start": 30.04,
+      "end": 37.42,
+      "en": "I try to pay attention and buy stuff that's locally produced, but actually, sometimes I don't really look.",
+      "zh": "我尽量注意去买本地生产的东西，但实际上，有时我并没有真正去看。",
+      "w": [30.04,30.6,30.6,31.06,31.06,31.44,31.44,31.62,31.62,32.04,32.04,32.52,32.52,32.78,32.78,33.18,33.18,33.7,33.7,34.28,34.28,34.92,34.92,35.28,35.28,35.84,35.84,36.54,36.54,36.8,36.8,36.94,36.94,37.16,37.16,37.42]
+    },
+    {
+      "i": 5,
+      "start": 37.7,
+      "end": 46.3,
+      "en": "How about you? I actually have a calendar on my kitchen wall, which tells me which fruits and vegetables are grown at what times of year.",
+      "zh": "你呢？我其实在厨房墙上挂了一个日历，它告诉我一年中什么时间种植什么水果和蔬菜。",
+      "w": [37.7,37.8,37.8,38.04,38.04,38.3,38.84,39.06,39.06,39.48,39.48,39.9,39.9,40.12,40.12,40.42,40.42,40.82,40.82,41.04,41.04,41.42,41.42,41.82,41.82,42.3,42.3,42.64,42.64,43.02,43.02,43.38,43.38,43.68,43.68,43.92,43.92,44.32,44.32,44.68,44.68,44.92,44.92,45.2,45.2,45.48,45.48,45.76,45.76,46.02,46.02,46.3]
+    },
+    {
+      "i": 6,
+      "start": 46.48,
+      "end": 50.76,
+      "en": "The reality is that the supply of fresh food to the UK is fragile.",
+      "zh": "现实情况是，英国的新鲜食物供应非常脆弱。",
+      "w": [46.48,46.66,46.66,46.92,46.92,47.42,47.42,47.74,47.74,47.9,47.9,48.32,48.32,48.58,48.58,48.8,48.8,49.12,49.12,49.34,49.34,49.44,49.44,49.82,49.82,50.24,50.24,50.76]
+    },
+    {
+      "i": 7,
+      "start": 51.36,
+      "end": 61.18,
+      "en": "The UK imports around 40% of its food, and this supply chain can easily be disrupted by wars, shortages and, increasingly, by climate change.",
+      "zh": "英国大约 40% 的食物依赖进口，而这一供应链很容易受到战争、短缺以及日益严重的气候变化的影响。",
+      "w": [51.36,51.58,51.58,51.86,51.86,52.36,52.36,52.78,53.62,53.86,53.86,54.02,54.02,54.36,54.36,54.84,54.84,55.0,55.0,55.4,55.4,55.7,55.7,56.06,56.06,56.4,56.4,56.7,56.7,57.16,57.16,57.48,57.48,57.9,58.22,58.64,58.94,59.2,59.2,59.88,59.88,60.34,60.34,60.72,60.72,61.18]
+    },
+    {
+      "i": 8,
+      "start": 61.9,
+      "end": 75.88,
+      "en": "In fact, the UK government's Department for Environment, Food and Rural Affairs recently reported on the importance of food security – the term for having a reliable enough supply of affordable, healthy food to feed everyone.",
+      "zh": "事实上，英国政府的环境、食品和农村事务部最近报告了粮食安全（food security）的重要性——这个词指的是有足够可靠、负担得起且健康的食物供应来养活每个人。",
+      "w": [61.9,62.04,62.04,62.28,62.54,62.59,62.54,62.82,62.82,63.4,63.4,63.66,63.66,64.14,64.14,64.58,64.76,65.02,65.02,65.32,65.32,65.72,65.72,66.3,66.3,67.06,67.06,67.6,67.6,67.94,67.94,68.06,68.06,68.58,68.58,68.94,68.94,69.42,69.42,70.18,70.58,70.78,70.78,71.02,71.02,71.24,71.24,71.5,71.5,71.64,71.64,72.06,72.06,72.44,72.44,72.98,72.98,73.28,73.28,73.8,74.18,74.4,74.4,74.84,74.84,75.2,75.2,75.42,75.42,75.88]
+    },
+    {
+      "i": 9,
+      "start": 76.24,
+      "end": 81.68,
+      "en": "In this episode, we'll be investigating the issues affecting food production in the UK.",
+      "zh": "在本期节目中，我们将调查影响英国粮食生产的问题。",
+      "w": [76.24,76.42,76.42,76.66,76.66,77.2,77.46,77.54,77.54,77.72,77.72,78.5,78.5,78.94,78.94,79.34,79.34,79.86,79.86,80.38,80.38,80.8,80.8,81.12,81.12,81.28,81.28,81.68]
+    },
+    {
+      "i": 10,
+      "start": 82.18,
+      "end": 92.62,
+      "en": "As usual, we'll learn some useful new vocabulary, and remember – there's a quiz, worksheet and transcript of this episode on our website, bbclearningenglish.com.",
+      "zh": "和往常一样，我们将学习一些有用的新词汇，请记住——我们的网站 bbclearningenglish.com 上有本期节目的测验、工作表和文字稿。",
+      "w": [82.18,82.44,82.44,82.82,83.0,83.22,83.22,83.46,83.46,83.66,83.66,84.0,84.0,84.36,84.36,84.86,84.86,85.4,85.4,85.8,85.8,86.32,86.32,86.5,86.5,86.76,86.92,87.5,87.5,87.8,87.8,88.26,88.26,88.54,88.54,88.72,88.72,89.14,89.14,89.7,89.7,89.86,89.86,90.36,91.42,92.02,92.02,92.62]
+    },
+    {
+      "i": 11,
+      "start": 92.66,
+      "end": 96.3,
+      "en": "But first, of course, Pippa, I have a quiz question for you.",
+      "zh": "不过首先，Pippa，我当然要考你一个问题。",
+      "w": [92.66,92.88,92.88,93.1,93.26,93.31,93.28,93.52,93.7,93.9,93.9,94.1,94.1,94.34,94.34,94.64,94.64,95.0,95.0,95.62,95.62,96.0,96.0,96.3]
+    },
+    {
+      "i": 12,
+      "start": 96.46,
+      "end": 102.14,
+      "en": "I mentioned that Britain imports 40% of its food from other producers, mostly in Europe.",
+      "zh": "我提到过英国 40% 的食物是从其他生产国进口的，其中大部分在欧洲。",
+      "w": [96.46,96.54,96.54,96.88,96.88,97.16,97.16,97.42,97.42,97.98,98.84,99.2,99.2,99.36,99.36,99.68,99.68,99.98,99.98,100.26,100.26,100.74,100.96,101.38,101.38,101.8,101.8,102.14]
+    },
+    {
+      "i": 13,
+      "start": 102.56,
+      "end": 106.7,
+      "en": "But which European country does the UK import the most food from?",
+      "zh": "但是，英国从哪个欧洲国家进口的食物最多呢？",
+      "w": [102.56,102.8,102.8,103.12,103.12,103.76,103.76,104.22,104.22,104.54,104.54,104.7,104.7,105.04,105.04,105.6,105.6,105.84,105.84,106.06,106.06,106.38,106.38,106.7]
+    },
+    {
+      "i": 14,
+      "start": 107.22,
+      "end": 110.8,
+      "en": "Is it: a) France, b) the Netherlands, or c) Ireland?",
+      "zh": "是：a) 法国，b) 荷兰，还是 c) 爱尔兰？",
+      "w": [107.22,107.3,107.3,107.44,107.44,107.72,107.86,108.14,108.72,108.86,109.02,109.18,109.18,109.48,109.78,110.0,110.0,110.3,110.46,110.8]
+    },
+    {
+      "i": 15,
+      "start": 111.22,
+      "end": 118.66,
+      "en": "Hmm. I've seen the Netherlands on a lot of food packaging in the UK, so I'm going to say b) the Netherlands.",
+      "zh": "嗯。我在英国的很多食品包装上都看到过荷兰，所以我要选 b) 荷兰。",
+      "w": [111.22,111.82,111.82,112.42,112.42,112.74,112.74,113.0,113.0,113.4,113.4,113.86,113.86,114.02,114.02,114.34,114.34,114.84,114.84,115.26,115.26,115.66,115.66,116.04,116.04,116.18,116.18,116.48,116.68,116.82,116.82,117.16,117.16,117.26,117.26,117.31,117.28,117.52,117.52,117.88,118.14,118.3,118.3,118.66]
+    },
+    {
+      "i": 16,
+      "start": 119.16,
+      "end": 122.3,
+      "en": "OK. Well, we'll find out if you're right later in the programme.",
+      "zh": "好的。稍后在节目中，我们就会知道你是否答对了。",
+      "w": [119.16,119.54,119.68,119.94,120.1,120.3,120.3,120.5,120.5,120.68,120.68,120.86,120.86,121.04,121.04,121.22,121.22,121.58,121.58,121.8,121.8,121.92,121.92,122.3]
+    },
+    {
+      "i": 17,
+      "start": 123.28,
+      "end": 139.52,
+      "en": "According to the UK government's recent report, there are many issues affecting Britain's food supply: geopolitical conflicts like those in Ukraine and Iran, droughts and water shortages, loss of biodiversity caused by climate change... the list goes on and on.",
+      "zh": "根据英国政府最近的报告，影响英国食物供应的问题有很多：比如乌克兰和伊朗的地缘政治冲突、干旱和水资源短缺、气候变化导致的生物多样性丧失……这样的例子不胜枚举。",
+      "w": [123.28,123.36,123.36,123.64,123.64,123.76,123.76,124.14,124.14,124.78,124.78,125.0,125.0,125.5,125.94,125.99,125.96,126.1,126.1,126.3,126.3,126.72,126.72,127.26,127.26,127.94,127.94,128.14,128.14,128.6,129.3,129.72,129.72,130.4,130.4,130.72,130.72,130.98,130.98,131.18,131.18,131.56,131.56,131.8,131.8,132.14,132.96,133.2,133.2,133.36,133.36,133.68,133.68,134.28,134.86,134.92,134.92,135.3,135.3,136.16,136.16,136.8,136.8,137.1,137.1,137.42,137.42,137.78,138.32,138.48,138.48,138.66,138.66,138.9,138.9,139.12,139.12,139.24,139.24,139.52]
+    },
+    {
+      "i": 18,
+      "start": 140.08,
+      "end": 147.3,
+      "en": "Here, climate reporter Mark Poynting discusses the report's conclusions with BBC Radio 4's The Food Programme.",
+      "zh": "在这里，气候记者 Mark Poynting 与 BBC Radio 4 的 The Food Programme 讨论了该报告的结论。",
+      "w": [140.08,140.38,140.8,140.92,140.92,141.58,141.58,142.08,142.08,142.68,142.72,143.48,143.48,143.76,143.76,144.22,144.22,144.64,144.64,145.06,145.06,145.42,145.42,145.82,145.82,146.36,146.36,146.62,146.62,146.84,146.84,147.3]
+    },
+    {
+      "i": 19,
+      "start": 147.7,
+      "end": 158.0,
+      "en": "And it really draws on scientific research to come up with what it calls a reasonable worst-case scenario for how biodiversity loss could affect UK security.",
+      "zh": "它确实利用了科学研究，提出了所谓的“合理最坏情况”，即生物多样性丧失将如何影响英国的安全。",
+      "w": [147.7,147.78,147.78,147.9,147.9,148.14,148.14,148.48,148.48,148.84,148.84,149.46,149.46,150.18,150.18,150.76,150.76,150.94,150.94,151.1,151.1,151.28,151.28,151.46,151.46,151.62,151.62,151.98,152.38,152.54,152.54,153.04,153.04,153.6,153.6,154.0,154.0,154.44,154.44,154.76,154.76,155.4,155.4,155.98,155.98,156.54,156.54,156.92,156.92,157.2,157.2,158.0]
+    },
+    {
+      "i": 20,
+      "start": 158.56,
+      "end": 160.86,
+      "en": "And its conclusions are really quite stark.",
+      "zh": "它的结论真的非常严峻。",
+      "w": [158.56,158.74,158.74,158.94,158.94,159.4,159.4,159.7,159.7,160.08,160.08,160.32,160.32,160.86]
+    },
+    {
+      "i": 21,
+      "start": 161.24,
+      "end": 169.22,
+      "en": "The first line of the report says, \"Global ecosystem degradation and collapse threatens the UK's national security.\"",
+      "zh": "报告的第一行写道：“全球生态系统的退化和崩溃威胁着英国的国家安全。”",
+      "w": [161.24,161.36,161.36,161.58,161.58,161.9,161.9,162.06,162.06,162.16,162.16,162.5,162.5,162.96,162.96,163.7,163.7,164.36,164.36,165.32,165.32,165.7,165.7,166.16,166.16,167.12,167.12,167.58,167.58,168.2,168.2,168.46,168.46,169.22]
+    },
+    {
+      "i": 22,
+      "start": 169.6,
+      "end": 174.8,
+      "en": "The report describes a worst-case scenario where Britain runs out of food.",
+      "zh": "报告描述了一种最坏的情况，即英国食物耗尽。",
+      "w": [169.6,169.84,169.84,170.22,170.22,170.7,170.7,171.04,171.04,171.76,171.76,172.44,172.44,173.0,173.0,173.32,173.32,173.68,173.68,174.12,174.12,174.4,174.4,174.8]
+    },
+    {
+      "i": 23,
+      "start": 175.1,
+      "end": 180.72,
+      "en": "A worst-case scenario is the worst possible thing that could happen in a particular situation.",
+      "zh": "“最坏情况”（worst-case scenario）是指在特定情况下可能发生的最糟糕的事情。",
+      "w": [175.1,175.36,175.36,175.98,175.98,176.54,176.54,176.92,176.92,177.08,177.08,177.48,177.48,177.94,177.94,178.32,178.32,178.6,178.6,178.74,178.74,179.08,179.08,179.34,179.34,179.46,179.46,179.88,179.88,180.72]
+    },
+    {
+      "i": 24,
+      "start": 181.18,
+      "end": 187.64,
+      "en": "Mark says the report's conclusions are stark – an adjective which in this case means obvious or severe.",
+      "zh": "Mark 说报告的结论是 stark——在这个语境中，这个形容词的意思是显而易见的或严峻的。",
+      "w": [181.18,181.4,181.4,181.72,181.72,181.98,181.98,182.44,182.44,182.84,182.84,183.2,183.2,183.68,184.12,184.22,184.22,184.66,184.66,184.98,184.98,185.14,185.14,185.36,185.36,185.64,185.64,186.02,186.02,186.68,186.68,187.14,187.14,187.64]
+    },
+    {
+      "i": 25,
+      "start": 188.12,
+      "end": 191.92,
+      "en": "Another problem with food security relates to climate change.",
+      "zh": "粮食安全的另一个问题与气候变化有关。",
+      "w": [188.12,188.44,188.44,188.84,188.84,189.12,189.12,189.4,189.4,190.04,190.04,190.6,190.6,190.94,190.94,191.34,191.34,191.92]
+    },
+    {
+      "i": 26,
+      "start": 192.56,
+      "end": 203.84,
+      "en": "Carbon emissions from food production make up around a third of all greenhouse gases, from the diesel used to drive tractors, to fertilisers, to cows and sheep producing methane.",
+      "zh": "粮食生产产生的碳排放约占所有温室气体的三分之一，从驱动拖拉机的柴油、化肥，到产生甲烷的牛羊。",
+      "w": [192.56,192.61,192.56,193.04,193.04,193.48,193.48,193.9,193.9,194.42,194.42,194.8,194.8,195.02,195.02,195.42,195.42,195.7,195.7,195.96,195.96,196.28,196.28,196.68,196.68,197.24,197.24,197.76,198.06,198.34,198.34,198.5,198.5,198.82,198.82,199.16,199.16,199.36,199.36,199.64,199.64,200.26,200.26,200.58,200.58,201.42,201.88,201.98,201.98,202.24,202.24,202.52,202.52,202.78,202.78,203.38,203.38,203.84]
+    },
+    {
+      "i": 27,
+      "start": 204.8,
+      "end": 208.66,
+      "en": "Emma Pinchbeck is the chief executive of the UK's Climate Change Committee.",
+      "zh": "Emma Pinchbeck 是英国 Climate Change Committee 的首席执行官。",
+      "w": [204.8,205.0,205.0,205.56,205.56,205.84,205.84,206.0,206.0,206.18,206.18,206.64,206.64,207.02,207.02,207.14,207.14,207.62,207.62,207.86,207.86,208.26,208.26,208.66]
+    },
+    {
+      "i": 28,
+      "start": 209.14,
+      "end": 212.92,
+      "en": "She spoke about this problem with BBC Radio 4's The Food Programme.",
+      "zh": "她在接受 BBC Radio 4 的 The Food Programme 采访时谈到了这个问题。",
+      "w": [209.14,209.34,209.34,209.58,209.58,209.86,209.86,210.04,210.04,210.3,210.3,210.7,210.7,211.02,211.02,211.42,211.42,211.98,211.98,212.2,212.2,212.42,212.42,212.92]
+    },
+    {
+      "i": 29,
+      "start": 213.3,
+      "end": 218.22,
+      "en": "The biggest chunk of emissions from agriculture comes from simply having livestock on the land.",
+      "zh": "农业排放的最大份额仅仅来自于土地上饲养的牲畜。",
+      "w": [213.3,213.46,213.46,213.92,213.92,214.26,214.26,214.58,214.58,214.98,214.98,215.32,215.32,215.74,215.74,216.08,216.08,216.4,216.4,216.82,216.82,217.22,217.22,217.64,217.64,217.84,217.84,217.94,217.94,218.22]
+    },
+    {
+      "i": 30,
+      "start": 218.82,
+      "end": 221.04,
+      "en": "That's the bit of the puzzle that we need to think about going forward.",
+      "zh": "这是我们未来需要思考的关键一环。",
+      "w": [218.82,219.06,219.06,219.22,219.22,219.34,219.34,219.46,219.46,219.56,219.56,219.74,219.74,219.88,219.88,219.98,219.98,220.1,220.1,220.18,220.18,220.32,220.32,220.5,220.5,220.68,220.68,221.04]
+    },
+    {
+      "i": 31,
+      "start": 221.7,
+      "end": 228.2,
+      "en": "And in the way that we've thought about it, for every cow or sheep we take off the land, we put on something else.",
+      "zh": "按照我们的设想，我们每从土地上减少一头牛或一只羊，就要增加一些其他东西。",
+      "w": [221.7,221.8,221.8,222.14,222.14,222.32,222.32,222.54,222.54,222.7,222.7,222.94,222.94,223.12,223.12,223.4,223.4,223.8,224.36,224.74,224.74,225.14,225.14,225.36,225.36,225.48,225.48,225.68,225.68,225.86,225.86,226.06,226.06,226.26,226.26,226.48,226.48,226.8,227.06,227.22,227.22,227.4,227.4,227.56,227.56,227.86,227.86,228.2]
+    },
+    {
+      "i": 32,
+      "start": 228.7,
+      "end": 234.0,
+      "en": "And what that does overall is it makes farmers and landowners part of the solution to climate change, not the problem.",
+      "zh": "总的来说，这样做能让农民和土地所有者成为气候变化解决方案的一部分，而不是问题本身。",
+      "w": [228.7,228.78,228.78,228.9,228.9,229.06,229.06,229.24,229.24,229.62,229.62,229.8,229.8,229.9,229.9,230.12,230.12,230.56,230.56,230.84,230.84,231.22,231.22,231.54,231.54,231.66,231.66,231.78,231.78,232.14,232.14,232.74,232.74,232.96,232.96,233.34,233.46,233.56,233.56,233.66,233.66,234.0]
+    },
+    {
+      "i": 33,
+      "start": 234.74,
+      "end": 241.14,
+      "en": "Livestock – that's farm animals such as cattle, sheep and pigs – contribute most of the carbon emissions from agriculture.",
+      "zh": "牲畜（livestock）——即牛、羊、猪等农场动物——贡献了农业中大部分的碳排放。",
+      "w": [234.74,235.3,235.48,235.72,235.72,235.94,235.94,236.26,236.48,236.56,236.56,236.84,236.84,237.24,237.48,237.66,237.66,237.86,237.86,238.16,238.5,238.82,238.82,239.3,239.3,239.54,239.54,239.64,239.64,239.92,239.92,240.3,240.3,240.64,240.64,241.14]
+    },
+    {
+      "i": 34,
+      "start": 241.78,
+      "end": 251.12,
+      "en": "Moving towards a sustainable food supply involves reducing the amount of meat and dairy we eat in favour of non-animal protein such as beans and lentils.",
+      "zh": "走向可持续的食物供应意味着减少我们食用的肉类和乳制品，转而食用非动物蛋白，如豆类和小扁豆。",
+      "w": [241.78,242.06,242.06,242.54,242.54,242.8,242.8,243.28,243.28,243.76,243.76,244.24,244.24,244.94,244.94,245.54,245.54,245.82,245.82,246.04,246.04,246.22,246.22,246.46,246.46,246.74,246.74,247.04,247.04,247.3,247.3,247.52,247.52,247.76,247.76,247.94,247.94,248.2,248.2,248.92,248.92,249.42,249.72,249.92,249.92,250.18,250.18,250.48,250.48,250.7,250.7,251.12]
+    },
+    {
+      "i": 35,
+      "start": 251.72,
+      "end": 257.48,
+      "en": "Encouraging farmers and consumers to move away from meat is a piece of the puzzle, according to Emma.",
+      "zh": "Emma 认为，鼓励农民和消费者减少肉类消费是解决问题的一环。",
+      "w": [251.72,252.26,252.26,252.74,252.74,253.04,253.04,253.54,253.54,253.9,253.9,254.22,254.22,254.48,254.48,254.7,254.7,255.04,255.04,255.32,255.32,255.48,255.48,255.74,255.74,256.0,256.0,256.14,256.14,256.48,256.6,256.92,256.92,257.36,257.36,257.48]
+    },
+    {
+      "i": 36,
+      "start": 258.03,
+      "end": 265.98,
+      "en": "A piece of the puzzle means a part of the solution to a problem – in this case, the twin problems of food security and climate change.",
+      "zh": "“解决问题的一环”（a piece of the puzzle）是指问题解决方案的一部分——在这种情况下，是指粮食安全和气候变化这两个双重问题。",
+      "w": [258.03,258.3,258.3,258.54,258.54,258.7,258.7,258.84,258.84,259.14,259.14,259.52,259.52,259.78,259.78,259.98,259.98,260.18,260.18,260.28,260.28,260.62,260.62,260.92,260.92,261.06,261.06,261.34,261.56,261.76,261.76,262.0,262.0,262.26,262.26,262.6,262.6,262.94,262.94,263.42,263.42,263.8,263.8,264.06,264.06,264.54,264.54,265.06,265.06,265.48,265.48,265.98]
+    },
+    {
+      "i": 37,
+      "start": 266.42,
+      "end": 270.34,
+      "en": "Emma says it's important to think again about how farmland is used.",
+      "zh": "Emma 表示，重新思考农田的使用方式非常重要。",
+      "w": [266.42,266.54,266.54,266.84,266.84,267.14,267.14,267.48,267.48,267.8,267.8,268.04,268.04,268.44,268.44,268.92,268.92,269.24,269.24,269.62,269.62,269.92,269.92,270.34]
+    },
+    {
+      "i": 38,
+      "start": 270.72,
+      "end": 277.36,
+      "en": "For every cow or sheep taken off the land, something else, such as a fruit tree or vegetable crop, is put in its place.",
+      "zh": "每从土地上减少一头牛或一只羊，就会在原处种植其他东西，比如果树或蔬菜作物。",
+      "w": [270.72,270.9,270.9,271.18,271.18,271.52,271.52,271.76,271.76,272.06,272.06,272.42,272.42,272.68,272.68,272.86,272.86,273.1,273.42,273.62,273.62,274.02,274.2,274.44,274.44,274.6,274.6,274.74,274.74,274.94,274.94,275.22,275.22,275.48,275.48,275.86,275.86,276.24,276.3,276.52,276.52,276.72,276.72,276.88,276.88,277.0,277.0,277.36]
+    },
+    {
+      "i": 39,
+      "start": 278.0,
+      "end": 287.4,
+      "en": "That way, farmers become part of the solution, not the problem – an idiom meaning that if you are not actively trying to fix a problem, you are helping it continue.",
+      "zh": "这样一来，农民就成为了解决方案的一部分，而不是问题本身（part of the solution, not the problem）——这是一个成语，意思是如果你不积极尝试解决问题，你就是在助长问题。",
+      "w": [278.0,278.36,278.36,278.62,278.82,279.06,279.06,279.46,279.46,279.82,279.82,280.02,280.02,280.16,280.16,280.68,280.92,281.16,281.16,281.34,281.34,281.68,281.88,282.12,282.12,282.48,282.48,282.76,282.76,283.06,283.06,283.22,283.22,283.34,283.34,283.48,283.48,283.76,283.76,284.3,284.3,284.7,284.7,284.88,284.88,285.12,285.12,285.34,285.34,285.68,285.68,286.12,286.12,286.24,286.24,286.54,286.54,286.84,286.84,287.4]
+    },
+    {
+      "i": 40,
+      "start": 287.74,
+      "end": 293.7,
+      "en": "Lots of ideas to chew over there, Neil. But now, isn't it time you revealed the answer to your question?",
+      "zh": "有很多值得深思的想法呢，Neil。不过现在，是不是该公布你问题的答案了？",
+      "w": [287.74,288.0,288.0,288.22,288.22,288.56,288.56,288.86,288.86,289.1,289.1,289.52,289.52,289.78,289.9,290.04,290.28,290.46,290.46,290.84,291.22,291.38,291.38,291.58,291.58,291.84,291.84,292.06,292.06,292.36,292.36,292.6,292.6,292.78,292.78,293.06,293.06,293.26,293.26,293.7]
+    },
+    {
+      "i": 41,
+      "start": 293.98,
+      "end": 304.48,
+      "en": "My question was, \"Which European country does the UK import the most food from?\" And you said b) the Netherlands… and you were absolutely correct, Pippa.",
+      "zh": "我的问题是：“英国从哪个欧洲国家进口的食物最多？”你说是 b) 荷兰……你完全正确，Pippa。",
+      "w": [293.98,294.14,294.14,294.44,294.44,294.84,295.32,295.44,295.44,296.02,296.02,296.52,296.52,296.86,296.86,297.04,297.04,297.42,297.42,298.02,298.02,298.26,298.26,298.6,298.6,299.06,299.06,299.4,299.64,299.84,299.84,300.14,300.14,300.46,300.46,300.98,300.98,301.4,301.4,301.8,302.18,302.58,302.58,303.1,303.1,303.24,303.24,303.64,303.64,304.14,304.24,304.48]
+    },
+    {
+      "i": 42,
+      "start": 304.78,
+      "end": 312.62,
+      "en": "It is the Netherlands. The UK imports £7.6 billion worth of imports, especially vegetables and dairy.",
+      "zh": "就是荷兰。英国从那里进口了价值 76 亿英镑的商品，尤其是蔬菜和乳制品。",
+      "w": [304.78,304.98,304.98,305.12,305.12,305.26,305.26,305.62,306.1,306.22,306.22,306.54,306.54,307.0,308.5,308.9,308.9,309.68,309.68,309.86,309.86,310.28,310.66,311.08,311.08,311.68,311.68,312.28,312.28,312.62]
+    },
+    {
+      "i": 43,
+      "start": 313.3,
+      "end": 323.84,
+      "en": "OK. Let's recap the vocabulary we've learned, starting with food security – the situation where a country has a reliable enough supply of food to feed its population.",
+      "zh": "好了。让我们复习一下学过的词汇，首先是粮食安全（food security）——指一个国家有足够可靠的食物供应来养活其人口的情况。",
+      "w": [313.3,313.76,313.84,314.16,314.16,314.48,314.48,314.72,314.72,315.28,315.28,315.7,315.7,315.96,316.1,316.5,316.5,316.84,316.84,317.18,317.18,317.94,318.3,318.62,318.62,319.06,319.06,319.58,319.58,319.74,319.74,320.04,320.04,320.38,320.38,320.54,320.54,321.02,321.02,321.44,321.44,321.92,321.92,322.12,322.12,322.38,322.38,322.66,322.66,322.96,322.96,323.18,323.18,323.84]
+    },
+    {
+      "i": 44,
+      "start": 324.2,
+      "end": 330.38,
+      "en": "The worst-case scenario is the worst possible thing that could happen in a particular situation.",
+      "zh": "最坏情况（worst-case scenario）是指在特定情况下可能发生的最糟糕的事情。",
+      "w": [324.2,324.46,324.46,325.3,325.3,325.88,325.88,326.36,326.36,326.56,326.56,326.9,326.9,327.36,327.36,327.74,327.74,328.06,328.06,328.24,328.24,328.64,328.64,328.9,328.9,329.04,329.04,329.5,329.5,330.38]
+    },
+    {
+      "i": 45,
+      "start": 330.86,
+      "end": 335.38,
+      "en": "The adjective stark has several meanings, including obvious and severe.",
+      "zh": "形容词 stark 有几种含义，包括显而易见的和严峻的。",
+      "w": [330.86,330.96,330.96,331.38,331.38,331.88,331.88,332.14,332.14,332.52,332.52,332.84,333.3,333.7,333.7,334.24,334.24,334.92,334.92,335.38]
+    },
+    {
+      "i": 46,
+      "start": 335.94,
+      "end": 341.34,
+      "en": "Livestock are animals and birds that are kept on a farm, such as cows, sheep or chickens.",
+      "zh": "牲畜（livestock）是指在农场饲养的动物和家禽，如牛、羊或鸡。",
+      "w": [335.94,336.46,336.46,336.8,336.8,337.2,337.2,337.6,337.6,337.9,337.9,338.12,338.12,338.22,338.22,338.38,338.38,338.6,338.6,338.74,338.74,339.0,339.3,339.52,339.52,339.72,339.72,340.06,340.28,340.6,340.6,340.96,340.96,341.34]
+    },
+    {
+      "i": 47,
+      "start": 341.76,
+      "end": 345.98,
+      "en": "The phrase a piece of the puzzle means a part of the solution to a problem.",
+      "zh": "短语 a piece of the puzzle 的意思是解决问题的一环。",
+      "w": [341.76,342.04,342.04,342.34,342.34,342.6,342.6,342.8,342.8,342.96,342.96,343.1,343.1,343.42,343.42,343.86,343.86,344.22,344.22,344.46,344.46,344.66,344.66,344.8,344.8,345.14,345.14,345.48,345.48,345.64,345.64,345.98]
+    },
+    {
+      "i": 48,
+      "start": 346.32,
+      "end": 355.44,
+      "en": "And finally, the idiom be part of the solution, not the problem means that if you are not actively trying to fix a problem, you are helping it continue.",
+      "zh": "最后，成语 be part of the solution, not the problem 的意思是，如果你不积极尝试解决问题，你就是在助长问题。",
+      "w": [346.32,346.48,346.48,346.84,347.16,347.36,347.36,347.82,348.08,348.18,348.18,348.44,348.44,348.62,348.62,348.76,348.76,349.22,349.4,349.68,349.68,349.88,349.88,350.32,350.48,350.84,350.84,351.08,351.08,351.24,351.24,351.42,351.42,351.6,351.6,351.92,351.92,352.36,352.36,352.74,352.74,352.94,352.94,353.16,353.16,353.4,353.4,353.74,353.98,354.26,354.26,354.38,354.38,354.68,354.68,354.96,354.96,355.44]
+    },
+    {
+      "i": 49,
+      "start": 356.12,
+      "end": 366.04,
+      "en": "Once again, our six minutes are up, but if this topic has made you hungry for more, why not check out our food topic page on our website, bbclearningenglish.com?",
+      "zh": "我们的六分钟时间又到了，但如果这个话题让你意犹未尽，为什么不去我们的网站 bbclearningenglish.com 看看我们的食物专题页面呢？",
+      "w": [356.12,356.38,356.38,356.74,356.92,357.14,357.14,357.38,357.38,357.64,357.64,357.84,357.84,358.04,358.16,358.34,358.34,358.5,358.5,358.74,358.74,359.02,359.02,359.24,359.24,359.48,359.48,359.68,359.68,359.98,359.98,360.22,360.22,360.58,360.82,360.96,360.96,361.1,361.1,361.34,361.34,361.58,361.58,361.88,361.88,362.22,362.22,362.66,362.66,362.96,362.96,363.22,363.22,363.38,363.38,363.86,364.3,365.4,365.4,366.04]
+    },
+    {
+      "i": 50,
+      "start": 366.24,
+      "end": 367.38,
+      "en": "Bye for now! Goodbye!",
+      "zh": "再见！再见！",
+      "w": [366.24,366.46,366.46,366.6,366.6,366.82,367.08,367.38]
+    }
+  ],
+  "wSource": "asr",
+  "lemmas": {
+    "according": "accord",
+    "actually": "actually",
+    "affairs": "affair",
+    "affect": "affect",
+    "affecting": "affect",
+    "agriculture": "agriculture",
+    "beans": "bean",
+    "billion": "billion",
+    "calendar": "calendar",
+    "carbon": "carbon",
+    "cattle": "cattle",
+    "caused": "cause",
+    "chain": "chain",
+    "chew": "chew",
+    "chickens": "chicken",
+    "collapse": "collapse",
+    "committee": "committee",
+    "conclusions": "conclusion",
+    "conflicts": "conflict",
+    "consumers": "consumer",
+    "continue": "continue",
+    "contribute": "contribute",
+    "course": "course",
+    "cow": "cow",
+    "cows": "cow",
+    "crop": "crop",
+    "dairy": "dairy",
+    "degradation": "degradation",
+    "department": "department",
+    "describes": "describe",
+    "diesel": "diesel",
+    "disrupted": "disrupt",
+    "droughts": "drought",
+    "ecosystem": "ecosystem",
+    "emissions": "emission",
+    "encouraging": "encourage",
+    "environment": "environment",
+    "episode": "episode",
+    "especially": "especially",
+    "executive": "executive",
+    "farmers": "farmer",
+    "favour": "favour",
+    "feed": "feed",
+    "fix": "fix",
+    "fragile": "fragile",
+    "fresh": "fresh",
+    "global": "global",
+    "government's": "government",
+    "greenhouse": "greenhouse",
+    "idiom": "idiom",
+    "import": "import",
+    "importance": "importance",
+    "imports": "import",
+    "including": "include",
+    "increasingly": "increasingly",
+    "investigating": "investigate",
+    "involves": "involve",
+    "issues": "issue",
+    "later": "later",
+    "learned": "learned",
+    "learning": "learning",
+    "line": "line",
+    "list": "list",
+    "loss": "loss",
+    "means": "means",
+    "mostly": "mostly",
+    "national": "national",
+    "obvious": "obvious",
+    "overall": "overall",
+    "packaging": "package",
+    "particular": "particular",
+    "phrase": "phrase",
+    "population": "population",
+    "produced": "produce",
+    "producers": "producer",
+    "producing": "produce",
+    "production": "production",
+    "protein": "protein",
+    "puzzle": "puzzle",
+    "quiz": "quiz",
+    "reality": "reality",
+    "reasonable": "reasonable",
+    "recent": "recent",
+    "recently": "recently",
+    "reducing": "reduce",
+    "relates": "relate",
+    "reliable": "reliable",
+    "reporter": "reporter",
+    "research": "research",
+    "revealed": "reveal",
+    "rural": "rural",
+    "scientific": "scientific",
+    "security": "security",
+    "severe": "severe",
+    "shortages": "shortage",
+    "situation": "situation",
+    "solution": "solution",
+    "stuff": "stuff",
+    "supply": "supply",
+    "term": "term",
+    "thought": "thought",
+    "threatens": "threaten",
+    "tomatoes": "tomato",
+    "topic": "topic",
+    "towards": "towards",
+    "tractors": "tractor",
+    "twin": "twin",
+    "used": "used",
+    "useful": "useful",
+    "usual": "usual",
+    "vocabulary": "vocabulary",
+    "wars": "war",
+    "worst": "worst"
+  }
+}

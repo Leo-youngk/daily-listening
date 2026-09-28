@@ -1,0 +1,481 @@
+{
+  "slug": "bbc6min_241017",
+  "title": "Tech that refuses to die",
+  "speaker": "BBC Learning English",
+  "category": "bbc",
+  "date": "2024-10-17",
+  "duration": 373.58,
+  "cover": "/covers/bbc6min_241017.jpg",
+  "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-241017",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_241017.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_241017.m4a"
+  },
+  "zhSource": "mt",
+  "zhModel": "gemini-3.5-flash-lite",
+  "keywords": [
+    {
+      "term": "obsolete",
+      "def": "no longer in use, having been replaced by something newer, better or more fashionable"
+    },
+    {
+      "term": "if it ain’t broke, don’t fix it",
+      "def": "(idiom) used to say that if something is working satisfactorily, there is no reason to try to change it"
+    },
+    {
+      "term": "clockwork",
+      "def": "machinery using metal springs and wheels which move when wound up with a key"
+    },
+    {
+      "term": "QWERTY",
+      "def": "the traditional typewriter arrangement of keys in which the top line begins with the letters q,w,e,r, t and y"
+    },
+    {
+      "term": "verbatim",
+      "def": "using exactly the same words as were originally used"
+    },
+    {
+      "term": "stick with",
+      "def": "continue using or doing something"
+    }
+  ],
+  "sentences": [
+    {
+      "i": 0,
+      "start": 4.68,
+      "end": 5.36,
+      "en": "Hello.",
+      "zh": "你好。",
+      "w": [4.68,5.36]
+    },
+    {
+      "i": 1,
+      "start": 8.59,
+      "end": 11.37,
+      "en": "This is 6 Minute English from BBC Learning English.",
+      "zh": "这里是BBC英语教学的6 Minute English。",
+      "w": [8.59,8.75,8.75,8.95,9.23,9.43,9.43,9.83,9.83,10.13,10.13,10.55,10.55,10.99,10.99,11.37]
+    },
+    {
+      "i": 2,
+      "start": 11.61,
+      "end": 17.05,
+      "en": "I’m Phil. And I’m Georgie. The exciting thing about technology is that it’s always changing.",
+      "zh": "我是Phil。我是Georgie。科技最令人兴奋的地方在于它总是在不断变化。",
+      "w": [11.61,11.81,11.81,12.05,12.29,12.45,12.45,12.67,12.67,13.01,13.49,13.57,13.57,13.99,13.99,14.39,14.39,14.63,14.63,15.21,15.21,15.61,15.61,15.75,15.75,16.13,16.13,16.45,16.45,17.05]
+    },
+    {
+      "i": 3,
+      "start": 17.53,
+      "end": 23.05,
+      "en": "Can you remember when computer floppy disks, hand-held Game Boys, and fax machines were in fashion?",
+      "zh": "你还记得电脑软盘、手掌游戏机Game Boy和传真机风靡一时的时代吗？",
+      "w": [17.53,17.61,17.61,17.73,17.73,18.09,18.09,18.39,18.39,18.95,18.95,19.35,19.35,19.87,19.87,20.57,20.57,20.92,20.92,21.27,21.27,21.55,21.55,21.89,21.89,22.35,22.35,22.57,22.57,22.73,22.73,23.05]
+    },
+    {
+      "i": 4,
+      "start": 23.95,
+      "end": 27.07,
+      "en": "Do you still have a Walkman cassette player from the 1980s?",
+      "zh": "你现在还留着20世纪80年代的Walkman磁带播放器吗？",
+      "w": [23.95,24.11,24.11,24.31,24.31,24.57,24.57,24.77,24.77,24.99,24.99,25.43,25.43,25.77,25.77,26.13,26.13,26.31,26.31,26.47,26.47,27.07]
+    },
+    {
+      "i": 5,
+      "start": 27.73,
+      "end": 37.53,
+      "en": "Today technology progresses so quickly that old tech soon becomes obsolete, no longer in use having been replaced by something better or more fashionable.",
+      "zh": "如今科技发展如此之快，以至于旧科技很快就会过时，也就是被更好或更时尚的东西取代，不再被使用。",
+      "w": [27.73,28.11,28.53,28.81,28.81,29.35,29.35,29.83,29.83,30.27,30.27,30.63,30.63,30.91,30.91,31.21,31.21,31.59,31.59,32.13,32.13,32.83,33.43,33.65,33.65,33.89,33.89,34.13,34.13,34.45,34.45,34.73,34.73,35.01,35.01,35.47,35.47,35.75,35.75,36.03,36.03,36.49,36.49,36.95,36.95,37.13,37.13,37.53]
+    },
+    {
+      "i": 6,
+      "start": 38.63,
+      "end": 60.23,
+      "en": "So, you might be surprised to hear that until recently the government of Japan still used three and-a-half inch floppy disks to store official documents; that around the world, music cassettes and Walkmans are making a comeback; and that even the world-famous Swiss CERN physics laboratory uses old-fashioned magnetic tape reels to record its data.",
+      "zh": "所以，听到以下这些消息你可能会感到惊讶：直到最近，日本政府仍在使用3.5英寸软盘来存储官方文件；在世界各地，音乐磁带和Walkman正在卷土重来；甚至世界著名的瑞士CERN物理实验室也在使用老式的磁带盘来记录数据。",
+      "w": [38.63,38.77,38.93,39.11,39.11,39.41,39.41,39.65,39.65,40.09,40.09,40.37,40.37,40.49,40.49,40.67,40.67,40.99,40.99,41.53,41.53,41.75,41.75,42.11,42.11,42.37,42.37,42.93,42.93,43.73,43.73,44.09,44.09,44.49,44.49,44.89,44.89,45.07,45.07,45.33,45.33,45.79,45.79,46.03,46.03,46.33,46.33,46.71,46.71,47.37,47.85,48.25,48.25,48.61,48.61,48.79,48.79,49.09,49.09,49.61,49.61,50.07,50.07,50.33,50.33,50.79,50.79,51.01,51.01,51.23,51.23,51.45,51.45,51.77,52.51,52.67,52.67,52.77,52.77,53.09,53.09,53.27,53.27,54.11,54.11,54.57,54.57,55.17,55.17,55.61,55.61,56.15,56.15,56.89,56.89,57.81,57.81,58.39,58.39,58.73,58.73,59.07,59.07,59.23,59.23,59.57,59.57,59.73,59.73,60.23]
+    },
+    {
+      "i": 7,
+      "start": 60.83,
+      "end": 75.39,
+      "en": "Yes, it seems that some old technology just refuses to die - maybe because people still love it, or maybe because of the old English proverb, if it ain’t broke, don’t fix it, meaning that things should only be changed if they don’t work.",
+      "zh": "是的，看起来有些旧科技就是不肯退出历史舞台——也许是因为人们依然喜爱它们，也许是因为那句古老的英语谚语：“没坏就别去修它”，意思是只有在东西不好用时才应该去改变它。",
+      "w": [60.83,61.17,61.49,61.71,61.71,61.93,61.93,62.13,62.13,62.49,62.49,62.73,62.73,63.33,63.33,63.81,63.81,64.51,64.51,64.93,64.93,65.25,65.71,66.01,66.01,66.37,66.37,66.67,66.67,66.99,66.99,67.23,67.23,67.53,67.71,67.85,67.85,68.09,68.09,68.45,68.45,68.63,68.63,68.73,68.73,69.07,69.07,69.39,69.39,69.83,70.41,70.46,70.45,70.59,70.59,70.77,70.77,71.05,71.39,71.61,71.61,71.79,71.79,72.15,72.63,72.87,72.87,73.11,73.11,73.35,73.35,73.57,73.57,73.85,73.85,74.07,74.07,74.41,74.41,74.67,74.67,74.83,74.83,75.05,75.05,75.39]
+    },
+    {
+      "i": 8,
+      "start": 75.99,
+      "end": 80.61,
+      "en": "So, in this programme, we’ll be hearing about old tech which continues to be used today.",
+      "zh": "因此，在本期节目中，我们将听到一些至今仍在使用的旧科技。",
+      "w": [75.99,76.35,76.39,76.55,76.55,76.75,76.75,77.11,77.33,77.47,77.47,77.59,77.59,77.83,77.83,78.17,78.17,78.47,78.47,78.75,78.75,78.99,78.99,79.49,79.49,79.79,79.79,79.95,79.95,80.19,80.19,80.61]
+    },
+    {
+      "i": 9,
+      "start": 80.97,
+      "end": 84.39,
+      "en": "And, as usual, we’ll be learning some useful new vocabulary as well.",
+      "zh": "而且，像往常一样，我们还会学到一些实用的新词汇。",
+      "w": [80.97,81.15,81.15,81.27,81.27,81.65,81.89,82.07,82.07,82.19,82.19,82.43,82.43,82.73,82.73,83.07,83.07,83.39,83.39,83.79,83.79,84.11,84.11,84.39]
+    },
+    {
+      "i": 10,
+      "start": 84.81,
+      "end": 87.8,
+      "en": "But first I have a question for you, Georgie.",
+      "zh": "但首先我有一个问题要问你，Georgie。",
+      "w": [84.81,85.31,85.31,85.67,85.85,86.01,86.01,86.21,86.21,86.35,86.35,86.57,86.57,86.91,86.91,87.2,87.2,87.8]
+    },
+    {
+      "i": 11,
+      "start": 88.02,
+      "end": 91.76,
+      "en": "Computers have seen some of the biggest advances in technology.",
+      "zh": "计算机见证了科技领域一些最大的进步。",
+      "w": [88.02,88.36,88.36,89.04,89.04,89.28,89.28,89.52,89.52,89.64,89.64,89.96,89.96,90.32,90.32,90.88,90.88,91.18,91.18,91.76]
+    },
+    {
+      "i": 12,
+      "start": 92.36,
+      "end": 98.04,
+      "en": "But what was the name of the first computer developed for home use in the UK?",
+      "zh": "但你知道在英国开发的用于家庭使用的第一台电脑叫什么名字吗？",
+      "w": [92.36,92.56,92.56,93.28,93.28,93.56,93.56,93.76,93.76,94.0,94.0,94.2,94.2,94.36,94.36,94.88,94.88,95.56,95.56,96.22,96.22,96.54,96.54,96.84,96.84,97.18,97.18,97.46,97.46,97.6,97.6,98.04]
+    },
+    {
+      "i": 13,
+      "start": 98.8,
+      "end": 108.64,
+      "en": "Was it: a) the Commodore 64? b) the Sinclair ZX80? or, c) the BBC Micro?",
+      "zh": "是：a) Commodore 64？b) Sinclair ZX80？还是 c) BBC Micro？",
+      "w": [98.8,98.85,98.82,100.16,100.16,100.21,100.38,100.9,100.9,101.24,102.76,103.1,103.76,104.0,104.0,104.48,104.48,105.08,106.06,106.4,106.4,106.84,107.34,107.42,107.42,107.9,107.9,108.64]
+    },
+    {
+      "i": 14,
+      "start": 109.14,
+      "end": 111.56,
+      "en": "Hmm, I’ll guess it was the Commodore 64.",
+      "zh": "嗯，我猜是Commodore 64。",
+      "w": [109.14,109.74,109.74,110.42,110.42,110.62,110.62,110.86,110.86,110.98,110.98,111.14,111.14,111.56]
+    },
+    {
+      "i": 15,
+      "start": 113.04,
+      "end": 117.12,
+      "en": "OK, Georgie, we'll find out if that's the correct answer later in the programme.",
+      "zh": "好的，Georgie，我们稍后在节目中揭晓答案是否正确。",
+      "w": [113.04,113.26,113.26,113.64,113.94,114.14,114.14,114.36,114.36,114.5,114.5,114.64,114.64,114.84,114.84,114.98,114.98,115.36,115.36,115.78,115.78,116.42,116.42,116.62,116.62,116.76,116.76,117.12]
+    },
+    {
+      "i": 16,
+      "start": 117.58,
+      "end": 122.84,
+      "en": "One reason for not updating tech is if the original design still works well.",
+      "zh": "不更新科技的一个原因，是最初的设计依然运行良好。",
+      "w": [117.58,118.04,118.04,118.32,118.32,118.7,118.7,119.0,119.0,119.54,119.54,119.88,119.88,120.46,120.46,120.62,120.62,120.76,120.76,121.16,121.16,121.7,121.7,122.0,122.0,122.34,122.34,122.84]
+    },
+    {
+      "i": 17,
+      "start": 123.66,
+      "end": 134.56,
+      "en": "NASA engineer, Jonathan Sauder, designed HAR-V, a mechanical rover able to survive the inhospitable conditions on Venus where temperatures reach 460C.",
+      "zh": "美国宇航局（NASA）工程师Jonathan Sauder设计了HAR-V，这是一款机械巡视器，能够在金星恶劣的环境中生存，那里的温度高达460摄氏度。",
+      "w": [123.66,123.78,123.78,124.28,124.28,124.72,124.72,125.3,125.3,126.14,126.14,127.34,127.34,127.44,127.44,127.9,127.9,128.5,128.5,128.96,128.96,129.22,129.22,129.62,129.62,129.86,129.86,130.72,130.72,131.34,131.34,131.7,131.7,132.22,132.92,133.0,133.0,133.36,133.36,133.96,133.96,134.56]
+    },
+    {
+      "i": 18,
+      "start": 137.5,
+      "end": 145.66,
+      "en": "Here’s Jonathan talking to BBC World Service programme, Tech Life: …Venus has a very long night.",
+      "zh": "这里是Jonathan在接受BBC世界服务部节目Tech Life采访时的讲话：……金星的夜晚非常漫长。",
+      "w": [137.5,137.82,137.82,138.12,138.12,138.76,138.76,139.06,139.06,139.44,139.44,140.02,140.02,140.52,140.52,141.02,141.02,141.76,141.76,142.1,143.2,143.56,143.56,144.02,144.02,144.36,144.36,144.7,144.7,145.3,145.3,145.66]
+    },
+    {
+      "i": 19,
+      "start": 146.44,
+      "end": 150.6,
+      "en": "It's actually about 60 days long that you're in total darkness.",
+      "zh": "你处于完全黑暗中的时间其实大约有60天长。",
+      "w": [146.44,146.76,146.76,147.16,147.16,147.64,148.28,148.54,148.54,149.0,149.0,149.22,149.22,149.5,149.5,149.76,149.76,150.1,150.1,150.6]
+    },
+    {
+      "i": 20,
+      "start": 151.3,
+      "end": 162.66,
+      "en": "So that's where we came up with the concept for HAR-V: a mechanical clockwork rover that could be powered by Venus’s winds in order to allow it to survive Venus’s long hot nights.",
+      "zh": "所以这就是我们提出HAR-V概念的由来：一个机械发条巡视器，可以靠金星的风力来驱动，从而让它在金星漫长而炎热的夜晚生存下来。",
+      "w": [151.3,151.35,151.32,151.62,151.62,151.72,151.72,151.84,151.84,151.96,151.96,152.08,152.08,152.22,152.22,152.28,152.28,152.6,152.6,152.8,152.8,153.66,153.66,153.8,153.8,154.42,154.42,155.3,155.3,155.68,155.68,156.28,156.28,156.38,156.38,156.52,156.52,156.96,156.96,157.22,157.22,157.72,157.72,157.98,157.98,158.64,158.64,158.78,158.78,159.0,159.0,159.3,159.3,159.5,159.5,159.72,159.72,160.22,160.22,161.2,161.2,161.66,161.66,162.04,162.04,162.66]
+    },
+    {
+      "i": 21,
+      "start": 164.28,
+      "end": 168.0,
+      "en": "Conditions on Venus mean that ordinary electronics simply won’t work.",
+      "zh": "金星上的环境意味着普通电子设备根本无法工作。",
+      "w": [164.28,164.33,164.28,164.56,164.56,164.94,164.94,165.28,165.28,165.5,165.5,165.98,165.98,166.76,166.76,167.16,167.16,167.56,167.56,168.0]
+    },
+    {
+      "i": 22,
+      "start": 168.42,
+      "end": 175.66,
+      "en": "That’s why Jonathan built a clockwork rover, a machine with springs and wheels inside which works when it’s wound up with a key.",
+      "zh": "这就是为什么Jonathan建造了一个发条巡视器，这是一个内部带有弹簧和轮子的机器，用钥匙上发条后就能运转。",
+      "w": [168.42,168.7,168.7,168.88,168.88,169.16,169.16,169.54,169.54,169.84,169.84,170.42,170.42,170.92,171.32,171.48,171.48,171.74,171.74,171.98,171.98,172.36,172.36,172.58,172.58,172.82,172.82,173.44,173.68,173.84,173.84,174.22,174.22,174.44,174.44,174.64,174.64,174.84,174.84,175.1,175.1,175.28,175.28,175.42,175.42,175.66]
+    },
+    {
+      "i": 23,
+      "start": 176.34,
+      "end": 181.16,
+      "en": "Clockwork technology from the 1st century being used in 2024 by NASA!",
+      "zh": "1世纪的发条技术在2024年被NASA使用！",
+      "w": [176.34,176.66,176.66,177.26,177.26,177.52,177.52,177.66,177.66,178.1,178.1,178.7,178.7,179.12,179.12,179.48,179.48,179.66,180.42,180.8,180.8,181.16]
+    },
+    {
+      "i": 24,
+      "start": 182.08,
+      "end": 186.7,
+      "en": "Other tech which refuses to die is just too much trouble to change.",
+      "zh": "其他不肯退场的科技只是因为改变起来太麻烦了。",
+      "w": [182.08,182.13,182.1,182.4,182.54,182.68,182.68,183.32,183.32,183.64,183.64,184.0,184.46,184.66,184.66,184.8,184.8,185.18,185.18,185.46,185.46,185.94,185.94,186.24,186.24,186.7]
+    },
+    {
+      "i": 25,
+      "start": 187.34,
+      "end": 196.26,
+      "en": "For example, countries around the world use different electrical plugs which would be better to standardise – but imagine the work involved!",
+      "zh": "例如，世界各国使用不同的插头，如果能标准化会更好——但想象一下这涉及的工作量有多大！",
+      "w": [187.34,187.44,187.44,187.9,188.92,188.97,188.92,189.54,189.54,189.72,189.72,189.96,189.96,190.2,190.2,190.6,190.6,191.1,191.1,191.62,192.18,192.34,192.34,192.5,192.5,192.64,192.64,193.02,193.02,193.28,193.28,194.08,194.24,194.42,194.42,195.14,195.14,195.44,195.44,195.72,195.72,196.26]
+    },
+    {
+      "i": 26,
+      "start": 197.02,
+      "end": 223.32,
+      "en": "Here, Chris Vallance, presenter of BBC World Service’s, Tech Life, discusses a similar example with Dr Tacye Phillipson, science curator at the National Museum of Scotland: Another piece of tech that people say has sort of refused to die is the QWERTY keyboard, the layout of keyboards that we all have, and is perhaps not the most efficient layout in terms of the speed of typing.",
+      "zh": "在这里，BBC世界服务部Tech Life的主持人Chris Vallance与苏格兰国家博物馆的科学策展人Tacye Phillipson博士讨论了一个类似的例子：人们说另一种有点“死不退场”的技术是QWERTY键盘，也就是我们大家都在用的键盘布局，从打字速度来看，它或许并不是最高效的布局。",
+      "w": [197.02,197.34,197.9,198.02,198.02,198.62,198.86,199.14,199.14,199.46,199.46,199.74,199.74,200.14,200.14,200.74,200.74,200.96,200.96,201.24,201.68,202.2,202.2,202.56,202.56,203.1,203.1,203.78,203.78,204.16,204.16,204.48,204.48,205.08,205.08,205.68,206.12,206.36,206.36,206.74,206.74,207.12,207.12,207.26,207.26,207.7,207.7,208.2,208.2,208.48,208.48,209.0,209.92,210.3,210.3,210.6,210.6,210.76,210.76,210.92,210.92,211.06,211.06,211.28,211.28,211.72,211.72,212.46,212.46,212.9,212.9,213.06,213.06,213.4,213.4,213.66,213.66,214.02,214.02,214.36,214.36,214.56,214.56,214.94,214.94,215.4,215.6,215.72,215.72,216.04,216.04,216.38,216.38,217.18,217.18,217.38,217.38,217.48,217.48,217.6,217.6,217.9,218.18,218.23,218.22,218.46,218.46,218.86,218.86,219.26,219.26,219.44,219.44,219.74,219.74,220.62,220.62,221.44,221.44,221.76,221.76,221.96,221.96,222.16,222.16,222.28,222.28,222.64,222.64,222.84,222.84,223.32]
+    },
+    {
+      "i": 27,
+      "start": 223.96,
+      "end": 242.5,
+      "en": "It's the layout we're all really, really used to though, and if you see court reporters, stenographers, they have special keyboards and can type so fast to takedown verbatim, but they also look very complicated, I don't actually want to learn to use one of those so I'll stick with QWERTY for the moment.",
+      "zh": "不过这也是我们大家真的、真的习惯了的布局，如果你看到法庭速记员，他们有特殊的键盘，能够以极快的速度逐字记录，但它们看起来也很复杂，我其实不想去学用那种键盘，所以我暂时还是坚持用QWERTY键盘吧。",
+      "w": [223.96,224.34,224.34,224.52,224.52,224.8,224.8,225.1,225.1,225.32,225.32,225.74,225.74,225.98,225.98,226.34,226.34,226.7,226.7,227.1,227.74,227.88,227.88,228.12,228.12,228.28,228.28,228.62,228.62,229.04,229.04,229.5,229.94,230.38,230.38,231.18,231.18,231.36,231.36,231.72,231.72,232.1,232.1,232.48,232.48,232.7,232.7,233.04,233.04,233.64,233.64,234.24,234.24,234.6,234.6,235.2,235.44,236.32,236.48,236.9,236.9,237.42,237.42,237.58,237.58,237.74,237.74,237.96,237.96,238.42,238.62,238.7,238.7,238.88,238.88,239.14,239.14,239.32,239.32,239.5,239.5,239.62,239.62,239.78,239.78,239.98,239.98,240.18,240.18,240.36,240.36,240.64,240.88,240.93,240.92,241.14,241.14,241.32,241.32,241.64,241.64,241.84,241.84,242.02,242.02,242.12,242.12,242.5]
+    },
+    {
+      "i": 28,
+      "start": 243.82,
+      "end": 255.1,
+      "en": "Chris and Tacye discussed QWERTY, the traditional typewriter arrangement of keys on a computer keyboard in which the top line begins with the letters q, w, e, r, t and y.",
+      "zh": "Chris和Tacye讨论了QWERTY键盘，这是电脑键盘上传统打字机的按键排列方式，其顶行以字母q、w、e、r、t和y开头。",
+      "w": [243.82,243.87,243.84,244.08,244.08,244.46,244.46,245.04,245.04,245.74,246.06,246.2,246.2,246.68,246.68,247.28,247.28,247.74,247.74,248.04,248.04,248.34,248.34,248.6,248.6,248.76,248.76,249.16,249.16,249.66,249.92,250.22,250.22,250.36,250.36,250.56,250.56,250.74,250.74,251.04,251.04,251.4,251.4,251.62,251.62,251.76,251.76,252.14,252.14,252.62,252.7,252.96,253.24,253.6,253.8,254.1,254.2,254.52,254.52,254.8,254.8,255.1]
+    },
+    {
+      "i": 29,
+      "start": 255.66,
+      "end": 263.92,
+      "en": "In terms of being able to type quickly, QWERTY isn’t the best - in fact, court reporters type much faster with alternative keyboards.",
+      "zh": "从能够快速打字的角度来看，QWERTY并不是最好的——事实上，法庭速记员使用替代键盘打字要快得多。",
+      "w": [255.66,255.94,255.94,256.12,256.12,256.32,256.32,256.46,256.46,256.68,256.68,256.86,256.86,257.14,257.14,257.58,258.24,258.52,258.52,259.02,259.02,259.16,259.16,259.52,259.52,260.02,260.02,260.32,260.92,260.97,260.94,261.48,261.48,261.82,261.82,262.14,262.14,262.6,262.6,262.86,262.86,263.36,263.36,263.92]
+    },
+    {
+      "i": 30,
+      "start": 264.9,
+      "end": 271.72,
+      "en": "Court reporters need to type fast to record cases verbatim, using exactly the same words that were originally spoken.",
+      "zh": "法庭速记员需要快速打字来逐字记录案件，也就是使用最初说出来的完全相同的词语。",
+      "w": [264.9,264.98,264.98,265.46,265.46,265.8,265.8,265.96,265.96,266.18,266.18,266.56,266.56,266.78,266.78,267.2,267.2,267.64,267.64,268.4,268.82,269.1,269.1,269.5,269.5,269.78,269.78,269.96,269.96,270.24,270.24,270.48,270.48,270.68,270.68,271.18,271.18,271.72]
+    },
+    {
+      "i": 31,
+      "start": 272.7,
+      "end": 276.68,
+      "en": "But because everyone is used to QWERTY keyboards, the tech lives on.",
+      "zh": "但因为大家都习惯了QWERTY键盘，所以这种技术得以延续。",
+      "w": [272.7,272.75,272.72,273.04,273.04,273.64,273.64,273.88,273.88,274.2,274.2,274.6,274.6,274.86,274.86,275.22,275.68,275.82,275.82,276.06,276.06,276.36,276.36,276.68]
+    },
+    {
+      "i": 32,
+      "start": 277.12,
+      "end": 282.2,
+      "en": "That’s why Tacye says she’ll stick with QWERTY, she’ll continue using it and not change to something else.",
+      "zh": "这就是为什么Tacye说她会坚持使用QWERTY，她会继续使用它而不去换成别的。",
+      "w": [277.12,277.4,277.4,277.54,277.54,277.86,277.86,278.16,278.16,278.46,278.46,278.68,278.68,278.92,278.92,279.32,279.38,279.66,279.66,280.02,280.02,280.46,280.46,280.68,280.68,280.86,280.86,281.16,281.16,281.44,281.44,281.62,281.62,281.88,281.88,282.2]
+    },
+    {
+      "i": 33,
+      "start": 282.92,
+      "end": 286.84,
+      "en": "And speaking of QWERTY keyboards has reminded me of my question, Georgie.",
+      "zh": "说到QWERTY键盘，让我想起了我的问题，Georgie。",
+      "w": [282.92,283.12,283.12,283.58,283.58,283.9,283.9,284.16,284.16,284.48,284.48,284.72,284.72,285.18,285.18,285.46,285.46,285.54,285.54,285.76,285.76,286.3,286.52,286.84]
+    },
+    {
+      "i": 34,
+      "start": 286.98,
+      "end": 298.2,
+      "en": "Yes, you asked me the name of the first home computer released in the UK, and I guessed it was the Commodore 64… Which was… the wrong answer, I’m afraid.",
+      "zh": "是的，你问我英国发布的的第一台家用电脑的名字，我猜是Commodore 64……恐怕我猜错了。",
+      "w": [286.98,287.46,287.82,288.12,288.12,288.34,288.34,288.5,288.5,288.68,288.68,288.9,288.9,289.12,289.12,289.26,289.26,289.64,289.64,289.94,289.94,290.58,290.58,291.02,291.02,291.28,291.28,291.38,291.38,291.76,291.76,292.48,292.48,292.68,292.68,292.92,292.92,293.18,293.18,293.32,293.32,293.52,293.52,293.96,295.68,295.82,295.82,296.1,296.1,296.7,296.7,297.1,297.1,297.62,297.8,298.06,298.06,298.2]
+    },
+    {
+      "i": 35,
+      "start": 298.86,
+      "end": 310.8,
+      "en": "In fact, the UK’s first home computer was the Sinclair ZX80 which was released in 1980 and used a whopping 4 kilobyte memory, that’s about half an email!",
+      "zh": "事实上，英国的第一台家用电脑是Sinclair ZX80，它于1980年发布，使用的是高达4千字节的内存，大约相当于半封电子邮件的大小！",
+      "w": [298.86,298.98,298.98,299.3,299.62,299.72,299.72,300.26,300.26,300.62,300.62,300.94,300.94,301.44,301.44,302.0,302.0,302.16,302.16,302.84,302.84,303.44,304.26,304.31,304.3,304.5,304.5,304.92,304.92,305.18,305.76,306.3,306.3,306.56,306.56,306.78,306.78,307.44,308.22,308.84,308.84,309.18,309.36,309.62,309.62,309.94,309.94,310.28,310.28,310.46,310.46,310.8]
+    },
+    {
+      "i": 36,
+      "start": 311.26,
+      "end": 322.08,
+      "en": "OK, it’s time to recap the vocabulary we've learned in this programme starting with obsolete, meaning no longer in use, having been replaced by something newer or better.",
+      "zh": "好的，是时候回顾我们在本节目中学到的词汇了，首先是obsolete（过时的），意思是废弃不用，已被更新或更好的东西所取代。",
+      "w": [311.26,311.48,311.78,312.02,312.02,312.2,312.2,312.4,312.4,312.74,312.74,313.02,313.02,313.4,313.4,313.88,313.88,314.12,314.12,314.32,314.32,314.48,314.48,314.82,315.42,315.74,315.74,316.04,316.04,316.76,317.3,317.48,317.48,318.1,318.1,318.36,318.36,318.58,318.58,318.94,318.94,319.26,319.26,319.44,319.44,319.86,319.86,320.22,320.22,320.66,320.66,321.18,321.18,321.6,321.6,322.08]
+    },
+    {
+      "i": 37,
+      "start": 322.52,
+      "end": 330.14,
+      "en": "The idiom, if it ain’t (or isn’t) broke, don’t fix it, is used to say that if something is working, there is no reason to try to change it.",
+      "zh": "习语“没坏就别去修它”（if it ain’t broke, don’t fix it），用来表示如果某样东西还能运转，就没有理由试图去改变它。",
+      "w": [322.52,322.57,322.52,322.92,322.92,323.12,323.12,323.24,323.24,323.6,323.6,323.8,323.8,324.32,324.32,324.74,325.0,325.28,325.28,325.44,325.44,325.82,326.04,326.12,326.12,326.38,326.38,326.56,326.56,326.76,326.76,326.92,326.92,327.04,327.04,327.36,327.36,327.64,327.64,328.06,328.06,328.28,328.28,328.5,328.5,328.66,328.66,328.92,328.92,329.28,329.28,329.48,329.48,329.62,329.62,329.84,329.84,330.14]
+    },
+    {
+      "i": 38,
+      "start": 330.64,
+      "end": 335.98,
+      "en": "Clockwork machinery uses metal springs and wheels which move when they are wound up with a key.",
+      "zh": "clockwork machinery（发条机械）使用的是金属弹簧和轮子，用钥匙上发条时它们就会运动。",
+      "w": [330.64,330.84,330.84,331.46,331.46,331.9,331.9,332.32,332.32,332.88,332.88,333.2,333.2,333.56,333.56,333.88,333.88,334.32,334.32,334.62,334.62,334.83,334.83,335.04,335.04,335.24,335.24,335.44,335.44,335.6,335.6,335.74,335.74,335.98]
+    },
+    {
+      "i": 39,
+      "start": 336.66,
+      "end": 350.78,
+      "en": "QWERTY refers to the traditional typewriter arrangement of keys in which the top line begins with the letters q,w,e,r, t and y If you say something verbatim, you use exactly the same words which that originally used.",
+      "zh": "QWERTY指的是传统的打字机按键排列方式，其顶行以字母q、w、e、r、t和y开头。如果你说某事是verbatim（逐字的），你使用的就是最初使用的完全相同的词语。",
+      "w": [336.66,336.94,336.94,337.36,337.36,337.64,337.64,337.78,337.78,338.26,338.26,338.92,338.92,339.38,339.38,339.66,339.66,340.04,340.04,340.36,340.36,340.54,340.54,340.72,340.72,340.96,340.96,341.28,341.28,341.6,341.6,341.82,341.82,341.96,341.96,342.3,342.3,342.86,342.92,343.2,343.5,343.82,344.06,344.32,344.42,344.64,344.64,344.84,344.84,345.08,345.32,345.62,345.62,345.8,345.8,345.98,345.98,346.32,346.32,347.16,347.16,347.66,347.66,347.98,347.98,348.42,348.42,348.74,348.74,348.96,348.96,349.22,349.22,349.27,349.22,349.56,349.72,350.2,350.2,350.78]
+    },
+    {
+      "i": 40,
+      "start": 351.1,
+      "end": 355.58,
+      "en": "And finally, to stick with something means to continue using or doing it.",
+      "zh": "最后，to stick with something（坚持使用某物）意味着继续使用或做它。",
+      "w": [351.1,351.3,351.3,351.7,352.08,352.2,352.2,352.48,352.48,352.68,352.68,353.06,353.06,353.6,353.6,353.82,353.82,354.22,354.22,354.74,354.74,355.02,355.02,355.26,355.26,355.58]
+    },
+    {
+      "i": 41,
+      "start": 355.9,
+      "end": 363.98,
+      "en": "Once again our six minutes are up, but remember to join us again next time for more trending topics and useful vocabulary, here at 6 Minute English.",
+      "zh": "我们的六分钟节目又到时间了，但别忘了下次继续收看我们更多的热门话题和实用词汇，就在6 Minute English。",
+      "w": [355.9,356.1,356.1,356.38,356.52,356.7,356.7,357.02,357.02,357.28,357.28,357.42,357.42,357.64,357.88,358.0,358.0,358.3,358.3,358.62,358.62,358.86,358.86,359.02,359.02,359.26,359.26,359.52,359.52,359.82,359.82,360.08,360.08,360.36,360.36,360.64,360.64,361.08,361.08,361.44,361.44,361.82,361.82,362.32,362.64,362.92,362.92,363.2,363.42,363.58,363.58,363.98]
+    },
+    {
+      "i": 42,
+      "start": 364.3,
+      "end": 365.48,
+      "en": "Goodbye for now! Bye!",
+      "zh": "先到这里，再见！再见！",
+      "w": [364.3,364.42,364.42,364.72,364.72,364.94,365.14,365.48]
+    }
+  ],
+  "wSource": "asr",
+  "lemmas": {
+    "actually": "actually",
+    "advances": "advance",
+    "alternative": "alternative",
+    "cassette": "cassette",
+    "cassettes": "cassette",
+    "century": "century",
+    "complicated": "complicated",
+    "concept": "concept",
+    "conditions": "condition",
+    "continue": "continue",
+    "continues": "continue",
+    "court": "court",
+    "data": "datum",
+    "design": "design",
+    "designed": "design",
+    "disks": "disk",
+    "documents": "document",
+    "efficient": "efficient",
+    "electrical": "electrical",
+    "electronics": "electronics",
+    "engineer": "engineer",
+    "exciting": "exciting",
+    "fashion": "fashion",
+    "fashionable": "fashionable",
+    "fix": "fix",
+    "government": "government",
+    "idiom": "idiom",
+    "imagine": "imagine",
+    "inch": "inch",
+    "inside": "inside",
+    "involved": "involve",
+    "keyboard": "keyboard",
+    "keyboards": "keyboard",
+    "laboratory": "laboratory",
+    "later": "later",
+    "layout": "layout",
+    "learned": "learned",
+    "learning": "learning",
+    "line": "line",
+    "magnetic": "magnetic",
+    "means": "means",
+    "mechanical": "mechanical",
+    "memory": "memory",
+    "metal": "metal",
+    "museum": "museum",
+    "national": "national",
+    "official": "official",
+    "ordinary": "ordinary",
+    "original": "original",
+    "perhaps": "perhaps",
+    "physics": "physics",
+    "player": "player",
+    "plugs": "plug",
+    "progresses": "progress",
+    "proverb": "proverb",
+    "reach": "reach",
+    "recently": "recently",
+    "record": "record",
+    "reels": "reel",
+    "refers": "refer",
+    "refused": "refuse",
+    "refuses": "refuse",
+    "released": "release",
+    "reminded": "remind",
+    "replaced": "replace",
+    "reporters": "reporter",
+    "sort": "sort",
+    "special": "special",
+    "speed": "speed",
+    "stick": "stick",
+    "survive": "survive",
+    "tape": "tape",
+    "technology": "technology",
+    "temperatures": "temperature",
+    "terms": "term",
+    "top": "top",
+    "topics": "topic",
+    "total": "total",
+    "traditional": "traditional",
+    "trending": "trend",
+    "type": "type",
+    "typewriter": "typewriter",
+    "typing": "type",
+    "updating": "update",
+    "used": "used",
+    "useful": "useful",
+    "usual": "usual",
+    "vocabulary": "vocabulary",
+    "wheels": "wheel",
+    "wound": "wound"
+  }
+}

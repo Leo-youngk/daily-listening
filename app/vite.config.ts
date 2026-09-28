@@ -66,7 +66,7 @@ export default defineConfig({
             urlPattern: /\/dict\/.*\.json(\?.*)?$/,
             handler: 'CacheFirst',
             options: {
-              cacheName: 'dict-ecdict-1-0-28-r2',
+              cacheName: 'dict-ecdict-1-0-28-r3',
               cacheableResponse: { statuses: [200] },
               expiration: { maxEntries: 450, maxAgeSeconds: 60 * 60 * 24 * 180 },
             },
@@ -76,7 +76,7 @@ export default defineConfig({
             urlPattern: /\/(wordbook|examples)\/.*\.json$/,
             handler: 'StaleWhileRevalidate',
             options: {
-              cacheName: 'vocab-cache-v1',
+              cacheName: 'vocab-cache-v2',
               cacheableResponse: { statuses: [200] },
               expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 60 },
             },

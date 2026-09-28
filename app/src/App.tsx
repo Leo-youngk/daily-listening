@@ -65,7 +65,7 @@ export default function App() {
             {tab === 'today' && <Today />}
             {tab === 'programs' && <Programs query={query} />}
             {tab === 'words' && <Words query={query} />}
-            {tab === 'me' && <Me />}
+            {tab === 'me' && <Me sub={param || undefined} />}
           </main>
           <MiniPlayer />
           <TabBar page={tab} />

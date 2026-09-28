@@ -14,8 +14,10 @@
 `validate_data.py` 会检查这套格式，跑偏了 CI 会拦下来。
 """
 import io
+import os
 import json
 import re
+import time
 
 # "w": [ 1.2, 3.4 ] -> "w": [1.2,3.4]
 _W_ARRAY = re.compile(r'"w":\s*\[([\s\d.,eE+-]*?)\]')
@@ -28,8 +30,20 @@ def talk_json(talk) -> str:
 
 
 def write_talk(path, talk) -> None:
-    with io.open(path, "w", encoding="utf-8", newline="\n") as f:
+    # 先写临时文件再替换：cut_clips 等只读脚本可以和构建同时跑，不会读到写了一半的文件
+    path = os.fspath(path)
+    tmp = path + ".tmp"
+    with io.open(tmp, "w", encoding="utf-8", newline="\n") as f:
         f.write(talk_json(talk))
+    # Windows 上目标文件正被别的进程读（dev server 监听、杀毒扫描）时 replace 会拒绝访问，稍等重试
+    for attempt in range(20):
+        try:
+            os.replace(tmp, path)
+            return
+        except PermissionError:
+            if attempt == 19:
+                raise
+            time.sleep(0.25)
 
 
 def write_manifest(path, items) -> None:

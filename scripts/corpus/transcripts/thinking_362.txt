@@ -1,0 +1,90 @@
+The Collins Dictionary Word of the Year is… Vibe Coding !
+In this Thinking in English episode, I’m going to define and explain the term vibe coding and talk about why it was chosen as the W ord of the Year by Collins Dictionary . I’ll also discuss some of the other contenders and runners up for the 2025 Word of the Year, including Broligarchy, Task Masking, and Micro-Retirement.
+These are interesting words and are connected to some fascinating changes and problems in modern society!
+Every year, dictionaries choose a single word or phrase as their “ word of the year” .
+This word attempts to capture the mood, trends and changes in our society. It is often a reflection of what people have been talking about, worrying about and shaping their lives around.
+This is actually the fifth year I’ve made a Word of the Year episode here on Thinking in English, and it’s always one of my favorites to record. In the past I’ve talked about Brat , Kakistocracy , AI , Permacrisis and NFTs in these episodes.
+Now, the Word of the Year isn’t necessarily the most common or popular word. You might not have even heard of it before. Instead, it’s chosen because it represents the spirit of the year.
+And this year, Collins Dictionary has chosen a term that reflects our growing relationship with artificial intelligence: Vibe Coding.
+So what exactly is vibe coding ?
+According to Collins, vibe coding means using artificial intelligence prompted by natural language to write computer code.
+That’s a little confusing, so in simpler terms, it’s when you tell an AI assistant what you want it to do, instead of writing the computer code yourself line by line. You describe the goal or the vibe of what you want to create, and the AI takes care of all of the technical details, all of the actual work.
+This term was coined , created, by Andrej Karpathy. He is a well-known AI researcher and one of the pioneers behind modern machine learning tools. He used the phrase to describe how people and companies are moving away from traditional computer programming.
+Before the recent growth of AI, to create a computer program, you needed to carefully plan and write code yourself. Now you can just ask AI to create something for you.
+It’s “ programming by vibes, not variables” .
+Instead of learning complex coding languages, you can now just use natural, everyday English or any other language to tell an AI, “make a simple website”, “design a chatbot”, or “create an app that tracks my expenses” .
+Actually, I have personally experimented with this. I can’t code, but I have created some apps and tools online using “ vibe coding” .
+I have used a website called Replit and also the AI site Claude to create applications. I’ve made a flashcard review app for when I was learning to drive, and I made some templates for potential Thinking in English projects. All I had to do was ask the AI tools to create something.
+I actually made a basic IELTS study tool for a Thinking in English Patreon subscriber . It would just generate random IELTS style writing prompts every day, and I made it using Claude. It took about five minutes and three or four messages with the AI. That’s all it took to create a working app.
+I think vibe coding says a lot about how society is changing.
+We are now much more comfortable with artificial intelligence. It is part of many people’s daily lives. It’s part of my daily life. At the same time, we want things to be quick and easy to use, and maybe we now care a little less about technical precision .
+Also, it raises some important questions.
+Are we becoming more creative? Is AI helping us to unlock new ideas and possibilities? Or are we becoming more dependent on machines to do the thinking for us? What happens to skills like problem solving, logic, patience, when technology can instantly “vibe” the result we want?
+You can see vibe coding in action. Tools like ChatGPT, GitHub Copilot, and Replit, which I mentioned earlier, can write functioning code, design websites, and generate complex scripts based on simple written prompts. You don’t need any technical skills. You just need to know how to communicate with AI.
+While “ vibe coding” took the top spot as Collin’s 2025 Word of the Year,
+the short list of runners up also says a lot about the state of our world right now.
+In total, Collins highlighted 10 words and phrases this year. In the rest of this episode, I’ll look at four more of these terms, and explain their context and meaning. On Friday, I’ll release a Thinking in English Bonus Episode on Patreon, which will cover the other five terms . So if you’re interested, make sure to become a Patreon subscriber. The link is in the description.
+The first runner up to Collins dictionary Word of the Year is “ task masking” . While you may not have heard of the term “ task masking” before, I’m sure many of you have been guilty of task masking at some point during your careers.
+Task masking is the act of pretending to be busy at work.
+There are many ways you can do this. You could schedule unnecessary meetings, work on meaningless documents. Or if you work from home, constantly move your computer mouse around, so your online status says “Active”.
+It’s a way of masking , covering, your true level of productivity. Hence the name task masking .
+This term has become relevant and popular in 2025 as more companies stopped working from home and moved back to return to office work or hybrid work. After years of remote work and flexible schedules, many employees have now been forced back into offices.
+In many companies, physical presence , you being in the office, is for some reason more valuable than the actual results you produce.
+Task masking is, in a way, a quiet protest against returning to the office. It’s similar to quiet quitting , which was a word I discussed in 2022 I think , describing workers doing the bare minimum to keep their jobs.
+In my opinion, one of the biggest causes of task masking is companies that focus on activity instead of output . If a company thinks the amount of time an employee works, or their activity, is the most important thing, I think it is therefore natural for people to fill any extra time they have by looking busy.
+If your company rewards activity, then you are incentivized not to produce work, but to look busy.
+In fact, I have friends who complain that their colleagues, who are objectively worse at their jobs, have been promoted because they seem to always be working hard. They seem to be sending emails all day, always in important calls, and very active.
+However, the actual work they do is similar to or worse than every other employee. They just look busier. They just look like they are working harder.
+So basically task masking is looking busy, rather than actually being busy.
+Next up is probably my favorite contender for the Word of the Year, “ broligarchy” .
+As a former political science student, I enjoy any political word in these lists, and broligarchy is a great one.
+It’s a blend of “bro” (or “broism”) and “oligarchy”.
+“Bro” is an informal term for a man, which originally came from brother. Bro is often used to describe confident or privileged young men who share a similar culture. We talk about gym bros , young men who go to the gym together. And in this situation, tech bros , young men working in the tech industry, often in Silicon Valley.
+Oligarchy is a political system where power and control are held by a small, wealthy, and elite group of people.
+So “ broligarchy” is a blend of “bro” and “oligarchy”.
+In 2025, it was used to refer to a small, powerful group of tech billionaires who wield huge political influence.
+The presence of broligarchs in the USA was made clear in January 2025. As Donald Trump was inaugurated as the president of the USA in January, the people sat right behind him, in front of the world’s media, in the best seats, were tech billionaires.
+There was Elon Musk of Tesla, Mark Zuckerberg from Meta, Sundar Pichai from Google, and Amazon’s Jeff Bezos.
+These men own or control companies that shape everything from space exploration and AI development to the media. And in recent years, they have become a bigger presence in politics, society, and government policy.
+The best example of this is Elon Musk, who became one of the biggest political funders in history during the US election in 2024, and then went on to work for the US government for half of 2025.
+These broligarchs own media companies, social media platforms, newspapers, and other communication tools. They donate money to politicians. They are on friendly terms with influential government figures.
+The term broligarchy reflects a growing unease with how much power these individuals hold. How much power people like Mark Zuckerberg or Elon Musk or Jeff Bezos has.
+They’re not elected officials, but they can influence elections. They can influence the economy. And they can influence global conversations.
+Elon Musk owns Twitter . He can influence free speech and technology. Mark Zuckerberg owns Instagram and WhatsApp and Facebook.
+And importantly, broligarchy is a form of oligarchy. In an oligarchy, the oligarchs are not using their power and influence for the good of all people, but to increase their own power and their own money.
+In short, broligarchy highlights the blurred lines , the burred division, between tech companies and politics, especially in the USA. And many people are worried that Silicon Valley’s Bros might now be running more than just their companies.
+The next term on the list is HENRY .
+HENRY is an acronym , which is a type of abbreviation formed from the initial letters of each word. So it stands for High Earner, Not Rich Yet. HENRY .
+HENRY describes people who make good money, often great money with very high salaries, but they still don’t feel financially secure .
+They are high earners. They earn a lot of money. But they don’t feel or think they are rich yet. Hence, HENRY… High Earner Not Rich Yet .
+Most often HENRYs are professionals working in corporate careers in their 20s, 30s, and 40s. Despite earning far more than the average person, they feel trapped or limited in their attempts to become truly rich.
+Usually this is due to high living costs, student debt, and the social pressure to have or maintain or keep an expensive lifestyle.
+Of course a HENRY can afford to go out for dinner, travel, or subscribe to Netflix or the Thinking in English Patreon. But maybe they’re not building real wealth. Wealth in the terms of buying numerous properties or having a massive pension fund.
+Part of the reason for this is that the high paying jobs are often located in incredibly expensive places. Think about London or San Francisco or New York.
+I have friends who might be considered HENRY’s. They live in London and San Francisco and they have great salaries, but they have to pay an incredibly high monthly rent.
+In fact, I know someone in San Francisco who earns well, but pays 20 times more monthly rent than I do where I currently live. Their salary’s not 20 times higher than mine.
+Also, high earners often go to university. Perhaps they went to law school or medical school, or a graduate school, which in many countries leads to a high level of debt .
+You now find many people with great jobs who are in a lot of debt. Maybe they have a mortgage, maybe they finance their car, they have to pay back their graduate school every month.
+Also the tax systems, which are popular in most countries, tend to target work rather than wealth. Basically, most countries tax people with relatively high salaries at relatively high tax rates. But sometimes they have much lower tax rates on things like bank interest or loans or dividends , which is how really rich people make their money.
+The UK, for example, has a tax trap that affects people earning between a £100,000 and £125,000. This would probably be considered HENRY level in the UK. For some complicated reason, people earning between a £100,000 and £125,000 are subject to the highest level of tax in the UK.
+Also for people with children in the UK, earning a high salary means you lose access to some support services for children.
+So as people start earning a higher salary, they quickly find that they have to pay more out of pocket . They have to pay for more things.
+The concept of a HENRY , a High Earner, Not Rich Yet , isn’t a new thing, but it’s becoming increasingly relevant around the world, I think.
+Things like inflation, rising house prices and the cost of living continues to rise around the world. And it’s making people who traditionally would be considered to be rich, with great salaries, struggle.
+I think this is why HENRY has been chosen as one of Collins Words of the Year.
+Finally, I want to talk about micro- retirement . Micro- retirement is one of the more hopeful and positive entries on Collins Word of the Year shortlist.
+A micro- retirement is when people take short breaks between jobs or careers to travel, rest, or maybe focus on personal growth. They do this instead of waiting until they’re in their 60s or 70s and they retire to enjoy their life.
+It’s inspired by the idea that traditional retirement may never come. Especially for younger people, especially for younger generations facing an uncertain economic future, there is a chance that you will die before you retire. There is a chance that you will become too ill to enjoy your retirement. Or the sad reality is that many people may never be able to afford to retire or be able to retire in the way that they think they will be able to.
+Governments are struggling with pension funds. Governments are raising the pension ages across the world. Maybe in the future you won’t be able to retire, at least not in the way that you think you can now.
+So a micro- retirement is a solution to this. Rather than leaving all of the joy and all of the traveling until you end your working life, many people are now choosing to do these things right now.
+And I think this trend is a response to burnout and modern working cultures. Also, many people are now aware that health and happiness and a balance in your life matters just as much as your career success. In fact, I think it’s more important than career success.
+And I have long been a proponent amongst my friends of taking time out and of doing something a little bit different.
+I remember when I was 23 and I was about to go to Taiwan, a friend of mine from high school said to me,
+“ Why? Why are you going abroad again? Why don’t you go and get a proper job? Why don’t you go and have a real career?”
+And I said,
+“ Well, I’m 23. In the UK, I’d probably be working until I was 70. One year, six months out studying in Taiwan, learning a little bit of Chinese, in the long term is not going to really harm my career, and it will be something nice to look back on when I’m in my retirement years.”
+That was the 2025 Collins Dictionary Word of the Year, vibe coding and some other fascinating terms from the past 12 months.
+I found these terms interesting. They all reflect something about the modern world. They reflected how AI is shaping how we work and create things. They also are influenced by our attitudes towards money and power and rest.
+Language always evolves. It always changes. And it’s always affected by society and time. And I think each of those Words of the Year demonstrates this.
+Now, I’d love to hear from you.
+What would your personal word of the year be for 2025? What single word sums up your life, your experiences, and your feelings this year?

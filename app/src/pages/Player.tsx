@@ -1,5 +1,5 @@
 import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
-import type { CSSProperties, ReactNode } from 'react'
+import type { CSSProperties, ReactNode, Ref } from 'react'
 import { usePlayer, usePlayerClock } from '../store/PlayerContext'
 import type { LoopMode } from '../store/PlayerContext'
 import { loadSettings, saveSettings, toggleFavorite, isFavorite } from '../lib/storage'
@@ -171,6 +171,40 @@ const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, 
   )
 })
 
+/** 预览卡上同步线跟住的词数：当前词和它前面两个词，读起来像一个词组在往前走 */
+const READING_SPAN = 3
+/** 英文超过这个长度换小一号字，卡片高度固定、换句不跳 */
+const LONG_SENTENCE = 110
+
+/**
+ * "播放"视图的当前句双语预览。同步线由 Player 的 rAF 直接改 class（is-reading），
+ * 这里只在换句时重渲染。词与词之间的空白也标上 data-g，线才能连成一条。
+ */
+const NowLine = memo(function NowLine({ sentence, hideZh, onOpen, ref }: {
+  sentence: Sentence
+  hideZh: boolean
+  onOpen: () => void
+  ref: Ref<HTMLButtonElement>
+}) {
+  const text = sentence.en
+  const tokens = useMemo(() => tokenizeSentence(text), [text])
+  const nodes: ReactNode[] = []
+  let cursor = 0
+  tokens.forEach((token, i) => {
+    if (token.start > cursor) nodes.push(<span key={`g-${i}`} data-g={i}>{text.slice(cursor, token.start)}</span>)
+    nodes.push(<span key={`w-${i}`} data-w={i}>{token.text}</span>)
+    cursor = token.end
+  })
+  if (cursor < text.length) nodes.push(<span key="tail">{text.slice(cursor)}</span>)
+  return (
+    <button ref={ref} type="button" className="now-line" data-idx={sentence.i} onClick={onOpen} aria-label="当前句，点开完整文稿">
+      <p lang="en" className={cn('now-line-en', text.length > LONG_SENTENCE && 'is-long')}>{nodes}</p>
+      {!hideZh && sentence.zh && <p lang="zh-CN" className="now-line-zh">{sentence.zh}</p>}
+      <ChevronDownIcon className="now-line-expand" aria-hidden />
+    </button>
+  )
+})
+
 /** 设置面板里的一行：左标题（可带说明），右控件 */
 function SettingRow({ label, note, children }: { label: string; note?: string; children: ReactNode }) {
   return (
@@ -215,6 +249,8 @@ export default function Player({ slug }: { slug: string }) {
   const painted = useRef<{ row: HTMLElement | null; spans: HTMLElement[]; idx: number; word: number }>(
     { row: null, spans: [], idx: -1, word: -1 },
   )
+  const previewRef = useRef<HTMLButtonElement>(null)
+  const previewPainted = useRef({ idx: -1, word: -2 })
   const interruptFollow = useCallback(() => {
     userScrollUntil.current = Date.now() + 6000
     followPosition.current.idx = painted.current.idx
@@ -307,8 +343,32 @@ export default function Player({ slug }: { slug: string }) {
     cancelScroll.current = animateScroll(box, box.scrollTop + top - box.clientHeight * 0.4, 400)
   }, [p])
 
+  /** 预览卡的同步线：同样直接改 DOM，不进 React 渲染 */
+  const syncPreview = useCallback(() => {
+    const box = previewRef.current
+    if (!box) return
+    const time = p.getSubtitleTime()
+    const idx = p.sentenceAt(time)
+    const sentence = sentencesRef.current[idx]
+    // 卡片还没换到这一句（React 下一次渲染才换），先不画
+    if (!sentence || box.dataset.idx !== String(sentence.i)) return
+    const word = wordAt(sentence.w, time)
+    const state = previewPainted.current
+    if (state.idx === idx && state.word === word) return
+    for (const el of box.querySelectorAll('.is-reading')) el.classList.remove('is-reading')
+    state.idx = idx
+    state.word = word
+    if (word < 0) return
+    const from = Math.max(0, word - READING_SPAN + 1)
+    for (let k = from; k <= word; k++) {
+      box.querySelector(`[data-w="${k}"]`)?.classList.add('is-reading')
+      if (k > from) box.querySelector(`[data-g="${k}"]`)?.classList.add('is-reading')
+    }
+  }, [p])
+
   useEffect(() => {
     painted.current = { row: null, spans: [], idx: -1, word: -1 }
+    previewPainted.current = { idx: -1, word: -2 }
     followPosition.current = { idx: -1, line: -1, suspended: false }
     userScrollUntil.current = 0
     cancelScroll.current()
@@ -331,12 +391,16 @@ export default function Player({ slug }: { slug: string }) {
     if (!p.playing) return
     let frame = requestAnimationFrame(function tick() {
       syncWords()
+      syncPreview()
       frame = requestAnimationFrame(tick)
     })
     return () => cancelAnimationFrame(frame)
-  }, [p.playing, syncWords])
+  }, [p.playing, syncWords, syncPreview])
 
-  useEffect(() => { syncWords() })
+  useEffect(() => {
+    syncWords()
+    syncPreview()
+  })
 
   // 暂停、弹层、改变排版时终止旧动画；恢复播放后重新测量实际文字行。
   useEffect(() => {
@@ -407,6 +471,8 @@ export default function Player({ slug }: { slug: string }) {
     const next = QUICK_RATES[(QUICK_RATES.indexOf(settings.rate) + 1) % QUICK_RATES.length] ?? 1
     updateSettings({ rate: next })
   }
+  const openText = useCallback(() => updateSettings({ playerView: 'text' }), []) // eslint-disable-line react-hooks/exhaustive-deps
+  const nowSentence = sentences[clock.currentIdx] ?? sentences[0]
   const close = () => {
     if (history.length > 1) history.back()
     else navigate('/programs')
@@ -512,6 +578,11 @@ export default function Player({ slug }: { slug: string }) {
             <HeartIcon />
           </button>
         </div>
+        {nowSentence ? (
+          <NowLine ref={previewRef} sentence={nowSentence} hideZh={settings.hideZh} onOpen={openText} />
+        ) : (
+          <div className="now-line skeleton" aria-hidden />
+        )}
         {status}
         {finished && (
           <button className="player-finish-inline" onClick={() => setShowWords(true)}>听完了 · 清点本集生词</button>
@@ -599,7 +670,7 @@ export default function Player({ slug }: { slug: string }) {
 
             <h3 className="group-title">字幕</h3>
             <div className="group">
-              <SettingRow label="显示中文译文" note="中文为 Gemini 机器翻译">
+              <SettingRow label="显示中文译文" note="中文为机器翻译，可能有误">
                 <Switch checked={!settings.hideZh} onCheckedChange={v => updateSettings({ hideZh: !v })} />
               </SettingRow>
               <SettingRow label="标出六级词" note="粉底是在学的词，虚线是没学过的六级新词">

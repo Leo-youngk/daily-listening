@@ -1,0 +1,60 @@
+Today I want to talk about one of the greatest mathematicians of all time. A genius who, with almost no formal training, made mathematical discoveries that still astonish experts today. His name is Srinivasa Ramanujan, and his story is as extraordinary as the mathematical formulas he created.
+Despite growing up in poverty and facing enormous challenges, Ramanujan produced ideas that continue to shape modern mathematics.
+This episode is part of my Greatest Scientists Series , where we explore the lives and contributions of people who transformed our understanding of the world (while learning some new English vocabulary). And today, I want to ask an interesting question: can a mathematician like Ramanujan be considered a scientist ?
+Over the next few minutes, we’ll explore his early life in India, his journey to England, the famous collaboration with G.H. Hardy, his remarkable discoveries, his legacy, and finally, we’ll reflect on the role of mathematics itself in the world of science.
+Srinivasa Ramanujan was born in 1887 in a small town in Southern India.
+He came from a poor but deeply traditional family. His father worked as a clerk in a local shop, and his mother was a homemaker who was also very religious.
+As a child, Ramanujan showed extraordinary talent for mathematics. While most children were learning simple addition and multiplication , Ramanujan was already exploring complex ideas entirely on his own.
+Teachers quickly noticed that he could solve problems without using traditional methods. He could arrive at the correct answer through intuition , natural ability, rather than calculation.
+As a primary school student, Ramanujan excelled. He achieved the best exam grades in his area and at the age of 11, he already knew more mathematics than the college students who were renting rooms in his family home.
+When he was a teenager, he received a book that changed his life, “ A Synopsis of Elementary Results in Pure and Applied Mathematics” by George Carr . This wasn’t a typical textbook. It was basically a huge collection of thousands of mathematical results and theorems , but with very few explanations or proofs .
+For most people, it would have been impossible to learn from, especially for a teenager. But for Ramanujan, it became his teacher. He studied every page, memorized the formulas , and began to develop his own ideas and some new equations that went beyond what the book contained.
+However, his obsession with mathematics caused problems in school. Ramanujan ignored other subjects like English, history and science, which meant he repeatedly failed his exams. In 1903, for example, he had been given a scholarship to the University of Madras , but he lost the scholarship a year later after failing every class other than mathematics.
+Despite being a genius , he couldn’t complete his formal education.
+In the years that followed, Ramanujan lived in poverty. He struggled to find work and a place to develop his mathematical skills. He continued to fill notebooks with pages of equations and results, but few people in India or in the world at that time understood his importance.
+He also suffered from poor health which would remain a constant challenge throughout his life.
+While searching for employment, Ramanujan began to interact with some of India’s top mathematicians. He met V. Ramaswamy Aiyer, the founder of the Indian Mathematical Society, when he was attempting to get a job in the same department that Ramaswamy worked.
+Impressed by his notebooks, Ramanujan was introduced to a variety of other prominent mathematicians.
+In 1913, he made a decision that would completely change his life. He sent a letter to G.H. Hardy, a respected mathematician at Cambridge University in England . The letter contained pages and pages of mathematical formulas. Many of these looked completely unfamiliar to Western mathematicians at the time.
+At first, Hardy was skeptical . He thought the letter might be a joke or a mistake. After all, it wasn’t common for a poor, self-taught person from the other side of the world to suddenly send new and original mathematical work to one of the world’s top universities.
+But when Hardy and his colleague, J.E. Littlewood, began to study the results more carefully, they quickly realized that these were not random ideas. The formulas that Ramanujan had sent were deep, elegant, and most importantly, new.
+Hardy later said that reading Ramanujan’s work was like “ opening a treasure chest full of mathematical jewels .”
+He immediately recognized that Ramanujan was a genius, perhaps one of the greatest mathematical minds in history. So he invited Ramanujan to come to Cambridge.
+In 1914, after overcoming social and religious obstacles , including a lot of concerns from his family and his community about traveling overseas, Ramanujan made the long journey from India to the United Kingdom. It was the first time he had ever left India.
+When Ramanujan and Hardy finally met, it was the meeting of two completely different worlds.
+Hardy was a great mathematician who came from the Western academic system . He was logical , disciplined, and focused on strict mathematical proofs, proving what you think is true.
+Ramanujan, on the other hand, was intuitive and creative. He often wrote down results without showing any steps, without showing any of his proofs. He also claimed that his inspiration came directly from his family’s goddess Namagiri, who revealed the formulas to him in dreams.
+Their collaboration was very productive . Hardy tried to help Ramanujan formalize his discoveries and present them in a way that the mathematical world could understand.
+Ramanujan, in turn , shocked Hardy with his ability to produce new and unexpected results almost effortlessly .
+Hardy and Ramanujan formed one of the most remarkable partnerships in the history of science or mathematics. In fact, Hardy once said that his greatest contribution to mathematics was discovering Ramanujan.
+So what did Ramanujan actually discover?
+This is a difficult topic to discuss. Unlike the previous scientists I’ve talked about in this series, Isaac Newton and Marie Curie . Ramanujan was a mathematician working on incredibly complex things.
+One of his most famous discoveries was the Ramanujan Prime , a special type of prime number that still appears in modern mathematical research. A prime number is a number greater than one that can only be divided exactly by one and itself. For example, 3, 5, 7, 11.
+He also developed something known as the Ramanujan Theta function , a complex formula that later became important in fields like physics and computer science.
+Another contribution was his work on infinite series . These are equations that add together an endless or infinite number of terms. Using these he found new ways to calculate the number PI with incredible accuracy. Some of his formulas are still used today in computer algorithms, which try to calculate trillions of digits of Pi .
+Perhaps the most mysterious of his discoveries were his mock theta functions, which he discovered near the end of his life. For decades, mathematicians couldn’t fully understand what these functions meant.
+It wasn’t really until the late 20th century that they were shown to be deeply connected to modern physics, including string theory and quantum mechanics.
+Ramanujan’s ideas, written in a notebook in the early 1900s, helped to explain parts of the universe that scientists would only begin to study many years later.
+Ramanujan’s mathematical notebooks actually contained thousands of results. Many of these were written without any explanation or proof. Mathematicians have spent over a century studying and expanding upon his discoveries, and the vast majority of his results have turned out to be correct.
+Although Ramanujan’s years in the UK were incredibly productive, they also took a serious toll on his health. He struggled with the cold British climate, wartime food shortages, and also the difficulty of maintaining his strict vegetarian diet. He was far from home and his family, and he often felt lonely and isolated .
+On top of that, he was working constantly, pushing his body and mind to the limit .
+By 1917, his health had begun to fail. He was diagnosed with several illnesses, including tuberculosis and vitamin deficiencies , and he spent long periods recovering in hospitals. He also attempted to end his own life by jumping onto train tracks in London.
+In 1919, once the First World War had ended, doctors advised him to return to India to recover in warmer climates . After five years in England, Ramanujan finally went home.
+Sadly, his health did not improve. Even in his final months, he remained dedicated to his work, writing letters to G.H. Hardy filled with new mathematical results, including those mysterious mock theta functions .
+Ramanujan died in 1920 at the age of just 32. His death was a huge loss for mathematics. Imagine what he could have discovered if he had lived another 10, 20, 30, 40 years.
+But in his short life, he had produced more original ideas than most mathematicians do in an entire career.
+Even though Ramanujan died so young, his influence on mathematics was massive.
+After his death, his notebooks were studied by mathematicians around the world. They contained thousands of results, most of them without proofs or explanations, but almost all of them turned out to be correct.
+In the decades that followed, his ideas became even more important. Mathematicians discovered that Ramanujan’s work could be applied to new areas, including computer science, physics, and modern theories about the universe. These did not even exist while Ramanujan was alive.
+In 1976, researchers found what would become known as Ramanjuan’s lost notebook, a collection of unpublished results that had been forgotten more than 50 years earlier. This discovery reignited interest in Ramanujan and his work and led to a new wave of research inspired by his ideas.
+Today, Ramanujan is remembered as one of the greatest mathematical minds in history. There’s even an academic journal called the Ramanujan Journal , dedicated to research in areas connected to his style of mathematics.
+His story has been told in books, documentaries, and films. Most famously, the “ Man Who Knew Infinity” starring Dev Patel.
+Ramanujan’s story, to me, represents the idea that great ideas can come from anywhere, not just elite universities or wealthy backgrounds. He proved that genius can exist in the most unexpected places.​
+Before we finish today’s episode, I want to think about a question.
+Is mathematics a science? And if it is, should someone like Ramanujan be remembered as one of the greatest scientists of all time?
+Science is based on observation, experimentation, and evidence. It’s about testing ideas against the real world.
+Mathematics, on the other hand, is abstract . It deals with logic, symbols, and proofs, rather than physical experiments. Mathematicians don’t look through telescopes or use microscopes. They use their minds.
+But if we think a little deeper, the line between science and mathematics is not clear. Every scientific field, from physics to chemistry to computer science, depends on mathematical thinking. Mathematics gives scientists the language, the tools they need to describe, predict and understand the world, understand reality. Without it, science as we know, could not exist.
+Ramanujan might not have carried out scientific experiments, but his discoveries helped make scientific progress possible. Maybe a scientist isn’t just someone who studies nature through experiments, but it is anyone who helps humanity uncover new truths about the world.
+Ramanujan’s story reminds us that genius can come from the most unlikely places. He had no degree. No formal training, but his mind saw patterns in numbers that no one else could. And even a century after his death, mathematicians are still learning from him.
+What do you think? Is mathematics a science? Should Ramanujan be remembered a alongside people like Einstein or Darwin or Newton?

@@ -17,7 +17,7 @@ import type { ManifestItem } from '../lib/types'
 interface Picks {
   hero: ManifestItem
   /** 主推是没听完的那集时，从上次的位置接着放 */
-  resumeAt?: number
+  resuming: boolean
   tiles: ManifestItem[]
 }
 
@@ -50,7 +50,7 @@ function pickToday(manifest: ManifestItem[], progress: ProgressMap, hits: Record
     if (tiles.length === 2) break
     if (!tiles.includes(m)) tiles.push(m)
   }
-  return { hero, resumeAt: inProgress[0] ? progress[hero.slug].pos : undefined, tiles }
+  return { hero, resuming: !!inProgress[0], tiles }
 }
 
 export default function Today() {
@@ -83,8 +83,9 @@ export default function Today() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [manifest, ready, cards, vocab])
 
-  const open = (item: ManifestItem, at?: number) => {
-    playTalk(item.slug, at)
+  // 没听完的集由播放器自己从上次的位置接着放，这里不传起点
+  const open = (item: ManifestItem) => {
+    playTalk(item.slug)
     navigate(`/talk/${item.slug}`)
   }
 
@@ -94,7 +95,7 @@ export default function Today() {
 
   return (
     <div className="page today-page">
-      <PageHeader title={<h1 className="app-logo-wrap"><LogoMark className="app-logo" /><span className="sr-only">每日听力 · 今日</span></h1>} search />
+      <PageHeader brand={<h1 className="app-logo-wrap"><LogoMark className="app-logo" /><span className="sr-only">每日听力 · 今日</span></h1>} />
 
       {manifestError ? (
         <div className="page-status">
@@ -117,7 +118,7 @@ export default function Today() {
         )
       ) : (
         <>
-          <button className="today-hero" onClick={() => open(hero, picks.resumeAt)} aria-label={`${picks.resumeAt ? '继续听' : '播放'}：${hero.title}`}>
+          <button className="today-hero" onClick={() => open(hero)} aria-label={`${picks.resuming ? '继续听' : '播放'}：${hero.title}`}>
             <span className="today-hero-art">
               <Cover src={hero.cover} className="today-hero-cover" alt="" />
             </span>
@@ -137,7 +138,7 @@ export default function Today() {
                 const entry = progress[item.slug]
                 const pct = entry && item.duration && !isFinished(entry) ? Math.min(100, (entry.pos / item.duration) * 100) : 0
                 return (
-                  <button key={item.slug} className="today-tile" onClick={() => open(item, pct ? entry!.pos : undefined)}>
+                  <button key={item.slug} className="today-tile" onClick={() => open(item)}>
                     <span className="today-tile-art">
                       <Cover src={item.cover} className="today-tile-cover" alt="" />
                       {pct > 0 && <i style={{ width: `${pct}%` }} />}

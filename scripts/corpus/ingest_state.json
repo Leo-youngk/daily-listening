@@ -913,5 +913,235 @@
   "series": "thinking",
   "ok": true,
   "ts": 1790585900
+ },
+ "thinking_394": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790589119
+ },
+ "thinking_393": {
+  "series": "thinking",
+  "ok": false,
+  "why": "取正文失败: https://thinkinginenglish.blog/2026/06/19/393-history-of-football-english-vocabulary-lesson/: HTTP Error 404: Not Found"
+ },
+ "thinking_392": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790589712
+ },
+ "thinking_391": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790589994
+ },
+ "thinking_390": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590063
+ },
+ "thinking_389": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590119
+ },
+ "thinking_388": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590165
+ },
+ "thinking_387": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590359
+ },
+ "thinking_386": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590383
+ },
+ "thinking_385": {
+  "series": "thinking",
+  "ok": false,
+  "why": "取正文失败: https://thinkinginenglish.blog/2026/04/15/384-the-scramble-for-africa-english-vocabulary-lesson/: HTTP Error 404: Not Found"
+ },
+ "thinking_384": {
+  "series": "thinking",
+  "ok": false,
+  "why": "取正文失败: https://thinkinginenglish.blog/2026/04/27/the-scramble-for-africa-english-vocabulary-lesson/: HTTP Error 404: Not Found"
+ },
+ "thinking_383": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590445
+ },
+ "thinking_382": {
+  "series": "thinking",
+  "ok": false,
+  "why": "取正文失败: https://thinkinginenglish.blog/2026/04/06/rwanda-economic-miracle-or-authoritarian-state-english-vocabulary-lesson/: HTTP Error 404: Not Found"
+ },
+ "thinking_381": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590494
+ },
+ "thinking_380": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590539
+ },
+ "thinking_379": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590581
+ },
+ "thinking_378": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590629
+ },
+ "thinking_377": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590676
+ },
+ "thinking_376": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590713
+ },
+ "thinking_375": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590751
+ },
+ "thinking_374": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590794
+ },
+ "thinking_373": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590836
+ },
+ "thinking_372": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590869
+ },
+ "thinking_371": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590912
+ },
+ "thinking_370": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590963
+ },
+ "thinking_369": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790590999
+ },
+ "thinking_368": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591033
+ },
+ "thinking_367": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591061
+ },
+ "thinking_366": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591249
+ },
+ "thinking_365": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591277
+ },
+ "thinking_364": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591320
+ },
+ "thinking_363": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591356
+ },
+ "thinking_362": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591393
+ },
+ "thinking_361": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591427
+ },
+ "thinking_360": {
+  "series": "thinking",
+  "ok": false,
+  "why": "align 0.000"
+ },
+ "thinking_359": {
+  "series": "thinking",
+  "ok": false,
+  "why": "取正文失败: https://thinkinginenglish.blog/2025/10/27/history-of-vampires-english-vocabulary-lesson/: HTTP Error 404: Not Found"
+ },
+ "thinking_358": {
+  "series": "thinking",
+  "ok": false,
+  "why": "取正文失败: https://thinkinginenglish.blog/2025/10/20/history-of-rome-english-vocabulary-lesson/: HTTP Error 404: Not Found"
+ },
+ "thinking_357": {
+  "series": "thinking",
+  "ok": false,
+  "why": "取正文失败: https://thinkinginenglish.blog/2025/10/06/the-great-fire-of-london-passive-voice-english-grammar-lesson/: HTTP Error 404: Not Found"
+ },
+ "thinking_356": {
+  "series": "thinking",
+  "ok": false,
+  "why": "取正文失败: https://thinkinginenglish.blog/2025/10/13/356-what-is-a-podcast-english-vocabulary-lesson/: HTTP Error 404: Not Found"
+ },
+ "thinking_355": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591574
+ },
+ "thinking_354": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591602
+ },
+ "thinking_353": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591626
+ },
+ "thinking_352": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591656
+ },
+ "thinking_351": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591686
+ },
+ "thinking_350": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591713
+ },
+ "thinking_349": {
+  "series": "thinking",
+  "ok": true,
+  "ts": 1790591750
  }
 }

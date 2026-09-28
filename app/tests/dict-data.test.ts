@@ -66,22 +66,21 @@ describe('本地词典义项', () => {
 })
 
 describe('词组识别', () => {
-  it('play out 被识别成词组，而不是单独的 play', () => {
-    const r = resolveTerm('We have no idea how this will play out over the next decade.', 'play')
-    expect(r.term).toBe('play out')
-    expect(r.entry.senses[0].zh).not.toContain('播放')
+  // 例句取自本批语料（词典只收录语料里出现过的词和词组）
+  it('figure out 被识别成词组，而不是单独的 figure', () => {
+    const r = resolveTerm('If you are an influencer and you want to figure out how to get more eyeballs on your content.', 'figure')
+    expect(r.term).toBe('figure out')
+    expect(r.entry.senses[0].zh).toContain('明白')
   })
 
-  it('Nativity play 走戏剧义，不会和 play out 混成同一条', () => {
-    const r = resolveTerm('I was a sheep in the school Nativity play that December.', 'play')
-    // ECDICT 收了 "nativity play"（基督诞生剧），比裸 play 更贴合本句
-    expect(r.term).toBe('nativity play')
-    expect(r.entry.senses[0].zh).toContain('剧')
-    expect(r.entry.senses.some(s => s.zh.includes('播放'))).toBe(false)
+  it('点复合名词的后一个词也能认出整个词组：climate change', () => {
+    const r = resolveTerm('Droughts are increasing with climate change.', 'change')
+    expect(r.term).toBe('climate change')
+    expect(r.entry.senses[0].zh).toContain('气候')
   })
 
   it('take off 作为词组收录', () => {
-    const r = resolveTerm('The plane will take off in ten minutes.', 'take')
+    const r = resolveTerm('For every cow or sheep we take off the land, we put on something else.', 'take')
     expect(r.term).toBe('take off')
   })
 })

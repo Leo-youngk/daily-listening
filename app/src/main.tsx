@@ -11,9 +11,9 @@ import { PlayerProvider } from './store/PlayerContext'
 // 只管预缓存）。按白名单清理，换版本号即可让旧数据整体失效。
 const RUNTIME_CACHES = new Set([
   'data-cache-v5',
-  'dict-ecdict-1-0-28-r2',
+  'dict-ecdict-1-0-28-r3',
   'cover-cache-v3',
-  'vocab-cache-v1',
+  'vocab-cache-v2',
   // 背词原声：复习前预取的切句音频
   CLIP_CACHE_NAME,
   // 用户主动下载的离线音频，永远不能被白名单清理扫到

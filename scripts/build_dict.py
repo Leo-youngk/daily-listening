@@ -24,7 +24,9 @@ OUT_DIR = ROOT / "public" / "dict"
 ECDICT_CSV = ROOT / "scripts" / ".vendor" / "ecdict.csv"
 LEMMA_TXT = ROOT / "scripts" / ".vendor" / "lemma.en.txt"
 
-DICT_VERSION = "ecdict-1.0.28-r2"
+DICT_VERSION = "ecdict-1.0.28-r3"
+# 只有派生说明（"xxx的过去式"）的屈折词条，义项借原形的
+INFLECTION_ONLY = re.compile(r"的(过去式|过去分词|现在分词|复数|第三人称单数|比较级|最高级)")
 
 WORD_RE = re.compile(r"[A-Za-z][A-Za-z'’\-]*")
 POS_LINE_RE = re.compile(r"^([a-z]+\.(?:\s*&\s*[a-z]+\.)*)\s*(.+)$")
@@ -225,18 +227,26 @@ def main() -> None:
     shards: dict[str, dict[str, dict]] = collections.defaultdict(dict)
 
     def emit(term: str, lemma: str) -> None:
-        # 屈折形式自身的词条通常只写"xxx的过去式"，义项要取原形的，
-        # 且直接内联，避免前端为一次点击发两次分片请求
-        src = raw_entries[lemma if lemma in raw_entries else term]
+        # 屈折形式自身的词条多半只写"xxx的过去式"，这时义项取原形的，且直接内联，
+        # 避免前端为一次点击发两次分片请求。
+        # 但 interesting / fascinating / used 这类本身就是常用形容词，自己的义项才对，
+        # 原形（interest 的"利息"）只作备注。
+        own = raw_entries.get(term)
+        own_informative = (term != lemma and own is not None
+                           and any(not INFLECTION_ONLY.search(s["zh"]) for s in own["senses"]))
+        src = own if own_informative else raw_entries[lemma if lemma in raw_entries else term]
         rec = {"lemma": lemma, "senses": src["senses"]}
-        if src["ph"]:
-            rec["ph"] = src["ph"]
+        # 发音永远跟着点的这个词形走（gave 读 geiv，不读 give）
+        ph = (own or {}).get("ph") or src["ph"]
+        if ph:
+            rec["ph"] = ph
         if src["en"]:
             rec["en"] = src["en"]
         if src["rank"]:
             rec["rank"] = src["rank"]
-        if term != lemma:
-            own = raw_entries.get(term)
+        if own_informative:
+            rec["note"] = f"原形 {lemma}"
+        elif term != lemma:
             note = own["senses"][0]["zh"] if own and own["senses"] else ""
             if note and len(note) <= 24:
                 rec["note"] = note

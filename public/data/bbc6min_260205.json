@@ -1,0 +1,534 @@
+{
+  "slug": "bbc6min_260205",
+  "title": "Rethinking dyslexia",
+  "speaker": "BBC Learning English",
+  "category": "bbc",
+  "date": "2026-02-05",
+  "duration": 372.4,
+  "cover": "/covers/bbc6min_260205.jpg",
+  "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260205",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_260205.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_260205.m4a"
+  },
+  "zhSource": "mt",
+  "zhModel": "gemini-3.5-flash",
+  "keywords": [
+    {
+      "term": "life skill",
+      "def": "essential skill which is useful or important in everyone’s life, such as reading, cooking, problem-solving or time management"
+    },
+    {
+      "term": "superpower",
+      "def": "ability or capacity to do something that other people cannot do"
+    },
+    {
+      "term": "spy",
+      "def": "person who secretly collects information about another country’s government or organisations"
+    },
+    {
+      "term": "read people",
+      "def": "ability to understand people’s real intentions through their behaviour and body language"
+    },
+    {
+      "term": "value (something)",
+      "def": "consider something important"
+    },
+    {
+      "term": "reach for the stars",
+      "def": "(idiom) have high or ambitious aims; try to achieve something difficult even if it seems impossible"
+    }
+  ],
+  "sentences": [
+    {
+      "i": 0,
+      "start": 4.72,
+      "end": 11.98,
+      "en": "Hello, this is 6 Minute English from BBC Learning English.",
+      "zh": "你好，这里是 BBC Learning English 的 6 Minute English。",
+      "w": [4.72,5.16,8.54,8.74,8.74,9.16,9.6,9.82,9.82,10.22,10.22,10.58,10.58,11.02,11.02,11.58,11.58,11.98]
+    },
+    {
+      "i": 1,
+      "start": 12.18,
+      "end": 16.16,
+      "en": "I'm Phil. And I'm Pippa. Are you a big reader, Phil?",
+      "zh": "我是 Phil。我是 Pippa。Phil，你是个很爱读书的人吗？",
+      "w": [12.18,12.42,12.42,12.64,12.9,13.16,13.16,13.52,13.52,13.86,14.28,14.46,14.46,14.7,14.7,14.92,14.92,15.2,15.2,15.72,15.9,16.16]
+    },
+    {
+      "i": 2,
+      "start": 17.26,
+      "end": 21.54,
+      "en": "Sometimes yes, sometimes no. Sometimes I go a while without reading anything.",
+      "zh": "有时是，有时不是。有时我会有好一阵子什么书都不读。",
+      "w": [17.26,17.7,17.7,18.0,18.3,18.72,18.72,19.04,19.3,19.74,19.74,20.02,20.02,20.22,20.22,20.38,20.38,20.52,20.52,20.82,20.82,21.04,21.04,21.54]
+    },
+    {
+      "i": 3,
+      "start": 21.76,
+      "end": 24.4,
+      "en": "What about you? Well, I really love to read.",
+      "zh": "你呢？嗯，我真的很喜欢读书。",
+      "w": [21.76,21.86,21.86,21.98,21.98,22.24,22.48,22.8,22.92,23.2,23.2,23.6,23.6,23.9,23.9,24.12,24.12,24.4]
+    },
+    {
+      "i": 4,
+      "start": 24.56,
+      "end": 26.24,
+      "en": "I read on the train to work all the time.",
+      "zh": "我一路上坐火车上班时都在看书。",
+      "w": [24.56,24.64,24.64,24.88,24.88,25.06,25.06,25.2,25.2,25.36,25.36,25.52,25.52,25.72,25.72,25.94,25.94,26.06,26.06,26.24]
+    },
+    {
+      "i": 5,
+      "start": 26.24,
+      "end": 28.9,
+      "en": "Ah, well, that is a great way to get some reading in, I guess.",
+      "zh": "啊，好吧，我想那确实是个抽空看书的好办法。",
+      "w": [26.24,26.68,26.68,26.88,26.88,27.02,27.02,27.14,27.14,27.26,27.26,27.52,27.52,27.74,27.74,27.9,27.9,28.0,28.0,28.18,28.18,28.4,28.4,28.62,28.62,28.76,28.76,28.9]
+    },
+    {
+      "i": 6,
+      "start": 28.9,
+      "end": 35.88,
+      "en": "Yes and reading, of course, is a life skill – an essential skill which is useful or important in everyone's life.",
+      "zh": "是的，当然，阅读是一项生活技能——也就是在每个人的生活中都很有用或很重要的必备技能。",
+      "w": [28.9,29.28,29.5,29.7,29.7,30.02,30.1,30.28,30.28,30.52,30.62,30.86,30.86,31.1,31.1,31.38,31.38,31.8,32.1,32.34,32.34,32.76,32.76,33.14,33.14,33.4,33.4,33.58,33.58,34.0,34.0,34.28,34.28,34.74,34.74,35.04,35.04,35.58,35.58,35.88]
+    },
+    {
+      "i": 7,
+      "start": 36.58,
+      "end": 44.44,
+      "en": "But reading can be a struggle for people with dyslexia – a learning difficulty making it hard for people to read, write or spell.",
+      "zh": "但对于患有读写障碍的人来说，阅读可能会很吃力。读写障碍是一种让人难以阅读、书写或拼写的学习障碍。",
+      "w": [36.58,36.78,36.78,37.26,37.26,37.58,37.58,37.84,37.84,38.0,38.0,38.28,38.28,38.54,38.54,38.78,38.78,39.06,39.06,39.8,40.16,40.32,40.32,40.58,40.58,41.08,41.08,41.52,41.52,41.82,41.82,42.12,42.12,42.3,42.3,42.54,42.54,42.82,42.82,43.2,43.48,43.66,43.66,44.06,44.06,44.44]
+    },
+    {
+      "i": 8,
+      "start": 45.26,
+      "end": 54.82,
+      "en": "It's thought that around one in ten people in the UK are dyslexic, and many dyslexic children struggle at school, where the focus is on reading and writing.",
+      "zh": "据认为，在英国大约每十个人中就有一个人患有读写障碍，许多患有读写障碍的孩子在学校里学得很吃力，因为学校的重点是阅读和写作。",
+      "w": [45.26,45.46,45.46,45.78,45.78,46.02,46.02,46.36,46.36,46.74,46.74,46.94,46.94,47.24,47.24,47.64,47.64,47.98,47.98,48.12,48.12,48.46,48.46,48.9,48.9,49.6,50.02,50.18,50.18,50.34,50.34,51.04,51.04,51.4,51.4,51.92,51.92,52.24,52.24,52.6,52.6,52.96,52.96,53.1,53.1,53.36,53.36,53.66,53.66,53.84,53.84,54.16,54.16,54.4,54.4,54.82]
+    },
+    {
+      "i": 9,
+      "start": 55.4,
+      "end": 61.76,
+      "en": "But in this episode, we'll be hearing how dyslexics have other skills which allow them to excel in the workplace.",
+      "zh": "但在本期节目中，我们将听到读写障碍者如何拥有其他技能，使他们能够在职场中脱颖而出。",
+      "w": [55.4,55.66,55.66,55.82,55.82,56.1,56.1,56.54,56.54,57.04,57.04,57.18,57.18,57.42,57.42,57.7,57.7,58.26,58.26,58.5,58.5,59.0,59.0,59.38,59.38,59.7,59.7,60.0,60.0,60.18,60.18,60.32,60.32,60.74,60.74,61.1,61.1,61.24,61.24,61.76]
+    },
+    {
+      "i": 10,
+      "start": 62.18,
+      "end": 73.16,
+      "en": "As usual, we'll be learning some useful new words and phrases, and remember, you'll find all the vocabulary for this episode on our website, bbclearningenglish.com.",
+      "zh": "和往常一样，我们将学习一些实用的新单词和短语。记住，你可以在我们的网站 bbclearningenglish.com 上找到本期节目的所有词汇。",
+      "w": [62.18,62.44,62.44,62.72,62.8,63.14,63.14,63.3,63.3,63.56,63.56,63.82,63.82,64.24,64.24,64.64,64.64,65.0,65.0,65.2,65.2,65.6,66.12,66.3,66.3,66.54,66.68,66.88,66.88,67.16,67.16,67.72,67.72,67.94,67.94,68.34,68.34,68.76,68.76,68.96,68.96,69.34,69.34,69.66,69.66,69.84,69.84,70.34,70.88,72.2,72.2,73.16]
+    },
+    {
+      "i": 11,
+      "start": 73.34,
+      "end": 75.96,
+      "en": "But first, I have a question for you, Phil.",
+      "zh": "但首先，我有一个问题要问你，Phil。",
+      "w": [73.34,73.62,73.62,74.0,74.24,74.42,74.42,74.62,74.62,74.82,74.82,75.08,75.08,75.44,75.44,75.68,75.7,75.96]
+    },
+    {
+      "i": 12,
+      "start": 76.42,
+      "end": 86.42,
+      "en": "Studies have shown that people with dyslexia have enhanced abilities in certain areas and can excel in creative thinking, problem solving and inventiveness.",
+      "zh": "研究表明，读写障碍者在某些领域的技能有所增强，并且在创造性思维、解决问题和发明创造方面表现出色。",
+      "w": [76.42,76.68,76.68,76.92,76.92,77.2,77.2,77.5,77.5,77.82,77.82,78.04,78.04,78.7,78.7,79.02,79.02,79.58,79.58,80.14,80.14,80.5,80.5,80.84,80.84,81.42,81.42,82.02,82.02,82.24,82.24,82.62,82.62,83.0,83.0,83.48,83.48,84.04,84.04,84.6,84.6,85.14,85.14,85.56,85.56,86.42]
+    },
+    {
+      "i": 13,
+      "start": 87.3,
+      "end": 90.26,
+      "en": "So, which famous scientist was dyslexic?",
+      "zh": "那么，哪位著名的科学家患有读写障碍呢？",
+      "w": [87.3,87.35,87.74,87.84,87.84,88.46,88.46,89.0,89.0,89.52,89.52,90.26]
+    },
+    {
+      "i": 14,
+      "start": 90.54,
+      "end": 96.44,
+      "en": "Was it: a) Stephen Hawking, b) Albert Einstein, or c) Marie Curie?",
+      "zh": "是：a) Stephen Hawking，b) Albert Einstein，还是 c) Marie Curie？",
+      "w": [90.54,90.62,90.62,90.96,90.96,91.34,91.5,91.98,91.98,92.36,92.36,93.24,93.58,93.8,93.8,94.34,94.34,94.74,94.74,95.2,95.78,95.84,95.84,96.44]
+    },
+    {
+      "i": 15,
+      "start": 97.32,
+      "end": 101.62,
+      "en": "Oh, I think... I think it's b) – I think it's Albert Einstein.",
+      "zh": "哦，我想……我想是 b)——我想是 Albert Einstein。",
+      "w": [97.32,97.92,97.92,98.1,98.1,99.34,99.34,99.6,99.6,99.84,99.84,100.08,100.08,100.4,100.52,100.68,100.68,100.8,100.8,100.98,100.98,101.16,101.16,101.62]
+    },
+    {
+      "i": 16,
+      "start": 101.98,
+      "end": 104.98,
+      "en": "Well, we'll find out the answer at the end of the programme.",
+      "zh": "好的，我们将在节目最后公布答案。",
+      "w": [101.98,102.2,102.3,102.54,102.54,102.74,102.74,103.02,103.02,103.18,103.18,103.52,103.52,103.9,103.9,104.04,104.04,104.3,104.3,104.46,104.46,104.6,104.6,104.98]
+    },
+    {
+      "i": 17,
+      "start": 105.68,
+      "end": 113.86,
+      "en": "Now, the British charity Made By Dyslexia shares online learning tools and works with schools and teachers to raise awareness about the condition.",
+      "zh": "现在，英国慈善机构 Made By Dyslexia 分享在线学习工具，并与学校和教师合作，以提高人们对这种病症的认识。",
+      "w": [105.68,105.86,106.12,106.22,106.22,106.54,106.54,107.06,107.06,107.5,107.5,107.78,107.78,108.42,108.42,108.8,108.8,109.34,109.34,109.72,109.72,110.1,110.1,110.38,110.38,110.66,110.66,110.86,110.86,111.16,111.16,111.4,111.4,111.76,111.76,112.06,112.06,112.32,112.32,112.82,112.82,113.26,113.26,113.46,113.46,113.86]
+    },
+    {
+      "i": 18,
+      "start": 114.66,
+      "end": 122.74,
+      "en": "The charity recently collaborated with British celebrities who have dyslexia for this promotional video: If you're dyslexic, it's kind of your superpower.",
+      "zh": "该慈善机构最近与患有读写障碍的英国名人合作制作了这段宣传视频：如果你有读写障碍，这在某种程度上就是你的超能力。",
+      "w": [114.66,114.9,114.9,115.22,115.22,115.76,115.76,116.4,116.4,116.78,116.78,117.04,117.04,117.6,117.6,117.9,117.9,118.12,118.12,118.7,118.7,118.96,118.96,119.24,119.24,119.78,119.78,120.32,121.02,121.08,121.08,121.24,121.24,121.72,121.8,121.88,121.88,122.04,122.04,122.16,122.16,122.28,122.28,122.74]
+    },
+    {
+      "i": 19,
+      "start": 122.98,
+      "end": 129.28,
+      "en": "It's, like, the way that you think. Our brains – they're wired to, I think, process information differently.",
+      "zh": "就像是，你的思考方式。我们的脑部结构——我认为它们天生就是以不同的方式来处理信息的。",
+      "w": [122.98,123.1,123.1,123.28,123.28,123.44,123.44,123.58,123.58,123.72,123.72,123.88,123.88,124.18,124.54,124.7,124.7,125.08,125.24,125.78,125.78,126.02,126.02,126.38,126.48,126.74,126.74,126.88,127.1,127.42,127.42,128.1,128.1,129.28]
+    },
+    {
+      "i": 20,
+      "start": 129.62,
+      "end": 133.46,
+      "en": "The way I see the world might be different from somebody else, but that's valid.",
+      "zh": "我看世界的方式可能和别人不同，但那也是有道理的。",
+      "w": [129.62,129.68,129.68,129.84,129.84,130.1,130.1,130.3,130.3,130.42,130.42,130.62,130.62,130.82,130.82,131.0,131.0,131.26,131.26,131.52,131.52,131.84,131.84,132.22,132.38,132.92,132.92,133.14,133.14,133.46]
+    },
+    {
+      "i": 21,
+      "start": 133.72,
+      "end": 143.38,
+      "en": "In fact, it's vital. You might recognise some of those voices, including actors Orlando Bloom and Keira Knightley and businessman Richard Branson.",
+      "zh": "事实上，这至关重要。你可能会认出其中的一些声音，包括演员 Orlando Bloom 和 Keira Knightley，以及企业家 Richard Branson。",
+      "w": [133.72,133.86,133.86,134.02,134.08,134.22,134.22,134.56,135.16,135.24,135.24,135.4,135.4,136.04,136.04,136.48,136.48,136.66,136.66,137.02,137.02,137.52,137.52,138.3,138.3,138.98,138.98,139.78,139.78,140.12,140.12,140.5,140.5,140.78,140.78,141.24,141.24,141.84,141.84,142.34,142.34,142.78,142.78,143.38]
+    },
+    {
+      "i": 22,
+      "start": 144.38,
+      "end": 154.4,
+      "en": "The message is that, far from being a disability, dyslexia is their superpower – the ability to do something other people can't.",
+      "zh": "这里传达的信息是，读写障碍非但不是一种残疾，反而是他们的超能力——一种做别人做不到的事情的能力。",
+      "w": [144.38,144.44,144.44,144.78,144.78,145.18,145.18,145.36,145.36,145.86,145.86,146.2,146.2,146.46,146.46,146.72,146.72,147.44,148.24,148.9,148.9,149.26,149.26,149.52,149.52,150.34,150.94,151.36,151.36,151.6,151.6,152.0,152.0,152.16,152.16,152.58,152.58,153.14,153.14,153.52,153.52,154.4]
+    },
+    {
+      "i": 23,
+      "start": 154.8,
+      "end": 166.26,
+      "en": "Made By Dyslexia was founded by social entrepreneur Kate Griggs, and Kate co-authored a report showing that empowering dyslexic workers could boost the global economy by billions.",
+      "zh": "Made By Dyslexia 是由社会企业家 Kate Griggs 创立的，Kate 合作撰写的一份报告显示，赋予读写障碍员工更多能力可以为全球经济带来数十亿美元的增长。",
+      "w": [154.8,155.1,155.1,155.38,155.38,156.02,156.02,156.2,156.2,156.54,156.54,156.84,156.84,157.24,157.24,157.92,157.92,158.56,158.56,159.04,159.44,159.56,159.56,159.96,159.96,160.6,160.6,160.82,160.82,161.2,161.2,161.7,161.7,161.9,161.9,162.46,162.46,163.14,163.14,163.66,163.66,164.02,164.02,164.4,164.4,164.56,164.56,164.8,164.8,165.32,165.32,165.78,165.78,166.26]
+    },
+    {
+      "i": 24,
+      "start": 167.18,
+      "end": 180.2,
+      "en": "BBC World Service programme People Fixing the World met Kate at the report's London launch event, where she explained why being dyslexic can actually give advantages in life, including some exciting job prospects.",
+      "zh": "BBC World Service 的节目 People Fixing the World 在该报告的伦敦发布会上采访了 Kate，她在会上解释了为什么患有读写障碍实际上能给生活带来优势，包括一些令人兴奋的就业前景。",
+      "w": [167.18,167.46,167.46,167.82,167.82,168.2,168.2,168.62,168.84,169.1,169.1,169.52,169.52,169.62,169.62,169.92,170.06,170.34,170.34,170.6,170.6,170.9,170.9,170.98,170.98,171.6,171.6,171.88,171.88,172.3,172.3,172.78,173.16,173.44,173.44,173.6,173.6,174.06,174.06,174.42,174.42,174.68,174.68,175.36,175.36,175.62,175.62,176.1,176.1,176.38,176.38,176.94,176.94,177.28,177.28,177.5,177.94,178.28,178.28,178.66,178.66,179.26,179.26,179.66,179.66,180.2]
+    },
+    {
+      "i": 25,
+      "start": 180.62,
+      "end": 192.38,
+      "en": "If you think about what you have to do as a spy, you have to be reading people really quickly, spotting complex patterns and solving problems really quickly, so you can see whether there's a terror threat.",
+      "zh": "如果你想想作为一名间谍必须做些什么，你必须能够非常迅速地看透人心、发现复杂的模式并极其快速地解决问题，这样你才能看出是否存在恐怖威胁。",
+      "w": [180.62,180.94,180.94,181.08,181.08,181.24,181.24,181.44,181.44,181.62,181.62,181.8,181.8,182.0,182.0,182.18,182.18,182.44,182.44,182.74,182.74,182.94,182.94,183.18,183.46,183.51,183.5,183.74,183.74,184.04,184.04,184.34,184.34,184.7,184.7,185.2,185.2,185.44,185.44,185.9,186.1,186.54,186.54,187.18,187.18,187.9,187.9,188.46,188.46,188.88,188.88,189.3,189.3,189.64,189.64,190.06,190.06,190.32,190.32,190.52,190.52,190.68,190.68,190.98,190.98,191.18,191.18,191.48,191.48,191.64,191.64,191.88,191.88,192.38]
+    },
+    {
+      "i": 26,
+      "start": 192.92,
+      "end": 195.84,
+      "en": "It's natural that dyslexics are brilliant spies.",
+      "zh": "读写障碍者天生就是出色的间谍。",
+      "w": [192.92,193.22,193.22,193.62,193.62,193.84,193.84,194.52,194.52,195.0,195.0,195.44,195.44,195.84]
+    },
+    {
+      "i": 27,
+      "start": 196.6,
+      "end": 205.18,
+      "en": "Kate thinks dyslexics make good spies – people who secretly collect information about another country's government or organisations.",
+      "zh": "Kate 认为读写障碍者很适合当间谍——也就是秘密收集其他国家政府或组织信息的人。",
+      "w": [196.6,196.74,196.74,197.16,197.16,198.02,198.02,198.24,198.24,198.66,198.66,199.42,200.04,200.36,200.36,200.58,200.58,201.08,201.08,201.58,201.58,202.08,202.08,202.46,202.46,202.96,202.96,203.6,203.6,203.96,203.96,204.46,204.46,205.18]
+    },
+    {
+      "i": 28,
+      "start": 205.9,
+      "end": 209.48,
+      "en": "Why? Because they're good at reading people.",
+      "zh": "为什么？因为他们擅长看透人心。",
+      "w": [205.9,206.24,206.78,207.28,207.28,207.6,207.6,207.76,207.76,208.1,208.1,208.86,208.86,209.48]
+    },
+    {
+      "i": 29,
+      "start": 209.82,
+      "end": 217.78,
+      "en": "To read people means to be able to understand someone's true intentions through their body language and behaviour, rather than their words.",
+      "zh": "“Read people”（看透人心）意味着能够通过一个人的肢体语言和行为，而不是他们的言语，来理解其真实的意图。",
+      "w": [209.82,209.94,209.94,210.24,210.24,210.66,210.66,210.88,210.88,211.1,211.1,211.22,211.22,211.5,211.5,211.76,211.76,212.36,212.36,212.96,212.96,213.16,213.16,213.74,213.74,214.42,214.42,214.62,214.62,214.92,214.92,215.26,215.26,215.62,215.62,216.1,216.1,216.86,216.86,217.16,217.16,217.34,217.34,217.78]
+    },
+    {
+      "i": 30,
+      "start": 218.38,
+      "end": 225.62,
+      "en": "Also present at the London charity event was space scientist and dyslexic herself, Dr Maggie Aderin-Pocock.",
+      "zh": "出席伦敦这场慈善活动的还有太空科学家 Dr Maggie Aderin-Pocock，她本人也患有读写障碍。",
+      "w": [218.38,218.88,218.88,219.28,219.28,219.56,219.56,219.7,219.7,220.0,220.0,220.28,220.28,220.82,220.82,221.06,221.06,221.42,221.42,221.98,221.98,222.46,222.46,223.12,223.12,223.56,224.2,224.25,224.2,224.54,224.54,225.62]
+    },
+    {
+      "i": 31,
+      "start": 225.96,
+      "end": 239.04,
+      "en": "Here, Maggie tells BBC World Service's People Fixing the World how being dyslexic contributes different skills and ideas to her project teams: Well, I think it's recognising people's skills and differences.",
+      "zh": "在这里，Maggie 向 BBC World Service 的 People Fixing the World 讲述了读写障碍如何为她的项目团队带来不同的技能和想法：嗯，我认为这是对人们技能和差异的认可。",
+      "w": [225.96,226.4,226.84,226.9,226.9,227.2,227.2,227.66,227.66,227.96,227.96,228.58,228.58,228.9,228.9,229.34,229.34,229.46,229.46,229.72,229.72,230.24,230.24,230.54,230.54,231.24,231.24,231.84,231.84,232.3,232.3,232.66,232.66,232.94,232.94,233.28,233.28,233.56,233.56,233.76,233.76,234.1,234.1,234.7,235.24,235.48,235.56,235.61,235.58,235.72,235.72,235.94,235.94,236.62,236.62,237.98,237.98,238.24,238.24,238.54,238.54,239.04]
+    },
+    {
+      "i": 32,
+      "start": 239.56,
+      "end": 248.14,
+      "en": "It's about teamwork and collaboration. We do it in science and that's when we reach for the stars, but to do that, we need to know our skills and value all the skills.",
+      "zh": "这关乎团队合作与协同。我们在科学研究中就是这么做的，那也是我们追求高远目标的时候，但要做到这一点，我们需要了解自己的技能并重视所有的技能。",
+      "w": [239.56,239.82,239.82,240.02,240.02,240.5,240.5,240.82,240.82,241.28,241.74,241.84,241.84,241.98,241.98,242.08,242.08,242.22,242.22,242.54,242.54,243.02,243.02,243.22,243.22,243.34,243.34,243.5,243.5,243.8,243.8,243.96,243.96,244.12,244.12,244.42,244.9,245.1,245.1,245.24,245.24,245.44,245.44,245.58,245.58,245.72,245.72,245.82,245.82,245.94,245.94,246.12,246.12,246.34,246.34,246.62,246.62,246.96,246.96,247.34,247.34,247.68,247.68,247.84,247.84,248.14]
+    },
+    {
+      "i": 33,
+      "start": 248.84,
+      "end": 253.58,
+      "en": "Maggie thinks that everyone's skills should be valued – or considered important.",
+      "zh": "Maggie 认为每个人的技能都应该被重视——或者说被认为很重要。",
+      "w": [248.84,249.24,249.24,249.56,249.56,249.86,249.86,250.8,250.8,251.1,251.1,251.42,251.42,251.6,251.6,252.1,252.1,252.54,252.54,252.88,252.88,253.58]
+    },
+    {
+      "i": 34,
+      "start": 254.5,
+      "end": 264.76,
+      "en": "Dyslexics may struggle to read or spell, but their skills in problem-solving and communication, for example, can be essential for scientific success.",
+      "zh": "读写障碍者可能在阅读或拼写上很吃力，但例如他们在解决问题和沟通方面的技能，对于科学上的成功可能是必不可少的。",
+      "w": [254.5,254.98,254.98,255.34,255.34,255.72,255.72,255.96,255.96,256.3,256.3,256.6,256.6,256.96,256.96,257.72,257.72,257.96,257.96,258.28,258.28,258.66,258.66,259.58,259.58,259.94,259.94,260.58,260.96,261.08,261.08,261.5,261.94,262.1,262.1,262.4,262.4,263.04,263.04,263.58,263.58,264.04,264.04,264.76]
+    },
+    {
+      "i": 35,
+      "start": 265.48,
+      "end": 277.6,
+      "en": "By valuing everyone's contribution, business and science teams can reach for the stars – an idiom meaning to be ambitious and try to achieve something difficult, even if it seems impossible.",
+      "zh": "通过重视每个人的贡献，商业和科学团队可以“reach for the stars”——这是一个成语，意思是心怀大志，努力去实现困难的事情，即使它看起来是不可能的。",
+      "w": [265.48,265.64,265.64,266.22,266.22,266.92,266.92,267.6,268.18,268.44,268.44,268.76,268.76,269.18,269.18,269.5,269.5,269.84,269.84,270.14,270.14,270.38,270.38,270.54,270.54,270.88,271.32,271.56,271.56,271.96,271.96,272.38,272.38,272.6,272.6,272.78,272.78,273.42,273.42,274.04,274.04,274.26,274.26,274.4,274.4,274.7,274.7,275.0,275.0,275.66,275.66,276.16,276.16,276.34,276.34,276.48,276.48,276.9,276.9,277.6]
+    },
+    {
+      "i": 36,
+      "start": 278.24,
+      "end": 286.28,
+      "en": "And talking of reaching for the stars, Pippa, I think it's time you revealed the answer to your question about successful scientists.",
+      "zh": "说到追求高远的目标，Pippa，我想是时候让你揭晓关于成功科学家的那个问题的答案了。",
+      "w": [278.24,278.6,278.6,278.96,278.96,279.32,279.32,279.66,279.66,279.94,279.94,280.06,280.06,280.36,280.56,280.74,281.16,281.44,281.44,281.6,281.6,281.82,281.82,282.06,282.06,282.26,282.26,282.6,282.6,282.86,282.86,283.04,283.04,283.28,283.28,283.48,283.48,284.02,284.02,284.44,284.44,285.16,285.16,286.28]
+    },
+    {
+      "i": 37,
+      "start": 286.82,
+      "end": 291.1,
+      "en": "Yes, I asked you which famous scientist was dyslexic.",
+      "zh": "是的，我问过你哪位著名的科学家患有读写障碍。",
+      "w": [286.82,286.87,287.28,287.44,287.44,287.82,287.82,288.18,288.18,288.54,288.54,289.12,289.12,289.74,289.74,290.26,290.26,291.1]
+    },
+    {
+      "i": 38,
+      "start": 291.58,
+      "end": 296.28,
+      "en": "Was it a) Stephen Hawking, b) Albert Einstein, or c) Marie Curie?",
+      "zh": "是 a) Stephen Hawking，b) Albert Einstein，还是 c) Marie Curie？",
+      "w": [291.58,291.63,291.62,291.82,291.82,292.2,292.46,292.66,292.66,292.96,293.46,293.62,294.18,294.23,294.22,294.68,294.68,295.02,295.02,295.4,295.78,295.83,295.82,296.28]
+    },
+    {
+      "i": 39,
+      "start": 296.28,
+      "end": 299.28,
+      "en": "And you were right, Phil. It was Albert Einstein.",
+      "zh": "你答对了，Phil。就是 Albert Einstein。",
+      "w": [296.28,296.74,296.74,296.94,296.94,297.06,297.06,297.3,297.3,297.54,297.7,297.86,297.86,298.18,298.18,298.7,298.7,299.28]
+    },
+    {
+      "i": 40,
+      "start": 300.34,
+      "end": 311.44,
+      "en": "OK. Let's recap the vocabulary we've learned, starting with life skill – an essential skill, such as reading or problem-solving, which is useful in everyone's life.",
+      "zh": "好的。让我们复习一下学过的词汇，首先是“life skill”（生活技能）——一种在每个人的生活中都很有用的必备技能，比如阅读或解决问题。",
+      "w": [300.34,300.82,301.24,301.74,301.74,302.12,302.12,302.42,302.42,302.88,302.88,303.46,303.46,303.76,304.28,304.48,304.48,304.92,304.92,305.24,305.24,305.62,306.04,306.16,306.16,306.58,306.58,307.04,307.04,307.4,307.4,307.64,307.64,307.9,307.9,308.34,308.34,309.14,309.46,309.62,309.62,309.78,309.78,310.14,310.14,310.48,310.48,311.02,311.02,311.44]
+    },
+    {
+      "i": 41,
+      "start": 312.1,
+      "end": 316.76,
+      "en": "A superpower is the ability to do something that other people can't.",
+      "zh": "“Superpower”（超能力）是指做别人做不到的事情的能力。",
+      "w": [312.1,312.15,312.1,312.72,312.72,313.18,313.18,313.32,313.32,313.64,313.64,314.0,314.0,314.28,314.28,314.7,314.7,315.34,315.34,315.66,315.66,316.06,316.06,316.76]
+    },
+    {
+      "i": 42,
+      "start": 317.4,
+      "end": 323.86,
+      "en": "A spy is someone who secretly collects information about other countries' governments or organisations.",
+      "zh": "“Spy”（间谍）是指秘密收集其他国家政府或组织信息的人。",
+      "w": [317.4,317.46,317.46,317.88,317.88,318.26,318.26,318.62,318.62,318.86,318.86,319.36,319.36,319.9,319.9,320.6,320.6,321.06,321.06,321.42,321.42,321.84,322.02,322.36,322.36,323.0,323.0,323.86]
+    },
+    {
+      "i": 43,
+      "start": 324.96,
+      "end": 332.92,
+      "en": "If you're good at reading people, you can understand people's real intentions through how they act and behave, instead of what they say.",
+      "zh": "如果你擅长“reading people”（看透人心），你就能通过人们的举止和行为，而不是他们所说的话，来理解他们的真实意图。",
+      "w": [324.96,325.08,325.08,325.3,325.3,325.58,325.58,325.74,325.74,326.18,326.18,326.74,326.98,327.16,327.16,327.3,327.3,327.98,327.98,328.62,328.62,328.84,328.84,329.48,329.48,330.2,330.2,330.4,330.4,330.58,330.58,330.94,330.94,331.2,331.2,331.62,331.62,332.1,332.1,332.26,332.26,332.42,332.42,332.62,332.62,332.92]
+    },
+    {
+      "i": 44,
+      "start": 332.92,
+      "end": 337.36,
+      "en": "If you value something or someone, you consider them to be important.",
+      "zh": "如果你“value”（重视）某事或某人，你会认为他们很重要。",
+      "w": [332.92,333.64,333.64,333.84,333.84,334.18,334.18,334.52,334.52,334.92,334.92,335.34,335.72,335.8,335.8,336.12,336.12,336.36,336.36,336.52,336.52,336.74,336.74,337.36]
+    },
+    {
+      "i": 45,
+      "start": 338.52,
+      "end": 348.5,
+      "en": "And finally, the idiom to reach for the stars means to have high or ambitious aims and try to achieve something difficult, even if it seems impossible.",
+      "zh": "最后，成语“to reach for the stars”（追求高远目标）意味着拥有高远或宏大的目标，并努力去实现困难的事情，即使它看起来是不可能的。",
+      "w": [338.52,338.57,338.52,338.92,339.38,339.43,339.4,339.9,339.9,340.2,340.2,340.54,340.54,340.86,340.86,341.02,341.02,341.42,341.42,341.78,341.78,342.02,342.02,342.18,342.18,342.64,342.64,342.92,342.92,343.32,343.32,343.82,343.82,344.4,344.4,344.64,344.64,344.8,344.8,345.16,345.16,345.52,345.52,346.08,346.08,346.98,346.98,347.36,347.36,347.48,347.48,347.86,347.86,348.5]
+    },
+    {
+      "i": 46,
+      "start": 349.16,
+      "end": 360.22,
+      "en": "Once again, our six minutes are up, but remember, you can find many more trending topics, plus a quiz and worksheet for this episode, on our website, bbclearningenglish.com.",
+      "zh": "我们的六分钟时间又到了，但请记住，你可以在我们的网站 bbclearningenglish.com 上找到更多热门话题，以及本期节目的测试和工作单。",
+      "w": [349.16,349.4,349.4,349.72,349.84,350.12,350.12,350.48,350.48,350.8,350.8,350.98,350.98,351.2,351.38,351.58,351.58,351.9,351.9,352.28,352.28,352.5,352.5,352.76,352.76,353.08,353.08,353.4,353.4,353.78,353.78,354.22,354.42,354.58,354.58,354.92,354.92,355.14,355.14,355.46,355.46,355.98,355.98,356.14,356.14,356.32,356.32,356.78,356.78,357.14,357.14,357.38,357.38,357.9,358.42,359.54,359.54,360.22]
+    },
+    {
+      "i": 47,
+      "start": 360.22,
+      "end": 363.28,
+      "en": "Hope to see you there soon, but for now, it's goodbye!",
+      "zh": "希望很快在那里见到你，但现在，该说再见了！",
+      "w": [360.22,360.74,360.74,360.9,360.9,361.08,361.08,361.22,361.22,361.4,361.4,361.68,361.88,362.06,362.06,362.24,362.24,362.5,362.66,362.94,362.94,363.28]
+    },
+    {
+      "i": 48,
+      "start": 363.28,
+      "end": 363.33,
+      "en": "Goodbye!",
+      "zh": "再见！",
+      "w": [363.28,363.33]
+    }
+  ],
+  "wSource": "asr",
+  "lemmas": {
+    "achieve": "achieve",
+    "actually": "actually",
+    "aims": "aim",
+    "ambitious": "ambitious",
+    "behave": "behave",
+    "bloom": "bloom",
+    "boost": "boost",
+    "business": "business",
+    "charity": "charity",
+    "collaborated": "collaborate",
+    "collaboration": "collaboration",
+    "collect": "collect",
+    "collects": "collect",
+    "communication": "communication",
+    "complex": "complex",
+    "condition": "condition",
+    "consider": "consider",
+    "considered": "consider",
+    "contributes": "contribute",
+    "course": "course",
+    "creative": "creative",
+    "economy": "economy",
+    "enhanced": "enhance",
+    "entrepreneur": "entrepreneur",
+    "episode": "episode",
+    "essential": "essential",
+    "excel": "excel",
+    "exciting": "exciting",
+    "explained": "explain",
+    "fixing": "fix",
+    "focus": "focus",
+    "founded": "found",
+    "global": "global",
+    "government": "government",
+    "governments": "government",
+    "hawking": "hawk",
+    "idiom": "idiom",
+    "impossible": "impossible",
+    "including": "include",
+    "intentions": "intention",
+    "launch": "launch",
+    "learned": "learned",
+    "learning": "learning",
+    "means": "means",
+    "message": "message",
+    "natural": "natural",
+    "patterns": "pattern",
+    "phrases": "phrase",
+    "process": "process",
+    "project": "project",
+    "prospects": "prospect",
+    "quiz": "quiz",
+    "rather": "rather",
+    "reach": "reach",
+    "reaching": "reach",
+    "reader": "reader",
+    "reading": "reading",
+    "real": "real",
+    "recently": "recently",
+    "revealed": "reveal",
+    "scientific": "scientific",
+    "scientist": "scientist",
+    "scientists": "scientist",
+    "shares": "share",
+    "skill": "skill",
+    "skills": "skill",
+    "social": "social",
+    "solving": "solve",
+    "space": "space",
+    "spell": "spell",
+    "spies": "spy",
+    "spotting": "spot",
+    "spy": "spy",
+    "struggle": "struggle",
+    "success": "success",
+    "successful": "successful",
+    "teams": "team",
+    "terror": "terror",
+    "thought": "thought",
+    "threat": "threat",
+    "tools": "tool",
+    "topics": "topic",
+    "trending": "trend",
+    "useful": "useful",
+    "usual": "usual",
+    "valid": "valid",
+    "value": "value",
+    "valued": "value",
+    "valuing": "value",
+    "video": "video",
+    "vital": "vital",
+    "vocabulary": "vocabulary",
+    "voices": "voice",
+    "wired": "wire",
+    "writing": "writing"
+  }
+}

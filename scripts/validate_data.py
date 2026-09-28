@@ -110,6 +110,11 @@ def check_sentences(slug, talk, rep):
 
     duration = talk.get("duration") or 0
     stat["n"] = len(sentences)
+    # 模型把英文原样吐回来时句数照样对得上，只能看译文里有没有汉字
+    untranslated = sum(1 for s in sentences
+                       if isinstance(s, dict) and not re.search(r"[一-鿿]", str(s.get("zh") or "")))
+    if untranslated > 0.1 * len(sentences):
+        rep.error(where, "%d/%d 句的 zh 没有中文（译文照抄了英文）" % (untranslated, len(sentences)))
     previous_end = None
     previous_start = None
 

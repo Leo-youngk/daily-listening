@@ -16,7 +16,7 @@ import {
 } from './lookup'
 
 /** 必须与 scripts/build_dict.py 的 DICT_VERSION 一致（tests/dict-data.test.ts 会核对） */
-export const DICT_VERSION = 'ecdict-1.0.28-r2'
+export const DICT_VERSION = 'ecdict-1.0.28-r3'
 
 const CONTEXT_CACHE_KEY = 'dtl.sensecache'
 const CONTEXT_CACHE_LIMIT = 400

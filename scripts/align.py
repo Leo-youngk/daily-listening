@@ -136,7 +136,8 @@ def transcribe_words(audio_path, model=None):
     words = []
     for a, b in chunk_bounds(audio):
         offset = a / SAMPLE_RATE
-        segments, _ = model.transcribe(audio[a:b], word_timestamps=True, vad_filter=True, language="en")
+        # 参考文本已知，ASR 只用来拿词时间：贪心解码（beam_size=1）足够，比默认 beam 5 快 2~3 倍
+        segments, _ = model.transcribe(audio[a:b], word_timestamps=True, vad_filter=True, language="en", beam_size=1)
         for seg in segments:
             for w in (seg.words or []):
                 parts = norm_words(w.word)

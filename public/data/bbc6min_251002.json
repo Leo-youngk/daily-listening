@@ -1,0 +1,535 @@
+{
+  "slug": "bbc6min_251002",
+  "title": "Have you ever seen a whale?",
+  "speaker": "BBC Learning English",
+  "category": "bbc",
+  "date": "2025-10-02",
+  "duration": 375.43,
+  "cover": "/covers/bbc6min_251002.jpg",
+  "sourceUrl": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/ep-251002",
+  "audioUrls": {
+    "standard": "https://daily-listening-media.if5v.workers.dev/v1/standard/bbc6min_251002.m4a",
+    "high": "https://daily-listening-media.if5v.workers.dev/v1/high/bbc6min_251002.m4a"
+  },
+  "zhSource": "mt",
+  "zhModel": "claude-sonnet-5",
+  "keywords": [
+    {
+      "term": "moratorium",
+      "def": "temporary suspension of an activity"
+    },
+    {
+      "term": "chap",
+      "def": "(informal) man"
+    },
+    {
+      "term": "turning point",
+      "def": "time when a situation starts to change, especially in a positive way"
+    },
+    {
+      "term": "(not) stand a chance",
+      "def": "(not) have a chance of success"
+    },
+    {
+      "term": "give a shout-out",
+      "def": "publicly praise someone or something"
+    },
+    {
+      "term": "good at media",
+      "def": "skilful at using media outlets, like TV and newspapers, to convey a message to the public"
+    }
+  ],
+  "sentences": [
+    {
+      "i": 0,
+      "start": 4.64,
+      "end": 11.66,
+      "en": "Hello, this is 6 Minute English from BBC Learning English.",
+      "zh": "你好，这里是 BBC Learning English 的《6 Minute English》节目。",
+      "w": [4.64,5.16,8.78,8.9,8.9,9.1,9.48,9.74,9.74,10.2,10.2,10.48,10.48,10.84,10.84,11.26,11.26,11.66]
+    },
+    {
+      "i": 1,
+      "start": 12.02,
+      "end": 18.24,
+      "en": "I'm Phil. And I'm Georgie. Encountering an animal in its natural habitat is a magical experience.",
+      "zh": "我是 Phil。我是 Georgie。在动物的自然栖息地邂逅它们，是一种奇妙的体验。",
+      "w": [12.02,12.2,12.2,12.38,12.58,12.9,12.9,13.2,13.2,13.56,14.46,14.8,14.8,14.9,14.9,15.18,15.18,15.4,15.4,15.54,15.54,16.04,16.04,16.46,16.46,16.78,16.78,17.04,17.04,17.52,17.52,18.24]
+    },
+    {
+      "i": 2,
+      "start": 18.96,
+      "end": 21.56,
+      "en": "Have you ever seen an animal in the wild, Georgie?",
+      "zh": "Georgie，你在野外见过什么动物吗？",
+      "w": [18.96,19.1,19.1,19.26,19.26,19.58,19.58,19.78,19.78,19.94,19.94,20.24,20.24,20.5,20.5,20.62,20.62,20.92,21.34,21.56]
+    },
+    {
+      "i": 3,
+      "start": 21.7,
+      "end": 26.62,
+      "en": "Yes, I have actually. I was on a walk and we saw a baby badger.",
+      "zh": "其实见过。有一次我在散步的时候，我们看到了一只小獾。",
+      "w": [21.7,22.06,22.14,22.3,22.3,22.5,22.5,22.92,23.12,23.24,23.24,23.38,23.38,23.64,23.64,23.78,23.78,24.04,24.04,24.46,24.46,24.72,24.72,25.04,25.04,25.64,25.64,26.08,26.08,26.62]
+    },
+    {
+      "i": 4,
+      "start": 26.86,
+      "end": 28.82,
+      "en": "It was on its own and it was really cute.",
+      "zh": "它当时是自己一个，特别可爱。",
+      "w": [26.86,26.96,26.96,27.06,27.06,27.18,27.18,27.32,27.32,27.6,27.6,27.86,27.86,28.0,28.0,28.12,28.12,28.46,28.46,28.82]
+    },
+    {
+      "i": 5,
+      "start": 29.2,
+      "end": 33.3,
+      "en": "What about you, Phil? Ooh, the most impressive one I've ever seen is actually a whale.",
+      "zh": "你呢，Phil？哦，我见过最令人印象深刻的其实是一头鲸鱼。",
+      "w": [29.2,29.28,29.28,29.48,29.48,29.74,29.74,29.9,29.9,29.95,29.9,30.58,30.58,30.8,30.8,31.16,31.16,31.42,31.42,31.6,31.6,31.8,31.8,32.06,32.06,32.38,32.38,32.66,32.66,32.8,32.8,33.3]
+    },
+    {
+      "i": 6,
+      "start": 33.84,
+      "end": 37.9,
+      "en": "I was driving by the coast in Patagonia and you could see them in the sea.",
+      "zh": "当时我开车经过巴塔哥尼亚的海岸，能看到它们在海里。",
+      "w": [33.84,33.89,33.86,33.96,33.96,34.46,34.46,34.9,34.9,35.08,35.08,35.32,35.32,35.54,35.54,36.22,36.22,36.48,36.48,36.62,36.62,36.76,36.76,37.08,37.08,37.3,37.3,37.42,37.42,37.58,37.58,37.9]
+    },
+    {
+      "i": 7,
+      "start": 38.38,
+      "end": 45.32,
+      "en": "Well, that sounds amazing. And funny you say that because whale watching has become popular in many coastal parts of the world.",
+      "zh": "听起来真是太棒了。说起来也巧，如今观鲸活动已经在世界上许多沿海地区流行起来。",
+      "w": [38.38,38.72,38.9,39.04,39.04,39.24,39.24,39.72,39.96,40.06,40.06,40.28,40.28,40.5,40.5,40.7,40.7,40.9,40.9,41.22,41.22,41.62,41.62,42.04,42.04,42.4,42.4,42.78,42.78,43.28,43.28,43.64,43.64,43.98,43.98,44.3,44.3,44.68,44.68,44.9,44.9,45.0,45.0,45.32]
+    },
+    {
+      "i": 8,
+      "start": 45.78,
+      "end": 54.48,
+      "en": "But watching whales is very different from what humans used to do to: hunt and kill them for their oil and meat – an activity known as whaling.",
+      "zh": "但观鲸和人类过去对鲸鱼的所作所为截然不同：人类曾经为了鲸油和鲸肉去捕杀它们，这项活动被称为捕鲸(whaling)。",
+      "w": [45.78,45.92,45.92,46.32,46.32,46.58,46.58,46.88,46.88,47.16,47.16,47.54,47.54,47.8,47.8,47.98,47.98,48.44,48.44,48.82,48.82,49.06,49.06,49.32,49.32,49.76,49.76,49.92,49.92,50.34,50.34,50.7,50.7,50.98,50.98,51.18,51.18,51.34,51.34,51.6,51.6,51.86,51.86,52.18,52.66,52.78,52.78,53.08,53.08,53.58,53.58,53.94,53.94,54.48]
+    },
+    {
+      "i": 9,
+      "start": 55.0,
+      "end": 64.24,
+      "en": "Last year marked the 40th anniversary of the International Whaling Commission's global moratorium – that's a temporary ban on the commercial killing of whales.",
+      "zh": "去年是国际捕鲸委员会全球暂禁令(moratorium)实施 40 周年——这是一项对商业捕鲸的临时禁令。",
+      "w": [55.0,55.34,55.34,55.68,55.68,56.0,56.0,56.2,56.2,56.8,56.92,57.3,57.3,57.62,57.62,57.74,57.74,58.32,58.32,58.8,58.8,59.46,59.46,59.88,59.88,60.66,61.32,61.48,61.48,61.58,61.58,61.9,61.9,62.34,62.34,62.68,62.68,62.82,62.82,63.24,63.24,63.76,63.76,63.94,63.94,64.24]
+    },
+    {
+      "i": 10,
+      "start": 65.02,
+      "end": 73.16,
+      "en": "Although Japan, Iceland and Norway continue to hunt whales, there's no doubt the ban has saved many whales species from extinction.",
+      "zh": "尽管日本、冰岛和挪威仍在继续捕鲸，但毫无疑问，这项禁令已经让许多鲸鱼物种免于灭绝。",
+      "w": [65.02,65.24,65.24,65.64,66.14,66.4,66.4,66.64,66.64,67.12,67.12,67.7,67.7,68.08,68.08,68.24,68.24,68.64,69.34,69.48,69.48,69.66,69.66,69.94,69.94,70.22,70.22,70.48,70.48,70.68,70.68,71.06,71.06,71.52,71.52,71.94,71.94,72.34,72.34,72.64,72.64,73.16]
+    },
+    {
+      "i": 11,
+      "start": 73.96,
+      "end": 79.12,
+      "en": "In this programme, we'll discuss our past and present relationship with these giants of the ocean.",
+      "zh": "在这期节目中，我们要聊聊人类与这些海洋巨兽之间过去和现在的关系。",
+      "w": [73.96,74.12,74.12,74.3,74.3,74.68,74.86,75.16,75.16,75.52,75.52,75.84,75.84,76.26,76.26,76.48,76.48,76.92,76.92,77.44,77.44,77.74,77.74,77.98,77.98,78.44,78.44,78.7,78.7,78.82,78.82,79.12]
+    },
+    {
+      "i": 12,
+      "start": 79.12,
+      "end": 83.68,
+      "en": "And, as usual, we'll learn some useful new words and phrases too.",
+      "zh": "像往常一样，我们也会学习一些实用的新单词和短语。",
+      "w": [79.12,79.74,79.92,80.24,80.24,80.58,80.94,81.04,81.04,81.22,81.22,81.42,81.42,81.9,81.9,82.32,82.32,82.66,82.66,82.84,82.84,83.18,83.18,83.68]
+    },
+    {
+      "i": 13,
+      "start": 83.68,
+      "end": 91.9,
+      "en": "Plus, you'll find all the vocabulary for this episode, along with a quiz and worksheet, on our website: bbclearningenglish.com.",
+      "zh": "此外，本期节目的所有词汇，以及配套的小测验和练习题，都可以在我们的网站 bbclearningenglish.com 上找到。",
+      "w": [83.68,84.22,84.34,84.58,84.58,84.78,84.78,85.08,85.08,85.22,85.22,85.64,85.64,85.98,85.98,86.18,86.18,86.66,87.12,87.17,87.16,87.3,87.3,87.48,87.48,87.68,87.68,88.08,88.08,88.62,88.62,88.82,88.82,88.98,88.98,89.42,89.8,91.04,91.04,91.9]
+    },
+    {
+      "i": 14,
+      "start": 92.0,
+      "end": 94.94,
+      "en": "But first, I have a question for you, Georgie.",
+      "zh": "不过首先，Georgie，我有个问题要考考你。",
+      "w": [92.0,92.36,92.36,92.76,92.98,93.18,93.18,93.42,93.42,93.6,93.6,93.92,93.92,94.34,94.34,94.54,94.7,94.94]
+    },
+    {
+      "i": 15,
+      "start": 95.6,
+      "end": 106.18,
+      "en": "You probably know that the world's largest whale is the blue whale, growing up to 30m long, but which whale species is the smallest?",
+      "zh": "你可能知道，世界上最大的鲸鱼是蓝鲸，体长可达 30 米，但最小的鲸鱼物种是什么呢？",
+      "w": [95.6,95.78,95.78,96.32,96.32,96.72,96.72,96.94,96.94,97.08,97.08,97.48,97.48,98.32,98.32,98.64,98.64,99.06,99.06,99.24,99.24,99.64,99.64,99.96,100.16,100.4,100.4,100.66,100.66,100.84,100.84,101.44,101.8,102.3,103.08,103.3,103.3,103.8,103.8,104.3,104.3,104.7,104.7,105.16,105.16,105.4,105.4,106.18]
+    },
+    {
+      "i": 16,
+      "start": 106.18,
+      "end": 113.86,
+      "en": "Is it: a) the beluga whale, b) the vaquita whale, or c) the pygmy right whale?",
+      "zh": "是 a) 白鲸？b) 小头鼠海豚？还是 c) 小露脊鲸？",
+      "w": [106.18,106.5,106.5,107.3,107.3,107.6,107.72,108.08,108.08,108.64,108.64,109.0,109.72,109.82,110.08,110.3,110.3,110.74,110.74,111.14,111.52,111.58,111.58,112.1,112.16,112.4,112.4,112.88,112.88,113.3,113.3,113.86]
+    },
+    {
+      "i": 17,
+      "start": 114.06,
+      "end": 119.42,
+      "en": "Hmm. Well, 'pygmy' makes me think small so I'm going to go with c) the pygmy right whale.",
+      "zh": "嗯，'pygmy'这个词让我想到'小'，所以我选 c) 小露脊鲸。",
+      "w": [114.06,114.66,114.66,114.74,114.74,115.26,115.26,115.48,115.48,115.74,115.74,116.1,116.1,116.7,116.88,116.96,116.96,117.12,117.12,117.22,117.22,117.32,117.32,117.42,117.42,117.64,117.64,117.98,118.12,118.26,118.26,118.7,118.7,118.98,118.98,119.42]
+    },
+    {
+      "i": 18,
+      "start": 120.04,
+      "end": 122.36,
+      "en": "OK. We'll find out later in the programme.",
+      "zh": "好，答案我们会在节目后面揭晓。",
+      "w": [120.04,120.09,120.28,120.6,120.6,120.82,120.82,121.04,121.04,121.5,121.5,121.86,121.86,122.02,122.02,122.36]
+    },
+    {
+      "i": 19,
+      "start": 123.62,
+      "end": 131.28,
+      "en": "Humans have hunted whales for at least a thousand years, starting with small groups of hunters in slow-moving wooden boats.",
+      "zh": "人类捕鲸的历史至少有一千年，最初是小群猎人乘坐行驶缓慢的木船进行捕猎。",
+      "w": [123.62,123.88,123.88,124.22,124.22,124.66,124.66,125.0,125.0,125.32,125.32,125.42,125.42,125.62,125.62,125.78,125.78,126.38,126.38,126.92,127.2,127.5,127.5,127.8,127.8,128.32,128.32,128.64,128.64,128.88,128.88,129.18,129.18,129.52,129.52,130.48,130.48,130.86,130.86,131.28]
+    },
+    {
+      "i": 20,
+      "start": 132.0,
+      "end": 140.76,
+      "en": "Catching whales like this was often unsuccessful, especially big whales like blue and humpback whales, which can swim up to 30km/hr.",
+      "zh": "这样的捕鲸方式往往难以成功，尤其是对蓝鲸、座头鲸这类大型鲸鱼来说，它们的游速最快可达每小时 30 公里。",
+      "w": [132.0,132.5,132.5,132.8,132.8,133.16,133.16,133.4,133.4,133.62,133.62,134.06,134.06,134.96,135.44,135.7,135.7,136.26,136.26,136.66,136.66,136.98,136.98,137.38,137.38,137.66,137.66,138.12,138.12,138.46,138.62,138.7,138.7,138.88,138.88,139.14,139.14,139.4,139.4,139.56,139.56,140.16,140.16,140.76]
+    },
+    {
+      "i": 21,
+      "start": 141.64,
+      "end": 152.04,
+      "en": "But all that changed in the late 1800s, as Jayne Pierce of the South Georgia Heritage Trust explained to BBC Radio 4 programme Rare Earth:",
+      "zh": "但到了 19 世纪末，这一切都改变了，南乔治亚遗产信托基金的 Jayne Pierce 向 BBC 广播四台节目《Rare Earth》做了如下解释：",
+      "w": [141.64,141.7,141.7,141.86,141.86,142.12,142.12,142.56,142.56,142.92,142.92,143.04,143.04,143.22,143.22,143.82,144.2,144.38,144.38,144.79,144.79,145.2,145.2,145.5,145.5,145.64,145.64,145.92,145.92,146.42,146.42,146.84,146.84,147.4,147.4,148.4,148.4,148.7,148.7,149.02,149.02,149.6,150.08,150.56,150.56,151.38,151.38,152.04]
+    },
+    {
+      "i": 22,
+      "start": 163.18,
+      "end": 165.76,
+      "en": "And that was a turning point for the whale.",
+      "zh": "这对鲸鱼来说是一个转折点(turning point)。",
+      "w": [163.18,163.32,163.32,163.7,163.7,163.86,163.86,164.04,164.04,164.38,164.38,164.72,164.72,165.1,165.1,165.6,165.6,165.76]
+    },
+    {
+      "i": 23,
+      "start": 165.86,
+      "end": 177.08,
+      "en": "The whale couldn't stand a chance. In 1870, a chap – that's an informal word for a man – called Svend Foyn invented the exploding harpoon, a weapon for killing whales.",
+      "zh": "鲸鱼从此毫无胜算(couldn't stand a chance)。1870 年，一个叫 Svend Foyn 的家伙(chap，这是对'男人'的非正式说法)发明了爆炸鱼叉——一种用来捕杀鲸鱼的武器。",
+      "w": [165.86,165.98,165.98,166.06,166.06,166.3,166.3,166.52,166.52,166.66,166.66,167.08,167.56,167.61,168.86,168.91,168.86,169.16,169.5,169.76,169.76,169.84,169.84,170.36,170.36,170.76,170.76,170.96,170.96,171.1,171.1,171.4,171.4,171.82,171.82,172.42,172.42,173.02,173.54,173.59,173.54,173.8,173.8,174.38,174.38,175.06,175.44,175.58,175.58,175.92,175.92,176.32,176.32,176.68,176.68,177.08]
+    },
+    {
+      "i": 24,
+      "start": 177.72,
+      "end": 188.1,
+      "en": "This was a turning point. The phrase turning point means a time when a situation starts to change, especially in a positive way, although sadly not in this case.",
+      "zh": "这就是一个转折点。turning point 这个短语指的是某种情况开始发生变化的时刻，通常是朝着积极的方向，不过很遗憾，在这里并非如此。",
+      "w": [177.72,178.0,178.0,178.34,178.34,178.5,178.5,178.84,178.84,179.22,179.7,179.86,179.86,180.14,180.14,180.74,180.74,181.12,181.12,181.44,181.44,181.62,181.62,181.92,181.92,182.16,182.16,182.3,182.3,182.86,182.86,183.36,183.36,183.62,183.62,184.04,184.3,184.74,184.74,185.14,185.14,185.32,185.32,185.64,185.64,186.02,186.36,186.62,186.62,186.98,186.98,187.38,187.38,187.6,187.6,187.82,187.82,188.1]
+    },
+    {
+      "i": 25,
+      "start": 188.1,
+      "end": 195.94,
+      "en": "After this, the whales didn't stand a chance, meaning they had no chance of successfully avoiding the hunters.",
+      "zh": "自此之后，鲸鱼便毫无胜算(didn't stand a chance)，也就是说，它们再也没有机会成功躲避猎人的追捕。",
+      "w": [188.1,188.88,188.88,189.16,189.44,189.49,189.46,189.86,189.86,190.46,190.46,190.98,190.98,191.2,191.2,191.68,192.18,192.48,192.48,192.86,192.86,193.08,193.08,193.58,193.58,193.96,193.96,194.2,194.2,194.84,194.84,195.38,195.38,195.62,195.62,195.94]
+    },
+    {
+      "i": 26,
+      "start": 196.36,
+      "end": 211.66,
+      "en": "Foyn's exploding harpoon, added to the invention of faster steam-powered boats, increased whaling massively throughout the 20th century, to the point where over three million whales had been killed and many species faced extinction.",
+      "zh": "Foyn 发明的爆炸鱼叉，再加上速度更快的蒸汽动力船只的问世，使得整个 20 世纪的捕鲸活动大幅增加，以至于超过 300 万头鲸鱼惨遭捕杀，许多物种也因此濒临灭绝。",
+      "w": [196.36,196.96,196.96,197.6,197.6,198.1,198.62,198.7,198.7,198.96,198.96,199.06,199.06,199.44,199.44,199.66,199.66,200.02,200.02,200.96,200.96,201.46,202.06,202.36,202.36,202.8,202.8,203.56,203.56,204.0,204.0,204.24,204.24,204.72,204.72,205.06,205.56,205.76,205.76,205.88,205.88,206.02,206.02,206.3,206.3,206.6,206.6,207.14,207.14,207.82,207.82,208.32,208.32,208.56,208.56,208.7,208.7,209.08,209.44,209.62,209.62,209.8,209.8,210.38,210.38,210.78,210.78,211.66]
+    },
+    {
+      "i": 27,
+      "start": 212.14,
+      "end": 224.86,
+      "en": "By the 1970s, there were only a few great whales left and environmental groups like Greenpeace started the Save the Whales campaign to make people aware of devastation in whale populations and the cruelty of whaling.",
+      "zh": "到了 20 世纪 70 年代，大型鲸鱼所剩无几，绿色和平组织(Greenpeace)等环保团体发起了'拯救鲸鱼'(Save the Whales)运动，以唤起人们对鲸鱼种群遭受重创以及捕鲸行为残忍性的关注。",
+      "w": [212.14,212.26,212.26,212.4,212.4,213.0,213.44,213.52,213.52,213.64,213.64,213.94,213.94,214.1,214.1,214.42,214.42,214.66,214.66,214.94,214.94,215.4,215.86,215.91,215.88,216.32,216.32,216.88,216.88,217.1,217.1,217.56,217.56,218.28,218.28,218.54,218.54,218.82,218.82,219.02,219.02,219.34,219.34,219.78,220.18,220.42,220.42,220.58,220.58,220.86,220.86,221.14,221.14,221.4,221.4,221.88,221.88,222.38,222.38,222.62,222.62,223.26,223.26,223.66,223.66,223.78,223.78,224.12,224.12,224.48,224.48,224.86]
+    },
+    {
+      "i": 28,
+      "start": 225.44,
+      "end": 233.24,
+      "en": "It became popular to listen to the Song of the Whale, recordings of whales communicating at sea, which sound something like this:",
+      "zh": "聆听'鲸之歌'(Song of the Whale)一度成为风尚——那是鲸鱼在海中交流的录音，听起来大概是这样的：",
+      "w": [225.44,225.6,225.6,225.86,225.86,226.32,226.32,226.6,226.6,226.8,226.8,227.06,227.06,227.22,227.22,227.48,227.48,227.68,227.68,227.86,227.86,228.16,228.66,228.9,228.9,229.26,229.26,229.62,229.62,230.26,230.26,230.68,230.68,231.0,231.48,231.66,231.66,231.9,231.9,232.3,232.3,232.56,232.56,233.24]
+    },
+    {
+      "i": 29,
+      "start": 242.7,
+      "end": 253.1,
+      "en": "Here's marine biologist Joe Roman, discussing the Save the Whales campaign with BBC Radio 4's Rare Earth: People started thinking about whales in different ways.",
+      "zh": "下面是海洋生物学家 Joe Roman 在 BBC 广播四台《Rare Earth》节目中谈到'拯救鲸鱼'运动：人们开始以不同的方式看待鲸鱼。",
+      "w": [242.7,243.38,243.38,243.64,243.64,244.28,244.28,244.7,244.7,245.16,245.16,246.0,246.0,246.36,246.36,246.76,246.76,247.04,247.04,247.3,247.3,247.82,247.82,248.12,248.12,248.5,248.5,249.06,249.06,249.27,249.27,249.47,249.47,249.68,249.68,250.44,250.44,251.32,251.32,251.64,251.64,251.92,251.92,252.1,252.1,252.38,252.38,252.62,252.62,253.1]
+    },
+    {
+      "i": 30,
+      "start": 253.64,
+      "end": 265.18,
+      "en": "And then we have to give a shout-out to activist groups like Greenpeace, who put their RIB boats – they put their Zodiacs in between Soviet hunting vessels and sperm whales.",
+      "zh": "在这里我们也不得不为绿色和平这样的行动团体点个赞(shout-out)，他们把自己的充气艇——他们的 Zodiac 快艇——直接开到苏联捕鲸船和抹香鲸之间。",
+      "w": [253.64,253.69,253.64,253.84,253.84,254.12,254.12,254.36,254.36,254.52,254.52,254.66,254.66,254.8,254.8,255.24,255.24,255.54,255.54,256.3,256.3,256.66,256.66,256.94,256.94,257.34,257.9,257.98,257.98,258.22,258.22,258.64,258.64,259.4,259.4,259.76,259.92,259.98,259.98,260.2,260.2,260.4,260.4,261.3,261.3,261.44,261.44,261.94,261.94,262.68,262.68,263.62,263.62,264.18,264.18,264.52,264.52,264.88,264.88,265.18]
+    },
+    {
+      "i": 31,
+      "start": 265.4,
+      "end": 271.08,
+      "en": "And they were very good at media. Joe gives a shout-out to Greenpeace activists for protecting whales.",
+      "zh": "而且他们非常擅长运用媒体。Joe 为保护鲸鱼的绿色和平行动者们点赞(shout-out)。",
+      "w": [265.4,265.54,265.54,265.74,265.74,265.88,265.88,266.28,266.28,266.5,266.5,266.62,266.62,267.02,267.44,267.52,267.52,267.86,267.86,268.06,268.06,268.6,268.6,268.78,268.78,269.26,269.26,269.9,269.9,270.2,270.2,270.58,270.58,271.08]
+    },
+    {
+      "i": 32,
+      "start": 271.64,
+      "end": 274.84,
+      "en": "To give a shout-out to someone means to praise them in public.",
+      "zh": "give a shout-out to someone 意思是公开赞扬某人。",
+      "w": [271.64,271.72,271.72,271.94,271.94,272.1,272.1,272.6,272.6,272.74,272.74,273.14,273.14,273.5,273.5,273.7,273.7,274.0,274.0,274.26,274.26,274.52,274.52,274.84]
+    },
+    {
+      "i": 33,
+      "start": 275.66,
+      "end": 280.18,
+      "en": "Videos and photos taken by Greenpeace changed public opinion about whaling.",
+      "zh": "绿色和平拍摄的视频和照片改变了公众对捕鲸的看法。",
+      "w": [275.66,275.94,275.94,276.2,276.2,276.62,276.62,277.04,277.04,277.36,277.36,277.8,277.8,278.5,278.5,278.98,278.98,279.42,279.42,279.7,279.7,280.18]
+    },
+    {
+      "i": 34,
+      "start": 281.12,
+      "end": 290.18,
+      "en": "Joe says Greenpeace were good at media, meaning they skilfully used media outlets like TV and newspapers to convey their message to the public.",
+      "zh": "Joe 说绿色和平很擅长运用媒体(good at media)，意思是他们巧妙地利用电视、报纸等媒体渠道，向公众传达自己的信息。",
+      "w": [281.12,281.17,281.12,281.46,281.46,282.02,282.02,282.34,282.34,282.78,282.78,282.98,282.98,283.56,284.08,284.3,284.3,284.58,284.58,285.18,285.32,285.64,285.64,286.04,286.04,286.42,286.42,286.72,286.72,287.18,287.18,287.58,287.58,288.02,288.02,288.4,288.4,288.82,288.82,289.12,289.12,289.44,289.44,289.7,289.7,289.82,289.82,290.18]
+    },
+    {
+      "i": 35,
+      "start": 290.64,
+      "end": 298.2,
+      "en": "Many whale species are still endangered and all whales still face danger from ocean acidification and plastic pollution.",
+      "zh": "如今仍有许多鲸鱼物种处于濒危状态，而且所有鲸鱼仍然面临着海洋酸化和塑料污染的威胁。",
+      "w": [290.64,290.96,290.96,291.2,291.2,291.7,291.7,292.04,292.04,292.36,292.36,293.06,293.52,293.64,293.64,293.9,293.9,294.2,294.2,294.56,294.56,294.84,294.84,295.22,295.22,295.5,295.5,295.92,295.92,296.86,296.86,297.24,297.24,297.66,297.66,298.2]
+    },
+    {
+      "i": 36,
+      "start": 298.82,
+      "end": 307.42,
+      "en": "But the moratorium – that means the temporary suspension – on hunting them has lasted 40 years and hopefully will help protect whales for decades more.",
+      "zh": "但针对捕鲸的暂禁令(moratorium，即临时中止)已经持续了 40 年，希望它还能在未来几十年里继续为保护鲸鱼发挥作用。",
+      "w": [298.82,299.02,299.02,299.14,299.14,299.58,300.02,300.2,300.2,300.42,300.42,300.66,300.66,301.12,301.12,301.66,301.66,302.08,302.08,302.46,302.46,302.72,302.94,303.12,303.12,303.56,303.96,304.4,304.72,304.9,304.9,305.3,305.3,305.6,305.6,305.8,305.8,306.14,306.14,306.44,306.44,306.7,306.7,306.96,306.96,307.42]
+    },
+    {
+      "i": 37,
+      "start": 307.42,
+      "end": 310.8,
+      "en": "OK. Phil, isn't it time you revealed the answer to your question?",
+      "zh": "好了，Phil，是不是该公布你那个问题的答案了？",
+      "w": [307.42,307.98,308.22,308.34,308.52,308.66,308.66,308.86,308.86,309.04,309.04,309.24,309.24,309.6,309.6,309.82,309.82,310.08,310.08,310.24,310.24,310.4,310.4,310.8]
+    },
+    {
+      "i": 38,
+      "start": 311.34,
+      "end": 315.62,
+      "en": "OK. I asked you which was the smallest species of whale.",
+      "zh": "好，我问你最小的鲸鱼物种是什么。",
+      "w": [311.34,311.39,311.84,312.04,312.04,312.34,312.34,312.62,312.62,312.98,312.98,313.34,313.34,313.62,313.62,314.42,314.42,315.04,315.04,315.4,315.4,315.62]
+    },
+    {
+      "i": 39,
+      "start": 315.98,
+      "end": 318.4,
+      "en": "And I said the pygmy right whale, didn't I?",
+      "zh": "我说的是小露脊鲸，对吧？",
+      "w": [315.98,316.06,316.06,316.3,316.3,316.62,316.62,316.84,316.84,317.22,317.22,317.52,317.52,317.88,318.02,318.18,318.18,318.4]
+    },
+    {
+      "i": 40,
+      "start": 318.76,
+      "end": 325.46,
+      "en": "You did. Unfortunately, the answer is actually the vaquita whale, which is about 1.5m long.",
+      "zh": "没错。不过很遗憾，正确答案其实是小头鼠海豚，体长约 1.5 米。",
+      "w": [318.76,318.92,318.92,319.18,319.68,320.2,320.48,320.58,320.58,320.74,320.74,321.0,321.0,321.56,321.56,321.8,321.8,322.44,322.44,322.78,323.0,323.1,323.1,323.34,323.34,323.68,323.68,324.28,325.02,325.46]
+    },
+    {
+      "i": 41,
+      "start": 325.8,
+      "end": 330.26,
+      "en": "Oh, so cute! OK. Let's recap the rest of the vocabulary we've learned.",
+      "zh": "哦，真可爱！好，我们来回顾一下剩下的词汇。",
+      "w": [325.8,325.96,325.98,326.22,326.22,326.52,327.22,327.44,327.54,327.82,327.82,328.06,328.06,328.32,328.32,328.48,328.48,328.68,328.68,328.78,328.78,329.22,329.22,329.66,329.66,330.26]
+    },
+    {
+      "i": 42,
+      "start": 330.46,
+      "end": 337.92,
+      "en": "A chap is an informal word for a man. A turning point is when a situation starts to change, especially for the better.",
+      "zh": "chap 是对'男人'的非正式说法。turning point(转折点)指的是某种情况开始发生变化的时刻，通常是朝着好的方向。",
+      "w": [330.46,330.56,330.56,330.82,330.82,331.12,331.12,331.24,331.24,331.66,331.66,332.04,332.04,332.26,332.26,332.4,332.4,332.7,332.7,333.14,333.14,333.52,333.52,333.86,333.86,334.1,334.1,334.24,334.24,334.4,334.4,334.86,334.86,335.42,335.42,335.76,335.76,336.14,336.68,337.12,337.12,337.48,337.48,337.6,337.6,337.92]
+    },
+    {
+      "i": 43,
+      "start": 338.44,
+      "end": 341.82,
+      "en": "If someone doesn't stand a chance, they have no chance of success.",
+      "zh": "如果某人 doesn't stand a chance，意思就是他毫无成功的可能。",
+      "w": [338.44,338.54,338.54,338.88,338.88,339.22,339.22,339.56,339.56,339.72,339.72,340.0,340.14,340.3,340.3,340.54,340.54,340.88,340.88,341.18,341.18,341.4,341.4,341.82]
+    },
+    {
+      "i": 44,
+      "start": 342.54,
+      "end": 346.22,
+      "en": "To give a shout-out to someone means topublicly praise them.",
+      "zh": "give a shout-out to someone 意思是公开赞扬某人。",
+      "w": [342.54,342.62,342.62,342.78,342.78,342.98,342.98,343.58,343.58,343.9,343.9,344.24,344.24,344.58,344.58,345.18,345.36,345.88,345.88,346.22]
+    },
+    {
+      "i": 45,
+      "start": 346.56,
+      "end": 352.84,
+      "en": "And finally,if you're good at media, you are skilful at using media outlets to convey a message to the public.",
+      "zh": "最后，如果你 good at media(擅长运用媒体)，意思是你很擅长利用媒体渠道向公众传达信息。",
+      "w": [346.56,346.72,346.72,347.04,347.4,347.5,347.5,347.74,347.74,347.94,347.94,348.18,348.18,348.64,348.96,349.04,349.04,349.16,349.16,349.68,349.68,349.92,349.92,350.22,350.22,350.62,350.62,351.04,351.04,351.32,351.32,351.6,351.6,351.8,351.8,352.1,352.1,352.4,352.4,352.52,352.52,352.84]
+    },
+    {
+      "i": 46,
+      "start": 353.68,
+      "end": 363.72,
+      "en": "Once again, our six minutes are up but remember you can find worksheets, quizzes and loads more resources to improve your English on our website: bbclearningenglish.com.",
+      "zh": "六分钟又到了，别忘了，你可以在我们的网站 bbclearningenglish.com 上找到练习题、小测验，以及更多帮助你提升英语水平的资源。",
+      "w": [353.68,353.88,353.88,354.16,354.26,354.4,354.4,354.66,354.66,354.94,354.94,355.1,355.1,355.32,355.52,355.66,355.66,355.98,356.3,356.42,356.42,356.58,356.58,356.84,356.84,357.5,357.74,358.14,358.14,358.36,358.36,358.7,358.7,358.98,358.98,359.4,359.4,359.7,359.7,360.02,360.02,360.2,360.2,360.56,360.56,360.84,360.84,360.98,360.98,361.46,361.9,363.02,363.02,363.72]
+    },
+    {
+      "i": 47,
+      "start": 364.14,
+      "end": 366.22,
+      "en": "See you there soon but for now, it's goodbye!",
+      "zh": "我们网站上见，不过现在，先说再见啦！",
+      "w": [364.14,364.19,364.16,364.26,364.26,364.42,364.42,364.72,364.9,365.1,365.1,365.26,365.26,365.52,365.72,366.04,366.04,366.22]
+    },
+    {
+      "i": 48,
+      "start": 366.78,
+      "end": 367.1,
+      "en": "Bye!",
+      "zh": "拜拜！",
+      "w": [366.78,367.1]
+    }
+  ],
+  "wSource": "asr",
+  "lemmas": {
+    "actually": "actually",
+    "amazing": "amaze",
+    "anniversary": "anniversary",
+    "ban": "ban",
+    "campaign": "campaign",
+    "century": "century",
+    "coast": "coast",
+    "coastal": "coastal",
+    "commercial": "commercial",
+    "commission's": "commission",
+    "communicating": "communicate",
+    "continue": "continue",
+    "convey": "convey",
+    "cruelty": "cruelty",
+    "decades": "decade",
+    "doubt": "doubt",
+    "encountering": "encounter",
+    "endangered": "endanger",
+    "environmental": "environmental",
+    "episode": "episode",
+    "especially": "especially",
+    "experience": "experience",
+    "explained": "explain",
+    "exploding": "explode",
+    "extinction": "extinction",
+    "giants": "giant",
+    "global": "global",
+    "heritage": "heritage",
+    "hunt": "hunt",
+    "hunted": "hunt",
+    "hunting": "hunt",
+    "impressive": "impressive",
+    "improve": "improve",
+    "increased": "increase",
+    "international": "international",
+    "invented": "invent",
+    "invention": "invention",
+    "later": "later",
+    "learned": "learned",
+    "learning": "learning",
+    "least": "least",
+    "loads": "load",
+    "marine": "marine",
+    "means": "means",
+    "media": "media",
+    "message": "message",
+    "natural": "natural",
+    "opinion": "opinion",
+    "outlets": "outlet",
+    "phrase": "phrase",
+    "phrases": "phrase",
+    "pierce": "pierce",
+    "plastic": "plastic",
+    "point": "point",
+    "pollution": "pollution",
+    "popular": "popular",
+    "populations": "population",
+    "positive": "positive",
+    "praise": "praise",
+    "probably": "probably",
+    "protect": "protect",
+    "protecting": "protect",
+    "public": "public",
+    "quiz": "quiz",
+    "quizzes": "quiz",
+    "rare": "rare",
+    "relationship": "relationship",
+    "resources": "resource",
+    "revealed": "reveal",
+    "rib": "rib",
+    "sadly": "sadly",
+    "save": "save",
+    "saved": "save",
+    "saw": "saw",
+    "situation": "situation",
+    "species": "species",
+    "success": "success",
+    "successfully": "successfully",
+    "suspension": "suspension",
+    "temporary": "temporary",
+    "throughout": "throughout",
+    "trust": "trust",
+    "turning": "turning",
+    "unfortunately": "unfortunately",
+    "used": "used",
+    "useful": "useful",
+    "usual": "usual",
+    "vessels": "vessel",
+    "videos": "video",
+    "vocabulary": "vocabulary",
+    "weapon": "weapon",
+    "whale": "whale",
+    "whales": "whale",
+    "whaling": "whale",
+    "wild": "wild",
+    "wooden": "wooden"
+  }
+}

@@ -241,7 +241,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     if (slugRef.current) saveProgress(slugRef.current, audio.currentTime, audio.duration || 0)
   }, [audio, sampleListenProgress])
 
-  const playTalk = useCallback((target: string, at?: number) => {
+  /** 重新加载一集（换集、出错重试、换音质时用）：停掉当前音频，从头拉音频和字幕 */
+  const loadTalk = useCallback((target: string, at?: number) => {
     const meta = manifestBySlug.get(target)
     if (!meta) {
       setError('未找到这一集，请返回节目列表重试')
@@ -461,6 +462,19 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
 
   const skip = useCallback((delta: number) => seek(audio.currentTime + delta), [audio, seek])
 
+  /**
+   * 打开一集：已经是当前这集且加载好了，就只跳到指定位置 / 接着播，
+   * 不重新拉音频（从列表、首页再点一次正在播的那集不能从头缓冲）。
+   */
+  const playTalk = useCallback((target: string, at?: number) => {
+    if (target === slugRef.current && talkRef.current && !audio.error) {
+      if (at !== undefined && Number.isFinite(at)) seek(at)
+      if (audio.paused) startPlayback()
+      return
+    }
+    loadTalk(target, at)
+  }, [audio, loadTalk, seek, startPlayback])
+
   const stepSentence = useCallback((direction: 1 | -1) => {
     const sentences = talkRef.current?.sentences
     if (!sentences?.length) return
@@ -535,8 +549,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
 
   const retry = useCallback(() => {
     const currentSlug = slugRef.current
-    if (currentSlug) playTalk(currentSlug, audio.currentTime)
-  }, [audio, playTalk])
+    if (currentSlug) loadTalk(currentSlug, audio.currentTime)
+  }, [audio, loadTalk])
 
   const value = useMemo<PlayerState>(() => ({
     manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
