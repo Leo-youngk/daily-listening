@@ -1,10 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import type { ComponentType, ReactNode, SVGProps } from 'react'
+import {
+  BookOpenIcon, CheckIcon, ChevronLeftIcon, ChevronRightIcon, DatabaseIcon, DownloadIcon, FileTextIcon, HeartIcon,
+  InfoIcon, MoonIcon, TargetIcon,
+} from 'lucide-react'
 import { useCatalog } from '../store/PlayerContext'
 import { useCards } from '../hooks/useCards'
+import { navigate } from '../hooks/useHashRoute'
 import { isFinished, loadFavorites, loadProgress, loadStats, streakDays, saveSettings, loadSettings } from '../lib/storage'
 import TalkCard from '../components/TalkCard'
-import PageHeader from '../components/PageHeader'
-import Segmented from '../components/Segmented'
 import type { Settings } from '../lib/types'
 import { fmtBytes } from '../lib/format'
 import { isMastered, reviewStats } from '../lib/srs'
@@ -21,11 +25,86 @@ import {
   storageEstimate,
 } from '../lib/offline'
 
-const DAILY_NEW = ['10', '15', '20', '30'].map(n => [n, n] as const)
-const RETENTION = ['0.85', '0.9', '0.95'].map(r => [r, `${Math.round(Number(r) * 100)}%`] as const)
+type Icon = ComponentType<SVGProps<SVGSVGElement>>
+
+const DAILY_NEW = [10, 15, 20, 30].map(n => [String(n), `${n} 词`] as const)
+const RETENTION = [0.85, 0.9, 0.95].map(r => [String(r), `${Math.round(r * 100)}%`] as const)
 const THEMES = [['auto', '跟随系统'], ['light', '浅色'], ['dark', '深色']] as const
 
-export default function Me() {
+/** 二级页：每天新词 / 目标记忆率 / 外观（单选），我的收藏 / 离线音频（列表），素材与版本信息 */
+const SECTIONS = ['daily-new', 'retention', 'theme', 'favorites', 'offline', 'about'] as const
+type Section = typeof SECTIONS[number]
+const TITLES: Record<Section, string> = {
+  'daily-new': '每天新词',
+  retention: '目标记忆率',
+  theme: '外观',
+  favorites: '我的收藏',
+  offline: '离线音频',
+  about: '素材与版本信息',
+}
+const isSection = (value: string): value is Section => (SECTIONS as readonly string[]).includes(value)
+
+const labelOf = (options: readonly (readonly [string, string])[], value: string) =>
+  options.find(([key]) => key === value)?.[1] ?? value
+
+/** 设置式分组里的一行：玫红线性图标 · 标题 · 右侧值或控件 · 可选 chevron */
+function MeRow({ icon: RowIcon, label, value, onClick, children }: {
+  icon: Icon
+  label: string
+  value?: ReactNode
+  onClick?: () => void
+  children?: ReactNode
+}) {
+  const body = (
+    <>
+      <RowIcon className="me-row-icon" aria-hidden />
+      <span className="me-row-label">{label}</span>
+      {value !== undefined && <span className="me-row-value">{value}</span>}
+      {children}
+      {onClick && <ChevronRightIcon className="me-row-chevron" aria-hidden />}
+    </>
+  )
+  return onClick
+    ? <button className="me-row" onClick={onClick}>{body}</button>
+    : <div className="me-row">{body}</div>
+}
+
+/** 单选二级页的一组选项：选中项打勾 */
+function ChoiceList<T extends string>({ options, value, onChange, label }: {
+  options: readonly (readonly [T, string])[]
+  value: string
+  onChange: (value: T) => void
+  label: string
+}) {
+  return (
+    <div className="group" role="radiogroup" aria-label={label}>
+      {options.map(([key, text]) => (
+        <button key={key} className="group-row me-choice" role="radio" aria-checked={value === key} onClick={() => onChange(key)}>
+          <span className="group-row-label">{text}</span>
+          {value === key && <CheckIcon className="me-choice-check" aria-hidden />}
+        </button>
+      ))}
+    </div>
+  )
+}
+
+function SubPage({ title, action, children }: { title: string; action?: ReactNode; children: ReactNode }) {
+  const back = () => (history.length > 1 ? history.back() : navigate('/me'))
+  return (
+    <div className="page is-sub me-page">
+      <header className="sub-header safe-top">
+        <button className="sub-back" onClick={back} aria-label="返回我的">
+          <ChevronLeftIcon />
+        </button>
+        <h1 className="sub-title">{title}</h1>
+        <div className="sub-action">{action}</div>
+      </header>
+      {children}
+    </div>
+  )
+}
+
+export default function Me({ section = '' }: { section?: string }) {
   const { manifest } = useCatalog()
   const { cards } = useCards()
   const [, force] = useState(0)
@@ -117,113 +196,160 @@ export default function Me() {
     }
   }
 
-  return (
-    <div className="page me-page">
-      <PageHeader title="我的" />
-
-      <div className="me-stats">
-        {[
-          [String(streakDays()), '连续打卡'],
-          [String(Math.round(stats.seconds / 60)), '收听分钟'],
-          [String(finished), '听完集数'],
-          [String(mastered), '掌握单词'],
-        ].map(([num, label]) => (
-          <div key={label}>
-            <strong>{num}</strong>
-            <span>{label}</span>
-          </div>
-        ))}
-      </div>
-      {review && (
-        <p className="me-note">
-          今天复习 {review.reviewsToday} 次 · 学习中 {review.learning} 个 · 标熟 {review.known} 个
-          {review.retention !== null && ` · 近 30 天记住率 ${Math.round(review.retention * 100)}%`}
-        </p>
-      )}
-
-      <h2 className="group-title">背词设置</h2>
-      <div className="group">
-        <div className="group-row">
-          <span className="group-row-label">每天新词</span>
-          <Segmented kind="choice" size="sm" label="每天新词" value={String(settings.dailyNew)} options={DAILY_NEW}
-            onChange={v => update({ dailyNew: Number(v) })} />
-        </div>
-        <div className="group-row">
-          <span className="group-row-label">目标记忆率</span>
-          <Segmented kind="choice" size="sm" label="目标记忆率" value={String(settings.retention)} options={RETENTION}
-            onChange={v => update({ retention: Number(v) })} />
-        </div>
-        <p className="group-foot">记忆率越高，复习越频繁、忘得越少。90% 是 Anki 的默认值，适合大多数人。</p>
-      </div>
-
-      <h2 className="group-title">我的收藏 · {favItems.length}</h2>
-      {favItems.length === 0 ? (
-        <p className="group group-empty">在播放页点 ♡ 收藏喜欢的节目</p>
-      ) : (
-        <div className="episode-list">
-          {favItems.map(item => <TalkCard key={item.slug} item={item} />)}
-        </div>
-      )}
-
-      <div className="group-title-row">
-        <h2 className="group-title">离线音频 · {offlineItems.length}</h2>
-        {offlineItems.length > 0 && (
-          <button className="group-title-action" onClick={() => { void removeAll() }}>全部删除</button>
-        )}
-      </div>
-      {offlineItems.length === 0 ? (
-        <p className="group group-empty">在播放页右上角「···」里下载，断网也能听</p>
-      ) : (
-        <div className="group">
-          {offlineItems.map(item => (
-            <div key={item.slug} className="group-row">
-              <div className="min-w-0 flex-1">
-                <p className="group-row-label truncate">{item.title}</p>
-                <p className="group-row-sub">
-                  {fmtBytes(item.bytes)} · {item.quality === 'high' ? '高音质' : '标准音质'}
-                </p>
+  if (isSection(section)) {
+    const title = TITLES[section]
+    switch (section) {
+      case 'daily-new':
+        return (
+          <SubPage title={title}>
+            <ChoiceList label={title} options={DAILY_NEW} value={String(settings.dailyNew)}
+              onChange={v => update({ dailyNew: Number(v) })} />
+            <p className="me-hint">每天从六级词表里新学的词数。复习量会随新词累积，刚开始建议 10~15 个。</p>
+          </SubPage>
+        )
+      case 'retention':
+        return (
+          <SubPage title={title}>
+            <ChoiceList label={title} options={RETENTION} value={String(settings.retention)}
+              onChange={v => update({ retention: Number(v) })} />
+            <p className="me-hint">
+              记忆率越高，复习越频繁、忘得越少。90% 是 Anki 的默认值，适合大多数人。
+              {review?.retention != null && ` 你近 30 天的实际记住率是 ${Math.round(review.retention * 100)}%。`}
+            </p>
+          </SubPage>
+        )
+      case 'theme':
+        return (
+          <SubPage title={title}>
+            <ChoiceList label={title} options={THEMES} value={settings.theme} onChange={v => update({ theme: v })} />
+          </SubPage>
+        )
+      case 'favorites':
+        return (
+          <SubPage title={title}>
+            {favItems.length === 0 ? (
+              <p className="page-status">在播放页点 ♡ 收藏喜欢的节目</p>
+            ) : (
+              <div className="episode-list">
+                {favItems.map(item => <TalkCard key={item.slug} item={item} />)}
               </div>
-              <button className="row-button" onClick={() => { void removeTalk(item.slug) }}>删除</button>
+            )}
+          </SubPage>
+        )
+      case 'offline':
+        return (
+          <SubPage
+            title={title}
+            action={offlineItems.length > 0 && (
+              <button className="sub-action-button" onClick={() => { void removeAll() }}>全部删除</button>
+            )}
+          >
+            {offlineItems.length === 0 ? (
+              <p className="page-status">在播放页右上角「···」里下载，断网也能听</p>
+            ) : (
+              <>
+                <div className="group">
+                  {offlineItems.map(item => (
+                    <div key={item.slug} className="group-row">
+                      <div className="min-w-0 flex-1">
+                        <p className="group-row-label truncate">{item.title}</p>
+                        <p className="group-row-sub">
+                          {fmtBytes(item.bytes)} · {item.quality === 'high' ? '高音质' : '标准音质'}
+                        </p>
+                      </div>
+                      <button className="row-button" onClick={() => { void removeTalk(item.slug) }}>删除</button>
+                    </div>
+                  ))}
+                </div>
+                <p className="me-hint">
+                  共占用 {fmtBytes(offlineBytes())}
+                  {estimate && estimate.quota > 0 && ` · 本站可用 ${fmtBytes(estimate.quota - estimate.usage)}`}
+                </p>
+              </>
+            )}
+          </SubPage>
+        )
+      case 'about':
+        return (
+          <SubPage title={title}>
+            <div className="group">
+              <div className="group-row is-stacked">
+                <p className="group-row-label">节目来源</p>
+                <p className="group-row-sub">BBC Learning English（6 Minute English）、Leonardo English（Curious Minds）、Thinking in English。音频与文稿版权归原作者，仅供个人学习。</p>
+              </div>
+              <div className="group-row is-stacked">
+                <p className="group-row-label">中文译文</p>
+                <p className="group-row-sub">全部为 Gemini 机器翻译，仅供理解参考。</p>
+              </div>
+              <div className="group-row is-stacked">
+                <p className="group-row-label">词典与六级词表</p>
+                <p className="group-row-sub">基于 ECDICT（MIT License）。</p>
+              </div>
+              <div className="group-row">
+                <span className="group-row-label">版本</span>
+                <span className="me-row-value tabular-nums">{__BUILD_SHA__} · {__BUILD_TIME__}</span>
+              </div>
+            </div>
+          </SubPage>
+        )
+    }
+  }
+
+  const offlineValue = offlineItems.length ? `${offlineItems.length}集 · ${fmtBytes(offlineBytes())}` : '未下载'
+
+  return (
+    <div className="page is-bare me-page">
+      <section className="me-summary" aria-label="学习统计">
+        <div className="me-stats">
+          {[
+            [String(streakDays()), '连续天数'],
+            [String(Math.round(stats.seconds / 60)), '收听分钟'],
+            [String(finished), '听完集数'],
+            [String(mastered), '掌握单词'],
+          ].map(([num, label]) => (
+            <div key={label}>
+              <strong>{num}</strong>
+              <span>{label}</span>
             </div>
           ))}
-          <p className="group-foot">
-            共占用 {fmtBytes(offlineBytes())}
-            {estimate && estimate.quota > 0 && ` · 本站可用 ${fmtBytes(estimate.quota - estimate.usage)}`}
-          </p>
         </div>
-      )}
+        {review && (
+          <p className="me-note">今天复习 {review.reviewsToday} 次 · 学习中 {review.learning} 词</p>
+        )}
+      </section>
 
-      <h2 className="group-title">设置</h2>
-      <div className="group">
-        <div className="group-row">
-          <span className="group-row-label">外观</span>
-          <Segmented kind="choice" size="sm" label="外观" value={settings.theme} options={THEMES}
-            onChange={v => update({ theme: v })} />
-        </div>
-        <div className="group-row">
-          <span className="group-row-label">学习记录</span>
-          <div className="flex gap-2">
+      <div className="group me-group">
+        <MeRow icon={BookOpenIcon} label="每天新词" value={`${settings.dailyNew}词`} onClick={() => navigate('/me/daily-new')} />
+        <MeRow icon={TargetIcon} label="目标记忆率" value={labelOf(RETENTION, String(settings.retention))}
+          onClick={() => navigate('/me/retention')} />
+        <MeRow icon={MoonIcon} label="外观" value={labelOf(THEMES, settings.theme)} onClick={() => navigate('/me/theme')} />
+      </div>
+
+      <div className="group me-group">
+        <MeRow icon={HeartIcon} label="我的收藏" value={favItems.length} onClick={() => navigate('/me/favorites')} />
+        <MeRow icon={DownloadIcon} label="离线音频" value={offlineValue} onClick={() => navigate('/me/offline')} />
+      </div>
+
+      <div className="group me-group">
+        <MeRow icon={FileTextIcon} label="学习记录">
+          <div className="me-row-buttons">
             <button className="row-button" onClick={() => { void doExport() }}>导出</button>
             <button className="row-button" onClick={() => fileInput.current?.click()}>导入</button>
             <input ref={fileInput} type="file" accept="application/json,.json" className="hidden"
               onChange={e => { const f = e.target.files?.[0]; if (f) void doImport(f); e.target.value = '' }} />
           </div>
-        </div>
-        {backupNote && <p className="group-foot">{backupNote}</p>}
-        <div className="group-row">
-          <span className="group-row-label">资源缓存</span>
-          <button className="row-button" disabled={cacheStatus === 'clearing'} onClick={() => { void clearCache() }}>
+        </MeRow>
+        <MeRow icon={DatabaseIcon} label="资源缓存">
+          <button className="me-row-link" disabled={cacheStatus === 'clearing'} onClick={() => { void clearCache() }}>
             {cacheStatus === 'clearing' ? '清除中…' : cacheStatus === 'done' ? '已清除' : cacheStatus === 'error' ? '重试' : '清除缓存'}
           </button>
-        </div>
+        </MeRow>
+        <p className="group-foot">{backupNote ?? '学习记录仅保存在本机，换设备前请先导出。'}</p>
       </div>
 
-      <p className="me-foot">
-        学习记录只存在本机，换手机或删除 App 前请先导出<br />
-        节目来自 BBC Learning English、Leonardo English、Thinking in English，仅供个人学习<br />
-        中文为 Gemini 机器翻译 · 词典与六级词表基于 ECDICT（MIT License）<br />
-        <span className="tabular-nums">版本 {__BUILD_SHA__} · {__BUILD_TIME__}</span>
-      </p>
+      <div className="group me-group">
+        <MeRow icon={InfoIcon} label="素材与版本信息" onClick={() => navigate('/me/about')} />
+      </div>
     </div>
   )
 }

@@ -12,8 +12,8 @@ export interface SeriesInfo {
 
 /** 节目顺序即难度梯度：BBC 短、对话、语速接近六级听力；两档长线是单人讲解、慢一档 */
 export const SERIES: SeriesInfo[] = [
-  { key: 'bbc', name: 'BBC 6 Minute English', tab: '6 Minute', short: 'BBC', desc: 'BBC · 双人对话 · 每期 6 分钟' },
-  { key: 'curious', name: 'Curious Minds', tab: 'Curious Minds', short: 'CM', desc: '历史科学人物故事 · 约 22 分钟' },
+  { key: 'bbc', name: 'BBC 6 Minute English', tab: 'BBC', short: 'BBC', desc: 'BBC · 双人对话 · 每期 6 分钟' },
+  { key: 'curious', name: 'Curious Minds', tab: 'Curious', short: 'CM', desc: '历史科学人物故事 · 约 22 分钟' },
   { key: 'thinking', name: 'Thinking in English', tab: 'Thinking', short: 'TiE', desc: '时事社会文化 · 约 25 分钟' },
 ]
 
