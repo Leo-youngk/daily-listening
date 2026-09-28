@@ -1,5 +1,5 @@
 import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
-import type { CSSProperties, ReactNode } from 'react'
+import type { CSSProperties, ReactNode, RefObject } from 'react'
 import { usePlayer, usePlayerClock } from '../store/PlayerContext'
 import type { LoopMode } from '../store/PlayerContext'
 import { loadSettings, saveSettings, toggleFavorite, isFavorite } from '../lib/storage'
@@ -171,6 +171,53 @@ const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, 
   )
 })
 
+/** 同步线覆盖当前词及其前面几个词，读起来像一个在走的词组，而不是单个词在跳 */
+const SYNC_SPAN = 3
+
+/**
+ * 播放视图的当前句双语预览。和字幕流一样只在换句时重渲染，
+ * 同步线由 Player 的 rAF 直接改 class：词带 data-w，词前的空白带 data-g（下划线要连成一条）。
+ */
+const SentencePreview = memo(function SentencePreview({ sentence, idx, hideZh, boxRef, onExpand }: {
+  sentence: Sentence | undefined
+  idx: number
+  hideZh: boolean
+  boxRef: RefObject<HTMLDivElement | null>
+  onExpand: () => void
+}) {
+  const nodes = useMemo(() => {
+    if (!sentence) return null
+    const text = sentence.en
+    const out: ReactNode[] = []
+    let cursor = 0
+    tokenizeSentence(text).forEach((token, i) => {
+      if (token.start > cursor) out.push(<span key={`g-${i}`} data-g={i}>{text.slice(cursor, token.start)}</span>)
+      out.push(<span key={`w-${i}`} data-w={i}>{token.text}</span>)
+      cursor = token.end
+    })
+    if (cursor < text.length) out.push(<span key="tail">{text.slice(cursor)}</span>)
+    return out
+  }, [sentence])
+
+  return (
+    <button className="player-preview" onClick={onExpand} aria-label="展开完整文稿">
+      {sentence ? (
+        <>
+          <div ref={boxRef} className="player-preview-en" data-idx={idx}>
+            <p lang="en">{nodes}</p>
+          </div>
+          {!hideZh && sentence.zh && <p lang="zh-CN" className="player-preview-zh">{sentence.zh}</p>}
+        </>
+      ) : (
+        <div className="player-preview-skeleton" aria-hidden>
+          <span className="skeleton" /><span className="skeleton" /><span className="skeleton is-short" />
+        </div>
+      )}
+      <ChevronDownIcon className="player-preview-expand" aria-hidden />
+    </button>
+  )
+})
+
 /** 设置面板里的一行：左标题（可带说明），右控件 */
 function SettingRow({ label, note, children }: { label: string; note?: string; children: ReactNode }) {
   return (
@@ -214,6 +261,10 @@ export default function Player({ slug }: { slug: string }) {
 
   const painted = useRef<{ row: HTMLElement | null; spans: HTMLElement[]; idx: number; word: number }>(
     { row: null, spans: [], idx: -1, word: -1 },
+  )
+  const previewRef = useRef<HTMLDivElement>(null)
+  const previewPainted = useRef<{ box: HTMLElement | null; idx: number; word: number; marked: HTMLElement[] }>(
+    { box: null, idx: -1, word: -2, marked: [] },
   )
   const interruptFollow = useCallback(() => {
     userScrollUntil.current = Date.now() + 6000
@@ -307,6 +358,49 @@ export default function Player({ slug }: { slug: string }) {
     cancelScroll.current = animateScroll(box, box.scrollTop + top - box.clientHeight * 0.4, 400)
   }, [p])
 
+  /** 播放视图预览卡的同步线：当前词和前面几个词下面画玫红线，念到卡片外的行时把那一行滚进来 */
+  const syncPreview = useCallback(() => {
+    const box = previewRef.current
+    const state = previewPainted.current
+    if (!box) {
+      state.box = null
+      return
+    }
+    const idx = Number(box.dataset.idx)
+    const time = p.getSubtitleTime()
+    // 预览卡随 clock 每 100ms 换句，rAF 比它快：句子还没对上时先不画
+    const word = p.sentenceAt(time) === idx ? wordAt(sentencesRef.current[idx]?.w, time) : -1
+    if (box !== state.box || idx !== state.idx) {
+      box.scrollTop = 0
+      state.box = box
+      state.idx = idx
+      state.word = -2
+      state.marked = []
+    }
+    if (word === state.word) return
+    state.word = word
+    for (const el of state.marked) el.classList.remove('is-sync')
+    state.marked = []
+    if (word < 0) return
+    for (let k = Math.max(0, word - SYNC_SPAN + 1); k <= word; k++) {
+      const span = box.querySelector<HTMLElement>(`[data-w="${k}"]`)
+      if (span) state.marked.push(span)
+      // 只连纯空白；"rejection? Well" 这种跨标点的地方断开
+      if (k > word - SYNC_SPAN + 1) {
+        const gap = box.querySelector<HTMLElement>(`[data-g="${k}"]`)
+        if (gap && !gap.textContent?.trim()) state.marked.push(gap)
+      }
+    }
+    for (const el of state.marked) el.classList.add('is-sync')
+    const current = box.querySelector<HTMLElement>(`[data-w="${word}"]`)
+    if (!current) return
+    const top = current.offsetTop
+    const bottom = top + current.offsetHeight
+    if (top < box.scrollTop || bottom > box.scrollTop + box.clientHeight) {
+      box.scrollTop = Math.max(0, bottom - box.clientHeight)
+    }
+  }, [p])
+
   useEffect(() => {
     painted.current = { row: null, spans: [], idx: -1, word: -1 }
     followPosition.current = { idx: -1, line: -1, suspended: false }
@@ -331,12 +425,16 @@ export default function Player({ slug }: { slug: string }) {
     if (!p.playing) return
     let frame = requestAnimationFrame(function tick() {
       syncWords()
+      syncPreview()
       frame = requestAnimationFrame(tick)
     })
     return () => cancelAnimationFrame(frame)
-  }, [p.playing, syncWords])
+  }, [p.playing, syncWords, syncPreview])
 
-  useEffect(() => { syncWords() })
+  useEffect(() => {
+    syncWords()
+    syncPreview()
+  })
 
   // 暂停、弹层、改变排版时终止旧动画；恢复播放后重新测量实际文字行。
   useEffect(() => {
@@ -401,6 +499,11 @@ export default function Player({ slug }: { slug: string }) {
   }, [slug])
   const handlePrefetch = useCallback((wordIndex: number, sen: Sentence) => {
     prefetchLookup(sen.en, wordIndex)
+  }, [])
+
+  const showText = useCallback(() => {
+    setSettings(s => ({ ...s, playerView: 'text' }))
+    saveSettings({ playerView: 'text' })
   }, [])
 
   const cycleRate = () => {
@@ -512,6 +615,19 @@ export default function Player({ slug }: { slug: string }) {
             <HeartIcon />
           </button>
         </div>
+        {talk && sentences.length > 0 && (
+          <SentencePreview
+            key={talk.slug}
+            sentence={sentences[Math.max(0, clock.currentIdx)]}
+            idx={Math.max(0, clock.currentIdx)}
+            hideZh={settings.hideZh}
+            boxRef={previewRef}
+            onExpand={showText}
+          />
+        )}
+        {!talk && !p.error && !p.manifestError && (
+          <SentencePreview sentence={undefined} idx={-1} hideZh={settings.hideZh} boxRef={previewRef} onExpand={showText} />
+        )}
         {status}
         {finished && (
           <button className="player-finish-inline" onClick={() => setShowWords(true)}>听完了 · 清点本集生词</button>

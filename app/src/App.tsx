@@ -61,11 +61,12 @@ export default function App() {
         <Search />
       ) : (
         <div className="app-shell">
-          <main className="app-main min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll">
+          {/* 按页面重建滚动容器：切 Tab、进出"我的"二级页都从顶部开始 */}
+          <main key={`${tab}/${param}`} className="app-main min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll">
             {tab === 'today' && <Today />}
             {tab === 'programs' && <Programs query={query} />}
             {tab === 'words' && <Words query={query} />}
-            {tab === 'me' && <Me />}
+            {tab === 'me' && <Me section={param} />}
           </main>
           <MiniPlayer />
           <TabBar page={tab} />
