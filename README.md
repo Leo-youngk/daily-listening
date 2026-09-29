@@ -26,7 +26,7 @@
 │   └── src/
 │       ├── lib/srs.ts    # FSRS 调度（ts-fsrs）
 │       ├── lib/db.ts     # 卡片与复习日志（IndexedDB / Dexie）
-│       └── pages/        # 今日 / 节目 / 单词 / 复习 / 播放 / 我的
+│       └── pages/        # 节目（首页）/ 单词 / 我的 / 复习 / 播放
 ├── scripts/              # 数据管线（Python），见 scripts/README.md
 └── public/
     ├── data/             # manifest.json + 每集逐句双语 JSON（含词级时间轴）

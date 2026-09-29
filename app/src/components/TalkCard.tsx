@@ -1,5 +1,5 @@
 import type { ManifestItem } from '../lib/types'
-import { showName } from '../lib/types'
+import { showTab } from '../lib/types'
 import { isFinished, loadFavorites, loadProgress } from '../lib/storage'
 import { fmtDay, fmtMinutes } from '../lib/format'
 import { navigate } from '../hooks/useHashRoute'
@@ -18,7 +18,7 @@ interface Props {
   nowPlaying?: 'playing' | 'paused'
 }
 
-/** 单集行：16:9 缩略图（底边是收听进度）· 日期与来源 · 标题 · 时长与六级词 */
+/** 单集行：16:9 缩略图（底边是收听进度）· 标题 · 「日期 · 节目 · 时长」与在学词标签 */
 export default function TalkCard({ item, learningHits, showSeries = false, nowPlaying }: Props) {
   const { playTalk } = usePlayerActions()
   const progress = loadProgress()[item.slug]
@@ -33,6 +33,14 @@ export default function TalkCard({ item, learningHits, showSeries = false, nowPl
     navigate(`/talk/${item.slug}`)
   }
 
+  const series = showSeries ? showTab(item) : null
+  const length = started ? `剩 ${fmtMinutes(left)}` : fmtMinutes(minutes)
+  const meta = nowPlaying
+    ? [nowPlaying === 'playing' ? '正在播放' : '已暂停', length]
+    : finished
+      ? ['已听完', fmtDay(item.date), series]
+      : [fmtDay(item.date), series, length]
+
   return (
     <button onClick={open} className="episode-row" aria-current={nowPlaying ? 'true' : undefined}>
       <span className="episode-row-thumb">
@@ -40,21 +48,21 @@ export default function TalkCard({ item, learningHits, showSeries = false, nowPl
         {pct > 0 && <i style={{ width: `${pct}%` }} />}
       </span>
       <span className="episode-row-body">
-        <span className="episode-row-kicker">
-          {nowPlaying && (
-            <span className={cn('now-bars', nowPlaying === 'playing' && 'is-playing')} aria-label="正在播放">
-              <i /><i /><i />
-            </span>
-          )}
-          {fmtDay(item.date)}
-          {showSeries && ` · ${showName(item)}`}
-          {fav && <HeartIcon className="episode-row-fav" aria-label="已收藏" />}
-        </span>
         <span className="episode-row-title">{item.title}</span>
         <span className="episode-row-meta">
-          {finished ? <><CheckIcon className="episode-row-check" />已听完</> : started ? `剩 ${fmtMinutes(left)}` : fmtMinutes(minutes)}
-          {' · '}六级词 {item.cet6}
-          {learningHits ? <b> · 在学 {learningHits}</b> : null}
+          {meta.filter(Boolean).map((part, i) => (
+            <span key={part} className="episode-row-meta-part">
+              {i === 0 && nowPlaying && (
+                <span className={cn('now-bars', nowPlaying === 'playing' && 'is-playing')} aria-hidden>
+                  <i /><i /><i />
+                </span>
+              )}
+              {i === 0 && finished && !nowPlaying && <CheckIcon className="episode-row-check" aria-hidden />}
+              {part}
+            </span>
+          ))}
+          {fav && <HeartIcon className="episode-row-fav" aria-label="已收藏" />}
+          {!finished && learningHits ? <b className="episode-row-hits">在学 {learningHits}</b> : null}
         </span>
       </span>
     </button>

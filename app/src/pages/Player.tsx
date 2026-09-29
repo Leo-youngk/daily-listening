@@ -212,11 +212,14 @@ const READING_SPAN = 3
 const LONG_SENTENCE = 110
 
 /**
- * "播放"视图的当前句双语预览。同步线由 Player 的 rAF 直接改 class（is-reading），
+ * "播放"视图的字幕卡：上一句 · 当前句（双语 + 同步线）· 下一句，像歌词页一样带着上下文。
+ * 卡片高度由版面决定、不随句子长短变。同步线由 Player 的 rAF 直接改 class（is-reading），
  * 这里只在换句时重渲染。词与词之间的空白也标上 data-g，线才能连成一条。
  */
-const NowLine = memo(function NowLine({ sentence, hideZh, onOpen, ref }: {
+const NowLine = memo(function NowLine({ sentence, prev, next, hideZh, onOpen, ref }: {
   sentence: Sentence
+  prev?: string
+  next?: string
   hideZh: boolean
   onOpen: () => void
   ref: Ref<HTMLButtonElement>
@@ -233,8 +236,12 @@ const NowLine = memo(function NowLine({ sentence, hideZh, onOpen, ref }: {
   if (cursor < text.length) nodes.push(<span key="tail">{text.slice(cursor)}</span>)
   return (
     <button ref={ref} type="button" className="now-line" data-idx={sentence.i} onClick={onOpen} aria-label="当前句，点开完整文稿">
-      <p lang="en" className={cn('now-line-en', text.length > LONG_SENTENCE && 'is-long')}>{nodes}</p>
-      {!hideZh && sentence.zh && <p lang="zh-CN" className="now-line-zh">{sentence.zh}</p>}
+      <p lang="en" className="now-line-ctx is-prev" aria-hidden>{prev}</p>
+      <span className="now-line-current">
+        <p lang="en" className={cn('now-line-en', text.length > LONG_SENTENCE && 'is-long')}>{nodes}</p>
+        {!hideZh && sentence.zh && <p lang="zh-CN" className="now-line-zh">{sentence.zh}</p>}
+      </span>
+      <p lang="en" className="now-line-ctx is-next" aria-hidden>{next}</p>
       <ChevronDownIcon className="now-line-expand" aria-hidden />
     </button>
   )
@@ -507,7 +514,8 @@ export default function Player({ slug }: { slug: string }) {
     updateSettings({ rate: next })
   }
   const openText = useCallback(() => updateSettings({ playerView: 'text' }), []) // eslint-disable-line react-hooks/exhaustive-deps
-  const nowSentence = sentences[clock.currentIdx] ?? sentences[0]
+  const nowIdx = sentences[clock.currentIdx] ? clock.currentIdx : 0
+  const nowSentence = sentences[nowIdx]
   const close = () => {
     if (history.length > 1) history.back()
     else navigate('/programs')
@@ -553,7 +561,7 @@ export default function Player({ slug }: { slug: string }) {
             <RepeatIcon />单句循环{p.loop === 999 ? '' : ` ×${p.loop}`}
           </button>
         )}
-        <span>{fmtTime(clock.duration)}</span>
+        <span>-{fmtTime(Math.max(0, clock.duration - clock.time))}</span>
       </div>
     </div>
   )
@@ -572,6 +580,16 @@ export default function Player({ slug }: { slug: string }) {
     <button className="player-pill" onClick={() => setShowWords(true)} disabled={!talk} aria-label="本集词汇">
       <NotesIcon />词汇
     </button>
+  )
+  // 播放、文稿两个视图共用一排：倍速 · 上一句 · 播放 · 下一句 · 词汇
+  const transport = (
+    <div className="player-transport">
+      {rateButton}
+      <button className="player-step" onClick={() => p.stepSentence(-1)} aria-label="上一句"><SkipBackIcon /></button>
+      {toggleButton}
+      <button className="player-step" onClick={() => p.stepSentence(1)} aria-label="下一句"><SkipForwardIcon /></button>
+      {wordsButton}
+    </div>
   )
 
   const pageStyle = (tint ? { '--tint': tint } : undefined) as CSSProperties | undefined
@@ -614,7 +632,14 @@ export default function Player({ slug }: { slug: string }) {
           </button>
         </div>
         {nowSentence ? (
-          <NowLine ref={previewRef} sentence={nowSentence} hideZh={settings.hideZh} onOpen={openText} />
+          <NowLine
+            ref={previewRef}
+            sentence={nowSentence}
+            prev={sentences[nowIdx - 1]?.en}
+            next={sentences[nowIdx + 1]?.en}
+            hideZh={settings.hideZh}
+            onOpen={openText}
+          />
         ) : (
           <div className="now-line skeleton" aria-hidden />
         )}
@@ -624,19 +649,7 @@ export default function Player({ slug }: { slug: string }) {
         )}
         <div className="player-now-controls">
           {scrubber}
-          <div className="player-now-transport">
-            <button className="player-step" onClick={() => p.stepSentence(-1)}>
-              <SkipBackIcon /><span>上一句</span>
-            </button>
-            {toggleButton}
-            <button className="player-step" onClick={() => p.stepSentence(1)}>
-              <SkipForwardIcon /><span>下一句</span>
-            </button>
-          </div>
-          <div className="player-now-pills">
-            {rateButton}
-            {wordsButton}
-          </div>
+          {transport}
         </div>
       </section>
 
@@ -677,13 +690,7 @@ export default function Player({ slug }: { slug: string }) {
           <button className="player-finish" onClick={() => setShowWords(true)}>听完了 · 清点本集生词</button>
         )}
         {scrubber}
-        <div className="player-dock-row">
-          {rateButton}
-          <button className="player-step" onClick={() => p.stepSentence(-1)} aria-label="上一句"><SkipBackIcon /></button>
-          {toggleButton}
-          <button className="player-step" onClick={() => p.stepSentence(1)} aria-label="下一句"><SkipForwardIcon /></button>
-          {wordsButton}
-        </div>
+        {transport}
       </div>
 
       {/* 播放设置 */}

@@ -3,7 +3,7 @@ import { useCards } from './useCards'
 import { isMastered, startOfToday } from '../lib/srs'
 import { loadSettings } from '../lib/storage'
 
-/** 今天的背词任务与词表进度：今日页、单词页共用 */
+/** 今天的背词任务与词表进度：底栏角标、单词页共用 */
 export function useStudySummary() {
   const { cards, ready } = useCards()
   return useMemo(() => {

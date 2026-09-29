@@ -1,17 +1,18 @@
 import { useEffect, useMemo, useState } from 'react'
-import { SearchIcon, XIcon } from 'lucide-react'
+import { CheckIcon, ChevronsUpDownIcon, SearchIcon, XIcon } from 'lucide-react'
+import { DropdownMenu } from 'radix-ui'
 import { useCatalog, usePlayer } from '../store/PlayerContext'
 import { useCards } from '../hooks/useCards'
 import TalkCard from '../components/TalkCard'
-import UnderlineTabs from '../components/UnderlineTabs'
 import { isFinished, loadProgress } from '../lib/storage'
 import { loadEpisodeWords, loadWordbook } from '../lib/wordbook'
 import type { BookWord } from '../lib/wordbook'
+import { SERIES } from '../lib/types'
 import type { Series } from '../lib/types'
 
 type Channel = 'all' | Series
 type Filter = 'all' | 'unlistened' | 'finished'
-const CHANNELS: [Channel, string][] = [['all', '全部'], ['bbc', 'BBC'], ['curious', 'Curious'], ['thinking', 'Thinking'], ['featured', '精选']]
+const CHANNELS: [Channel, string][] = [['all', '全部'], ...SERIES.map(s => [s.key, s.tab] as [Channel, string])]
 const FILTERS: [Filter, string][] = [['all', '全部'], ['unlistened', '未听'], ['finished', '已听完']]
 const PAGE = 40
 
@@ -26,13 +27,16 @@ function syncUrl(channel: Channel, filter: Filter) {
 
 const parseChannel = (value?: string | null): Channel =>
   CHANNELS.some(([key]) => key === value) ? value as Channel : 'all'
+const parseFilter = (value?: string | null): Filter =>
+  FILTERS.some(([key]) => key === value) ? value as Filter : 'all'
 
+/** 节目（打开 App 的第一屏）：搜索 · 频道 · 收听状态菜单 · 单集列表，听完的沉到最后 */
 export default function Programs({ query }: { query?: URLSearchParams }) {
   const { manifest, manifestReady, manifestError, reloadManifest } = useCatalog()
   const player = usePlayer()
   const { cards } = useCards()
   const [channel, setChannel] = useState<Channel>(parseChannel(query?.get('tab')))
-  const [filter, setFilter] = useState<Filter>((query?.get('filter') as Filter) || 'all')
+  const [filter, setFilter] = useState<Filter>(parseFilter(query?.get('filter')))
   const [keyword, setKeyword] = useState('')
   const [limit, setLimit] = useState(PAGE)
   const [vocab, setVocab] = useState<{ words: BookWord[]; episodes: Record<string, number[]> } | null>(null)
@@ -70,7 +74,9 @@ export default function Programs({ query }: { query?: URLSearchParams }) {
     .filter(m => filter === 'all'
       || (filter === 'finished' ? isFinished(progress[m.slug]) : !progress[m.slug]))
     .filter(m => !q || m.title.toLowerCase().includes(q))
-    .sort((a, b) => b.date.localeCompare(a.date))
+    // 听完的沉到最后，打开就是还没听的；两段里各自按日期从新到旧
+    .sort((a, b) => Number(isFinished(progress[a.slug])) - Number(isFinished(progress[b.slug]))
+      || b.date.localeCompare(a.date))
 
   const choose = (next: Channel, nextFilter: Filter) => {
     setChannel(next)
@@ -81,7 +87,7 @@ export default function Programs({ query }: { query?: URLSearchParams }) {
 
   return (
     <div className="page programs-page tab-top">
-      <label className="search-field page-search">
+      <label className="search-field">
         <SearchIcon aria-hidden />
         <input
           type="search"
@@ -101,7 +107,7 @@ export default function Programs({ query }: { query?: URLSearchParams }) {
         )}
       </label>
 
-      <div className="chips programs-channels" role="group" aria-label="频道">
+      <div className="chips" role="group" aria-label="频道">
         {CHANNELS.map(([key, label]) => (
           <button key={key} className="chip" aria-pressed={channel === key} onClick={() => choose(key, filter)}>
             {label}
@@ -109,14 +115,27 @@ export default function Programs({ query }: { query?: URLSearchParams }) {
         ))}
       </div>
 
-      <UnderlineTabs
-        className="programs-filters"
-        value={filter}
-        options={FILTERS}
-        label="收听状态"
-        onChange={key => choose(channel, key)}
-        aside={manifestReady ? `${list.length} 期` : undefined}
-      />
+      <div className="list-head">
+        <span>{manifestReady ? `${list.length} 期` : ''}</span>
+        <DropdownMenu.Root modal={false}>
+          <DropdownMenu.Trigger className="list-head-menu" aria-label="收听状态">
+            {filter === 'all' ? '全部状态' : FILTERS.find(([key]) => key === filter)?.[1]}
+            <ChevronsUpDownIcon aria-hidden />
+          </DropdownMenu.Trigger>
+          <DropdownMenu.Portal>
+            <DropdownMenu.Content className="app-menu" align="end" sideOffset={6}>
+              <DropdownMenu.RadioGroup value={filter} onValueChange={v => choose(channel, parseFilter(v))}>
+                {FILTERS.map(([key, label]) => (
+                  <DropdownMenu.RadioItem key={key} value={key} className="app-menu-item">
+                    {label}
+                    <DropdownMenu.ItemIndicator><CheckIcon /></DropdownMenu.ItemIndicator>
+                  </DropdownMenu.RadioItem>
+                ))}
+              </DropdownMenu.RadioGroup>
+            </DropdownMenu.Content>
+          </DropdownMenu.Portal>
+        </DropdownMenu.Root>
+      </div>
 
       {manifestError ? (
         <div className="page-status">
@@ -124,9 +143,11 @@ export default function Programs({ query }: { query?: URLSearchParams }) {
           <button className="pill-button is-soft is-small" onClick={reloadManifest}>重新加载</button>
         </div>
       ) : !manifestReady ? (
-        <div aria-busy>
-          {[0, 1, 2, 3, 4].map(i => <div key={i} className="skeleton episode-row-skeleton" />)}
+        <div className="episode-list" aria-busy>
+          {[0, 1, 2, 3, 4, 5].map(i => <div key={i} className="episode-row-skeleton"><i className="skeleton" /><i className="skeleton" /></div>)}
         </div>
+      ) : list.length === 0 ? (
+        <p className="page-status">{q ? '没有匹配的节目' : '没有符合条件的节目'}</p>
       ) : (
         <>
           <div className="episode-list">
@@ -141,11 +162,10 @@ export default function Programs({ query }: { query?: URLSearchParams }) {
             ))}
           </div>
           {list.length > limit && (
-            <button className="words-more" onClick={() => setLimit(n => n + PAGE)}>
+            <button className="list-more" onClick={() => setLimit(n => n + PAGE)}>
               再显示 {Math.min(PAGE, list.length - limit)} 期（共 {list.length}）
             </button>
           )}
-          {list.length === 0 && <p className="page-status">{q ? '没有匹配的节目' : '没有符合条件的节目'}</p>}
         </>
       )}
     </div>

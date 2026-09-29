@@ -10,33 +10,8 @@ const stroke = {
   strokeLinecap: 'round' as const,
   strokeLinejoin: 'round' as const,
 }
-/** 实心图标里的镂空部分跟页面底色走，深浅色都成立 */
-const cutout = { fill: 'var(--color-bg)' }
-
-/** 品牌标：声波 */
-export function LogoMark(props: IconProps) {
-  const bars = [9, 16, 24, 16, 9]
-  return (
-    <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2.6} strokeLinecap="round" aria-hidden {...props}>
-      {bars.map((h, i) => <line key={i} x1={4 + i * 5} x2={4 + i * 5} y1={14 - h / 2} y2={14 + h / 2} />)}
-    </svg>
-  )
-}
-
-export function HomeIcon({ active, ...props }: TabIconProps) {
-  return active ? (
-    <svg viewBox="0 0 24 24" aria-hidden {...props}>
-      <path fill="currentColor" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round"
-        d="M3.5 10.5 12 3.6l8.5 6.9V19a1.6 1.6 0 0 1-1.6 1.6H5.1A1.6 1.6 0 0 1 3.5 19z" />
-      <rect x="9.6" y="14.2" width="4.8" height="7.2" rx="1.2" style={cutout} />
-    </svg>
-  ) : (
-    <svg viewBox="0 0 24 24" aria-hidden {...stroke} {...props}>
-      <path d="M3.5 10.5 12 3.6l8.5 6.9V19a1.6 1.6 0 0 1-1.6 1.6H5.1A1.6 1.6 0 0 1 3.5 19z" />
-      <path d="M9.8 20.6v-5.2a1 1 0 0 1 1-1h2.4a1 1 0 0 1 1 1v5.2" />
-    </svg>
-  )
-}
+/** 实心图标里的镂空部分跟底栏底色走，深浅色都成立 */
+const cutout = { fill: 'var(--color-card)' }
 
 export function ShowsIcon({ active, ...props }: TabIconProps) {
   const triangle = 'M10 8.9v6.2a.7.7 0 0 0 1.05.6l5-3.1a.7.7 0 0 0 0-1.2l-5-3.1a.7.7 0 0 0-1.05.6z'
@@ -58,7 +33,7 @@ export function BookIcon({ active, ...props }: TabIconProps) {
   return active ? (
     <svg viewBox="0 0 24 24" aria-hidden {...props}>
       <path d={cover} fill="currentColor" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" />
-      <path d="M12 8.6v10.2" strokeWidth={1.6} strokeLinecap="round" style={{ stroke: 'var(--color-bg)' }} />
+      <path d="M12 8.6v10.2" strokeWidth={1.6} strokeLinecap="round" style={{ stroke: 'var(--color-card)' }} />
     </svg>
   ) : (
     <svg viewBox="0 0 24 24" aria-hidden {...stroke} {...props}>

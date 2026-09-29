@@ -7,7 +7,7 @@ import { formatInterval, isMastered } from '../lib/srs'
 import { loadWordbook } from '../lib/wordbook'
 import type { BookWord } from '../lib/wordbook'
 import type { CardRecord } from '../lib/db'
-import UnderlineTabs from '../components/UnderlineTabs'
+import Segmented from '../components/Segmented'
 
 type Segment = 'learning' | 'mastered' | 'lookup' | 'book'
 const SEGMENTS: [Segment, string][] = [['learning', '学习中'], ['mastered', '已掌握'], ['lookup', '词表外'], ['book', '六级词表']]
@@ -20,7 +20,7 @@ function dueLabel(card: CardRecord, now: number): string {
   return `${formatInterval(card.due - now)}后`
 }
 
-/** 顶部概况：已掌握 / 学习中 / 未学 + 按真实比例画的进度条 + 今天的背词入口 */
+/** 顶部概况卡：已掌握 / 学习中 / 未学（色点对应进度条）+ 今天的背词入口 + 按真实比例画的进度条 */
 function Summary({ total }: { total: number }) {
   const s = useStudySummary()
   const untouched = Math.max(0, total - s.mastered - s.learning)
@@ -29,18 +29,11 @@ function Summary({ total }: { total: number }) {
   const allDone = s.ready && s.due === 0 && s.fresh === 0
 
   return (
-    <section className="words-summary" aria-label="六级词表进度">
-      <div className="words-stats">
-        <div><strong>{s.ready ? s.mastered : '–'}</strong><span>已掌握</span></div>
-        <div><strong>{s.ready ? s.learning : '–'}</strong><span>学习中</span></div>
-        <div><strong>{total && s.ready ? untouched : '–'}</strong><span>未学</span></div>
-      </div>
-      <div className="words-meter" aria-hidden>
-        <span className="is-mastered" style={{ width: `${pct(s.mastered)}%` }} />
-        <span className="is-learning" style={{ width: `${pct(s.learning)}%` }} />
-      </div>
-      <div className="words-book-row">
-        <p>六级词表<span> · {total ? `${total}词` : '–'}</span></p>
+    <section className="card words-summary" aria-label={`六级词表进度，共 ${total || '–'} 词`}>
+      <div className="words-summary-top">
+        <div className="words-stat"><strong>{s.ready ? s.mastered : '–'}</strong><span><i className="is-mastered" />已掌握</span></div>
+        <div className="words-stat"><strong>{s.ready ? s.learning : '–'}</strong><span><i className="is-learning" />学习中</span></div>
+        <div className="words-stat"><strong>{total && s.ready ? untouched : '–'}</strong><span><i />未学</span></div>
         {allDone ? (
           <span className="pill-button is-soft is-static">今天背完了</span>
         ) : (
@@ -48,6 +41,10 @@ function Summary({ total }: { total: number }) {
             {s.due > 0 ? `复习 ${s.due}` : `学新词 ${s.fresh}`}
           </button>
         )}
+      </div>
+      <div className="words-meter" aria-hidden>
+        <span className="is-mastered" style={{ width: `${pct(s.mastered)}%` }} />
+        <span className="is-learning" style={{ width: `${pct(s.learning)}%` }} />
       </div>
     </section>
   )
@@ -86,7 +83,7 @@ export default function Words({ query }: { query?: URLSearchParams }) {
     <div className="page words-page tab-top">
       <Summary total={book.length} />
 
-      <label className="search-field page-search">
+      <label className="search-field">
         <SearchIcon aria-hidden />
         <input
           type="search"
@@ -106,8 +103,8 @@ export default function Words({ query }: { query?: URLSearchParams }) {
         )}
       </label>
 
-      <UnderlineTabs
-        className="words-segments"
+      <Segmented
+        className="words-segments is-wide"
         value={segment}
         options={SEGMENTS}
         label="单词分组"
@@ -123,7 +120,7 @@ export default function Words({ query }: { query?: URLSearchParams }) {
         </p>
       )}
 
-      <ul className="words-list">
+      <ul className="words-list" hidden={rows.length === 0}>
         {rows.slice(0, limit).map(row => {
           const state = row.card ? dueLabel(row.card, now) : '未学'
           return (
@@ -139,7 +136,7 @@ export default function Words({ query }: { query?: URLSearchParams }) {
         })}
       </ul>
       {rows.length > limit && (
-        <button className="words-more" onClick={() => setLimit(n => n + PAGE)}>
+        <button className="list-more" onClick={() => setLimit(n => n + PAGE)}>
           再显示 {Math.min(PAGE, rows.length - limit)} 个（共 {rows.length}）
         </button>
       )}

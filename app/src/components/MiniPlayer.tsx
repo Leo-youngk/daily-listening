@@ -1,16 +1,14 @@
 import { PauseIcon, PlayIcon } from 'lucide-react'
 import { usePlayer, usePlayerClock } from '../store/PlayerContext'
 import { navigate } from '../hooks/useHashRoute'
-import { loadProgress } from '../lib/storage'
+import { showName } from '../lib/types'
 import Cover from './Cover'
 
-/** 底部迷你播放条：封面 · 标题 + 进度 · 播放/暂停 */
+/** 底部悬浮迷你播放器：封面 · 标题与节目名 · 播放/暂停，底边是收听进度 */
 export default function MiniPlayer() {
-  const { slug, talk, armed, playing, toggle } = usePlayer()
+  const { slug, talk, playing, toggle } = usePlayer()
   const { time, duration } = usePlayerClock()
   if (!slug || !talk) return null
-  // 预挂的是今日推荐里还没听过的一集：只在后台预热，不占底部
-  if (armed && !((loadProgress()[slug]?.pos ?? 0) > 3)) return null
 
   const pct = duration ? Math.min(100, (time / duration) * 100) : 0
   const open = () => navigate(`/talk/${slug}`)
@@ -33,7 +31,7 @@ export default function MiniPlayer() {
       </span>
       <span className="mini-player-copy">
         <span className="mini-player-title">{talk.title}</span>
-        <span className="mini-player-bar" aria-hidden><span style={{ width: `${pct}%` }} /></span>
+        <span className="mini-player-series">{showName(talk)}</span>
       </span>
       <button
         className="mini-player-toggle"
@@ -42,6 +40,7 @@ export default function MiniPlayer() {
       >
         {playing ? <PauseIcon /> : <PlayIcon />}
       </button>
+      <span className="mini-player-bar" aria-hidden><span style={{ width: `${pct}%` }} /></span>
     </div>
   )
 }

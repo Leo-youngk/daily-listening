@@ -3,26 +3,26 @@ export type Series = 'bbc' | 'curious' | 'thinking' | 'featured'
 export interface SeriesInfo {
   key: Series
   name: string
-  /** 分段控件上的短名 */
+  /** 频道胶囊与节目列表里的短名：一行要放下全部频道 */
   tab: string
-  /** 列表、封面缺图时的短标签 */
-  short: string
-  desc: string
 }
 
 /** 节目顺序即难度梯度：BBC 短、对话、语速接近六级听力；两档长线是单人讲解、慢一档 */
 export const SERIES: SeriesInfo[] = [
-  { key: 'bbc', name: 'BBC 6 Minute English', tab: '6 Minute', short: 'BBC', desc: 'BBC · 双人对话 · 每期 6 分钟' },
-  { key: 'curious', name: 'Curious Minds', tab: 'Curious Minds', short: 'CM', desc: '历史科学人物故事 · 约 22 分钟' },
-  { key: 'thinking', name: 'Thinking in English', tab: 'Thinking', short: 'TiE', desc: '时事社会文化 · 约 25 分钟' },
+  { key: 'bbc', name: 'BBC 6 Minute English', tab: 'BBC' },
+  { key: 'curious', name: 'Curious Minds', tab: 'Curious' },
+  { key: 'thinking', name: 'Thinking in English', tab: 'Thinking' },
   // 用户点名的长播客，每期来自不同节目，节目名见 ManifestItem.show
-  { key: 'featured', name: '精选', tab: '精选', short: '精选', desc: '精选长播客 · 40 分钟到 3 小时' },
+  { key: 'featured', name: '精选', tab: '精选' },
 ]
 
 export const seriesInfo = (key: Series): SeriesInfo => SERIES.find(s => s.key === key) ?? SERIES[0]
 
 /** 列表、播放页上显示的节目名：精选各期显示原节目（Hidden Brain、Modern Wisdom…） */
 export const showName = (item: { category: Series; show?: string }): string => item.show ?? seriesInfo(item.category).name
+
+/** 列表行里的短节目名：精选各期仍显示原节目 */
+export const showTab = (item: { category: Series; show?: string }): string => item.show ?? seriesInfo(item.category).tab
 
 export interface ManifestItem {
   slug: string

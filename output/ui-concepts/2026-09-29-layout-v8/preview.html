@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>排版预览 v8</title>
+<style>
+:root {
+  --bg: #F4F3F1;
+  --card: #FFFFFF;
+  --fill: #F0EFED;
+  --ink: #1C1C1E;
+  --ink-2: #3C3C43;
+  --sub: #8A8A8E;
+  --line: #EDEBE8;
+  --primary: #EC3066;
+  --primary-soft: color-mix(in srgb, #EC3066 11%, transparent);
+  --shadow: 0 0 0 .5px rgb(0 0 0 / 3%), 0 1px 2px rgb(0 0 0 / 4%), 0 6px 20px rgb(60 30 20 / 4%);
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+button { font: inherit; color: inherit; background: none; border: 0; }
+body { background: #E6E4E1; color: var(--ink); font-family: var(--font); -webkit-font-smoothing: antialiased; }
+svg.i { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; flex: 0 0 auto; }
+
+/* ---------- 看板 ---------- */
+.board { padding: 36px 40px 56px; }
+.board-head { max-width: 1100px; margin-bottom: 28px; }
+.board-head h1 { font-size: 22px; font-weight: 700; letter-spacing: -.01em; }
+.board-head p { margin-top: 6px; color: #6E6E73; font-size: 13.5px; line-height: 1.6; }
+.row { display: flex; flex-wrap: wrap; gap: 36px 32px; align-items: flex-start; }
+.shot { width: 393px; }
+.shot-label { margin-bottom: 10px; font-size: 14px; font-weight: 700; }
+.shot-label span { margin-left: 6px; color: #8A8A8E; font-weight: 500; }
+.notes { margin-top: 14px; padding-left: 18px; color: #48484A; font-size: 13px; line-height: 1.65; }
+
+/* ---------- 手机 ---------- */
+.phone { position: relative; width: 393px; height: 852px; overflow: hidden; border-radius: 48px; background: var(--bg); box-shadow: 0 30px 60px rgb(0 0 0 / 12%), 0 0 0 1px rgb(0 0 0 / 6%); }
+.statusbar { position: absolute; z-index: 20; top: 0; left: 0; right: 0; display: flex; height: 54px; align-items: center; justify-content: space-between; padding: 6px 30px 0 44px; font-size: 16.5px; font-weight: 650; }
+.statusbar svg { height: 13px; fill: currentColor; }
+.home-ind { position: absolute; z-index: 30; bottom: 8px; left: 50%; width: 134px; height: 5px; margin-left: -67px; border-radius: 3px; background: #111; }
+.content { position: absolute; inset: 0; overflow: hidden; padding: 54px 16px 0; }
+
+/* 底部：悬浮迷你播放器 + 悬浮导航 */
+.mini { position: absolute; z-index: 10; overflow: hidden; left: 14px; right: 14px; bottom: 90px; display: flex; height: 58px; align-items: center; gap: 11px; padding: 0 8px 0 9px; border-radius: 20px; background: rgb(255 255 255 / 80%); backdrop-filter: blur(24px) saturate(1.8); -webkit-backdrop-filter: blur(24px) saturate(1.8); box-shadow: 0 0 0 .5px rgb(0 0 0 / 6%), 0 8px 28px rgb(60 30 20 / 10%); }
+.mini img { width: 64px; height: 38px; flex: 0 0 auto; border-radius: 8px; object-fit: cover; }
+.mini-copy { min-width: 0; flex: 1; }
+.mini-title { overflow: hidden; font-size: 14.5px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.mini-sub { margin-top: 2px; color: var(--sub); font-size: 12px; }
+.mini-bar { position: absolute; left: 18px; right: 18px; bottom: 0; height: 2.5px; border-radius: 2px 2px 0 0; background: rgb(0 0 0 / 5%); overflow: hidden; }
+.mini-bar i { display: block; width: 33%; height: 100%; background: var(--primary); }
+.mini-btn { display: grid; width: 42px; height: 42px; place-items: center; }
+.mini-btn svg { width: 22px; height: 22px; fill: currentColor; stroke: none; }
+.tabbar { position: absolute; z-index: 10; left: 14px; right: 14px; bottom: 22px; display: flex; height: 60px; border-radius: 30px; background: rgb(255 255 255 / 80%); backdrop-filter: blur(24px) saturate(1.8); -webkit-backdrop-filter: blur(24px) saturate(1.8); box-shadow: 0 0 0 .5px rgb(0 0 0 / 6%), 0 8px 28px rgb(60 30 20 / 10%); }
+.tab { display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #8E8E93; font-size: 10.5px; font-weight: 600; }
+.tab svg { width: 25px; height: 25px; }
+.tab.on { color: var(--primary); }
+.tab { position: relative; }
+.badge { position: absolute; top: 5px; left: 50%; min-width: 18px; height: 18px; margin-left: 5px; padding: 0 5px; border-radius: 9px; background: var(--primary); box-shadow: 0 0 0 2px rgb(255 255 255 / 92%); color: #fff; font-size: 11px; font-style: normal; font-weight: 700; line-height: 18px; text-align: center; }
+
+/* 通用 */
+.card { border-radius: 18px; background: var(--card); box-shadow: var(--shadow); }
+.header { display: flex; height: 44px; align-items: center; justify-content: space-between; margin: 0 -2px; }
+svg.logo { width: 26px; height: 26px; color: var(--primary); stroke-width: 2.6; }
+.icon-btn { display: grid; width: 40px; height: 40px; place-items: center; margin-right: -8px; }
+.pill { display: inline-flex; height: 36px; align-items: center; padding: 0 18px; border-radius: 999px; background: var(--primary); color: #fff; font-size: 15px; font-weight: 650; white-space: nowrap; }
+.tag { display: inline-flex; height: 22px; align-items: center; padding: 0 8px; border-radius: 6px; background: var(--primary-soft); color: var(--primary); font-size: 12px; font-weight: 600; white-space: nowrap; }
+.search { display: flex; height: 38px; align-items: center; gap: 7px; padding: 0 11px; border-radius: 12px; background: var(--card); box-shadow: 0 0 0 .5px rgb(0 0 0 / 5%); color: #A1A1A6; font-size: 15.5px; }
+.search svg { width: 18px; height: 18px; stroke-width: 2.1; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* ---------- 今日 ---------- */
+.today-status { display: flex; align-items: center; gap: 22px; padding: 13px 14px 13px 18px; }
+.today-status .stat strong { display: block; font-size: 21px; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; }
+.today-status .stat span { color: var(--sub); font-size: 12px; }
+.today-status .pill { margin-left: auto; }
+.hero { margin-top: 12px; overflow: hidden; }
+.hero-art { position: relative; aspect-ratio: 16 / 9; background: var(--fill); }
+.hero-art img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.hero-art .prog { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: rgb(255 255 255 / 55%); }
+.hero-art .prog i { display: block; width: 33%; height: 100%; background: var(--primary); }
+.hero-body { display: flex; align-items: center; gap: 12px; padding: 13px 14px 15px 16px; }
+.hero-copy { min-width: 0; flex: 1; }
+.kicker { color: var(--sub); font-size: 12.5px; }
+.kicker b { color: var(--primary); font-weight: 600; }
+.hero-title { margin-top: 3px; font-size: 20px; font-weight: 700; letter-spacing: -.01em; line-height: 1.25; }
+.hero-copy .tag { margin-top: 8px; }
+.play-btn { display: grid; width: 46px; height: 46px; flex: 0 0 auto; place-items: center; border-radius: 50%; background: var(--primary); color: #fff; box-shadow: 0 6px 16px color-mix(in srgb, #EC3066 28%, transparent); }
+.play-btn svg { width: 20px; height: 20px; margin-left: 2px; fill: currentColor; stroke: none; }
+.tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin-top: 12px; }
+.tile { overflow: hidden; }
+.tile img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.tile-body { padding: 9px 11px 12px; }
+.tile-title { display: -webkit-box; overflow: hidden; font-size: 14.5px; font-weight: 600; line-height: 1.3; -webkit-box-orient: vertical; -webkit-line-clamp: 2; min-height: 2.6em; }
+.tile .kicker { margin-top: 4px; font-size: 12px; }
+
+/* ---------- 节目 ---------- */
+.chips { display: flex; gap: 7px; margin-top: 12px; }
+.chip { flex: 0 0 auto; height: 34px; padding: 0 13px; border-radius: 999px; background: var(--card); box-shadow: 0 0 0 .5px rgb(0 0 0 / 6%); color: var(--ink-2); font-size: 14px; font-weight: 600; white-space: nowrap; }
+.chip.on { background: var(--primary); box-shadow: none; color: #fff; }
+.list-head { display: flex; height: 40px; align-items: center; justify-content: space-between; padding: 0 2px; color: var(--sub); font-size: 13px; }
+.list-head button { display: inline-flex; align-items: center; gap: 3px; color: var(--ink-2); font-size: 13.5px; font-weight: 600; }
+.list-head button svg { width: 15px; height: 15px; stroke-width: 2.2; }
+.list { padding: 0 14px; }
+.ep { display: flex; align-items: center; gap: 12px; padding: 12px 0; }
+.ep + .ep { box-shadow: inset 0 .5px 0 var(--line); }
+.ep-thumb { position: relative; width: 104px; aspect-ratio: 16 / 9; flex: 0 0 auto; overflow: hidden; border-radius: 9px; background: var(--fill); }
+.ep-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ep-thumb i { position: absolute; left: 0; bottom: 0; height: 3px; background: var(--primary); }
+.ep-body { min-width: 0; flex: 1; }
+.ep-title { display: -webkit-box; overflow: hidden; font-size: 15px; font-weight: 600; line-height: 1.3; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.ep-meta { display: flex; align-items: center; gap: 6px; margin-top: 4px; color: var(--sub); font-size: 12.5px; white-space: nowrap; }
+.ep-meta .tag { height: 19px; padding: 0 6px; font-size: 11.5px; }
+.ep.playing .ep-title { color: var(--primary); }
+.bars { display: inline-flex; height: 11px; align-items: flex-end; gap: 2px; }
+.bars i { width: 2.5px; border-radius: 1px; background: var(--primary); }
+svg.check { width: 14px; height: 14px; margin-right: -2px; stroke-width: 2.6; }
+
+/* ---------- 单词 ---------- */
+.wsum { padding: 15px 16px 16px 18px; }
+.wsum-top { display: flex; align-items: center; gap: 20px; }
+.wsum .stat strong { display: block; font-size: 22px; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; }
+.wsum .stat span { display: inline-flex; align-items: center; gap: 5px; color: var(--sub); font-size: 12px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; }
+.wsum .pill { margin-left: auto; }
+.meter { display: flex; height: 6px; margin-top: 14px; overflow: hidden; border-radius: 3px; background: var(--fill); }
+.meter .m { background: var(--primary); }
+.meter .l { background: color-mix(in srgb, #EC3066 38%, #fff); }
+.seg { display: flex; margin: 10px 0 8px; padding: 2px; border-radius: 10px; background: rgb(0 0 0 / 5.5%); }
+.seg span { display: flex; flex: 1; height: 30px; align-items: center; justify-content: center; border-radius: 8px; color: var(--ink-2); font-size: 13.5px; font-weight: 600; }
+.seg span.on { background: var(--card); box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 0 0 .5px rgb(0 0 0 / 4%); color: var(--ink); }
+.seg em { margin-left: 3px; color: var(--sub); font-style: normal; font-weight: 500; }
+.word { display: flex; align-items: center; gap: 10px; padding: 11px 0; }
+.word + .word { box-shadow: inset 0 .5px 0 var(--line); }
+.word-copy { min-width: 0; flex: 1; }
+.word-term { font-size: 17px; font-weight: 650; letter-spacing: -.01em; }
+.word-mean { margin-top: 1px; overflow: hidden; color: var(--sub); font-size: 13.5px; text-overflow: ellipsis; white-space: nowrap; }
+.word-when { color: var(--sub); font-size: 13px; }
+svg.chev { width: 16px; height: 16px; color: #C4C4C7; stroke-width: 2.2; }
+
+/* ---------- 我的 ---------- */
+.me-stats { display: grid; grid-template-columns: repeat(4, 1fr); padding: 16px 6px 12px; text-align: center; }
+.me-stats strong { display: block; font-size: 22px; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }
+.me-stats span { color: var(--sub); font-size: 12px; }
+.me-note { margin: 0 16px; padding: 11px 0 13px; box-shadow: inset 0 .5px 0 var(--line); color: var(--sub); font-size: 13px; text-align: center; }
+.group { margin-top: 14px; padding-left: 16px; }
+.cell { display: flex; height: 50px; align-items: center; gap: 13px; padding-right: 14px; }
+.cell + .cell .cell-main { box-shadow: inset 0 .5px 0 var(--line); }
+.cell > svg.i { width: 22px; height: 22px; color: var(--primary); }
+.cell-main { display: flex; height: 100%; flex: 1; align-items: center; gap: 8px; }
+.cell-label { flex: 1; font-size: 16px; }
+.cell-value { color: var(--sub); font-size: 15px; }
+.mini-pill { height: 30px; padding: 0 13px; border-radius: 999px; background: var(--fill); font-size: 13.5px; font-weight: 600; }
+.foot { padding: 2px 16px 12px 0; color: var(--sub); font-size: 12.5px; }
+
+/* ---------- 播放 ---------- */
+.player { background:
+  radial-gradient(110% 60% at 0% 0%, color-mix(in srgb, #EC3066 22%, transparent), transparent 70%),
+  radial-gradient(90% 50% at 100% 45%, color-mix(in srgb, #EC3066 11%, transparent), transparent 72%),
+  color-mix(in srgb, #EC3066 6%, #FFFFFF); }
+.player .content { display: flex; flex-direction: column; padding: 54px 20px 34px; }
+.ptop { display: flex; height: 44px; flex: 0 0 auto; align-items: center; justify-content: space-between; margin: 0 -6px; }
+.switch { display: flex; padding: 3px; border-radius: 999px; background: rgb(0 0 0 / 6%); }
+.switch span { width: 76px; height: 32px; border-radius: 999px; color: var(--ink-2); font-size: 15px; font-weight: 600; line-height: 32px; text-align: center; }
+.switch span.on { background: #fff; color: var(--primary); box-shadow: 0 1px 4px rgb(0 0 0 / 8%); }
+.pcover { flex: 0 0 auto; margin-top: 10px; overflow: hidden; border-radius: 16px; box-shadow: 0 14px 32px rgb(80 20 30 / 16%); }
+.pcover img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.phead { display: flex; flex: 0 0 auto; align-items: flex-start; gap: 12px; margin-top: 16px; }
+.phead h2 { font-size: 22px; font-weight: 700; letter-spacing: -.01em; line-height: 1.25; }
+.phead p { margin-top: 3px; color: var(--sub); font-size: 15px; }
+.phead svg { width: 26px; height: 26px; margin-top: 2px; margin-left: auto; }
+.lyric { position: relative; display: flex; min-height: 0; flex: 1; flex-direction: column; justify-content: center; gap: 14px; margin-top: 16px; padding: 18px 20px; overflow: hidden; border-radius: 20px; background: rgb(255 255 255 / 62%); box-shadow: 0 0 0 .5px rgb(255 255 255 / 70%) inset; }
+.lyric .dim { display: -webkit-box; overflow: hidden; color: #A09A9C; font-size: 15px; line-height: 1.4; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.lyric .cur-en { font-size: 19.5px; font-weight: 600; line-height: 1.38; }
+.lyric .cur-en u { text-decoration: none; box-shadow: inset 0 -2.5px 0 var(--primary); }
+.lyric .cur-zh { margin-top: 6px; color: var(--ink-2); font-size: 14.5px; line-height: 1.5; }
+.pscrub { flex: 0 0 auto; margin-top: 18px; }
+.track { position: relative; height: 4px; border-radius: 2px; background: rgb(0 0 0 / 9%); }
+.track i { position: absolute; left: 0; top: 0; bottom: 0; width: 33%; border-radius: 2px; background: var(--primary); }
+.track b { position: absolute; top: 50%; left: 33%; width: 13px; height: 13px; margin: -6.5px 0 0 -6.5px; border-radius: 50%; background: var(--primary); }
+.times { display: flex; justify-content: space-between; margin-top: 8px; color: var(--sub); font-size: 12.5px; }
+.pctrl { display: flex; flex: 0 0 auto; align-items: center; justify-content: space-between; margin-top: 12px; }
+.pctrl .soft { display: inline-flex; height: 38px; min-width: 58px; align-items: center; justify-content: center; gap: 5px; padding: 0 12px; border-radius: 999px; background: rgb(255 255 255 / 70%); box-shadow: 0 0 0 .5px rgb(0 0 0 / 5%); font-size: 15px; font-weight: 600; }
+.pctrl .soft svg { width: 18px; height: 18px; }
+.pctrl .step svg { width: 30px; height: 30px; fill: currentColor; stroke-width: 2.4; }
+.pctrl .big { display: grid; width: 64px; height: 64px; place-items: center; }
+.pctrl .big svg { width: 44px; height: 44px; fill: currentColor; stroke: none; }
+
+/* 单屏模式：?s=today 等，用于按 iPhone 视口截图 */
+body.only { background: var(--bg); }
+body.only .board { padding: 0; }
+body.only .board-head, body.only .notes, body.only .shot-label { display: none; }
+body.only .shot { display: none; }
+body.only .shot.pick { display: block; }
+body.only .phone { border-radius: 0; box-shadow: none; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7.5"/><path d="m20.5 20.5-4.2-4.2"/></symbol>
+  <symbol id="chev-r" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="chev-d" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="updown" viewBox="0 0 24 24"><path d="m7 15 5 5 5-5"/><path d="m7 9 5-5 5 5"/></symbol>
+  <symbol id="play" viewBox="0 0 24 24"><path d="M7 4.6v14.8a1.2 1.2 0 0 0 1.8 1l12-7.4a1.2 1.2 0 0 0 0-2l-12-7.4A1.2 1.2 0 0 0 7 4.6z"/></symbol>
+  <symbol id="pause" viewBox="0 0 24 24"><rect x="5.5" y="4" width="4.6" height="16" rx="1.4"/><rect x="13.9" y="4" width="4.6" height="16" rx="1.4"/></symbol>
+  <symbol id="prev" viewBox="0 0 24 24"><path d="M18.5 5.2v13.6a.9.9 0 0 1-1.4.7L7.6 12.7a.9.9 0 0 1 0-1.4l9.5-6.8a.9.9 0 0 1 1.4.7z" stroke="none"/><path d="M5 5v14" fill="none"/></symbol>
+  <symbol id="next" viewBox="0 0 24 24"><path d="M5.5 5.2v13.6a.9.9 0 0 0 1.4.7l9.5-6.8a.9.9 0 0 0 0-1.4L6.9 4.5a.9.9 0 0 0-1.4.7z" stroke="none"/><path d="M19 5v14" fill="none"/></symbol>
+  <symbol id="heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></symbol>
+  <symbol id="more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.3" fill="currentColor"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/><circle cx="19" cy="12" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="notes" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="book" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+  <symbol id="target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.6"/></symbol>
+  <symbol id="moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></symbol>
+  <symbol id="download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+  <symbol id="file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8M16 17H8M10 9H8"/></symbol>
+  <symbol id="db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+  <symbol id="info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 16v-4M12 8h.01"/></symbol>
+  <symbol id="logo" viewBox="0 0 28 28"><path d="M4 9.5v9M9 6v16M14 2v24M19 6v16M24 9.5v9"/></symbol>
+  <!-- 底栏图标：沿用 app/src/components/Icons.tsx 的路径 -->
+  <symbol id="t-home" viewBox="0 0 24 24"><path d="M3.5 10.5 12 3.6l8.5 6.9V19a1.6 1.6 0 0 1-1.6 1.6H5.1A1.6 1.6 0 0 1 3.5 19z"/><path d="M9.8 20.6v-5.2a1 1 0 0 1 1-1h2.4a1 1 0 0 1 1 1v5.2"/></symbol>
+  <symbol id="t-home-on" viewBox="0 0 24 24"><path fill="currentColor" d="M3.5 10.5 12 3.6l8.5 6.9V19a1.6 1.6 0 0 1-1.6 1.6H5.1A1.6 1.6 0 0 1 3.5 19z"/><rect x="9.6" y="14.2" width="4.8" height="7.2" rx="1.2" fill="#fff" stroke="none"/></symbol>
+  <symbol id="t-shows" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.9v6.2a.7.7 0 0 0 1.05.6l5-3.1a.7.7 0 0 0 0-1.2l-5-3.1a.7.7 0 0 0-1.05.6z"/></symbol>
+  <symbol id="t-shows-on" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="currentColor" stroke="none"/><path fill="#fff" stroke="none" d="M10 8.9v6.2a.7.7 0 0 0 1.05.6l5-3.1a.7.7 0 0 0 0-1.2l-5-3.1a.7.7 0 0 0-1.05.6z"/></symbol>
+  <symbol id="t-book" viewBox="0 0 24 24"><path d="M3 5.5a1 1 0 0 1 1-1h4.5A3.5 3.5 0 0 1 12 8a3.5 3.5 0 0 1 3.5-3.5H20a1 1 0 0 1 1 1V17a1 1 0 0 1-1 1h-5a3 3 0 0 0-3 3 3 3 0 0 0-3-3H4a1 1 0 0 1-1-1z"/><path d="M12 8v13"/></symbol>
+  <symbol id="t-book-on" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5.5a1 1 0 0 1 1-1h4.5A3.5 3.5 0 0 1 12 8a3.5 3.5 0 0 1 3.5-3.5H20a1 1 0 0 1 1 1V17a1 1 0 0 1-1 1h-5a3 3 0 0 0-3 3 3 3 0 0 0-3-3H4a1 1 0 0 1-1-1z"/><path d="M12 8.6v10.2" stroke="#fff" stroke-width="1.6"/></symbol>
+  <symbol id="t-me" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></symbol>
+  <symbol id="t-me-on" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.4" fill="currentColor" stroke="none"/><path fill="currentColor" stroke="none" d="M3.8 20.1a8.2 8.2 0 0 1 16.4 0 .9.9 0 0 1-.9.9H4.7a.9.9 0 0 1-.9-.9z"/></symbol>
+  <symbol id="sb" viewBox="0 0 78 13"><rect x="0" y="8" width="3.2" height="5" rx="1"/><rect x="5" y="5.5" width="3.2" height="7.5" rx="1"/><rect x="10" y="3" width="3.2" height="10" rx="1"/><rect x="15" y="0" width="3.2" height="13" rx="1"/><path d="M31 3.2a9.5 9.5 0 0 1 13 0l-1.4 1.5a7.5 7.5 0 0 0-10.2 0zM33.4 5.8a6 6 0 0 1 8.2 0l-1.4 1.5a4 4 0 0 0-5.4 0zM37.5 12.5l-2.2-2.3a3.1 3.1 0 0 1 4.4 0z"/><rect x="51" y=".6" width="23" height="11.8" rx="3.6" fill="none" stroke="currentColor" stroke-opacity=".4"/><rect x="53" y="2.6" width="19" height="7.8" rx="2"/><path d="M75.5 4.4v4.2a2.2 2.2 0 0 0 0-4.2z" fill-opacity=".45"/></symbol>
+</svg>
+
+<div class="board">
+  <div class="board-head">
+    <h1>排版预览 v8 · 去掉「今日」，节目直接当首页（三个 Tab）</h1>
+    <p>iPhone 393×852，已按真机留出顶部状态栏 54px 与底部 Home 条。节目、封面、文稿、词义为真实数据；连续天数、待复习、掌握数等学习数字是演示值。<br>
+      在 v7 基础上只改了导航结构：今日页的内容分别并入迷你播放器、节目列表标签和单词角标。播放页与 v7 相同，这里不再重复。</p>
+  </div>
+
+  <div class="row">
+    <!-- ================= 节目 ================= -->
+    <div class="shot" data-s="programs">
+      <p class="shot-label">节目（打开 App 的第一屏）<span>今日页并进来</span></p>
+      <div class="phone">
+        <div class="statusbar"><span>9:41</span><svg viewBox="0 0 78 13" width="78"><use href="#sb"/></svg></div>
+        <div class="content">
+          <div class="search" style="margin-top:8px"><svg class="i"><use href="#search"/></svg>搜索节目标题</div>
+          <div class="chips">
+            <button class="chip on">全部</button>
+            <button class="chip">BBC</button>
+            <button class="chip">Curious</button>
+            <button class="chip">Thinking</button>
+            <button class="chip">精选</button>
+          </div>
+          <div class="list-head">
+            <span class="num">210 期</span>
+            <button>全部状态<svg class="i"><use href="#updown"/></svg></button>
+          </div>
+          <div class="card list">
+            <div class="ep">
+              <span class="ep-thumb"><img src="covers/thinking_407.jpg" alt=""></span>
+              <div class="ep-body">
+                <p class="ep-title">Is British Food Really Bad?</p>
+                <p class="ep-meta">9月28日 · Thinking · 29 分钟 <span class="tag">在学 4</span></p>
+              </div>
+            </div>
+            <div class="ep">
+              <span class="ep-thumb"><img src="covers/curious_634.jpg" alt=""></span>
+              <div class="ep-body">
+                <p class="ep-title">Nuclear Power's Unlikely Comeback</p>
+                <p class="ep-meta">9月25日 · Curious · 23 分钟</p>
+              </div>
+            </div>
+            <div class="ep playing">
+              <span class="ep-thumb"><img src="covers/bbc6min_260924.jpg" alt=""><i style="width:33%"></i></span>
+              <div class="ep-body">
+                <p class="ep-title">Why do we itch?</p>
+                <p class="ep-meta" style="color:var(--primary);font-weight:600"><span class="bars"><i style="height:6px"></i><i style="height:11px"></i><i style="height:8px"></i></span>正在播放 · 剩 4 分钟</p>
+              </div>
+            </div>
+            <div class="ep">
+              <span class="ep-thumb"><img src="covers/thinking_406.jpg" alt=""></span>
+              <div class="ep-body">
+                <p class="ep-title">Where Is the BEST Place to Study English?</p>
+                <p class="ep-meta">9月21日 · Thinking · 28 分钟 <span class="tag">在学 2</span></p>
+              </div>
+            </div>
+            <div class="ep">
+              <span class="ep-thumb"><img src="covers/bbc6min_260917.jpg" alt=""></span>
+              <div class="ep-body">
+                <p class="ep-title">Is rejection good for us?</p>
+                <p class="ep-meta"><svg class="i check"><use href="#check"/></svg>已听完 · 9月17日 · BBC</p>
+              </div>
+            </div>
+            <div class="ep">
+              <span class="ep-thumb"><img src="covers/thinking_405.jpg" alt=""></span>
+              <div class="ep-body">
+                <p class="ep-title">History of Singapore!</p>
+                <p class="ep-meta">9月14日 · Thinking · 26 分钟</p>
+              </div>
+            </div>
+            <div class="ep">
+              <span class="ep-thumb"><img src="covers/curious_631.jpg" alt=""></span>
+              <div class="ep-body">
+                <p class="ep-title">The Dark Side of Psychology | The Milgram Experiment</p>
+                <p class="ep-meta">9月11日 · Curious · 27 分钟</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini">
+          <img src="covers/bbc6min_260924.jpg" alt="">
+          <div class="mini-copy"><p class="mini-title">Why do we itch?</p><p class="mini-sub">BBC 6 Minute English</p></div>
+          <button class="mini-btn"><svg class="i"><use href="#play"/></svg></button>
+          <span class="mini-bar"><i></i></span>
+        </div>
+        <nav class="tabbar">
+          <span class="tab on"><svg class="i"><use href="#t-shows-on"/></svg>节目</span>
+          <span class="tab"><svg class="i"><use href="#t-book"/></svg><em class="badge num">24</em>单词</span>
+          <span class="tab"><svg class="i"><use href="#t-me"/></svg>我的</span>
+        </nav>
+        <span class="home-ind"></span>
+      </div>
+      <ul class="notes">
+        <li>打开就是节目列表，第一屏能看到 6 集以上</li>
+        <li>继续听：迷你播放器本来就挂着上次那集，不再在页面里放第二个入口</li>
+        <li>推荐：列表里「在学 N」标出含你在学词的集数，替代今日页的两张推荐卡</li>
+        <li>修掉胶囊断行：频道一行放下，不换行不挤压</li>
+        <li>「全部 / 未听 / 已听完」收进列表头右侧的状态菜单，页面上只剩一个「全部」</li>
+        <li>每行两层：标题 + 「日期 · 节目 · 时长」；删掉没法用的「六级词 N」，只标在学词</li>
+        <li>第一条节目从约 300px 提到约 190px</li>
+      </ul>
+    </div>
+
+    <!-- ================= 单词 ================= -->
+    <div class="shot" data-s="words">
+      <p class="shot-label">单词<span>背词入口集中在这里</span></p>
+      <div class="phone">
+        <div class="statusbar"><span>9:41</span><svg viewBox="0 0 78 13" width="78"><use href="#sb"/></svg></div>
+        <div class="content">
+          <div class="card wsum" style="margin-top:8px">
+            <div class="wsum-top">
+              <div class="stat num"><strong>328</strong><span><i class="dot" style="background:var(--primary)"></i>已掌握</span></div>
+              <div class="stat num"><strong>86</strong><span><i class="dot" style="background:color-mix(in srgb,#EC3066 38%,#fff)"></i>学习中</span></div>
+              <div class="stat num"><strong>4946</strong><span><i class="dot" style="background:#E3E1DE"></i>未学</span></div>
+              <span class="pill">复习 24</span>
+            </div>
+            <div class="meter"><span class="m" style="width:6.12%"></span><span class="l" style="width:1.6%"></span></div>
+          </div>
+
+          <div class="search" style="margin-top:12px"><svg class="i"><use href="#search"/></svg>搜索单词或释义</div>
+          <div class="seg">
+            <span class="on">学习中</span><span>已掌握</span><span>词表外</span><span>六级词表</span>
+          </div>
+
+          <div class="card list">
+            <div class="word"><div class="word-copy"><p class="word-term">scratch</p><p class="word-mean">n. 抓痕，搔，抓；vt. 挖出，擦，刮</p></div><span class="tag">待复习</span><svg class="i chev"><use href="#chev-r"/></svg></div>
+            <div class="word"><div class="word-copy"><p class="word-term">sensation</p><p class="word-mean">n. 感觉，轰动</p></div><span class="tag">待复习</span><svg class="i chev"><use href="#chev-r"/></svg></div>
+            <div class="word"><div class="word-copy"><p class="word-term">irritate</p><p class="word-mean">vt. 激怒，使发怒，使兴奋；vi. 引起不快</p></div><span class="tag">待复习</span><svg class="i chev"><use href="#chev-r"/></svg></div>
+            <div class="word"><div class="word-copy"><p class="word-term">relief</p><p class="word-mean">n. 减轻，解除，救济</p></div><span class="word-when">1 天后</span><svg class="i chev"><use href="#chev-r"/></svg></div>
+            <div class="word"><div class="word-copy"><p class="word-term">chronic</p><p class="word-mean">a. 慢性的，习惯性的；n. 慢性病患者</p></div><span class="word-when">2 天后</span><svg class="i chev"><use href="#chev-r"/></svg></div>
+            <div class="word"><div class="word-copy"><p class="word-term">perspective</p><p class="word-mean">n. 远景，透视感，(观察问题的)视角</p></div><span class="word-when">3 天后</span><svg class="i chev"><use href="#chev-r"/></svg></div>
+            <div class="word"><div class="word-copy"><p class="word-term">reluctant</p><p class="word-mean">a. 不情愿的，勉强的</p></div><span class="word-when">5 天后</span><svg class="i chev"><use href="#chev-r"/></svg></div>
+          </div>
+        </div>
+
+        <div class="mini">
+          <img src="covers/bbc6min_260924.jpg" alt="">
+          <div class="mini-copy"><p class="mini-title">Why do we itch?</p><p class="mini-sub">BBC 6 Minute English</p></div>
+          <button class="mini-btn"><svg class="i"><use href="#play"/></svg></button>
+          <span class="mini-bar"><i></i></span>
+        </div>
+        <nav class="tabbar">
+          <span class="tab"><svg class="i"><use href="#t-shows"/></svg>节目</span>
+          <span class="tab on"><svg class="i"><use href="#t-book-on"/></svg><em class="badge num">24</em>单词</span>
+          <span class="tab"><svg class="i"><use href="#t-me"/></svg>我的</span>
+        </nav>
+        <span class="home-ind"></span>
+      </div>
+      <ul class="notes">
+        <li>底栏「单词」角标显示待复习数，在哪个 Tab 都能看到；清零就消失</li>
+        <li>统计、进度条、复习按钮合成一张卡；数字旁的色点对应进度条的颜色</li>
+        <li>删掉重复的「六级词表 · 5360词」那一行</li>
+        <li>四个分组改成 iOS 分段控件，比下划线标签更紧凑</li>
+        <li>「待复习」用玫红标签，其余只写几天后，扫一眼就知道先背哪个</li>
+      </ul>
+    </div>
+
+    <!-- ================= 我的 ================= -->
+    <div class="shot" data-s="me">
+      <p class="shot-label">我的<span>结构不变，只改明暗关系</span></p>
+      <div class="phone">
+        <div class="statusbar"><span>9:41</span><svg viewBox="0 0 78 13" width="78"><use href="#sb"/></svg></div>
+        <div class="content">
+          <div class="card" style="margin-top:8px">
+            <div class="me-stats num">
+              <div><strong>7</strong><span>连续天数</span></div>
+              <div><strong>126</strong><span>收听分钟</span></div>
+              <div><strong>12</strong><span>听完集数</span></div>
+              <div><strong>328</strong><span>掌握单词</span></div>
+            </div>
+            <p class="me-note">今天复习 24 次 · 学习中 86 词</p>
+          </div>
+
+          <div class="card group">
+            <div class="cell"><svg class="i"><use href="#book"/></svg><div class="cell-main"><span class="cell-label">每天新词</span><span class="cell-value">10词</span><svg class="i chev"><use href="#chev-r"/></svg></div></div>
+            <div class="cell"><svg class="i"><use href="#target"/></svg><div class="cell-main"><span class="cell-label">目标记忆率</span><span class="cell-value">90%</span><svg class="i chev"><use href="#chev-r"/></svg></div></div>
+            <div class="cell"><svg class="i"><use href="#moon"/></svg><div class="cell-main"><span class="cell-label">外观</span><span class="cell-value">跟随系统</span><svg class="i chev"><use href="#chev-r"/></svg></div></div>
+          </div>
+
+          <div class="card group">
+            <div class="cell"><svg class="i"><use href="#heart"/></svg><div class="cell-main"><span class="cell-label">我的收藏</span><span class="cell-value">2</span><svg class="i chev"><use href="#chev-r"/></svg></div></div>
+            <div class="cell"><svg class="i"><use href="#download"/></svg><div class="cell-main"><span class="cell-label">离线音频</span><span class="cell-value">2集 · 18 MB</span><svg class="i chev"><use href="#chev-r"/></svg></div></div>
+          </div>
+
+          <div class="card group">
+            <div class="cell"><svg class="i"><use href="#file"/></svg><div class="cell-main"><span class="cell-label">学习记录</span><button class="mini-pill">导出</button><button class="mini-pill">导入</button></div></div>
+            <div class="cell"><svg class="i"><use href="#db"/></svg><div class="cell-main"><span class="cell-label">资源缓存</span><span class="cell-value">清除缓存</span></div></div>
+            <p class="foot">学习记录仅保存在本机，换设备前请先导出。</p>
+          </div>
+
+          <div class="card group">
+            <div class="cell"><svg class="i"><use href="#info"/></svg><div class="cell-main"><span class="cell-label">素材与版本信息</span><svg class="i chev"><use href="#chev-r"/></svg></div></div>
+          </div>
+        </div>
+
+        <div class="mini">
+          <img src="covers/bbc6min_260924.jpg" alt="">
+          <div class="mini-copy"><p class="mini-title">Why do we itch?</p><p class="mini-sub">BBC 6 Minute English</p></div>
+          <button class="mini-btn"><svg class="i"><use href="#play"/></svg></button>
+          <span class="mini-bar"><i></i></span>
+        </div>
+        <nav class="tabbar">
+          <span class="tab"><svg class="i"><use href="#t-shows"/></svg>节目</span>
+          <span class="tab"><svg class="i"><use href="#t-book"/></svg><em class="badge num">24</em>单词</span>
+          <span class="tab on"><svg class="i"><use href="#t-me-on"/></svg>我的</span>
+        </nav>
+        <span class="home-ind"></span>
+      </div>
+      <ul class="notes">
+        <li>灰底白卡，和 iOS 设置页同一套分组逻辑</li>
+        <li>分隔线从文字起点开始，不再横穿图标</li>
+        <li>今日页上的连续天数本来就在这里</li>
+        <li>底部导航改成和迷你播放器一样的悬浮毛玻璃，两层是同一套样式</li>
+      </ul>
+    </div>
+
+
+  </div>
+</div>
+
+<script>
+  const s = new URLSearchParams(location.search).get('s')
+  if (s) {
+    document.body.classList.add('only')
+    document.querySelector(`.shot[data-s="${s}"]`)?.classList.add('pick')
+  }
+</script>
+</body>
+</html>

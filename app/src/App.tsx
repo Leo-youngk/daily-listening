@@ -7,18 +7,16 @@ import TabBar from './components/TabBar'
 import MiniPlayer from './components/MiniPlayer'
 import UpdateBanner from './components/UpdateBanner'
 import StorageAlert from './components/StorageAlert'
-import Today from './pages/Today'
 import Programs from './pages/Programs'
 import Player from './pages/Player'
 import Words from './pages/Words'
 import WordDetail from './pages/WordDetail'
 import Review from './pages/Review'
 import Me from './pages/Me'
-import Search from './pages/Search'
 
-const TAB_PAGES = new Set(['today', 'programs', 'words', 'me'])
+const TAB_PAGES = new Set(['programs', 'words', 'me'])
 /** 全屏页盖在 Tab 页上面（导航栈）：下面的列表不卸载，返回时位置、已展开条数、筛选与搜索词都还在 */
-const OVERLAY_PAGES = new Set(['talk', 'review', 'word', 'search'])
+const OVERLAY_PAGES = new Set(['talk', 'review', 'word'])
 const HOME = parseRoute('/')
 
 export default function App() {
@@ -31,9 +29,9 @@ export default function App() {
   const [lastTabRoute, setLastTabRoute] = useState(() => (overlay ? HOME : route))
   if (!overlay && lastTabRoute !== route) setLastTabRoute(route)
   const shell = overlay ? lastTabRoute : route
-  const tab = TAB_PAGES.has(shell.page) ? shell.page : 'today'
+  const tab = TAB_PAGES.has(shell.page) ? shell.page : 'programs'
 
-  // 四个 Tab 共用一个滚动容器：各自记住自己的位置，切回来时还原（我的 · 二级页各算一页）
+  // 三个 Tab 共用一个滚动容器：各自记住自己的位置，切回来时还原（我的 · 二级页各算一页）
   const mainRef = useRef<HTMLElement>(null)
   const scrollByPage = useRef<Record<string, number>>({})
   const pageKey = tab === 'me' ? `me/${shell.param}` : tab
@@ -52,17 +50,24 @@ export default function App() {
     return () => cancelAnimationFrame(frame)
   }, [pageKey])
 
-  // 主题
+  // 主题；iOS 15+ 主屏 App 的状态栏底色跟 theme-color，跟着当前页面底色走，顶部不出现色条
   useEffect(() => {
+    const media = matchMedia('(prefers-color-scheme: dark)')
     const apply = () => {
       const t = loadSettings().theme
       document.documentElement.setAttribute('data-theme', t === 'auto' ? '' : t)
+      const color = getComputedStyle(document.documentElement)
+        .getPropertyValue(overlay ? '--color-bg' : '--color-grouped').trim()
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', color)
     }
     apply()
-    const onStorage = () => apply()
-    window.addEventListener('dtl-storage', onStorage)
-    return () => window.removeEventListener('dtl-storage', onStorage)
-  }, [])
+    window.addEventListener('dtl-storage', apply)
+    media.addEventListener('change', apply)
+    return () => {
+      window.removeEventListener('dtl-storage', apply)
+      media.removeEventListener('change', apply)
+    }
+  }, [overlay])
 
   // 旧版生词本一次性导入 IndexedDB
   useEffect(() => {
@@ -84,13 +89,15 @@ export default function App() {
           onScroll={e => { scrollByPage.current[pageKey] = e.currentTarget.scrollTop }}
           className="app-main min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll"
         >
-          {tab === 'today' && <Today />}
           {tab === 'programs' && <Programs query={shell.query} />}
           {tab === 'words' && <Words query={shell.query} />}
           {tab === 'me' && <Me sub={shell.param || undefined} />}
         </main>
-        <MiniPlayer />
-        <TabBar page={tab} />
+        {/* 迷你播放器与底栏悬浮在内容上方，列表从毛玻璃下面滚过去 */}
+        <div className="app-dock">
+          <MiniPlayer />
+          <TabBar page={tab} />
+        </div>
       </div>
       {overlay && (
         <div className="app-overlay">
@@ -98,10 +105,8 @@ export default function App() {
             <Player slug={route.param} />
           ) : route.page === 'review' ? (
             <Review />
-          ) : route.page === 'word' ? (
-            <WordDetail term={decodeURIComponent(route.param)} />
           ) : (
-            <Search />
+            <WordDetail term={decodeURIComponent(route.param)} />
           )}
         </div>
       )}

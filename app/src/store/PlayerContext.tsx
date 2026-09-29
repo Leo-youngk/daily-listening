@@ -24,8 +24,6 @@ interface PlayerState {
   slug: string | null
   talk: TalkData | null
   loading: boolean
-  /** 启动时预挂上的一集：这次打开 App 还没点过播放 */
-  armed: boolean
   playing: boolean
   buffering: boolean
   error: string | null
@@ -59,8 +57,6 @@ interface PlayerClockState {
 
 interface PlayerActions {
   playTalk: (slug: string, at?: number) => void
-  /** 预挂一集但不播，让浏览器先把开头和索引下好；播放器里已经有一集时什么也不做 */
-  primeTalk: (slug: string) => void
 }
 
 interface CatalogState {
@@ -127,7 +123,6 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const [slug, setSlug] = useState<string | null>(null)
   const [talk, setTalk] = useState<TalkData | null>(null)
   const [loading, setLoading] = useState(false)
-  const [armed, setArmed] = useState(false)
   const [playing, setPlaying] = useState(false)
   const [buffering, setBuffering] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -215,7 +210,6 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const startPlayback = useCallback(() => {
-    setArmed(false)
     setError(null)
     setBuffering(true)
     void audio.play().catch(handlePlayFailure)
@@ -302,7 +296,6 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     }
     // 预挂时不播：preload=metadata 只让浏览器先拉索引和开头，点播放时几乎立刻出声
     if (autoplay) startPlayback()
-    else setArmed(true)
 
     fetchJson<TalkData>(`/data/${encodeURIComponent(target)}.json`, {
       signal: request.controller.signal,
@@ -483,19 +476,14 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     loadTalk(target, at)
   }, [audio, loadTalk, seek, startPlayback])
 
-  const primeTalk = useCallback((target: string) => {
-    if (slugRef.current) return
-    loadTalk(target, undefined, false)
-  }, [loadTalk])
-
-  // 重开 App 时把上次没听完的那集挂回来（暂停在原进度），迷你播放条随之恢复
+  // 重开 App 时把上次没听完的那集挂回来（暂停在原进度，不自动播），迷你播放条随之恢复
   useEffect(() => {
     if (!manifestReady || slugRef.current) return
     const last = Object.entries(loadProgress())
       .filter(([key, entry]) => manifestBySlug.has(key) && entry.pos > 3 && !isFinished(entry))
       .sort((a, b) => b[1].updatedAt - a[1].updatedAt)[0]
-    if (last) primeTalk(last[0])
-  }, [manifestReady, manifestBySlug, primeTalk])
+    if (last) loadTalk(last[0], undefined, false)
+  }, [manifestReady, manifestBySlug, loadTalk])
 
   const stepSentence = useCallback((direction: 1 | -1) => {
     const sentences = talkRef.current?.sentences
@@ -575,17 +563,17 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, [audio, loadTalk])
 
   const value = useMemo<PlayerState>(() => ({
-    manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, armed, playing,
+    manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
     buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, pause, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
     subtitleOffset, setSubtitleOffset, getSubtitleTime,
   }), [
-    manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, armed, playing,
+    manifest, manifestReady, manifestError, reloadManifest, slug, talk, loading, playing,
     buffering, error, notice, rate, loop, quality, playTalk, retry, toggle, pause, seek, skip,
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
     subtitleOffset, setSubtitleOffset, getSubtitleTime,
   ])
-  const actions = useMemo<PlayerActions>(() => ({ playTalk, primeTalk }), [playTalk, primeTalk])
+  const actions = useMemo<PlayerActions>(() => ({ playTalk }), [playTalk])
   const catalog = useMemo<CatalogState>(() => ({
     manifest, manifestReady, manifestError, reloadManifest,
   }), [manifest, manifestReady, manifestError, reloadManifest])
