@@ -50,7 +50,7 @@ export default function App() {
     return () => cancelAnimationFrame(frame)
   }, [pageKey])
 
-  // 主题；主屏 App 的状态栏是透明的（black-translucent），顶部直接露出页面底色，切主题时自然跟着变；theme-color 只管浏览器里打开的情况
+  // 主题；主屏 App 用默认状态栏（default），刘海处取页面底色，所以全页只用一种底色（--color-bg）；theme-color 只管浏览器里打开的情况
   useEffect(() => {
     const media = matchMedia('(prefers-color-scheme: dark)')
     const apply = () => {

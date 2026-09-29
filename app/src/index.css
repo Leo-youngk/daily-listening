@@ -283,10 +283,6 @@ body {
   background: var(--color-grouped);
 }
 .app-shell:has(.mini-player) { --dock-space: calc(var(--dock-bottom) + 60px + 8px + 58px + 20px); }
-.app-shell::before {
-  /* 状态栏透明（black-translucent）后页面直接铺到屏幕顶：这里盖一层页面底色，滚动内容不会从时间 / 电量后面穿过去；底色随主题走 */
-  position: absolute; z-index: 5; top: 0; right: 0; left: 0; height: env(safe-area-inset-top, 0px); background: var(--color-grouped); content: '';
-}
 .app-main { background: var(--color-grouped); }
 /* 列表最后几行要能滚到悬浮底栏上方 */
 .app-main::after { display: block; height: var(--dock-space); content: ''; }
