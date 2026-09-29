@@ -9,14 +9,14 @@
 }
 
 /*
- * 设计令牌：所有页面都是纯白底（Tab 页与全屏页一致，状态栏 / 刘海处不出现色条）+ 浅灰卡片；主色玫红。
+ * 设计令牌：所有页面都是纯白底（Tab 页与全屏页一致，状态栏 / 刘海处不出现色条），卡片也是白的，只靠细描边和分隔线；主色玫红。
  * --color-* 是页面自己的令牌，下面一组是 shadcn 组件读的令牌。
  */
 :root {
   color-scheme: light;
   --color-bg: #FFFFFF;
   --color-grouped: #FFFFFF;
-  --color-card: #F5F5F7;
+  --color-card: #FFFFFF;
   --shadow-card: none;
   --float-edge: rgb(0 0 0 / 6%);
   --float-shadow: 0 8px 28px rgb(0 0 0 / 10%);
@@ -333,8 +333,9 @@ body {
 
 .row-button { height: 30px; flex: 0 0 auto; padding: 0 14px; border-radius: 999px; background: var(--color-raised); color: var(--color-ink); font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; box-shadow: 0 1px 2px rgb(0 0 0 / 6%); }
 .row-button.is-accent { color: var(--primary); }
-/* Tab 页的卡片是白的，行内按钮改用浅灰底才看得出是按钮 */
-.app-main .row-button { background: var(--color-fill); box-shadow: none; }
+/* Tab 页全白，行内按钮靠一圈细描边分出来，不用灰底 */
+.app-main .row-button,
+.app-main .pill-button.is-soft { background: var(--color-card); box-shadow: 0 0 0 .5px var(--float-edge); }
 .row-button:disabled { opacity: .45; }
 .row-button:active { opacity: .6; }
 
