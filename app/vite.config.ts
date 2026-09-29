@@ -56,8 +56,8 @@ export default defineConfig({
         name: '每日听力',
         short_name: '每日听力',
         description: '英语学习播客精听 + 六级背词：每个单词都用节目里的真人原声来背',
-        theme_color: '#F4F3F1',
-        background_color: '#F4F3F1',
+        theme_color: '#FFFFFF',
+        background_color: '#FFFFFF',
         display: 'standalone',
         start_url: '.',
         icons: [

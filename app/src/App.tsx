@@ -50,7 +50,7 @@ export default function App() {
     return () => cancelAnimationFrame(frame)
   }, [pageKey])
 
-  // 主题；iOS 15+ 主屏 App 的状态栏底色跟 theme-color，跟着页面底色走（浅色纯白 / 深色近黑），顶部不出现色条
+  // 主题；主屏 App 的状态栏是透明的（black-translucent），顶部直接露出页面底色，切主题时自然跟着变；theme-color 只管浏览器里打开的情况
   useEffect(() => {
     const media = matchMedia('(prefers-color-scheme: dark)')
     const apply = () => {
