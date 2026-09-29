@@ -11,7 +11,7 @@ const stroke = {
   strokeLinejoin: 'round' as const,
 }
 /** 实心图标里的镂空部分跟底栏底色走，深浅色都成立 */
-const cutout = { fill: 'var(--color-card)' }
+const cutout = { fill: 'var(--color-float)' }
 
 export function ShowsIcon({ active, ...props }: TabIconProps) {
   const triangle = 'M10 8.9v6.2a.7.7 0 0 0 1.05.6l5-3.1a.7.7 0 0 0 0-1.2l-5-3.1a.7.7 0 0 0-1.05.6z'
@@ -33,7 +33,7 @@ export function BookIcon({ active, ...props }: TabIconProps) {
   return active ? (
     <svg viewBox="0 0 24 24" aria-hidden {...props}>
       <path d={cover} fill="currentColor" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" />
-      <path d="M12 8.6v10.2" strokeWidth={1.6} strokeLinecap="round" style={{ stroke: 'var(--color-card)' }} />
+      <path d="M12 8.6v10.2" strokeWidth={1.6} strokeLinecap="round" style={{ stroke: 'var(--color-float)' }} />
     </svg>
   ) : (
     <svg viewBox="0 0 24 24" aria-hidden {...stroke} {...props}>

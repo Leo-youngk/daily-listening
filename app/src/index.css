@@ -9,17 +9,17 @@
 }
 
 /*
- * 设计令牌：Tab 页是暖灰底 + 白卡片（层次靠明暗，不靠灰块），全屏页是白底；主色玫红。
+ * 设计令牌：所有页面都是纯白底（Tab 页与全屏页一致，状态栏 / 刘海处不出现色条）+ 浅灰卡片；主色玫红。
  * --color-* 是页面自己的令牌，下面一组是 shadcn 组件读的令牌。
  */
 :root {
   color-scheme: light;
   --color-bg: #FFFFFF;
-  --color-grouped: #F4F3F1;
-  --color-card: #FFFFFF;
-  --shadow-card: 0 0 0 .5px rgb(0 0 0 / 3%), 0 1px 2px rgb(0 0 0 / 4%), 0 6px 20px rgb(60 30 20 / 4%);
+  --color-grouped: #FFFFFF;
+  --color-card: #F5F5F7;
+  --shadow-card: none;
   --float-edge: rgb(0 0 0 / 6%);
-  --float-shadow: 0 8px 28px rgb(60 30 20 / 10%);
+  --float-shadow: 0 8px 28px rgb(0 0 0 / 10%);
   --color-fill: #F5F5F7;
   --color-fill-strong: #EBEBEF;
   --color-raised: #FFFFFF;
@@ -289,7 +289,7 @@ body {
 .app-dock > * { pointer-events: auto; }
 .app-tab-bar,
 .mini-player {
-  background: color-mix(in srgb, var(--color-card) 80%, transparent);
+  background: color-mix(in srgb, var(--color-float) 80%, transparent);
   box-shadow: 0 0 0 .5px var(--float-edge), var(--float-shadow);
   -webkit-backdrop-filter: blur(24px) saturate(1.8);
   backdrop-filter: blur(24px) saturate(1.8);
@@ -299,7 +299,7 @@ body {
 .app-tab-icon { width: 26px; height: 26px; }
 .app-tab.is-active { color: var(--primary); }
 .app-tab:active .app-tab-icon { transform: scale(.92); }
-.app-tab-badge { position: absolute; top: 5px; left: 50%; min-width: 18px; height: 18px; margin-left: 5px; padding: 0 5px; border-radius: 9px; background: var(--primary); box-shadow: 0 0 0 2px var(--color-card); color: var(--primary-foreground); font-size: 11px; font-style: normal; font-weight: 700; line-height: 18px; text-align: center; font-variant-numeric: tabular-nums; }
+.app-tab-badge { position: absolute; top: 5px; left: 50%; min-width: 18px; height: 18px; margin-left: 5px; padding: 0 5px; border-radius: 9px; background: var(--primary); box-shadow: 0 0 0 2px var(--color-float); color: var(--primary-foreground); font-size: 11px; font-style: normal; font-weight: 700; line-height: 18px; text-align: center; font-variant-numeric: tabular-nums; }
 
 .mini-player { position: relative; display: flex; height: 58px; align-items: center; gap: 11px; padding: 0 6px 0 9px; overflow: hidden; border-radius: 20px; cursor: pointer; animation: fade-up .25s ease; }
 .mini-player-art { display: block; width: 64px; height: 38px; flex: 0 0 auto; overflow: hidden; border-radius: 8px; background: var(--color-fill); }
@@ -360,7 +360,7 @@ body {
 .list-more { display: block; width: 100%; margin-top: 8px; padding: 12px; color: var(--color-sub); font-size: 13px; }
 
 /* 下拉菜单（Radix DropdownMenu） */
-.app-menu { z-index: 50; min-width: 150px; padding: 6px; border-radius: 14px; background: color-mix(in srgb, var(--color-card) 90%, transparent); box-shadow: 0 0 0 .5px var(--float-edge), 0 12px 36px rgb(0 0 0 / 16%); transform-origin: var(--radix-dropdown-menu-content-transform-origin); animation: menu-in .14s ease; -webkit-backdrop-filter: blur(24px) saturate(1.8); backdrop-filter: blur(24px) saturate(1.8); }
+.app-menu { z-index: 50; min-width: 150px; padding: 6px; border-radius: 14px; background: color-mix(in srgb, var(--color-float) 90%, transparent); box-shadow: 0 0 0 .5px var(--float-edge), 0 12px 36px rgb(0 0 0 / 16%); transform-origin: var(--radix-dropdown-menu-content-transform-origin); animation: menu-in .14s ease; -webkit-backdrop-filter: blur(24px) saturate(1.8); backdrop-filter: blur(24px) saturate(1.8); }
 @keyframes menu-in { from { opacity: 0; transform: scale(.96); } }
 .app-menu-item { display: flex; height: 42px; align-items: center; justify-content: space-between; gap: 16px; padding: 0 12px; border-radius: 9px; color: var(--color-ink); font-size: 15.5px; outline: none; cursor: default; user-select: none; }
 .app-menu-item[data-highlighted] { background: color-mix(in srgb, var(--color-ink) 7%, transparent); }

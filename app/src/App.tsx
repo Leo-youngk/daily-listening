@@ -50,14 +50,14 @@ export default function App() {
     return () => cancelAnimationFrame(frame)
   }, [pageKey])
 
-  // 主题；iOS 15+ 主屏 App 的状态栏底色跟 theme-color，跟着当前页面底色走，顶部不出现色条
+  // 主题；iOS 15+ 主屏 App 的状态栏底色跟 theme-color，跟着页面底色走（浅色纯白 / 深色近黑），顶部不出现色条
   useEffect(() => {
     const media = matchMedia('(prefers-color-scheme: dark)')
     const apply = () => {
       const t = loadSettings().theme
       document.documentElement.setAttribute('data-theme', t === 'auto' ? '' : t)
       const color = getComputedStyle(document.documentElement)
-        .getPropertyValue(overlay ? '--color-bg' : '--color-grouped').trim()
+        .getPropertyValue('--color-bg').trim()
       document.querySelector('meta[name="theme-color"]')?.setAttribute('content', color)
     }
     apply()
@@ -67,7 +67,7 @@ export default function App() {
       window.removeEventListener('dtl-storage', apply)
       media.removeEventListener('change', apply)
     }
-  }, [overlay])
+  }, [])
 
   // 旧版生词本一次性导入 IndexedDB
   useEffect(() => {
