@@ -252,7 +252,7 @@ body {
   scrollbar-width: none;
 }
 
-/* iOS Safari 不支持 overscroll-behavior，横向滑动只能靠 touch-action 区分方向。
+/* 旧版 iOS Safari 不支持 overscroll-behavior，横向滑动仍需 touch-action 区分方向。
    body 上的 pan-y 会连横向素材列表一起锁死，所以按容器分别声明。 */
 .vertical-scroll {
   touch-action: pan-y;
@@ -570,7 +570,7 @@ button.me-row:active { background: var(--color-fill-strong); }
 .player-now .player-toggle { width: 72px; height: 72px; }
 .player-now .player-toggle svg { width: 46px; height: 46px; }
 
-.player-scrub { height: 22px; }
+.player-scrub { height: 44px; }
 .player-scrub [data-slot="slider-track"],
 .player-offset [data-slot="slider-track"] { height: 4px; background: rgb(0 0 0 / 8%); }
 .player-scrub [data-slot="slider-thumb"],
@@ -611,6 +611,7 @@ button.me-row:active { background: var(--color-fill-strong); }
 /* "文稿"视图：字幕流 + 底部控制卡 */
 .subtitle-scroll { padding: 4px 24px 24px; overflow-x: hidden; overflow-anchor: none; }
 .subtitle-list { padding-bottom: 35vh; }
+.subtitle-virtual-row { position: absolute; top: 0; left: 0; width: 100%; }
 .subtitle-sentence { padding: 12px 0 14px; cursor: pointer; }
 /* 时间戳只给键盘和读屏用，视觉上隐藏 */
 .subtitle-timestamp { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }

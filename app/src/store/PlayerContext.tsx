@@ -55,6 +55,11 @@ interface PlayerClockState {
   currentIdx: number
 }
 
+interface PlayerPositionState {
+  currentIdx: number
+  finished: boolean
+}
+
 interface PlayerActions {
   playTalk: (slug: string, at?: number) => void
 }
@@ -68,6 +73,7 @@ interface CatalogState {
 
 const PlayerContext = createContext<PlayerState | null>(null)
 const PlayerClockContext = createContext<PlayerClockState | null>(null)
+const PlayerPositionContext = createContext<PlayerPositionState | null>(null)
 const PlayerActionsContext = createContext<PlayerActions | null>(null)
 const CatalogContext = createContext<CatalogState | null>(null)
 
@@ -80,6 +86,13 @@ export function usePlayer() {
 export function usePlayerClock() {
   const value = useContext(PlayerClockContext)
   if (!value) throw new Error('usePlayerClock outside provider')
+  return value
+}
+
+/** 文稿只订阅换句和结束状态，进度时钟留给进度条，不让整页每 100ms 重渲染。 */
+export function usePlayerPosition() {
+  const value = useContext(PlayerPositionContext)
+  if (!value) throw new Error('usePlayerPosition outside provider')
   return value
 }
 
@@ -625,13 +638,17 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const catalog = useMemo<CatalogState>(() => ({
     manifest, manifestReady, manifestError, reloadManifest,
   }), [manifest, manifestReady, manifestError, reloadManifest])
+  const finished = !playing && clock.duration > 0 && clock.time >= clock.duration - 1
+  const position = useMemo<PlayerPositionState>(() => ({ currentIdx: clock.currentIdx, finished }), [clock.currentIdx, finished])
 
   return (
     <CatalogContext.Provider value={catalog}>
       <PlayerContext.Provider value={value}>
         <PlayerActionsContext.Provider value={actions}>
           <PlayerClockContext.Provider value={clock}>
-            {children}
+            <PlayerPositionContext.Provider value={position}>
+              {children}
+            </PlayerPositionContext.Provider>
           </PlayerClockContext.Provider>
         </PlayerActionsContext.Provider>
       </PlayerContext.Provider>

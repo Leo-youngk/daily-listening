@@ -1,12 +1,13 @@
-import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { memo, useCallback, useEffect, useImperativeHandle, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, ReactNode, Ref, RefObject } from 'react'
-import { usePlayer, usePlayerClock } from '../store/PlayerContext'
+import { useVirtualizer } from '@tanstack/react-virtual'
+import { usePlayer, usePlayerPosition } from '../store/PlayerContext'
 import type { LoopMode } from '../store/PlayerContext'
 import { loadSettings, saveSettings, toggleFavorite, isFavorite } from '../lib/storage'
 import type { Sentence, Settings } from '../lib/types'
 import { fmtTime } from '../lib/format'
 import {
-  ChevronDownIcon, EllipsisIcon, ExternalLinkIcon, HeartIcon, MinusIcon, PauseIcon, PlayIcon, PlusIcon, RepeatIcon,
+  ChevronDownIcon, EllipsisIcon, ExternalLinkIcon, HeartIcon, MinusIcon, PauseIcon, PlayIcon, PlusIcon,
   SkipBackIcon, SkipForwardIcon,
 } from 'lucide-react'
 import { Slider } from '@/components/ui/slider'
@@ -20,6 +21,7 @@ import { prefetchLookup } from '../lib/dict'
 import { navigate } from '../hooks/useHashRoute'
 import { wordAt } from '../lib/timeline'
 import OfflineControl from '../components/OfflineControl'
+import PlaybackScrubber from '../components/PlaybackScrubber'
 import Cover from '../components/Cover'
 import EpisodeWords from '../components/EpisodeWords'
 import Segmented from '../components/Segmented'
@@ -106,11 +108,9 @@ function markClass(mark?: 'learning' | 'new') {
   return mark ? ` is-${mark}` : ''
 }
 
-const SentenceRow = memo(function SentenceRow({ s, active, rich, scale, hideZh, marks, onSeek, onWord, onPrefetch }: {
+const SentenceRow = memo(function SentenceRow({ s, active, scale, hideZh, marks, onSeek, onWord, onPrefetch }: {
   s: Sentence
   active: boolean
-  /** 拆成逐词 span（可点词、可高亮）；离屏幕远的句子只渲染纯文本，排版一模一样 */
-  rich: boolean
   scale: number
   hideZh: boolean
   marks: WordMarks
@@ -132,11 +132,7 @@ const SentenceRow = memo(function SentenceRow({ s, active, rich, scale, hideZh, 
       >
         {fmtTime(s.start)}
       </button>
-      {rich ? (
-        <TokenizedText text={s.en} scale={scale} sentence={s} marks={marks} onWord={onWord} onPrefetch={onPrefetch} />
-      ) : (
-        <p lang="en" className="subtitle-english" style={{ fontSize: `${18 * scale}px` }}>{s.en}</p>
-      )}
+      <TokenizedText text={s.en} scale={scale} sentence={s} marks={marks} onWord={onWord} onPrefetch={onPrefetch} />
       {!hideZh && s.zh && (
         <p lang="zh-CN" className="subtitle-translation" style={{ fontSize: `${15 * scale}px` }}>
           {s.zh}
@@ -146,15 +142,16 @@ const SentenceRow = memo(function SentenceRow({ s, active, rich, scale, hideZh, 
   )
 })
 
-/** 屏幕上下各预留这么多距离的句子提前拆成逐词，滚到眼前时已经可以点词 */
-const RICH_MARGIN = '150% 0px'
+interface TranscriptHandle {
+  scrollToSentence: (index: number) => void
+}
 
 /**
- * 字幕流独立成 memo 组件：Player 每 100ms 因进度条重渲染，这里只在换句时才重建。
- * 长节目（3 小时约 3500 句）全部拆成逐词 span 会有十几万个节点，iPhone 上打开要卡好几秒：
- * 只有屏幕附近的句子和正在读的句子拆词，其余渲染纯文本。
+ * 长文稿只挂载可见句子与上下各 8 句；滚动不会重建整篇，也不用布局几千个离屏段落。
+ * 每句按真实双语高度测量，保留逐词查词与高亮；远距离跳转由索引定位并校准高度。
  */
-const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, hideZh, marks, onSeek, onWord, onPrefetch, rootRef }: {
+const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, hideZh, marks, onSeek, onWord, onPrefetch, rootRef, ref }: {
+  ref: Ref<TranscriptHandle>
   rootRef: RefObject<HTMLElement | null>
   sentences: Sentence[]
   currentIdx: number
@@ -166,42 +163,84 @@ const SubtitleList = memo(function SubtitleList({ sentences, currentIdx, scale, 
   onPrefetch: (wordIndex: number, sentence: Sentence) => void
 }) {
   const listRef = useRef<HTMLDivElement>(null)
-  const [near, setNear] = useState<ReadonlySet<number>>(() => new Set())
-  useEffect(() => {
+  const visibleAnchor = useRef<number | null>(null)
+  const [geometry, setGeometry] = useState({ width: 342, margin: 4 })
+  const virtualizer = useVirtualizer<HTMLElement, HTMLDivElement>({
+    count: sentences.length,
+    getScrollElement: () => rootRef.current,
+    getItemKey: useCallback(index => sentences[index].i, [sentences]),
+    estimateSize: index => {
+      const s = sentences[index]
+      const width = Math.max(160, geometry.width)
+      const english = Math.max(1, Math.ceil(s.en.length * 9.5 * scale / width)) * 27 * scale
+      const chinese = hideZh || !s.zh ? 0 : 6 + Math.ceil(s.zh.length * 15 * scale / width) * 24 * scale
+      return 26 + english + chinese
+    },
+    scrollMargin: geometry.margin,
+    overscan: 8,
+    useFlushSync: false,
+    useAnimationFrameWithResizeObserver: true,
+    directDomUpdates: true,
+  })
+  useImperativeHandle(ref, () => ({
+    scrollToSentence: index => {
+      if (index >= 0 && index < sentences.length) virtualizer.scrollToIndex(index, { align: 'center', behavior: 'auto' })
+    },
+  }), [virtualizer, sentences.length])
+
+  useLayoutEffect(() => {
+    const box = rootRef.current
+    if (!box) return
+    // 在布局变化前保存可见索引；译文移除后 scrollTop 可能已被浏览器夹到新的末尾。
+    const remember = () => { visibleAnchor.current = virtualizer.getVirtualItemForOffset(box.scrollTop)?.index ?? null }
+    remember()
+    box.addEventListener('scroll', remember, { passive: true })
+    return () => box.removeEventListener('scroll', remember)
+  }, [virtualizer, rootRef])
+
+  useLayoutEffect(() => {
     const list = listRef.current
-    if (!list) return
-    const observer = new IntersectionObserver(entries => {
-      setNear(previous => {
-        const next = new Set(previous)
-        for (const entry of entries) {
-          const row = Number((entry.target as HTMLElement).dataset.row)
-          if (entry.isIntersecting) next.add(row)
-          else next.delete(row)
-        }
-        return next
+    const box = rootRef.current
+    if (!list || !box) return
+    const measure = () => {
+      const width = list.clientWidth
+      const margin = list.getBoundingClientRect().top - box.getBoundingClientRect().top + box.scrollTop
+      setGeometry(previous => {
+        if (previous.width === width && Math.abs(previous.margin - margin) < 1) return previous
+        return { width, margin }
       })
-    }, { root: rootRef.current, rootMargin: RICH_MARGIN })
-    list.querySelectorAll('[data-row]').forEach(row => observer.observe(row))
+    }
+    measure()
+    const observer = new ResizeObserver(measure)
+    observer.observe(box)
     return () => observer.disconnect()
   }, [sentences, rootRef])
+  useLayoutEffect(() => {
+    // 字号、译文或屏宽改变后旧高度失效；保留正在看的第一句，避免滚动位置跳到别处。
+    const anchor = visibleAnchor.current
+    virtualizer.measure()
+    if (anchor !== null) virtualizer.scrollToIndex(anchor, { align: 'start', behavior: 'auto' })
+  }, [virtualizer, rootRef, geometry.width, scale, hideZh])
 
   return (
     <div className="subtitle-list" ref={listRef}>
-      {sentences.map((s, i) => (
-        <div key={s.i} data-row={i}>
-          <SentenceRow
-            s={s}
-            active={i === currentIdx}
-            rich={i === currentIdx || near.has(i)}
-            scale={scale}
-            hideZh={hideZh}
-            marks={marks}
-            onSeek={onSeek}
-            onWord={onWord}
-            onPrefetch={onPrefetch}
-          />
-        </div>
-      ))}
+      <div ref={virtualizer.containerRef} style={{ position: 'relative', width: '100%' }}>
+        {virtualizer.getVirtualItems().map(item => (
+          <div key={item.key} data-row={item.index} data-index={item.index}
+            ref={virtualizer.measureElement} className="subtitle-virtual-row">
+            <SentenceRow
+              s={sentences[item.index]}
+              active={item.index === currentIdx}
+              scale={scale}
+              hideZh={hideZh}
+              marks={marks}
+              onSeek={onSeek}
+              onWord={onWord}
+              onPrefetch={onPrefetch}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   )
 })
@@ -262,7 +301,7 @@ function SettingRow({ label, note, children }: { label: string; note?: string; c
 
 export default function Player({ slug }: { slug: string }) {
   const p = usePlayer()
-  const clock = usePlayerClock()
+  const position = usePlayerPosition()
   const [settings, setSettings] = useState(loadSettings)
   const [dict, setDict] = useState<DictTarget | null>(null)
   const [showSettings, setShowSettings] = useState(false)
@@ -275,6 +314,7 @@ export default function Player({ slug }: { slug: string }) {
   const [, force] = useState(0)
   const view: View = settings.playerView
   const scrollBoxRef = useRef<HTMLElement>(null)
+  const transcriptRef = useRef<TranscriptHandle>(null)
   const userScrollUntil = useRef(0)
   const touching = useRef(false)
   const cancelScroll = useRef<() => void>(() => {})
@@ -332,7 +372,7 @@ export default function Player({ slug }: { slug: string }) {
 
   /**
    * 词级高亮直接改 DOM class，不进 React 渲染路径。
-   * 走 state 的话每帧要重建整条字幕流（最长的一篇 522 句），iPhone 上必卡。
+   * 只更新可见句子的词，不让逐词时钟进入 React 渲染路径。
    */
   const syncWords = useCallback(() => {
     const box = scrollBoxRef.current
@@ -340,6 +380,10 @@ export default function Player({ slug }: { slug: string }) {
     const time = p.getSubtitleTime()
     const idx = p.sentenceAt(time)
     const state = painted.current
+    const position = followPosition.current
+    const canFollow = follow.current.playing && follow.current.enabled && !follow.current.blocked
+      && !touching.current && Date.now() >= userScrollUntil.current
+    if (!canFollow && position.suspended) position.idx = idx
 
     if (idx !== state.idx || !state.row?.isConnected || !state.spans.length) {
       if (state.row?.isConnected) {
@@ -351,25 +395,31 @@ export default function Player({ slug }: { slug: string }) {
       state.idx = idx
       state.word = -2
     }
-    if (!state.spans.length) return
+    if (!state.spans.length) {
+      // 用户回看时当前句可以完全离屏；恢复跟读时先按索引挂载它，再做词级跟随。
+      if (canFollow && position.idx !== idx && performance.now() >= scrollRunningUntil.current) {
+        transcriptRef.current?.scrollToSentence(idx)
+        position.idx = idx
+        position.line = -1
+        position.suspended = false
+      }
+      return
+    }
 
     // 没有词级时间轴的篇目只做整句高亮，不用句内比例伪造词级进度
     const word = wordAt(sentencesRef.current[idx]?.w, time)
-    if (word !== state.word) {
+    const wordChanged = word !== state.word
+    if (wordChanged) {
       state.spans[state.word]?.classList.remove('is-spoken')
       state.spans[word]?.classList.add('is-spoken')
       state.word = word
     }
 
-    const position = followPosition.current
-    if (!follow.current.playing || !follow.current.enabled || follow.current.blocked
-      || touching.current || Date.now() < userScrollUntil.current) {
-      if (position.suspended) position.idx = idx
-      return
-    }
+    if (!canFollow) return
     // 手动回看后等到下一句恢复；词典关闭不会在句子中间突然拉回。
     if (position.suspended && position.idx === idx) return
     position.suspended = false
+    if (!wordChanged && position.idx === idx && position.line !== -1) return
     const anchor = state.spans[word] ?? state.spans[0]
     const line = anchor.offsetTop
     if (position.idx === idx && position.line === line) return
@@ -421,8 +471,7 @@ export default function Player({ slug }: { slug: string }) {
     const box = scrollBoxRef.current
     if (view !== 'text' || !box) return
     const idx = p.sentenceAt(p.getSubtitleTime())
-    const row = idx < 0 ? null : box.querySelector<HTMLElement>(`[data-row="${idx}"]`)
-    if (row) box.scrollTop += row.getBoundingClientRect().top - box.getBoundingClientRect().top - box.clientHeight * 0.35
+    transcriptRef.current?.scrollToSentence(idx)
     followPosition.current = { idx, line: -1, suspended: false }
     userScrollUntil.current = 0
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -460,6 +509,8 @@ export default function Player({ slug }: { slug: string }) {
     if (!box) return
     const observer = new ResizeObserver(() => { followPosition.current.line = -1 })
     observer.observe(box)
+    // 支持 CSS 边界控制的浏览器直接用原生滚动，不让每次触摸移动等待主线程。
+    if (CSS.supports('overscroll-behavior-y', 'none')) return () => observer.disconnect()
     // 旧版 iOS 不支持 overscroll-behavior，边界手势显式拦截，正文内部仍用原生滚动。
     let lastY = 0
     const start = (event: TouchEvent) => { lastY = event.touches[0]?.clientY ?? 0 }
@@ -491,6 +542,14 @@ export default function Player({ slug }: { slug: string }) {
 
   // 稳定引用，让 SentenceRow 的 memo 生效（否则 200 行会跟着 Player 一起重渲染）
   const handleSeek = useCallback((sen: Sentence) => p.seek(sen.start + p.subtitleOffset), [p.seek, p.subtitleOffset]) // eslint-disable-line
+  const handleScrubCommit = useCallback((time: number) => {
+    cancelScroll.current()
+    scrollRunningUntil.current = 0
+    const idx = p.sentenceAt(time - p.subtitleOffset)
+    followPosition.current = { idx, line: -1, suspended: false }
+    userScrollUntil.current = 0
+    if (view === 'text') transcriptRef.current?.scrollToSentence(idx)
+  }, [p, view])
   const handleWord = useCallback((wordIndex: number, sen: Sentence) => {
     const token = tokenizeSentence(sen.en)[wordIndex]
     if (!token) return
@@ -514,13 +573,13 @@ export default function Player({ slug }: { slug: string }) {
     updateSettings({ rate: next })
   }
   const openText = useCallback(() => updateSettings({ playerView: 'text' }), []) // eslint-disable-line react-hooks/exhaustive-deps
-  const nowIdx = sentences[clock.currentIdx] ? clock.currentIdx : 0
+  const nowIdx = sentences[position.currentIdx] ? position.currentIdx : 0
   const nowSentence = sentences[nowIdx]
   const close = () => {
     if (history.length > 1) history.back()
     else navigate('/programs')
   }
-  const finished = !!talk && !p.playing && clock.duration > 0 && clock.time >= clock.duration - 1
+  const finished = !!talk && position.finished
   const buffering = p.buffering && !p.loading
 
   const status = (
@@ -544,26 +603,7 @@ export default function Player({ slug }: { slug: string }) {
   )
 
   const scrubber = (
-    <div className="player-scrubber">
-      <Slider
-        className="player-scrub"
-        min={0}
-        max={clock.duration || 100}
-        step={0.5}
-        value={[clock.time]}
-        onValueChange={v => p.seek(v[0])}
-        aria-label="播放进度"
-      />
-      <div className="player-times">
-        <span>{fmtTime(clock.time)}</span>
-        {p.loop !== 0 && (
-          <button className="player-loop-tag" onClick={() => setShowSettings(true)}>
-            <RepeatIcon />单句循环{p.loop === 999 ? '' : ` ×${p.loop}`}
-          </button>
-        )}
-        <span>-{fmtTime(Math.max(0, clock.duration - clock.time))}</span>
-      </div>
-    </div>
+    <PlaybackScrubber onLoopSettings={() => setShowSettings(true)} onSeekCommit={handleScrubCommit} />
   )
 
   const toggleButton = (
@@ -673,17 +713,19 @@ export default function Player({ slug }: { slug: string }) {
         className="subtitle-scroll min-h-0 flex-1 overflow-y-auto no-scrollbar vertical-scroll"
       >
         {status}
-        <SubtitleList
+        {view === 'text' && talk && <SubtitleList
+          key={talk.slug}
+          ref={transcriptRef}
           rootRef={scrollBoxRef}
           sentences={sentences}
-          currentIdx={clock.currentIdx}
+          currentIdx={position.currentIdx}
           scale={settings.fontScale}
           hideZh={settings.hideZh}
           marks={marks}
           onSeek={handleSeek}
           onWord={handleWord}
           onPrefetch={handlePrefetch}
-        />
+        />}
       </main>
       <div className="player-dock safe-bottom" hidden={view !== 'text'}>
         {finished && (
