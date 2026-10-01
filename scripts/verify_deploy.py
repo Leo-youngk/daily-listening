@@ -194,9 +194,10 @@ def verify_build(base: str) -> None:
         check(VOCAB_CACHE in sw, "词表与例句走独立缓存", VOCAB_CACHE)
         check("cover-cache-v3" in sw, "封面缓存版本为 v3")
         check("mymemory" not in sw.lower(), "sw 不再缓存 MyMemory")
-        check("clientsClaim" in sw, "新 sw 安装后立即接管页面")
+        check("clientsClaim" in sw or "clients.claim" in sw, "新 sw 安装后立即接管页面")
         check("SKIP_WAITING" not in sw, "新 sw 不再停留在 waiting 状态")
-        check("cleanupOutdatedCaches" in sw or "outdated" in sw.lower(), "清理过期预缓存")
+        check("cleanupOutdatedCaches" in sw or "outdated" in sw.lower() or ("precache" in sw and "caches.delete" in sw), "清理过期预缓存")
+        check("audio-chunks-v2" in sw and "Content-Range" in sw, "音频从持久片段按 Range 播放")
 
 
 def verify_404(base: str) -> None:

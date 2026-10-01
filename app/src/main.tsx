@@ -33,7 +33,7 @@ async function purgeStaleCaches() {
 }
 void purgeStaleCaches()
 
-// 把已下载的音频预热成 blob: 地址：playTalk 在点击回调里同步取地址，没时间等异步查缓存
+// 只校验本地索引，不读取整集音频；播放时由 SW 按需读取本地片段。
 void initOffline()
 
 // 旧版本用来标记一次性缓存迁移，现在改成每次启动按白名单清理，标志位不再需要
