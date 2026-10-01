@@ -52,6 +52,9 @@ export default defineConfig({
       // 最终继续运行已经移除的第三方词典代码。自动接管后由注册器刷新到同一套资源。
       registerType: 'autoUpdate',
       injectRegister: null,
+      strategies: 'injectManifest',
+      srcDir: 'src',
+      filename: 'sw.ts',
       manifest: {
         name: '每日听力',
         short_name: '每日听力',
@@ -67,55 +70,10 @@ export default defineConfig({
           { src: '/icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
-      workbox: {
+      injectManifest: {
         // 不能收 json：sync_dist 之后 dist 里有 300+ 素材和 400+ 词典分片，
         // 全预缓存会让首屏装几十兆，这两类改走 runtimeCaching
         globPatterns: ['**/*.{js,css,html,webmanifest}'],
-        cleanupOutdatedCaches: true,
-        navigateFallback: 'index.html',
-        // 缺失的数据/词典要真的 404，不能回落成 index.html
-        navigateFallbackDenylist: [/^\/api\//, /^\/audio\//, /^\/data\//, /^\/dict\//, /^\/wordbook\//, /^\/examples\//],
-        runtimeCaching: [
-          {
-            urlPattern: /\/data\/.*\.json$/,
-            handler: 'NetworkFirst',
-            options: {
-              cacheName: 'data-cache-v5',
-              networkTimeoutSeconds: 5,
-              cacheableResponse: { statuses: [200] },
-              expiration: { maxEntries: 320, maxAgeSeconds: 60 * 60 * 24 * 14 },
-            },
-          },
-          {
-            // 词典分片内容随 ECDICT 版本整体更换，缓存名带版本号即可长期缓存
-            urlPattern: /\/dict\/.*\.json(\?.*)?$/,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'dict-ecdict-1-0-28-r3',
-              cacheableResponse: { statuses: [200] },
-              expiration: { maxEntries: 450, maxAgeSeconds: 60 * 60 * 24 * 180 },
-            },
-          },
-          {
-            // 词表与例句索引随节目增量更新：先用缓存秒开，后台拿新版
-            urlPattern: /\/(wordbook|examples)\/.*\.json$/,
-            handler: 'StaleWhileRevalidate',
-            options: {
-              cacheName: 'vocab-cache-v2',
-              cacheableResponse: { statuses: [200] },
-              expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 60 },
-            },
-          },
-          {
-            urlPattern: /\/covers\/.*\.(jpg|jpeg|webp)$/,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'cover-cache-v3',
-              cacheableResponse: { statuses: [200] },
-              expiration: { maxEntries: 320, maxAgeSeconds: 60 * 60 * 24 * 180 },
-            },
-          },
-        ],
       },
       devOptions: { enabled: false },
     }),

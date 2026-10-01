@@ -194,7 +194,7 @@ function OfflineSub() {
   return (
     <SubPage title="离线音频">
       {items.length === 0 ? (
-        <p className="group group-empty">在播放页右上角「···」里下载，断网也能听</p>
+        <p className="group group-empty">收听时自动保存音频，也可在播放页「···」里手动下载，存好后断网也能听</p>
       ) : (
         <>
           <div className="group">
@@ -203,7 +203,7 @@ function OfflineSub() {
                 <div className="min-w-0 flex-1">
                   <p className="group-row-label truncate">{item.title}</p>
                   <p className="group-row-sub">
-                    {fmtBytes(item.bytes)} · {item.quality === 'high' ? '高音质' : '标准音质'}
+                    {fmtBytes(item.bytes)} · {item.quality === 'high' ? '高音质' : '标准音质'}{item.pinned === false ? ' · 自动保存' : ' · 已保留'}
                   </p>
                 </div>
                 <button className="row-button" onClick={() => { void removeTalk(item.slug) }}>删除</button>
@@ -213,6 +213,7 @@ function OfflineSub() {
           <p className="me-sub-foot">
             共占用 {fmtBytes(offlineBytes())}
             {estimate && estimate.quota > 0 && ` · 本站还可用 ${fmtBytes(estimate.quota - estimate.usage)}`}
+            <br />自动保存最多 1 GB，满后清理最早的自动缓存；手动下载或点「保留」的音频不会自动清理。
           </p>
           <button className="me-danger" onClick={() => { void removeAll() }}>全部删除</button>
         </>
@@ -305,7 +306,7 @@ function MeHome() {
     try {
       if ('caches' in window) {
         const keys = await caches.keys()
-        // 离线音频是用户主动下载的，不能被"清除缓存"顺手删掉
+        // 音频含手动下载与自动保存，不能被“清除资源缓存”顺手删掉
         await Promise.all(keys.filter(key => !isPersistentCacheName(key)).map(key => caches.delete(key)))
       }
       setCacheStatus('done')

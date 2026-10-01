@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import type { ErrorInfo, ReactNode } from 'react'
+import { isPersistentCacheName } from '../lib/offline'
 
 interface Props {
   children: ReactNode
@@ -38,7 +39,7 @@ export default class ErrorBoundary extends Component<Props, State> {
     try {
       if ('caches' in window) {
         const keys = await caches.keys()
-        await Promise.all(keys.map(key => caches.delete(key)))
+        await Promise.all(keys.filter(key => !isPersistentCacheName(key)).map(key => caches.delete(key)))
       }
       if ('serviceWorker' in navigator) {
         const regs = await navigator.serviceWorker.getRegistrations()

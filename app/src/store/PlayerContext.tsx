@@ -12,7 +12,7 @@ import type { AudioQuality, ManifestItem, TalkData } from '../lib/types'
 import { isFinished, loadProgress, loadSettings, recordListen, saveProgress, saveSettings } from '../lib/storage'
 import { fetchJson } from '../lib/http'
 import { sentenceAt as findSentence } from '../lib/timeline'
-import { offlineSourceForTalk } from '../lib/offline'
+import { cacheTalkForReplay, offlineSourceForTalk, prepareOfflineSource, setAudioCachePlayback } from '../lib/offline'
 
 export type LoopMode = 0 | 1 | 3 | 999
 
@@ -113,6 +113,7 @@ function audioErrorMessage(audio: HTMLAudioElement): string {
 export function PlayerProvider({ children }: { children: ReactNode }) {
   const [audio] = useState(() => {
     const element = new Audio()
+    element.crossOrigin = 'anonymous'
     element.preload = 'metadata'
     return element
   })
@@ -241,6 +242,23 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     if (slugRef.current) saveProgress(slugRef.current, audio.currentTime, audio.duration || 0)
   }, [audio, sampleListenProgress])
 
+  const updateCachePolicy = useCallback(() => {
+    let ahead = 0
+    for (let i = 0; i < audio.buffered.length; i++) {
+      if (audio.buffered.start(i) <= audio.currentTime && audio.buffered.end(i) > audio.currentTime) {
+        ahead = audio.buffered.end(i) - audio.currentTime
+        break
+      }
+    }
+    const remaining = Number.isFinite(audio.duration) ? Math.max(0, audio.duration - audio.currentTime) : Infinity
+    // WebKit 播放长 MP3 时即使已有大段 buffered，也可能一直报告 CURRENT_DATA。
+    // 用实际的连续缓冲余量判断，不等它升到 FUTURE_DATA；seek / waiting 仍优先让带宽。
+    const safe = audio.paused || audio.ended || (
+      !audio.seeking && audio.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA && ahead >= Math.min(20, remaining)
+    )
+    setAudioCachePlayback(slugRef.current, safe)
+  }, [audio])
+
   /** 重新加载一集（换集、出错重试、换音质时用）：停掉当前音频，从头拉音频和字幕 */
   const loadTalk = useCallback((target: string, at?: number, autoplay = true) => {
     const meta = manifestBySlug.get(target)
@@ -288,7 +306,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     setClock({ time: startAt, duration: meta.duration || 0, currentIdx: -1 })
 
     audio.playbackRate = rate
-    // 已下载的篇目直接放本地 blob，断网也能听
+    // 保持原生 URL，由 SW 直接读取本地片段；不把整集装进界面内存。
     const resolvedOffline = offlineSourceForTalk(target, source, quality)
     audio.src = resolvedOffline?.source ?? source
     if (resolvedOffline && resolvedOffline.quality !== quality) {
@@ -296,6 +314,18 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     }
     // 预挂时不播：preload=metadata 只让浏览器先拉索引和开头，点播放时几乎立刻出声
     if (autoplay) startPlayback()
+    cacheTalkForReplay(target, quality, source)
+    if (!autoplay) updateCachePolicy()
+    // 首次安装尚未被 SW 接管时，只为当前集准备 blob 兼容地址。
+    void prepareOfflineSource(target).then(() => {
+      if (navigator.serviceWorker?.controller || requestRef.current?.id !== request.id) return
+      const local = offlineSourceForTalk(target, source, quality)
+      if (!local || local.source === audio.src) return
+      const resume = !audio.paused
+      pendingSeekRef.current = pendingSeekRef.current ?? audio.currentTime
+      audio.src = local.source
+      if (resume) startPlayback()
+    }).catch(() => { /* 准备失败不影响在线播放 */ })
 
     fetchJson<TalkData>(`/data/${encodeURIComponent(target)}.json`, {
       signal: request.controller.signal,
@@ -320,7 +350,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       .finally(() => {
         if (requestRef.current?.id === request.id) setLoading(false)
       })
-  }, [audio, flushListenProgress, manifestBySlug, quality, rate, startPlayback, updateClock])
+  }, [audio, flushListenProgress, manifestBySlug, quality, rate, startPlayback, updateClock, updateCachePolicy])
 
   useEffect(() => {
     const applyPendingSeek = () => {
@@ -336,66 +366,81 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     const onPlay = () => {
       listenPositionRef.current = Number.isFinite(audio.currentTime) ? audio.currentTime : 0
       setPlaying(true)
-      setBuffering(false)
       setError(null)
+      updateCachePolicy()
+    }
+    const onPlaying = () => {
+      setBuffering(false)
+      updateCachePolicy()
     }
     const onPause = () => {
       flushListenProgress()
       setPlaying(false)
       setBuffering(false)
       updateClock()
+      updateCachePolicy()
     }
     const onWaiting = () => {
       sampleListenProgress(true)
       setBuffering(true)
+      setAudioCachePlayback(slugRef.current, false, true)
     }
     const onCanPlay = () => {
       listenPositionRef.current = Number.isFinite(audio.currentTime) ? audio.currentTime : 0
       setBuffering(false)
       applyPendingSeek()
+      updateCachePolicy()
     }
     const onError = () => {
       flushListenProgress()
       setBuffering(false)
       setPlaying(false)
       setError(audioErrorMessage(audio))
+      setAudioCachePlayback(slugRef.current, false, true)
     }
     const onStalled = () => {
       if (!audio.paused) setBuffering(true)
+      setAudioCachePlayback(slugRef.current, false, true)
     }
     const onEnded = () => {
       flushListenProgress()
       setPlaying(false)
       setBuffering(false)
       updateClock()
+      updateCachePolicy()
     }
     const onTimeUpdate = () => {
       sampleListenProgress()
       updateClock()
+      updateCachePolicy()
     }
     audio.addEventListener('timeupdate', onTimeUpdate)
     audio.addEventListener('loadedmetadata', onMetadata)
     audio.addEventListener('durationchange', updateClock)
     audio.addEventListener('play', onPlay)
+    audio.addEventListener('playing', onPlaying)
     audio.addEventListener('pause', onPause)
     audio.addEventListener('waiting', onWaiting)
     audio.addEventListener('canplay', onCanPlay)
     audio.addEventListener('error', onError)
     audio.addEventListener('stalled', onStalled)
     audio.addEventListener('ended', onEnded)
+    audio.addEventListener('progress', updateCachePolicy)
     return () => {
       audio.removeEventListener('timeupdate', onTimeUpdate)
       audio.removeEventListener('loadedmetadata', onMetadata)
       audio.removeEventListener('durationchange', updateClock)
       audio.removeEventListener('play', onPlay)
+      audio.removeEventListener('playing', onPlaying)
       audio.removeEventListener('pause', onPause)
       audio.removeEventListener('waiting', onWaiting)
       audio.removeEventListener('canplay', onCanPlay)
       audio.removeEventListener('error', onError)
       audio.removeEventListener('stalled', onStalled)
       audio.removeEventListener('ended', onEnded)
+      audio.removeEventListener('progress', updateCachePolicy)
     }
-  }, [audio, flushListenProgress, sampleListenProgress, updateClock])
+  }, [audio, flushListenProgress, sampleListenProgress, updateClock, updateCachePolicy])
 
   useEffect(() => {
     if (!playing) return
@@ -458,6 +503,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     }
     if (audio.readyState === HTMLMediaElement.HAVE_NOTHING) pendingSeekRef.current = safeTime
     else audio.currentTime = safeTime
+    setAudioCachePlayback(slugRef.current, false, true)
     setClock(previous => ({ ...previous, time: safeTime, currentIdx: targetSentence }))
   }, [audio, sentenceAt])
 
@@ -555,7 +601,9 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       setNotice(null)
     }
     if (shouldResume) startPlayback()
-  }, [audio, manifestBySlug, quality, startPlayback])
+    cacheTalkForReplay(currentSlug, nextQuality, source)
+    if (!shouldResume) updateCachePolicy()
+  }, [audio, manifestBySlug, quality, startPlayback, updateCachePolicy])
 
   const retry = useCallback(() => {
     const currentSlug = slugRef.current

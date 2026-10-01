@@ -51,6 +51,7 @@ describe('缓存清理白名单', () => {
   it('保留应用壳和用户主动下载的音频', () => {
     expect(isPersistentCacheName('workbox-precache-v2-https://example.test')).toBe(true)
     expect(isPersistentCacheName('offline-audio-v1')).toBe(true)
+    expect(isPersistentCacheName('audio-chunks-v2')).toBe(true)
     expect(isPersistentCacheName('data-cache-v4')).toBe(false)
   })
 })
