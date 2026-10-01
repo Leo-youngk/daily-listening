@@ -6,6 +6,7 @@
     "lib": ["ES2023", "DOM"],
     "types": ["node"],
     "skipLibCheck": true,
+    "paths": { "@/*": ["./src/*"] },
 
     "module": "esnext",
     "moduleResolution": "bundler",
