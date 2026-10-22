@@ -5,9 +5,10 @@ import { usePlayer, usePlayerClock } from '../store/PlayerContext'
 import { fmtTime } from '../lib/format'
 
 /** 拖动只更新本组件的预览，松手才 seek；音频时钟不会覆盖正在拖动的位置。 */
-export default function PlaybackScrubber({ onLoopSettings, onSeekCommit }: {
+export default function PlaybackScrubber({ onLoopSettings, onSeekCommit, onScrubChange }: {
   onLoopSettings: () => void
   onSeekCommit: (time: number) => void
+  onScrubChange?: (active: boolean) => void
 }) {
   const { seek, loop } = usePlayer()
   const { time, duration } = usePlayerClock()
@@ -17,7 +18,11 @@ export default function PlaybackScrubber({ onLoopSettings, onSeekCommit }: {
   const moved = useRef(false)
   const target = useRef(time)
   const displayed = preview ?? time
-  const endPreview = () => { dragging.current = false; setPreview(null) }
+  const endPreview = () => {
+    if (dragging.current) onScrubChange?.(false)
+    dragging.current = false
+    setPreview(null)
+  }
   const commit = (value: number) => { seek(value); onSeekCommit(value) }
 
   return (
@@ -30,6 +35,7 @@ export default function PlaybackScrubber({ onLoopSettings, onSeekCommit }: {
         value={[displayed]}
         onPointerDown={() => {
           dragging.current = true
+          onScrubChange?.(true)
           pointerInteraction.current = true
           moved.current = false
           target.current = time

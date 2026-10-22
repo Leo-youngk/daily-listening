@@ -6,6 +6,12 @@ import ErrorBoundary from './components/ErrorBoundary'
 import { initOffline, isPersistentCacheName, OFFLINE_CACHE_NAME } from './lib/offline'
 import { CLIP_CACHE_NAME } from './lib/clips'
 import { PlayerProvider } from './store/PlayerContext'
+import { initTheme, initViewport } from './lib/appearance'
+import { initUIPerformance } from './lib/ui-performance'
+
+initTheme()
+initViewport()
+initUIPerformance()
 
 // 运行时缓存名带版本号，改版后旧缓存不会被 Workbox 自动回收（cleanupOutdatedCaches
 // 只管预缓存）。按白名单清理，换版本号即可让旧数据整体失效。

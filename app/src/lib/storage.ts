@@ -132,5 +132,7 @@ export function loadSettings(): Settings {
   return { ...DEFAULT_SETTINGS, ...read<Partial<Settings>>(K.settings, {}) }
 }
 export function saveSettings(patch: Partial<Settings>): boolean {
-  return write(K.settings, { ...loadSettings(), ...patch })
+  const previous = loadSettings()
+  if (Object.entries(patch).every(([key, value]) => previous[key as keyof Settings] === value)) return true
+  return write(K.settings, { ...previous, ...patch })
 }
