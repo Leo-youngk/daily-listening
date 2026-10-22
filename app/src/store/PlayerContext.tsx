@@ -62,6 +62,7 @@ interface PlayerPositionState {
 
 interface PlayerActions {
   playTalk: (slug: string, at?: number) => void
+  flushProgress: () => boolean
 }
 
 interface CatalogState {
@@ -252,7 +253,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       recordListen(wholeSeconds)
       listenPendingRef.current -= wholeSeconds
     }
-    if (slugRef.current) saveProgress(slugRef.current, audio.currentTime, audio.duration || 0)
+    return !slugRef.current || saveProgress(slugRef.current, audio.currentTime, audio.duration || 0)
   }, [audio, sampleListenProgress])
 
   const updateCachePolicy = useCallback(() => {
@@ -634,7 +635,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     stepSentence, setRate, cycleLoop, setLoop, setQuality, sentenceAt,
     subtitleOffset, setSubtitleOffset, getSubtitleTime,
   ])
-  const actions = useMemo<PlayerActions>(() => ({ playTalk }), [playTalk])
+  const actions = useMemo<PlayerActions>(() => ({ playTalk, flushProgress: flushListenProgress }), [playTalk, flushListenProgress])
   const catalog = useMemo<CatalogState>(() => ({
     manifest, manifestReady, manifestError, reloadManifest,
   }), [manifest, manifestReady, manifestError, reloadManifest])

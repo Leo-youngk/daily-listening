@@ -2,6 +2,7 @@ import { act, createElement, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
 import { afterEach, beforeEach, expect, it, vi } from 'vitest'
 import { PlayerProvider, usePlayerActions, usePlayerClock, usePlayerPosition } from '../src/store/PlayerContext'
+import { loadProgress } from '../src/lib/storage'
 
 const episode = { slug: 'clock-test', duration: 100, audioUrls: { standard: '/test.mp3' }, sentences: [
   { i: 0, start: 0, end: 50, en: 'First sentence.', zh: '' },
@@ -34,6 +35,7 @@ const audios: TestAudio[] = []
 let fastRenders = 0
 let transcriptRenders = 0
 let playTalk: (slug: string) => void
+let flushProgress: () => boolean
 function Clock() {
   fastRenders++
   return createElement('div', { id: 'time' }, usePlayerClock().time)
@@ -45,7 +47,7 @@ function Position() {
 }
 function Controls() {
   const actions = usePlayerActions()
-  useEffect(() => { playTalk = actions.playTalk }, [actions.playTalk])
+  useEffect(() => { playTalk = actions.playTalk; flushProgress = actions.flushProgress }, [actions])
   return null
 }
 
@@ -79,5 +81,17 @@ it('时钟推进只更新进度条；换句和播放结束才通知文稿', asyn
     expect(host.querySelector('#position')?.textContent).toBe('1/false')
     await act(async () => { audio.currentTime = 100; audio.pause() })
     expect(host.querySelector('#position')?.textContent).toBe('1/true')
+  } finally { await act(async () => root.unmount()); host.remove() }
+})
+
+it('切换主题刷新前可以立即保存当前真实音频位置，不等待定时器或卸载事件', async () => {
+  const host = document.createElement('div'); document.body.append(host)
+  const root = createRoot(host)
+  try {
+    await act(async () => root.render(createElement(PlayerProvider, null, createElement(Controls))))
+    await act(async () => playTalk('clock-test'))
+    audios.at(-1)!.currentTime = 29.4
+    expect(flushProgress()).toBe(true)
+    expect(loadProgress()['clock-test']).toMatchObject({ pos: 29.4, duration: 100 })
   } finally { await act(async () => root.unmount()); host.remove() }
 })
