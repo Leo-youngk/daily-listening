@@ -1,4 +1,5 @@
 import type { ManifestItem } from '../lib/types'
+import { useId } from 'react'
 import { showTab } from '../lib/types'
 import { isFinished, loadFavorites, loadProgress } from '../lib/storage'
 import { fmtDay, fmtMinutes } from '../lib/format'
@@ -20,6 +21,7 @@ interface Props {
 
 /** 单集行：16:9 缩略图（底边是收听进度）· 标题 · 「日期 · 节目 · 时长」与在学词标签 */
 export default function TalkCard({ item, learningHits, showSeries = false, nowPlaying }: Props) {
+  const motionSource = `episode:${item.slug}:${useId()}`
   const { playTalk } = usePlayerActions()
   const progress = loadProgress()[item.slug]
   const finished = isFinished(progress)
@@ -30,7 +32,7 @@ export default function TalkCard({ item, learningHits, showSeries = false, nowPl
   const pct = started && item.duration ? Math.min(100, (progress.pos / item.duration) * 100) : 0
   const open = () => {
     playTalk(item.slug)
-    navigate(`/talk/${item.slug}`)
+    navigate(`/talk/${item.slug}`, undefined, { source: motionSource })
   }
 
   const series = showSeries ? showTab(item) : null
@@ -42,7 +44,7 @@ export default function TalkCard({ item, learningHits, showSeries = false, nowPl
       : [fmtDay(item.date), series, length]
 
   return (
-    <button onClick={open} className="episode-row" aria-current={nowPlaying ? 'true' : undefined}>
+    <button onClick={open} className="episode-row" data-motion-source={motionSource} aria-current={nowPlaying ? 'true' : undefined}>
       <span className="episode-row-thumb">
         <Cover src={item.cover} className="episode-row-img" alt="" />
         {pct > 0 && <i style={{ width: `${pct}%` }} />}

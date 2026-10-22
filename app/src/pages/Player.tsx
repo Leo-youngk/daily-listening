@@ -18,7 +18,7 @@ import DictPanel from '../components/DictPanel'
 import type { DictTarget } from '../components/DictPanel'
 import { normalizeTerm, tokenizeSentence } from '../lib/lookup'
 import { prefetchLookup } from '../lib/dict'
-import { navigate } from '../hooks/useHashRoute'
+import { goBack } from '../hooks/useHashRoute'
 import { wordAt } from '../lib/timeline'
 import OfflineControl from '../components/OfflineControl'
 import PlaybackScrubber from '../components/PlaybackScrubber'
@@ -645,10 +645,7 @@ export default function Player({ slug }: { slug: string }) {
   const openText = useCallback(() => updateSettings({ playerView: 'text' }), []) // eslint-disable-line react-hooks/exhaustive-deps
   const nowIdx = sentences[position.currentIdx] ? position.currentIdx : 0
   const nowSentence = sentences[nowIdx]
-  const close = () => {
-    if (history.length > 1) history.back()
-    else navigate('/programs')
-  }
+  const close = () => goBack('/programs')
   const finished = !!talk && position.finished
   const buffering = p.buffering && !p.loading
 

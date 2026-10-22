@@ -77,7 +77,7 @@ export default function App() {
           ) : route.page === 'review' ? (
             <Review />
           ) : (
-            <WordDetail term={decodeURIComponent(route.param)} />
+            <WordDetail key={route.param} term={decodeURIComponent(route.param)} browseId={route.query.get('browse') ?? undefined} />
           )}
         </div>
       )}

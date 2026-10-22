@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { ChevronLeftIcon, PlayIcon, Volume2Icon } from 'lucide-react'
-import { navigate } from '../hooks/useHashRoute'
+import { goBack, navigate } from '../hooks/useHashRoute'
 import { usePlayer } from '../store/PlayerContext'
 import { db } from '../lib/db'
 import type { CardRecord } from '../lib/db'
@@ -194,7 +194,7 @@ export default function Review() {
   return (
     <div className="review-page">
       <header className="review-header safe-top">
-        <button onClick={() => (history.length > 1 ? history.back() : navigate('/'))} aria-label="返回" className="review-back">
+        <button onClick={() => goBack('/words')} aria-label="返回" className="review-back">
           <ChevronLeftIcon />
         </button>
         <div className="review-progress" role="progressbar" aria-valuenow={Math.round(progress)} aria-valuemin={0} aria-valuemax={100}>

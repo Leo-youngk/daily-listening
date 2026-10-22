@@ -11,10 +11,10 @@ export default function MiniPlayer() {
   if (!slug || !talk) return null
 
   const pct = duration ? Math.min(100, (time / duration) * 100) : 0
-  const open = () => navigate(`/talk/${slug}`)
+  const open = () => navigate(`/talk/${slug}`, undefined, { source: `mini:${slug}` })
   return (
     <div className="mini-player">
-      <button type="button" className="mini-player-open" onClick={open} aria-label={`打开播放页：${talk.title}`}>
+      <button type="button" className="mini-player-open" data-motion-source={`mini:${slug}`} onClick={open} aria-label={`打开播放页：${talk.title}`}>
         <span className="mini-player-art">
           <Cover src={talk.cover} className="mini-player-cover" alt="" />
         </span>
