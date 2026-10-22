@@ -48,7 +48,20 @@ beforeEach(async () => {
   root = createRoot(host)
   await act(async () => root.render(createElement(App)))
 })
-afterEach(async () => { await act(async () => root.unmount()); host.remove(); vi.unstubAllGlobals() })
+afterEach(async () => { await act(async () => root.unmount()); host.remove(); vi.unstubAllGlobals(); Reflect.deleteProperty(document, 'startViewTransition') })
+
+it('首页点节目在事件返回前显示播放器，不等待浏览器转场回调', async () => {
+  const snapshot = vi.fn()
+  Object.defineProperty(document, 'startViewTransition', { value: snapshot, configurable: true })
+  const row = panel().querySelector<HTMLButtonElement>('.episode-row')!
+  await act(async () => {
+    row.click()
+    expect(host.querySelector('.app-overlay')?.textContent).toBe('播放器')
+    expect(location.hash).toBe('#/talk/episode-0')
+  })
+  expect(snapshot).not.toHaveBeenCalled()
+  expect(state.playTalk).toHaveBeenCalledWith('episode-0')
+})
 
 it('节目搜索跨标签页与播放器往返后保留，隐藏页不会叠在当前页面上', async () => {
   await act(async () => {
