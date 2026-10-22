@@ -59,6 +59,11 @@ export default function Words({ query }: { query?: URLSearchParams }) {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    const next = query?.get('seg')
+    if (SEGMENTS.some(([key]) => key === next)) setSegment(next as Segment)
+  }, [query])
+
+  useEffect(() => {
     loadWordbook().then(setBook).catch(() => setError('词表加载失败，请检查网络'))
   }, [])
 

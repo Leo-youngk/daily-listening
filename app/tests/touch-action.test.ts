@@ -39,7 +39,7 @@ describe('滚动容器都带方向类', () => {
   })
 
   it('纵向页面、字幕区、背词卡与单词详情用 vertical-scroll', () => {
-    expect(classesOf('App.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)
+    expect(classesOf('components/TabPage.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)
     expect(classesOf('pages/Player.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)
     expect(classesOf('pages/Review.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)
     expect(classesOf('pages/WordDetail.tsx')).toMatch(/overflow-y-auto[^"]*vertical-scroll/)

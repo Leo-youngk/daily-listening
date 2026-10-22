@@ -84,6 +84,7 @@
     --color-surface: #1C1C1E;
     --surface-ring: 0 0 0 0 transparent;
     --seg-on: var(--color-raised);
+    --seg-track: #1C1C1E;
     --color-raised: #3A3A3C;
     --color-float: #1C1C1E;
     --color-ink: #F5F5F7;
@@ -126,6 +127,7 @@
   --color-surface: #1C1C1E;
   --surface-ring: 0 0 0 0 transparent;
   --seg-on: var(--color-raised);
+  --seg-track: #1C1C1E;
   --color-raised: #3A3A3C;
   --color-float: #1C1C1E;
   --color-ink: #F5F5F7;
@@ -215,6 +217,14 @@ html, body, #root {
   overflow: hidden;
 }
 
+#root {
+  position: fixed;
+  top: var(--app-top, 0px);
+  left: 0;
+  height: var(--app-height, 100%);
+  isolation: isolate;
+}
+
 html, body {
   position: fixed;
   inset: 0;
@@ -287,7 +297,7 @@ body {
 /* 列表最后几行要能滚到悬浮底栏上方 */
 .app-main::after { display: block; height: var(--dock-space); content: ''; }
 /* 全屏页（播放、复习、单词详情）盖在 Tab 页上面，下面的列表不卸载、位置不丢 */
-.app-overlay { position: fixed; z-index: 30; inset: 0; overflow: hidden; background: var(--color-bg); }
+.app-overlay { position: absolute; z-index: 30; inset: 0; overflow: hidden; background: var(--color-bg); }
 .page { padding: 0 16px; }
 /* 没有大标题的 Tab 页：内容直接从状态栏下方开始 */
 .tab-top { padding-top: calc(max(env(safe-area-inset-top, 0px), 8px) + 8px); }
@@ -510,18 +520,7 @@ button.me-row:active { background: var(--color-fill-strong); }
   margin: 0 auto;
   background: var(--color-bg);
 }
-/* "播放"视图：背景取封面主色做柔和渐变 */
-.player-page.is-play {
-  background:
-    radial-gradient(110% 60% at 0% 0%, color-mix(in srgb, var(--tint) 26%, transparent), transparent 70%),
-    radial-gradient(90% 50% at 100% 45%, color-mix(in srgb, var(--tint) 14%, transparent), transparent 72%),
-    color-mix(in srgb, var(--tint) 7%, var(--color-bg));
-  --seg-track: rgb(255 255 255 / 75%);
-}
-:root[data-theme="dark"] .player-page.is-play { --seg-track: rgb(255 255 255 / 10%); }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .player-page.is-play { --seg-track: rgb(255 255 255 / 10%); }
-}
+/* 封面取色只修饰封面，正文、状态栏、文稿与弹层保持同一主题底色。 */
 .player-top { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 8px; padding-right: 12px; padding-bottom: 4px; padding-left: 12px; }
 .player-icon { display: grid; width: 44px; height: 44px; place-items: center; border-radius: 50%; color: var(--color-ink); }
 .player-icon svg { width: 26px; height: 26px; stroke-width: 2; }
@@ -632,6 +631,7 @@ button.me-row:active { background: var(--color-fill-strong); }
 }
 
 .player-dock { position: relative; z-index: 5; flex: 0 0 auto; padding-top: 12px; padding-right: 20px; padding-left: 20px; border-radius: 22px 22px 0 0; background: var(--color-bg); box-shadow: 0 -1px 0 var(--color-line), 0 -12px 32px rgb(0 0 0 / 6%); }
+.player-follow { position: absolute; top: -46px; left: 50%; height: 34px; padding: 0 16px; border: 1px solid var(--color-line); border-radius: 999px; background: var(--color-bg); color: var(--primary); font-size: 13px; font-weight: 600; transform: translateX(-50%); }
 .player-dock .player-pill { background: var(--color-bg); box-shadow: inset 0 0 0 1px var(--color-line), 0 1px 3px rgb(0 0 0 / 5%); -webkit-backdrop-filter: none; backdrop-filter: none; }
 .player-dock .player-step svg { width: 26px; height: 26px; }
 .player-dock .player-toggle { width: 64px; height: 64px; }
@@ -641,7 +641,7 @@ button.me-row:active { background: var(--color-fill-strong); }
 
 /* ---------- 底部面板（设置、词汇、查词） ---------- */
 [data-slot="sheet-overlay"] { background: rgb(0 0 0 / 28%); }
-.app-sheet { right: 0; left: 0; width: 100%; max-width: 32rem; max-height: 86%; gap: 0; margin: 0 auto; padding: 18px 0 0; border: 0; border-radius: 22px 22px 0 0; background: var(--color-bg); box-shadow: 0 -10px 40px rgb(0 0 0 / 14%); }
+.app-sheet { right: 0; bottom: var(--keyboard-inset, 0px); left: 0; width: 100%; max-width: 32rem; max-height: calc(var(--app-height, 100dvh) * .86); gap: 0; margin: 0 auto; padding: 18px 0 0; border: 0; border-radius: 22px 22px 0 0; background: var(--color-bg); box-shadow: 0 -10px 40px rgb(0 0 0 / 14%); }
 .app-sheet [data-slot="sheet-close"] { top: 12px; right: 14px; width: 30px; height: 30px; border-radius: 50%; background: var(--color-surface); box-shadow: var(--surface-ring); color: var(--color-sub); }
 .app-sheet-title { padding: 2px 56px 12px; color: var(--color-ink); font-size: 16px; font-weight: 650; text-align: center; }
 .app-sheet-body { min-height: 0; flex: 1; overflow-y: auto; padding: 0 16px max(env(safe-area-inset-bottom, 0px), 20px); }

@@ -262,7 +262,10 @@ function MeHome() {
   const fileInput = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
-    const f = () => force(x => x + 1)
+    const f = (event: Event) => {
+      const key = (event as CustomEvent<string>).detail
+      if (key === 'dtl.stats' || key === 'dtl.progress' || key === 'dtl.favorites') force(x => x + 1)
+    }
     window.addEventListener('dtl-storage', f)
     return () => window.removeEventListener('dtl-storage', f)
   }, [])
