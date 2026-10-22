@@ -10,14 +10,15 @@ const state = vi.hoisted(() => {
     i: index, start: index * 10, end: (index + 1) * 10, en: `Sentence number ${index}.`, zh: `第${index}句`, w: [index * 10, index * 10 + 1],
   }))
   return {
-    time: 1, currentIdx: 0, visible: [0], playing: true,
+    time: 1, currentIdx: 0, visible: [0], playing: true, loading: false,
     sentences, scrollToIndex: vi.fn(), seek: vi.fn(),
     talk: { slug: 'ui-test', title: 'UI test', sentences, category: 'bbc6min' },
   }
 })
 vi.mock('../src/store/PlayerContext', () => ({
   usePlayer: () => ({
-    talk: state.talk, slug: 'ui-test', manifestReady: true, playing: state.playing, subtitleOffset: 0,
+    talk: state.loading ? null : state.talk, slug: 'ui-test', manifestReady: true, playing: state.playing, subtitleOffset: 0,
+    manifest: [{ slug: 'ui-test', title: 'UI test', category: 'bbc6min', cover: '/cover-test.jpg' }],
     getSubtitleTime: () => state.time, sentenceAt: (time: number) => Math.min(3, Math.floor(time / 10)),
     setRate: () => {}, seek: state.seek, toggle: () => {}, loop: 0,
   }),
@@ -53,7 +54,7 @@ async function render() { await act(async () => root.render(createElement(Player
 beforeEach(async () => {
   localStorage.clear()
   saveSettings({ playerView: 'text', autoScroll: true })
-  state.time = 1; state.currentIdx = 0; state.visible = [0]; state.playing = true
+  state.time = 1; state.currentIdx = 0; state.visible = [0]; state.playing = true; state.loading = false
   state.scrollToIndex.mockClear(); state.seek.mockClear(); frames.clear(); now = 0
   vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true)
   vi.stubGlobal('ResizeObserver', class { observe() {} unobserve() {} disconnect() {} })
@@ -90,6 +91,16 @@ it('播放与文稿之间切换时始终只挂载一个进度条', async () => {
   expect(host.querySelectorAll('[role="slider"]')).toHaveLength(1)
   expect(host.querySelector('.subtitle-list')).toBeNull()
   expect(host.querySelector('.player-now')).not.toBeNull()
+})
+
+it('字幕仍在下载时，播放页直接显示列表已有的标题和封面', async () => {
+  state.loading = true
+  await render()
+  const play = [...host.querySelectorAll<HTMLButtonElement>('[role="tab"]')].find(button => button.textContent === '播放')!
+  await act(async () => play.click())
+  expect(host.querySelector('h1')?.textContent).toBe('UI test')
+  expect(host.querySelector('.player-now-cover')?.getAttribute('src')).toBe('/cover-test.jpg')
+  expect(host.querySelectorAll('[role="slider"]')).toHaveLength(1)
 })
 
 it('单击字幕不会当作手动滚动，跳句会恢复跟随', async () => {

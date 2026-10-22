@@ -385,9 +385,12 @@ export default function Player({ slug }: { slug: string }) {
   }, [])
 
   const fav = isFavorite(slug)
-  const talk = p.talk
+  const talk = p.talk?.slug === slug ? p.talk : null
+  const meta = useMemo(() => p.manifest.find(item => item.slug === slug), [p.manifest, slug])
+  // The list already has this metadata. Do not blank the page while subtitles load.
+  const displayTalk = talk ?? meta
   const sentences = talk?.sentences ?? []
-  const tint = useCoverTint(talk?.cover)
+  const tint = useCoverTint(displayTalk?.cover)
 
   // 虚线只标六级新增词：四级基础词大多已经会了，全标出来满屏都是线
   const marks = useMemo<WordMarks>(() => {
@@ -722,12 +725,12 @@ export default function Player({ slug }: { slug: string }) {
       {/* 播放：封面 · 标题 · 大按钮 */}
       {view === 'play' && <section className="player-now overflow-y-auto no-scrollbar vertical-scroll" aria-label="正在播放">
         <div className="player-now-art">
-          <Cover src={talk?.cover} className="player-now-cover" alt="" />
+          <Cover src={displayTalk?.cover} className="player-now-cover" alt="" />
         </div>
         <div className="player-now-head">
           <div className="min-w-0 flex-1">
-            <h1 className="player-now-title" tabIndex={-1}>{talk ? talk.title : '加载中…'}</h1>
-            {talk && <p className="player-now-series">{showName(talk)}</p>}
+            <h1 className="player-now-title" tabIndex={-1}>{displayTalk?.title ?? '加载中…'}</h1>
+            {displayTalk && <p className="player-now-series">{showName(displayTalk)}</p>}
           </div>
           <button
             className={cn('player-heart', fav && 'is-on')}

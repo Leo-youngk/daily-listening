@@ -44,69 +44,31 @@ function restoreFocus(kind: MotionKind, source?: string) {
   target?.focus({ preventScroll: true })
 }
 
-/** Full-screen snapshots / local CSS animate without per-frame React updates.
- * Revision guards are essential: skipTransition() does NOT cancel its update. */
+/** Commit during the input event. Local transform/opacity animations never
+ * capture the page, suspend painting, or queue navigation behind an animation. */
 export function createPageMotion() {
-  let active: ViewTransition | undefined
-  let revision = 0
-  let cleanup = () => {}
+  let timer: number | undefined
+  const root = document.documentElement
+  const cleanup = () => {
+    window.clearTimeout(timer)
+    timer = undefined
+    delete root.dataset.navigationMotion
+  }
 
   return {
     run(change: Change, commit: () => void) {
-      const ticket = ++revision
-      active?.skipTransition()
-      active = undefined
       cleanup()
       const kind = kindFor(change)
       const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
       const animate = change.motion !== 'none' && !reduced && !change.nativeTransition && document.visibilityState !== 'hidden'
-      const root = document.documentElement
-      const sources: HTMLElement[] = []
-      const nameSource = () => {
-        const source = findSource(change.source)
-        if (source) { source.style.viewTransitionName = 'app-detail'; sources.push(source) }
-      }
-      cleanup = () => {
-        for (const source of sources) source.style.removeProperty('view-transition-name')
-        delete root.dataset.navigationMotion
-        delete root.dataset.navigationFallback
-      }
-      const update = () => {
-        if (ticket !== revision) return
-        // Remove the old source name before the new full-screen element exists.
-        for (const source of sources) source.style.removeProperty('view-transition-name')
-        commit()
-        if (kind === 'zoom-out') nameSource()
-        restoreFocus(kind, change.source)
-      }
-
-      if (!animate) { update(); cleanup(); active = undefined; return }
-      root.dataset.navigationMotion = kind
-      // Repeated word steps must commit synchronously. Browser snapshot capture
-      // can briefly suppress input; a keyed CSS entry keeps these controls live.
-      const wordStep = kind === 'next-word' || kind === 'previous-word'
-      if (wordStep || !document.startViewTransition) {
-        root.dataset.navigationFallback = 'true'
-        update()
-        // Local CSS entry/return motion; navigation never waits.
-        const fallbackCleanup = cleanup
-        window.setTimeout(() => { if (ticket === revision) fallbackCleanup() }, 300)
-        return
-      }
-      if (kind === 'zoom-in') nameSource()
+      if (animate) root.dataset.navigationMotion = kind
       try {
-        const transition = document.startViewTransition(update)
-        active = transition
-        // ready can reject on a duplicate name or an interrupted transition.
-        void transition.ready.catch(() => {})
-        void transition.finished.catch(() => {}).then(() => {
-          if (ticket === revision) { cleanup(); active = undefined }
-        })
-      } catch {
-        // A browser can refuse a transition; it must never refuse navigation.
-        update(); cleanup(); active = undefined
+        commit()
+        restoreFocus(kind, change.source)
+      } finally {
+        if (animate) timer = window.setTimeout(cleanup, 240)
       }
     },
-    dispose() { ++revision; active?.skipTransition(); cleanup() },
+    dispose: cleanup,
   }
 }
