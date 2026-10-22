@@ -44,7 +44,7 @@ function restoreFocus(kind: MotionKind, source?: string) {
   target?.focus({ preventScroll: true })
 }
 
-/** Only snapshots animate: live playback, scrolling and controls keep running.
+/** Full-screen snapshots / local CSS animate without per-frame React updates.
  * Revision guards are essential: skipTransition() does NOT cancel its update. */
 export function createPageMotion() {
   let active: ViewTransition | undefined
@@ -55,6 +55,7 @@ export function createPageMotion() {
     run(change: Change, commit: () => void) {
       const ticket = ++revision
       active?.skipTransition()
+      active = undefined
       cleanup()
       const kind = kindFor(change)
       const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
@@ -81,10 +82,13 @@ export function createPageMotion() {
 
       if (!animate) { update(); cleanup(); active = undefined; return }
       root.dataset.navigationMotion = kind
-      if (!document.startViewTransition) {
+      // Repeated word steps must commit synchronously. Browser snapshot capture
+      // can briefly suppress input; a keyed CSS entry keeps these controls live.
+      const wordStep = kind === 'next-word' || kind === 'previous-word'
+      if (wordStep || !document.startViewTransition) {
         root.dataset.navigationFallback = 'true'
         update()
-        // CSS entry/return motion for older browsers; navigation never waits.
+        // Local CSS entry/return motion; navigation never waits.
         const fallbackCleanup = cleanup
         window.setTimeout(() => { if (ticket === revision) fallbackCleanup() }, 300)
         return

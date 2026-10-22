@@ -153,7 +153,7 @@ it('外部直达详情的返回留在应用中，不依赖可能属于其他网�
   expect(history.length).toBe(depth)
 })
 
-it('转场提交前连续点三次也会推进三词，迟到的动画不覆盖最终结果', async () => {
+it('连续点三次立即推进三词，切词不用会短暂冻结输入的页面快照', async () => {
   await start()
   await click(host.querySelector<HTMLButtonElement>('.words-row')!)
   vi.stubGlobal('matchMedia', () => ({ matches: false }))
@@ -167,8 +167,7 @@ it('转场提交前连续点三次也会推进三词，迟到的动画不覆盖�
   await click(control('下一个单词'))
   await click(control('下一个单词'))
   expect(location.hash).toContain('/word/word-3?')
-  expect(word()).toBe('word-0')
-  await act(async () => { for (const update of updates) update() })
   expect(word()).toBe('word-3')
+  expect(updates).toHaveLength(0)
   expect(history.length).toBe(depth)
 })

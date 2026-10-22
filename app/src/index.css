@@ -762,7 +762,7 @@ button.me-row:active { background: var(--color-fill-strong); }
 .word-browser-meter { height: 2px; margin-bottom: 12px; overflow: hidden; border-radius: 2px; background: var(--color-line); }
 .word-browser-meter span { display: block; height: 100%; background: var(--primary); }
 .word-browser-controls { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 10px; }
-.word-browser-count { color: var(--color-sub); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.word-browser-count { min-width: 10ch; color: var(--color-sub); font-size: 12px; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; }
 .word-nav { display: flex; min-height: 48px; align-items: center; justify-content: center; gap: 2px; padding: 0 8px; border-radius: 15px; background: var(--color-surface); box-shadow: var(--surface-ring); color: var(--color-ink); font-size: 14px; font-weight: 650; white-space: nowrap; }
 .word-nav svg { width: 18px; height: 18px; flex: 0 0 auto; }
 .word-nav.is-next { background: var(--primary); box-shadow: none; color: var(--primary-foreground); }
@@ -785,14 +785,7 @@ button.me-row:active { background: var(--color-fill-strong); }
 :root[data-navigation-motion="zoom-out"] .mini-player { animation: none; }
 :root:is([data-navigation-motion="detail-in"], [data-navigation-motion="detail-out"])::view-transition-group(app-detail) { animation: none; border-radius: 0; }
 
-/* Within a browsing round only the reading area moves, keeping controls still. */
-:root:is([data-navigation-motion="next-word"], [data-navigation-motion="previous-word"]) .word-main { view-transition-name: word-content; }
-:root:is([data-navigation-motion="next-word"], [data-navigation-motion="previous-word"])::view-transition-group(app-detail) { animation: none; border-radius: 0; }
-:root:is([data-navigation-motion="next-word"], [data-navigation-motion="previous-word"])::view-transition-old(app-detail) { animation: none; opacity: 0; }
-:root:is([data-navigation-motion="next-word"], [data-navigation-motion="previous-word"])::view-transition-new(app-detail) { animation: none; }
-::view-transition-group(word-content) { overflow: clip; animation-duration: 200ms; }
-::view-transition-old(word-content) { animation: motion-word-out 80ms var(--ease-control) both; }
-::view-transition-new(word-content) { animation: motion-word-in 140ms 60ms var(--ease-control) both; }
+/* Word steps commit immediately; only the keyed reading area animates. */
 :root[data-navigation-motion="previous-word"] { --word-direction: -1; }
 
 /* Older engines still get a short entry/return cue without delaying routing. */
@@ -805,7 +798,6 @@ button.me-row:active { background: var(--color-fill-strong); }
 @keyframes motion-detail-out { 0% { opacity: 1; transform: scale(1); } 55% { opacity: .9; } 100% { opacity: 0; transform: scale(.95); } }
 @keyframes motion-return { from { opacity: .7; transform: scale(.985); } to { opacity: 1; transform: scale(1); } }
 @keyframes motion-word-in { from { opacity: 0; transform: translateX(calc(18px * var(--word-direction, 1))); } to { opacity: 1; transform: translateX(0); } }
-@keyframes motion-word-out { from { opacity: 1; transform: translateX(0); } to { opacity: 0; transform: translateX(calc(-12px * var(--word-direction, 1))); } }
 
 /* 操作反馈有统一节奏；只改颜色、透明度和合成层位移，不动画化布局。 */
 :is(.episode-row, .words-row, .word-nav, .review-back, .review-speak, .review-play, .mini-player-open, .mini-player-toggle, .player-icon, .player-step, .player-pill, .sub-back, .me-choice, .me-row, .chip, .row-button) {
