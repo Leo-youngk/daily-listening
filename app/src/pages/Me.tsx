@@ -4,7 +4,8 @@ import {
   BookOpenIcon, CheckIcon, ChevronLeftIcon, ChevronRightIcon, DatabaseIcon, DownloadIcon, FileTextIcon, HeartIcon,
   InfoIcon, MoonIcon, TargetIcon,
 } from 'lucide-react'
-import { useCatalog } from '../store/PlayerContext'
+import { useCatalog, usePlayerActions } from '../store/PlayerContext'
+import { setThemeAndReload } from '../lib/appearance'
 import { useCards } from '../hooks/useCards'
 import { navigate } from '../hooks/useHashRoute'
 import { isFinished, loadFavorites, loadProgress, loadStats, streakDays, saveSettings, loadSettings } from '../lib/storage'
@@ -161,10 +162,13 @@ function RetentionSub() {
 }
 
 function ThemeSub() {
-  const [settings, update] = useSettings()
+  const [settings, , setSettings] = useSettings()
+  const { flushProgress } = usePlayerActions()
   return (
     <SubPage title="外观">
-      <ChoiceList value={settings.theme} options={THEMES} onChange={v => update({ theme: v })} />
+      <ChoiceList value={settings.theme} options={THEMES} onChange={theme => {
+        if (setThemeAndReload(theme, flushProgress)) setSettings(loadSettings())
+      }} />
     </SubPage>
   )
 }

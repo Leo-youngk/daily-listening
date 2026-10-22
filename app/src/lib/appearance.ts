@@ -1,4 +1,25 @@
-import { loadSettings } from './storage'
+import { loadSettings, saveSettings } from './storage'
+import type { Settings } from './types'
+
+let themeReloadPending = false
+
+/** iOS 会缓存系统栏底色；手动改外观后，用已绘制的新底色重新加载一次页面。 */
+export function setThemeAndReload(
+  theme: Settings['theme'],
+  savePlayback: () => boolean,
+  reload = () => window.location.reload(),
+): boolean {
+  if (themeReloadPending || loadSettings().theme === theme) return false
+  // 任一写入失败都留在当前页，让现有存储错误提示可见、可重试。
+  if (!savePlayback() || !saveSettings({ theme })) return false
+  themeReloadPending = true
+  // 第一帧提交主题，第二帧才刷新，避免系统重新取到旧的画布颜色。
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    themeReloadPending = false
+    reload()
+  }))
+  return true
+}
 
 /** 所有主题消费者（含 portal 和 Tailwind dark:）共用同一个已解析主题。 */
 export function initTheme() {
@@ -19,6 +40,10 @@ export function initTheme() {
     if (root.style.colorScheme !== theme) root.style.colorScheme = theme
     const scheme = document.querySelector('meta[name="color-scheme"]')
     if (scheme?.getAttribute('content') !== theme) scheme?.setAttribute('content', theme)
+    // default / black 都在状态栏下面布局；不使用会改变安全区布局的 black-translucent。
+    const statusBar = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')
+    const statusStyle = dark ? 'black' : 'default'
+    if (statusBar?.getAttribute('content') !== statusStyle) statusBar?.setAttribute('content', statusStyle)
   }
   const onChange = (event: Event) => {
     if ((event as CustomEvent<string>).detail === 'dtl.settings') apply()
