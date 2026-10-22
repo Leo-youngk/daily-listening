@@ -4,19 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
     <meta name="theme-color" content="#FFFFFF" />
-    <script>
-      // 在样式和 React 就绪前恢复外观，避免深色启动时先闪白。
-      try {
-        const preference = JSON.parse(localStorage.getItem('dtl.settings') || '{}').theme;
-        const dark = preference === 'dark' || (preference !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
-        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
-        document.documentElement.classList.toggle('dark', dark);
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#0B0B0C' : '#FFFFFF');
-      } catch {}
-    </script>
+    <meta name="color-scheme" content="light" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>
+      // 连同浏览器画布一起恢复，避免状态栏 / 安全区沿用上次的深色底。
+      let preference;
+      try {
+        preference = JSON.parse(localStorage.getItem('dtl.settings') || '{}')?.theme;
+      } catch {}
+      const dark = preference === 'dark' || (preference !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+      const theme = dark ? 'dark' : 'light';
+      const color = dark ? '#0B0B0C' : '#FFFFFF';
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.classList.toggle('dark', dark);
+      document.documentElement.style.colorScheme = theme;
+      document.documentElement.style.backgroundColor = color;
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', color);
+      document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+    </script>
     <meta name="apple-mobile-web-app-title" content="每日听力" />
     <link rel="icon" href="/icons/icon-192.png" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />

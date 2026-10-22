@@ -13,6 +13,12 @@ export function initTheme() {
     const meta = document.querySelector('meta[name="theme-color"]')
     const color = dark ? '#0B0B0C' : '#FFFFFF'
     if (meta?.getAttribute('content') !== color) meta?.setAttribute('content', color)
+    // Safari 的状态栏、回弹区会读取根画布；只给 fixed body 换色不够。
+    // 在 CSS 加载前、恢复到前台时也提供一个不透明的确定值。
+    if (root.style.backgroundColor !== (dark ? 'rgb(11, 11, 12)' : 'rgb(255, 255, 255)')) root.style.backgroundColor = color
+    if (root.style.colorScheme !== theme) root.style.colorScheme = theme
+    const scheme = document.querySelector('meta[name="color-scheme"]')
+    if (scheme?.getAttribute('content') !== theme) scheme?.setAttribute('content', theme)
   }
   const onChange = (event: Event) => {
     if ((event as CustomEvent<string>).detail === 'dtl.settings') apply()
@@ -20,14 +26,19 @@ export function initTheme() {
   const onStorage = (event: StorageEvent) => {
     if (event.key === 'dtl.settings' || event.key === null) apply()
   }
+  const onVisible = () => { if (!document.hidden) apply() }
   apply()
   window.addEventListener('dtl-storage', onChange)
   window.addEventListener('storage', onStorage)
   media.addEventListener('change', apply)
+  window.addEventListener('pageshow', apply)
+  document.addEventListener('visibilitychange', onVisible)
   return () => {
     window.removeEventListener('dtl-storage', onChange)
     window.removeEventListener('storage', onStorage)
     media.removeEventListener('change', apply)
+    window.removeEventListener('pageshow', apply)
+    document.removeEventListener('visibilitychange', onVisible)
   }
 }
 

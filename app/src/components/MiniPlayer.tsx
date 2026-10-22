@@ -13,29 +13,20 @@ export default function MiniPlayer() {
   const pct = duration ? Math.min(100, (time / duration) * 100) : 0
   const open = () => navigate(`/talk/${slug}`)
   return (
-    <div
-      role="button"
-      tabIndex={0}
-      aria-label={`打开播放页：${talk.title}`}
-      onClick={open}
-      onKeyDown={e => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault()
-          open()
-        }
-      }}
-      className="mini-player"
-    >
-      <span className="mini-player-art">
-        <Cover src={talk.cover} className="mini-player-cover" alt="" />
-      </span>
-      <span className="mini-player-copy">
-        <span className="mini-player-title">{talk.title}</span>
-        <span className="mini-player-series">{showName(talk)}</span>
-      </span>
+    <div className="mini-player">
+      <button type="button" className="mini-player-open" onClick={open} aria-label={`打开播放页：${talk.title}`}>
+        <span className="mini-player-art">
+          <Cover src={talk.cover} className="mini-player-cover" alt="" />
+        </span>
+        <span className="mini-player-copy">
+          <span className="mini-player-title">{talk.title}</span>
+          <span className="mini-player-series">{showName(talk)}</span>
+        </span>
+      </button>
       <button
+        type="button"
         className="mini-player-toggle"
-        onClick={e => { e.stopPropagation(); toggle() }}
+        onClick={toggle}
         aria-label={playing ? '暂停' : '播放'}
       >
         {playing ? <PauseIcon /> : <PlayIcon />}

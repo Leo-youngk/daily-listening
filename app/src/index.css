@@ -14,6 +14,10 @@
  */
 :root {
   color-scheme: light;
+  background-color: var(--color-bg);
+  --motion-press: 120ms;
+  --motion-control: 180ms;
+  --ease-control: cubic-bezier(.2, .8, .2, 1);
   --color-bg: #FFFFFF;
   --color-grouped: #FFFFFF;
   --color-card: #FFFFFF;
@@ -273,7 +277,7 @@ body {
   overscroll-behavior-x: none;
 }
 
-.skeleton { background: var(--color-fill); animation: skeleton-pulse 1.4s ease-in-out infinite; }
+.skeleton { background: color-mix(in srgb, var(--color-ink) 8%, var(--color-bg)); animation: skeleton-pulse 1.4s ease-in-out infinite; }
 @keyframes skeleton-pulse { 50% { opacity: .5; } }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes fade-up { from { opacity: 0; transform: translateY(4px); } }
@@ -320,7 +324,8 @@ body {
 .app-tab:active .app-tab-icon { transform: scale(.92); }
 .app-tab-badge { position: absolute; top: 5px; left: 50%; min-width: 18px; height: 18px; margin-left: 5px; padding: 0 5px; border-radius: 9px; background: var(--primary); box-shadow: 0 0 0 2px var(--color-float); color: var(--primary-foreground); font-size: 11px; font-style: normal; font-weight: 700; line-height: 18px; text-align: center; font-variant-numeric: tabular-nums; }
 
-.mini-player { position: relative; display: flex; height: 58px; align-items: center; gap: 11px; padding: 0 6px 0 9px; overflow: hidden; border-radius: 20px; cursor: pointer; animation: fade-up .25s ease; }
+.mini-player { position: relative; display: flex; height: 58px; align-items: center; gap: 4px; padding: 0 6px 0 9px; overflow: hidden; border-radius: 20px; animation: fade-up .25s ease; }
+.mini-player-open { display: flex; min-width: 0; min-height: 44px; flex: 1; align-items: center; gap: 11px; border-radius: 10px; text-align: left; }
 .mini-player-art { display: block; width: 64px; height: 38px; flex: 0 0 auto; overflow: hidden; border-radius: 8px; background: var(--color-fill); }
 .mini-player-cover { display: block; width: 100%; height: 100%; object-fit: cover; }
 .mini-player-copy { display: flex; min-width: 0; flex: 1; flex-direction: column; }
@@ -524,7 +529,7 @@ button.me-row:active { background: var(--color-fill-strong); }
 .player-top { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 8px; padding-right: 12px; padding-bottom: 4px; padding-left: 12px; }
 .player-icon { display: grid; width: 44px; height: 44px; place-items: center; border-radius: 50%; color: var(--color-ink); }
 .player-icon svg { width: 26px; height: 26px; stroke-width: 2; }
-.player-icon:active { background: rgb(0 0 0 / 6%); }
+.player-icon:active { background: color-mix(in srgb, var(--color-ink) 8%, transparent); }
 .player-switch { width: 168px; justify-self: center; }
 .player-switch button { height: 30px; font-size: 15px; }
 
@@ -748,3 +753,22 @@ button.me-row:active { background: var(--color-fill-strong); }
 .word-example-zh { margin-top: 5px; color: var(--color-sub); font-size: 13px; line-height: 1.55; }
 .word-source { margin-top: 8px; color: var(--primary); font-size: 12px; text-align: left; }
 .word-legacy { margin-top: 8px; color: var(--color-sub); font-size: 13px; line-height: 1.55; }
+
+/* 操作反馈有统一节奏；只改颜色、透明度和合成层位移，不动画化布局。 */
+:is(.mini-player-open, .mini-player-toggle, .player-icon, .player-step, .player-pill, .sub-back, .me-choice, .me-row, .chip, .row-button) {
+  transition: background-color var(--motion-press) var(--ease-control), opacity var(--motion-press) var(--ease-control), transform var(--motion-press) var(--ease-control);
+}
+.segmented button { transition-duration: var(--motion-control); transition-timing-function: var(--ease-control); }
+:is(.mini-player-open, .mini-player-toggle, .player-icon, .player-step, .sub-back, .me-choice, .me-row):not(:disabled):active {
+  background-color: color-mix(in srgb, var(--color-ink) 8%, transparent);
+}
+.player-step { min-width: 44px; min-height: 44px; }
+button:focus-visible { outline: 2px solid var(--primary); outline-offset: -3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* 保留加载指示器；去掉装饰性位移与弹层缩放。 */
+  .mini-player, .app-menu, .skeleton, .review-answer,
+  [data-slot="sheet-overlay"], [data-slot="sheet-content"] { animation: none !important; }
+  button { transition: none !important; }
+  button:active, .app-tab:active .app-tab-icon { transform: none !important; }
+}
