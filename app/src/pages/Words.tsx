@@ -8,6 +8,7 @@ import { loadWordbook } from '../lib/wordbook'
 import type { BookWord } from '../lib/wordbook'
 import type { CardRecord } from '../lib/db'
 import Segmented from '../components/Segmented'
+import { createWordBrowse } from '../lib/word-browse'
 
 type Segment = 'learning' | 'mastered' | 'lookup' | 'book'
 const SEGMENTS: [Segment, string][] = [['learning', '学习中'], ['mastered', '已掌握'], ['lookup', '词表外'], ['book', '六级词表']]
@@ -84,6 +85,12 @@ export default function Words({ query }: { query?: URLSearchParams }) {
     return q ? list.filter(r => r.term.toLowerCase().includes(q) || r.meaning.includes(q)) : list
   }, [segment, book, cards, keyword])
 
+  const openWord = (term: string) => {
+    const label = SEGMENTS.find(([key]) => key === segment)![1]
+    const round = createWordBrowse(rows.map(row => row.term), keyword.trim() ? `搜索 · ${label}` : label, `/words?seg=${segment}`)
+    navigate(`/word/${encodeURIComponent(term)}`, { browse: round.id }, { source: `word:${term}` })
+  }
+
   return (
     <div className="page words-page tab-top">
       <Summary total={book.length} />
@@ -130,7 +137,7 @@ export default function Words({ query }: { query?: URLSearchParams }) {
           const state = row.card ? dueLabel(row.card, now) : '未学'
           return (
             <li key={row.term}>
-              <button onClick={() => navigate(`/word/${encodeURIComponent(row.term)}`)} className="words-row">
+              <button onClick={() => openWord(row.term)} className="words-row" data-motion-source={`word:${row.term}`}>
                 <span className="words-term">{row.term}</span>
                 <span className="words-meaning">{row.meaning}</span>
                 <span className={`words-state ${state === '待复习' ? 'is-due' : ''}`}>{state}</span>

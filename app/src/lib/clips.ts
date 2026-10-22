@@ -57,6 +57,7 @@ export function prefetchClip(url: string): Promise<string | null> {
 }
 
 export function playClip(url: string, onEnd?: () => void): Promise<void> {
+  stopSpeech()
   const player = element()
   onEndCallback = onEnd ?? null
   player.src = blobs.get(url) ?? url
@@ -72,8 +73,18 @@ export function stopClip() {
 /** 单词发音：系统 TTS。只读单词本身，句子一律用真人原声 */
 export function speakWord(text: string) {
   if (!('speechSynthesis' in window)) return
+  stopClip()
   speechSynthesis.cancel()
   const utterance = new SpeechSynthesisUtterance(text)
   utterance.lang = 'en-US'
   speechSynthesis.speak(utterance)
+}
+
+export function stopSpeech() {
+  if ('speechSynthesis' in window) speechSynthesis.cancel()
+}
+
+export function stopWordAudio() {
+  stopClip()
+  stopSpeech()
 }
