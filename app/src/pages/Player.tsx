@@ -726,7 +726,7 @@ export default function Player({ slug }: { slug: string }) {
         </div>
         <div className="player-now-head">
           <div className="min-w-0 flex-1">
-            <h1 className="player-now-title">{talk ? talk.title : '加载中…'}</h1>
+            <h1 className="player-now-title" tabIndex={-1}>{talk ? talk.title : '加载中…'}</h1>
             {talk && <p className="player-now-series">{showName(talk)}</p>}
           </div>
           <button

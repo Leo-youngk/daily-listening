@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ChevronLeftIcon, ChevronRightIcon, PlayIcon, Volume2Icon } from 'lucide-react'
-import { goBack, navigate } from '../hooks/useHashRoute'
+import { goBack, navigate, parseRoute } from '../hooks/useHashRoute'
 import { useCards } from '../hooks/useCards'
 import { useCatalog, usePlayerActions } from '../store/PlayerContext'
 import { addToReview, formatInterval, isMastered, markKnown, relearn, removeCard } from '../lib/srs'
@@ -30,8 +30,14 @@ export default function WordDetail({ term, browseId }: { term: string; browseId?
     goBack(browse?.returnTo ?? '/words')
   }, [browse?.returnTo])
   const move = useCallback((direction: 'previous' | 'next') => {
-    const target = browse?.[direction]
-    if (!target || !browse) return
+    if (!browse) return
+    // A new click can arrive before the previous transition commits the DOM.
+    // Advance from the latest requested route, not this still-visible old card.
+    const requested = parseRoute(location.hash.slice(1))
+    if (requested.page !== 'word' || requested.query.get('browse') !== browse.id) return
+    const latest = getWordBrowse(browse.id, decodeURIComponent(requested.param))
+    const target = latest?.[direction]
+    if (!target) return
     stopWordAudio()
     navigate(`/word/${encodeURIComponent(target)}`, { browse: browse.id }, {
       replace: true, source: `word:${target}`,

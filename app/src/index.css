@@ -782,6 +782,7 @@ button.me-row:active { background: var(--color-fill-strong); }
 :root[data-navigation-motion="zoom-out"]::view-transition-old(app-detail),
 :root[data-navigation-motion="detail-out"]::view-transition-old(app-detail) { object-fit: cover; animation: motion-detail-out 260ms var(--ease-control) both; }
 :root[data-navigation-motion="zoom-out"]::view-transition-new(app-detail) { object-fit: contain; animation: motion-fade-in 120ms 140ms ease both; }
+:root[data-navigation-motion="zoom-out"] .mini-player { animation: none; }
 :root:is([data-navigation-motion="detail-in"], [data-navigation-motion="detail-out"])::view-transition-group(app-detail) { animation: none; border-radius: 0; }
 
 /* Within a browsing round only the reading area moves, keeping controls still. */
@@ -790,8 +791,8 @@ button.me-row:active { background: var(--color-fill-strong); }
 :root:is([data-navigation-motion="next-word"], [data-navigation-motion="previous-word"])::view-transition-old(app-detail) { animation: none; opacity: 0; }
 :root:is([data-navigation-motion="next-word"], [data-navigation-motion="previous-word"])::view-transition-new(app-detail) { animation: none; }
 ::view-transition-group(word-content) { overflow: clip; animation-duration: 200ms; }
-::view-transition-old(word-content) { animation: motion-word-out 180ms var(--ease-control) both; }
-::view-transition-new(word-content) { animation: motion-word-in 200ms var(--ease-control) both; }
+::view-transition-old(word-content) { animation: motion-word-out 80ms var(--ease-control) both; }
+::view-transition-new(word-content) { animation: motion-word-in 140ms 60ms var(--ease-control) both; }
 :root[data-navigation-motion="previous-word"] { --word-direction: -1; }
 
 /* Older engines still get a short entry/return cue without delaying routing. */

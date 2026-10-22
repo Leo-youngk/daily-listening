@@ -67,7 +67,7 @@ beforeEach(() => {
   vi.stubGlobal('matchMedia', () => ({ matches: true }))
   host = document.createElement('div'); document.body.append(host); root = createRoot(host)
 })
-afterEach(async () => { await act(async () => root.unmount()); host.remove(); vi.unstubAllGlobals() })
+afterEach(async () => { await act(async () => root.unmount()); host.remove(); Reflect.deleteProperty(document, 'startViewTransition'); vi.unstubAllGlobals() })
 
 it('从第60个词继续越过分页，前后切换不增加返回层数，返回保留搜索、展开数和滚动位置', async () => {
   await start()
@@ -150,5 +150,25 @@ it('外部直达详情的返回留在应用中，不依赖可能属于其他网�
   await click(control('返回'))
   expect(location.hash).toBe('#/words')
   expect(host.querySelector('.app-overlay')).toBeNull()
+  expect(history.length).toBe(depth)
+})
+
+it('转场提交前连续点三次也会推进三词，迟到的动画不覆盖最终结果', async () => {
+  await start()
+  await click(host.querySelector<HTMLButtonElement>('.words-row')!)
+  vi.stubGlobal('matchMedia', () => ({ matches: false }))
+  const updates: (() => void)[] = []
+  Object.defineProperty(document, 'startViewTransition', { configurable: true, value: (update: () => void) => {
+    updates.push(update)
+    return { skipTransition: vi.fn(), ready: Promise.resolve(), finished: new Promise(() => {}) }
+  } })
+  const depth = history.length
+  await click(control('下一个单词'))
+  await click(control('下一个单词'))
+  await click(control('下一个单词'))
+  expect(location.hash).toContain('/word/word-3?')
+  expect(word()).toBe('word-0')
+  await act(async () => { for (const update of updates) update() })
+  expect(word()).toBe('word-3')
   expect(history.length).toBe(depth)
 })
